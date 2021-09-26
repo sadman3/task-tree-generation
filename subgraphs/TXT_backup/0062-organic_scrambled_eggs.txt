@@ -1,0 +1,382 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0062-scrambled_eggs.mp4
+# Source:	https://www.youtube.com/watch?v=6UzVLrdL1ik
+//
+O103	cooking pan	0
+S46	empty
+S71	hot
+S93	on	[stove]
+O34	bowl	0
+S24	contains	{butter}
+O49	butter	1
+S133	softened
+S150	unmelted
+S35	cubed
+S72	in	[bowl]
+O217	knife	1
+M61	pick-and-place	<0:27-0:29>
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter}
+S93	on	[stove]
+O49	butter	1
+S133	softened
+S150	unmelted
+S35	cubed
+S72	in	[cooking pan]
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter}
+S93	on	[stove]
+O49	butter	1
+S133	softened
+S35	cubed
+S150	unmelted
+S72	in	[cooking pan]
+O364	spatula	1
+M100	spread	<0:31-0:46,0:57-1:01>
+O49	butter	1
+S85	melted
+S81	liquid
+S72	in	[cooking pan]
+//
+O249	mixing bowl	0
+S24	contains	{egg white,egg yolk}
+O137	egg white	0
+S146	uncooked
+S72	in	[mixing bowl]
+O139	egg yolk	0
+S146	uncooked
+S72	in	[mixing bowl]
+O420	whisk	1
+M3	beat	<1:24-1:38>
+O249	mixing bowl	0
+S24	contains	{egg}
+O133	egg	1
+S6	beaten
+S146	uncooked
+S72	in	[mixing bowl]
+//
+O249	mixing bowl	0
+S24	contains	{egg}
+O133	egg	1
+S6	beaten
+S146	uncooked
+S72	in	[mixing bowl]
+O34	bowl	1
+S24	contains	{buttermilk}
+O50	buttermilk	1
+S81	liquid
+S72	in	[bowl]
+M65	pour	<1:42-1:44>
+O249	mixing bowl	0
+S24	contains	{egg,buttermilk}
+O50	buttermilk	1
+S81	liquid
+S72	in	[mixing bowl]
+//
+O249	mixing bowl	0
+S24	contains	{egg,buttermilk}
+O50	buttermilk	1
+S81	liquid
+S72	in	[mixing bowl]
+O133	egg	1
+S6	beaten
+S146	uncooked
+S72	in	[mixing bowl]
+O420	whisk	1
+M3	beat	<1:45-1:47>
+O133	egg	1
+S6	beaten
+S146	uncooked
+S24	contains	{buttermilk}
+S72	in	[mixing bowl]
+//
+O249	mixing bowl	1
+S24	contains	{egg,buttermilk}
+O133	egg	1
+S6	beaten
+S146	uncooked
+S24	contains	{buttermilk}
+S72	in	[mixing bowl]
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter}
+S93	on	[stove]
+O49	butter	0
+S85	melted
+S81	liquid
+S72	in	[cooking pan]
+O420	whisk	1
+M58	mix and pour	<1:48-1:50>
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk}
+S93	on	[stove]
+O133	egg	1
+S6	beaten
+S146	uncooked
+S24	contains	{butter,buttermilk}
+S72	in	[cooking pan]
+//
+O370	stove	0
+S93	on
+S148	under	[cooking pan]
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk}
+S93	on	[stove]
+O133	egg	1
+S6	beaten
+S146	uncooked
+S24	contains	{butter,buttermilk}
+S72	in	[cooking pan]
+O420	whisk	1
+M19	cook and stir	<1:52-1:56>
+O345	scrambled eggs	1
+S87	mixed
+S97	partly cooked
+S24	contains	{egg,butter,buttermilk}
+S72	in	[cooking pan]
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk}
+S93	on	[stove]
+O34	bowl	0
+S24	contains	{ricotta}
+O327	ricotta	1
+S133	softened
+S31	crumbled
+S72	in	[bowl]
+O364	spatula	1
+M89	scrape and pour	<2:47-2:48>
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk,ricotta}
+S93	on	[stove]
+O327	ricotta	1
+S133	softened
+S31	crumbled
+S72	in	[cooking pan]
+//
+O370	stove	0
+S93	on
+S148	under	[cooking pan]
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk,ricotta}
+S93	on	[stove]
+O327	ricotta	1
+S133	softened
+S31	crumbled
+S72	in	[cooking pan]
+O345	scrambled eggs	1
+S87	mixed
+S97	partly cooked
+S24	contains	{egg,butter,buttermilk}
+S72	in	[cooking pan]
+M19	cook and stir	<2:58-3:12,3:14-3:19>
+O345	scrambled eggs	1
+S87	mixed
+S97	partly cooked
+S24	contains	{egg,butter,buttermilk,ricotta}
+S72	in	[cooking pan]
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk,ricotta}
+S93	on	[stove]
+O34	bowl	0
+S24	contains	{salt}
+O336	salt	1
+S63	granulated
+S72	in	[bowl]
+M101	sprinkle	<3:55-3:56,3:58-3:59,4:01-4:02>
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk,ricotta,salt}
+S93	on	[stove]
+O336	salt	1
+S63	granulated
+S72	in	[cooking pan]
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk,ricotta,salt}
+S93	on	[stove]
+O294	pepper mill	1
+S24	contains	{black pepper}
+O22	black pepper	1
+S102	peppercorn
+S72	in	[pepper mill]
+M44	grind	<4:09-4:14>
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk,ricotta,salt,black pepper}
+S93	on	[stove]
+O22	black pepper	1
+S66	ground
+S72	in	[cooking pan]
+//
+O370	stove	0
+S93	on
+S148	under	[cooking pan]
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk,ricotta,salt,black pepper}
+S93	on	[stove]
+O345	scrambled eggs	0
+S87	mixed
+S97	partly cooked
+S24	contains	{egg,butter,buttermilk,ricotta}
+S72	in	[cooking pan]
+O336	salt	0
+S63	granulated
+S72	in	[cooking pan]
+O22	black pepper	0
+S66	ground
+S72	in	[cooking pan]
+O364	spatula	1
+M19	cook and stir	<4:20-4:32>
+O345	scrambled eggs	0
+S87	mixed
+S97	partly cooked
+S24	contains	{egg,butter,buttermilk,ricotta,salt,black pepper}
+S72	in	[cooking pan]
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk,ricotta,salt,black pepper}
+S93	on	[stove]
+O34	bowl	0
+S24	contains	{avocado}
+O4	avocado	1
+S17	chopped
+S72	in	[bowl]
+O364	spatula	1
+M89	scrape and pour	<4:38-4:41>
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk,ricotta,salt,black pepper,avocado}
+S93	on	[stove]
+O4	avocado	1
+S17	chopped
+S72	in	[cooking pan]
+//
+O370	stove	0
+S93	on
+S148	under	[cooking pan]
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk,ricotta,salt,black pepper,avocado}
+S93	on	[stove]
+O4	avocado	1
+S17	chopped
+S72	in	[cooking pan]
+O345	scrambled eggs	0
+S87	mixed
+S97	partly cooked
+S24	contains	{egg,butter,buttermilk,ricotta,salt,black pepper}
+S72	in	[cooking pan]
+O364	spatula	1
+M19	cook and stir	<4:50-4:54>
+O345	scrambled eggs	0
+S87	mixed
+S97	partly cooked
+S24	contains	{egg,butter,buttermilk,ricotta,salt,black pepper,avocado}
+S72	in	[cooking pan]
+//
+O121	cutting board	0
+S46	empty
+O392	tomato	1
+S155	whole
+M61	pick-and-place	<Assumed>
+O121	cutting board	0
+S24	contains	{tomato}
+O392	tomato	1
+S93	on	[cutting board]
+S155	whole
+//
+O392	tomato	1
+S93	on	[cutting board]
+S155	whole
+O217	knife	1
+M30	dice	<Assumed>
+O392	tomato	1
+S93	on	[cutting board]
+S42	diced
+//
+O121	cutting board	0
+S24	contains	{tomato}
+O34	bowl	0
+S46	empty
+O392	tomato	1
+S93	on	[cutting board]
+S42	diced
+M61	pick-and-place	<Assumed>
+O121	cutting board	0
+S46	empty
+O34	bowl	0
+S24	contains	{tomato}
+O392	tomato	1
+S72	in	[bowl]
+S42	diced
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk,ricotta,salt,black pepper,avocado}
+S93	on	[stove]
+O34	bowl	0
+S24	contains	{tomato}
+O392	tomato	1
+S42	diced
+S72	in	[bowl]
+O364	spatula	1
+M89	scrape and pour	<5:09-5:11>
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk,ricotta,salt,black pepper,avocado,tomato}
+S93	on	[stove]
+O392	tomato	1
+S42	diced
+S72	in	[cooking pan]
+//
+O370	stove	0
+S93	on
+S148	under	[cooking pan]
+O103	cooking pan	0
+S71	hot
+S24	contains	{butter,egg,buttermilk,ricotta,salt,black pepper,avocado,tomato}
+S93	on	[stove]
+O392	tomato	1
+S42	diced
+S72	in	[cooking pan]
+O345	scrambled eggs	0
+S87	mixed
+S97	partly cooked
+S24	contains	{egg,butter,buttermilk,ricotta,salt,black pepper,avocado}
+S72	in	[cooking pan]
+O364	spatula	1
+M19	cook and stir	<5:12-5:18>
+O345	scrambled eggs	0
+S87	mixed
+S25	cooked
+S24	contains	{egg,butter,buttermilk,ricotta,salt,black pepper,avocado,tomato}
+S72	in	[cooking pan]
+//
+O345	scrambled eggs	0
+S87	mixed
+S25	cooked
+S24	contains	{egg,butter,buttermilk,ricotta,salt,black pepper,avocado,tomato}
+S72	in	[cooking pan]
+O304	plate	0
+S46	empty
+O364	spatula	1
+M89	scrape and pour	<Assumed>
+O345	scrambled eggs	1	23
+S87	mixed
+S25	cooked
+S24	contains	{egg,butter,buttermilk,ricotta,salt,black pepper,avocado,tomato}
+S93	on	[plate]
+//

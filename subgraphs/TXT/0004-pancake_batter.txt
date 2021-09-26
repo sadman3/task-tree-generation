@@ -1,0 +1,83 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0004-pancake_batter.mp4
+# Source:	https://www.youtube.com/watch?v=xqP_-vqpbFo
+//
+O	bag	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bag]
+O	bowl	0
+S	on	[surface]
+S	empty
+M	pour	<0:10,0:15>
+O	bowl	0
+S	on	[surface]
+S	contains	{flour}
+O	flour	0
+S	powder
+S	in	[bowl]
+//
+O	bowl	0
+S	on	[surface]
+S	contains	{flour}
+O	egg	1
+S	on	[surface]
+S	whole
+M	crack	<0:18,0:22>
+O	bowl	0
+S	on	[surface]
+S	contains	{egg,flour}
+O	egg	0
+S	cracked
+S	in	[bowl]
+//
+O	egg shell	1
+S	on	[surface]
+O	trash bin	0
+S	contains	{garbage}
+M	throw away	<Assumed>
+O	egg shell	1
+S	in	[trash bin]
+//
+O	egg	0
+S	cracked
+S	in	[bowl]
+O	measuring cup	1
+S	contains	{milk}
+O	milk	1
+S	liquid
+S	in	[measuring cup]
+O	bowl	0
+S	on	[surface]
+S	contains	{egg,flour}
+M	pour	<0:28,0:33>
+O	bowl	0
+S	on	[surface]
+S	contains	{egg,flour,milk}
+O	milk	1
+S	liquid
+S	in	[bowl]
+//
+O	bowl	0
+S	on	[surface]
+S	contains	{egg,flour,milk}
+O	egg white	0
+S	raw
+S	in	[bowl]
+O	milk	0
+S	liquid
+S	in	[bowl]
+O	flour	0
+S	powder
+S	in	[bowl]
+O	whisk	1
+M	mix	<0:37,1:31>
+O	bowl	0
+S	on	[surface]
+S	contains	{pancake batter}
+O	pancake batter	0	5
+S	raw
+S	thick liquid
+S	in	[bowl]
+S	contains	{egg,flour,milk}
+//

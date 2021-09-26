@@ -1,0 +1,378 @@
+O	oven	0
+S	off (ready)
+M	turn on	0:26	0:28
+O	oven	0
+S	on
+//
+O	baking tray	0
+S	empty
+O	cooking spray	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	in	[spray bottle]
+M	spray	0:30	0:35
+O	baking tray	1
+S	greased	{vegetable oil}
+//
+O	baking tray	1
+S	greased	{vegetable oil}
+O	flour	1
+S	powder
+S	in	[bowl]
+M	sprinkle	0:36	0:38
+O	baking tray	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[pan]
+//
+O	baking tray	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[pan]
+M	spread	0:39	0:41
+O	baking tray	1
+S	floured	{flour}
+//
+O	bowl	1
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+O	bowl	0
+S	empty
+M	pour	0:45	0:47
+O	bowl	0
+S	contains	{sugar}
+//
+O	bowl	0
+S	contains	{sugar}
+O	bowl	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bowl]
+M	pour	0:48	0:50
+O	bowl	0
+S	contains	{flour,sugar}
+//
+O	bowl	1
+S	contains	{cocoa powder}
+O	bowl	0
+S	contains	{flour,sugar}
+O	cocoa powder	1
+S	in	[bowl]
+M	pour	0:52	0:54
+O	bowl	0
+S	contains	{sugar,flour,cocoa powder}
+//
+O	bowl	0
+S	contains	{sugar,flour,cocoa powder}
+O	bowl	1
+S	contains	{baking powder}
+O	baking powder	1
+S	powder
+S	in	[bowl]
+M	sprinkle	0:55	0:57
+O	bowl	1
+S	contains	{sugar,flour,cocoa powder,baking powder}
+//
+O	bowl	0
+S	contains	{sugar,flour,cocoa powder,baking powder}
+O	bowl	1
+S	contains	{baking soda}
+O	baking soda	1
+S	powder
+S	in	[bowl]
+M	sprinkle	0:58	1:00
+O	bowl	0
+S	contains	{sugar,flour,cocoa powder,baking powder,baking soda}
+//
+O	bowl	0
+S	contains	{sugar,flour,cocoa powder,baking powder,baking soda}
+O	cocoa powder	1
+S	in	[bowl]
+O	bowl	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	sprinkle	1:01	1:03
+O	bowl	0
+S	contains	{sugar,flour,cocoa powder,baking powder,baking soda,salt}
+//
+O	bowl	0
+S	contains	{sugar,flour,cocoa powder,baking powder,baking soda,salt}
+O	baking powder	1
+S	powder
+S	in	[bowl]
+O	baking soda	1
+S	powder
+S	in	[bowl]
+O	salt	1
+S	granulated
+S	in	[bowl]
+O	sugar	1
+S	granulated
+S	in	[bowl]
+O	cocoa powder	1
+S	in	[bowl]
+O	flour	1
+S	powder
+S	in	[bowl]
+O	whisk	1
+M	mix	1:04	1:07
+O	bowl	0
+S	contains	{cake mix}
+O	cake mix	1
+S	contains	{sugar,flour,cocoa powder,baking powder,baking soda,salt}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{cake mix}
+O	cake mix	1
+S	contains	{sugar,flour,cocoa powder,baking powder,baking soda,salt}
+S	in	[bowl]
+O	bowl	1
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	in	[bowl]
+M	pour	1:10	1:11
+O	bowl	0
+S	contains	{cake mix,egg white and yolk}
+//
+O	bowl	0
+S	contains	{cake mix,egg white and yolk}
+O	measuring cup	1
+S	contains	{milk}
+O	milk	1
+S	in	[measuring cup]
+M	pour	1:13	1:17
+O	bowl	0
+S	contains	{cake mix,egg white and yolk,milk}
+O	milk	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{cake mix,egg white and yolk,milk}
+O	measuring cup	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	in	[measuring cup]
+M	pour	1:19	1:20
+O	bowl	0
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil}
+O	vegetable oil	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil}
+O	bowl	1
+S	contains	{vanilla extract}
+O	vanilla extract	1
+S	in	[bowl]
+M	pour	1:22	1:23
+O	bowl	0
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+//
+O	bowl	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+O	mixer	0
+S	off
+M	attach	Assumed	Assumed
+O	mixer	0
+S	off
+S	with	[bowl]
+O	bowl	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	in	[mixer]
+//
+O	mixer	1
+S	off
+S	with	[bowl]
+O	bowl	0
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	in	[mixer]
+M	turn on	Assumed	Assumed
+O	mixer	1
+S	on
+S	with	[bowl]
+//
+O	bowl	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	in	[mixer]
+O	mixer	1
+S	on
+S	with	[bowl]
+M	mix	1:25	1:29
+O	bowl	0
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	in	[mixer]
+//
+O	bowl	0
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	in	[mixer]
+O	measuring cup	1
+S	contains	{water}
+O	water	1
+S	in	[measuring cup]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract,water}
+S	in	[mixer]
+O	water	1
+S	in	[bowl]
+//
+O	mixer	1
+S	on
+S	with	[bowl]
+O	bowl	0
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract,water}
+S	in	[mixer]
+M	mix	1:34	1:44
+O	bowl	0
+S	contains	{cake batter}
+S	in	[mixer]
+O	cake batter	0
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	in	[bowl]
+//
+O	mixer	1
+S	on
+S	with	[bowl]
+M	turn off	Assumed	Assumed
+O	mixer	1
+S	off
+S	with	[bowl]
+//
+O	mixer	0
+S	off
+S	with	[bowl]
+O	bowl	1
+S	contains	{cake batter}
+S	in	[mixer]
+M	detach	Assumed	Assumed
+O	bowl	1
+S	contains	{cake batter}
+//
+O	bowl	1
+S	contains	{cake batter}
+O	cake batter	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	in	[bowl]
+O	baking tray	0
+S	floured	{flour}
+M	pour	1:49	1:54
+O	baking tray	0
+S	contains	{cake batter}
+O	bowl	1
+O	cake batter	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	in	[pan]
+//
+O	oven	0
+S	on
+O	baking tray	1
+S	contains	{cake batter}
+M	put inside	Assumed	Assumed
+O	oven	0
+S	on
+S	with	[pan]
+O	baking tray	1
+S	contains	{cake batter}
+S	in	[oven]
+//
+O	oven	0
+S	on
+S	with	[pan]
+O	baking tray	0
+S	contains	{cake batter}
+S	in	[oven]
+O	cake batter	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	in	[pan]
+M	bake	2:07	2:11
+O	baking tray	0
+S	contains	{chocolate cake}
+S	in	[oven]
+O	chocolate cake	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	in	[pan]
+//
+O	oven	0
+S	on
+S	with	[pan]
+O	baking tray	0
+S	contains	{chocolate cake}
+S	in	[oven]
+O	chocolate cake	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	in	[pan]
+O	wire rack	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	wire rack	0
+S	contains	{chocolate cake}
+O	chocolate cake	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	on	[wire rack]
+O	baking tray	1
+//
+O	wire rack	0
+S	contains	{chocolate cake}
+O	chocolate cake	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	on	[wire rack]
+O	plate	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	wire rack	0
+O	plate	0
+S	contains	{chocolate cake}
+O	chocolate cake	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	on	[plate]
+//
+O	frosting	0
+S	in	[container]
+O	plate	0
+S	contains	{chocolate cake}
+O	chocolate cake	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract}
+S	on	[plate]
+O	knife	1
+M	spread	2:28	2:31
+O	chocolate cake	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract,frosting}
+S	on	[plate]
+O	frosting	0
+S	on	[cake]
+//
+O	plate	0
+S	contains	{chocolate cake}
+O	chocolate cake	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract,frosting}
+S	on	[plate]
+O	knife	1
+M	cut	Assumed	Assumed
+O	chocolate cake	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract,frosting}
+S	divided
+S	on	[plate]
+//
+O	plate	0
+S	empty
+O	chocolate cake	1
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract,frosting}
+S	divided
+S	on	[plate]
+O	cake server	1
+M	scoop and pour	Assumed	Assumed
+O	plate	0
+S	contains	{chocolate cake}
+O	chocolate cake	1	5
+S	contains	{cake mix,egg white and yolk,milk,vegetable oil,vanilla extract,frosting}
+S	sliced
+S	on	[plate]
+//

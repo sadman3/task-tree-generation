@@ -1,0 +1,217 @@
+O	plate	0
+S	empty
+O	beefsteak	1
+S	uncooked
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{beefsteak}
+O	beefsteak	1
+S	uncooked
+S	on	[plate]
+//
+O	cutting board	0
+S	contains	{garlic}
+O	knife	1
+O	garlic	0
+S	peeled
+S	on	[cutting board]
+M	slice	0:44	0:54
+O	garlic	0
+S	sliced
+S	on	[cutting board]
+//
+O	plate	0
+S	contains	{beefsteak}
+O	beefsteak	1
+S	uncooked
+S	on	[plate]
+O	knife	1
+M	cut	0:55	1:07
+O	beefsteak	0
+S	cut with slits
+S	uncooked
+S	on	[plate]
+//
+O	plate	0
+S	contains	{beefsteak}
+O	beefsteak	0
+S	cut with slits
+S	uncooked
+S	on	[plate]
+O	garlic	0
+S	sliced
+S	on	[cutting board]
+M	pick-and-place	1:07	1:32
+O	beefsteak	0
+S	stuffed	{garlic}
+S	uncooked
+S	on	[plate]
+O	garlic	1
+S	sliced
+S	in	[meat]
+//
+O	bowl	0
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+O	plate	0
+S	contains	{beefsteak}
+O	beefsteak	0
+S	stuffed	{garlic}
+S	uncooked
+S	on	[plate]
+M	sprinkle	1:37	1:40
+O	beefsteak	0
+S	salted	{garlic,salt}
+S	uncooked
+S	on	[plate]
+O	salt	1
+S	granulated
+S	on	[meat]
+//
+O	bowl	0
+S	contains	{pepper}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+O	plate	0
+S	contains	{beefsteak}
+O	beefsteak	0
+S	salted	{garlic,salt}
+S	uncooked
+S	on	[plate]
+M	sprinkle	1:40	1:44
+O	beefsteak	0
+S	seasoned	{garlic,salt,black pepper}
+S	uncooked
+S	on	[plate]
+O	black pepper	1
+S	ground
+S	on	[meat]
+//
+O	baking tray	1
+S	empty
+O	oven	0
+S	on
+M	put inside	Assumed	Assumed
+O	baking tray	1
+S	heated
+S	in	[oven]
+O	oven	0
+S	on
+S	with	[baking tray]
+//
+O	plate	1
+S	contains	{beefsteak}
+O	beefsteak	1
+S	seasoned	{garlic,salt,black pepper}
+S	uncooked
+S	on	[plate]
+O	baking tray	0
+S	heated
+S	in	[oven]
+O	oven	0
+S	on
+S	with	[baking tray]
+M	pick-and-place	2:18	2:24
+O	baking tray	0
+S	contains	{beefsteak}
+S	in	[oven]
+O	beefsteak	1
+S	seasoned	{garlic,salt,black pepper}
+S	uncooked
+S	on	[baking tray]
+//
+O	baking tray	0
+S	contains	{beefsteak}
+S	in	[oven]
+O	beefsteak	0
+S	seasoned	{garlic,salt,black pepper}
+S	uncooked
+S	on	[baking tray]
+M	cook	Assumed	Assumed
+O	baking tray	0
+S	contains	{beefsteak}
+S	in	[oven]
+O	beefsteak	0
+S	partly cooked
+S	on	[baking tray]
+//
+O	baking tray	1
+S	contains	{beefsteak}
+S	in	[oven]
+O	oven	0
+S	on
+S	with	[baking tray]
+M	remove	2:38	2:42
+O	baking tray	1
+S	contains	{beefsteak}
+O	oven	0
+S	off
+//
+O	baking tray	0
+S	contains	{beefsteak}
+O	beefsteak	1
+S	partly cooked
+S	on	[baking tray]
+O	tongs	1
+M	flip	Assumed	Assumed
+O	beefsteak	0
+S	flipped
+S	on	[baking tray]
+//
+O	baking tray	1
+S	contains	{beefsteak}
+O	beefsteak	0
+S	flipped
+S	on	[baking tray]
+O	oven	0
+S	on
+M	put inside	Assumed	Assumed
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	1
+S	contains	{beefsteak}
+S	in	[oven]
+//
+O	baking tray	0
+S	contains	{beefsteak}
+S	in	[oven]
+O	beefsteak	0
+S	flipped
+S	on	[baking tray]
+M	cook	Assumed	Assumed
+O	beefsteak	0
+S	cooked
+S	on	[baking tray]
+//
+O	baking tray	1
+S	contains	{beefsteak}
+S	in	[oven]
+O	oven	0
+S	on
+S	with	[baking tray]
+M	remove	Assumed	Assumed
+O	baking tray	1
+S	contains	{beefsteak}
+O	oven	0
+S	off
+//
+O	baking tray	0
+S	contains	{beefsteak}
+O	beefsteak	1
+S	cooked
+S	on	[baking tray]
+O	plate	0
+S	empty
+O	tongs	1
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{beefsteak}
+O	beefsteak	1	18
+S	cooked
+S	contains	{garlic,salt,black pepper}
+S	on	[plate]
+//

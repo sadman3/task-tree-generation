@@ -1,0 +1,329 @@
+# Source:	https://www.youtube.com/watch?v=SkOm4zZb180
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0032-cheeseburger.mp4
+//
+O	onion	1
+S	whole
+M	peel	<Assumed>
+O	onion	1
+S	peeled
+S	whole
+//
+O	cutting board	0
+S	empty
+O	onion	1
+S	peeled
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	peeled
+S	whole
+S	on	[cutting board]
+//
+O	onion	0
+S	whole
+S	on	[cutting board]
+S	peeled
+O	knife	1
+M	chop	<0:02-0:12>
+O	onion	0
+S	minced
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{onion}
+O	jar	0
+S	contains	{garlic}
+O	garlic	1
+S	minced
+S	in	[jar]
+O	spoon	1
+S	empty
+M	scoop and pour	<Assumed>
+O	cutting board	0
+S	contains	{garlic,onion}
+O	garlic	1
+S	minced
+S	on	[cutting board]
+//
+O	packet	0
+S	contains	{ground beef}
+O	ground beef	1
+S	raw
+S	in	[packet]
+O	bowl	0
+S	empty
+M	pick-and-place	<Assumed>
+O	bowl	0
+S	contains	{ground beef}
+O	ground beef	1
+S	raw
+S	in	[bowl]
+//
+O	ground beef	1
+S	raw
+S	in	[bowl]
+M	shape	<Assumed>
+O	patty	1
+S	raw
+S	contains	{ground beef}
+S	in	[hand]
+//
+O	cutting board	0
+S	contains	{garlic,onion}
+O	onion	0
+S	minced
+S	on	[cutting board]
+O	garlic	0
+S	minced
+S	on	[cutting board]
+O	patty	1
+S	raw
+S	contains	{ground beef}
+S	in	[hand]
+M	dip	<0:36-0:41>
+O	onion	0
+S	minced
+S	on	[patty]
+O	garlic	0
+S	minced
+S	on	[patty]
+//
+O	patty	1
+S	raw
+S	contains	{ground beef}
+S	in	[hand]
+O	onion	1
+S	minced
+S	on	[patty]
+O	garlic	1
+S	minced
+S	on	[patty]
+M	combine	<0:42-0:51>
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,garlic}
+S	in	[hand]
+O	onion	1
+S	minced
+S	in	[patty]
+O	garlic	1
+S	minced
+S	in	[patty]
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,garlic}
+S	in	[hand]
+O	plate	0
+S	empty
+M	place	<Assumed>
+O	plate	0
+S	contains	{patty}
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,garlic}
+S	on	[plate]
+//
+O	plate	1
+S	contains	{patty}
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,garlic}
+S	on	[plate]
+O	grill	0
+S	on
+S	empty
+M	pick-and-place	<0:39-0:41>
+O	grill	0
+S	contains	{patty}
+S	on
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,garlic}
+S	on	[grill]
+//
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,garlic}
+S	on	[grill]
+O	shaker	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[shaker]
+M	sprinkle	<0:45-0:48>
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,garlic,salt}
+S	on	[grill]
+O	salt	1
+S	granulated
+S	on	[patty]
+//
+O	grill	0
+S	contains	{patty}
+S	on
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,garlic,salt}
+S	on	[grill]
+M	cook	<Assumed>
+O	patty	1
+S	partly cooked
+S	contains	{ground beef,onion,garlic,salt}
+S	on	[grill]
+//
+O	grill	0
+S	contains	{patty}
+S	on
+O	patty	1
+S	partly cooked
+S	contains	{ground beef,onion,garlic,salt}
+S	on	[grill]
+O	turner	1
+M	flip	<1:13-1:16>
+O	patty	1
+S	partly cooked
+S	flipped
+S	contains	{ground beef,onion,garlic,salt}
+S	on	[grill]
+//
+O	grill	0
+S	contains	{patty}
+S	on
+O	patty	1
+S	partly cooked
+S	flipped
+S	contains	{ground beef,onion,garlic,salt}
+S	on	[grill]
+M	cook	<Assumed>
+O	patty	1
+S	cooked
+S	contains	{ground beef,onion,garlic,salt}
+S	on	[grill]
+//
+O	patty	0
+S	cooked
+S	contains	{ground beef,onion,garlic,salt}
+S	on	[grill]
+O	packet	1
+S	contains	{cheese}
+O	cheese	1
+S	sliced
+S	in	[packet]
+M	place	<Assumed>
+O	cheese	1
+S	sliced
+S	on	[patty]
+//
+O	grill	0
+S	contains	{patty}
+S	on
+O	patty	0
+S	cooked
+S	contains	{ground beef,onion,garlic,salt}
+S	on	[grill]
+O	cheese	0
+S	sliced
+S	on	[patty]
+M	melt	<Assumed>
+O	patty	0
+S	cooked
+S	contains	{ground beef,onion,garlic,salt,cheese}
+S	on	[grill]
+O	cheese	0
+S	melted
+S	on	[patty]
+//
+O	plate	0
+S	contains	{hamburger bun}
+O	hamburger bun	1
+S	on	[plate]
+O	grill	0
+S	empty
+S	on
+M	pick-and-place	<Assumed>
+O	hamburger bun	1
+S	on	[grill]
+O	grill	0
+S	contains	{hamburger bun}
+S	on
+//
+O	hamburger bun	0
+S	on	[grill]
+O	grill	0
+S	contains	{hamburger bun}
+S	on
+M	toast	<Assumed>
+O	hamburger bun	0
+S	on	[grill]
+S	toasted
+//
+O	grill	0
+S	contains	{hamburger bun}
+S	on
+O	plate	0
+S	empty
+O	hamburger bun	1
+S	on	[grill]
+S	toasted
+O	tongs	1
+M	pick-and-place	<Assumed>
+O	grill	0
+S	empty
+S	on
+O	plate	0
+S	contains	{hamburger bun}
+O	hamburger bun	1
+S	on	[plate]
+S	toasted
+//
+O	plate	0
+S	contains	{hamburger bun}
+O	hamburger bun	1
+S	on	[plate]
+S	toasted
+O	grill	0
+S	contains	{patty}
+S	on
+O	patty	0
+S	cooked
+S	contains	{ground beef,onion,garlic,salt,cheese}
+S	on	[grill]
+M	pick-and-place	<Assumed>
+O	grill	0
+S	empty
+S	on
+O	patty	0
+S	cooked
+S	contains	{ground beef,onion,garlic,salt,cheese}
+S	on	[hamburger bun]
+O	hamburger bun	1
+S	contains	{patty}
+S	toasted
+S	on	[plate]
+//
+O	plate	0
+S	contains	{hamburger bun}
+O	hamburger bun	1
+S	toasted
+S	on	[plate]
+O	hamburger bun	0
+S	contains	{patty}
+S	toasted
+S	on	[plate]
+O	patty	0
+S	cooked
+S	contains	{ground beef,onion,garlic,salt,cheese}
+S	on	[hamburger bun]
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{hamburger}
+O	hamburger	0	16
+S	contains	{ground beef,onion,garlic,salt,cheese}
+S	on	[plate]
+O	cheeseburger	0	16
+S	contains	{ground beef,onion,garlic,salt,cheese}
+S	on	[plate]
+//

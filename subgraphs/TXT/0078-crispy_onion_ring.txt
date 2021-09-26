@@ -1,0 +1,145 @@
+O	onion	1
+S	whole
+O	knife	1
+M	chop	Assumed	Assumed
+O	onion	1
+S	ring shaped
+O	knife	0
+//
+O	bowl	0
+S	empty
+O	wheat flour	1
+S	in	[cup]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{wheat flour}
+//
+O	bowl	0
+S	contains	{wheat flour}
+O	baking powder	1
+S	in	[cup]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{wheat flour,baking powder}
+//
+O	bowl	0
+S	contains	{wheat flour,baking powder}
+O	salt	1
+S	in	[cup]
+S	granulated
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{wheat flour,baking powder,salt}
+//
+O	bowl	0
+S	contains	{wheat flour,baking powder,salt}
+O	whisk	1
+M	mix	0:35	0:37
+O	bowl	0
+S	contains	{wheat flour,baking powder,salt}
+O	whisk	1
+//
+O	bowl	0
+S	contains	{wheat flour,baking powder,salt}
+O	onion	1
+S	ring shaped
+M	mix	0:38	0:44
+O	onion	1
+S	seasoned	{wheat flour,baking powder,salt}
+//
+O	bowl	0
+S	empty
+O	egg	1
+S	uncracked
+M	crack	0:50	0:52
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg	1
+S	cracked
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg beater	0
+M	beat	0:53	0:57
+O	bowl	0
+S	contains	{beaten egg}
+O	egg beater	0
+//
+O	bowl	0
+S	contains	{beaten egg}
+O	milk	0
+S	in	[jar]
+M	pour	0:58	1:01
+O	bowl	0
+S	contains	{beaten egg,milk}
+//
+O	bowl	0
+S	contains	{beaten egg,milk}
+O	flour	0
+S	in	[cup]
+M	pour	1:04	1:06
+O	bowl	0
+S	contains	{beaten egg,milk,flour}
+//
+O	bowl	0
+S	contains	{beaten egg,milk,flour}
+O	egg beater	0
+M	beat	1:07	1:12
+O	bowl	0
+S	contains	{beaten egg,milk,flour}
+O	egg beater	0
+//
+O	bowl	0
+S	contains	{beaten egg,milk,flour}
+O	onion	1
+S	ring shaped
+M	dip	1:25	1:54
+O	onion	1
+S	coated	{beaten egg,milk,flour}
+S	ring shaped
+//
+O	onion	1
+S	coated	{beaten egg,milk,flour}
+S	ring shaped
+O	breadcrumb	1
+S	in	[bowl]
+M	mix	1:58	2:03
+O	onion	1
+S	coated	{beaten egg,milk,flour,breadcrumb}
+S	ring shaped
+//
+O	stove	0
+S	off
+M	turn on	Assumed	Assumed
+O	stove	0
+S	on
+//
+O	stove	0
+S	on
+O	cooking pan	1
+S	contains	{oil}
+M	pick-and-place	Assumed	Assumed
+O	stove	0
+S	on
+S	with	[pan]
+O	cooking pan	1
+S	contains	{oil}
+S	on	[stove]
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	cooking pan	1
+S	contains	{oil}
+S	on	[stove]
+O	onion	1
+S	coated	{beaten egg,milk,flour,breadcrumb}
+S	ring shaped
+M	fry	1:58	2:03
+O	cooking pan	1
+S	contains	{onion ring}
+O	onion ring	1	22
+S	contains	{onion,egg,milk,flour,breadcrumb}
+S	in	[cooking pan]
+//

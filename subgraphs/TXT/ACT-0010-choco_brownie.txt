@@ -1,0 +1,377 @@
+O	bowl	0
+S	empty
+O	butter	1
+S	stick
+S	in	[packet]
+M	pick-and-place	1:22	1:25
+O	bowl	0
+S	contains	{butter}
+O	butter	1
+S	stick
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{butter}
+O	bowl	0
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+M	pour	1:31	1:33
+O	bowl	0
+S	contains	{butter,sugar}
+//
+O	bowl	0
+S	contains	{butter,sugar}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+O	butter	1
+S	stick
+S	in	[bowl]
+M	mix	1:38	1:58
+O	bowl	0
+S	contains	{butter,sugar}
+S	mixed
+//
+O	bowl	0
+S	contains	{butter,sugar}
+S	mixed
+O	whisk	1
+M	beat	2:00	2:11
+O	bowl	0
+S	contains	{butter,sugar}
+S	beaten
+//
+O	jar	0
+S	contains	{instant coffee}
+O	instant coffee	1
+S	powder
+S	in	[jar]
+O	spoon	1
+O	plate	0
+S	empty
+M	scoop and pour	Assumed	Assumed
+O	plate	0
+S	contains	{instant coffee}
+O	instant coffee	1
+S	powder
+S	on	[plate]
+//
+O	bowl	0
+S	contains	{water}
+O	plate	0
+S	contains	{instant coffee}
+O	instant coffee	1
+S	powder
+S	on	[plate]
+O	spoon	1
+M	scrape	2:16	2:20
+O	bowl	0
+S	contains	{water,instant coffee}
+O	instant coffee	0
+S	powder
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{water,instant coffee}
+O	spoon	1
+M	stir	2:21	2:40
+O	bowl	0
+S	contains	{coffee}
+O	coffee	1
+S	in	[bowl]
+//
+O	egg	1
+S	uncracked
+M	crack	2:37	2:47
+O	egg	1
+S	cracked
+//
+O	bowl	0
+S	contains	{sugar,butter}
+S	beaten
+O	egg	1
+S	cracked
+M	pour	2:56	2:58
+O	bowl	0
+S	contains	{sugar,butter,egg white and yolk}
+O	egg white and yolk	0
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{sugar,butter,egg white and yolk}
+O	egg white and yolk	0
+S	in	[bowl]
+O	sugar	1
+S	granulated
+S	in	[bowl]
+O	butter	1
+S	stick
+S	in	[bowl]
+O	whisk	1
+M	beat	2:58	3:04
+O	bowl	0
+S	contains	{egg mixture}
+O	egg mixture	0
+S	contains	{sugar,butter,egg}
+S	in	[bowl]
+//
+O	bottle	1
+S	contains	{vanilla extract}
+O	vanilla extract	1
+S	in	[bottle]
+O	bowl	0
+S	contains	{egg mixture}
+M	pour	3:06	3:09
+O	bowl	0
+S	contains	{egg mixture,vanilla extract}
+O	vanilla extract	0
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg mixture,vanilla extract}
+O	egg mixture	0
+S	contains	{sugar,butter,egg}
+S	in	[bowl]
+O	vanilla extract	0
+S	in	[bowl]
+O	whisk	1
+M	beat	3:10	3:19
+O	bowl	0
+S	contains	{egg mixture,vanilla extract}
+O	egg mixture	1
+S	contains	{sugar,butter,egg white and yolk,vanilla extract}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg mixture,vanilla extract}
+O	bowl	1
+S	contains	{coffee}
+O	coffee	1
+S	in	[bowl]
+M	pour	3:20	3:24
+O	bowl	0
+S	contains	{egg mixture,vanilla extract,coffee}
+O	bowl	0
+//
+O	bowl	0
+S	contains	{egg mixture,vanilla extract,coffee}
+O	egg mixture	1
+S	contains	{sugar,butter,egg white and yolk,vanilla extract}
+S	in	[bowl]
+O	coffee	1
+S	in	[bowl]
+O	whisk	1
+M	beat	3:25	3:33
+O	bowl	0
+S	contains	{batter}
+O	batter	1
+S	contains	{sugar,butter,egg white and yolk,vanilla extract,coffee}
+S	in	[bowl]
+//
+O	bowl	1
+S	contains	{cocoa powder}
+O	cocoa powder	1
+S	in	[bowl]
+O	bowl	0
+S	contains	{flour}
+M	pour	3:35	3:37
+O	bowl	0
+S	contains	{cocoa powder,flour}
+O	bowl	0
+//
+O	bowl	1
+S	contains	{salt,instant coffee}
+O	bowl	0
+S	contains	{flour,cocoa powder}
+O	instant coffee	0
+S	in	[bowl]
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	pour	3:39	3:40
+O	bowl	0
+S	contains	{flour,cocoa powder,salt,instant coffee}
+O	bowl	0
+//
+O	bowl	0
+S	contains	{flour,cocoa powder,salt,instant coffee}
+O	spoon	1
+O	instant coffee	1
+S	in	[bowl]
+O	salt	1
+S	granulated
+S	in	[bowl]
+O	cocoa powder	1
+S	in	[bowl]
+O	flour	1
+S	powder
+S	in	[bowl]
+M	mix*	3:41	3:50
+O	bowl	0
+S	contains	{flour mixture}
+O	flour mixture	1
+S	contains	{flour,cocoa powder,salt,instant coffee}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{batter}
+O	bowl	1
+S	contains	{chocolate}
+O	chocolate	1
+S	melted
+S	in	[bowl]
+M	pour	3:53	4:04
+O	bowl	0
+S	contains	{batter,chocolate}
+//
+O	bowl	0
+S	contains	{batter,chocolate}
+O	chocolate	1
+S	melted
+S	in	[bowl]
+O	batter	1
+S	contains	{sugar,butter,egg white and yolk,vanilla extract,coffee}
+S	in	[bowl]
+O	whisk	1
+M	mix	4:12	4:18
+O	bowl	0
+S	contains	{brownie batter}
+O	batter	1
+S	contains	{sugar,butter,egg white and yolk,vanilla extract,coffee,choocolate}
+S	in	[bowl]
+//
+O	bowl	1
+S	contains	{flour mixture}
+O	bowl	0
+S	contains	{batter}
+M	pour	4:20	4:22
+O	bowl	0
+S	contains	{flour mixture,batter}
+O	bowl	1
+//
+O	bowl	0
+S	contains	{flour mixture,batter}
+O	flour mixture	1
+S	contains	{flour,cocoa powder,salt,instant coffee}
+S	in	[bowl]
+O	batter	1
+S	contains	{sugar,butter,egg white and yolk,vanilla extract,coffee,choocolate}
+S	in	[bowl]
+O	whisk	1
+M	mix	4:25	4:44
+O	bowl	0
+S	contains	{brownie batter}
+O	brownie batter	1
+S	in	[bowl]
+//
+O	spatula	1
+O	bowl	0
+S	contains	{brownie batter}
+O	brownie batter	1
+S	in	[bowl]
+M	mix	4:51	5:00
+O	bowl	0
+S	contains	{brownie batter}
+O	brownie batter	1
+S	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S	in	[bowl]
+//
+O	baking tray	0
+S	with	[sheet]
+O	bowl	1
+S	contains	{brownie batter}
+O	brownie batter	1
+S	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S	in	[bowl]
+M	scrape	5:09	5:13
+O	brownie batter	1
+S	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S	in	[baking tray]
+O	baking tray	0
+S	contains	{brownie batter}
+O	bowl	1
+//
+O	brownie batter	1
+S	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S	in	[baking tray]
+O	baking tray	0
+S	contains	{brownie batter}
+M	shape	5:15	5:33
+O	brownie batter	1
+S	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S	leveled
+S	in	[baking tray]
+//
+O	oven	0
+S	on
+O	baking tray	1
+S	contains	{brownie batter}
+M	put inside	Assumed	Assumed
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	1
+S	contains	{brownie batter}
+S	in	[oven]
+//
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	0
+S	contains	{brownie batter}
+S	in	[oven]
+O	brownie batter	1
+S	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S	leveled
+S	in	[baking tray]
+M	cook	5:50	6:00
+O	baking tray	0
+S	contains	{brownie}
+S	in	[oven]
+O	brownie	1
+S	baked
+S	in	[baking tray]
+//
+O	baking tray	1
+S	contains	{brownie}
+S	in	[oven]
+O	oven	0
+S	on
+S	with	[baking tray]
+M	remove	Assumed	Assumed
+O	baking tray	1
+S	contains	{brownie}
+O	oven	0
+S	off
+//
+O	baking tray	1
+S	contains	{brownie}
+O	brownie	1
+S	baked
+S	in	[baking tray]
+O	cutting board	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{brownie}
+O	brownie	1
+S	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S	baked
+S	on	[cutting board]
+O	baking tray	1
+//
+O	brownie	1
+S	baked
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{brownie}
+O	knife	1
+M	cut	6:06	6:15
+O	brownie	1	5
+S	contains	{flour mixture,coffee,egg mixture,brownie batter,sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S	baked
+S	divided
+S	in	[baking tray]
+//

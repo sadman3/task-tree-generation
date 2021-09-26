@@ -1,0 +1,548 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0002-bacon_macaroni_and_gruyere.mp4
+# Source:	https://www.youtube.com/watch?v=uwdx1voIcq8
+//
+O	faucet	1
+S	off (ready)
+O	measuring cup	0
+S	empty
+M	pick-and-place	<Assumed>
+O	measuring cup	0
+S	below	[faucet]
+S	empty
+//
+O	faucet	1
+S	off (ready)
+M	turn on	<Assumed>
+O	faucet	1
+S	on
+O	water	0
+S	from	[faucet]
+S	liquid
+//
+O	faucet	1
+S	on
+O	water	0
+S	from	[faucet]
+S	liquid
+O	measuring cup	0
+S	below	[faucet]
+S	empty
+M	fill	<Assumed>
+O	measuring cup	0
+S	below	[faucet]
+S	contains	{water}
+O	water	0
+S	in	[measuring cup]
+S	liquid
+//
+O	faucet	1
+S	on
+O	water	0
+S	from	[faucet]
+S	liquid
+M	turn off	<Assumed>
+O	faucet	1
+S	off
+//
+O	measuring cup	1
+S	empty
+O	stove	0
+S	off (ready)
+M	pick-and-place	<Assumed>
+O	pot	1
+S	on	[stove]
+S	empty
+O	stove	0
+S	off (ready)
+S	with	[pot]
+//
+O	stove	0
+S	off (ready)
+S	with	[pot]
+M	turn on	<Assumed>
+O	stove	0
+S	on
+S	with	[pot]
+//
+O	pot	0
+S	on	[stove]
+S	empty
+O	measuring cup	1
+S	below	[faucet]
+S	contains	{water}
+O	water	1
+S	liquid
+S	in	[measuring cup]
+M	pour	<Assumed>
+O	pot	0
+S	on	[stove]
+S	contains	{water}
+O	water	1
+S	liquid
+S	in	[pot]
+//
+O	pot	1
+S	on	[stove]
+S	contains	{water}
+O	stove	0
+S	on
+S	with	[pot]
+M	boil	<Assumed>
+O	pot	1
+S	on	[stove]
+S	hot
+S	contains	{water}
+O	water	0
+S	liquid
+S	boiling
+S	in	[pot]
+//
+O	pot	0
+S	on	[stove]
+S	hot
+S	contains	{water}
+O	shaker	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[shaker]
+M	sprinkle	<Assumed>
+O	pot	0
+S	on	[stove]
+S	hot
+S	contains	{salt,water}
+O	salt	1
+S	granulated
+S	in	[pot]
+//
+O	pot	0
+S	on	[stove]
+S	hot
+S	contains	{salt,water}
+O	jar	1
+S	contains	{macaroni}
+O	macaroni	1
+S	in	[jar]
+S	raw
+M	pour	<0:26,0:40>
+O	pot	0
+S	on	[stove]
+S	hot
+S	contains	{macaroni,salt,water}
+O	macaroni	1
+S	in	[pot]
+S	raw
+//
+O	pot	0
+S	on	[stove]
+S	hot
+S	contains	{macaroni,salt,water}
+O	macaroni	1
+S	in	[pot]
+S	raw
+M	cook	<Assumed>
+O	macaroni	0
+S	in	[pot]
+S	cooked
+//
+O	cutting board	0
+S	empty
+O	rosemary	1
+S	stem
+M	pick-and-place	<0:55,0:57>
+O	cutting board	0
+S	contains	{rosemary}
+O	rosemary	1
+S	on	[cutting board]
+S	stem
+//
+O	rosemary	1
+S	on	[cutting board]
+S	stem
+O	knife	1
+M	chop	<1:01,1:28>
+O	rosemary	1
+S	on	[cutting board]
+S	chopped
+//
+O	measuring cup	1
+S	empty
+O	stove	0
+S	off (ready)
+M	pick-and-place	<Assumed>
+O	pot	1
+S	on	[stove]
+S	empty
+O	stove	0
+S	off (ready)
+S	with	[skillet]
+//
+O	stove	0
+S	off (ready)
+S	with	[skillet]
+M	turn on	<Assumed>
+O	stove	0
+S	on
+S	with	[skillet]
+//
+O	pot	0
+S	on	[stove]
+S	empty
+O	stove	0
+S	on
+S	with	[skillet]
+M	heat	<Assumed>
+O	skillet	0
+S	on	[stove]
+S	hot
+S	empty
+//
+O	bottle	1
+S	contains	{heavy cream}
+O	heavy cream	1
+S	creamy
+S	in	[bottle]
+O	skillet	0
+S	on	[stove]
+S	hot
+S	empty
+M	pour	<1:30,1:37>
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{heavy cream}
+O	heavy cream	0
+S	creamy
+S	in	[skillet]
+//
+O	cutting board	0
+S	contains	{rosemary}
+O	rosemary	1
+S	chopped
+S	on	[cutting board]
+O	scraper	1
+M	scoop	<1:46,1:48>
+O	scraper	1
+S	contains	{rosemary}
+O	rosemary	1
+S	chopped
+S	on	[scraper]
+O	cutting board	0
+S	empty
+//
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{heavy cream}
+O	scraper	1
+S	contains	{rosemary}
+O	rosemary	1
+S	chopped
+S	on	[scrapper]
+M	pour	<1:49,1:50>
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{heavy cream,rosemary}
+O	rosemary	0
+S	chopped
+S	in	[skillet]
+//
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{heavy cream,rosemary}
+O	bowl	1
+S	contains	{salt}
+O	salt	1
+S	in	[bowl]
+S	granulated
+M	sprinkle	<1:50,1:53>
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{heavy cream,rosemary,salt}
+O	salt	1
+S	in	[skillet]
+S	granulated
+//
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{heavy cream,rosemary,salt}
+O	pepper mill	1
+S	contains	{black pepper}
+O	black pepper	1
+S	whole
+S	in	[pepper mill]
+M	grind	<1:57,2:04>
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{black pepper,heavy cream,rosemary,salt}
+O	black pepper	0
+S	ground
+S	in	[skillet]
+//
+O	cutting board	0
+S	empty
+O	gruyere	1
+S	with	[rind]
+M	pick-and-place	<2:16,2:17>
+O	cutting board	0
+S	contains	{gruyere}
+O	gruyere	1
+S	on	[cutting board]
+S	with	[rind]
+//
+O	gruyere	1
+S	on	[cutting board]
+S	with	[rind]
+O	knife	1
+M	cut	<2:17,2:22>
+O	gruyere	0
+S	on	[cutting board]
+S	wedge
+//
+O	gruyere	1
+S	on	[cutting board]
+S	wedge
+O	grater	0
+M	grate	<2:33,2:38>
+O	gruyere	1
+S	on	[cutting board]
+S	grated
+//
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{black pepper,heavy cream,rosemary,salt}
+O	heavy cream	0
+S	creamy
+S	in	[skillet]
+M	simmer	<Assumed>
+O	white sauce	0
+S	contains	{black pepper,heavy cream,rosemary,salt}
+S	in	[skillet]
+S	thick liquid
+//
+O	packet	1
+S	contains	{bacon}
+O	bacon	1
+S	in	[packet]
+S	sliced
+S	raw
+O	cutting board	0
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{bacon}
+O	bacon	1
+S	sliced
+S	raw
+S	on	[cutting board]
+//
+O	bacon	1
+S	sliced
+S	raw
+S	on	[cutting board]
+O	knife	1
+M	chop	<Assumed>
+O	bacon	1
+S	chopped
+S	raw
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{bacon}
+O	bacon	1
+S	chopped
+S	raw
+S	on	[cutting board]
+O	skillet	0
+S	on	[stove]
+S	hot
+S	empty
+M	pick-and-place	<Assumed>
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{bacon}
+O	bacon	0
+S	chopped
+S	in	[skillet]
+S	raw
+//
+O	stove	0
+S	on
+S	with	[skillet]
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{bacon}
+O	bacon	0
+S	chopped
+S	in	[skillet]
+S	raw
+M	fry	<Assumed>
+O	bacon	1
+S	chopped
+S	cooked
+S	in	[skillet]
+//
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{bacon}
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{black pepper,heavy cream,rosemary,salt}
+O	bacon	1
+S	chopped
+S	in	[skillet]
+S	cooked
+O	spoon	1
+M	scoop and pour	<3:12,3:23>
+O	skillet	0
+S	on	[stove]
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{bacon,black pepper,heavy cream,rosemary,salt}
+O	skillet	0
+S	on	[stove]
+S	empty
+//
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{bacon,black pepper,heavy cream,rosemary,salt}
+O	skimmer	1
+O	pot	0
+S	on	[stove]
+S	contains	{macaroni,salt,water}
+O	macaroni	1
+S	in	[skimmer]
+S	cooked
+M	scoop and pour	<3:31,3:34>
+O	skimmer	1
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{bacon,black pepper,heavy cream,macaroni,rosemary,salt}
+O	macaroni	1
+S	in	[skillet]
+S	cooked
+//
+O	skillet	0
+S	on	[stove]
+S	hot
+S	contains	{bacon,black pepper,heavy cream,macaroni,rosemary,salt}
+O	macaroni	1
+S	in	[skillet]
+S	cooked
+O	white sauce	1
+S	contains	{black pepper,heavy cream,rosemary,salt}
+S	thick liquid
+S	in	[skillet]
+O	bacon	1
+S	chopped
+S	in	[skillet]
+S	cooked
+M	mix	<3:38,3:40>
+O	pasta	1
+S	contains	{bacon,black pepper,heavy cream,macaroni,rosemary,salt}
+S	mixed
+S	in	[skillet]
+//
+O	skillet	0
+S	on	[stove]
+S	contains	{bacon,black pepper,heavy cream,macaroni,rosemary,salt}
+O	gruyere	1
+S	on	[cutting board]
+S	grated
+M	pick-and-place	<3:46,3:48>
+O	skillet	0
+S	on	[stove]
+S	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+O	gruyere	0
+S	grated
+S	in	[skillet]
+//
+O	skillet	0
+S	on	[stove]
+S	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+O	pasta	1
+S	contains	{bacon,black pepper,heavy cream,macaroni,rosemary,salt}
+S	mixed
+S	in	[skillet]
+O	gruyere	0
+S	grated
+S	in	[skillet]
+O	spoon	1
+M	mix	<3:56,4:04>
+O	macaroni and cheese	1
+S	in	[skillet]
+S	mixed
+S	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+//
+O	skillet	0
+S	on	[stove]
+S	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+O	macaroni and cheese	1
+S	in	[skillet]
+S	mixed
+S	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+O	spoon	1
+O	bowl	0
+S	empty
+M	scoop and pour	<4:21:50,4:24>
+O	bowl	0
+S	contains	{macaroni and cheese}
+O	macaroni and cheese	1
+S	in	[bowl]
+S	mixed
+S	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+O	spoon	1
+//
+O	cutting board	0
+S	empty
+O	chive	1
+S	stem
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{chive}
+O	chive	1
+S	on	[cutting board]
+S	stem
+//
+O	cutting board	0
+S	contains	{chive}
+O	chive	0
+S	on	[cutting board]
+S	stem
+O	knife	1
+M	chop	<4:24,4:26>
+O	chive	0
+S	chopped
+S	on	[cutting board]
+//
+O	chive	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	contains	{macaroni and cheese}
+O	macaroni and cheese	0
+S	in	[bowl]
+S	mixed
+S	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+M	sprinkle	<4:26,4:28>
+O	chive	1
+S	chopped
+S	in	[bowl]
+O	macaroni and cheese	0	13
+S	in	[bowl]
+S	mixed
+S	ready
+S	contains	{bacon,black pepper,chive,gruyere,heavy cream,macaroni,rosemary,salt}
+//

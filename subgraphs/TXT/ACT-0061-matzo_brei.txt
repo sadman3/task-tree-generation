@@ -1,0 +1,188 @@
+O	matzo	1
+S	baked
+O	plate	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{matzo}
+O	matzo	1
+S	baked
+S	on	[plate]
+//
+O	plate	0
+S	contains	{matzo}
+O	matzo	0
+S	baked
+S	on	[plate]
+M	break	0:32	0:36
+O	matzo	0
+S	broken
+//
+O	bowl	0
+S	contains	{water}
+O	matzo	1
+S	broken
+M	pick-and-place	0:37	0:38
+O	bowl	0
+S	contains	{water,matzo}
+O	matzo	1
+S	broken
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{water,matzo}
+O	water	0
+S	in	[bowl]
+O	matzo	1
+S	broken
+S	in	[bowl]
+M	press	0:38	0:46
+O	matzo	1
+S	soaked
+S	in	[bowl]
+//
+O	bowl	1
+S	contains	{water,matzo}
+O	matzo	0
+S	soaked
+S	in	[bowl]
+O	water	0
+S	in	[bowl]
+M	drain	0:49	1:01
+O	bowl	1
+S	contains	{matzo}
+O	matzo	0
+S	mashed
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{matzo}
+O	egg	1
+S	uncracked
+M	crack	1:02	1:08
+O	bowl	0
+S	contains	{matzo,egg white and yolk}
+O	egg white and yolk	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{matzo,egg white and yolk}
+O	grinder	1
+S	contains	{salt}
+O	salt	1
+S	in	[grinder]
+M	grind	1:09	1:12
+O	bowl	0
+S	contains	{matzo,egg white and yolk,salt}
+O	salt	0
+S	granulated
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{matzo,egg white and yolk,salt}
+O	matzo	1
+S	mashed
+S	in	[bowl]
+O	salt	1
+S	granulated
+S	in	[bowl]
+O	spoon	1
+O	egg white and yolk	1
+S	in	[bowl]
+M	mix	1:13	1:21
+O	bowl	0
+S	contains	{matzo mixture}
+O	matzo mixture	0
+S	contains	{matzo,egg white and yolk,salt}
+S	in	[bowl]
+//
+O	bowl	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	in	[bowl]
+O	cooking pan	0
+S	heated
+S	on	[stove]
+M	pour	1:24	1:28
+O	cooking pan	0
+S	contains	{vegetable oil}
+S	on	[stove]
+O	vegetable oil	0
+S	in	[pan]
+//
+O	bowl	1
+S	contains	{matzo mixture}
+O	matzo mixture	1
+S	contains	{matzo,egg white and yolk,salt}
+S	in	[bowl]
+O	cooking pan	0
+S	contains	{vegetable oil}
+S	on	[stove]
+O	spoon	1
+M	scrape	1:33	1:38
+O	cooking pan	0
+S	contains	{matzo mixture}
+S	on	[stove]
+O	matzo mixture	1
+S	contains	{matzo,egg white and yolk,salt}
+S	in	[pan]
+O	bowl	1
+//
+O	cooking pan	0
+S	contains	{matzo mixture}
+S	on	[stove]
+O	matzo mixture	1
+S	contains	{matzo,egg white and yolk,salt}
+S	in	[pan]
+O	spoon	1
+M	spread	1:39	1:45
+O	matzo brei	1
+S	partly cooked
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{matzo mixture}
+S	on	[stove]
+O	matzo brei	1
+S	partly cooked
+S	in	[pan]
+O	turner	1
+M	flip	1:55	1:58
+O	matzo brei	1
+S	flipped
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{matzo mixture}
+S	on	[stove]
+O	matzo brei	1
+S	flipped
+S	in	[pan]
+O	stove	0
+S	on
+S	with	[pan]
+M	cook	Assumed	Assumed
+O	matzo brei	1
+S	cooked
+S	in	[pan]
+O	cooking pan	0
+S	contains	{matzo brei}
+S	on	[stove]
+//
+O	matzo brei	1
+S	cooked
+S	in	[pan]
+O	cooking pan	0
+S	contains	{matzo brei}
+S	on	[stove]
+O	turner	1
+O	plate	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	matzo brei	1	5
+S	contains	{vegetable oil,matzo,water,matzo mixture,egg white and yolk,salt}
+S	cooked
+S	on	[plate]
+O	plate	0
+S	contains	{matzo brei}
+//

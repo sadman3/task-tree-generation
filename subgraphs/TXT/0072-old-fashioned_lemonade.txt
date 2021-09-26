@@ -1,0 +1,351 @@
+# Source:	https://www.youtube.com/watch?v=MbCAiWBhAjo
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0072-old-fashioned_lemonade.mp4
+//
+O	lemon	1
+S	whole
+O	colander	0
+S	empty
+M	pick-and-place	<Assumed>
+O	colander	0
+S	contains	{lemon}
+O	lemon	1
+S	whole
+S	in	[colander]
+//
+O	faucet	1
+S	on
+O	water	0
+S	liquid
+S	from	[faucet]
+O	colander	1
+S	contains	{lemon}
+O	lemon	1
+S	in	[colander]
+S	whole
+M	wash	<Assumed>
+O	lemon	1
+S	washed
+S	whole
+S	in	[colander]
+//
+O	bowl	0
+S	empty
+O	colander	0
+S	contains	{lemon}
+O	lemon	1
+S	washed
+S	whole
+S	in	[colander]
+M	pick-and-place	<Assumed>
+O	bowl	0
+S	contains	{lemon}
+O	lemon	1
+S	whole
+S	in	[bowl]
+O	colander	0
+S	empty
+//
+O	cutting board	0
+S	empty
+O	lemon	1
+S	whole
+S	in	[bowl]
+M	roll	<0:15-0:26>
+O	lemon	1
+S	softened
+S	whole
+S	on	[cutting board]
+//
+O	container	0
+S	empty
+O	grater	1
+M	pick-and-place	<Assumed>
+O	container	0
+S	empty
+S	under	[grater]
+O	grater	1
+S	on	[container]
+//
+O	lemon	1
+S	softened
+S	whole
+S	on	[cutting board]
+O	grater	0
+S	on	[container]
+O	container	0
+S	empty
+S	under	[grater]
+M	grate	<0:27-0:31>
+O	lemon	1
+S	softened
+S	whole
+S	zested
+S	on	[cutting board]
+O	container	0
+S	contains	{lemon zest}
+O	lemon	1
+S	grated
+S	in	[container]
+//
+O	saucepan	1
+S	empty
+O	stove	0
+S	off
+M	pick-and-place	<Assumed>
+O	saucepan	1
+S	empty
+S	on	[stove]
+O	stove	0
+S	off
+S	under	[saucepan]
+//
+O	saucepan	0
+S	empty
+S	on	[stove]
+O	measuring cup	1
+S	contains	{water}
+O	water	1
+S	liquid
+S	in	[measuring cup]
+M	pour	<0:40-0:43>
+O	saucepan	0
+S	contains	{water}
+S	on	[stove]
+O	water	1
+S	liquid
+S	in	[saucepan]
+O	measuring cup	1
+S	empty
+//
+O	bowl	1
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+O	saucepan	0
+S	contains	{water}
+S	on	[stove]
+M	pour	<0:45-0:49>
+O	saucepan	0
+S	contains	{sugar,water}
+S	on	[stove]
+O	sugar	1
+S	granulated
+S	in	[saucepan]
+O	bowl	1
+S	empty
+//
+O	saucepan	0
+S	contains	{sugar,water}
+S	on	[stove]
+O	container	1
+S	contains	{lemon zest}
+O	lemon	1
+S	grated
+S	in	[container]
+M	pour	<0:51-0:53>
+O	saucepan	0
+S	contains	{lemon zest,sugar,water}
+S	on	[stove]
+O	lemon	1
+S	grated
+S	in	[saucepan]
+O	container	1
+S	empty
+//
+O	stove	0
+S	on
+S	under	[saucepan]
+O	saucepan	1
+S	contains	{lemon zest,sugar,water}
+S	on	[stove]
+O	water	1
+S	liquid
+S	in	[saucepan]
+M	boil	<Assumed>
+O	saucepan	1
+S	hot
+S	contains	{lemon zest,sugar,water}
+S	on	[stove]
+O	water	1
+S	liquid
+S	boiling
+S	in	[saucepan]
+//
+O	stove	0
+S	on
+S	under	[saucepan]
+O	saucepan	1
+S	hot
+S	contains	{lemon zest,sugar,water}
+S	on	[stove]
+O	water	1
+S	liquid
+S	boiling
+S	in	[saucepan]
+O	lemon	1
+S	grated
+S	in	[saucepan]
+O	sugar	1
+S	granulated
+S	in	[saucepan]
+O	spoon	1
+S	empty
+M	cook and stir	<0:55-1:05>
+O	juice	1
+S	mixed
+S	contains	{lemon zest,sugar,water}
+S	in	[saucepan]
+//
+O	lemon	1
+S	softened
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	cut	<1:08-1:09>
+O	lemon	1
+S	halved
+S	on	[cutting board]
+//
+O	squeezer	0
+S	empty
+O	lemon	1
+S	halved
+S	on	[cutting board]
+M	squeeze	<1:10-1:20>
+O	squeezer	0
+S	contains	{lemon juice}
+S	on	[surface]
+O	lemon	1
+S	juice
+S	in	[squeezer]
+O	lemon juice	1
+S	juice
+S	in	[squeezer]
+O	lemon	1
+S	halved
+S	squeezed
+S	on	[cutting board]
+//
+O	strainer	1
+S	empty
+O	bowl	0
+S	empty
+M	pick-and-place	<Assumed>
+O	strainer	1
+S	empty
+S	on	[bowl]
+O	bowl	0
+S	empty
+S	under	[strainer]
+//
+O	squeezer	1
+S	contains	{lemon juice}
+S	on	[surface]
+O	lemon	1
+S	juice
+S	in	[squeezer]
+O	strainer	0
+S	empty
+S	on	[bowl]
+O	bowl	0
+S	empty
+S	under	[strainer]
+M	pour	<1:22-1:54>
+O	strainer	0
+S	contains	{pulp}
+S	on	[bowl]
+O	bowl	0
+S	contains	{lemon juice}
+S	under	[strainer]
+O	lemon	1
+S	juice
+S	in	[bowl]
+//
+O	saucepan	1
+S	hot
+S	contains	{lemon zest,sugar,water}
+S	on	[stove]
+O	juice	1
+S	mixed
+S	contains	{lemon zest,sugar,water}
+S	in	[saucepan]
+O	strainer	0
+S	contains	{pulp}
+S	on	[bowl]
+O	bowl	0
+S	contains	{lemon juice}
+S	under	[strainer]
+M	pour and strain	<1:29-1:32>
+O	strainer	0
+S	contains	{lemon zest,pulp}
+S	on	[bowl]
+O	bowl	0
+S	contains	{lemon juice,sugar,water}
+S	under	[strainer]
+O	lemonade	1
+S	mixed
+S	contains	{lemon juice,lemon zest,sugar,water}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{lemon juice}
+S	under	[strainer]
+O	strainer	1
+S	contains	{lemon zest,pulp}
+S	on	[bowl]
+M	remove	<Assumed>
+O	strainer	1
+S	contains	{lemon zest,pulp}
+O	bowl	0
+S	contains	{lemon juice,sugar,water}
+//
+O	bowl	1
+S	contains	{lemon juice,sugar,water}
+O	lemonade	1
+S	mixed
+S	contains	{lemon juice,lemon zest,sugar,water}
+S	in	[bowl]
+O	pitcher	0
+S	empty
+M	pour	<1:34-1:39>
+O	pitcher	0
+S	contains	{lemonade}
+O	lemonade	1
+S	mixed
+S	contains	{lemon juice,lemon zest,sugar,water}
+S	in	[pitcher]
+//
+O	bowl	1
+S	contains	{ice}
+O	ice	1
+S	frozen
+S	crushed
+S	in	[bowl]
+O	drinking glass	0
+S	empty
+M	pick-and-place	<1:53-1:55>
+O	drinking glass	0
+S	contains	{ice}
+O	ice	1
+S	frozen
+S	crushed
+S	in	[drinking glass]
+//
+O	drinking glass	0
+S	contains	{ice}
+O	pitcher	1
+S	contains	{lemonade}
+O	lemonade	1
+S	mixed
+S	contains	{lemon juice,lemon zest,sugar,water}
+S	in	[pitcher]
+M	pour	<1:57-2:03>
+O	drinking glass	0
+S	contains	{lemonade,ice}
+O	lemonade	1	9
+S	mixed
+S	liquid
+S	contains	{lemon juice,lemon zest,sugar,water}
+S	in	[drinking glass]
+//

@@ -1,0 +1,657 @@
+# Source:	https://www.youtube.com/watch?v=3P8QLuWGmNI
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0074-tuna_patties.mp4
+//
+O	can	0
+S	sealed
+S	contains	{tuna}
+O	can opener	1
+M	open	<Assumed>
+O	can	0
+S	opened
+S	contains	{olive oil,tuna}
+//
+O	can	1
+S	contains	{olive oil,tuna}
+S	opened
+O	olive oil	1
+S	in	[can]
+S	liquid
+O	tuna	1
+S	in	[can]
+S	shredded
+O	strainer	0
+S	empty
+S	on	[bowl]
+O	bowl	0
+S	with	[strainer]
+S	empty
+M	pour	<0:00,0:01>
+O	strainer	0
+S	on	[bowl]
+S	contains	{tuna}
+O	olive oil	1
+S	in	[tuna]
+S	liquid
+O	tuna	1
+S	in	[strainer]
+S	shredded
+//
+O	strainer	1
+S	on	[bowl]
+S	contains	{olive oil,tuna}
+O	tuna	0
+S	in	[strainer]
+S	shredded
+O	fork	1
+O	olive oil	1
+S	in	[tuna]
+S	liquid
+O	bowl	0
+S	with	[strainer]
+S	empty
+M	press	<0:14,0:20>
+O	strainer	1
+S	on	[bowl]
+S	contains	{tuna}
+O	tuna	0
+S	in	[strainer]
+S	pressed
+S	shredded
+O	bowl	0
+S	with	[strainer]
+S	contains	{olive oil}
+//
+O	bowl	0
+S	with	[strainer]
+S	contains	{olive oil}
+O	strainer	1
+S	on	[bowl]
+S	contains	{tuna}
+M	remove	<Assumed>
+O	bowl	0
+S	contains	{olive oil}
+O	strainer	1
+S	contains	{tuna}
+//
+O	mixing bowl	0
+S	empty
+O	strainer	1
+S	contains	{tuna}
+O	tuna	1
+S	in	[strainer]
+S	shredded
+S	squeezed
+M	pour	<0:21,0:24>
+O	strainer	1
+S	empty
+O	bowl	0
+S	contains	{tuna}
+O	tuna	1
+S	shredded
+S	in	[bowl]
+//
+O	onion	1
+S	unpeeled
+S	whole
+S	on	[cutting board]
+M	peel	<Assumed>
+O	onion	1
+S	whole
+S	on	[cutting board]
+S	peeled
+//
+O	onion	0
+S	whole
+S	on	[cutting board]
+S	peeled
+O	knife	1
+M	cut	<0:31,0:32>
+O	onion	0
+S	halved
+S	on	[cutting board]
+S	peeled
+//
+O	onion	0
+S	halved
+S	on	[cutting board]
+S	peeled
+O	knife	1
+M	chop	<0:46,0:55>
+O	onion	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	1
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	scrape	<Assumed>
+O	bowl	0
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	in	[bowl]
+O	cutting board	1
+S	empty
+//
+O	bowl	1
+S	contains	{onion}
+O	onion	1
+S	in	[bowl]
+S	chopped
+O	mixing bowl	0
+S	contains	{tuna}
+M	pour	<0:56,0:59>
+O	mixing bowl	0
+S	contains	{onion,tuna}
+O	onion	1
+S	in	[mixing bowl]
+S	chopped
+O	bowl	1
+S	empty
+//
+O	garlic press	1
+S	empty
+S	closed
+M	open	<Assumed>
+O	garlic press	1
+S	empty
+S	opened
+//
+O	garlic press	0
+S	empty
+S	opened
+O	garlic	1
+S	clove
+S	peeled
+M	insert	<Assumed>
+O	garlic press	0
+S	opened
+S	contains	{garlic}
+O	garlic	1
+S	clove
+S	in	[garlic press]
+S	peeled
+//
+O	mixing bowl	0
+S	contains	{onion,tuna}
+O	garlic press	1
+S	contains	{garlic}
+S	opened
+O	garlic	1
+S	clove
+S	in	[garlic press]
+S	peeled
+O	knife	1
+M	squeeze and scrape	<1:00-1:04,1:05-1:07>
+O	mixing bowl	0
+S	contains	{garlic,onion,tuna}
+O	garlic	1
+S	in	[mixing bowl]
+S	minced
+O	garlic press	1
+S	closed
+//
+O	bowl	0
+S	empty
+O	chive	1
+S	leaf
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{chive}
+O	chive	1
+S	leaf
+S	on	[cutting board]
+S	whole
+//
+O	chive	0
+S	leaf
+S	on	[cutting board]
+S	whole
+O	knife	1
+M	chop	<1:09,1:16>
+O	chive	1
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	1
+S	contains	{chive}
+O	chive	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	scrape	<Assumed>
+O	cutting board	0
+S	contains	{chive}
+O	chive	1
+S	chopped
+S	in	[bowl]
+O	cutting board	1
+S	empty
+//
+O	cutting board	1
+S	contains	{chive}
+O	chive	1
+S	chopped
+S	in	[bowl]
+O	mixing bowl	0
+S	contains	{garlic,onion,tuna}
+M	pour	<1:16,1:18>
+O	mixing bowl	0
+S	contains	{chive,garlic,onion,tuna}
+O	chive	1
+S	chopped
+S	in	[mixing bowl]
+O	bowl	1
+S	empty
+//
+O	bowl	0
+S	empty
+O	chive	1
+S	leaf
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{parsley}
+O	chive	1
+S	leaf
+S	on	[cutting board]
+S	whole
+//
+O	parsley	1
+S	on	[cutting board]
+S	whole
+O	knife	1
+M	chop	<1:20,1:28>
+O	chive	1
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	1
+S	contains	{parsley}
+O	chive	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	scrape	<Assumed>
+O	cutting board	0
+S	contains	{parsley}
+O	chive	1
+S	chopped
+S	in	[bowl]
+O	cutting board	1
+S	empty
+//
+O	cutting board	1
+S	contains	{parsley}
+O	chive	1
+S	chopped
+S	in	[bowl]
+O	mixing bowl	0
+S	contains	{chive,garlic,onion,tuna}
+M	pour	<1:29,1:31>
+O	mixing bowl	0
+S	contains	{chive,garlic,onion,parsley,tuna}
+O	chive	1
+S	chopped
+S	in	[mixing bowl]
+O	bowl	1
+S	empty
+//
+O	blender jar	1
+S	empty
+O	blender	0
+S	off
+M	attach	<Assumed>
+O	blender jar	1
+S	empty
+S	attached to	[blender]
+O	blender	0
+S	with	[blender jar]
+//
+O	blender jar	0
+S	empty
+S	attached to	[blender]
+O	bowl	1
+S	contains	{oats}
+O	oats	1
+S	grain
+S	uncooked
+S	in	[bowl]
+M	pour	<1:32,1:36>
+O	blender jar	0
+S	contains	{oats}
+S	attached to	[blender]
+O	oats	1
+S	grain
+S	uncooked
+S	in	[blender jar]
+O	bowl	1
+S	empty
+//
+O	blender jar	0
+S	contains	{oats}
+S	attached to	[blender]
+O	blender lid	1
+M	cover	<1:38,1:40>
+O	blender lid	1
+S	on	[blender jar]
+O	blender jar	0
+S	covered	[blender lid]
+S	contains	{oats}
+S	attached to	[blender]
+//
+O	blender	0
+S	with	[blender jar]
+O	blender jar	0
+S	covered	[blender lid]
+S	contains	{oats}
+S	attached to	[blender]
+O	oats	1
+S	grain
+S	uncooked
+S	in	[blender jar]
+M	blend	<1:43,1:48>
+O	blender jar	0
+S	covered	[blender lid]
+S	contains	{oats}
+S	attached to	[blender]
+O	oats	1
+S	in	[blender jar]
+S	crushed
+S	uncooked
+//
+O	blender jar	0
+S	covered	[blender lid]
+S	contains	{oats}
+S	attached to	[blender]
+O	blender lid	1
+S	on	[blender jar]
+M	uncover	<2:52,2:53>
+O	blender lid	1
+O	blender jar	0
+S	contains	{oats}
+S	attached to	[blender]
+//
+O	blender jar	0
+S	contains	{oats}
+S	attached to	[blender]
+O	blender	0
+S	with	[blender jar]
+M	detach	<Assumed>
+O	blender jar	0
+S	contains	{oats}
+O	blender	0
+S	off
+//
+O	blender jar	1
+S	contains	{oats}
+O	oats	1
+S	in	[blender jar]
+S	crushed
+S	uncooked
+O	mixing bowl	0
+S	contains	{chive,garlic,onion,parsley,tuna}
+M	pour	<1:52,1:55>
+O	mixing bowl	0
+S	contains	{chive,garlic,oats,onion,parsley,tuna}
+O	oats	1
+S	in	[mixing bowl]
+S	crushed
+S	uncooked
+O	blender jar	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{chive,garlic,oats,onion,parsley,tuna}
+O	spoon	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[spoon]
+M	pour	<1:56,1:58>
+O	mixing bowl	0
+S	contains	{chive,garlic,oats,onion,parsley,salt,tuna}
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+//
+O	spoon	1
+S	contains	{chili pepper}
+O	chili pepper	1
+S	flakes
+S	in	[spoon]
+O	mixing bowl	0
+S	contains	{chive,garlic,oats,onion,parsley,salt,tuna}
+M	pour	<1:58,2:00>
+O	mixing bowl	0
+S	contains	{chili pepper,chive,garlic,oats,onion,parsley,salt,tuna}
+//
+O	bowl	0
+S	empty
+O	egg	1
+S	whole
+M	crack	<2:00,2:12>
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	in	[bowl]
+S	raw
+//
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	in	[bowl]
+S	raw
+O	fork	1
+M	beat	<2:13,2:17>
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	beaten
+S	in	[bowl]
+S	raw
+//
+O	bowl	1
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	beaten
+S	in	[bowl]
+S	raw
+O	mixing bowl	0
+S	contains	{chili pepper,chive,garlic,oats,onion,parsley,salt,tuna}
+M	pour	<2:19,2:21>
+O	mixing bowl	0
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+O	egg white and yolk	1
+S	beaten
+S	in	[mixing bowl]
+S	raw
+O	bowl	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+O	egg white and yolk	1
+S	raw
+S	beaten
+S	in	[mixing bowl]
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+O	oats	1
+S	crushed
+S	in	[mixing bowl]
+S	uncooked
+O	tuna	1
+S	in	[mixing bowl]
+S	shredded
+O	garlic	1
+S	in	[mixing bowl]
+S	minced
+O	onion	1
+S	chopped
+S	in	[mixing bowl]
+O	fork	1
+M	mix	<2:23,2:39>
+O	tuna paste	1
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	in	[mixing bowl]
+S	uncooked
+//
+O	mixing bowl	0
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+O	tuna paste	1
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	in	[mixing bowl]
+S	uncooked
+M	roll	<2:40,2:47>
+O	tuna paste	1
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	shaped
+S	uncooked
+//
+O	tuna paste	1
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	shaped
+S	uncooked
+M	press	<2:47,2:50>
+O	tuna patty	1
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	pressed
+S	uncooked
+//
+O	cooking pan	0
+S	empty
+S	on	[stove]
+S	hot
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[bottle]
+S	liquid
+M	pour	<2:50,2:53>
+O	cooking pan	0
+S	on	[stove]
+S	contains	{olive oil}
+S	hot
+O	olive oil	1
+S	in	[cooking pan]
+S	liquid
+//
+O	cooking pan	0
+S	on	[stove]
+S	contains	{olive oil}
+S	hot
+O	tuna patty	1
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	pressed
+S	uncooked
+M	pick-and-place	<2:55,2:59>
+O	tuna patty	1
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	in	[cooking pan]
+S	pressed
+S	uncooked
+O	cooking pan	0
+S	on	[stove]
+S	contains	{olive oil,tuna patty}
+S	hot
+//
+O	stove	0
+S	on
+S	with	[cooking pan]
+O	tuna patty	0
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	in	[cooking pan]
+S	pressed
+S	uncooked
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,tuna patty}
+O	olive oil	1
+S	in	[cooking pan]
+S	liquid
+M	cook	<Assumed>
+O	tuna patty	0
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	in	[cooking pan]
+S	partly cooked
+S	pressed
+//
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,tuna patty}
+O	tuna patty	0
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	in	[cooking pan]
+S	partly cooked
+S	pressed
+O	fork	1
+M	flip	<3:06,3:08>
+O	tuna patty	0
+S	flipped
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	in	[cooking pan]
+S	partly cooked
+S	pressed
+//
+O	stove	0
+S	on
+S	with	[cooking pan]
+O	cooking pan	0
+S	on	[stove]
+S	contains	{olive oil,tuna patty}
+S	hot
+O	tuna patty	1
+S	flipped
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	in	[cooking pan]
+S	partly cooked
+S	pressed
+O	olive oil	1
+S	in	[cooking pan]
+S	liquid
+M	cook	<Assumed>
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{tuna patty}
+O	tuna patty	1
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	cooked
+S	in	[cooking pan]
+S	pressed
+//
+O	cooking pan	0
+S	on	[stove]
+S	contains	{tuna patty}
+S	hot
+O	tuna patty	1
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	cooked
+S	in	[cooking pan]
+S	pressed
+O	bowl	0
+S	empty
+O	fork	1
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{tuna patty}
+O	tuna patty	1	17
+S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+S	cooked
+S	on	[plate]
+S	pressed
+O	cooking pan	0
+S	on	[stove]
+S	empty
+//

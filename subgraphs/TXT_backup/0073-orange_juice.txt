@@ -1,0 +1,87 @@
+# Source:	https://www.youtube.com/watch?v=0AYZ_RT_8ZY
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0073-orange_juice.mp4
+//
+O98	colander	0
+S46	empty
+O272	orange	1
+S155	whole
+M61	pick-and-place	<Assumed>
+O98	colander	0
+S24	contains	{orange}
+O272	orange	1
+S155	whole
+S72	in	[colander]
+//
+O143	faucet	0
+S93	on
+O414	water	0
+S81	liquid
+S58	from	[faucet]
+O98	colander	1
+S24	contains	{orange}
+O272	orange	1
+S72	in	[colander]
+S155	whole
+M120	wash	<Assumed>
+O272	orange	1
+S152	washed
+S155	whole
+S72	in	[colander]
+//
+O121	cutting board	0
+S46	empty
+O98	colander	0
+S24	contains	{orange}
+O272	orange	1
+S72	in	[colander]
+S152	washed
+S155	whole
+M61	pick-and-place	<0:29-0:30,0:37-0:38,0:43-0:44>
+O121	cutting board	0
+S24	contains	{orange}
+O272	orange	1
+S155	whole
+S93	on	[cutting board]
+//
+O272	orange	0
+S155	whole
+S93	on	[cutting board]
+O217	knife	1
+M23	cut	<0:32-0:35,0:38-0:41,0:45-0:48>
+O272	orange	1
+S67	halved
+S93	on	[cutting board]
+//
+O369	squeezer	0
+S46	empty
+O272	orange	1
+S67	halved
+S93	on	[cutting board]
+M102	squeeze	<0:53-1:10,1:13-1:36>
+O369	squeezer	0
+S24	contains	{orange juice}
+O273	orange juice	0
+S74	juice
+S72	in	[squeezer]
+O272	orange	0
+S74	juice
+S72	in	[squeezer]
+O272	orange	1
+S67	halved
+S136	squeezed
+S93	on	[cutting board]
+//
+O369	squeezer	1
+S24	contains	{orange juice}
+O272	orange	1
+S74	juice
+S72	in	[squeezer]
+O128	drinking glass	0
+S46	empty
+M65	pour	<1:45-1:54>
+O128	drinking glass	0	9
+S24	contains	{orange juice}
+O273	orange juice	1	9
+S72	in	[drinking glass]
+S24	contains	{orange}
+//

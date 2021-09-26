@@ -1,0 +1,135 @@
+O	cutting board	0
+S	empty
+O	bread	1
+S	sliced
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{bread}
+O	bread	1
+S	sliced
+S	on	[cutting board]
+//
+O	bowl	0
+S	empty
+O	butter	1
+S	stick
+S	in	[container]
+O	spoon	1
+M	scoop and pour	Assumed	Assumed
+O	bowl	0
+S	contains	{butter}
+O	butter	1
+S	in	[bowl]
+//
+O	cutting board	0
+S	contains	{bread}
+O	bread	1
+S	sliced
+S	on	[cutting board]
+O	bowl	0
+S	contains	{butter}
+O	butter	1
+S	in	[bowl]
+O	knife	1
+M	spread	0:00	0:11
+O	bread	0
+S	buttered
+S	contains	{butter}
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{bread}
+O	plate	0
+S	contains	{turkey}
+O	bread	0
+S	buttered
+S	contains	{butter}
+S	on	[cutting board]
+O	turkey	1
+S	sliced
+S	on	[plate]
+M	pick-and-place	0:12	0:20
+O	bread	0
+S	contains	{butter,turkey}
+S	on	[cutting board]
+O	turkey	1
+S	on	[bread]
+//
+O	cutting board	0
+S	contains	{bread}
+O	bread	0
+S	contains	{butter,turkey}
+S	on	[cutting board]
+O	bowl	0
+S	contains	{jelly}
+O	jelly	0
+S	in	[bowl]
+O	knife	1
+M	spread	0:28	0:33
+O	bread	0
+S	contains	{butter,turkey,jelly}
+S	on	[cutting board]
+O	jelly	1
+S	on	[bread]
+//
+O	cutting board	0
+S	contains	{bread}
+O	bread	0
+S	contains	{butter,turkey,jelly}
+S	on	[cutting board]
+O	bowl	1
+S	contains	{green leaf}
+O	green leaf	1
+S	in	[bowl]
+M	pick-and-place	0:36	0:41
+O	bread	0
+S	contains	{butter,turkey,jelly,green leaf}
+S	on	[cutting board]
+O	green leaf	1
+S	on	[bread]
+//
+O	cutting board	0
+S	contains	{bread}
+O	bread	0
+S	contains	{butter,turkey,jelly,green leaf}
+S	on	[cutting board]
+O	bread	0
+S	buttered	{butter}
+S	on	[cutting board]
+M	pick-and-place	0:43	0:45
+O	cutting board	0
+S	contains	{sandwich}
+O	sandwich	0
+S	contains	{bread,butter,turkey,jelly,green leaf}
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{sandwich}
+O	sandwich	0
+S	contains	{bread,butter,turkey,jelly,green leaf}
+S	on	[cutting board]
+O	knife	1
+M	cut	0:46	0:52
+O	sandwich	0
+S	contains	{bread,butter,turkey,jelly,green leaf}
+S	halved
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{sandwich}
+O	sandwich	1
+S	contains	{bread,butter,turkey,jelly,green leaf}
+S	halved
+S	on	[cutting board]
+O	plate	0
+S	empty
+M	pick-and-place	0:56	1:00
+O	plate	0
+S	contains	{sandwich}
+O	cutting board	0
+O	sandwich	1	4
+S	contains	{bread,butter,turkey,jelly,green leaf}
+S	halved
+S	on	[plate]
+S	ready
+//

@@ -1,0 +1,434 @@
+# Source:	https://www.youtube.com/watch?v=QxiwaeRkwXk
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/ACT-0080-caesar_salad.mp4
+//
+O	blender jar	0
+S	empty
+S	attached to	[blender]
+O	bowl	1
+S	contains	{anchovy}
+O	anchovy	1
+S	in	[bowl]
+S	cooked
+S	whole
+M	pour	<1:07-1:10>
+O	blender jar	0
+S	contains	{anchovy}
+S	attached to	[blender]
+O	anchovy	1
+S	in	[blender jar]
+S	cooked
+S	whole
+//
+O	blender jar	0
+S	contains	{anchovy}
+S	attached to	[blender]
+O	bowl	1
+S	contains	{lemon juice}
+O	lemon juice	1
+S	in	[bowl]
+M	pour	<1:11-1:13>
+O	blender jar	0
+S	contains	{anchovy,lemon juice}
+S	attached to	[blender]
+O	lemon juice	1
+S	in	[blender jar]
+//
+O	blender jar	0
+S	contains	{anchovy,lemon juice}
+S	attached to	[blender]
+O	bowl	1
+S	contains	{garlic}
+O	garlic	1
+S	in	[bowl]
+S	clove
+S	peeled
+M	pour	<1:15-1:17>
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice}
+S	attached to	[blender]
+O	garlic	0
+S	clove
+S	peeled
+S	in	[blender jar]
+//
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice}
+S	attached to	[blender]
+O	blender lid	1
+M	cover	<1:19-1:21>
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice}
+S	attached to	[blender]
+S	covered	[blender lid]
+O	blender lid	1
+S	on	[blender jar]
+//
+O	blender	1
+S	with	[blender jar]
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice}
+S	attached to	[blender]
+S	covered	[blender lid]
+O	garlic	1
+S	in	[blender jar]
+S	clove
+S	peeled
+O	lemon juice	1
+S	in	[blender jar]
+O	anchovy	1
+S	in	[blender jar]
+S	whole
+S	cooked
+M	blend	<1:25-1:28>
+O	mixture	1
+S	mixed
+S	contains	{anchovy,garlic,lemon juice}
+S	in	[blender jar]
+//
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice}
+S	attached to	[blender]
+S	covered
+O	blender lid	1
+S	on	[blender jar]
+M	uncover	<1:32-1:33>
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice}
+S	attached to	[blender]
+O	blender lid	1
+//
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice}
+S	attached to	[blender]
+O	bowl	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[bowl]
+S	liquid
+M	pour	<1:36-1:38>
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice,olive oil}
+S	attached to	[blender]
+O	olive oil	0
+S	in	[blender jar]
+S	liquid
+//
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice,olive oil}
+S	attached to	[blender]
+O	bowl	1
+S	contains	{egg yolk}
+O	egg yolk	1
+S	in	[bowl]
+S	uncooked
+M	pour	<1:39-1:41>
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice,olive oil,egg yolk}
+S	attached to	[blender]
+O	egg yolk	0
+S	uncooked
+S	in	[blender jar]
+//
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice,olive oil,egg yolk}
+S	attached to	[blender]
+O	bowl	1
+S	contains	{mustard}
+O	mustard	1
+S	in	[bowl]
+S	paste
+M	pour	<1:44-1:46>
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice,olive oil,egg yolk,mustard}
+S	attached to	[blender]
+O	mustard	1
+S	in	[blender jar]
+S	paste
+//
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice,olive oil,egg yolk,mustard}
+S	attached to	[blender]
+O	bowl	1
+S	contains	{worcestershire sauce}
+O	worcestershire sauce	1
+S	in	[bowl]
+S	sauce
+M	pour	<1:47-1:48>
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice,olive oil,egg yolk,mustard,worcestershire sauce}
+S	attached to	[blender]
+O	worcestershire sauce	0
+S	in	[blender jar]
+S	sauce
+//
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice,olive oil,egg yolk,mustard,worcestershire sauce}
+S	attached to	[blender]
+O	blender lid	1
+M	pick-and-place	<1:49-1:51>
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice,olive oil,egg yolk,mustard,worcestershire sauce}
+S	attached to	[blender]
+S	covered
+O	blender lid	1
+S	on	[blender jar]
+//
+O	blender	1
+S	with	[blender]
+O	blender jar	0
+S	contains	{anchovy,garlic,lemon juice,olive oil,egg yolk,mustard,worcestershire sauce}
+S	attached to	[blender]
+S	covered
+O	mixture	1
+S	contains	{anchovy,garlic,lemon juice}
+S	in	[blender jar]
+S	mixed
+O	worcestershire sauce	1
+S	in	[blender jar]
+S	sauce
+O	mustard	1
+S	paste
+S	in	[blender jar]
+O	egg yolk	1
+S	raw
+S	in	[blender jar]
+O	olive oil	1
+S	liquid
+S	in	[blender jar]
+M	blend	<1:55-1:58>
+O	blender jar	0
+S	contains	{salad dressing}
+S	attached to	[blender]
+S	covered
+O	salad dressing	0
+S	creamy
+S	contains	{anchovy,egg yolk,garlic,lemon juice,mustard,olive oil,worcestershire sauce}
+S	in	[blender jar]
+S	mixed
+//
+O	blender jar	0
+S	contains	{salad dressing}
+S	attached to	[blender]
+S	covered
+O	blender lid	1
+S	on	[blender jar]
+M	remove	<Assumed>
+O	blender jar	0
+S	contains	{salad dressing}
+S	attached to	[blender]
+O	blender lid	1
+//
+O	blender jar	1
+S	contains	{salad dressing}
+S	attached to	[blender]
+O	bowl	0
+S	empty
+O	salad dressing	1
+S	creamy
+S	mixed
+S	contains	{anchovy,egg yolk,garlic,lemon juice,mustard,olive oil,worcestershire sauce}
+S	in	[blender jar]
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{salad dressing}
+O	salad dressing	1
+S	creamy
+S	contains	{anchovy,egg yolk,garlic,lemon juice,mustard,olive oil,worcestershire sauce}
+S	in	[bowl]
+S	mixed
+//
+O	box	1
+S	contains	{saran wrap}
+O	saran wrap	1
+S	in	[box]
+O	bowl	0
+S	contains	{salad dressing}
+M	cover	<Assumed>
+O	bowl	0
+S	contains	{salad dressing}
+S	covered	[saran wrap]
+O	saran wrap	1
+S	on	[bowl]
+//
+O	fridge	0
+S	on
+O	bowl	1
+S	contains	{salad dressing}
+S	covered	[saran wrap]
+O	salad dressing	1
+S	creamy
+S	contains	{anchovy,egg yolk,garlic,lemon juice,mustard,olive oil,worcestershire sauce}
+S	in	[bowl]
+S	mixed
+M	chill	<Assumed>
+O	salad dressing	0
+S	creamy
+S	chilled
+S	mixed
+S	contains	{anchovy,egg yolk,garlic,lemon juice,mustard,olive oil,worcestershire sauce}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{salad dressing}
+S	covered	[saran wrap]
+O	saran wrap	1
+S	on	[bowl]
+M	uncover	<Assumed>
+O	bowl	0
+S	contains	{salad dressing}
+O	saran wrap	1
+//
+O	packet	0
+S	contains	{lettuce}
+O	lettuce	1
+S	whole
+S	in	[packet]
+O	colander	1
+S	empty
+M	tear apart	<Assumed>
+O	colander	1
+S	contains	{lettuce}
+O	lettuce	1
+S	leaf
+S	in	[colander]
+//
+O	colander	1
+S	contains	{lettuce}
+O	lettuce	1
+S	leaf
+S	in	[colander]
+O	faucet	0
+S	on
+O	water	0
+S	liquid
+S	from	[faucet]
+M	rinse	<Assumed>
+O	lettuce	1
+S	leaf
+S	washed
+S	in	[colander]
+//
+O	salad bowl	0
+S	empty
+O	colander	1
+S	contains	{lettuce}
+O	lettuce	1
+S	leaf
+S	washed
+S	in	[colander]
+M	pick-and-place	<Assumed>
+O	salad bowl	0
+S	contains	{lettuce}
+O	lettuce	1
+S	leaf
+S	washed
+S	in	[salad bowl]
+O	colander	0
+S	empty
+//
+O	bowl	1
+S	contains	{crouton}
+O	crouton	1
+S	in	[bowl]
+S	pieces
+O	salad bowl	0
+S	contains	{lettuce}
+M	pour	<2:48-2:49>
+O	salad bowl	0
+S	contains	{crouton,lettuce}
+O	crouton	1
+S	in	[salad bowl]
+S	pieces
+O	bowl	1
+S	empty
+//
+O	bowl	1
+S	contains	{salad dressing}
+O	salad dressing	1
+S	creamy
+S	contains	{anchovy,egg yolk,garlic,lemon juice,mustard,olive oil,worcestershire sauce}
+S	in	[bowl]
+S	chilled
+S	mixed
+O	salad bowl	0
+S	contains	{crouton,lettuce}
+M	pour	<2:54-2:57>
+O	salad bowl	0
+S	contains	{crouton,lettuce,salad dressing}
+O	salad dressing	1
+S	creamy
+S	contains	{anchovy,egg yolk,garlic,lemon juice,mustard,olive oil,worcestershire sauce}
+S	in	[salad bowl]
+S	mixed
+O	bowl	1
+S	empty
+//
+O	salad bowl	0
+S	contains	{crouton,lettuce,salad dressing}
+O	salad dressing	1
+S	creamy
+S	mixed
+S	contains	{anchovy,egg yolk,garlic,lemon juice,mustard,olive oil,worcestershire sauce}
+S	in	[salad bowl]
+O	crouton	1
+S	in	[salad bowl]
+S	pieces
+O	lettuce	1
+S	in	[salad bowl]
+S	leaf
+S	washed
+O	blender lid	1
+M	mix*	<3:00-3:08>
+O	caesar salad	1
+S	mixed
+S	contains	{anchovy,crouton,egg yolk,garlic,lemon juice,lettuce,mustard,olive oil,worcestershire sauce}
+S	in	[salad bowl]
+//
+O	salad bowl	0
+S	contains	{crouton,lettuce,salad dressing}
+O	bowl	1
+S	contains	{parmesan}
+O	parmesan	1
+S	in	[bowl]
+S	grated
+M	sprinkle	<3:11-3:17>
+O	salad bowl	0
+S	contains	{crouton,lettuce,salad dressing,parmesan}
+O	parmesan	1
+S	in	[salad bowl]
+S	grated
+//
+O	salad bowl	0
+S	contains	{crouton,lettuce,salad dressing,parmesan}
+O	bowl	1
+S	contains	{black pepper}
+O	black pepper	1
+S	in	[bowl]
+S	ground
+M	sprinkle	<Assumed>
+O	salad bowl	0
+S	contains	{crouton,lettuce,salad dressing,parmesan,black pepper}
+O	black pepper	1
+S	in	[salad bowl]
+S	ground
+//
+O	salad bowl	0
+S	contains	{crouton,lettuce,salad dressing,parmesan,black pepper}
+O	caesar salad	1
+S	mixed
+S	contains	{anchovy,crouton,egg yolk,garlic,lemon juice,lettuce,mustard,olive oil,worcestershire sauce}
+S	in	[salad bowl]
+O	black pepper	1
+S	in	[salad bowl]
+S	ground
+O	parmesan	1
+S	in	[salad bowl]
+S	grated
+O	spatula	1
+M	mix	<Assumed>
+O	caesar salad	1	15
+S	mixed
+S	ready
+S	contains	{anchovy,crouton,egg yolk,garlic,lemon juice,lettuce,mustard,olive oil,worcestershire sauce,parmesan,black pepper}
+S	in	[bowl]
+//

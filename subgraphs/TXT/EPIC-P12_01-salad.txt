@@ -1,0 +1,193 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/EPIC-P12_01-salad.MP4
+//
+O	cutting board	0
+S	empty
+O	cucumber	0
+S	unpeeled
+S	halved
+M	pick-and-place	<1:20-1:28>
+O	cutting board	0
+S	contains	{cucumber}
+O	cucumber	1
+S	unpeeled
+S	halved
+S	on	[cutting board]
+//
+O	cucumber	0
+S	unpeeled
+S	halved
+S	on	[cutting board]
+O	knife	0
+M	slice	<1:30-1:48>
+O	cucumber	0
+S	on	[cutting board]
+S	sliced
+//
+O	cucumber	0
+S	on	[cutting board]
+S	sliced
+O	knife	0
+M	chop	<1:50-1:56>
+O	cucumber	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	1
+S	contains	{cucumber}
+O	cucumber	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+O	knife	1
+M	pour and scrape	<2:06-2:09>
+O	bowl	0
+S	contains	{cucumber}
+O	cucumber	1
+S	chopped
+S	in	[bowl]
+//
+O	cutting board	0
+S	empty
+O	apple	0
+S	unpeeled
+S	whole
+M	pick-and-place	<2:28-2:30>
+O	cutting board	0
+S	contains	{apple}
+O	apple	1
+S	unpeeled
+S	on	[cutting board]
+S	whole
+//
+O	apple	0
+S	unpeeled
+S	on	[cutting board]
+S	whole
+O	knife	0
+M	slice	<2:30-2:32>
+O	apple	0
+S	halved
+S	on	[cutting board]
+//
+O	apple	0
+S	halved
+S	on	[cutting board]
+O	knife	0
+M	chop	<2:35-3:10>
+O	apple	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{apple}
+O	apple	0
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	contains	{cucumber}
+O	knife	0
+M	pour and scrape	<3:11-3:16>
+O	bowl	0
+S	contains	{apple,cucumber}
+O	apple	1
+S	chopped
+S	in	[bowl]
+//
+O	shaker	1
+S	contains	{salt}
+O	salt	0
+S	granulated
+S	in	[shaker]
+O	bowl	0
+S	contains	{apple,cucumber}
+M	shake	<3:25-3:30>
+O	bowl	0
+S	contains	{apple,cucumber,salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+//
+O	shaker	1
+S	contains	{black pepper}
+O	black pepper	0
+S	in	[shaker]
+S	ground
+O	bowl	0
+S	contains	{apple,cucumber,salt}
+M	shake	<3:40-3:43>
+O	bowl	0
+S	contains	{apple,black pepper,cucumber,salt}
+O	black pepper	1
+S	in	[bowl]
+S	ground
+//
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bottle]
+O	bowl	0
+S	contains	{apple,black pepper,cucumber,salt}
+M	pour	<3:50-3:56>
+O	bowl	0
+S	contains	{apple,black pepper,cucumber,olive oil,salt}
+O	olive oil	0
+S	liquid
+S	in	[bowl]
+//
+O	packet	0
+S	contains	{mozzarella}
+O	mozzarella	1
+S	block
+S	whole
+S	in	[packet]
+O	cutting board	0
+S	empty
+M	pick-and-place	<4:17-4:20>
+O	cutting board	0
+S	contains	{mozzarella}
+O	mozzarella	1
+S	block
+S	whole
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{mozzarella}
+O	mozzarella	0
+S	block
+S	whole
+S	on	[cutting board]
+O	knife	0
+M	slice	<4:21-4:32>
+O	mozzarella	0
+S	on	[cutting board]
+S	sliced
+//
+O	bowl	0
+S	contains	{apple,black pepper,cucumber,olive oil,salt}
+O	cutting board	0
+S	contains	{mozzarella}
+O	mozzarella	1
+S	on	[cutting board]
+S	sliced
+M	pick-and-place	<4:33-4:40>
+O	bowl	0
+S	contains	{apple,black pepper,cucumber,mozzarella,olive oil,salt}
+O	mozzarella	1
+S	in	[bowl]
+S	sliced
+//
+O	bowl	0
+S	contains	{apple,black pepper,cucumber,mozzarella,olive oil,salt}
+O	bottle	1
+S	contains	{salad dressing}
+O	salad dressing	0
+S	creamy
+S	in	[bottle]
+M	pour	<4:47-4:49>
+O	salad	0	15
+S	mixed
+S	contains	{apple,black pepper,cucumber,salad dressing,mozzarella,olive oil,salt}
+S	in	[bowl]
+//

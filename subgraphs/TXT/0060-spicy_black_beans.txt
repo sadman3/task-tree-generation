@@ -1,0 +1,380 @@
+O	cutting board	0
+S	empty
+O	onion	0
+S	peeled
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{onion}
+O	onion	0
+S	peeled
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{onion}
+O	onion	0
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	chop	Assumed	Assumed
+O	onion	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	empty
+O	garlic	0
+S	peeled
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{garlic}
+O	garlic	0
+S	peeled
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{garlic}
+O	knife	1
+O	garlic	0
+S	peeled
+S	on	[cutting board]
+M	chop	Assumed	Assumed
+O	garlic	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	empty
+O	jalapeno	0
+S	whole
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{jalapeno}
+O	jalapeno	0
+S	whole
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{jalapeno}
+O	knife	1
+O	jalapeno	0
+S	whole
+S	on	[cutting board]
+M	chop	Assumed	Assumed
+O	jalapeno	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	1
+S	contains	{garlic}
+O	garlic	1
+S	chopped
+S	on	[cutting board]
+O	plate	0
+S	empty
+M	scrape	Assumed	Assumed
+O	plate	0
+S	contains	{garlic}
+O	garlic	1
+S	chopped
+S	on	[plate]
+O	cutting board	0
+//
+O	cutting board	1
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	on	[cutting board]
+O	plate	0
+S	contains	{garlic}
+M	scrape	Assumed	Assumed
+O	plate	0
+S	contains	{garlic,onion}
+O	onion	1
+S	chopped
+S	on	[plate]
+O	cutting board	0
+//
+O	cutting board	1
+S	contains	{jalapeno}
+O	jalapeno	1
+S	chopped
+S	on	[cutting board]
+O	plate	0
+S	contains	{garlic,onion}
+M	scrape	Assumed	Assumed
+O	plate	0
+S	contains	{garlic,onion,jalapeno}
+O	jalapeno	1
+S	chopped
+S	on	[plate]
+O	cutting board	0
+//
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[bottle]
+O	cooking pan	0
+S	heated
+S	on	[stove]
+M	pour	Assumed	Assumed
+O	cooking pan	0
+S	greased	{olive oil}
+S	on	[stove]
+//
+O	cooking pan	0
+S	greased	{olive oil}
+S	on	[stove]
+O	plate	0
+S	contains	{jalapeno,onion,garlic}
+O	garlic	1
+S	chopped
+S	on	[plate]
+O	jalapeno	1
+S	chopped
+S	on	[plate]
+O	onion	1
+S	chopped
+S	on	[plate]
+M	pour	0:35	0:39
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic}
+S	on	[stove]
+O	onion	1
+S	chopped
+S	in	[pan]
+O	garlic	1
+S	chopped
+S	in	[pan]
+O	jalapeno	1
+S	chopped
+S	in	[pan]
+O	plate	0
+//
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic}
+S	on	[stove]
+O	spoon	1
+O	onion	1
+S	chopped
+S	in	[pan]
+O	garlic	1
+S	chopped
+S	in	[pan]
+O	jalapeno	1
+S	chopped
+S	in	[pan]
+M	stir	0:41	0:49
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic}
+S	on	[stove]
+O	onion	1
+S	fried
+S	in	[pan]
+O	garlic	1
+S	fried
+S	in	[pan]
+O	jalapeno	1
+S	fried
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic}
+S	on	[stove]
+O	bowl	1
+S	contains	{black bean}
+O	black bean	1
+S	in	[bowl]
+M	pour	0:56	1:00
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean}
+S	on	[stove]
+O	black bean	1
+S	uncooked
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean}
+S	on	[stove]
+O	black bean	0
+S	uncooked
+S	in	[pan]
+O	spoon	1
+M	stir	1:03	1:21
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean}
+S	on	[stove]
+//
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean}
+S	on	[stove]
+O	bowl	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	sprinkle	Assumed	Assumed
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt}
+S	on	[stove]
+O	salt	1
+S	granulated
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt}
+S	on	[stove]
+O	bowl	1
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+M	sprinkle	1:32	1:34
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper}
+S	on	[stove]
+O	black pepper	1
+S	ground
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper}
+S	on	[stove]
+O	spoon	1
+O	black bean	1
+S	uncooked
+S	in	[pan]
+M	stir	1:36	1:41
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper}
+S	on	[stove]
+O	black bean	1
+S	partly cooked
+S	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper}
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper}
+S	on	[stove]
+O	measuring cup	1
+S	contains	{water}
+O	water	1
+S	in	[measuring cup]
+M	pour	1:44	1:46
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water}
+S	on	[stove]
+O	water	1
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water}
+S	on	[stove]
+O	spoon	1
+M	stir	1:48	1:51
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water}
+S	on	[stove]
+//
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water}
+S	on	[stove]
+O	jar	1
+S	contains	{bay leaf}
+O	bay leaf	1
+S	dried
+S	in	[jar]
+M	put inside	2:00	2:07
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water,bay leaf}
+S	on	[stove]
+O	black bean	1
+S	partly cooked
+S	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper,bay leaf}
+S	in	[pan]
+O	bay leaf	1
+S	dried
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water,bay leaf}
+S	on	[stove]
+O	black bean	1
+S	partly cooked
+S	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper,bay leaf}
+S	in	[pan]
+O	pan lid	1
+M	cover	Assumed	Assumed
+O	cooking pan	0
+S	covered
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water,bay leaf}
+S	on	[stove]
+O	pan lid	1
+S	on	[pan]
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	cooking pan	0
+S	covered
+S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper,water,bay leaf}
+S	on	[stove]
+O	black bean	1
+S	partly cooked
+S	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper,bay leaf}
+S	in	[pan]
+M	cook	Assumed	Assumed
+O	cooking pan	0
+S	covered
+S	contains	{black bean}
+S	on	[stove]
+O	black bean	1
+S	cooked
+S	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper,bay leaf}
+S	in	[pan]
+//
+O	cooking pan	0
+S	covered
+S	contains	{black bean}
+S	on	[stove]
+O	pan lid	1
+S	on	[pan]
+M	uncover	2:20:75	2:23
+O	cooking pan	0
+S	contains	{black bean}
+S	on	[stove]
+O	pan lid	1
+//
+O	cooking pan	0
+S	contains	{black bean}
+S	on	[stove]
+O	black bean	1
+S	cooked
+S	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper,bay leaf}
+S	in	[pan]
+O	bay leaf	1
+S	in	[pan]
+M	remove	2:31	2:38
+O	black bean	1
+S	cooked
+S	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper}
+S	in	[pan]
+O	bay leaf	1
+//
+O	cooking pan	0
+S	contains	{black bean}
+S	on	[stove]
+O	black bean	1
+S	cooked
+S	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper}
+S	in	[pan]
+O	ladle	1
+O	bowl	1
+S	empty
+M	scoop and pour	Assumed	Assumed
+O	black bean	1	1
+S	cooked
+S	contains	{olive oil,jalapeno,onion,garlic,salt,black pepper}
+S	in	[bowl]
+O	bowl	1
+S	contains	{black bean}
+//

@@ -1,0 +1,700 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/EPIC-P04_23-massaman_curry_paste.MP4
+//
+O	box	0
+S	contains	{mortar,pestle}
+O	mortar	1
+S	in	[box]
+S	empty
+O	pestle	1
+S	in	[box]
+M	remove	<0:30,0:40>
+O	mortar	0
+S	empty
+S	on	[surface]
+O	pestle	1
+S	on	[surface]
+//
+O	packet	1
+S	contains	{coriander}
+O	coriander	0
+S	seeds
+S	in	[packet]
+O	spoon	0
+M	pour	<Assumed>
+O	spoon	0
+S	contains	{coriander}
+O	coriander	1
+S	seeds
+S	in	[spoon]
+//
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	empty
+S	on	[surface]
+O	spoon	1
+S	contains	{coriander}
+O	coriander	1
+S	seeds
+S	in	[spoon]
+M	pour	<Assumed>
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{coriander}
+O	coriander	0
+S	seeds
+S	in	[cooking pan]
+O	spoon	1
+//
+O	packet	1
+S	contains	{cumin}
+O	coriander	0
+S	seeds
+S	in	[packet]
+O	spoon	0
+M	pour	<Assumed>
+O	spoon	0
+S	contains	{cumin}
+O	coriander	1
+S	seeds
+S	in	[spoon]
+//
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{coriander}
+O	spoon	1
+S	contains	{cumin}
+O	coriander	1
+S	seeds
+S	in	[spoon]
+M	pour	<Assumed>
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{coriander,cumin}
+O	spoon	1
+O	coriander	0
+S	seeds
+S	in	[cooking pan]
+//
+O	shaker	1
+S	contains	{spice}
+O	spice	0
+S	ground
+S	in	[container]
+O	spoon	1
+M	scoop	<0:40,0:44>
+O	spoon	1
+S	contains	{spice}
+O	spice	0
+S	ground
+S	in	[spoon]
+//
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{coriander,cumin}
+O	spoon	1
+S	ground
+S	contains	{spice}
+O	spice	0
+S	in	[spoon]
+M	pour	<0:44,0:47>
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{coriander,cumin,spice}
+O	spoon	1
+O	spice	0
+S	ground
+S	in	[cooking pan]
+//
+O	jar	1
+S	closed
+S	contains	{clove}
+M	open	<0:51,0:53>
+O	jar	1
+S	opened
+S	contains	{clove}
+//
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{coriander,cumin,spice}
+O	jar	1
+S	opened
+S	contains	{clove}
+O	clove	1
+S	seeds
+S	in	[jar]
+M	pick-and-place	<0:47,0:58>
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{clove,coriander,cumin,spice}
+O	clove	1
+S	seeds
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{clove,coriander,cumin,spice}
+O	shaker	1
+S	contains	{black pepper}
+O	black pepper	1
+S	whole
+S	peppercorn
+S	in	[jar]
+M	pick-and-place	<1:09,1:11>
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{black pepper,clove,coriander,cumin,spice}
+O	black pepper	1
+S	whole
+S	peppercorn
+S	in	[cooking pan]
+//
+O	onion	1
+S	unpeeled
+S	whole
+O	cutting board	0
+S	empty
+M	pick-and-place	<1:58,2:03>
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	unpeeled
+S	on	[cutting board]
+S	whole
+//
+O	stove	0
+S	with	[cooking pan]
+S	on
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{black pepper,clove,coriander,cumin,spice}
+O	black pepper	1
+S	whole
+S	peppercorn
+S	in	[cooking pan]
+O	spice	1
+S	ground
+S	in	[cooking pan]
+O	coriander	1
+S	seeds
+S	in	[cooking pan]
+O	spatula	1
+M	cook and stir	<2:05,2:22>
+O	spice mixture	1
+S	mixed
+S	contains	{black pepper,clove,coriander,cumin,spice}
+S	in	[cooking pan]
+//
+O	onion	0
+S	unpeeled
+S	destemmed
+S	on	[cutting board]
+O	knife	1
+M	cut in half	<2:22,2:30>
+O	onion	0
+S	unpeeled
+S	halved
+S	on	[cutting board]
+//
+O	onion	0
+S	unpeeled
+S	halved
+S	on	[cutting board]
+M	cut off ends	<2:26-2:27,2:28-2:29>
+O	onion	0
+S	unpeeled
+S	destemmed
+S	halved
+S	on	[cutting board]
+//
+O	onion	1
+S	unpeeled
+S	destemmed
+S	halved
+S	on	[cutting board]
+M	peel	<2:32-2:44,2:46-2:52>
+O	onion	1
+S	destemmed
+S	halved
+S	on	[cutting board]
+S	peeled
+O	onion	1
+S	skin
+S	on	[cutting board]
+//
+O	trash bin	0
+S	contains	{trash}
+O	onion	1
+S	skin
+S	on	[cutting board]
+M	throw away	<2:53,2:58>
+O	onion	1
+S	skin
+S	in	[trash bin]
+//
+O	onion	0
+S	destemmed
+S	halved
+S	on	[cutting board]
+S	peeled
+O	knife	1
+M	chop	<3:00-3:19,3:36-3:44>
+O	onion	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	on	[cutting board]
+O	mortar	0
+S	empty
+M	pour and scrape	<4:00,4:10>
+O	onion	1
+S	chopped
+S	in	[mortar]
+O	mortar	0
+S	contains	{onion}
+O	cutting board	0
+S	empty
+//
+O	cutting board	0
+S	empty
+O	garlic	1
+S	unpeeled
+S	clove
+M	pick-and-place	<4:10,4:12>
+O	cutting board	0
+S	contains	{garlic}
+O	garlic	1
+S	unpeeled
+S	clove
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{garlic}
+O	garlic	0
+S	unpeeled
+S	clove
+S	on	[cutting board]
+M	cut off ends	<4:23,4:25>
+O	garlic	0
+S	unpeeled
+S	clove
+S	derooted
+S	on	[cutting board]
+//
+O	garlic	1
+S	unpeeled
+S	clove
+S	derooted
+S	on	[cutting board]
+M	peel	<4:30-4:40,4:41-5:08>
+O	garlic	0
+S	clove
+S	derooted
+S	on	[cutting board]
+S	peeled
+O	garlic	0
+S	on	[cutting board]
+S	skin
+//
+O	garlic	0
+S	clove
+S	derooted
+S	on	[cutting board]
+S	peeled
+M	pick-and-place	<5:08,5:09>
+O	garlic	0
+S	clove
+S	derooted
+S	peeled
+//
+O	cutting board	1
+S	contains	{garlic}
+O	garlic	1
+S	on	[cutting board]
+S	skin
+O	trash bin	0
+S	contains	{trash}
+O	knife	1
+M	throw away	<5:13,5:17>
+O	garlic	1
+S	in	[trash bin]
+S	skin
+O	cutting board	0
+S	empty
+//
+O	stove	0
+S	with	[cooking pan]
+S	on
+O	cooking pan	1
+S	hot
+S	on	[stove]
+S	contains	{black pepper,clove,coriander,cumin,spice}
+M	turn off	<5:18,5:24>
+O	stove	0
+S	with	[cooking pan]
+S	off
+O	cooking pan	1
+S	on	[stove]
+S	contains	{black pepper,clove,coriander,cumin,spice}
+//
+O	cooking pan	1
+S	on	[stove]
+S	contains	{black pepper,clove,coriander,cumin,spice}
+O	spice mixture	1
+S	mixed
+S	contains	{black pepper,clove,coriander,cumin,spice}
+S	in	[cooking pan]
+O	black pepper	1
+S	whole
+S	peppercorn
+S	in	[cooking pan]
+O	spice	1
+S	ground
+S	in	[cooking pan]
+O	coriander	1
+S	seeds
+S	in	[cooking pan]
+O	mortar	0
+S	contains	{onion}
+O	spatula	1
+M	pour and scrape	<5:24,5:41>
+O	mortar	0
+S	contains	{black pepper,coriander,cumin,onion,spice}
+O	spice mixture	1
+S	mixed
+S	contains	{black pepper,coriander,cumin,spice}
+S	in	[mortar]
+O	black pepper	1
+S	whole
+S	in	[mortar]
+S	peppercorn
+O	spice	1
+S	ground
+S	in	[mortar]
+O	clove	1
+S	seeds
+S	in	[mortar]
+O	cooking pan	0
+S	empty
+//
+O	cutting board	0
+S	empty
+O	garlic	1
+S	clove
+S	derooted
+S	peeled
+M	pick-and-place	<5:43,5:44>
+O	cutting board	0
+S	contains	{garlic}
+O	garlic	1
+S	clove
+S	derooted
+S	peeled
+S	on	[cutting board]
+//
+O	garlic	0
+S	clove
+S	derooted
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	chop	<5:44,6:36>
+O	garlic	0
+S	minced
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{garlic}
+O	garlic	0
+S	on	[cutting board]
+S	minced
+O	mortar	0
+S	contains	{black pepper,coriander,cumin,onion,spice}
+O	knife	1
+M	scrape	<6:37,6:42>
+O	mortar	0
+S	contains	{black pepper,coriander,cumin,garlic,onion,spice}
+O	garlic	0
+S	minced
+S	in	[mortar]
+O	cutting board	0
+S	empty
+//
+O	packet	1
+S	sealed
+S	contains	{lemon grass}
+M	rip open	<7:23,7:28>
+O	packet	1
+S	opened
+S	contains	{lemon grass}
+//
+O	packet	1
+S	opened
+S	contains	{lemon grass}
+O	lemon grass	1
+S	in	[packet]
+S	stem
+O	cutting board	0
+S	empty
+M	pick-and-place	<7:29,7:34>
+O	cutting board	0
+S	contains	{lemon grass}
+O	lemon grass	1
+S	on	[cutting board]
+S	stem
+//
+O	cutting board	0
+S	contains	{lemon grass}
+O	lemon grass	0
+S	unpeeled
+S	on	[cutting board]
+S	stem
+M	cut off ends	<7:35,7:40>
+O	lemon grass	0
+S	unpeeled
+S	ends removed
+S	on	[cutting board]
+//
+O	lemon grass	0
+S	unpeeled
+S	ends removed
+S	on	[cutting board]
+M	peel	<7:40,7:55>
+O	lemon grass	0
+S	ends removed
+S	on	[cutting board]
+S	peeled
+//
+O	lemon grass	0
+S	ends removed
+S	on	[cutting board]
+S	peeled
+O	cutting board	0
+S	contains	{lemon grass}
+O	knife	1
+M	slice	<7:55,8:13>
+O	lemon grass	0
+S	on	[cutting board]
+S	sliced
+//
+O	cutting board	0
+S	contains	{lemon grass}
+O	lemon grass	1
+S	on	[cutting board]
+S	sliced
+O	mortar	0
+S	contains	{black pepper,coriander,cumin,garlic,onion,spice}
+M	pick-and-place	<8:13,8:17>
+O	cutting board	0
+S	empty
+O	mortar	0
+S	contains	{black pepper,coriander,cumin,garlic,lemon grass,onion,spice}
+O	lemon grass	1
+S	in	[mortar]
+S	sliced
+//
+O	packet	1
+S	sealed
+S	contains	{shrimp}
+O	scissors	0
+M	cut	<9:19,9:20>
+O	packet	1
+S	contains	{shrimp}
+S	opened
+//
+O	spoon	0
+O	packet	1
+S	contains	{shrimp}
+S	opened
+O	shrimp	1
+S	paste
+S	in	[packet]
+M	squeeze	<9:32,9:57>
+O	spoon	0
+S	contains	{shrimp}
+O	shrimp	1
+S	paste
+S	in	[spoon]
+//
+O	spoon	0
+S	contains	{shrimp}
+O	mortar	0
+S	contains	{black pepper,coriander,cumin,garlic,lemon grass,onion,spice}
+O	shrimp	1
+S	paste
+S	in	[spoon]
+M	pour	<9:57,9:59>
+O	mortar	0
+S	contains	{black pepper,coriander,cumin,garlic,lemon grass,onion,shrimp,spice}
+O	shrimp	0
+S	paste
+S	in	[mortar]
+O	spoon	0
+//
+O	faucet	0
+S	off (ready)
+M	turn on	<10:20,10:21>
+O	faucet	0
+S	on
+O	water	0
+S	liquid
+S	from	[faucet]
+//
+O	faucet	0
+S	on
+O	spoon	1
+O	water	1
+S	liquid
+S	from	[faucet]
+M	wash	<10:21,10:22>
+O	spoon	0
+//
+O	faucet	0
+S	on
+O	water	1
+S	liquid
+S	from	[faucet]
+M	turn off	<10:21,0:22>
+O	faucet	0
+S	off
+//
+O	jar	0
+S	closed
+S	contains	{galangal}
+M	open	<10:17,10:18>
+O	jar	0
+S	opened
+S	contains	{galangal}
+//
+O	jar	0
+S	opened
+S	contains	{galangal}
+O	galangal	0
+S	paste
+S	in	[jar]
+O	spoon	1
+M	scoop	<10:30,10:31>
+O	spoon	1
+S	contains	{galangal}
+O	galangal	0
+S	paste
+S	in	[spoon]
+//
+O	spoon	1
+S	contains	{galangal}
+O	galangal	1
+S	paste
+S	in	[spoon]
+O	mortar	0
+S	contains	{black pepper,coriander,cumin,garlic,lemon grass,onion,shrimp,spice}
+M	pour	<10:43,10:44>
+O	mortar	0
+S	contains	{black pepper,coriander,cumin,galangal,garlic,lemon grass,onion,shrimp,spice}
+O	galangal	0
+S	paste
+S	in	[mortar]
+O	spoon	0
+//
+O	mortar	0
+S	contains	{black pepper,coriander,cumin,galangal,garlic,lemon grass,onion,shrimp,spice}
+O	bottle	0
+S	contains	{fish sauce}
+O	fish sauce	0
+S	sauce
+S	in	[bottle]
+M	pour	<10:44,10:45>
+O	mortar	0
+S	contains	{black pepper,coriander,cumin,fish sauce,galangal,garlic,lemon grass,onion,shrimp,spice}
+O	fish sauce	0
+S	sauce
+S	in	[mortar]
+O	spoon	0
+//
+O	mortar	0
+S	contains	{black pepper,coriander,cumin,fish sauce,galangal,garlic,lemon grass,onion,shrimp,spice}
+O	shrimp	1
+S	paste
+S	in	[mortar]
+O	fish sauce	1
+S	sauce
+S	in	[mortar]
+O	garlic	1
+S	minced
+S	in	[mortar]
+O	lemon grass	1
+S	sliced
+S	in	[mortar]
+O	onion	1
+S	diced
+S	in	[mortar]
+O	spice mixture	1
+S	mixed
+S	contains	{black pepper,coriander,cumin,spice}
+S	in	[mortar]
+O	black pepper	1
+S	whole
+S	in	[mortar]
+S	peppercorn
+O	spice	1
+S	ground
+S	in	[mortar]
+O	clove	1
+S	seeds
+S	in	[mortar]
+O	pestle	1
+M	mash	<10:49,15:15>
+O	mortar	0
+S	contains	{curry paste}
+O	curry paste	1
+S	in	[mortar]
+S	mixed
+S	contains	{black pepper,coriander,cumin,fish sauce,galangal,garlic,lemon grass,onion,shrimp,spice}
+O	pestle	1
+//
+O	mortar	0
+S	contains	{curry paste}
+O	shaker	1
+S	contains	{paprika}
+O	paprika	1
+S	ground
+S	in	[shaker]
+M	shake	<15:26,15:34>
+O	mortar	0
+S	contains	{curry paste,paprika}
+O	paprika	0
+S	ground
+S	in	[mortar]
+//
+O	mortar	0
+S	contains	{curry paste,paprika}
+O	paprika	0
+S	ground
+S	in	[mortar]
+O	pestle	1
+O	curry paste	1
+S	in	[mortar]
+S	mixed
+S	contains	{black pepper,coriander,cumin,fish sauce,galangal,garlic,lemon grass,onion,shrimp,spice}
+M	mash	<15:44,16:38>
+O	pestle	1
+O	mortar	0
+S	contains	{curry paste}
+O	curry paste	1	7
+S	in	[mortar]
+S	mixed
+S	contains	{black pepper,coriander,cumin,fish sauce,galangal,garlic,lemon grass,onion,paprika,shrimp,spice}
+//

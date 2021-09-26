@@ -1,0 +1,274 @@
+# Source:	https://www.youtube.com/watch?v=l89y2jme4Ls
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0063-plain_omelette_mahalo.mp4
+//
+O370	stove	0
+S90	off
+S148	under	[frying pan]
+M117	turn on	<0:23-0:25>
+O370	stove	0
+S93	on
+S148	under	[frying pan]
+//
+O159	frying pan	0
+S46	empty
+S93	on	[stove]
+O370	stove	0
+S90	off
+S148	under	[frying pan]
+M72	preheat	<Assumed>
+O159	frying pan	0
+S71	hot
+S46	empty
+S93	on	[stove]
+//
+O159	frying pan	0
+S71	hot
+S46	empty
+S93	on	[stove]
+O34	bowl	1
+S24	contains	{olive oil}
+O267	olive oil	1
+S81	liquid
+S72	in	[bowl]
+M65	pour	<0:33-0:36>
+O159	frying pan	0
+S71	hot
+S24	contains	{olive oil}
+S93	on	[stove]
+O267	olive oil	1
+S81	liquid
+S72	in	[frying pan]
+//
+O159	frying pan	0
+S71	hot
+S24	contains	{olive oil}
+S93	on	[stove]
+O34	bowl	0
+S24	contains	{butter}
+O49	butter	1
+S133	softened
+S150	unmelted
+S35	cubed
+S72	in	[bowl]
+M65	pour	<0:44-0:46>
+O159	frying pan	0
+S71	hot
+S24	contains	{olive oil,butter}
+S93	on	[stove]
+O49	butter	1
+S133	softened
+S150	unmelted
+S35	cubed
+S72	in	[frying pan]
+//
+O34	bowl	0
+S46	empty
+O133	egg	1
+S155	whole
+M22	crack	<Assumed>
+O34	bowl	0
+S24	contains	{egg white,egg yolk}
+O137	egg white	0
+S146	uncooked
+S72	in	[bowl]
+O139	egg yolk	0
+S146	uncooked
+S72	in	[bowl]
+//
+O249	mixing bowl	0
+S46	empty
+O34	bowl	0
+S24	contains	{egg white,egg yolk}
+O137	egg white	0
+S146	uncooked
+S72	in	[bowl]
+O139	egg yolk	0
+S146	uncooked
+S72	in	[bowl]
+M65	pour	<0:50-0:52>
+O249	mixing bowl	0
+S24	contains	{egg white,egg yolk}
+O137	egg white	0
+S146	uncooked
+S72	in	[mixing bowl]
+O139	egg yolk	0
+S146	uncooked
+S72	in	[mixing bowl]
+//
+O249	mixing bowl	0
+S24	contains	{egg white,egg yolk}
+O34	bowl	0
+S24	contains	{salt}
+O336	salt	1
+S63	granulated
+S72	in	[bowl]
+M101	sprinkle	<0:58-1:00>
+O249	mixing bowl	0
+S24	contains	{egg white,egg yolk,salt}
+O336	salt	1
+S63	granulated
+S72	in	[mixing bowl]
+//
+O249	mixing bowl	0
+S24	contains	{egg white,egg yolk,salt}
+O34	bowl	0
+S24	contains	{black pepper}
+O22	black pepper	1
+S66	ground
+S72	in	[bowl]
+M101	sprinkle	<1:01-1:04>
+O249	mixing bowl	0
+S24	contains	{egg white,egg yolk,salt,black pepper}
+O22	black pepper	1
+S66	ground
+S72	in	[mixing bowl]
+//
+O249	mixing bowl	0
+S24	contains	{egg white,egg yolk,salt,black pepper}
+O336	salt	1
+S63	granulated
+S72	in	[mixing bowl]
+O22	black pepper	1
+S66	ground
+S72	in	[mixing bowl]
+O137	egg white	0
+S146	uncooked
+S72	in	[mixing bowl]
+O139	egg yolk	0
+S146	uncooked
+S72	in	[mixing bowl]
+O420	whisk	1
+M121	whisk	<1:06-1:25>
+O249	mixing bowl	0
+S24	contains	{egg,salt,black pepper}
+O133	egg	0
+S6	beaten
+S146	uncooked
+S24	contains	{black pepper,salt}
+S72	in	[mixing bowl]
+//
+O159	frying pan	0
+S71	hot
+S24	contains	{olive oil,butter}
+S93	on	[stove]
+O49	butter	1
+S133	softened
+S150	unmelted
+S35	cubed
+S72	in	[frying pan]
+M100	spread	<1:29-1:48>
+O49	butter	1
+S85	melted
+S81	liquid
+S72	in	[frying pan]
+//
+O249	mixing bowl	1
+S24	contains	{egg,salt,black pepper}
+O133	egg	1
+S6	beaten
+S146	uncooked
+S24	contains	{black pepper,salt}
+S72	in	[mixing bowl]
+O159	frying pan	0
+S71	hot
+S24	contains	{olive oil,butter}
+S93	on	[stove]
+O267	olive oil	0
+S81	liquid
+S72	in	[frying pan]
+O49	butter	1
+S85	melted
+S81	liquid
+S72	in	[frying pan]
+M65	pour	<1:54-1:57>
+O159	frying pan	0
+S71	hot
+S24	contains	{olive oil,butter,egg}
+S93	on	[stove]
+O133	egg	1
+S6	beaten
+S146	uncooked
+S24	contains	{black pepper,salt}
+S72	in	[frying pan]
+//
+O370	stove	0
+S93	on
+S148	under	[frying pan]
+O159	frying pan	0
+S71	hot
+S24	contains	{olive oil,butter,egg}
+S93	on	[stove]
+O133	egg	0
+S6	beaten
+S146	uncooked
+S24	contains	{black pepper,salt}
+S72	in	[frying pan]
+O364	spatula	1
+M19	cook and stir	<2:09-2:12,2:13-2:20,2:21-2:28>
+O268	omelette	0
+S87	mixed
+S97	partly cooked
+S24	contains	{egg,black pepper,salt}
+S72	in	[frying pan]
+//
+O159	frying pan	0
+S71	hot
+S24	contains	{olive oil,butter,egg}
+S93	on	[stove]
+O268	omelette	0
+S87	mixed
+S97	partly cooked
+S24	contains	{egg,black pepper,salt}
+S72	in	[frying pan]
+O406	turner	1
+M40	fold	<3:34-3:36>
+O268	omelette	0
+S56	folded
+S97	partly cooked
+S24	contains	{egg,black pepper,salt}
+S72	in	[frying pan]
+//
+O370	stove	0
+S93	on
+S148	under	[frying pan]
+O159	frying pan	0
+S71	hot
+S24	contains	{olive oil,butter,egg}
+S93	on	[stove]
+O268	omelette	0
+S56	folded
+S97	partly cooked
+S24	contains	{egg,black pepper,salt}
+S72	in	[frying pan]
+M16	cook	<Assumed>
+O159	frying pan	0
+S71	hot
+S24	contains	{omelette}
+S93	on	[stove]
+O268	omelette	0
+S56	folded
+S25	cooked
+S24	contains	{egg,black pepper,salt}
+S72	in	[frying pan]
+//
+O159	frying pan	0
+S71	hot
+S24	contains	{omelette}
+S93	on	[stove]
+O268	omelette	1
+S56	folded
+S25	cooked
+S24	contains	{egg,black pepper,salt}
+S72	in	[frying pan]
+O304	plate	0
+S46	empty
+O406	turner	1
+M61	pick-and-place	<4:13-4:16>
+O304	plate	0
+S24	contains	{omelette}
+O268	omelette	1	23
+S56	folded
+S25	cooked
+S24	contains	{egg,black pepper,salt}
+S93	on	[plate]
+//

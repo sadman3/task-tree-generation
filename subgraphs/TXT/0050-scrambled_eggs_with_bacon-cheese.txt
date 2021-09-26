@@ -1,0 +1,409 @@
+# Source:	https://www.youtube.com/watch?v=zSNB2ZaoYn0
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0050-scrambled_eggs_with_bacon-cheese.mp4
+//
+O	packet	1
+S	contains	{bacon}
+O	bacon	1
+S	in	[packet]
+S	sliced
+S	raw
+O	plate	0
+S	empty
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{bacon}
+O	bacon	1
+S	sliced
+S	raw
+S	on	[plate]
+//
+O	bacon	0
+S	sliced
+S	raw
+S	on	[plate]
+O	scissors	1
+M	cut	<Assumed>
+O	bacon	0
+S	chopped
+S	raw
+S	on	[plate]
+//
+O	cooking pan	0
+S	hot
+S	empty
+S	on	[stove]
+O	plate	1
+S	contains	{bacon}
+O	bacon	0
+S	chopped
+S	raw
+S	on	[plate]
+O	scissors	1
+M	scrape	<0:12-0:15>
+O	cooking pan	0
+S	hot
+S	contains	{bacon}
+S	on	[stove]
+O	bacon	1
+S	raw
+S	chopped
+S	in	[cooking pan]
+O	plate	1
+S	empty
+//
+O	bowl	0
+S	empty
+O	egg	1
+S	whole
+M	crack	<Assumed>
+O	bowl	0
+S	contains	{egg white,egg yolk}
+//
+O	bowl	0
+S	contains	{egg white,egg yolk}
+O	fork	1
+M	beat	<0:17:50-0:20:50>
+O	egg	1
+S	beaten
+S	uncooked
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg}
+O	egg	1
+S	beaten
+S	uncooked
+S	in	[bowl]
+O	cup	1
+S	contains	{milk}
+O	milk	1
+S	liquid
+S	in	[cup]
+M	pour	<0:22-0:24>
+O	bowl	0
+S	contains	{egg,milk}
+O	milk	1
+S	liquid
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg,milk}
+O	egg	1
+S	beaten
+S	uncooked
+S	in	[bowl]
+O	milk	1
+S	liquid
+S	in	[bowl]
+O	fork	1
+M	beat	<0:25-0:30>
+O	egg	1
+S	beaten
+S	uncooked
+S	contains	{milk}
+S	in	[bowl]
+//
+O	cooking pan	0
+S	hot
+S	contains	{bacon}
+S	on	[stove]
+O	stove	0
+S	on
+S	under	[cooking pan]
+O	bacon	0
+S	raw
+S	chopped
+S	in	[cooking pan]
+M	cook	<Assumed>
+O	bacon	0
+S	fried
+S	chopped
+S	in	[cooking pan]
+//
+O	packet	0
+S	contains	{napkin}
+O	napkin	1
+S	dry
+S	in	[packet]
+O	plate	0
+S	empty
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{napkin}
+O	napkin	1
+S	dry
+S	on	[plate]
+//
+O	cooking pan	1
+S	hot
+S	contains	{bacon}
+S	on	[stove]
+O	bacon	1
+S	fried
+S	chopped
+S	in	[cooking pan]
+O	plate	0
+S	in	[cooking pan]
+O	napkin	0
+S	dry
+S	on	[plate]
+M	pour	<1:00-1:02>
+O	plate	0
+S	contains	{napkin,bacon}
+O	bacon	1
+S	fried
+S	chopped
+S	on	[napkin]
+O	napkin	0
+S	soaked
+S	on	[plate]
+O	cooking pan	1
+S	empty
+//
+O	cooking pan	1
+S	empty
+O	stove	0
+S	on
+M	pick-and-place	<Assumed>
+O	cooking pan	1
+S	empty
+S	on	[stove]
+O	stove	0
+S	on
+S	under	[cooking pan]
+//
+O	cooking pan	0
+S	empty
+S	on	[stove]
+O	stove	0
+S	on
+S	under	[cooking pan]
+M	heat	<Assumed>
+O	cooking pan	0
+S	empty
+S	hot
+S	on	[stove]
+//
+O	cooking pan	0
+S	empty
+S	hot
+S	on	[stove]
+O	bowl	0
+S	contains	{butter}
+O	butter	1
+S	softened
+S	unmelted
+S	stick
+S	in	[bowl]
+M	scoop and pour	<1:23-1:25>
+O	cooking pan	0
+S	hot
+S	contains	{butter}
+S	on	[stove]
+O	butter	1
+S	softened
+S	cubed
+S	unmelted
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter}
+S	on	[stove]
+O	butter	1
+S	softened
+S	cubed
+S	unmelted
+S	in	[cooking pan]
+M	melt	<Assumed>
+O	butter	1
+S	melted
+S	liquid
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter}
+S	on	[stove]
+O	bowl	1
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	in	[bowl]
+M	pour	<1:16-1:28>
+O	cooking pan	0
+S	hot
+S	contains	{butter,onion}
+S	on	[stove]
+O	onion	1
+S	chopped
+S	in	[cooking pan]
+//
+O	stove	0
+S	on
+S	under	[cooking pan]
+O	cooking pan	0
+S	hot
+S	contains	{butter,onion}
+S	on	[stove]
+O	onion	1
+S	chopped
+S	in	[cooking pan]
+M	cook and shake	<1:30-1:35>
+O	onion	1
+S	sauteed
+S	chopped
+S	in	[cooking pan]
+//
+O	bowl	1
+S	contains	{egg}
+O	egg	1
+S	beaten
+S	uncooked
+S	contains	{milk}
+S	in	[bowl]
+O	cooking pan	0
+S	hot
+S	contains	{butter,onion}
+S	on	[stove]
+M	pour	<1:39-1:41>
+O	cooking pan	0
+S	hot
+S	contains	{butter,onion,egg,milk}
+S	on	[stove]
+O	egg	1
+S	beaten
+S	uncooked
+S	contains	{milk}
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter,onion,egg,milk}
+S	on	[stove]
+O	bowl	1
+S	contains	{cheese}
+O	cheese	1
+S	grated
+S	in	[bowl]
+O	egg	1
+S	beaten
+S	uncooked
+S	contains	{milk}
+S	in	[cooking pan]
+M	sprinkle	<1:43-1:45>
+O	cooking pan	0
+S	hot
+S	contains	{butter,onion,egg,milk,cheese}
+S	on	[stove]
+O	egg	1
+S	beaten
+S	uncooked
+S	contains	{milk,cheese}
+S	in	[cooking pan]
+O	cheese	1
+S	grated
+S	on	[egg]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter,onion,egg,milk,cheese}
+S	on	[stove]
+O	egg	1
+S	beaten
+S	uncooked
+S	contains	{milk,cheese}
+S	in	[cooking pan]
+O	turner	1
+O	stove	0
+S	on
+S	under	[cooking pan]
+M	cook and spread	<1:50-1:57>
+O	scrambled eggs	1
+S	partly cooked
+S	contains	{egg,milk,cheese,butter,onion}
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter,onion,egg,milk,cheese}
+S	on	[stove]
+O	plate	0
+S	contains	{bacon}
+O	bacon	1
+S	fried
+S	chopped
+S	on	[plate]
+O	scrambled eggs	1
+S	partly cooked
+S	contains	{egg,milk,cheese,butter,onion}
+S	in	[cooking pan]
+M	sprinkle	<2:10:50-2:12>
+O	cooking pan	0
+S	hot
+S	contains	{butter,onion,egg,milk,cheese,bacon}
+S	on	[stove]
+O	scrambled eggs	1
+S	partly cooked
+S	contains	{egg,milk,cheese,butter,onion,bacon}
+S	in	[cooking pan]
+O	bacon	1
+S	fried
+S	chopped
+S	on	[scrambled eggs]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter,onion,egg,milk,cheese,bacon}
+S	on	[stove]
+O	scrambled eggs	1
+S	partly cooked
+S	contains	{egg,milk,cheese,butter,onion,bacon}
+S	in	[cooking pan]
+O	turner	1
+M	flip	<2:16-2:20>
+O	scrambled eggs	1
+S	mixed
+S	partly cooked
+S	contains	{egg,milk,cheese,butter,onion,bacon}
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter,onion,egg,milk,cheese,bacon}
+S	on	[stove]
+O	scrambled eggs	0
+S	mixed
+S	partly cooked
+S	contains	{egg,milk,cheese,butter,onion,bacon}
+S	in	[cooking pan]
+O	stove	0
+S	on
+S	under	[cooking pan]
+M	cook	<Assumed>
+O	cooking pan	0
+S	hot
+S	contains	{scrambled eggs}
+S	on	[stove]
+O	scrambled eggs	0
+S	mixed
+S	cooked
+S	contains	{egg,milk,cheese,butter,onion,bacon}
+S	in	[cooking pan]
+//
+O	scrambled eggs	1
+S	mixed
+S	cooked
+S	contains	{egg,milk,cheese,butter,onion,bacon}
+S	in	[cooking pan]
+O	plate	0
+S	empty
+M	pour	<2:22-2:24>
+O	scrambled eggs	1	23
+S	mixed
+S	cooked
+S	contains	{egg,milk,cheese,butter,onion,bacon}
+S	on	[plate]
+O	cooking pan	1
+S	empty
+//

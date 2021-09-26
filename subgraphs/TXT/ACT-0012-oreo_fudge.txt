@@ -1,0 +1,295 @@
+O	baking tray	0
+O	butter	1
+S	whole
+S	in	[packet]
+M	spread	0:25	0:27
+O	baking tray	0
+S	contains	{butter}
+O	butter	0
+S	in	[baking tray]
+//
+O	blender jar	0
+S	empty
+O	oreo cookie	1
+S	whole
+S	in	[packet]
+M	pick-and-place	Assumed	Assumed
+O	oreo cookie	1
+S	whole
+S	in	[blender jar]
+O	blender jar	0
+S	contains	{oreo cookie}
+//
+O	blender	0
+S	no attachments
+O	blender jar	1
+S	contains	{oreo cookie}
+M	attach	Assumed	Assumed
+O	blender	0
+S	with	[blender jar]
+O	blender jar	1
+S	contains	{oreo cookie}
+S	attached to	[blender]
+//
+O	blender	0
+S	with	[blender jar]
+O	blender jar	1
+S	contains	{oreo cookie}
+S	attached to	[blender]
+O	oreo cookie	1
+S	whole
+S	in	[blender jar]
+M	blend	0:30	0:33
+O	oreo cookie	0
+S	crushed
+S	in	[blender jar]
+O	blender jar	0
+S	contains	{oreo cookie}
+S	attached to	[blender]
+//
+O	blender jar	1
+S	contains	{oreo cookie}
+S	attached to	[blender]
+O	blender	0
+S	with	[blender jar]
+M	detach	Assumed	Assumed
+O	blender jar	1
+S	contains	{oreo cookie}
+O	blender	0
+S	off
+//
+O	blender jar	1
+S	contains	{oreo cookie}
+O	measuring cup	0
+S	empty
+O	oreo cookie	1
+S	crushed
+S	in	[blender jar]
+M	pour	Assumed	Assumed
+O	measuring cup	1
+S	contains	{oreo cookie}
+O	oreo cookie	0
+S	crushed
+S	in	[measuring cup]
+O	blender jar	0
+//
+O	packet	1
+S	contains	{white chocolate chip}
+O	white chocolate chip	1
+S	in	[packet]
+O	saucepan	0
+S	empty
+M	pour	0:36	0:38
+O	saucepan	0
+S	contains	{white chocolate chip}
+O	white chocolate chip	1
+S	in	[saucepan]
+//
+O	tin can	1
+S	contains	{condensed milk}
+O	condensed milk	0
+S	in	[tin can]
+O	measuring cup	1
+S	empty
+M	pour	Assumed	Assumed
+O	measuring cup	1
+S	contains	{condensed milk}
+O	condensed milk	0
+S	in	[measuring cup]
+//
+O	saucepan	0
+S	contains	{white chocolate chip}
+O	measuring cup	1
+S	contains	{condensed milk}
+O	condensed milk	0
+S	in	[measuring cup]
+M	pour	0:40	0:42
+O	saucepan	0
+S	contains	{white chocolate chip,condensed milk}
+O	condensed milk	0
+S	in	[saucepan]
+//
+O	saucepan	1
+S	contains	{white chocolate chip,condensed milk}
+O	stove	0
+S	on
+M	pick-and-place	Assumed	Assumed
+O	saucepan	1
+S	contains	{white chocolate chip,condensed milk}
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pan]
+//
+O	saucepan	0
+S	contains	{white chocolate chip,condensed milk}
+S	on	[stove]
+O	stove	1
+S	on
+S	with	[pan]
+O	condensed milk	0
+S	in	[saucepan]
+O	white chocolate chip	1
+S	in	[saucepan]
+M	heat	Assumed	Assumed
+O	saucepan	0
+S	contains	{white chocolate chip,condensed milk}
+S	on	[stove]
+O	white chocolate chip	1
+S	melted
+S	in	[saucepan]
+//
+O	saucepan	0
+S	contains	{white chocolate chip,condensed milk}
+S	on	[stove]
+O	white chocolate chip	1
+S	melted
+S	in	[saucepan]
+O	condensed milk	0
+S	in	[saucepan]
+O	spoon	1
+M	stir	0:44	0:46
+O	saucepan	0
+S	contains	{chocolate mixture}
+S	on	[stove]
+O	chocolate mixture	1
+S	contains	{white chocolate chip,condensed milk}
+S	in	[pan]
+O	spoon	0
+//
+O	saucepan	0
+S	contains	{chocolate mixture}
+S	on	[stove]
+O	stove	1
+S	on
+S	with	[pan]
+M	remove	Assumed	Assumed
+O	stove	1
+S	off
+O	saucepan	0
+S	contains	{chocolate mixture}
+//
+O	bottle	1
+S	contains	{vanilla extract}
+O	vanilla extract	1
+S	in	[bottle]
+O	cup	0
+S	empty
+M	pour	Assumed	Assumed
+O	cup	0
+S	contains	{vanilla extract}
+O	vanilla extract	1
+S	in	[cup]
+//
+O	saucepan	0
+S	contains	{chocolate mixture}
+O	cup	1
+S	contains	{vanilla extract}
+O	vanilla extract	1
+S	in	[cup]
+M	pour	0:48	0:50
+O	saucepan	0
+S	contains	{chocolate mixture,vanilla extract}
+O	vanilla extract	1
+S	in	[pan]
+//
+O	measuring cup	1
+S	contains	{oreo cookie}
+O	oreo cookie	1
+S	crushed
+S	in	[measuring cup]
+O	saucepan	0
+S	contains	{chocolate mixture,vanilla extract}
+M	pour	0:52	0:53
+O	saucepan	0
+S	contains	{chocolate mixture,vanilla extract,oreo cookie}
+O	oreo cookie	1
+S	crushed
+S	in	[pan]
+//
+O	saucepan	0
+S	contains	{chocolate mixture,vanilla extract,oreo cookie}
+O	chocolate mixture	1
+S	contains	{white chocolate chip,condensed milk}
+S	in	[pan]
+O	oreo cookie	1
+S	crushed
+S	in	[pan]
+O	vanilla extract	1
+S	in	[pan]
+O	spoon	1
+M	mix	0:55	0:57
+O	saucepan	0
+S	contains	{fudge mixture}
+O	fudge mixture	1
+S	contains	{white chocolate chip,condensed milk,oreo cookie,vanilla extract}
+S	in	[pan]
+//
+O	saucepan	1
+S	contains	{fudge mixture}
+O	fudge mixture	1
+S	contains	{white chocolate chip,condensed milk,oreo cookie,vanilla extract}
+S	in	[pan]
+O	baking tray	0
+S	contains	{butter}
+M	pour	0:59	1:01
+O	baking tray	0
+S	contains	{fudge mixture}
+O	fudge mixture	1
+S	contains	{butter,white chocolate chip,condensed milk,oreo cookie,vanilla extract}
+S	in	[baking tray]
+O	saucepan	1
+//
+O	baking tray	0
+S	contains	{fudge mixture}
+O	fridge	0
+S	on
+M	put inside	Assumed	Assumed
+O	baking tray	0
+S	contains	{fudge mixture}
+S	in	[fridge]
+O	fridge	0
+S	on
+S	with	[baking tray]
+//
+O	fridge	0
+S	on
+S	with	[baking tray]
+O	baking tray	0
+S	contains	{fudge mixture}
+S	in	[fridge]
+O	fudge mixture	1
+S	contains	{butter,white chocolate chip,condensed milk,oreo cookie,vanilla extract}
+S	in	[baking tray]
+M	chill	Assumed	Assumed
+O	baking tray	0
+S	contains	{fudge}
+S	in	[fridge]
+O	fudge	1
+S	contains	{butter,white chocolate chip,condensed milk,oreo cookie,vanilla extract}
+S	in	[baking tray]
+//
+O	fridge	0
+S	on
+S	with	[baking tray]
+O	baking tray	1
+S	contains	{fudge}
+S	in	[fridge]
+M	remove	Assumed	Assumed
+O	fridge	0
+S	on
+O	baking tray	1
+S	contains	{fudge}
+//
+O	baking tray	0
+S	contains	{fudge}
+O	fudge	1
+S	contains	{butter,white chocolate chip,condensed milk,oreo cookie,vanilla extract}
+S	in	[baking tray]
+O	knife	1
+M	cut	Assumed	Assumed
+O	fudge	1	8
+S	contains	{butter,chocolate mixture,white chocolate chip,condensed milk,oreo cookie,vanilla extract}
+S	divided
+S	in	[baking tray]
+//

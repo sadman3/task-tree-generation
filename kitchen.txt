@@ -1,0 +1,2050 @@
+O304	plate
+S46	empty
+O305	porkchop
+S146	uncooked
+O34	bowl
+S24	contains	{black pepper,salt}
+O103	cooking pan
+S46	empty
+O49	butter
+S93	on	[plate]
+S140	stick
+O33	bottle
+S24	contains	{vegetable oil}
+O409	vegetable oil
+S72	in	[bottle]
+O10	baking tray
+S46	empty
+O210	jar
+S24	contains	{instant coffee}
+O207	instant coffee
+S72	in	[jar]
+S106	powder
+O367	spoon
+S46	empty
+O34	bowl
+S46	empty
+O249	mixing bowl
+S46	empty
+O34	bowl
+S24	contains	{water}
+O414	water
+S71	hot
+S72	in	[bowl]
+S81	liquid
+O128	drinking glass
+S46	empty
+O241	measuring cup
+S24	contains	{ice}
+O206	ice
+S35	cubed
+S60	frozen
+S72	in	[measuring cup]
+O241	measuring cup
+S46	empty
+O61	carton
+S24	contains	{milk}
+O244	milk
+S72	in	[carton]
+S81	liquid
+O306	pot
+S46	empty
+O49	butter
+S72	in	[packet]
+S140	stick
+O163	garlic
+S21	clove
+S93	on	[cutting board]
+O263	napkin
+O119	cup
+S46	empty
+O423	white rice
+S72	in	[packet]
+S146	uncooked
+O121	cutting board
+S46	empty
+O342	scallion
+S155	whole
+O89	cilantro
+S155	whole
+O163	garlic
+S57	fried
+S93	on	[plate]
+O415	watermelon
+S155	whole
+O219	lemon
+S155	whole
+O369	squeezer
+S46	empty
+O241	measuring cup
+S46	empty
+S148	under	[squeezer]
+O34	bowl
+S24	contains	{watermelon}
+S93	on	[surface]
+O150	food processor bowl
+S46	empty
+O149	food processor
+S91	off (ready)
+O149	food processor
+S0	attached	[food processor bowl]
+S91	off (ready)
+O415	watermelon
+S17	chopped
+S72	in	[blender cup]
+O149	food processor
+S0	attached	[food processor bowl]
+S93	on
+O149	food processor
+S90	off
+O371	strainer
+S46	empty
+O415	watermelon
+S72	in	[food processor bowl]
+S74	juice
+O298	pitcher
+S46	empty
+O241	measuring cup
+S24	contains	{water}
+O47	bucket
+S24	contains	{ice}
+O206	ice
+S33	crushed
+S60	frozen
+S72	in	[bowl]
+O276	oven
+S91	off (ready)
+O104	cooking spray
+S24	contains	{vegetable oil}
+O409	vegetable oil
+S72	in	[spray bottle]
+O34	bowl
+S24	contains	{cocoa powder}
+O96	cocoa powder
+S72	in	[bowl]
+O34	bowl
+S24	contains	{baking powder}
+O8	baking powder
+S72	in	[bowl]
+S106	powder
+O34	bowl
+S24	contains	{baking soda}
+O34	bowl
+S24	contains	{salt}
+O241	measuring cup
+S24	contains	{vegetable oil}
+O409	vegetable oil
+S72	in	[measuring cup]
+O34	bowl
+S24	contains	{vanilla extract}
+O248	mixer
+S90	off
+O414	water
+S72	in	[measuring cup]
+O426	wire rack
+S46	empty
+O158	frosting
+S72	in	[container]
+O55	cake server
+O36	bread
+S93	on	[plate]
+O370	stove
+S90	off
+O373	sugar
+S63	granulated
+O244	milk
+S72	in	[cup]
+O6	bag
+S24	contains	{flour}
+O133	egg
+S147	uncracked
+O152	fork
+O210	jar
+S24	contains	{flour}
+O346	scraper
+O328	rolling pin
+O300	pizza cutter
+O49	butter
+S35	cubed
+S72	in	[bowl]
+S133	softened
+S150	unmelted
+O133	egg
+S155	whole
+O34	bowl
+S24	contains	{black pepper}
+O34	bowl
+S46	empty
+S93	on	[surface]
+O133	egg
+S93	on	[surface]
+S155	whole
+O136	egg shell
+S93	on	[surface]
+O399	trash bin
+S24	contains	{garbage}
+O137	egg white
+S72	in	[bowl]
+S109	raw
+O49	butter
+S34	cube
+S72	in	[bowl]
+S133	softened
+S150	unmelted
+O304	plate
+S24	contains	{green pepper}
+S46	empty
+O183	green pepper
+S155	whole
+O350	shaker
+S24	contains	{salt}
+O336	salt
+S63	granulated
+S72	in	[shaker]
+O350	shaker
+S24	contains	{black pepper}
+O22	black pepper
+S66	ground
+S72	in	[shaker]
+O277	packet
+S24	contains	{cheese}
+O65	cheese
+S72	in	[packet]
+S130	sliced
+O277	packet
+S46	empty
+O33	bottle
+S24	contains	{vanilla extract}
+O407	vanilla extract
+S72	in	[bottle]
+O34	bowl
+S24	contains	{instant coffee,salt}
+O207	instant coffee
+S72	in	[bowl]
+O34	bowl
+S24	contains	{chocolate}
+O82	chocolate
+S72	in	[bowl]
+S85	melted
+O276	oven
+S90	off
+O43	brownie
+S2	baked
+S93	on	[cutting board]
+O306	pot
+S46	empty
+S71	hot
+S93	on	[stove]
+O49	butter
+S34	cube
+S93	on	[plate]
+S133	softened
+S150	unmelted
+O277	packet
+S24	contains	{mushroom}
+O260	mushroom
+S72	in	[packet]
+S155	whole
+O370	stove
+S93	on
+S148	under	[pot]
+O306	pot
+S24	contains	{mushroom,onion}
+S71	hot
+S93	on	[stove]
+O61	carton
+S24	contains	{chicken broth}
+O71	chicken broth
+S72	in	[carton]
+S81	liquid
+O41	broth
+S24	contains	{chicken broth,flour}
+S72	in	[measuring cup]
+S81	liquid
+S87	mixed
+O241	measuring cup
+S24	contains	{half-and-half}
+O195	half-and-half
+S72	in	[measuring cup]
+S81	liquid
+O98	colander
+S46	empty
+O101	container
+S46	empty
+O340	saucepan
+S46	empty
+O370	stove
+S93	on
+S148	under	[saucepan]
+O34	bowl
+S24	contains	{ice}
+O248	mixer
+S91	off (ready)
+S156	with	[mixing bowl]
+O249	mixing bowl
+S1	attached to	[mixer]
+S46	empty
+O277	packet
+S24	contains	{cream cheese}
+S95	opened
+O115	cream cheese
+S9	block
+S72	in	[packet]
+O56	can
+S24	contains	{condensed milk}
+O100	condensed milk
+S72	in	[can]
+S144	thick liquid
+O277	packet
+S24	contains	{pudding mix}
+S95	opened
+O314	pudding mix
+S72	in	[packet]
+S106	powder
+O249	mixing bowl
+S24	contains	{vanilla extract}
+O210	jar
+S24	contains	{whipped cream}
+O419	whipped cream
+S30	creamy
+S72	in	[jar]
+S154	whipped
+O313	pudding
+S24	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract}
+S72	in	[mixing bowl]
+S81	liquid
+S87	mixed
+S144	thick liquid
+O11	banana
+S151	unpeeled
+S155	whole
+O35	box
+S24	contains	{vanilla wafer}
+O408	vanilla wafer
+S72	in	[box]
+S155	whole
+O7	baking dish
+S46	empty
+O313	pudding
+S72	in	[baking dish]
+S73	incomplete
+O338	saran wrap
+S72	in	[box]
+O378	sweet potato
+S155	whole
+O303	plastic bag
+S46	empty
+O34	bowl
+S24	contains	{vegetable oil}
+O34	bowl
+S24	contains	{garlic powder}
+O166	garlic powder
+S72	in	[bowl]
+O281	paprika
+S66	ground
+S72	in	[bowl]
+O392	tomato
+S155	whole
+O118	cucumber
+S155	whole
+O377	sweet pepper
+S155	whole
+O34	bowl
+S24	contains	{black olive}
+O21	black olive
+S72	in	[bowl]
+S155	whole
+O189	grinder
+S24	contains	{salt}
+O336	salt
+S72	in	[grinder]
+S103	pieces
+O219	lemon
+S67	halved
+O101	container
+S24	contains	{feta cheese}
+O144	feta cheese
+S35	cubed
+S72	in	[container]
+O277	packet
+S24	contains	{shrimp}
+O353	shrimp
+S72	in	[packet]
+S109	raw
+S155	whole
+O353	shrimp
+S72	in	[bowl]
+S109	raw
+O33	bottle
+S24	contains	{olive oil}
+O267	olive oil
+S72	in	[bottle]
+S81	liquid
+O336	salt
+S63	granulated
+S72	in	[grinder]
+O189	grinder
+S24	contains	{black pepper}
+O22	black pepper
+S72	in	[grinder]
+S102	peppercorn
+S155	whole
+O185	grill
+S46	empty
+S91	off (ready)
+O185	grill
+S46	empty
+S90	off
+O389	tin can
+S24	contains	{dough}
+O127	dough
+S72	in	[tin can]
+S112	rolled
+O341	sausage
+S25	cooked
+S93	on	[plate]
+O26	blender jar
+S46	empty
+O23	blender
+S91	off (ready)
+O61	carton
+S24	contains	{broth}
+O41	broth
+S72	in	[carton]
+S81	liquid
+O56	can
+S24	contains	{tomato,tomato paste}
+S117	sealed
+O394	tomato paste
+S72	in	[can]
+S100	paste
+O56	can
+S46	empty
+O350	shaker
+S24	contains	{oregano}
+O274	oregano
+S44	dried
+S72	in	[shaker]
+O392	tomato
+S41	destemmed
+S72	in	[bowl]
+S155	whole
+O34	bowl
+S24	contains	{tomato paste}
+O350	shaker
+S24	contains	{cinnamon}
+O91	cinnamon
+S66	ground
+S72	in	[shaker]
+O350	shaker
+S24	contains	{onion powder}
+O271	onion powder
+S66	ground
+S72	in	[shaker]
+O304	plate
+S24	contains	{salt}
+O304	plate
+S24	contains	{white pepper}
+O422	white pepper
+S66	ground
+S93	on	[plate]
+O23	blender
+S93	on
+S156	with	[blender jar]
+O163	garlic
+S72	in	[blender jar]
+S101	peeled
+O23	blender
+S90	off
+S156	with	[blender jar]
+O23	blender
+S90	off
+O370	stove
+S91	off (ready)
+O101	container
+S24	contains	{coriander}
+O105	coriander
+S72	in	[container]
+S78	leaf
+O101	container
+S24	contains	{yogurt}
+O429	yogurt
+S30	creamy
+S72	in	[container]
+O25	blender cup
+S46	empty
+O372	strawberry
+S72	in	[container]
+S155	whole
+O101	container
+S24	contains	{strawberry}
+O277	packet
+S24	contains	{flaxseed}
+O146	flaxseed
+S66	ground
+S72	in	[packet]
+S106	powder
+O210	jar
+S24	contains	{whey powder}
+O417	whey powder
+S72	in	[jar]
+S106	powder
+O33	bottle
+S24	contains	{sweetener}
+O129	dropper
+S46	empty
+O380	sweetener
+S72	in	[bottle]
+S81	liquid
+O23	blender
+S90	off
+S156	with	[blender cup]
+O143	faucet
+S91	off (ready)
+O143	faucet
+S90	off
+O210	jar
+S24	contains	{macaroni}
+O229	macaroni
+S72	in	[jar]
+S109	raw
+O329	rosemary
+S138	stem
+O33	bottle
+S24	contains	{heavy cream}
+O203	heavy cream
+S30	creamy
+S72	in	[bottle]
+O329	rosemary
+S17	chopped
+S93	on	[scrapper]
+O294	pepper mill
+S24	contains	{black pepper}
+O22	black pepper
+S72	in	[pepper mill]
+S155	whole
+O192	gruyere
+S156	with	[rind]
+O277	packet
+S24	contains	{bacon}
+O5	bacon
+S72	in	[packet]
+S109	raw
+S130	sliced
+O306	pot
+S24	contains	{macaroni,salt,water}
+S93	on	[stove]
+O229	macaroni
+S25	cooked
+S72	in	[skimmer]
+O355	skillet
+S24	contains	{bacon,black pepper,heavy cream,macaroni,rosemary,salt}
+S93	on	[stove]
+O81	chive
+S138	stem
+O2	apple
+S155	whole
+O33	bottle
+S24	contains	{lemon juice}
+O222	lemon juice
+S72	in	[bottle]
+O259	mug
+S46	empty
+O213	jug
+S24	contains	{milk}
+O244	milk
+S72	in	[jug]
+O53	cake batter
+S24	contains	{apple,baking powder,cinammon,egg mixture,flour,lemon juice,lemon zest,salt,vanilla extract}
+S72	in	[baking tray]
+O36	bread
+S130	sliced
+O210	jar
+S24	contains	{peanut butter}
+O290	peanut butter
+S72	in	[jar]
+O210	jar
+S24	contains	{jelly}
+O211	jelly
+S72	in	[jar]
+O277	packet
+S24	contains	{soybean}
+S117	sealed
+O363	soybean
+S72	in	[packet]
+S125	shelled
+S146	uncooked
+O243	microwave
+S46	empty
+S90	off
+O253	mozzarella
+S42	diced
+S72	in	[packet]
+O34	bowl
+S24	contains	{mozzarella}
+O363	soybean
+S25	cooked
+S40	deshelled
+S72	in	[mixing bowl]
+O34	bowl
+S24	contains	{sesame seed}
+O349	sesame seed
+S72	in	[bowl]
+S119	seed
+O355	skillet
+S46	empty
+O409	vegetable oil
+S72	in	[bottle]
+S81	liquid
+O308	potato
+S155	whole
+O231	mandoline
+O270	onion
+S72	in	[bowl]
+S76	julienned
+S130	sliced
+O350	shaker
+S24	contains	{parsley}
+O284	parsley
+S44	dried
+S72	in	[shaker]
+O147	flour
+S72	in	[spoon]
+S106	powder
+O101	container
+S24	contains	{corn starch}
+O110	corn starch
+S72	in	[container]
+S106	powder
+O249	mixing bowl
+S24	contains	{egg white and yolk,hashbrown mix}
+O355	skillet
+S24	contains	{hash brown}
+S71	hot
+S93	on	[stove]
+O35	box
+S24	contains	{foil}
+O0	aluminium foil
+S72	in	[box]
+O178	green bean
+S93	on	[plate]
+S155	whole
+O163	garlic
+S101	peeled
+O270	onion
+S130	sliced
+O385	tarragon
+S155	whole
+O104	cooking spray
+S24	contains	{olive oil}
+O267	olive oil
+S72	in	[spray can]
+O377	sweet pepper
+S17	chopped
+O40	broccoli
+S146	uncooked
+S155	whole
+O40	broccoli
+S41	destemmed
+S53	floret
+S93	on	[cutting board]
+S146	uncooked
+O215	kettle
+S24	contains	{water}
+O414	water
+S72	in	[kettle]
+S81	liquid
+O369	squeezer
+O103	cooking pan
+S24	contains	{broccoli,lemon juice,olive oil,salt}
+S71	hot
+S93	on	[stove]
+O34	bowl
+S24	contains	{buttermilk}
+O50	buttermilk
+S72	in	[bowl]
+S81	liquid
+O34	bowl
+S24	contains	{ricotta}
+O327	ricotta
+S31	crumbled
+S72	in	[bowl]
+S133	softened
+O22	black pepper
+S72	in	[pepper mill]
+S102	peppercorn
+O4	avocado
+S17	chopped
+S72	in	[bowl]
+O49	butter
+S72	in	[container]
+S140	stick
+O304	plate
+S24	contains	{turkey}
+O405	turkey
+S93	on	[plate]
+S130	sliced
+O34	bowl
+S24	contains	{jelly}
+O211	jelly
+S72	in	[bowl]
+O34	bowl
+S24	contains	{green leaf}
+O179	green leaf
+S72	in	[bowl]
+O36	bread
+S15	buttered
+S93	on	[cutting board]
+O276	oven
+S46	empty
+S90	off
+O163	garlic
+S13	bulb
+O34	bowl
+S24	contains	{parsley}
+O284	parsley
+S17	chopped
+S72	in	[bowl]
+S78	leaf
+O163	garlic
+S21	clove
+S72	in	[food processor bowl]
+S101	peeled
+O36	bread
+S82	loaf
+S155	whole
+O253	mozzarella
+S64	grated
+S72	in	[bowl]
+O35	box
+S24	contains	{aluminium foil}
+O0	aluminium foil
+S72	in	[box]
+S124	sheet
+O283	parmesan
+S9	block
+S155	whole
+O46	brussel sprout
+S72	in	[bowl]
+S146	uncooked
+S155	whole
+O414	water
+S58	from	[faucet]
+O46	brussel sprout
+S93	on	[cutting board]
+S139	stem removed
+S152	washed
+O46	brussel sprout
+S93	on	[cutting board]
+S101	peeled
+S146	uncooked
+O267	olive oil
+S72	in	[bottle]
+O367	spoon
+S24	contains	{pepper}
+O46	brussel sprout
+S72	in	[plastic bag]
+S101	peeled
+S146	uncooked
+O303	plastic bag
+S24	contains	{brussel sprout}
+O46	brussel sprout
+S72	in	[baking tray]
+S118	seasoned
+S146	uncooked
+O185	grill
+S90	off
+O277	packet
+S24	contains	{ground beef}
+O190	ground beef
+S72	in	[packet]
+S109	raw
+O34	bowl
+S24	contains	{cheese}
+O34	bowl
+S24	contains	{soup mix}
+O360	soup mix
+S72	in	[bowl]
+S106	powder
+O163	garlic
+S72	in	[bowl]
+S106	powder
+O34	bowl
+S24	contains	{worcestershire sauce}
+O427	worcestershire sauce
+S72	in	[bowl]
+S81	liquid
+O284	parsley
+S44	dried
+S72	in	[bowl]
+O34	bowl
+S24	contains	{rosemary}
+O329	rosemary
+S44	dried
+S72	in	[bowl]
+O277	packet
+S24	contains	{hamburger bun}
+O198	hamburger bun
+S72	in	[packet]
+S104	plain
+O277	packet
+S24	contains	{lettuce}
+O225	lettuce
+S72	in	[packet]
+S155	whole
+O225	lettuce
+S155	whole
+O277	packet
+S24	contains	{ribs}
+O322	ribs
+S72	in	[packet]
+S109	raw
+O276	oven
+S46	empty
+S91	off (ready)
+O33	bottle
+S24	contains	{barbecue sauce}
+O13	barbecue sauce
+S72	in	[bottle]
+S144	thick liquid
+O45	brush
+O284	parsley
+S138	stem
+O167	garlic press
+S20	closed
+S46	empty
+O22	black pepper
+S72	in	[pepper mill]
+S102	peppercorn
+S155	whole
+O35	box
+S24	contains	{parchment paper}
+O282	parchment paper
+S72	in	[box]
+S124	sheet
+O200	hand mixer
+S90	off
+O361	sour cream
+S72	in	[bowl]
+O241	measuring cup
+S24	contains	{lemon extract}
+O220	lemon extract
+S72	in	[measuring cup]
+O31	blueberry
+S72	in	[bowl]
+S152	washed
+O258	muffin pan
+S46	empty
+O257	muffin cup
+S72	in	[packet]
+O256	muffin batter
+S24	contains	{baking powder,baking soda,blueberry,butter,egg white and yolk,flour,lemon extract,milk,salt,sour cream,sugar}
+O368	spray can
+S24	contains	{vegetable oil}
+O409	vegetable oil
+S72	in	[spray can]
+S81	liquid
+O101	container
+S24	contains	{breadcrumb}
+O38	breadcrumb
+S32	crumbs
+S72	in	[container]
+O101	container
+S24	contains	{parmesan}
+O283	parmesan
+S64	grated
+S72	in	[container]
+O210	jar
+S24	contains	{basil}
+O14	basil
+S44	dried
+S72	in	[jar]
+S78	leaf
+O22	black pepper
+S66	ground
+S72	in	[jar]
+O38	breadcrumb
+S32	crumbs
+S72	in	[bowl]
+O38	breadcrumb
+S72	in	[bowl]
+O70	chicken
+S93	on	[plate]
+S109	raw
+O70	chicken
+S24	contains	{basil,black pepper,breadcrumb,garlic,olive oil,parmesan}
+S72	in	[bowl]
+S109	raw
+O170	garlic-parmesan chicken
+S2	baked
+S24	contains	{basil,black pepper,breadcrumb,chicken,garlic,olive oil,parmesan,vegetable oil}
+S93	on	[baking tray]
+O59	carrot
+S151	unpeeled
+S155	whole
+O277	packet
+S24	contains	{cherry tomato}
+S117	sealed
+O69	cherry tomato
+S72	in	[packet]
+S93	on	[stem]
+S155	whole
+O101	container
+S24	contains	{onion}
+O270	onion
+S17	chopped
+S72	in	[container]
+O210	jar
+S24	contains	{green olive}
+O180	green olive
+S72	in	[jar]
+S155	whole
+O33	bottle
+S24	contains	{green olive oil}
+O210	jar
+S24	contains	{oregano}
+O274	oregano
+S44	dried
+S72	in	[jar]
+O303	plastic bag
+S46	empty
+S95	opened
+O277	packet
+S24	contains	{tea bag}
+O387	tea bag
+S44	dried
+S72	in	[packet]
+O387	tea bag
+S72	in	[packet]
+O303	plastic bag
+S24	contains	{strawberry}
+O372	strawberry
+S60	frozen
+S72	in	[plastic bag]
+O34	bowl
+S24	contains	{sugar syrup}
+O375	sugar syrup
+S72	in	[bowl]
+S81	liquid
+O386	tea
+S72	in	[blender cup]
+O343	scissors
+O119	cup
+S24	contains	{milk}
+O244	milk
+S72	in	[cup]
+S81	liquid
+O277	packet
+S24	contains	{napkin}
+O263	napkin
+S45	dry
+S72	in	[packet]
+O304	plate
+S72	in	[cooking pan]
+O5	bacon
+S17	chopped
+S57	fried
+S93	on	[plate]
+O34	bowl
+S24	contains	{yeast}
+O428	yeast
+S72	in	[bowl]
+S106	powder
+O277	packet
+S24	contains	{flour}
+O147	flour
+S72	in	[packet]
+S106	powder
+O35	box
+S24	contains	{saran wrap}
+O338	saran wrap
+S72	in	[box]
+S124	sheet
+O382	table
+S46	empty
+O302	pizza pan
+S46	empty
+O34	bowl
+S24	contains	{marinara}
+O234	marinara
+S72	in	[bowl]
+S144	thick liquid
+O253	mozzarella
+S72	in	[packet]
+S126	shredded
+O302	pizza pan
+S24	contains	{pizza dough}
+S72	in	[oven]
+O299	pizza
+S2	baked
+S24	contains	{flour,marinara,mozzarella,olive oil,salt,sugar,water,yeast}
+S72	in	[pizza pan]
+O264	noodle
+S146	uncooked
+O336	salt
+S63	granulated
+O367	spoon
+S24	contains	{olive oil}
+O267	olive oil
+S72	in	[spoon]
+O5	bacon
+S109	raw
+S130	sliced
+O390	toaster
+S47	empty (ready)
+O390	toaster
+S46	empty
+O210	jar
+S24	contains	{mayonnaise}
+O240	mayonnaise
+S30	creamy
+S72	in	[jar]
+O304	plate
+S24	contains	{ham}
+O196	ham
+S25	cooked
+S93	on	[plate]
+S130	sliced
+O405	turkey
+S25	cooked
+S93	on	[plate]
+S130	sliced
+O5	bacon
+S57	fried
+S93	on	[plate]
+S130	sliced
+O304	plate
+S24	contains	{lettuce}
+O225	lettuce
+S78	leaf
+S93	on	[plate]
+O34	bowl
+S24	contains	{fries}
+O156	fries
+S25	cooked
+S72	in	[bowl]
+O34	bowl
+S24	contains	{baking powder,cinnamon,salt}
+O84	chocolate chip
+S72	in	[bowl]
+O259	mug
+S24	contains	{butter}
+O49	butter
+S72	in	[mug]
+S85	melted
+O34	bowl
+S24	contains	{brown sugar}
+O42	brown sugar
+S63	granulated
+S72	in	[bowl]
+O33	bottle
+S24	contains	{grapeseed oil}
+O174	grapeseed oil
+S72	in	[bottle]
+O34	bowl
+S24	contains	{scallion}
+O342	scallion
+S17	chopped
+S72	in	[bowl]
+O210	jar
+S24	contains	{chili sauce}
+O75	chili sauce
+S72	in	[jar]
+O171	ginger
+S101	peeled
+O241	measuring cup
+S24	contains	{chicken stock}
+O72	chicken stock
+S72	in	[measuring cup]
+O241	measuring cup
+S24	contains	{beef stock}
+O19	beef stock
+S72	in	[measuring cup]
+O119	cup
+S24	contains	{soy sauce}
+O362	soy sauce
+S72	in	[cup]
+O119	cup
+S24	contains	{fish sauce}
+O145	fish sauce
+S72	in	[cup]
+O56	can
+S24	contains	{tuna}
+S117	sealed
+O267	olive oil
+S72	in	[can]
+S81	liquid
+O400	tuna
+S72	in	[can]
+S126	shredded
+O34	bowl
+S46	empty
+S156	with	[strainer]
+O371	strainer
+S24	contains	{olive oil,tuna}
+S93	on	[bowl]
+O400	tuna
+S72	in	[strainer]
+S126	shredded
+S136	squeezed
+O249	mixing bowl
+S24	contains	{tuna}
+O81	chive
+S78	leaf
+S155	whole
+O284	parsley
+S93	on	[cutting board]
+S155	whole
+O34	bowl
+S24	contains	{oats}
+O265	oats
+S62	grain
+S72	in	[bowl]
+S146	uncooked
+O367	spoon
+S24	contains	{chili pepper}
+O73	chili pepper
+S50	flakes
+S72	in	[spoon]
+O400	tuna
+S72	in	[mixing bowl]
+S126	shredded
+O277	packet
+S24	contains	{butter}
+O49	butter
+S72	in	[packet]
+S133	softened
+S140	stick
+S150	unmelted
+O243	microwave
+S47	empty (ready)
+O243	microwave
+S46	empty
+O210	jar
+S24	contains	{garlic}
+S95	opened
+O163	garlic
+S72	in	[jar]
+S86	minced
+O133	egg
+S72	in	[bowl]
+S155	whole
+O49	butter
+S93	on	[plate]
+S133	softened
+S140	stick
+S150	unmelted
+O304	plate
+S24	contains	{scrambled eggs}
+O34	bowl
+S24	contains	{vinegar}
+O411	vinegar
+S72	in	[bowl]
+S81	liquid
+O51	cabbage
+S155	whole
+O332	salad bowl
+S46	empty
+O270	onion
+S93	on	[cutting board]
+S101	peeled
+O237	matzo
+S2	baked
+O336	salt
+S72	in	[grinder]
+O277	packet
+S24	contains	{white rice}
+O326	rice cooker
+S46	empty
+S90	off
+O241	measuring cup
+S24	contains	{rice}
+O199	hand
+S46	empty
+O335	salmon
+S25	cooked
+S49	flaked
+S72	in	[bowl]
+O277	packet
+S24	contains	{seaweed}
+O347	seaweed
+S72	in	[packet]
+S124	sheet
+O204	highball glass
+S46	empty
+O350	shaker
+S24	contains	{celery salt}
+O63	celery salt
+S63	granulated
+S72	in	[shaker]
+O212	jigger
+S46	empty
+O412	vodka
+S72	in	[bottle]
+S81	liquid
+O119	cup
+S24	contains	{ice}
+O206	ice
+S35	cubed
+S60	frozen
+S72	in	[cup]
+O210	jar
+S24	contains	{tomato juice}
+O393	tomato juice
+S72	in	[jar]
+O352	shot glass
+S24	contains	{worcestershire sauce}
+O427	worcestershire sauce
+S72	in	[shot glass]
+S144	thick liquid
+O95	cocktail
+S24	contains	{ice,tomato juice,vodka}
+S72	in	[highball glass]
+S81	liquid
+O352	shot glass
+S24	contains	{tabasco sauce}
+O381	tabasco sauce
+S72	in	[shot glass]
+S144	thick liquid
+O62	celery
+S93	on	[surface]
+S138	stem
+O277	packet
+S24	contains	{cranberry}
+O113	cranberry
+S44	dried
+S72	in	[packet]
+O33	bottle
+S24	contains	{maple syrup}
+O233	maple syrup
+S72	in	[bottle]
+O112	cornmeal
+S66	ground
+S72	in	[bowl]
+O9	baking soda
+S72	in	[box]
+S106	powder
+O35	box
+S24	contains	{baking soda}
+O8	baking powder
+S72	in	[tin can]
+S106	powder
+O389	tin can
+S24	contains	{baking powder}
+O101	container
+S24	contains	{salt}
+O336	salt
+S63	granulated
+S72	in	[container]
+O429	yogurt
+S72	in	[measuring cup]
+O413	walnut
+S17	chopped
+S72	in	[bowl]
+O34	bowl
+S24	contains	{walnut}
+O277	packet
+S24	contains	{dark chocolate}
+O123	dark chocolate
+S3	bar
+S72	in	[packet]
+O389	tin can
+S24	contains	{canola oil}
+O58	canola oil
+S72	in	[tin can]
+O419	whipped cream
+S72	in	[bowl]
+O34	bowl
+S24	contains	{whipped cream}
+O119	cup
+S24	contains	{powdered sugar}
+O311	powdered sugar
+S72	in	[cup]
+S106	powder
+O350	shaker
+S24	contains	{garlic salt}
+O169	garlic salt
+S63	granulated
+S72	in	[shaker]
+O49	butter
+S72	in	[bowl]
+S133	softened
+O34	bowl
+S24	contains	{garlic butter}
+O370	stove
+S91	off (ready)
+S148	under	[frying pan]
+O270	onion
+S151	unpeeled
+S155	whole
+O34	bowl
+S24	contains	{half-and-half}
+O195	half-and-half
+S72	in	[bowl]
+S81	liquid
+O34	bowl
+S24	contains	{zucchini}
+O430	zucchini
+S17	chopped
+S72	in	[bowl]
+O392	tomato
+S72	in	[bowl]
+S143	sundried
+O34	bowl
+S24	contains	{goat cheese}
+O172	goat cheese
+S31	crumbled
+S72	in	[bowl]
+S133	softened
+O14	basil
+S44	dried
+S72	in	[shaker]
+O350	shaker
+S24	contains	{thyme}
+O388	thyme
+S44	dried
+S72	in	[shaker]
+O350	shaker
+S24	contains	{rosemary}
+O329	rosemary
+S44	dried
+S72	in	[shaker]
+O350	shaker
+S24	contains	{marjoram}
+O235	marjoram
+S44	dried
+S72	in	[shaker]
+O336	salt
+S63	granulated
+S72	in	[grinder]
+S103	pieces
+O49	butter
+S35	cubed
+S72	in	[bowl]
+O355	skillet
+S23	contain
+S93	on	[stove]
+O34	bowl
+S24	contains	{maple syrup}
+O372	strawberry
+S155	whole
+O153	french toast
+S24	contains	{bread,butter,egg,egg mixture,maple syrup,milk}
+S25	cooked
+S93	on	[plate]
+O226	lime
+S155	whole
+O101	container
+S24	contains	{sugar}
+O373	sugar
+S63	granulated
+S72	in	[container]
+O34	bowl
+S24	contains	{mint}
+O245	mint
+S72	in	[bowl]
+S78	leaf
+O254	muddler
+O206	ice
+S33	crushed
+S60	frozen
+S72	in	[bucket]
+O33	bottle
+S24	contains	{club soda}
+O94	club soda
+S72	in	[bottle]
+S81	liquid
+O206	ice
+S33	crushed
+S72	in	[highball glass]
+O33	bottle
+S24	contains	{worcestershire sauce}
+O427	worcestershire sauce
+S72	in	[bottle]
+O362	soy sauce
+S72	in	[bottle]
+O33	bottle
+S24	contains	{rice beer}
+O325	rice beer
+S72	in	[bottle]
+O33	bottle
+S24	contains	{white wine}
+O425	white wine
+S72	in	[bottle]
+O33	bottle
+S24	contains	{hot sauce}
+O205	hot sauce
+S72	in	[bottle]
+O190	ground beef
+S72	in	[bowl]
+S146	uncooked
+O36	bread
+S14	bun
+S93	on	[plate]
+O409	vegetable oil
+S72	in	[spray can]
+O184	griddle
+S91	off (ready)
+O277	packet
+S24	contains	{bacon}
+S94	open
+O5	bacon
+S72	in	[packet]
+S109	raw
+O184	griddle
+S90	off
+O308	potato
+S72	in	[strainer]
+S152	washed
+S155	whole
+O277	packet
+S24	contains	{cheddar}
+S95	opened
+O64	cheddar
+S64	grated
+S72	in	[packet]
+O258	muffin pan
+S24	contains	{bacon,cheddar,egg,potato}
+O89	cilantro
+S78	leaf
+S155	whole
+O410	vinaigrette
+S24	contains	{lemon juice,olive oil}
+S30	creamy
+S72	in	[mixing bowl]
+O232	mango
+S151	unpeeled
+S155	whole
+O232	mango
+O351	shallot
+S151	unpeeled
+S155	whole
+O353	shrimp
+S17	chopped
+S72	in	[salad bowl]
+O267	olive oil
+S72	in	[bowl]
+O323	rice
+S72	in	[bowl]
+S146	uncooked
+O34	bowl
+S24	contains	{lime zest}
+O228	lime zest
+S72	in	[bowl]
+O56	can
+S24	contains	{kidney bean}
+S117	sealed
+O216	kidney bean
+S25	cooked
+S72	in	[can]
+S132	soaked
+O236	masher
+O33	bottle
+S24	contains	{chipotle sauce}
+O79	chipotle sauce
+S72	in	[bottle]
+S144	thick liquid
+O277	packet
+S24	contains	{chipotle}
+O4	avocado
+S151	unpeeled
+S155	whole
+O277	packet
+S24	contains	{bread}
+S95	opened
+O36	bread
+S72	in	[packet]
+S130	sliced
+O390	toaster
+S46	empty
+S91	off (ready)
+O34	bowl
+S24	contains	{escarole}
+O142	escarole
+S72	in	[bowl]
+S78	leaf
+O316	radish
+S151	unpeeled
+S155	whole
+O34	bowl
+S24	contains	{bean sprout}
+O17	bean sprout
+S72	in	[bowl]
+S78	leaf
+O181	green onion
+S138	stem
+S155	whole
+O277	packet
+S24	contains	{tofu}
+O391	tofu
+S9	block
+S155	whole
+O340	saucepan
+S46	empty
+S71	hot
+S93	on	[stove]
+O34	bowl
+S24	contains	{dashi}
+O124	dashi
+S63	granulated
+S72	in	[bowl]
+O34	bowl
+S24	contains	{miso}
+O246	miso
+S72	in	[bowl]
+S100	paste
+O20	beefsteak
+S146	uncooked
+O34	bowl
+S24	contains	{pepper}
+O277	packet
+S24	contains	{salmon}
+S117	sealed
+O335	salmon
+S60	frozen
+S72	in	[packet]
+S109	raw
+O414	water
+S59	from faucet
+S81	liquid
+O33	bottle
+S24	contains	{sesame oil}
+S95	opened
+O348	sesame oil
+S72	in	[bottle]
+S81	liquid
+O22	black pepper
+S72	in	[grinder]
+S155	whole
+O210	jar
+S24	contains	{salt}
+O171	ginger
+S19	chunk
+O33	bottle
+S24	contains	{vegetable oil}
+S95	opened
+O34	bowl
+S24	contains	{black pepper,oil mixture,salmon,sesame oil}
+O35	box
+S24	contains	{mortar,pestle}
+O252	mortar
+S46	empty
+S72	in	[box]
+O295	pestle
+S72	in	[box]
+O277	packet
+S24	contains	{coriander}
+O105	coriander
+S72	in	[packet]
+S120	seeds
+O103	cooking pan
+S46	empty
+S71	hot
+S93	on	[stove]
+S93	on	[surface]
+O277	packet
+S24	contains	{cumin}
+O350	shaker
+S24	contains	{spice}
+O365	spice
+S66	ground
+S72	in	[container]
+O367	spoon
+S24	contains	{spice}
+S66	ground
+O365	spice
+S72	in	[spoon]
+O210	jar
+S20	closed
+S24	contains	{clove}
+O92	clove
+S72	in	[jar]
+S120	seeds
+O22	black pepper
+S72	in	[jar]
+S102	peppercorn
+S155	whole
+O270	onion
+S41	destemmed
+S93	on	[cutting board]
+S151	unpeeled
+O399	trash bin
+S24	contains	{trash}
+O252	mortar
+S46	empty
+O277	packet
+S24	contains	{lemon grass}
+S117	sealed
+O221	lemon grass
+S72	in	[packet]
+S138	stem
+O221	lemon grass
+S93	on	[cutting board]
+S138	stem
+S151	unpeeled
+O277	packet
+S24	contains	{shrimp}
+S117	sealed
+O353	shrimp
+S72	in	[packet]
+S100	paste
+O210	jar
+S20	closed
+S24	contains	{galangal}
+O162	galangal
+S72	in	[jar]
+S100	paste
+O33	bottle
+S24	contains	{fish sauce}
+O145	fish sauce
+S72	in	[bottle]
+S114	sauce
+O270	onion
+S42	diced
+S72	in	[mortar]
+O350	shaker
+S24	contains	{paprika}
+O281	paprika
+S66	ground
+S72	in	[shaker]
+O277	packet
+S24	contains	{rib}
+O282	parchment paper
+S93	on	[surface]
+S124	sheet
+O219	lemon
+S93	on	[surface]
+S130	sliced
+O13	barbecue sauce
+S72	in	[bottle]
+O192	gruyere
+S9	block
+O34	bowl
+S24	contains	{mustard}
+O262	mustard
+S44	dried
+S66	ground
+S72	in	[bowl]
+O34	bowl
+S24	contains	{paprika}
+O281	paprika
+S44	dried
+S66	ground
+S72	in	[mixing bowl]
+O186	grill spatula
+S24	contains	{cheese}
+O267	olive oil
+S72	in	[spray bottle]
+S81	liquid
+O186	grill spatula
+S24	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+S93	on	[grill]
+O376	surface
+S46	empty
+O33	bottle
+S24	contains	{enchilada sauce}
+O141	enchilada sauce
+S72	in	[bottle]
+O398	tortilla
+S104	plain
+O103	cooking pan
+S24	contains	{ground beef,onion}
+O210	jar
+S24	contains	{black olive}
+O21	black olive
+S72	in	[jar]
+S155	whole
+O370	stove
+S90	off
+S156	with	[skillet]
+O49	butter
+S72	in	[skillet]
+S81	liquid
+S85	melted
+S133	softened
+O389	tin can
+S24	contains	{tuna}
+S117	sealed
+O400	tuna
+S72	in	[tin can]
+O34	bowl
+S24	contains	{mayonnaise,onion}
+O240	mayonnaise
+S72	in	[bowl]
+O36	bread
+S72	in	[toaster]
+S145	toasted
+O49	butter
+S72	in	[container]
+O225	lettuce
+S72	in	[bowl]
+S121	separated
+O308	potato
+S151	unpeeled
+S155	whole
+O49	butter
+S72	in	[packet]
+S133	softened
+S150	unmelted
+O210	jar
+S24	contains	{garlic}
+O163	garlic
+S72	in	[jar]
+S100	paste
+O383	tablespoon
+O173	gouda
+S9	block
+S155	whole
+O383	tablespoon
+S46	empty
+O241	measuring cup
+S24	contains	{heavy cream}
+O118	cucumber
+S67	halved
+S151	unpeeled
+O2	apple
+S151	unpeeled
+S155	whole
+O253	mozzarella
+S9	block
+S72	in	[packet]
+S155	whole
+O33	bottle
+S24	contains	{salad dressing}
+O333	salad dressing
+S30	creamy
+S72	in	[bottle]
+O210	jar
+S46	empty
+O34	bowl
+S24	contains	{egg yolk}
+O139	egg yolk
+S72	in	[bowl]
+O102	cookie dough
+S72	in	[jar]
+S146	uncooked
+O6	bag
+S24	contains	{potato}
+O308	potato
+S72	in	[bag]
+S151	unpeeled
+S155	whole
+O353	shrimp
+S72	in	[packet]
+S109	raw
+O210	jar
+S24	contains	{mayonnaise}
+S95	opened
+O33	bottle
+S24	contains	{mustard}
+O262	mustard
+S30	creamy
+S72	in	[bottle]
+O210	jar
+S24	contains	{relish}
+S95	opened
+O320	relish
+S72	in	[jar]
+S114	sauce
+O350	shaker
+S24	contains	{dill}
+O125	dill
+S44	dried
+S72	in	[shaker]
+S79	leaves
+O62	celery
+S155	whole
+O181	green onion
+S17	chopped
+S72	in	[bowl]
+O341	sausage
+S72	in	[packet]
+S146	uncooked
+O49	butter
+S35	cubed
+S93	on	[plate]
+S133	softened
+S150	unmelted
+O277	packet
+S24	contains	{chicken}
+O70	chicken
+S72	in	[packet]
+S146	uncooked
+S155	whole
+O281	paprika
+S72	in	[shaker]
+S106	powder
+O270	onion
+S72	in	[shaker]
+S106	powder
+O350	shaker
+S24	contains	{garlic powder}
+O163	garlic
+S72	in	[shaker]
+S106	powder
+O350	shaker
+S24	contains	{chili powder}
+O74	chili powder
+S72	in	[shaker]
+S106	powder
+O277	packet
+S24	contains	{tortilla}
+O398	tortilla
+S72	in	[packet]
+S104	plain
+O65	cheese
+S64	grated
+S93	on	[plate]
+O315	quesadilla
+S24	contains	{cheese,chicken,olive oil,taco seasoning,tortilla}
+S25	cooked
+S93	on	[cutting board]
+O106	corn
+S155	whole
+O306	pot
+S24	contains	{water}
+O49	butter
+S35	cubed
+S72	in	[packet]
+O34	bowl
+S24	contains	{corn starch}
+O110	corn starch
+S72	in	[bowl]
+O34	bowl
+S24	contains	{parmesan}
+O210	jar
+S24	contains	{sour cream}
+O361	sour cream
+S30	creamy
+S72	in	[jar]
+O6	bag
+S24	contains	{sugar}
+S95	opened
+O373	sugar
+S63	granulated
+S72	in	[bag]
+O34	bowl
+S24	contains	{pineapple}
+O297	pineapple
+S42	diced
+S72	in	[bowl]
+O34	bowl
+S24	contains	{raisin}
+O317	raisin
+S72	in	[bowl]
+S155	whole
+O277	packet
+S24	contains	{macaroni}
+O229	macaroni
+S72	in	[packet]
+S146	uncooked
+O389	tin can
+S24	contains	{milk}
+O244	milk
+S72	in	[tin can]
+O65	cheese
+S64	grated
+O272	orange
+S155	whole
+O34	bowl
+S24	contains	{cabbage}
+O51	cabbage
+S72	in	[bowl]
+S86	minced
+O34	bowl
+S24	contains	{ground pork}
+O191	ground pork
+S72	in	[bowl]
+S86	minced
+O34	bowl
+S24	contains	{rice beer}
+O348	sesame oil
+S72	in	[bowl]
+O131	dumpling wrapper
+S46	empty
+S72	in	[hand]
+O194	gyoza filling
+S93	on	[wrapper]
+O241	measuring cup
+S24	contains	{corn syrup}
+O111	corn syrup
+S72	in	[measuring cup]
+O241	measuring cup
+S24	contains	{sugar}
+O241	measuring cup
+S24	contains	{peanut}
+O288	peanut
+S72	in	[measuring cup]
+O243	microwave
+S90	off
+O9	baking soda
+S72	in	[bowl]
+O282	parchment paper
+S46	empty
+O367	spoon
+S24	contains	{milk}
+O244	milk
+S72	in	[spoon]
+O82	chocolate
+S3	bar
+O49	butter
+S35	cubed
+O355	skillet
+S24	contains	{sandwich}
+S93	on	[stove]
+O311	powdered sugar
+S106	powder
+O210	jar
+S24	contains	{sugar}
+O8	baking powder
+S72	in	[container]
+S106	powder
+O8	baking powder
+S72	in	[spoon]
+S106	powder
+O244	milk
+S72	in	[carton]
+O290	peanut butter
+S30	creamy
+S72	in	[jar]
+O407	vanilla extract
+S72	in	[bottle]
+S81	liquid
+O200	hand mixer
+S91	off (ready)
+O277	packet
+S24	contains	{powdered sugar}
+O311	powdered sugar
+S72	in	[packet]
+S106	powder
+O277	packet
+S24	contains	{chocolate chip}
+O84	chocolate chip
+S72	in	[packet]
+S103	pieces
+O126	double boiler
+S46	empty
+O34	bowl
+S24	contains	{anchovy}
+O1	anchovy
+S25	cooked
+S72	in	[bowl]
+S155	whole
+O26	blender jar
+S1	attached to	[blender]
+S24	contains	{anchovy,garlic,lemon juice}
+S27	covered
+O262	mustard
+S72	in	[bowl]
+S100	paste
+O427	worcestershire sauce
+S72	in	[bowl]
+S114	sauce
+O23	blender
+S156	with	[blender]
+O139	egg yolk
+S72	in	[blender jar]
+S109	raw
+O34	bowl
+S24	contains	{crouton}
+O117	crouton
+S72	in	[bowl]
+S103	pieces
+O270	onion
+S155	whole
+O198	hamburger bun
+S93	on	[plate]
+O49	butter
+S72	in	[packet]
+S155	whole
+O275	oreo cookie
+S72	in	[packet]
+S155	whole
+O23	blender
+S89	no attachments
+O277	packet
+S24	contains	{white chocolate chip}
+O421	white chocolate chip
+S72	in	[packet]
+O389	tin can
+S24	contains	{condensed milk}
+O100	condensed milk
+S72	in	[tin can]
+O260	mushroom
+S155	whole
+O34	bowl
+S24	contains	{green pepper}
+O183	green pepper
+S17	chopped
+S72	in	[bowl]
+O64	cheddar
+S9	block
+O175	grater
+S96	over	[cutting board]
+O277	packet
+S24	contains	{salad greens}
+O334	salad greens
+S72	in	[packet]
+S78	leaf
+O277	packet
+S24	contains	{basil}
+O14	basil
+S72	in	[packet]
+S78	leaf
+O4	avocado
+S155	whole
+O28	blood orange
+S151	unpeeled
+S155	whole
+O33	bottle
+S24	contains	{lime juice}
+O227	lime juice
+S72	in	[bottle]
+O227	lime juice
+S72	in	[salad bowl]
+O203	heavy cream
+S30	creamy
+S72	in	[carton]
+O181	green onion
+S155	whole
+O277	packet
+S24	contains	{sausage}
+O341	sausage
+S72	in	[packet]
+S109	raw
+S155	whole
+O362	soy sauce
+S72	in	[bottle]
+S81	liquid
+O414	water
+S72	in	[spoon]
+S81	liquid
+O159	frying pan
+S46	empty
+O159	frying pan
+S24	contains	{sausage}
+S93	on	[stove]
+O106	corn
+S60	frozen
+S62	grain
+S72	in	[packet]
+O59	carrot
+S18	choppped
+S60	frozen
+S72	in	[packet]
+O182	green pea
+S5	bean
+S60	frozen
+S72	in	[packet]
+O34	bowl
+S24	contains	{white rice}
+O159	frying pan
+S24	contains	{carrot,corn,egg white and yolk,green pea,sausage,white rice}
+S93	on	[stove]
+O159	frying pan
+S24	contains	{rice mixture,soy mixture}
+S71	hot
+S93	on	[stove]
+O159	frying pan
+S24	contains	{green onion,rice mixture,soy mixture}
+S93	on	[stove]

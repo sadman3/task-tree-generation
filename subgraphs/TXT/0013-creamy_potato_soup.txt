@@ -1,0 +1,499 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0013-creamy_potato_soup.mp4
+# Source:	https://www.youtube.com/watch?v=QEm5f-yui3g
+//
+O	potato	1
+S	unpeeled
+S	whole
+O	cutting board	0
+S	empty
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{potato}
+O	potato	1
+S	unpeeled
+S	on	[cutting board]
+S	whole
+//
+O	potato	0
+S	unpeeled
+S	on	[cutting board]
+S	whole
+O	knife	1
+M	dice	<0:30,0:58>
+O	potato	0
+S	on	[cutting board]
+S	diced
+//
+O	cutting board	1
+S	contains	{potato}
+O	potato	1
+S	on	[cutting board]
+S	diced
+O	plate	0
+S	empty
+M	pour and scrape	<Assumed>
+O	plate	0
+S	contains	{potato}
+O	potato	1
+S	diced
+S	on	[plate]
+O	cutting board	1
+S	empty
+//
+O	butter	0
+S	softened
+S	in	[packet]
+S	unmelted
+O	knife	1
+M	cut	<Assumed>
+O	butter	0
+S	softened
+S	halved
+S	in	[packet]
+S	unmelted
+//
+O	packet	1
+S	contains	{butter}
+O	butter	0
+S	softened
+S	halved
+S	in	[packet]
+S	unmelted
+O	plate	0
+S	empty
+M	unwrap	<Assumed>
+O	plate	0
+S	contains	{butter}
+O	butter	1
+S	softened
+S	halved
+S	on	[plate]
+S	unmelted
+O	packet	1
+S	empty
+//
+O	plate	1
+S	contains	{butter}
+O	butter	1
+S	softened
+S	halved
+S	on	[plate]
+S	unmelted
+O	pot	0
+S	hot
+S	on	[stove]
+S	empty
+M	pour	<1:19:50,1:20>
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{butter}
+O	butter	1
+S	softened
+S	halved
+S	unmelted
+S	in	[pot]
+O	plate	1
+S	empty
+//
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{butter}
+O	butter	0
+S	softened
+S	halved
+S	unmelted
+S	in	[pot]
+M	melt	<Assumed>
+O	butter	0
+S	liquid
+S	melted
+S	in	[pot]
+//
+O	onion	0
+S	unpeeled
+S	whole
+O	knife	1
+M	peel	<Assumed>
+O	onion	0
+S	peeled
+S	whole
+//
+O	cutting board	0
+S	empty
+O	onion	1
+S	peeled
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	on	[cutting board]
+S	peeled
+S	whole
+//
+O	onion	0
+S	on	[cutting board]
+S	peeled
+S	whole
+O	knife	1
+M	chop	<Assumed>
+O	onion	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	on	[cutting board]
+O	plate	0
+S	empty
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{onion}
+O	cutting board	0
+O	onion	1
+S	chopped
+S	on	[plate]
+//
+O	cutting board	1
+S	contains	{celery}
+O	celery	1
+S	chopped
+S	on	[cutting board]
+O	plate	0
+S	empty
+M	scrape	<Assumed>
+O	plate	0
+S	contains	{celery}
+O	celery	1
+S	chopped
+S	on	[plate]
+O	cutting board	1
+S	empty
+//
+O	onion	0
+S	unpeeled
+S	whole
+O	knife	1
+M	peel	<Assumed>
+O	carrot	0
+S	whole
+S	peeled
+//
+O	cutting board	0
+S	empty
+O	carrot	1
+S	whole
+S	peeled
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{carrot}
+O	carrot	0
+S	whole
+S	on	[cutting board]
+S	peeled
+//
+O	carrot	0
+S	whole
+S	on	[cutting board]
+S	peeled
+O	knife	1
+M	chop	<Assumed>
+O	carrot	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	1
+S	contains	{carrot}
+O	carrot	1
+S	chopped
+S	on	[cutting board]
+O	plate	0
+S	empty
+M	scrape	<Assumed>
+O	plate	0
+S	contains	{carrot}
+O	carrot	1
+S	chopped
+S	on	[plate]
+O	cutting board	1
+S	empty
+//
+O	shaker	1
+S	contains	{basil}
+O	basil	1
+S	dried
+S	in	[shaker]
+O	plate	0
+S	empty
+M	sprinkle	<Assumed>
+O	shaker	0
+S	contains	{basil}
+O	basil	1
+S	dried
+S	in	[bowl]
+//
+O	jar	0
+S	contains	{garlic}
+O	garlic	1
+S	in	[jar]
+S	paste
+O	tablespoon	1
+M	scoop	<Assumed>
+O	tablespoon	1
+S	contains	{garlic}
+O	garlic	1
+S	in	[tablespoon]
+S	paste
+//
+O	carton	1
+S	contains	{chicken broth}
+O	chicken broth	1
+S	liquid
+S	in	[carton]
+O	bowl	0
+S	empty
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{chicken broth}
+O	chicken broth	1
+S	liquid
+S	in	[bowl]
+//
+O	grater	0
+O	bowl	0
+S	empty
+O	gouda	1
+S	block
+S	whole
+M	grate	<Assumed>
+O	bowl	0
+S	contains	{gouda}
+O	gouda	1
+S	grated
+S	in	[bowl]
+O	grater	0
+//
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{butter}
+O	plate	1
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	on	[plate]
+O	plate	1
+S	contains	{carrot}
+O	carrot	1
+S	chopped
+S	on	[plate]
+O	plate	1
+S	contains	{celery}
+O	celery	1
+S	chopped
+S	on	[plate]
+M	pour and scrape	<1:23,1:27>
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{butter,carrot,celery,onion}
+O	onion	1
+S	chopped
+S	in	[pot]
+O	plate	1
+S	empty
+//
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{butter,carrot,celery,onion}
+O	shaker	1
+S	contains	{basil}
+O	basil	1
+S	dried
+S	in	[bowl]
+M	sprinkle	<1:29,1:33>
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{basil,butter,carrot,celery,onion}
+//
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{basil,butter,carrot,celery,onion}
+O	tablespoon	1
+S	contains	{garlic}
+O	garlic	1
+S	in	[tablespoon]
+S	paste
+M	pour	<1:34,1:36>
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{basil,butter,carrot,celery,garlic,onion}
+O	garlic	1
+S	in	[pot]
+S	paste
+O	tablespoon	1
+S	empty
+//
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{basil,butter,carrot,celery,garlic,onion}
+O	plate	1
+S	contains	{potato}
+O	potato	1
+S	diced
+S	on	[plate]
+O	spoon	1
+M	pour and scrape	<1:38,1:44>
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{basil,butter,carrot,celery,garlic,onion,potato}
+O	potato	1
+S	diced
+S	in	[pot]
+O	plate	1
+S	empty
+//
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{basil,butter,carrot,celery,garlic,onion,potato}
+O	bowl	1
+S	contains	{chicken broth}
+O	chicken broth	1
+S	liquid
+S	in	[bowl]
+M	pour	<1:49,1:52>
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{basil,butter,carrot,celery,chicken broth,garlic,onion,potato}
+O	chicken broth	1
+S	liquid
+S	in	[pot]
+O	bowl	1
+S	empty
+//
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{basil,butter,carrot,celery,chicken broth,garlic,onion,potato}
+O	flour	1
+S	powder
+S	in	[spoon]
+O	whisk	1
+M	pour and mix	<1:52,2:04>
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{basil,butter,carrot,celery,chicken broth,flour,garlic,onion,potato}
+O	potato soup	0
+S	thick liquid
+S	partly cooked
+S	contains	{basil,butter,carrot,celery,chicken broth,flour,garlic,onion,potato}
+S	in	[pot]
+//
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{basil,butter,carrot,celery,chicken broth,flour,garlic,onion,potato}
+O	potato soup	0
+S	thick liquid
+S	partly cooked
+S	contains	{basil,butter,carrot,celery,chicken broth,flour,garlic,onion,potato}
+S	in	[pot]
+O	measuring cup	1
+S	contains	{heavy cream}
+O	heavy cream	1
+S	creamy
+S	in	[measuring cup]
+O	whisk	1
+M	pour and mix	<2:10,2:17>
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{basil,butter,carrot,celery,chicken broth,flour,garlic,heavy cream,onion,potato}
+O	potato soup	1
+S	thick liquid
+S	partly cooked
+S	contains	{basil,butter,carrot,celery,chicken broth,flour,garlic,heavy cream,onion,potato}
+S	in	[pot]
+//
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{basil,butter,carrot,celery,chicken broth,flour,garlic,heavy cream,onion,potato}
+O	potato soup	0
+S	thick liquid
+S	partly cooked
+S	contains	{basil,butter,carrot,celery,chicken broth,flour,garlic,heavy cream,onion,potato}
+S	in	[pot]
+O	bowl	1
+S	contains	{gouda}
+O	cheese	1
+S	grated
+S	in	[bowl]
+O	whisk	1
+M	pour and mix*	<2:26,2:35>
+O	pot	0
+S	hot
+S	on	[stove]
+S	contains	{potato soup}
+O	potato soup	0
+S	thick liquid
+S	partly cooked
+S	contains	{gouda,basil,butter,carrot,celery,cheese,chicken broth,flour,garlic,heavy cream,onion,potato}
+S	in	[pot]
+//
+O	pot	0
+S	hot
+S	contains	{potato soup}
+S	on	[stove]
+O	potato soup	0
+S	thick liquid
+S	partly cooked
+S	contains	{gouda,basil,butter,carrot,celery,cheese,chicken broth,flour,garlic,heavy cream,onion,potato}
+S	in	[pot]
+O	ladle	1
+O	bowl	0
+S	empty
+M	scoop and pour	<Assumed>
+O	bowl	0
+S	contains	{potato soup}
+O	potato soup	0
+S	thick liquid
+S	partly cooked
+S	contains	{gouda,basil,butter,carrot,celery,cheese,chicken broth,flour,garlic,heavy cream,onion,potato}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{potato soup}
+O	potato soup	0
+S	thick liquid
+S	partly cooked
+S	contains	{gouda,basil,butter,carrot,celery,cheese,chicken broth,flour,garlic,heavy cream,onion,potato}
+S	in	[bowl]
+O	pepper mill	1
+S	contains	{black pepper}
+O	black pepper	1
+S	whole
+S	peppercorn
+S	in	[pepper mill]
+M	grind	<2:38,2:41>
+O	bowl	0
+S	contains	{black pepper,potato soup}
+O	potato soup	0	1
+S	thick liquid
+S	cooked
+S	contains	{gouda,basil,black pepper,butter,carrot,celery,cheese,chicken broth,flour,garlic,heavy cream,onion,potato}
+S	in	[bowl]
+//

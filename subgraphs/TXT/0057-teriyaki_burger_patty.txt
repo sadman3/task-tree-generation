@@ -1,0 +1,188 @@
+O	grill	0
+S	off
+M	light	Assumed	Assumed
+O	grill	0
+S	on
+//
+O	bottle	1
+S	contains	{worcestershire sauce}
+O	worcestershire sauce	1
+S	in	[bottle]
+O	bowl	0
+S	contains	{ground beef}
+M	sprinkle	1:00	1:04
+O	bowl	0
+S	contains	{ground beef,worcestershire sauce}
+O	worcestershire sauce	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{ground beef,worcestershire sauce}
+O	bottle	1
+S	contains	{soy sauce}
+O	soy sauce	1
+S	in	[bottle]
+M	pour	1:12	1:23
+O	bowl	0
+S	contains	{ground beef,worcestershire sauce,soy sauce}
+O	soy sauce	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{ground beef,worcestershire sauce,soy sauce}
+O	bottle	1
+S	contains	{rice beer}
+O	rice beer	1
+S	in	[bottle]
+M	pour	1:28	1:32
+O	bowl	0
+S	contains	{ground beef,worcestershire sauce,soy sauce,rice beer}
+O	rice beer	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{ground beef,worcestershire sauce,soy sauce,rice beer}
+O	bottle	1
+S	contains	{white wine}
+O	white wine	1
+S	in	[bottle]
+M	pour	1:40	1:44
+O	bowl	0
+S	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine}
+O	white wine	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine}
+O	bottle	1
+S	contains	{hot sauce}
+O	hot sauce	1
+S	in	[bottle]
+M	pour	1:50	1:56
+O	bowl	0
+S	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine,hot sauce}
+O	hot sauce	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine,hot sauce}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+M	pour	1:55	1:58
+O	bowl	0
+S	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+//
+O	bowl	0
+S	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+O	hot sauce	1
+S	in	[bowl]
+O	sugar	1
+S	granulated
+S	in	[bowl]
+O	white wine	1
+S	in	[bowl]
+O	rice beer	1
+S	in	[bowl]
+O	worcestershire sauce	1
+S	in	[bowl]
+O	soy sauce	1
+S	in	[bowl]
+O	ground beef	1
+S	uncooked
+S	in	[bowl]
+M	mix	2:02	2:23
+O	bowl	0
+S	contains	{meat mix}
+O	meat mix	1
+S	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{meat mix}
+O	meat mix	1
+S	contains	{ground beef,worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S	in	[bowl]
+M	shape	2:41	2:44
+O	beef patty	1
+S	uncooked
+S	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+//
+O	beef patty	1
+S	uncooked
+S	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+O	grill	0
+S	on
+M	pick-and-place	3:01	3:07
+O	grill	0
+S	on
+S	contains	{beef patty}
+O	beef patty	1
+S	uncooked
+S	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S	on	[grill]
+//
+O	grill	0
+S	on
+S	contains	{beef patty}
+O	beef patty	1
+S	uncooked
+S	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S	on	[grill]
+M	cook	Assumed	Assumed
+O	beef patty	1
+S	partly cooked
+S	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S	on	[grill]
+//
+O	grill	0
+S	on
+S	contains	{beef patty}
+O	beef patty	1
+S	partly cooked
+S	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S	on	[grill]
+O	turner	1
+M	flip	Assumed	Assumed
+O	beef patty	1
+S	flipped
+S	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S	on	[grill]
+//
+O	grill	0
+S	on
+S	contains	{beef patty}
+O	beef patty	1
+S	flipped
+S	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S	on	[grill]
+M	cook	Assumed	Assumed
+O	beef patty	1
+S	cooked
+S	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S	on	[grill]
+//
+O	grill	0
+S	on
+S	contains	{beef patty}
+O	turner	1
+O	bread	0
+S	bun
+S	on	[plate]
+O	plate	0
+S	contains	{bread}
+O	beef patty	1
+S	cooked
+S	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S	on	[grill]
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{hamburger}
+O	hamburger	0
+S	contains	{beef patty}
+S	on	[plate]
+O	beef patty	0	11
+S	cooked
+S	contains	{worcestershire sauce,soy sauce,rice beer,white wine,hot sauce,sugar}
+S	on	[bread]
+//

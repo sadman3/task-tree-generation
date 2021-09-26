@@ -1,0 +1,274 @@
+# Source:	https://www.youtube.com/watch?v=l89y2jme4Ls
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0063-plain_omelette_mahalo.mp4
+//
+O	stove	0
+S	off
+S	under	[frying pan]
+M	turn on	<0:23-0:25>
+O	stove	0
+S	on
+S	under	[frying pan]
+//
+O	frying pan	0
+S	empty
+S	on	[stove]
+O	stove	0
+S	off
+S	under	[frying pan]
+M	preheat	<Assumed>
+O	frying pan	0
+S	hot
+S	empty
+S	on	[stove]
+//
+O	frying pan	0
+S	hot
+S	empty
+S	on	[stove]
+O	bowl	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bowl]
+M	pour	<0:33-0:36>
+O	frying pan	0
+S	hot
+S	contains	{olive oil}
+S	on	[stove]
+O	olive oil	1
+S	liquid
+S	in	[frying pan]
+//
+O	frying pan	0
+S	hot
+S	contains	{olive oil}
+S	on	[stove]
+O	bowl	0
+S	contains	{butter}
+O	butter	1
+S	softened
+S	unmelted
+S	cubed
+S	in	[bowl]
+M	pour	<0:44-0:46>
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter}
+S	on	[stove]
+O	butter	1
+S	softened
+S	unmelted
+S	cubed
+S	in	[frying pan]
+//
+O	bowl	0
+S	empty
+O	egg	1
+S	whole
+M	crack	<Assumed>
+O	bowl	0
+S	contains	{egg white,egg yolk}
+O	egg white	0
+S	uncooked
+S	in	[bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[bowl]
+//
+O	mixing bowl	0
+S	empty
+O	bowl	0
+S	contains	{egg white,egg yolk}
+O	egg white	0
+S	uncooked
+S	in	[bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[bowl]
+M	pour	<0:50-0:52>
+O	mixing bowl	0
+S	contains	{egg white,egg yolk}
+O	egg white	0
+S	uncooked
+S	in	[mixing bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{egg white,egg yolk}
+O	bowl	0
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	sprinkle	<0:58-1:00>
+O	mixing bowl	0
+S	contains	{egg white,egg yolk,salt}
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{egg white,egg yolk,salt}
+O	bowl	0
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+M	sprinkle	<1:01-1:04>
+O	mixing bowl	0
+S	contains	{egg white,egg yolk,salt,black pepper}
+O	black pepper	1
+S	ground
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{egg white,egg yolk,salt,black pepper}
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+O	black pepper	1
+S	ground
+S	in	[mixing bowl]
+O	egg white	0
+S	uncooked
+S	in	[mixing bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[mixing bowl]
+O	whisk	1
+M	whisk	<1:06-1:25>
+O	mixing bowl	0
+S	contains	{egg,salt,black pepper}
+O	egg	0
+S	beaten
+S	uncooked
+S	contains	{black pepper,salt}
+S	in	[mixing bowl]
+//
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter}
+S	on	[stove]
+O	butter	1
+S	softened
+S	unmelted
+S	cubed
+S	in	[frying pan]
+M	spread	<1:29-1:48>
+O	butter	1
+S	melted
+S	liquid
+S	in	[frying pan]
+//
+O	mixing bowl	1
+S	contains	{egg,salt,black pepper}
+O	egg	1
+S	beaten
+S	uncooked
+S	contains	{black pepper,salt}
+S	in	[mixing bowl]
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter}
+S	on	[stove]
+O	olive oil	0
+S	liquid
+S	in	[frying pan]
+O	butter	1
+S	melted
+S	liquid
+S	in	[frying pan]
+M	pour	<1:54-1:57>
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,egg}
+S	on	[stove]
+O	egg	1
+S	beaten
+S	uncooked
+S	contains	{black pepper,salt}
+S	in	[frying pan]
+//
+O	stove	0
+S	on
+S	under	[frying pan]
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,egg}
+S	on	[stove]
+O	egg	0
+S	beaten
+S	uncooked
+S	contains	{black pepper,salt}
+S	in	[frying pan]
+O	spatula	1
+M	cook and stir	<2:09-2:12,2:13-2:20,2:21-2:28>
+O	omelette	0
+S	mixed
+S	partly cooked
+S	contains	{egg,black pepper,salt}
+S	in	[frying pan]
+//
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,egg}
+S	on	[stove]
+O	omelette	0
+S	mixed
+S	partly cooked
+S	contains	{egg,black pepper,salt}
+S	in	[frying pan]
+O	turner	1
+M	fold	<3:34-3:36>
+O	omelette	0
+S	folded
+S	partly cooked
+S	contains	{egg,black pepper,salt}
+S	in	[frying pan]
+//
+O	stove	0
+S	on
+S	under	[frying pan]
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,egg}
+S	on	[stove]
+O	omelette	0
+S	folded
+S	partly cooked
+S	contains	{egg,black pepper,salt}
+S	in	[frying pan]
+M	cook	<Assumed>
+O	frying pan	0
+S	hot
+S	contains	{omelette}
+S	on	[stove]
+O	omelette	0
+S	folded
+S	cooked
+S	contains	{egg,black pepper,salt}
+S	in	[frying pan]
+//
+O	frying pan	0
+S	hot
+S	contains	{omelette}
+S	on	[stove]
+O	omelette	1
+S	folded
+S	cooked
+S	contains	{egg,black pepper,salt}
+S	in	[frying pan]
+O	plate	0
+S	empty
+O	turner	1
+M	pick-and-place	<4:13-4:16>
+O	plate	0
+S	contains	{omelette}
+O	omelette	1	23
+S	folded
+S	cooked
+S	contains	{egg,black pepper,salt}
+S	on	[plate]
+//

@@ -1,0 +1,316 @@
+O370	stove	0
+S93	on
+O306	pot	0
+S46	empty
+M61	pick-and-place	0:42	0:45
+O370	stove	0
+S93	on
+S156	with	[pot]
+O306	pot	0
+S69	heated
+S93	on	[stove]
+//
+O306	pot	0
+S69	heated
+S93	on	[stove]
+O49	butter	1
+S140	stick
+S72	in	[packet]
+M61	pick-and-place	0:47	0:49
+O306	pot	0
+S65	greased	{butter}
+S93	on	[stove]
+O49	butter	1
+S140	stick
+S72	in	[pot]
+//
+O217	knife	1
+O121	cutting board	0
+S24	contains	{garlic}
+O163	garlic	0
+S21	clove
+S93	on	[cutting board]
+M12	chop	1:03	1:08
+O163	garlic	0
+S17	chopped
+S93	on	[cutting board]
+//
+O163	garlic	1
+S17	chopped
+S93	on	[cutting board]
+O121	cutting board	1
+S24	contains	{garlic}
+O34	bowl	0
+S46	empty
+M65	pour	Assumed	Assumed
+O34	bowl	0
+S24	contains	{garlic}
+O163	garlic	1
+S17	chopped
+S72	in	[bowl]
+//
+O306	pot	0
+S24	contains	{butter}
+S93	on	[stove]
+O34	bowl	1
+S24	contains	{garlic}
+O163	garlic	1
+S17	chopped
+S72	in	[bowl]
+M65	pour	1:11	1:13
+O306	pot	0
+S24	contains	{butter,garlic}
+S93	on	[stove]
+O163	garlic	1
+S17	chopped
+S72	in	[pot]
+//
+O306	pot	0
+S24	contains	{butter,garlic}
+S93	on	[stove]
+O163	garlic	1
+S17	chopped
+S72	in	[pot]
+O367	spoon	1
+M104	stir	1:13	1:18
+O163	garlic	0
+S135	spread out
+S72	in	[pot]
+//
+O306	pot	0
+S24	contains	{butter,garlic}
+S93	on	[stove]
+O163	garlic	0
+S135	spread out
+S72	in	[pot]
+M42	fry	1:19	1:22
+O163	garlic	0
+S57	fried
+S72	in	[pot]
+//
+O306	pot	0
+S24	contains	{butter,garlic}
+S93	on	[stove]
+O163	garlic	1
+S57	fried
+S72	in	[pot]
+O367	spoon	1
+M104	stir	1:25	1:30
+O163	garlic	1
+S57	fried
+S72	in	[pot]
+//
+O304	plate	0
+S46	empty
+O263	napkin	1
+M61	pick-and-place	Assumed	Assumed
+O304	plate	0
+S156	with	[napkin]
+O263	napkin	1
+S93	on	[plate]
+//
+O163	garlic	0
+S57	fried
+S72	in	[pot]
+O306	pot	0
+S24	contains	{butter,garlic}
+S93	on	[stove]
+O367	spoon	1
+O304	plate	0
+S156	with	[napkin]
+M86	scoop and pour	1:33	1:37
+O304	plate	0
+S24	contains	{garlic}
+O306	pot	0
+S24	contains	{butter}
+S93	on	[stove]
+//
+O119	cup	1
+S46	empty
+O423	white rice	1
+S146	uncooked
+S72	in	[packet]
+M65	pour	Assumed	Assumed
+O119	cup	1
+S24	contains	{rice}
+O423	white rice	1
+S146	uncooked
+S72	in	[cup]
+//
+O119	cup	1
+S24	contains	{rice}
+O423	white rice	1
+S146	uncooked
+S72	in	[cup]
+O306	pot	0
+S24	contains	{butter}
+S93	on	[stove]
+M65	pour	1:52	1:55
+O306	pot	0
+S93	on	[stove]
+S24	contains	{butter,rice}
+O423	white rice	1
+S146	uncooked
+S72	in	[pot]
+//
+O306	pot	0
+S24	contains	{butter,rice}
+S93	on	[stove]
+O423	white rice	0
+S146	uncooked
+S72	in	[pot]
+O367	spoon	1
+M104	stir	1:56	2:00
+O423	white rice	0
+S145	toasted
+S72	in	[pot]
+//
+O306	pot	0
+S24	contains	{butter,rice}
+S93	on	[stove]
+O34	bowl	1
+S24	contains	{water}
+O414	water	1
+S72	in	[bowl]
+M65	pour	2:07	2:10
+O306	pot	0
+S24	contains	{butter,rice,water}
+S93	on	[stove]
+O414	water	1
+S72	in	[pot]
+//
+O306	pot	0
+S24	contains	{butter,rice,water}
+S93	on	[stove]
+O414	water	1
+S72	in	[pot]
+O423	white rice	0
+S145	toasted
+S72	in	[pot]
+O367	spoon	1
+M19	cook and stir	2:10	2:12
+O306	pot	0
+S24	contains	{butter,rice,water}
+S93	on	[stove]
+O414	water	1
+S11	boiling
+S72	in	[pot]
+O423	white rice	0
+S97	partly cooked
+S72	in	[pot]
+//
+O306	pot	0
+S24	contains	{butter,rice,water}
+S93	on	[stove]
+O307	pot lid	1
+M21	cover	2:12	2:14
+O306	pot	0
+S27	covered
+S24	contains	{butter,rice,water}
+S93	on	[stove]
+O307	pot lid	1
+S93	on	[pot]
+//
+O306	pot	0
+S27	covered
+S24	contains	{butter,rice,water}
+S93	on	[stove]
+O423	white rice	0
+S97	partly cooked
+S72	in	[pot]
+M94	simmer	Assumed	Assumed
+O306	pot	0
+S27	covered
+S24	contains	{rice}
+S93	on	[stove]
+O423	white rice	0
+S25	cooked
+S72	in	[pot]
+//
+O121	cutting board	0
+S46	empty
+O342	scallion	1
+S155	whole
+M61	pick-and-place	Assumed	Assumed
+O342	scallion	1
+S155	whole
+S93	on	[cutting board]
+O121	cutting board	0
+S24	contains	{scallion}
+//
+O121	cutting board	0
+S24	contains	{scallion}
+O89	cilantro	1
+S155	whole
+M61	pick-and-place	Assumed	Assumed
+O89	cilantro	1
+S155	whole
+S93	on	[cutting board]
+O121	cutting board	0
+S24	contains	{cilantro,scallion}
+//
+O121	cutting board	0
+S24	contains	{cilantro,scallion}
+O217	knife	1
+O89	cilantro	0
+S155	whole
+S93	on	[cutting board]
+O342	scallion	0
+S155	whole
+S93	on	[cutting board]
+M23	cut	3:00	3:03
+O342	scallion	0
+S17	chopped
+S93	on	[cutting board]
+O89	cilantro	0
+S17	chopped
+S93	on	[cutting board]
+//
+O306	pot	0
+S27	covered
+S24	contains	{rice}
+S93	on	[stove]
+O307	pot lid	1
+S93	on	[pot]
+M118	uncover	3:17	3:19
+O306	pot	0
+S24	contains	{rice}
+S93	on	[stove]
+O307	pot lid	1
+//
+O121	cutting board	1
+S24	contains	{cilantro,scallion}
+O342	scallion	0
+S17	chopped
+S93	on	[cutting board]
+O89	cilantro	1
+S17	chopped
+S93	on	[cutting board]
+O306	pot	0
+S24	contains	{rice}
+S93	on	[stove]
+O423	white rice	0
+S25	cooked
+S72	in	[pot]
+M101	sprinkle	3:42	3:46
+O423	white rice	0
+S61	garnished	{cilantro,scallion}
+S72	in	[pot]
+O121	cutting board	1
+//
+O306	pot	0
+S24	contains	{rice}
+S93	on	[stove]
+O163	garlic	1
+S57	fried
+S93	on	[plate]
+O304	plate	1
+S24	contains	{garlic}
+O423	white rice	0
+S61	garnished	{cilantro,scallion}
+S72	in	[pot]
+M65	pour	3:46	3:50
+O168	garlic rice	0	19
+S24	contains	{cilantro,scallion,garlic,white rice}
+S72	in	[pot]
+//

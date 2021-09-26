@@ -1,0 +1,410 @@
+O	packet	1
+S	contains	{cranberry}
+O	cranberry	1
+S	dried
+S	in	[packet]
+O	measuring cup	0
+S	empty
+M	pour	Assumed	Assumed
+O	measuring cup	0
+S	contains	{cranberry}
+O	cranberry	1
+S	dried
+S	in	[measuring cup]
+//
+O	measuring cup	0
+S	contains	{cranberry}
+O	bottle	1
+S	contains	{maple syrup}
+O	maple syrup	1
+S	in	[bottle]
+M	pour	assumed	assumed
+O	maple syrup	0
+S	in	[measuring cup]
+O	measuring cup	0
+S	contains	{cranberry,maple syrup}
+//
+O	measuring cup	0
+S	contains	{cranberry,maple syrup}
+O	maple syrup	0
+S	in	[measuring cup]
+O	cranberry	0
+S	dried
+S	in	[measuring cup]
+M	soak	assumed	assumed
+O	cranberry	0
+S	chopped
+S	soaked	{maple syrup}
+S	in	[measuring cup]
+//
+O	bowl	0
+S	empty
+O	cornmeal	0
+S	ground
+S	in	[bowl]
+O	bowl	0
+S	contains	{cornmeal}
+M	pour	2:03	2:07
+O	bowl	0
+S	contains	{cornmeal}
+//
+O	bowl	0
+S	contains	{cornmeal}
+O	flour	0
+S	powder
+S	in	[bowl]
+O	bowl	0
+S	contains	{flour}
+M	pour	2:08	2:12
+O	bowl	0
+S	contains	{cornmeal,flour}
+//
+O	bowl	0
+S	contains	{cornmeal,flour}
+O	baking soda	0
+S	powder
+S	in	[box]
+O	box	1
+S	contains	{baking soda}
+O	spoon	1
+M	scoop and pour	2:17	2:21
+O	bowl	0
+S	contains	{cornmeal,flour,baking soda}
+O	baking soda	0
+S	powder
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{cornmeal,flour,baking soda}
+O	baking powder	0
+S	powder
+S	in	[tin can]
+O	tin can	0
+S	contains	{baking powder}
+O	spoon	1
+M	scoop and pour	2:22	2:25
+O	bowl	0
+S	contains	{cornmeal,flour,baking soda,baking powder}
+//
+O	container	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[container]
+O	cup	0
+S	empty
+M	pour	Assumed	Assumed
+O	cup	0
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[cup]
+//
+O	bowl	0
+S	contains	{cornmeal,flour,baking soda,baking powder}
+O	cup	0
+S	contains	{salt}
+O	salt	0
+S	granulated
+S	in	[cup]
+O	spoon	1
+M	scoop and pour	2:26	2:28
+O	bowl	0
+S	contains	{cornmeal,flour,baking soda,baking powder,salt}
+O	salt	0
+S	granulated
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{cornmeal,flour,baking soda,baking powder,salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+O	baking soda	1
+S	powder
+S	in	[bowl]
+O	baking powder	1
+S	powder
+S	in	[bowl]
+O	flour	1
+S	powder
+S	in	[bowl]
+O	cornmeal	0
+S	ground
+S	in	[bowl]
+O	spatula	0
+M	mix	2:29	2:32
+O	bowl	0
+S	contains	{flour mixture}
+O	flour mixture	1
+S	contains	{cornmeal,flour,baking soda,baking powder,salt}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{flour mixture}
+O	flour mixture	1
+S	contains	{cornmeal,flour,baking soda,baking powder,salt}
+S	in	[bowl]
+O	measuring cup	1
+S	contains	{yogurt}
+O	yogurt	1
+S	in	[measuring cup]
+M	pour	2:34	2:37
+O	bowl	0
+S	contains	{flour mixture,yogurt}
+O	yogurt	0
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{flour mixture,yogurt}
+O	flour mixture	1
+S	contains	{cornmeal,flour,baking soda,baking powder,salt}
+S	in	[bowl]
+O	yogurt	1
+S	in	[bowl]
+O	spatula	1
+M	mix	2:38	2:41
+O	bowl	0
+S	contains	{pancake batter}
+O	pancake batter	1
+S	contains	{flour mixture,yogurt}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{pancake batter}
+O	measuring cup	1
+S	contains	{cranberry,maple syrup}
+O	cranberry	1
+S	chopped
+S	soaked	{maple syrup}
+S	in	[measuring cup]
+O	spoon	0
+M	scrape	2:45	2:54
+O	bowl	0
+S	contains	{pancake batter,cranberry,maple syrup}
+O	cranberry	0
+S	chopped
+S	soaked	{maple syrup}
+S	in	[bowl]
+O	maple syrup	0
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{pancake batter,cranberry,maple syrup}
+O	walnut	0
+S	chopped
+S	in	[bowl]
+O	bowl	0
+S	contains	{walnut}
+M	pour	2:55	2:57
+O	bowl	0
+S	contains	{pancake batter,cranberry,maple syrup,walnut}
+//
+O	bowl	0
+S	contains	{pancake batter,cranberry,maple syrup,walnut}
+O	pancake batter	1
+S	contains	{flour mixture,yogurt}
+S	in	[bowl]
+O	cranberry	1
+S	chopped
+S	soaked	{maple syrup}
+S	in	[bowl]
+O	maple syrup	1
+S	in	[bowl]
+O	walnut	1
+S	chopped
+S	in	[bowl]
+O	spatula	1
+M	mix	2:58	3:05
+O	bowl	0
+S	contains	{pancake batter}
+O	pancake batter	1
+S	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut}
+S	in	[bowl]
+//
+O	packet	0
+S	contains	{dark chocolate}
+O	dark chocolate	0
+S	bar
+S	in	[packet]
+O	cutting board	0
+S	empty
+M	pick-and-place	assumed	assumed
+O	cutting board	0
+S	contains	{dark chocolate}
+O	dark chocolate	0
+S	bar
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{dark chocolate}
+O	dark chocolate	0
+S	bar
+S	on	[cutting board]
+O	knife	1
+M	chop	assumed	assumed
+O	dark chocolate	0
+S	chopped
+S	on	[cutting board]
+//
+O	bowl	0
+S	empty
+O	dark chocolate	1
+S	chopped
+S	on	[cutting board]
+M	pick-and-place	Assumed	Assumed
+O	bowl	0
+S	contains	{dark chocolate}
+O	dark chocolate	1
+S	chopped
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{pancake batter}
+O	bowl	0
+S	contains	{dark chocolate}
+O	dark chocolate	0
+S	chopped
+S	in	[bowl]
+M	pour	3:07	3:09
+O	bowl	0
+S	contains	{pancake batter,chocolate}
+//
+O	bowl	0
+S	contains	{pancake batter,chocolate}
+O	pancake batter	1
+S	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut}
+S	in	[bowl]
+O	dark chocolate	1
+S	chopped
+S	in	[bowl]
+O	spatula	1
+M	mix	3:10	3:20
+O	bowl	0
+S	contains	{pancake batter}
+O	pancake batter	1
+S	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S	in	[bowl]
+//
+O	cooking pan	0
+S	heated
+S	on	[stove]
+O	tin can	1
+S	contains	{canola oil}
+O	canola oil	1
+S	in	[tin can]
+M	spray	assumed	assumed
+O	cooking pan	0
+S	greased	{canola oil}
+S	on	[stove]
+O	canola oil	0
+S	in	[pan]
+//
+O	bowl	0
+S	contains	{pancake batter}
+O	pancake batter	1
+S	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S	in	[bowl]
+O	cooking pan	0
+S	greased	{canola oil}
+S	on	[stove]
+O	ladle	1
+M	scoop and pour	3:35	3:43
+O	ladle	0
+O	cooking pan	0
+S	contains	{pancake batter}
+S	on	[stove]
+O	pancake batter	1
+S	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S	in	[pan]
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	cooking pan	0
+S	contains	{pancake batter}
+S	on	[stove]
+O	pancake batter	1
+S	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S	in	[pan]
+O	turner	1
+M	flip	4:39	4:42
+O	turner	0
+O	pancake	1
+S	partly cooked
+S	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S	in	[pan]
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	cooking pan	0
+S	contains	{pancake batter}
+S	on	[stove]
+O	pancake	1
+S	partly cooked
+S	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S	in	[pan]
+O	turner	1
+M	flip	4:45	4:48
+O	cooking pan	0
+S	contains	{pancake}
+S	on	[stove]
+O	pancake	1
+S	cooked
+S	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S	in	[pan]
+O	turner	0
+//
+O	cooking pan	0
+S	contains	{pancake}
+S	on	[stove]
+O	pancake	1
+S	cooked
+S	contains	{flour mixture,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S	in	[pan]
+O	turner	1
+O	plate	0
+S	empty
+M	pick-and-place	4:46	4:55
+O	plate	0
+S	contains	{pancake}
+O	cranberry-walnut pancake	1
+S	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S	on	[plate]
+//
+O	plate	0
+S	contains	{pancake}
+O	whipped cream	0
+S	in	[bowl]
+O	bowl	0
+S	contains	{whipped cream}
+O	spoon	1
+O	cranberry-walnut pancake	1
+S	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,maple syrup,walnut,dark chocolate}
+S	on	[plate]
+M	scoop and pour	5:02	5:05
+O	cranberry-walnut pancake	1
+S	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,maple syrup,walnut,dark chocolate,whipped cream}
+S	on	[plate]
+O	whipped cream	0
+S	on	[pancake]
+//
+O	plate	0
+S	contains	{pancake}
+O	cranberry-walnut pancake	1
+S	contains	{cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,maple syrup,walnut,dark chocolate,whipped cream}
+S	on	[plate]
+O	cup	1
+S	contains	{powdered sugar}
+O	powdered sugar	0
+S	powder
+S	in	[cup]
+M	sprinkle	5:08	5:16
+O	cranberry-walnut pancake	1	5
+S	contains	{pancake batter,flour mixture,pancake,cornmeal,flour,baking soda,baking powder,salt,yogurt,cranberry,maple syrup,walnut,dark chocolate,whipped cream,powdered sugar}
+S	on	[plate]
+O	powdered sugar	0
+S	powder
+S	on	[pancake]
+//

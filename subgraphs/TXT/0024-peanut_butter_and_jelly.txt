@@ -1,0 +1,49 @@
+O	bread	1
+S	sliced
+O	plate	0
+S	empty
+M	pick-and-place	0:53:75	0:55:50
+O	plate	0
+S	contains	{bread}
+O	bread	1
+S	sliced
+S	on	[plate]
+//
+O	jar	0
+S	contains	{peanut butter}
+O	peanut butter	0
+S	in	[jar]
+O	bread	0
+S	sliced
+S	on	[plate]
+O	knife	1
+M	spread	1:06	1:12
+O	bread	0
+S	sliced
+S	contains	{peanut butter}
+S	on	[plate]
+//
+O	bread	0
+S	contains	{peanut butter}
+S	sliced
+S	on	[plate]
+O	jar	0
+S	contains	{jelly}
+O	jelly	0
+S	in	[jar]
+O	knife	1
+M	spread	1:18	1:29
+O	bread	0
+S	sliced
+S	contains	{jelly, peanut butter}
+S	on	[plate]
+//
+O	bread	1
+S	sliced
+S	contains	{jelly, peanut butter}
+S	on	[plate]
+M	pick-and-place	Assumed	Assumed
+O	sandwich	0	4
+S	contains	{peanut butter,jelly}
+S	on	[plate]
+//

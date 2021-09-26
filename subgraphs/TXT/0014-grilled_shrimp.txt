@@ -1,0 +1,215 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0014-grilled_shrimp.mp4
+//
+O	bowl	0
+S	empty
+O	packet	1
+S	contains	{shrimp}
+O	shrimp	1
+S	whole
+S	raw
+S	in	[packet]
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{shrimp}
+O	shrimp	1
+S	whole
+S	in	[bowl]
+S	raw
+//
+O	faucet	1
+S	on
+O	water	0
+S	liquid
+S	from	[faucet]
+O	bowl	0
+S	contains	{shrimp}
+O	shrimp	1
+S	in	[bowl]
+S	raw
+M	rinse	<Assumed>
+O	shrimp	1
+S	whole
+S	in	[bowl]
+S	washed
+S	raw
+//
+O	plate	0
+S	empty
+O	bowl	1
+S	contains	{shrimp}
+O	shrimp	1
+S	whole
+S	in	[bowl]
+S	washed
+S	raw
+M	pour	<Assumed>
+O	plate	0
+S	contains	{shrimp}
+O	shrimp	1
+S	whole
+S	on	[plate]
+S	raw
+O	bowl	1
+S	empty
+//
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bottle]
+O	plate	0
+S	contains	{shrimp}
+O	shrimp	0
+S	whole
+S	on	[plate]
+S	raw
+M	pour	<0:02,0:05>
+O	shrimp	0
+S	contains	{olive oil}
+S	whole
+S	on	[plate]
+S	raw
+O	olive oil	1
+S	liquid
+S	on	[shrimp]
+//
+O	plate	0
+S	contains	{shrimp}
+O	shrimp	0
+S	contains	{olive oil}
+S	whole
+S	on	[plate]
+S	raw
+O	grinder	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[grinder]
+M	grind and sprinkle	<0:07,0:12>
+O	shrimp	0
+S	contains	{olive oil,salt}
+S	whole
+S	on	[plate]
+S	raw
+O	salt	1
+S	granulated
+S	on	[shrimp]
+//
+O	plate	0
+S	contains	{shrimp}
+O	shrimp	0
+S	contains	{olive oil,salt}
+S	whole
+S	on	[plate]
+S	raw
+O	grinder	1
+S	contains	{black pepper}
+O	black pepper	1
+S	peppercorn
+S	whole
+S	in	[grinder]
+M	grind	<0:12,0:15>
+O	shrimp	0
+S	contains	{black pepper,olive oil,salt}
+S	whole
+S	on	[plate]
+S	raw
+O	black pepper	1
+S	ground
+S	on	[shrimp]
+//
+O	grill	1
+S	off (ready)
+S	empty
+M	light	<Assumed>
+O	grill	1
+S	on
+S	empty
+//
+O	plate	0
+S	contains	{shrimp}
+O	shrimp	0
+S	contains	{black pepper,olive oil,salt}
+S	raw
+S	whole
+S	on	[plate]
+O	tongs	1
+O	grill	0
+S	on
+S	empty
+M	pick-and-place	<0:21,0:27>
+O	shrimp	0
+S	contains	{black pepper,olive oil,salt}
+S	raw
+S	whole
+S	on	[grill]
+O	grill	0
+S	on
+S	contains	{shrimp}
+//
+O	grill	0
+S	on
+S	contains	{shrimp}
+M	close	<Assumed>
+O	grill	0
+S	on
+S	closed
+S	contains	{shrimp}
+//
+O	grill	0
+S	closed
+S	on
+S	contains	{shrimp}
+O	shrimp	0
+S	contains	{black pepper,olive oil,salt}
+S	raw
+S	whole
+S	on	[grill]
+M	cook	<Assumed>
+O	shrimp	0
+S	whole
+S	on	[grill]
+S	cooked
+//
+O	grill	0
+S	on
+S	closed
+S	contains	{shrimp}
+M	open	<Assumed>
+O	grill	0
+S	on
+S	contains	{shrimp}
+//
+O	grill	0
+S	on
+S	contains	{shrimp}
+M	turn off	<Assumed>
+O	grill	0
+S	off
+S	contains	{shrimp}
+//
+O	grill	0
+S	off
+S	contains	{shrimp}
+O	shrimp	1
+S	whole
+S	on	[grill]
+S	cooked
+O	plate	0
+S	empty
+O	tongs	1
+M	pick-and-place	<Assumed>
+O	grill	0
+S	off
+S	empty
+O	plate	0
+S	contains	{shrimp}
+O	grilled shrimp	1	17
+S	on	[plate]
+S	contains	{black pepper,olive oil,salt,shrimp}
+S	cooked
+O	shrimp	1
+S	whole
+S	on	[plate]
+S	cooked
+//

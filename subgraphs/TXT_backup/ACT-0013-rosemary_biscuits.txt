@@ -1,0 +1,139 @@
+O47	box	1
+S22	contains	{pancake mix}
+O314	pancake mix	1
+S63	in	[box]
+O271	measuring cup	0
+S39	empty
+M55	pour	Assumed	Assumed
+O271	measuring cup	1
+S22	contains	{pancake mix}
+O314	pancake mix	1
+S63	in	[measuring cup]
+//
+O271	measuring cup	1
+S22	contains	{pancake mix}
+O314	pancake mix	1
+S63	in	[measuring cup]
+O46	bowl	0
+S39	empty
+M55	pour	0:28	0:30
+O46	bowl	0
+S22	contains	{pancake mix}
+O314	pancake mix	1
+S63	in	[bowl]
+O271	measuring cup	1
+//
+O271	measuring cup	1
+S22	contains	{sour cream}
+O407	sour cream	1
+S63	in	[measuring cup]
+O46	bowl	0
+S22	contains	{pancake mix}
+O411	spatula	1
+M71	scoop and pour	0:33	0:35
+O46	bowl	0
+S22	contains	{pancake mix,sour cream}
+O407	sour cream	1
+S63	in	[bowl]
+O271	measuring cup	1
+//
+O46	bowl	1
+S22	contains	{butter}
+O63	butter	1
+S72	melted
+S63	in	[bowl]
+O46	bowl	0
+S22	contains	{pancake mix,sour cream}
+M55	pour	0:37	0:40
+O46	bowl	0
+S22	contains	{pancake mix,sour cream,butter}
+O46	bowl	1
+//
+O46	bowl	0
+S22	contains	{pancake mix,sour cream,butter}
+O46	bowl	1
+S22	contains	{rosemary}
+O370	rosemary	1
+S38	dried
+S63	in	[bowl]
+M55	pour	0:45	0:47
+O46	bowl	0
+S22	contains	{pancake mix,sour cream,butter,rosemary}
+O46	bowl	1
+//
+O46	bowl	0
+S22	contains	{pancake mix,sour cream,butter,rosemary}
+O370	rosemary	1
+S38	dried
+S63	in	[bowl]
+O63	butter	1
+S72	melted
+S63	in	[bowl]
+O407	sour cream	1
+S63	in	[bowl]
+O415	spoon	1
+O314	pancake mix	1
+S63	in	[bowl]
+M47	mix	0:49	0:51
+O46	bowl	0
+S22	contains	{biscuit dough}
+O31	biscuit dough	1
+S22	contains	{pancake mix,sour cream,butter,rosemary}
+S63	in	[bowl]
+//
+O117	cooking spray	1
+S22	contains	{vegetable oil}
+O467	vegetable oil	1
+S63	in	[spray bottle]
+O286	muffin pan	0
+S39	empty
+M82	spray	Assumed	Assumed
+O286	muffin pan	0
+S55	greased	{vegetable oil}
+O467	vegetable oil	1
+S63	in	[muff]
+//
+O286	muffin pan	0
+S55	greased	{vegetable oil}
+O46	bowl	0
+S22	contains	{biscuit dough}
+O31	biscuit dough	1
+S22	contains	{pancake mix,sour cream,butter,rosemary}
+S63	in	[bowl]
+O389	scoop	1
+M71	scoop and pour	0:56	0:58
+O286	muffin pan	0
+S22	contains	{biscuit dough}
+O31	biscuit dough	1
+S22	contains	{pancake mix,sour cream,butter,rosemary}
+S63	in	[muff]
+//
+O286	muffin pan	1
+S22	contains	{biscuit dough}
+O307	oven	0
+S79	on
+M63	put inside	Assumed	Assumed
+O286	muffin pan	1
+S22	contains	{biscuit dough}
+S63	in	[oven]
+O307	oven	0
+S79	on
+S142	with	[pan]
+//
+O286	muffin pan	0
+S22	contains	{biscuit dough}
+S63	in	[oven]
+O307	oven	0
+S79	on
+S142	with	[pan]
+O31	biscuit dough	1
+S22	contains	{pancake mix,sour cream,butter,rosemary}
+S63	in	[muff]
+M2	bake	Assumed	Assumed
+O286	muffin pan	1
+S22	contains	{biscuit}
+O30	biscuit	1	0
+S1	baked
+S22	contains	{pancake mix,sour cream,butter,rosemary}
+S63	in	[muff]
+//

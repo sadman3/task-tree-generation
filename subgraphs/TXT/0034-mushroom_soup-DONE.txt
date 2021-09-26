@@ -1,0 +1,360 @@
+# Source:	https://www.youtube.com/watch?v=DkxxITuXZoE
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0034-mushroom_soup.mp4
+//
+O	pot	0
+S	hot
+S	empty
+S	on	[stove]
+O	plate	1
+S	contains	{butter}
+O	butter	1
+S	softened
+S	unmelted
+S	cube
+S	on	[plate]
+M	pick-and-place	<1:00-1:03>
+O	pot	0
+S	on	[stove]
+S	hot
+S	contains	{butter}
+O	butter	1
+S	softened
+S	unmelted
+S	cube
+S	in	[pot]
+//
+O	pot	0
+S	hot
+S	contains	{butter}
+S	on	[stove]
+O	butter	0
+S	softened
+S	unmelted
+S	cube
+S	in	[pot]
+O	spoon	1
+M	spread	<1:05-1:10>
+O	butter	0
+S	liquid
+S	melted
+S	in	[pot]
+//
+O	packet	0
+S	contains	{mushroom}
+O	mushroom	1
+S	whole
+S	in	[packet]
+O	cutting board	0
+S	empty
+M	pick-and-place	<Assumed
+O	mushroom	1
+S	whole
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{mushroom}
+//
+O	mushroom	0
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	slice	<Assumed>
+O	mushroom	0
+S	sliced
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{mushroom}
+O	mushroom	1
+S	sliced
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	empty
+O	bowl	0
+S	contains	{mushroom}
+O	mushroom	1
+S	sliced
+S	in	[bowl]
+//
+O	pot	0
+S	hot
+S	contains	{butter}
+S	on	[stove]
+O	bowl	0
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	in	[bowl]
+O	spoon	1
+M	scrape	<1:11-1:15>
+O	bowl	1
+S	empty
+O	onion	1
+S	chopped
+S	in	[pot]
+O	pot	0
+S	hot
+S	contains	{butter,onion}
+S	on	[stove]
+//
+O	stove	0
+S	on
+S	under	[pot]
+O	pot	0
+S	hot
+S	contains	{butter,onion}
+S	on	[stove]
+O	onion	1
+S	chopped
+S	in	[pot]
+O	butter	0
+S	liquid
+S	melted
+S	in	[pot]
+O	spoon	1
+M	cook and stir	<1:15-1:19:50>
+O	onion	1
+S	chopped
+S	sauteed
+S	in	[pot]
+//
+O	pot	0
+S	hot
+S	contains	{butter,onion}
+S	on	[stove]
+O	bowl	1
+S	contains	{mushroom}
+O	mushroom	1
+S	in	[bowl]
+S	sliced
+M	pour	<1:20-1:22>
+O	pot	0
+S	hot
+S	contains	{butter,mushroom,onion}
+S	on	[stove]
+O	mushroom	1
+S	sliced
+S	in	[pot]
+//
+O	pot	0
+S	hot
+S	contains	{mushroom,onion}
+S	on	[stove]
+O	butter	0
+S	liquid
+S	melted
+S	in	[pot]
+O	mushroom	1
+S	sliced
+S	in	[pot]
+O	spoon	1
+M	cook and stir	<1:25-1:32>
+O	mushroom	1
+S	sliced
+S	sauteed
+S	in	[pot]
+//
+O	carton	1
+S	contains	{chicken broth}
+O	chicken broth	1
+S	liquid
+S	in	[carton]
+O	measuring cup	0
+S	empty
+M	pour	<Assumed>
+O	measuring cup	0
+S	contains	{chicken broth}
+O	chicken broth	1
+S	liquid
+S	in	[measuring cup]
+//
+O	measuring cup	0
+S	contains	{chicken broth}
+O	bowl	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bowl]
+M	pour	<1:41-1:43>
+O	measuring cup	0
+S	contains	{chicken broth,flour}
+O	flour	1
+S	powder
+S	in	[measuring cup]
+//
+O	measuring cup	0
+S	contains	{chicken broth,flour}
+O	flour	0
+S	powder
+S	in	[measuring cup]
+O	chicken broth	0
+S	liquid
+S	in	[measuring cup]
+O	whisk	1
+M	mix	<1:43-1:50>
+O	broth	0
+S	mixture
+S	liquid
+S	contains	{chicken broth,flour}
+S	in	[measuring cup]
+//
+O	pot	0
+S	hot
+S	contains	{butter,onion,mushroom}
+S	on	[stove]
+O	measuring cup	1
+S	contains	{chicken broth,flour}
+O	broth	0
+S	mixed
+S	liquid
+S	contains	{chicken broth,flour}
+S	in	[measuring cup]
+M	pour	<1:55-1:58>
+O	pot	0
+S	hot
+S	contains	{butter,onion,mushroom,chicken broth,flour}
+S	on	[stove]
+O	broth	0
+S	mixed
+S	liquid
+S	contains	{chicken broth,flour}
+S	in	[pot]
+O	measuring cup	1
+S	empty
+//
+O	pot	0
+S	hot
+S	contains	{butter,onion,mushroom,chicken broth,flour}
+S	on	[stove]
+O	broth	0
+S	mixed
+S	liquid
+S	contains	{chicken broth,flour}
+S	in	[pot]
+O	onion	0
+S	chopped
+S	sauteed
+S	in	[pot]
+O	mushroom	0
+S	sliced
+S	sauteed
+S	in	[pot]
+O	spoon	1
+M	cook and stir	<2:01-2:08>
+O	soup	0
+S	thick liquid
+S	contains	{butter,onion,mushroom,chicken broth,flour}
+S	in	[pot]
+//
+O	pot	0
+S	hot
+S	contains	{butter,onion,mushroom,chicken broth,flour}
+S	on	[stove]
+O	measuring cup	1
+S	contains	{half-and-half}
+O	half-and-half	1
+S	liquid
+S	in	[measuring cup]
+M	pour	<2:21-2:23>
+O	pot	0
+S	hot
+S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half}
+S	on	[stove]
+O	measuring cup	1
+S	empty
+O	half-and-half	1
+S	liquid
+S	in	[pot]
+//
+O	pot	0
+S	hot
+S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half}
+S	on	[stove]
+O	bowl	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	pour	<2:26-2:28>
+O	pot	0
+S	hot
+S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half,salt}
+S	on	[stove]
+O	salt	1
+S	granulated
+S	in	[pot]
+//
+O	pot	0
+S	hot
+S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half,salt}
+S	on	[stove]
+O	bowl	1
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+M	pour	<2:26-2:28>
+O	pot	0
+S	hot
+S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half,salt,black pepper}
+S	on	[stove]
+O	black pepper	1
+S	ground
+S	in	[pot]
+//
+O	stove	0
+S	on
+S	under	[pot]
+O	pot	0
+S	hot
+S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half,salt,black pepper}
+S	on	[stove]
+O	soup	0
+S	thick liquid
+S	contains	{butter,onion,mushroom,chicken broth,flour}
+S	in	[pot]
+O	half-and-half	1
+S	liquid
+S	in	[pot]
+O	salt	1
+S	granulated
+S	in	[pot]
+O	black pepper	1
+S	ground
+S	in	[pot]
+O	spoon	1
+M	cook and stir	<2:29-2:35>
+O	pot	0
+S	hot
+S	contains	{soup}
+S	on	[stove]
+O	soup	0
+S	thick liquid
+S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half,salt,black pepper}
+S	in	[pot]
+O	mushroom soup	0	1
+S	thick liquid
+S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half,salt,black pepper}
+S	in	[pot]
+//
+O	pot	0
+S	hot
+S	contains	{soup}
+S	on	[stove]
+O	mushroom soup	1
+S	thick liquid
+S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half,salt,black pepper}
+S	in	[pot]
+O	bowl	0
+S	empty
+O	ladle	1
+M	scoop and pour	<2:50-2:52,2:53-2:57>
+O	bowl	0
+S	contains	{soup}
+O	mushroom soup	1	1
+S	thick liquid
+S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half,salt,black pepper}
+S	in	[bowl]
+//

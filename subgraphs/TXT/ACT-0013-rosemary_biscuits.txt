@@ -1,0 +1,139 @@
+O	box	1
+S	contains	{pancake mix}
+O	pancake mix	1
+S	in	[box]
+O	measuring cup	0
+S	empty
+M	pour	Assumed	Assumed
+O	measuring cup	1
+S	contains	{pancake mix}
+O	pancake mix	1
+S	in	[measuring cup]
+//
+O	measuring cup	1
+S	contains	{pancake mix}
+O	pancake mix	1
+S	in	[measuring cup]
+O	bowl	0
+S	empty
+M	pour	0:28	0:30
+O	bowl	0
+S	contains	{pancake mix}
+O	pancake mix	1
+S	in	[bowl]
+O	measuring cup	1
+//
+O	measuring cup	1
+S	contains	{sour cream}
+O	sour cream	1
+S	in	[measuring cup]
+O	bowl	0
+S	contains	{pancake mix}
+O	spatula	1
+M	scoop and pour	0:33	0:35
+O	bowl	0
+S	contains	{pancake mix,sour cream}
+O	sour cream	1
+S	in	[bowl]
+O	measuring cup	1
+//
+O	bowl	1
+S	contains	{butter}
+O	butter	1
+S	melted
+S	in	[bowl]
+O	bowl	0
+S	contains	{pancake mix,sour cream}
+M	pour	0:37	0:40
+O	bowl	0
+S	contains	{pancake mix,sour cream,butter}
+O	bowl	1
+//
+O	bowl	0
+S	contains	{pancake mix,sour cream,butter}
+O	bowl	1
+S	contains	{rosemary}
+O	rosemary	1
+S	dried
+S	in	[bowl]
+M	pour	0:45	0:47
+O	bowl	0
+S	contains	{pancake mix,sour cream,butter,rosemary}
+O	bowl	1
+//
+O	bowl	0
+S	contains	{pancake mix,sour cream,butter,rosemary}
+O	rosemary	1
+S	dried
+S	in	[bowl]
+O	butter	1
+S	melted
+S	in	[bowl]
+O	sour cream	1
+S	in	[bowl]
+O	spoon	1
+O	pancake mix	1
+S	in	[bowl]
+M	mix	0:49	0:51
+O	bowl	0
+S	contains	{biscuit dough}
+O	biscuit dough	1
+S	contains	{pancake mix,sour cream,butter,rosemary}
+S	in	[bowl]
+//
+O	cooking spray	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	in	[spray bottle]
+O	muffin pan	0
+S	empty
+M	spray	Assumed	Assumed
+O	muffin pan	0
+S	greased	{vegetable oil}
+O	vegetable oil	1
+S	in	[muff]
+//
+O	muffin pan	0
+S	greased	{vegetable oil}
+O	bowl	0
+S	contains	{biscuit dough}
+O	biscuit dough	1
+S	contains	{pancake mix,sour cream,butter,rosemary}
+S	in	[bowl]
+O	scoop	1
+M	scoop and pour	0:56	0:58
+O	muffin pan	0
+S	contains	{biscuit dough}
+O	biscuit dough	1
+S	contains	{pancake mix,sour cream,butter,rosemary}
+S	in	[muff]
+//
+O	muffin pan	1
+S	contains	{biscuit dough}
+O	oven	0
+S	on
+M	put inside	Assumed	Assumed
+O	muffin pan	1
+S	contains	{biscuit dough}
+S	in	[oven]
+O	oven	0
+S	on
+S	with	[pan]
+//
+O	muffin pan	0
+S	contains	{biscuit dough}
+S	in	[oven]
+O	oven	0
+S	on
+S	with	[pan]
+O	biscuit dough	1
+S	contains	{pancake mix,sour cream,butter,rosemary}
+S	in	[muff]
+M	bake	Assumed	Assumed
+O	muffin pan	1
+S	contains	{biscuit}
+O	biscuit	1	0
+S	baked
+S	contains	{pancake mix,sour cream,butter,rosemary}
+S	in	[muff]
+//

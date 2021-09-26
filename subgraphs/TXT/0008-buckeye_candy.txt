@@ -1,0 +1,466 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0008-buckeye_candy-allrecipes.mp4 
+# Source:	https://www.youtube.com/watch?v=ej8EFvrOuQE
+//
+O	bowl	0
+S	empty
+O	jar	0
+S	contains	{peanut butter}
+O	peanut butter	1
+S	creamy
+S	in	[jar]
+O	knife	1
+M	scoop	<Assumed>
+O	bowl	0
+S	contains	{peanut butter}
+O	peanut butter	0
+S	creamy
+S	in	[bowl]
+//
+O	mixing bowl	0
+S	empty
+O	bowl	0
+S	contains	{peanut butter}
+O	peanut butter	0
+S	creamy
+S	in	[bowl]
+O	spatula	1
+M	pour and scrape	<Assumed>
+O	mixing bowl	0
+S	contains	{peanut butter}
+O	peanut butter	1
+S	creamy
+S	in	[mixing bowl]
+O	bowl	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{peanut butter}
+O	packet	1
+S	contains	{butter}
+O	butter	1
+S	softened
+S	unmelted
+S	in	[packet]
+S	stick
+M	pour	<0:30,0:32>
+O	mixing bowl	0
+S	contains	{butter,peanut butter}
+O	butter	1
+S	softened
+S	unmelted
+S	in	[mixing bowl]
+S	stick
+O	packet	1
+S	empty
+//
+O	bottle	1
+S	contains	{vanilla extract}
+O	vanilla extract	1
+S	liquid
+S	in	[bottle]
+O	spoon	0
+M	pour	<Assumed>
+O	spoon	1
+S	contains	{vanilla extract}
+O	vanilla extract	1
+S	liquid
+S	in	[spoon]
+//
+O	mixing bowl	0
+S	contains	{butter,peanut butter}
+O	spoon	1
+S	contains	{vanilla extract}
+O	vanilla extract	1
+S	in	[spoon]
+S	liquid
+M	pour	<0:34,0:35>
+O	mixing bowl	0
+S	contains	{butter,peanut butter,vanilla extract}
+O	vanilla extract	1
+S	liquid
+S	in	[mixing bowl]
+O	spoon	1
+//
+O	hand mixer	1
+S	off (ready)
+O	mixing bowl	0
+S	contains	{butter,peanut butter,vanilla extract}
+M	pick-and-place	<0:36,0:37>
+O	hand mixer	0
+S	in	[mixing bowl]
+S	off (ready)
+O	mixing bowl	0
+S	with	[hand mixer]
+S	contains	{butter,peanut butter,vanilla extract}
+//
+O	hand mixer	1
+S	in	[mixing bowl]
+S	off (ready)
+M	turn on	<0:37,0:38>
+O	hand mixer	1
+S	in	[mixing bowl]
+S	on
+//
+O	hand mixer	1
+S	in	[mixing bowl]
+S	on
+O	mixing bowl	0
+S	with	[hand mixer]
+S	contains	{butter,peanut butter,vanilla extract}
+O	peanut butter	0
+S	creamy
+S	in	[mixing bowl]
+O	butter	0
+S	softened
+S	unmelted
+S	in	[mixing bowl]
+S	stick
+O	vanilla extract	0
+S	liquid
+S	in	[mixing bowl]
+M	blend	<0:38,0:46>
+O	hand mixer	1
+S	in	[mixing bowl]
+S	off
+O	peanut butter mixture	0
+S	creamy
+S	mixed
+S	in	[mixing bowl]
+S	contains	{butter,peanut butter,vanilla extract}
+//
+O	packet	1
+S	contains	{powdered sugar}
+O	powdered sugar	1
+S	powder
+S	in	[packet]
+O	measuring cup	0
+S	empty
+M	pour	<Assumed>
+O	measuring cup	0
+S	contains	{powdered sugar}
+O	powdered sugar	1
+S	powder
+S	in	[measuring cup]
+//
+O	measuring cup	1
+S	contains	{powdered sugar}
+O	powdered sugar	1
+S	powder
+S	in	[measuring cup]
+O	mixing bowl	0
+S	contains	{butter,peanut butter,vanilla extract}
+M	pour	<0:49,0:55>
+O	mixing bowl	0
+S	contains	{butter,peanut butter,powdered sugar,vanilla extract}
+O	powdered sugar	1
+S	powder
+S	in	[mixing bowl]
+O	measuring cup	1
+S	empty
+//
+O	hand mixer	1
+S	off (ready)
+O	mixing bowl	0
+S	contains	{butter,peanut butter,powdered sugar,vanilla extract}
+M	pick-and-place	<Assumed>
+O	hand mixer	0
+S	in	[mixing bowl]
+S	off (ready)
+O	mixing bowl	0
+S	with	[hand mixer]
+S	contains	{butter,peanut butter,powdered sugar,vanilla extract}
+//
+O	hand mixer	1
+S	in	[mixing bowl]
+S	on
+O	mixing bowl	0
+S	contains	{butter,peanut butter,powdered sugar,vanilla extract}
+O	powdered sugar	1
+S	powder
+S	in	[mixing bowl]
+O	peanut butter mixture	1
+S	creamy
+S	mixed
+S	in	[mixing bowl]
+S	contains	{butter,peanut butter,vanilla extract}
+M	blend	<0:58,1:09>
+O	peanut butter mixture	0
+S	lumpy
+S	mixed
+S	in	[mixing bowl]
+S	contains	{butter,peanut butter,powdered sugar,vanilla extract}
+//
+O	box	1
+S	contains	{parchment paper}
+O	parchment paper	1
+S	sheet
+S	in	[box]
+O	baking tray	0
+S	empty
+M	pick-and-place	<0:59,1:04>
+O	baking tray	0
+S	empty
+S	with	[parchment paper]
+O	parchment paper	1
+S	sheet
+S	on	[baking tray]
+//
+O	mixing bowl	0
+S	contains	{butter,peanut butter,powdered sugar,vanilla extract}
+O	peanut butter mixture	1
+S	lumpy
+S	mixed
+S	in	[mixing bowl]
+S	contains	{butter,peanut butter,powdered sugar,vanilla extract}
+M	roll and shape	<1:05,1:09>
+O	buckeye candy	1
+S	contains	{butter,peanut butter,powdered sugar,vanilla extract}
+S	rolled
+//
+O	baking tray	0
+S	empty
+S	with	[parchment paper]
+O	buckeye candy	1
+S	contains	{butter,peanut butter,powdered sugar,vanilla extract}
+S	rolled
+M	place	<1:11,1:13>
+O	baking tray	0
+S	contains	{buckeye candy}
+O	buckeye candy	1
+S	on	[baking tray]
+S	contains	{butter,peanut butter,powdered sugar,vanilla extract}
+S	rolled
+//
+O	toothpick	1
+O	buckeye candy	0
+S	on	[baking tray]
+S	contains	{butter,peanut butter,powdered sugar,vanilla extract}
+S	rolled
+M	insert	<1:28,1:32>
+O	toothpick	0
+S	in	[buckeye candy]
+O	buckeye candy	1
+S	on	[baking tray]
+S	with	[toothpick]
+S	contains	{butter,peanut butter,powdered sugar,vanilla extract}
+S	rolled
+//
+O	bowl	0
+S	empty
+O	packet	1
+S	contains	{chocolate chip}
+O	chocolate chip	1
+S	pieces
+S	in	[packet]
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{chocolate chip}
+O	chocolate chip	1
+S	pieces
+S	in	[bowl]
+//
+O	pot	1
+S	empty
+O	stove	0
+S	off (ready)
+M	pick-and-place	<Assumed>
+O	pot	1
+S	on	[stove]
+S	empty
+O	stove	0
+S	off (ready)
+S	with	[pot]
+//
+O	pot	0
+S	on	[stove]
+S	empty
+O	measuring cup	1
+S	contains	{water}
+O	water	1
+S	in	[measuring cup]
+S	liquid
+M	pour	<Assumed>
+O	pot	0
+S	on	[stove]
+S	contains	{water}
+O	water	1
+S	in	[pot]
+S	liquid
+O	measuring cup	1
+S	empty
+//
+O	stove	0
+S	off
+S	with	[pot]
+M	turn on	<Assumed>
+O	stove	0
+S	on
+S	with	[pot]
+//
+O	pot	0
+S	on	[stove]
+S	contains	{water}
+O	stove	0
+S	on
+S	with	[pot]
+O	water	1
+S	in	[pot]
+S	liquid
+M	boil	<Assumed>
+O	pot	0
+S	on	[stove]
+S	hot
+S	contains	{water}
+O	water	1
+S	boiling
+S	in	[pot]
+S	liquid
+//
+O	pot	0
+S	on	[stove]
+S	hot
+S	contains	{water}
+O	double boiler	1
+S	empty
+M	pick-and-place	<1:37,1:39>
+O	pot	0
+S	on	[stove]
+S	hot
+S	with	[double boiler]
+S	contains	{water}
+O	double boiler	1
+S	empty
+S	in	[pot]
+//
+O	pot	0
+S	on	[stove]
+S	hot
+S	with	[double boiler]
+S	contains	{water}
+O	double boiler	1
+S	empty
+S	in	[pot]
+O	bowl	0
+S	contains	{chocolate chip}
+O	chocolate chip	1
+S	pieces
+S	in	[bowl]
+M	pour	<1:41,1:45>
+O	double boiler	1
+S	contains	{chocolate chip}
+S	in	[pot]
+O	chocolate chip	1
+S	pieces
+S	in	[double boiler]
+//
+O	pot	0
+S	on	[stove]
+S	hot
+S	with	[double boiler]
+S	contains	{water}
+O	double boiler	1
+S	contains	{chocolate chip}
+S	in	[pot]
+O	chocolate chip	1
+S	pieces
+S	in	[double boiler]
+O	knife	1
+M	stir and melt	<1:47,1:56>
+O	double boiler	1
+S	contains	{chocolate chip}
+S	in	[pot]
+O	chocolate chip	1
+S	melted
+S	thick liquid
+S	in	[double boiler]
+//
+O	double boiler	1
+S	contains	{chocolate chip}
+S	in	[pot]
+O	pot	0
+S	on	[stove]
+S	hot
+S	with	[double boiler]
+S	contains	{water}
+M	remove	<Assumed>
+O	pot	0
+S	on	[stove]
+S	hot
+S	contains	{water}
+O	double boiler	1
+S	contains	{chocolate chip}
+//
+O	double boiler	1
+S	contains	{chocolate chip}
+O	chocolate chip	1
+S	melted
+S	thick liquid
+S	in	[double boiler]
+O	bowl	0
+S	empty
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{chocolate chip}
+O	chocolate chip	1
+S	melted
+S	thick liquid
+S	in	[bowl]
+O	double boiler	1
+S	empty
+//
+O	buckeye candy	1
+S	on	[baking tray]
+S	with	[toothpick]
+S	contains	{butter,peanut butter,powdered sugar,vanilla extract}
+S	rolled
+O	double boiler	0
+S	contains	{chocolate chip}
+O	chocolate chip	0
+S	melted
+S	thick liquid
+S	in	[bowl]
+M	dip	<2:05,2:10>
+O	buckeye candy	1
+S	on	[baking tray]
+S	with	[toothpick]
+S	contains	{butter,chocolate chip,peanut butter,powdered sugar,vanilla extract}
+S	rolled
+O	chocolate chip	0
+S	melted
+S	on	[buckeye candy]
+S	thick liquid
+//
+O	baking tray	1
+S	contains	{buckeye candy}
+O	buckeye candy	0
+S	on	[baking tray]
+S	with	[toothpick]
+S	contains	{butter,chocolate chip,peanut butter,powdered sugar,vanilla extract}
+S	rolled
+O	refrigerator	1
+S	on
+M	chill	<Assumed>
+O	buckeye candy	0
+S	chilled
+S	on	[baking tray]
+S	with	[toothpick]
+S	contains	{butter,chocolate chip,peanut butter,powdered sugar,vanilla extract}
+S	rolled
+//
+O	baking tray	0
+S	contains	{buckeye candy}
+O	buckeye candy	0
+S	chilled
+S	on	[baking tray]
+S	with	[toothpick]
+S	contains	{butter,chocolate chip,peanut butter,powdered sugar,vanilla extract}
+S	rolled
+O	toothpick	0
+S	in	[buckeye candy]
+M	remove	<Assumed>
+O	buckeye candy	0	8
+S	on	[baking tray]
+S	contains	{butter,chocolate chip,peanut butter,powdered sugar,vanilla extract}
+S	rolled
+O	toothpick	0
+//

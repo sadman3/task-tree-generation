@@ -1,0 +1,485 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0010-cheesy_garlic_bread.mp4
+# Source:	https://www.youtube.com/watch?v=lXgMX8wteNI
+//
+O	oven	0
+S	off
+S	empty
+M	turn on	<Assumed>
+O	oven	0
+S	on
+S	empty
+//
+O	garlic	1
+S	bulb
+M	take apart	<Assumed>
+O	garlic	1
+S	unpeeled
+S	clove
+//
+O	garlic	1
+S	unpeeled
+S	clove
+M	peel	<Assumed>
+O	garlic	1
+S	clove
+S	peeled
+//
+O	cutting board	0
+S	empty
+O	garlic	1
+S	clove
+S	peeled
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{garlic}
+O	garlic	1
+S	clove
+S	on	[cutting board]
+S	peeled
+//
+O	food processor	0
+S	off (ready)
+O	food processor bowl	1
+S	empty
+M	attach	<Assumed>
+O	food processor	0
+S	off (ready)
+S	with	[food processor bowl]
+O	food processor bowl	1
+S	attached to	[food processor]
+S	empty
+//
+O	food processor bowl	0
+S	attached to	[food processor]
+S	empty
+O	cutting board	0
+S	contains	{garlic}
+O	garlic	1
+S	clove
+S	on	[cutting board]
+S	peeled
+M	pick-and-place	<1:19,1:22>
+O	food processor bowl	0
+S	attached to	[food processor]
+S	contains	{garlic}
+O	garlic	1
+S	clove
+S	on	[food processor bowl]
+S	peeled
+O	cutting board	0
+S	empty
+//
+O	food processor bowl	0
+S	attached to	[food processor]
+S	contains	{garlic}
+O	bowl	1
+S	contains	{parsley}
+O	parsley	1
+S	leaf
+S	chopped
+S	in	[bowl]
+M	pour	<1:24,1:25>
+O	food processor bowl	0
+S	attached to	[food processor]
+S	contains	{garlic,parsley}
+O	bowl	1
+S	empty
+//
+O	food processor bowl	0
+S	attached to	[food processor]
+S	contains	{garlic,parsley}
+O	bowl	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bowl]
+M	pour	<1:26,1:30>
+O	food processor bowl	0
+S	attached to	[food processor]
+S	contains	{garlic,olive oil,parsley}
+O	olive oil	1
+S	liquid
+S	in	[food processor bowl]
+O	bowl	1
+S	empty
+//
+O	food processor bowl	1
+S	attached to	[food processor]
+S	contains	{garlic,olive oil,parsley}
+O	food processor lid	1
+M	attach	<Assumed>
+O	food processor bowl	1
+S	attached to	[food processor]
+S	covered	[food processor lid]
+S	contains	{garlic,olive oil,parsley}
+O	food processor lid	1
+S	on	[food processor bowl]
+//
+O	food processor	0
+S	off (ready)
+S	with	[food processor bowl]
+M	turn on	<Assumed>
+O	food processor	0
+S	on
+S	with	[food processor bowl]
+//
+O	food processor	0
+S	on
+S	with	[food processor bowl]
+O	food processor bowl	0
+S	attached to	[food processor]
+S	covered	[food processor lid]
+S	contains	{garlic,olive oil,parsley}
+O	garlic	0
+S	clove
+S	in	[food processor bowl]
+S	peeled
+O	olive oil	1
+S	liquid
+S	in	[food processor bowl]
+M	blend	<1:30,1:34>
+O	garlic butter	1
+S	mixed
+S	contains	{garlic,olive oil,parsley}
+S	in	[food processor bowl]
+//
+O	food processor	0
+S	on
+S	with	[food processor bowl]
+M	turn off	<Assumed>
+O	food processor	0
+S	off
+S	with	[food processor bowl]
+//
+O	food processor	0
+S	off
+S	with	[food processor bowl]
+O	food processor bowl	1
+S	attached to	[food processor]
+S	covered	[food processor lid]
+S	contains	{garlic,olive oil,parsley}
+M	detach	<Assumed>
+O	food processor	0
+S	off
+O	food processor bowl	1
+S	covered	[food processor lid]
+S	contains	{garlic,olive oil,parsley}
+//
+O	food processor lid	1
+S	on	[food processor bowl]
+O	food processor bowl	0
+S	covered	[food processor lid]
+S	contains	{garlic,olive oil,parsley}
+M	detach	<Assumed>
+O	food processor bowl	0
+S	contains	{garlic,olive oil,parsley}
+O	food processor lid	1
+//
+O	cutting board	0
+S	empty
+O	bread	1
+S	whole
+S	loaf
+M	pick-and-place	<1:37,1:38>
+O	cutting board	0
+S	contains	{bread}
+O	bread	1
+S	whole
+S	on	[cutting board]
+S	loaf
+//
+O	bread	0
+S	whole
+S	on	[cutting board]
+S	loaf
+O	knife	1
+M	cut	<1:38,1:44>
+O	bread	0
+S	on	[cutting board]
+S	halved
+//
+O	food processor bowl	1
+S	contains	{garlic,olive oil,parsley}
+O	bowl	0
+S	empty
+O	garlic butter	1
+S	mixed
+S	contains	{garlic,olive oil,parsley}
+S	in	[food processor bowl]
+O	spoon	1
+M	scrape and pour	<Assumed>
+O	bowl	0
+S	contains	{garlic,olive oil,parsley}
+O	garlic butter	1
+S	mixed
+S	contains	{garlic,olive oil,parsley}
+S	in	[bowl]
+O	food processor bowl	1
+S	empty
+//
+O	bowl	0
+S	contains	{garlic,olive oil,parsley}
+O	bread	0
+S	on	[cutting board]
+S	halved
+O	garlic butter	0
+S	mixed
+S	contains	{garlic,olive oil,parsley}
+S	in	[bowl]
+O	spoon	1
+M	scoop and spread	<1:46,1:51>
+O	bread	0
+S	contains	{garlic butter}
+S	on	[cutting board]
+S	halved
+O	garlic butter	0
+S	mixed
+S	contains	{garlic,olive oil,parsley}
+S	on	[bread]
+O	spoon	1
+//
+O	bread	0
+S	contains	{garlic butter}
+S	on	[cutting board]
+S	halved
+O	bowl	0
+S	contains	{mozzarella}
+O	mozzarella	1
+S	grated
+S	in	[bowl]
+M	sprinkle	<1:54,2:03>
+O	bread	0
+S	contains	{garlic butter,mozzarella}
+S	on	[cutting board]
+S	halved
+O	mozzarella	1
+S	grated
+S	on	[bread]
+//
+O	box	0
+S	contains	{aluminium foil}
+O	aluminium foil	1
+S	sheet
+S	in	[box]
+O	baking tray	0
+S	empty
+M	tear and place	<2:06,2:10>
+O	aluminium foil	1
+S	sheet
+S	on	[baking tray]
+O	baking tray	0
+S	empty
+S	with	[aluminium foil]
+//
+O	baking tray	0
+S	empty
+S	with	[aluminium foil]
+O	bread	1
+S	contains	{garlic butter,mozzarella}
+S	on	[cutting board]
+S	halved
+M	pick-and-place	<2:10,2:14>
+O	bread	1
+S	contains	{garlic butter,mozzarella}
+S	on	[baking tray]
+S	halved
+O	baking tray	0
+S	contains	{bread}
+S	with	[aluminium foil]
+O	cutting board	0
+S	empty
+//
+O	baking tray	0
+S	contains	{bread}
+S	with	[aluminium foil]
+O	bread	1
+S	contains	{garlic butter,mozzarella}
+S	on	[baking tray]
+S	halved
+O	aluminium foil	1
+S	sheet
+S	on	[baking tray]
+M	wrap	<2:17,2:21>
+O	aluminium foil	1
+S	covering	[bread]
+S	on	[baking tray]
+O	bread	1
+S	contains	{garlic butter,mozzarella}
+S	covered	[aluminium foil]
+S	on	[baking tray]
+S	halved
+//
+O	baking tray	1
+S	contains	{bread}
+O	oven	0
+S	on
+M	put inside	<Assumed>
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	1
+S	in	[oven]
+S	contains	{bread}
+//
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	1
+S	in	[oven]
+S	contains	{bread}
+O	bread	0
+S	contains	{garlic butter,mozzarella}
+S	covered	[aluminium foil]
+S	on	[baking tray]
+S	halved
+M	bake	<Assumed>
+O	baking tray	1
+S	in	[oven]
+S	contains	{garlic bread}
+O	garlic bread	0
+S	baked
+S	contains	{garlic,mozzarella,olive oil,parsley}
+S	covered	[aluminium foil]
+S	on	[baking tray]
+//
+O	oven	0
+S	on
+S	with	[baking tray]
+M	turn off	<Assumed>
+O	oven	0
+S	off
+S	with	[baking tray]
+//
+O	baking tray	1
+S	in	[oven]
+S	contains	{garlic bread}
+O	garlic bread	0
+S	baked
+S	contains	{garlic,mozzarella,olive oil,parsley}
+S	covered	[aluminium foil]
+S	on	[baking tray]
+O	oven	0
+S	off
+S	with	[baking tray]
+M	remove	<Assumed>
+O	oven	0
+S	off
+O	baking tray	1
+S	contains	{garlic bread}
+//
+O	baking tray	1
+S	contains	{garlic bread}
+O	garlic bread	0
+S	baked
+S	contains	{garlic,mozzarella,olive oil,parsley}
+S	covered	[aluminium foil]
+S	on	[baking tray]
+O	aluminium foil	1
+S	on	[baking tray]
+S	covering	[bread]
+O	knife	1
+M	unwrap	<2:31,2:38>
+O	garlic bread	0
+S	baked
+S	contains	{garlic,mozzarella,olive oil,parsley}
+S	on	[baking tray]
+O	aluminium foil	0
+S	contains	{garlic bread}
+S	on	[baking tray]
+//
+O	garlic bread	0
+S	baked
+S	contains	{garlic,mozzarella,olive oil,parsley}
+S	on	[baking tray]
+O	parmesan	1
+S	block
+S	whole
+O	grater	0
+M	grate	<2:39,2:51>
+O	grater	0
+O	parmesan	1
+S	grated
+S	on	[bread]
+O	garlic bread	0
+S	contains	{garlic,mozzarella,olive oil,parmesan,parsley}
+S	on	[baking tray]
+//
+O	baking tray	1
+S	contains	{garlic bread}
+O	garlic bread	0
+S	contains	{garlic,mozzarella,olive oil,parmesan,parsley}
+S	on	[baking tray]
+O	oven	0
+S	on
+M	put inside	<Assumed>
+O	baking tray	1
+S	in	[oven]
+S	contains	{garlic bread}
+O	oven	0
+S	on
+S	with	[baking tray]
+//
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	0
+S	in	[oven]
+S	contains	{garlic bread}
+O	garlic bread	0
+S	contains	{garlic,mozzarella,olive oil,parmesan,parsley}
+S	on	[baking tray]
+M	bake	<Assumed>
+O	garlic bread	0
+S	baked
+S	contains	{garlic,mozzarella,olive oil,parmesan,parsley}
+S	on	[baking tray]
+//
+O	baking tray	0
+S	contains	{garlic bread}
+O	garlic bread	0
+S	baked
+S	contains	{garlic,mozzarella,olive oil,parmesan,parsley}
+S	on	[baking tray]
+O	cutting board	0
+S	empty
+M	pick-and-place	<2:55,2:58>
+O	cutting board	0
+S	contains	{garlic bread}
+O	garlic bread	0	0
+S	baked
+S	contains	{garlic,mozzarella,olive oil,parmesan,parsley}
+S	on	[cutting board]
+O	cutting board	0
+S	empty
+//
+O	garlic bread	0
+S	baked
+S	contains	{garlic,mozzarella,olive oil,parmesan,parsley}
+S	on	[cutting board]
+O	knife	1
+M	slice	<2:58,3:02>
+O	garlic bread	0
+S	baked
+S	contains	{garlic,mozzarella,olive oil,parmesan,parsley}
+S	divided
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{garlic bread}
+O	garlic bread	0
+S	baked
+S	contains	{garlic,mozzarella,olive oil,parmesan,parsley}
+S	divided
+S	on	[cutting board]
+O	plate	0
+S	empty
+O	spoon	1
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	empty
+S	contains	{garlic bread}
+O	garlic bread	1	0
+S	contains	{black pepper,butter,garlic,parsley,salt}
+S	on	[plate]
+S	sliced
+//

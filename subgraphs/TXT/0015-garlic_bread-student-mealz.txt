@@ -1,0 +1,276 @@
+# Source:	https://www.youtube.com/watch?v=CMoxSgxWIIg
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0015-garlic_bread-student-mealz.mp4
+//
+O	bread	1
+S	whole
+S	loaf
+O	cutting board	0
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{bread}
+O	bread	1
+S	whole
+S	loaf
+S	on	[cutting board]
+//
+O	bread	1
+S	whole
+S	loaf
+S	on	[cutting board]
+O	knife	1
+M	slice	<0:42,0:48>
+O	bread	0
+S	on	[cutting board]
+S	sliced
+//
+O	cutting board	0
+S	contains	{bread}
+O	bread	1
+S	on	[cutting board]
+S	sliced
+O	plate	0
+S	empty
+M	pick-and-place	<0:48,0:51>
+O	plate	0
+S	contains	{bread}
+O	bread	1
+S	on	[plate]
+S	sliced
+O	cutting board	0
+S	empty
+//
+O	cutting board	0
+S	empty
+O	parsley	1
+S	stem
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{parsley}
+O	parsley	1
+S	on	[cutting board]
+S	stem
+//
+O	parsley	0
+S	on	[cutting board]
+S	stem
+O	knife	1
+M	chop	<0:54,1:02>
+O	parsley	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	1
+S	contains	{parsley}
+O	parsley	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	contains	{butter}
+M	pour and scrape	<1:08,1:12>
+O	bowl	0
+S	contains	{butter,parsley}
+O	parsley	1
+S	chopped
+S	in	[bowl]
+O	cutting board	1
+S	empty
+//
+O	garlic press	1
+S	empty
+S	closed
+M	open	<Assumed>
+O	garlic press	1
+S	empty
+S	opened
+//
+O	garlic press	0
+S	empty
+S	opened
+O	garlic	1
+S	clove
+S	peeled
+M	insert	<Assumed>
+O	garlic press	0
+S	opened
+S	contains	{garlic}
+O	garlic	1
+S	clove
+S	in	[garlic press]
+S	peeled
+//
+O	bowl	0
+S	contains	{butter,parsley}
+O	garlic press	1
+S	contains	{garlic}
+S	opened
+O	garlic	1
+S	clove
+S	in	[garlic press]
+S	peeled
+O	knife	1
+M	squeeze and scrape	<Assumed>
+O	bowl	0
+S	contains	{butter,garlic,parsley}
+O	garlic	1
+S	in	[mixing bowl]
+S	minced
+O	garlic press	1
+S	closed
+//
+O	bowl	0
+S	contains	{butter,garlic,parsley}
+O	shaker	1
+S	contains	{salt}
+O	salt	1
+S	in	[shaker]
+S	granulated
+M	sprinkle	<1:27,1:30>
+O	bowl	0
+S	contains	{butter,garlic,parsley,salt}
+O	salt	1
+S	in	[bowl]
+S	granulated
+//
+O	bowl	0
+S	contains	{butter,garlic,parsley,salt}
+O	pepper mill	1
+S	contains	{black pepper}
+O	black pepper	1
+S	whole
+S	in	[pepper mill]
+S	peppercorn
+M	grind	<1:31,1:34>
+O	bowl	0
+S	contains	{black pepper,butter,garlic,parsley,salt}
+O	black pepper	1
+S	in	[bowl]
+S	ground
+//
+O	bowl	0
+S	contains	{black pepper,butter,garlic,parsley,salt}
+O	butter	0
+S	softened
+S	stick
+S	in	[bowl]
+O	parsley	1
+S	chopped
+S	in	[bowl]
+O	garlic	1
+S	minced
+S	in	[bowl]
+O	salt	1
+S	in	[bowl]
+S	granulated
+O	black pepper	1
+S	in	[bowl]
+S	ground
+O	spoon	1
+M	mix	<1:35,1:38:50>
+O	garlic butter	0
+S	mixed
+S	in	[bowl]
+S	contains	{black pepper,butter,garlic,parsley,salt}
+//
+O	box	1
+S	contains	{parchment paper}
+O	parchment paper	1
+S	sheet
+S	in	[box]
+O	baking tray	0
+S	empty
+M	tear and place	<Assumed>
+O	baking tray	0
+S	empty
+S	with	[parchment paper]
+O	parchment paper	1
+S	sheet
+S	on	[baking tray]
+//
+O	bowl	0
+S	contains	{black pepper,butter,garlic,parsley,salt}
+O	garlic butter	1
+S	mixed
+S	in	[bowl]
+S	contains	{black pepper,butter,garlic,parsley,salt}
+O	plate	0
+S	contains	{bread}
+O	bread	1
+S	on	[plate]
+S	sliced
+O	knife	1
+M	spread	<1:43,1:48>
+O	bread	0
+S	contains	{garlic butter}
+S	sliced
+O	garlic butter	1
+S	mixed
+S	on	[bread]
+S	contains	{black pepper,butter,garlic,parsley,salt}
+//
+O	baking tray	0
+S	empty
+S	with	[parchment paper]
+O	bread	0
+S	contains	{garlic butter}
+S	sliced
+M	pick-and-place	<1:48,1:50>
+O	baking tray	0
+S	with	[parchment paper]
+S	contains	{bread}
+O	bread	0
+S	contains	{garlic butter}
+S	on	[baking tray]
+S	sliced
+//
+O	oven	0
+S	empty
+S	on
+O	baking tray	0
+S	with	[parchment paper]
+S	contains	{bread}
+M	put inside	<2:06:50,2:10:50>
+O	oven	0
+S	contains	{baking tray}
+S	on
+O	baking tray	0
+S	with	[parchment paper]
+S	in	[oven]
+S	contains	{bread}
+//
+O	oven	0
+S	contains	{baking tray}
+S	on
+O	baking tray	0
+S	with	[parchment paper]
+S	in	[oven]
+S	contains	{bread}
+O	bread	0
+S	contains	{garlic butter}
+S	on	[baking tray]
+S	sliced
+O	garlic butter	1
+S	mixed
+S	on	[bread]
+S	contains	{black pepper,butter,garlic,parsley,salt}
+M	bake	<Assumed>
+O	garlic bread	0
+S	baked
+S	contains	{bread,black pepper,butter,garlic,parsley,salt}
+S	on	[baking tray]
+//
+O	garlic bread	1
+S	baked
+S	contains	{bread,black pepper,butter,garlic,parsley,salt}
+S	on	[baking tray]
+O	plate	0
+S	empty
+O	tongs	1
+M	pick-and-place	<Assumed>
+O	baking tray	0
+S	empty
+O	garlic bread	1	0
+S	baked
+S	contains	{bread,black pepper,butter,garlic,parsley,salt}
+S	on	[plate]
+S	ready
+//

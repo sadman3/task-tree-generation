@@ -1,0 +1,144 @@
+O	egg	1
+S	uncracked
+O	jar	0
+S	empty
+M	crack	Assumed	Assumed
+O	jar	0
+S	contains	{egg}
+O	egg	0
+S	cracked
+S	in	[jar]
+//
+O	jar	1
+S	contains	{egg}
+O	egg	0
+S	cracked
+S	in	[jar]
+O	spoon	1
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[spoon]
+M	pour	Assumed	Assumed
+O	jar	0
+S	contains	{egg,sugar}
+O	sugar	1
+S	granulated
+S	in	[jar]
+//
+O	jar	0
+S	contains	{egg,sugar}
+O	bowl	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	pour	Assumed	Assumed
+O	jar	0
+S	contains	{egg,sugar,salt}
+O	salt	1
+S	granulated
+S	in	[jar]
+//
+O	jar	1
+S	contains	{egg,sugar,salt}
+M	shake	Assumed	Assumed
+O	jar	1
+S	contains	{egg mixture}
+//
+O	jar	0
+S	contains	{egg mixture}
+O	spoon	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[spoon]
+M	pour	Assumed	Assumed
+O	jar	0
+S	contains	{egg mixture,flour}
+O	flour	1
+S	powder
+S	in	[jar]
+//
+O	bowl	1
+S	contains	{egg yolk}
+O	egg yolk	1
+S	in	[bowl]
+O	jar	0
+S	contains	{egg mixture,flour}
+M	pour	Assumed	Assumed
+O	jar	0
+S	contains	{egg mixture,flour,egg yolk}
+O	egg yolk	1
+S	in	[jar]
+//
+O	bowl	1
+S	contains	{butter}
+O	butter	1
+S	in	[bowl]
+O	jar	0
+S	contains	{egg mixture,flour,egg yolk}
+M	pour	Assumed	Assumed
+O	jar	0
+S	contains	{egg mixture,flour,egg yolk,butter}
+O	butter	1
+S	in	[jar]
+//
+O	jar	0
+S	contains	{egg mixture,flour,egg yolk,butter}
+O	bowl	1
+S	contains	{chocolate chip}
+O	chocolate chip	1
+S	in	[bowl]
+M	pour	Assumed	Assumed
+O	jar	0
+S	contains	{egg mixture,flour,egg yolk,butter,chocolate chip}
+O	chocolate chip	1
+S	in	[jar]
+//
+O	jar	0
+S	contains	{egg mixture,flour,egg yolk,butter,chocolate chip}
+O	fork	1
+M	stir	Assumed	Assumed
+O	jar	0
+S	contains	{cookie dough}
+O	cookie dough	0
+S	uncooked
+S	in	[jar]
+S	contains	{egg mixture,flour,egg yolk,butter,chocolate chip}
+//
+O	jar	1
+S	contains	{cookie dough}
+O	microwave	0
+S	empty
+M	put inside	Assumed	Assumed
+O	microwave	0
+S	with	[jar]
+O	jar	1
+S	contains	{cookie dough}
+S	in	[microwave]
+//
+O	microwave	0
+S	with	[jar]
+O	jar	0
+S	contains	{cookie dough}
+S	in	[microwave]
+O	cookie dough	0
+S	uncooked
+S	in	[jar]
+O	cookie dough	0
+S	uncooked
+S	in	[jar]
+S	contains	{egg mixture,flour,egg yolk,butter,chocolate chip}
+M	heat	Assumed	Assumed
+O	cookie dough	0
+S	cooked
+S	in	[jar]
+O	jar	0
+S	contains	{cookie}
+S	in	[microwave]
+O	chocolate chip cookie	0	10
+S	baked
+S	in	[jar]
+S	contains	{egg mixture,flour,egg yolk,butter,chocolate chip}
+//

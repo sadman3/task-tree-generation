@@ -1,0 +1,598 @@
+# Source:	https://www.youtube.com/watch?v=P1cqfb_fS1A
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0064-goat-cheese_omelette-mahalo.mp4
+//
+O	stove	0
+S	off (ready)
+S	under	[frying pan]
+M	turn on	<0:51-0:55>
+O	stove	0
+S	on
+S	under	[frying pan]
+//
+O	frying pan	0
+S	empty
+S	on	[stove]
+O	stove	0
+S	off
+S	under	[frying pan]
+M	preheat	<Assumed>
+O	frying pan	0
+S	hot
+S	empty
+S	on	[stove]
+//
+O	frying pan	0
+S	hot
+S	empty
+S	on	[stove]
+O	bowl	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bowl]
+M	pour	<0:57-1:00>
+O	frying pan	0
+S	hot
+S	contains	{olive oil}
+S	on	[stove]
+O	olive oil	1
+S	liquid
+S	in	[frying pan]
+//
+O	frying pan	0
+S	hot
+S	contains	{olive oil}
+S	on	[stove]
+O	bowl	0
+S	contains	{butter}
+O	butter	1
+S	softened
+S	unmelted
+S	cubed
+S	in	[bowl]
+M	scrape and pour	<1:06-1:10>
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter}
+S	on	[stove]
+O	butter	1
+S	softened
+S	unmelted
+S	cubed
+S	in	[frying pan]
+//
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter}
+S	on	[stove]
+O	butter	1
+S	softened
+S	unmelted
+S	cubed
+S	in	[frying pan]
+M	spread	<1:16-1:20,1:22-1:26,1:37-1:43->
+O	butter	1
+S	melted
+S	liquid
+S	in	[frying pan]
+//
+O	onion	1
+S	whole
+S	unpeeled
+M	peel	<Assumed>
+O	onion	1
+S	whole
+S	peeled
+//
+O	cutting board	0
+S	empty
+O	onion	1
+S	whole
+S	peeled
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	whole
+S	peeled
+S	on	[cutting board]
+//
+O	onion	0
+S	whole
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	chop	<Assumed>
+O	onion	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pick-and-place	<Assumed>
+O	bowl	0
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	in	[bowl]
+O	cutting board	0
+//
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter}
+S	on	[stove]
+O	bowl	1
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	in	[bowl]
+M	scrape and pour	<1:45-1:49>
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion}
+S	on	[stove]
+O	onion	1
+S	chopped
+S	in	[frying pan]
+//
+O	stove	0
+S	on
+S	under	[frying pan]
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion}
+S	on	[stove]
+O	onion	0
+S	chopped
+S	in	[frying pan]
+O	butter	0
+S	melted
+S	liquid
+S	in	[frying pan]
+O	olive oil	0
+S	liquid
+S	in	[frying pan]
+O	turner	1
+M	cook and stir	<1:50-1:55>
+O	onion	0
+S	chopped
+S	sauteed
+S	in	[frying pan]
+//
+O	bowl	0
+S	empty
+O	egg	1
+S	whole
+M	crack	<Assumed>
+O	bowl	0
+S	contains	{egg white,egg yolk}
+O	egg white	0
+S	uncooked
+S	in	[bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[bowl]
+//
+O	mixing bowl	0
+S	empty
+O	bowl	0
+S	contains	{egg white,egg yolk}
+O	egg white	0
+S	uncooked
+S	in	[bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[bowl]
+M	pour	<1:59-2:01>
+O	mixing bowl	0
+S	contains	{egg white,egg yolk}
+O	egg white	0
+S	uncooked
+S	in	[mixing bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{egg white,egg yolk}
+O	bowl	1
+S	contains	{half-and-half}
+O	half-and-half	1
+S	liquid
+S	in	[bowl]
+M	pour	<2:05-2:08>
+O	mixing bowl	0
+S	contains	{egg white,egg yolk,half-and-half}
+O	half-and-half	1
+S	liquid
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{egg white,egg yolk,half-and-half}
+O	bowl	0
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	sprinkle	<2:11-2:15>
+O	mixing bowl	0
+S	contains	{egg white,egg yolk,half-and-half,salt}
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{egg white,egg yolk,half-and-half,salt}
+O	bowl	0
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+M	sprinkle	<2:16-2:18>
+O	mixing bowl	0
+S	contains	{egg white,egg yolk,half-and-half,salt,black pepper}
+O	black pepper	1
+S	ground
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{egg white,egg yolk,half-and-half,salt,black pepper}
+O	black pepper	0
+S	ground
+S	in	[mixing bowl]
+O	salt	0
+S	granulated
+S	in	[mixing bowl]
+O	half-and-half	0
+S	liquid
+S	in	[mixing bowl]
+O	egg white	0
+S	uncooked
+S	in	[mixing bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[mixing bowl]
+O	whisk	1
+M	beat	<2:19-2:40>
+O	mixing bowl	0
+S	contains	{egg,half-and-half,salt,black pepper}
+O	egg	1
+S	beaten
+S	uncooked
+S	contains	{half-and-half,salt,black pepper}
+S	in	[mixing bowl]
+//
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion}
+S	on	[stove]
+O	bowl	1
+S	contains	{zucchini}
+O	zucchini	1
+S	chopped
+S	in	[bowl]
+M	sprinkle	<2:56-2:59>
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini}
+S	on	[stove]
+O	zucchini	1
+S	chopped
+S	in	[frying pan]
+//
+O	cutting board	0
+S	empty
+O	sweet pepper	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{sweet pepper}
+O	sweet pepper	1
+S	whole
+S	on	[cutting board]
+//
+O	knife	1
+O	sweet pepper	0
+S	whole
+S	on	[cutting board]
+M	chop	<Assumed>
+O	sweet pepper	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{sweet pepper}
+O	sweet pepper	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pick-and-place	<Assumed>
+O	bowl	0
+S	contains	{sweet pepper}
+O	sweet pepper	1
+S	chopped
+S	in	[bowl]
+O	cutting board	0
+S	empty
+//
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini}
+S	on	[stove]
+O	bowl	1
+S	contains	{sweet pepper}
+O	sweet pepper	1
+S	chopped
+S	in	[bowl]
+M	sprinkle	<2:51:50-2:54:50>
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper}
+S	on	[stove]
+O	sweet pepper	1
+S	chopped
+S	in	[frying pan]
+//
+O	stove	0
+S	on
+S	under	[frying pan]
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper}
+S	on	[stove]
+O	zucchini	1
+S	chopped
+S	in	[frying pan]
+O	sweet pepper	1
+S	chopped
+S	in	[frying pan]
+O	butter	0
+S	melted
+S	liquid
+S	in	[frying pan]
+O	olive oil	0
+S	liquid
+S	in	[frying pan]
+O	turner	1
+M	cook and stir	<2:58-3:05,3:15-3:19>
+O	zucchini	1
+S	sauteed
+S	chopped
+S	in	[frying pan]
+O	sweet pepper	1
+S	sauteed
+S	chopped
+S	in	[frying pan]
+//
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper}
+S	on	[stove]
+O	mixing bowl	1
+S	contains	{egg,half-and-half,salt,black pepper}
+O	egg	1
+S	beaten
+S	uncooked
+S	contains	{half-and-half,salt,black pepper}
+S	in	[mixing bowl]
+M	pour	<3:23-3:27>
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper,egg}
+S	on	[stove]
+O	egg	1
+S	beaten
+S	uncooked
+S	contains	{half-and-half,salt,black pepper}
+S	in	[frying pan]
+//
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper,egg}
+S	on	[stove]
+O	bowl	1
+S	contains	{tomato}
+O	tomato	1
+S	sundried
+S	in	[bowl]
+M	sprinkle	<3:38-3:43>
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper,egg,tomato}
+S	on	[stove]
+O	tomato	1
+S	sundried
+S	in	[frying pan]
+//
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper,egg,tomato}
+S	on	[stove]
+O	bowl	1
+S	contains	{goat cheese}
+O	goat cheese	1
+S	softened
+S	crumbled
+S	in	[bowl]
+M	sprinkle	<4:12-4:23,4:25-4:32>
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper,egg,tomato,goat cheese}
+S	on	[stove]
+O	goat cheese	1
+S	softened
+S	crumbled
+S	in	[frying pan]
+//
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper,egg,tomato,goat cheese}
+S	on	[stove]
+O	bowl	1
+S	contains	{basil}
+O	basil	1
+S	leaf
+S	in	[bowl]
+M	sprinkle	<4:49-5:00>
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper,egg,tomato,goat cheese,basil}
+S	on	[stove]
+//
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper,egg,tomato,goat cheese,basil}
+S	on	[stove]
+O	tomato	1
+S	sundried
+S	in	[frying pan]
+O	zucchini	1
+S	sauteed
+S	chopped
+S	in	[frying pan]
+O	sweet pepper	1
+S	sauteed
+S	chopped
+S	in	[frying pan]
+O	onion	1
+S	sauteed
+S	chopped
+S	in	[frying pan]
+O	goat cheese	1
+S	softened
+S	crumbled
+S	in	[frying pan]
+O	egg	1
+S	beaten
+S	uncooked
+S	contains	{half-and-half,salt,black pepper}
+S	in	[frying pan]
+M	cook	<Assumed>
+O	frittata	1
+S	partly cooked
+S	contains	{egg,half-and-half,salt,black pepper,olive oil,butter,onion,zucchini,sweet pepper,tomato,goat cheese,basil}
+S	in	[frying pan]
+//
+O	stove	0
+S	on
+S	under	[frying pan]
+M	turn off	<5:34-5:35>
+O	stove	0
+S	off	
+S	under	[frying pan]
+//
+O	oven	0
+S	on
+S	empty
+O	stove	0
+S	off	
+S	under	[frying pan]
+O	frying pan	1
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper,egg,tomato,goat cheese,basil}
+S	on	[stove]
+M	insert	<5:39-5:44>
+O	oven	0
+S	on
+S	contains	{frying pan}
+O	frying pan	1
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper,egg,tomato,goat cheese,basil}
+S	in	[oven]
+O	stove	0
+S	off	
+//
+O	oven	0
+S	on
+S	contains	{frying pan}
+O	frying pan	0
+S	hot
+S	contains	{olive oil,butter,onion,zucchini,sweet pepper,egg,tomato,goat cheese,basil}
+S	in	[oven]
+O	frittata	0
+S	partly cooked
+S	contains	{egg,half-and-half,salt,black pepper,olive oil,butter,onion,zucchini,sweet pepper,tomato,goat cheese,basil}
+S	in	[frying pan]
+M	broil	<Assumed>
+O	frying pan	0
+S	hot
+S	contains	{frittata}
+S	in	[oven]
+O	frittata	0
+S	cooked
+S	contains	{egg,half-and-half,salt,black pepper,olive oil,butter,onion,zucchini,sweet pepper,tomato,goat cheese,basil}
+S	in	[frying pan]
+//
+O	oven	0
+S	on
+S	contains	{frying pan}
+M	turn off	<Assumed>
+O	oven	0
+S	off
+S	contains	{frying pan}
+//
+O	frying pan	0
+S	hot
+S	contains	{frittata}
+S	in	[oven]
+O	oven	0
+S	off
+S	contains	{frying pan}
+M	remove	<Assumed>
+O	oven	0
+S	off
+S	empty
+O	frying pan	0
+S	hot
+S	contains	{frittata}
+//
+O	cutting board	0
+S	empty
+O	frying pan	1
+S	hot
+S	contains	{frittata}
+M	place	<Assumed>
+O	cutting board	0
+S	empty
+S	under	[frying pan]
+O	frying pan	1
+S	hot
+S	contains	{frittata}
+S	on	[cutting board]
+//
+O	plate	0
+S	empty
+O	frittata	1
+S	cooked
+S	contains	{egg,half-and-half,salt,black pepper,olive oil,butter,onion,zucchini,sweet pepper,tomato,goat cheese,basil}
+S	in	[frying pan]
+O	frying pan	1
+S	hot
+S	contains	{frittata}
+S	on	[cutting board]
+M	flip and place	<6:03-6:06>
+O	plate	0
+S	contains	{frittata}
+O	frittata	0
+S	cooked
+S	contains	{egg,half-and-half,salt,black pepper,olive oil,butter,onion,zucchini,sweet pepper,tomato,goat cheese,basil}
+S	on	[plate]
+//
+O	frittata	0
+S	cooked
+S	contains	{egg,half-and-half,salt,black pepper,olive oil,butter,onion,zucchini,sweet pepper,tomato,goat cheese,basil}
+S	on	[plate]
+O	knife	1
+M	slice	<6:19-6:23>
+O	frittata	0	23
+S	cooked
+S	sliced
+S	contains	{egg,half-and-half,salt,black pepper,olive oil,butter,onion,zucchini,sweet pepper,tomato,goat cheese,basil}
+S	on	[plate]
+//

@@ -1,0 +1,163 @@
+O	pitcher	1
+S	contains	{water}
+O	water	1
+S	in	[pitcher]
+O	measuring cup	0
+S	empty
+M	pour	0:42	0:46
+O	measuring cup	0
+S	contains	{water}
+O	water	1
+S	in	[measuring cup]
+//
+O	measuring cup	1
+S	contains	{water}
+O	water	1
+S	in	[measuring cup]
+O	pot	0
+S	empty
+M	pour	0:47	0:48
+O	pot	0
+S	contains	{water}
+O	water	1
+S	in	[pot]
+//
+O	pot	1
+S	contains	{water}
+O	stove	0
+S	on
+M	pick-and-place	Assumed	Assumed
+O	pot	1
+S	contains	{water}
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pot]
+//
+O	pot	0
+S	contains	{water}
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pot]
+O	water	1
+S	in	[pot]
+M	heat	Assumed	Assumed
+O	pot	0
+S	contains	{water}
+S	on	[stove]
+O	water	1
+S	boiling
+S	in	[pot]
+//
+O	pot	0
+S	contains	{water}
+S	on	[stove]
+O	bowl	1
+S	contains	{lentil}
+O	lentil	1
+S	uncooked
+S	in	[bowl]
+M	pour	0:54	0:55
+O	pot	0
+S	contains	{water,lentil}
+S	on	[stove]
+O	lentil	1
+S	uncooked
+S	in	[pot]
+//
+O	pot	0
+S	contains	{water,lentil}
+S	on	[stove]
+O	spoon	1
+M	stir	0:57	1:02
+O	pot	0
+S	contains	{water,lentil}
+S	on	[stove]
+//
+O	pot	0
+S	contains	{water,lentil}
+S	on	[stove]
+O	pot lid	1
+M	pick-and-place	1:03	1:05
+O	pot	0
+S	covered
+S	contains	{water,lentil}
+S	on	[stove]
+O	pot lid	1
+S	on	[pot]
+//
+O	pot	0
+S	covered
+S	contains	{water,lentil}
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pot]
+O	lentil	0
+S	uncooked
+S	in	[pot]
+M	cook	1:07	1:14
+O	pot	0
+S	covered
+S	contains	{lentil mix}
+S	on	[stove]
+O	lentil mix	1
+S	cooked
+S	in	[pot]
+//
+O	pot	0
+S	covered
+S	contains	{lentil mix}
+S	on	[stove]
+O	pot lid	1
+S	on	[pot]
+M	remove	1:14	1:116
+O	pot	0
+S	contains	{lentil mix}
+S	on	[stove]
+O	pot lid	1
+//
+O	pot	0
+S	contains	{lentil mix}
+S	on	[stove]
+O	turner	1
+M	stir	1:21	1:27
+O	pot	0
+S	contains	{lentil mix}
+S	on	[stove]
+//
+O	pot	0
+S	contains	{lentil mix}
+S	on	[stove]
+O	bowl	1
+S	contains	{bulgur}
+O	bulgur	1
+S	uncooked
+S	in	[bowl]
+M	pour	1:28	1:30
+O	pot	0
+S	contains	{lentil mix,bulgur}
+S	on	[stove]
+O	bulgur	1
+S	uncooked
+S	in	[bowl]
+//
+O	pot	0
+S	contains	{lentil mix,bulgur}
+S	on	[stove]
+O	bulgur	1
+S	uncooked
+S	in	[bowl]
+O	lentil mix	1
+S	cooked
+S	in	[pot]
+O	turner	1
+M	stir	1:33	1:37
+O	pot	0
+S	contains	{kofta mix}
+S	on	[stove]
+O	kofta mix	1	11
+S	contains	{lentil,bulgur}
+S	in	[pot]
+//

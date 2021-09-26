@@ -1,0 +1,182 @@
+O	cutting board	0
+S	empty
+O	tortilla	1
+S	plain
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{tortilla}
+O	tortilla	1
+S	plain
+S	on	[cutting board]
+//
+O	tortilla	0
+S	plain
+S	on	[cutting board]
+O	bowl	1
+S	contains	{butter}
+O	butter	1
+S	stick
+S	in	[bowl]
+O	knife	1
+M	spread	0:36	0:44
+O	tortilla	0
+S	buttered	{butter}
+S	on	[cutting board]
+//
+O	bowl	1
+S	contains	{crayfish mixture}
+O	crayfish mixture	1
+S	contains	{crayfish,mayonnaise,lemon,dill}
+S	in	[bowl]
+O	fork	1
+O	tortilla	0
+S	buttered	{butter}
+S	on	[cutting board]
+M	scrape	0:58	1:04
+O	tortilla	0
+S	contains	{butter,crayfish mixture}
+S	on	[cutting board]
+O	crayfish mixture	1
+S	contains	{crayfish,mayonnaise,lemon,dill}
+S	on	[tortilla]
+//
+O	bowl	1
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+O	tortilla	0
+S	contains	{butter,crayfish mixture}
+S	on	[cutting board]
+M	sprinkle	1:07	1:11
+O	tortilla	0
+S	contains	{butter,crayfish mixture,black pepper}
+S	on	[cutting board]
+O	black pepper	1
+S	ground
+S	on	[tortilla]
+//
+O	bowl	1
+S	contains	{arugula}
+O	arugula	1
+S	washed
+S	in	[bowl]
+O	tortilla	0
+S	contains	{butter,crayfish mixture,black pepper}
+S	on	[cutting board]
+M	pick-and-place	1:13	1:16
+O	tortilla	0
+S	contains	{butter,crayfish mixture,black pepper,arugula}
+S	on	[cutting board]
+O	arugula	1
+S	on	[tortilla]
+//
+O	cutting board	0
+S	contains	{lemon}
+O	lemon	0
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	slice	1:20	1:21
+O	lemon	0
+S	sliced
+S	on	[cutting board]
+//
+O	lemon	0
+S	sliced
+S	on	[cutting board]
+O	tortilla	0
+S	contains	{butter,crayfish mixture,black pepper,arugula}
+S	on	[cutting board]
+M	squeeze	1:23	1:24
+O	tortilla	0
+S	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S	on	[cutting board]
+O	lemon juice	1
+S	on	[tortilla]
+O	lemon	0
+S	squeezed
+//
+O	tortilla	1
+S	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S	on	[cutting board]
+M	roll	1:28	1:37
+O	tortilla	1
+S	rolled
+S	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S	on	[cutting board]
+//
+O	tortilla	1
+S	rolled
+S	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S	on	[cutting board]
+O	bowl	1
+S	contains	{butter}
+O	butter	1
+S	stick
+S	in	[bowl]
+O	knife	1
+M	spread	1:38	1:41
+O	tortilla	1
+S	rolled
+S	buttered	{butter}
+S	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S	on	[cutting board]
+//
+O	tortilla	1
+S	rolled
+S	buttered	{butter}
+S	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S	on	[cutting board]
+M	tuck ends	1:42	1:52
+O	wrap	1
+S	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S	on	[cutting board]
+//
+O	wrap	1
+S	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S	on	[cutting board]
+O	knife	1
+M	cut	1:57	1:58
+O	wrap	1
+S	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S	halved
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{lemon}
+O	lemon	1
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	slice	2:02	2:06
+O	lemon	1
+S	sliced
+S	on	[cutting board]
+//
+O	lemon	1
+S	sliced
+S	on	[cutting board]
+O	plate	0
+S	empty
+M	pick-and-place	2:06	2:08
+O	plate	0
+S	contains	{lemon}
+O	lemon	1
+S	sliced
+S	on	[plate]
+//
+O	plate	0
+S	contains	{lemon}
+O	wrap	1
+S	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S	halved
+S	on	[cutting board]
+M	pick-and-place	2:07	2:10
+O	plate	0
+S	contains	{wrap}
+O	wrap	1	4
+S	contains	{tortilla,butter,crayfish,mayonnaise,lemon,dill,black pepper,arugula,lemon juice}
+S	halved
+S	on	[plate]
+//

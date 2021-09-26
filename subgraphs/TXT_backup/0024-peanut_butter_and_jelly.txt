@@ -1,0 +1,49 @@
+O36	bread	1
+S130	sliced
+O304	plate	0
+S46	empty
+M61	pick-and-place	0:53:75	0:55:50
+O304	plate	0
+S24	contains	{bread}
+O36	bread	1
+S130	sliced
+S93	on	[plate]
+//
+O210	jar	0
+S24	contains	{peanut butter}
+O290	peanut butter	0
+S72	in	[jar]
+O36	bread	0
+S130	sliced
+S93	on	[plate]
+O217	knife	1
+M100	spread	1:06	1:12
+O36	bread	0
+S130	sliced
+S24	contains	{peanut butter}
+S93	on	[plate]
+//
+O36	bread	0
+S24	contains	{peanut butter}
+S130	sliced
+S93	on	[plate]
+O210	jar	0
+S24	contains	{jelly}
+O211	jelly	0
+S72	in	[jar]
+O217	knife	1
+M100	spread	1:18	1:29
+O36	bread	0
+S130	sliced
+S24	contains	{jelly, peanut butter}
+S93	on	[plate]
+//
+O36	bread	1
+S130	sliced
+S24	contains	{jelly, peanut butter}
+S93	on	[plate]
+M61	pick-and-place	Assumed	Assumed
+O337	sandwich	0	4
+S24	contains	{peanut butter,jelly}
+S93	on	[plate]
+//

@@ -1,0 +1,87 @@
+# Source:	https://www.youtube.com/watch?v=0AYZ_RT_8ZY
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0073-orange_juice.mp4
+//
+O	colander	0
+S	empty
+O	orange	1
+S	whole
+M	pick-and-place	<Assumed>
+O	colander	0
+S	contains	{orange}
+O	orange	1
+S	whole
+S	in	[colander]
+//
+O	faucet	0
+S	on
+O	water	0
+S	liquid
+S	from	[faucet]
+O	colander	1
+S	contains	{orange}
+O	orange	1
+S	in	[colander]
+S	whole
+M	wash	<Assumed>
+O	orange	1
+S	washed
+S	whole
+S	in	[colander]
+//
+O	cutting board	0
+S	empty
+O	colander	0
+S	contains	{orange}
+O	orange	1
+S	in	[colander]
+S	washed
+S	whole
+M	pick-and-place	<0:29-0:30,0:37-0:38,0:43-0:44>
+O	cutting board	0
+S	contains	{orange}
+O	orange	1
+S	whole
+S	on	[cutting board]
+//
+O	orange	0
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	cut	<0:32-0:35,0:38-0:41,0:45-0:48>
+O	orange	1
+S	halved
+S	on	[cutting board]
+//
+O	squeezer	0
+S	empty
+O	orange	1
+S	halved
+S	on	[cutting board]
+M	squeeze	<0:53-1:10,1:13-1:36>
+O	squeezer	0
+S	contains	{orange juice}
+O	orange juice	0
+S	juice
+S	in	[squeezer]
+O	orange	0
+S	juice
+S	in	[squeezer]
+O	orange	1
+S	halved
+S	squeezed
+S	on	[cutting board]
+//
+O	squeezer	1
+S	contains	{orange juice}
+O	orange	1
+S	juice
+S	in	[squeezer]
+O	drinking glass	0
+S	empty
+M	pour	<1:45-1:54>
+O	drinking glass	0	9
+S	contains	{orange juice}
+O	orange juice	1	9
+S	in	[drinking glass]
+S	contains	{orange}
+//

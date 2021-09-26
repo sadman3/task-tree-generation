@@ -1,0 +1,257 @@
+O6	bag	1
+S24	contains	{flour}
+O147	flour	1
+S106	powder
+S72	in	[bag]
+O371	strainer	0
+S46	empty
+M65	pour	Assumed	Assumed
+O371	strainer	0
+S24	contains	{flour}
+O147	flour	1
+S106	powder
+S72	in	[strainer]
+//
+O34	bowl	0
+S46	empty
+O371	strainer	1
+S24	contains	{flour}
+O147	flour	0
+S106	powder
+S72	in	[strainer]
+M93	sift	0:22	0:32
+O34	bowl	0
+S24	contains	{flour}
+O147	flour	0
+S127	sifted
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{flour}
+O241	measuring cup	1
+S46	empty
+O147	flour	0
+S127	sifted
+S72	in	[bowl]
+O367	spoon	1
+M84	scoop	0:35	0:40
+O241	measuring cup	1
+S24	contains	{flour}
+O147	flour	0
+S127	sifted
+S72	in	[measuring cup]
+//
+O34	bowl	0
+S46	empty
+O133	egg	1
+S147	uncracked
+M22	crack	Assumed	Assumed
+O34	bowl	0
+S24	contains	{egg}
+O133	egg	1
+S29	cracked
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{egg}
+O133	egg	1
+S29	cracked
+S72	in	[bowl]
+O152	fork	1
+M104	stir	0:48	0:54
+O34	bowl	0
+S24	contains	{egg}
+O133	egg	1
+S6	beaten
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{egg}
+O133	egg	1
+S6	beaten
+S72	in	[bowl]
+O34	bowl	1
+S24	contains	{salt}
+O336	salt	1
+S63	granulated
+S72	in	[bowl]
+M101	sprinkle	0:55	0:58
+O34	bowl	0
+S24	contains	{egg,salt}
+//
+O34	bowl	0
+S24	contains	{egg,salt}
+O34	bowl	1
+S24	contains	{milk}
+O244	milk	1
+S72	in	[bowl]
+M65	pour	0:59	1:03
+O34	bowl	0
+S24	contains	{egg,salt,milk}
+//
+O34	bowl	0
+S24	contains	{egg,salt,milk}
+O152	fork	1
+M56	mix	1:05	1:08
+O34	bowl	0
+S24	contains	{egg mixture}
+O134	egg mixture	1
+S72	in	[bowl]
+S24	contains	{egg,salt,milk}
+//
+O34	bowl	0
+S24	contains	{egg mixture}
+O134	egg mixture	0
+S72	in	[bowl]
+S24	contains	{egg,salt,milk}
+O241	measuring cup	1
+S24	contains	{flour}
+O147	flour	1
+S127	sifted
+S72	in	[measuring cup]
+M65	pour	1:09	1:11
+O34	bowl	0
+S24	contains	{egg mixture,flour}
+O147	flour	1
+S127	sifted
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{egg mixture,flour}
+O152	fork	1
+O147	flour	1
+S127	sifted
+S72	in	[bowl]
+O134	egg mixture	1
+S72	in	[bowl]
+S24	contains	{egg,salt,milk}
+M104	stir	1:12	1:18
+O34	bowl	0
+S24	contains	{dough}
+O127	dough	1
+S24	contains	{egg mixture,flour}
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{flour}
+O147	flour	1
+S127	sifted
+S72	in	[bowl]
+O367	spoon	1
+M84	scoop	Assumed	Assumed
+O367	spoon	1
+S24	contains	{flour}
+O147	flour	1
+S127	sifted
+S72	in	[spoon]
+//
+O34	bowl	0
+S24	contains	{dough}
+O367	spoon	1
+S24	contains	{flour}
+O147	flour	1
+S127	sifted
+S72	in	[spoon]
+M65	pour	1:19	1:21
+O34	bowl	0
+S24	contains	{dough,flour}
+O147	flour	1
+S127	sifted
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{dough,flour}
+O147	flour	1
+S127	sifted
+S72	in	[bowl]
+O152	fork	1
+M104	stir	1:22	1:25
+O34	bowl	0
+S24	contains	{dough}
+O127	dough	1
+S24	contains	{egg mixture,flour}
+S72	in	[bowl]
+//
+O121	cutting board	0
+S46	empty
+O210	jar	0
+S24	contains	{flour}
+O147	flour	1
+S106	powder
+S72	in	[jar]
+M101	sprinkle	1:38	1:43
+O121	cutting board	0
+S54	floured
+O147	flour	1
+S106	powder
+S93	on	[cutting board]
+//
+O121	cutting board	0
+S54	floured
+O34	bowl	0
+S24	contains	{dough}
+O127	dough	1
+S24	contains	{egg mixture,flour}
+S72	in	[bowl]
+M61	pick-and-place	Assumed	Assumed
+O121	cutting board	0
+S24	contains	{dough}
+O127	dough	1
+S24	contains	{egg mixture,flour}
+S93	on	[cutting board]
+//
+O121	cutting board	0
+S24	contains	{dough}
+O127	dough	0
+S24	contains	{egg mixture,flour}
+S93	on	[cutting board]
+O346	scraper	1
+M23	cut	1:44	1:48
+O127	dough	0
+S24	contains	{egg mixture,flour}
+S67	halved
+S93	on	[cutting board]
+//
+O121	cutting board	0
+S24	contains	{dough}
+O127	dough	0
+S24	contains	{egg mixture,flour}
+S67	halved
+S93	on	[cutting board]
+O328	rolling pin	1
+M81	roll	1:49	2:05
+O127	dough	0
+S51	flattened
+S24	contains	{egg mixture,flour}
+S93	on	[cutting board]
+//
+O121	cutting board	0
+S24	contains	{dough}
+O127	dough	0
+S51	flattened
+S24	contains	{egg mixture,flour}
+S93	on	[cutting board]
+O300	pizza cutter	1
+M23	cut	2:16	2:29
+O127	dough	0
+S141	stripped
+S93	on	[cutting board]
+S24	contains	{egg mixture,flour}
+//
+O121	cutting board	0
+S24	contains	{dough}
+O127	dough	0
+S141	stripped
+S24	contains	{egg mixture,flour}
+S93	on	[cutting board]
+O147	flour	1
+S106	powder
+S72	in	[jar]
+M101	sprinkle	2:30	2:38
+O121	cutting board	0
+S24	contains	{egg noodle}
+O135	egg noodle	0	14
+S146	uncooked
+S93	on	[cutting board]
+S24	contains	{egg,salt,milk,flour}
+//

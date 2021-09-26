@@ -1,0 +1,132 @@
+# Source:	https://www.youtube.com/watch?v=qx6tZ8ZU0qc
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0081-roux_recipe.mp4
+//
+O	stove	0
+S	off (ready)
+O	skillet	1
+S	empty
+M	pick-and-place	<Assumed>
+O	stove	0
+S	off (ready)
+S	with	[skillet]
+O	skillet	1
+S	on	[stove]
+S	empty
+//
+O	stove	0
+S	off (ready)
+S	with	[skillet]
+M	turn on	<Assumed>
+O	stove	0
+S	on
+S	with	[skillet]
+//
+O	stove	0
+S	with	[skillet]
+S	off
+O	skillet	0
+S	on	[stove]
+S	empty
+M	heat	<Assumed>
+O	skillet	0
+S	hot
+S	on	[stove]
+S	empty
+//
+O	bowl	1
+S	contains	{butter}
+O	butter	1
+S	softened
+S	unmelted
+S	cube
+S	in	[bowl]
+O	skillet	0
+S	hot
+S	on	[stove]
+S	empty
+M	pour	<0:45-0:47>
+O	butter	1
+S	softened
+S	unmelted
+S	cube
+S	in	[skillet]
+O	skillet	0
+S	hot
+S	on	[stove]
+S	contains	{butter}
+//
+O	butter	0
+S	softened
+S	unmelted
+S	cube
+S	in	[skillet]
+O	skillet	0
+S	hot
+S	on	[stove]
+S	contains	{butter}
+O	whisk	1
+M	spread	<0:47-0:50>
+O	butter	0
+S	liquid
+S	melted
+S	in	[skillet]
+//
+O	skillet	0
+S	hot
+S	on	[stove]
+S	contains	{butter}
+O	bowl	1
+S	contains	{flour}
+O	flour	1
+S	in	[bowl]
+S	powder
+M	pour	<0:51-0:54>
+O	skillet	0
+S	hot
+S	on	[stove]
+S	contains	{butter,flour}
+O	flour	1
+S	in	[skillet]
+S	powder
+//
+O	skillet	0
+S	hot
+S	on	[stove]
+S	contains	{butter,flour}
+O	flour	1
+S	in	[skillet]
+S	powder
+O	butter	0
+S	softened
+S	liquid
+S	melted
+S	in	[skillet]
+O	whisk	1
+M	stir	<0:54-1:24>
+O	skillet	0
+S	hot
+S	on	[stove]
+S	contains	{roux}
+O	roux	0
+S	thick liquid
+S	contains	{butter,flour}
+S	in	[skillet]
+//
+O	skillet	0
+S	hot
+S	on	[stove]
+S	contains	{roux}
+O	roux	0
+S	thick liquid
+S	contains	{butter,flour}
+S	in	[skillet]
+O	whisk	1
+M	scoop	<Assumed>
+O	spoon	1
+S	contains	{roux}
+O	roux	0	7
+S	thick liquid
+S	contains	{butter,flour}
+S	in	[spoon]
+S	ready
+//

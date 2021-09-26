@@ -1,0 +1,339 @@
+# Source:	https://www.youtube.com/watch?v=KK5pVWejamQ
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0019-garlic-parmesan_chicken.mp4 
+//
+O	baking tray	0
+S	empty
+O	spray can	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	liquid
+S	in	[spray can]
+M	spray	<0:34-0:36>
+O	baking tray	0
+S	empty
+S	coated	[vegetable oil]
+O	vegetable oil	1
+S	liquid
+S	on	[baking tray]
+//
+O	garlic	0
+S	on	[cutting board]
+S	clove
+O	knife	1
+M	mince	<0:38-0:41>
+O	garlic	0
+S	on	[cutting board]
+S	minced
+//
+O	bowl	0
+S	empty
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bottle]
+M	pour	<0:43-0:47>
+O	bowl	0
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{olive oil}
+O	cutting board	1
+S	contains	{garlic}
+O	garlic	1
+S	on	[cutting board]
+S	minced
+M	scrape	<0:48-0:49>
+O	bowl	0
+S	contains	{olive oil,garlic}
+O	cutting board	1
+S	empty
+O	garlic	1
+S	minced
+S	in	[bowl]
+//
+O	container	1
+S	contains	{breadcrumb}
+O	measuring cup	0
+S	empty
+O	breadcrumb	1
+S	crumbs
+S	in	[container]
+M	measure	<Assumed>
+O	measuring cup	0
+S	contains	{breadcrumb}
+O	breadcrumb	1
+S	crumbs
+S	in	[measuring cup]
+//
+O	bowl	0
+S	empty
+O	measuring cup	0
+S	contains	{breadcrumb}
+O	breadcrumb	1
+S	crumbs
+S	in	[measuring cup]
+M	pour	<0:51-0:52>
+O	bowl	0
+S	contains	{breadcrumb}
+O	breadcrumb	1
+S	crumbs
+S	in	[measuring cup]
+//
+O	container	1
+S	contains	{parmesan}
+O	measuring cup	0
+S	empty
+O	parmesan	1
+S	grated
+S	in	[container]
+M	measure	<Assumed>
+O	measuring cup	0
+S	contains	{parmesan}
+O	parmesan	1
+S	grated
+S	in	[measuring cup]
+//
+O	bowl	0
+S	contains	{breadcrumb}
+O	measuring cup	1
+S	contains	{parmesan}
+O	parmesan	1
+S	grated
+S	in	[measuring cup]
+M	pour	<0:55-0:56>
+O	bowl	0
+S	contains	{breadcrumb,parmesan}
+O	parmesan	1
+S	grated
+S	in	[bowl]
+//
+O	jar	0
+S	contains	{basil}
+O	basil	0
+S	dried
+S	leaf
+S	in	[jar]
+O	spoon	1
+S	empty
+M	scoop	<0:58-0:59>
+O	spoon	1
+S	contains	{basil}
+O	basil	1
+S	dried
+S	leaf
+S	in	[spoon]
+//
+O	bowl	0
+S	contains	{breadcrumb,parmesan}
+O	spoon	1
+S	contains	{basil}
+O	basil	1
+S	dried
+S	leaf
+S	in	[spoon]
+M	pour	<1:00-1:01>
+O	bowl	0
+S	contains	{breadcrumb,parmesan,basil}
+O	basil	1
+S	dried
+S	leaf
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{black pepper}
+O	black pepper	0
+S	ground
+S	in	[jar]
+O	spoon	1
+S	empty
+M	scoop	<1:01-1:02>
+O	spoon	1
+S	contains	{black pepper}
+O	black pepper	0
+S	ground
+S	in	[spoon]
+//
+O	bowl	0
+S	contains	{breadcrumb,parmesan,basil}
+O	spoon	1
+S	contains	{black pepper}
+O	black pepper	0
+S	ground
+S	in	[spoon]
+M	pour	<1:03-1:06>
+O	bowl	0
+S	contains	{basil,black pepper,breadcrumb,parmesan}
+O	black pepper	0
+S	ground
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{basil,black pepper,breadcrumb,parmesan}
+O	breadcrumb	1
+S	crumbs
+S	in	[bowl]
+O	basil	1
+S	dried
+S	leaf
+S	in	[bowl]
+O	black pepper	1
+S	in	[bowl]
+S	ground
+O	breadcrumb	1
+S	in	[bowl]
+O	spoon	1
+M	mix	<1:07-1:09>
+O	breadcrumb	1
+S	mixed
+S	crumbs
+S	contains	{basil,black pepper,parmesan}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{garlic,olive oil}
+O	olive oil	0
+S	liquid
+S	in	[bowl]
+O	garlic	0
+S	minced
+S	in	[bowl]
+O	chicken	1
+S	raw
+S	on	[plate]
+O	tongs	1
+M	coat	<1:12-1:18>
+O	chicken	1
+S	raw
+S	contains	{olive oil,garlic}
+S	in	[bowl]
+O	olive oil	0
+S	liquid
+S	on	[chicken]
+O	garlic	0
+S	minced
+S	on	[chicken]
+//
+O	tongs	1
+O	chicken	1
+S	raw
+S	contains	{olive oil,garlic}
+S	in	[bowl]
+O	bowl	0
+S	contains	{basil,black pepper,breadcrumb,parmesan}
+O	breadcrumb	0
+S	mixed
+S	crumbs
+S	contains	{basil,black pepper,parmesan}
+S	in	[bowl]
+M	coat	<1:18-1:26>
+O	chicken	1
+S	raw
+S	contains	{olive oil,garlic,basil,black pepper,parmesan}
+S	in	[bowl]
+O	breadcrumb	0
+S	mixed
+S	crumbs
+S	contains	{basil,black pepper,parmesan}
+S	on	[chicken]
+//
+O	vegetable oil	1
+S	liquid
+S	on	[baking tray]
+O	tongs	1
+O	chicken	1
+S	raw
+S	contains	{olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
+S	in	[bowl]
+O	baking tray	0
+S	empty
+S	coated	[vegetable oil]
+M	pick-and-place	<1:32-1:37>
+O	baking tray	0
+S	contains	{chicken}
+O	chicken	1
+S	raw
+S	contains	{vegetable oil,olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
+S	on	[baking tray]
+//
+O	baking tray	1
+S	contains	{chicken}
+O	oven	0
+S	on
+S	empty
+M	put inside	<1:27,1:32>
+O	oven	0
+S	contains	{baking tray}
+S	on
+O	baking tray	1
+S	contains	{chicken}
+S	in	[oven]
+//
+O	oven	0
+S	contains	{baking tray}
+S	on
+O	baking tray	1
+S	contains	{chicken}
+S	in	[oven]
+O	chicken	1
+S	raw
+S	contains	{vegetable oil,olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
+S	on	[baking tray]
+M	bake	<Assumed>
+O	baking tray	1
+S	hot
+S	contains	{chicken}
+S	in	[oven]
+O	chicken	1
+S	baked
+S	on	[baking tray]
+O	garlic-parmesan chicken	1
+S	baked
+S	contains	{chicken,egetable oil,olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
+S	on	[baking tray]
+//
+O	oven	0
+S	contains	{baking tray}
+S	on
+M	turn off	<Assumed>
+O	oven	0
+S	contains	{baking tray}
+S	off
+//
+O	oven	0
+S	contains	{baking tray}
+S	off
+O	baking tray	1
+S	hot
+S	contains	{chicken}
+S	in	[oven]
+M	remove	<Assumed>
+O	oven	0
+S	off
+S	empty
+O	baking tray	1
+S	hot
+S	contains	{chicken}
+//
+O	baking tray	0
+S	hot
+S	contains	{chicken}
+O	garlic-parmesan chicken	1
+S	baked
+S	contains	{chicken,vegetable oil,olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
+S	on	[baking tray]
+O	plate	0
+S	empty
+O	tongs	1
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{chicken}
+O	garlic-parmesan chicken	1	20
+S	baked
+S	contains	{chicken,vegetable oil,olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
+S	on	[plate]
+S	ready
+//

@@ -1,0 +1,469 @@
+O	garlic	1
+S	clove
+M	peel	Assumed	Assumed
+O	garlic	1
+S	peeled
+//
+O	cutting board	0
+S	empty
+O	garlic	1
+S	peeled
+M	pick-and-place	Assumed	Assumed
+O	garlic	0
+S	peeled
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{garlic}
+//
+O	knife	1
+O	garlic	0
+S	peeled
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{garlic}
+M	chop	Assumed	Assumed
+O	garlic	0
+S	chopped
+S	on	[cutting board]
+//
+O	stove	0
+S	on
+O	cooking pan	1
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	cooking pan	1
+S	heated
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pan]
+//
+O	cooking pan	0
+S	heated
+S	on	[stove]
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[bottle]
+M	pour	0:19	0:21
+O	cooking pan	0
+S	greased	{olive oil}
+S	on	[stove]
+//
+O	cutting board	0
+S	empty
+O	chicken	1
+S	uncooked
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{chicken}
+O	chicken	1
+S	uncooked
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{chicken}
+O	chicken	0
+S	uncooked
+S	on	[cutting board]
+O	knife	1
+M	chop	Assumed	Assumed
+O	chicken	0
+S	chopped
+S	on	[cutting board]
+O	knife	1
+//
+O	cutting board	0
+S	contains	{chicken}
+O	chicken	0
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	cutting board	0
+O	bowl	0
+S	contains	{chicken}
+O	chicken	1
+S	chopped
+S	in	[bowl]
+//
+O	cooking pan	0
+S	greased	{olive oil}
+S	on	[stove]
+O	bowl	1
+S	contains	{chicken}
+O	chicken	1
+S	chopped
+S	in	[bowl]
+M	pour	0:23	0:26
+O	cooking pan	0
+S	contains	{olive oil,chicken}
+S	on	[stove]
+O	chicken	1
+S	chopped
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{olive oil,chicken}
+S	on	[stove]
+O	spoon	1
+O	chicken	1
+S	chopped
+S	in	[pan]
+M	cook and stir	0:28	0:35
+O	cooking pan	0
+S	contains	{olive oil,chicken}
+S	on	[stove]
+O	chicken	1
+S	cooked
+S	in	[pan]
+//
+O	knife	1
+O	cutting board	0
+S	contains	{garlic}
+O	garlic	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{garlic}
+O	cutting board	0
+O	garlic	1
+S	chopped
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{garlic}
+O	garlic	1
+S	chopped
+S	in	[bowl]
+O	cooking pan	0
+S	contains	{olive oil,chicken}
+S	on	[stove]
+M	pour	0:36	0:39
+O	cooking pan	0
+S	contains	{olive oil,chicken,garlic}
+S	on	[stove]
+O	garlic	1
+S	chopped
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{olive oil,chicken,garlic}
+S	on	[stove]
+O	garlic	1
+S	chopped
+S	in	[pan]
+O	spoon	1
+M	cook and stir	0:41	0:46
+O	cooking pan	0
+S	contains	{olive oil,chicken,garlic}
+S	on	[stove]
+O	garlic	1
+S	fried
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{olive oil,chicken,garlic}
+S	on	[stove]
+O	measuring cup	1
+S	contains	{chicken broth}
+O	chicken broth	1
+S	in	[measuring cup]
+M	pour	0:49	0:55
+O	cooking pan	0
+S	contains	{olive oil,chicken,garlic,chicken broth}
+S	on	[stove]
+O	chicken broth	1
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{olive oil,chicken,garlic,chicken broth}
+S	on	[stove]
+O	measuring cup	1
+S	contains	{water}
+O	water	1
+S	in	[measuring cup]
+M	pour	0:59	1:01
+O	cooking pan	0
+S	contains	{olive oil,chicken,garlic,chicken broth,water}
+S	on	[stove]
+O	water	1
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{olive oil,chicken,garlic,chicken broth,water}
+S	on	[stove]
+O	water	1
+S	in	[pan]
+O	chicken broth	1
+S	in	[pan]
+O	garlic	1
+S	fried
+S	in	[pan]
+O	chicken	1
+S	cooked
+S	in	[pan]
+O	spoon	1
+M	stir	1:03	1:22
+O	cooking pan	0
+S	contains	{alfredo sauce}
+S	on	[stove]
+O	alfredo sauce	1
+S	contains	{olive oil,chicken,garlic,chicken broth,water}
+S	in	[pan]
+//
+O	cutting board	0
+S	empty
+O	broccoli	0
+S	whole
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{broccoli}
+O	broccoli	0
+S	whole
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{broccoli}
+O	broccoli	0
+S	on	[cutting board]
+S	whole
+O	knife	1
+M	chop	Assumed	Assumed
+O	broccoli	0
+S	chopped
+S	on	[cutting board]
+O	knife	1
+//
+O	cutting board	0
+S	contains	{broccoli}
+O	broccoli	0
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	cutting board	0
+O	bowl	0
+S	contains	{broccoli}
+O	broccoli	0
+S	chopped
+S	in	[bowl]
+//
+O	cooking pan	0
+S	contains	{alfredo sauce}
+S	on	[stove]
+O	bowl	0
+S	contains	{broccoli}
+O	broccoli	1
+S	chopped
+S	in	[bowl]
+M	pour	1:23	1:27
+O	cooking pan	0
+S	contains	{alfredo sauce,broccoli}
+S	on	[stove]
+O	broccoli	0
+S	chopped
+S	in	[pan]
+//
+O	bowl	0
+S	empty
+O	box	1
+S	contains	{penne}
+O	penne	1
+S	uncooked
+S	in	[box]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{penne}
+O	penne	1
+S	uncooked
+S	in	[bowl]
+//
+O	cooking pan	0
+S	contains	{alfredo sauce,broccoli}
+S	on	[stove]
+O	bowl	0
+S	contains	{penne}
+O	penne	1
+S	uncooked
+S	in	[bowl]
+M	pour	1:29	1:32
+O	cooking pan	0
+S	contains	{alfredo sauce,broccoli,penne}
+S	on	[stove]
+O	penne	1
+S	uncooked
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{alfredo sauce,broccoli,penne}
+S	on	[stove]
+O	spoon	1
+O	penne	1
+S	uncooked
+S	in	[pan]
+O	broccoli	1
+S	chopped
+S	in	[pan]
+O	alfredo sauce	1
+S	contains	{olive oil,chicken,garlic,chicken broth,water}
+S	in	[pan]
+M	cook and stir	1:35	1:49
+O	cooking pan	0
+S	contains	{alfredo sauce,broccoli,penne}
+S	on	[stove]
+O	penne	1
+S	partly cooked
+S	in	[pan]
+O	broccoli	1
+S	cooked
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{alfredo sauce,broccoli,penne}
+S	on	[stove]
+O	pan lid	1
+M	cover	1:56	2:00
+O	cooking pan	0
+S	contains	{alfredo sauce,broccoli,penne}
+S	covered
+S	on	[stove]
+O	pan lid	1
+S	on	[pan]
+//
+O	cooking pan	0
+S	contains	{alfredo sauce,broccoli,penne}
+S	covered
+S	on	[stove]
+O	penne	0
+S	partly cooked
+S	in	[pan]
+O	stove	0
+S	on
+S	with	[pan]
+O	alfredo sauce	0
+S	contains	{olive oil,chicken,garlic,chicken broth,water}
+S	in	[pan]
+M	cook	Assumed	Assumed
+O	cooking pan	0
+S	contains	{pasta alfredo}
+S	covered
+S	on	[stove]
+O	pasta alfredo	0
+S	contains	{alfredo sauce,broccoli,penne}
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{pasta alfredo}
+S	covered
+S	on	[stove]
+O	pan lid	1
+S	on	[pan]
+M	uncover	2:03	2:04
+O	cooking pan	0
+S	contains	{pasta alfredo}
+S	on	[stove]
+O	pan lid	1
+//
+O	cooking pan	0
+S	contains	{pasta alfredo}
+S	on	[stove]
+O	pasta alfredo	0
+S	contains	{alfredo sauce,broccoli,penne}
+S	in	[pan]
+O	bowl	1
+S	contains	{parmesan}
+O	parmesan	1
+S	grated
+S	in	[bowl]
+M	pour	2:32	2:35
+O	pasta alfredo	0
+S	contains	{alfredo sauce,broccoli,penne,parmesan}
+S	in	[pan]
+O	parmesan	1
+S	grated
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{pasta alfredo}
+S	on	[stove]
+O	pasta alfredo	0
+S	contains	{alfredo sauce,broccoli,penne,parmesan}
+S	in	[pan]
+O	measuring cup	1
+S	contains	{cream}
+O	cream	1
+S	in	[measuring cup]
+M	pour	2:37	2:40
+O	pasta alfredo	0
+S	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
+S	in	[pan]
+O	cream	1
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{pasta alfredo}
+S	on	[stove]
+O	pasta alfredo	0
+S	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
+S	in	[pan]
+O	spoon	1
+M	stir	2:43	2:51
+O	pasta alfredo	0
+S	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{pasta alfredo}
+S	on	[stove]
+O	pasta alfredo	0
+S	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
+S	in	[pan]
+O	nutmeg	1
+S	whole
+O	grater	1
+M	grate	2:53	2:56
+O	pasta alfredo	0
+S	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
+S	in	[pan]
+O	nutmeg	1
+S	ground
+S	in	[pan]
+O	grater	1
+//
+O	cooking pan	0
+S	contains	{pasta alfredo}
+S	on	[stove]
+O	pasta alfredo	0
+S	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
+S	in	[pan]
+O	spoon	1
+M	stir	3:03	3:15
+O	pasta alfredo	0
+S	cooked
+S	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
+S	in	[pan]
+//
+O	plate	0
+S	empty
+O	cooking pan	0
+S	contains	{pasta alfredo}
+S	on	[stove]
+O	pasta alfredo	1
+S	cooked
+S	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
+S	in	[pan]
+O	ladle	1
+M	scoop and pour	Assumed	Assumed
+O	plate	0
+S	contains	{pasta alfredo}
+O	pasta alfredo	1	13
+S	cooked
+S	contains	{alfredo sauce,broccoli,penne,parmesan,cream,nutmeg}
+S	on	[plate]
+//

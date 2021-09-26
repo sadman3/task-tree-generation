@@ -1,0 +1,272 @@
+O	bowl	0
+S	contains	{flour}
+O	bowl	1
+S	contains	{baking powder,cinnamon,salt}
+O	baking powder	1
+S	powder
+S	in	[bowl]
+O	cinnamon	1
+S	ground
+S	in	[bowl]
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	pour	0:01:20	0:01:22
+O	bowl	0
+S	contains	{flour,baking powder,cinnamon,salt}
+O	bowl	1
+//
+O	spatula	1
+O	baking powder	1
+S	powder
+S	in	[bowl]
+O	cinnamon	1
+S	ground
+S	in	[bowl]
+O	salt	1
+S	granulated
+S	in	[bowl]
+O	bowl	0
+S	contains	{flour,baking powder,cinnamon,salt}
+M	mix	0:01:47	0:01:52
+O	bowl	0
+S	contains	{flour,baking powder,cinnamon,salt}
+//
+O	spatula	1
+O	bowl	0
+S	contains	{flour}
+O	bowl	0
+S	contains	{chocolate chip}
+O	chocolate chip	0
+S	in	[bowl]
+M	scoop and pour	0:01:54	0:01:58
+O	bowl	0
+S	contains	{chocolate chip,flour}
+//
+O	spatula	1
+O	bowl	0
+S	contains	{chocolate chip,flour}
+O	flour	0
+S	powder
+S	in	[bowl]
+O	chocolate chip	0
+S	in	[bowl]
+M	mix	0:01:58	0:02:16
+O	chocolate chip	0
+S	floured	{flour}
+S	in	[bowl]
+//
+O	bowl	0
+S	empty
+O	mug	1
+S	contains	{butter}
+O	butter	1
+S	melted
+S	in	[mug]
+M	pour	0:02:26	0:02:27
+O	bowl	0
+S	contains	{butter}
+O	butter	1
+S	melted
+S	in	[bowl]
+O	mug	1
+//
+O	bowl	0
+S	contains	{butter}
+O	bowl	1
+S	contains	{milk}
+O	milk	1
+S	in	[bowl]
+M	pour	0:02:30	0:02:31
+O	bowl	0
+S	contains	{butter,milk}
+O	bowl	1
+//
+O	bowl	0
+S	contains	{butter,milk}
+O	bowl	1
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	in	[bowl]
+M	pour	0:02:33	0:02:34
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk}
+O	bowl	1
+//
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk}
+O	bowl	1
+S	contains	{sour cream}
+O	sour cream	0
+S	in	[bowl]
+O	spatula	1
+M	scrape	0:02:38	0:02:40
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk,sour cream}
+O	bowl	1
+//
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk,sour cream}
+O	bottle	1
+S	contains	{vanilla extract}
+O	vanilla extract	0
+S	in	[bottle]
+M	pour	0:02:55	0:02:56
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract}
+O	vanilla extract	0
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract}
+O	bowl	1
+S	contains	{brown sugar}
+O	brown sugar	0
+S	granulated
+S	in	[bowl]
+M	pour	0:03:00	0:03:01
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar}
+O	bowl	1
+//
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar}
+O	bowl	1
+S	contains	{sugar}
+O	sugar	0
+S	granulated
+S	in	[bowl]
+M	pour	0:03:03	0:03:04
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar}
+O	bowl	1
+//
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar}
+O	butter	1
+S	melted
+S	in	[mug]
+O	milk	1
+S	in	[bowl]
+O	egg white and yolk	1
+S	in	[bowl]
+O	sour cream	0
+S	in	[bowl]
+O	vanilla extract	0
+S	in	[bowl]
+O	brown sugar	0
+S	granulated
+S	in	[bowl]
+O	sugar	0
+S	granulated
+S	in	[bowl]
+O	whisk	1
+M	beat	0:03:06	0:03:14
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar}
+O	whisk	1
+//
+O	bowl	1
+S	contains	{flour,baking powder,cinnamon,salt}
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar}
+M	pour	0:03:20	0:03:24
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt}
+O	bowl	1
+//
+O	bowl	0
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt}
+O	whisk	1
+M	mix	0:03:28	0:03:34
+O	bowl	0
+S	contains	{muffin batter}
+O	muffin batter	1
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt}
+S	in	[bowl]
+O	whisk	1
+//
+O	bowl	1
+S	contains	{chocolate chip,flour}
+O	chocolate chip	0
+S	floured	{flour}
+S	in	[bowl]
+O	spatula	1
+O	bowl	0
+S	contains	{muffin batter}
+M	scrape	0:03:42	0:03:44
+O	bowl	0
+S	contains	{muffin batter,chocolate chip}
+O	bowl	1
+//
+O	spatula	1
+O	bowl	0
+S	contains	{muffin batter,chocolate chip}
+O	muffin batter	1
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt}
+S	in	[bowl]
+O	chocolate chip	1
+S	floured	{flour}
+S	in	[bowl]
+M	fold	0:03:46	0:04:08
+O	bowl	0
+S	contains	{muffin batter,chocolate chip}
+O	muffin batter	1
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S	in	[bowl]
+//
+O	muffin pan	0
+S	empty
+O	muffin cup	1
+S	in	[packet]
+M	pick-and-place	Assumed	Assumed
+O	muffin pan	0
+S	with	[muffin cup]
+O	muffin cup	1
+S	in	[muffin pan]
+//
+O	bowl	0
+S	contains	{muffin batter,chocolate chip}
+O	muffin batter	1
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S	in	[bowl]
+O	muffin pan	0
+S	with	[muffin cup]
+O	scoop	1
+M	scoop and pour	0:04:25	0:04:33
+O	muffin batter	1
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S	in	[muffin pan]
+O	muffin pan	0
+S	contains	{muffin batter}
+O	scoop	1
+//
+O	muffin pan	1
+S	contains	{muffin batter}
+O	oven	0
+S	on
+M	put inside	Assumed	Assumed
+O	muffin pan	1
+S	contains	{muffin batter}
+S	in	[oven]
+O	oven	0
+S	on
+S	with	[pan]
+//
+O	muffin pan	0
+S	contains	{muffin batter}
+O	muffin batter	1
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S	in	[muffin pan]
+O	oven	0
+S	on
+S	with	[pan]
+M	bake	Assumed	Assumed
+O	muffin pan	1
+S	contains	{chocolate chip muffin}
+S	in	[oven]
+O	chocolate chip muffin	0	5
+S	baked
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S	in	[muffin pan]
+//

@@ -1,0 +1,495 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0040-chinese-style_fried_rice.mp4
+# Source:	https://www.youtube.com/watch?v=aVWeS_7jEb4
+//
+O	cutting board	0
+S	empty
+O	green onion	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{green onion}
+O	green onion	1
+S	on	[cutting board]
+S	whole
+//
+O	cutting board	0
+S	contains	{green onion}
+O	green onion	0
+S	on	[cutting board]
+S	whole
+O	knife	1
+M	chop	<Assumed>
+O	green onion	0
+S	chopped
+S	on	[cutting board]
+//
+O	packet	1
+S	contains	{sausage}
+M	open	<Assumed>
+O	packet	1
+S	contains	{sausage}
+S	opened
+//
+O	cutting board	0
+S	empty
+O	packet	0
+S	contains	{sausage}
+S	opened
+O	sausage	1
+S	whole
+S	in	[packet]
+S	raw
+M	take out	<Assumed>
+O	cutting board	0
+S	contains	{sausage}
+O	sausage	1
+S	whole
+S	on	[cutting board]
+S	raw
+//
+O	cutting board	0
+S	contains	{sausage}
+O	knife	1
+O	sausage	1
+S	whole
+S	on	[cutting board]
+S	raw
+M	cut	<Assumed>
+O	sausage	0
+S	sliced
+S	on	[cutting board]
+S	raw
+//
+O	cutting board	0
+S	contains	{sausage}
+O	plate	0
+S	empty
+O	sausage	1
+S	sliced
+S	on	[cutting board]
+S	raw
+M	pick-and-place	<Assumed>
+O	cutting board	0
+O	plate	0
+S	contains	{sausage}
+O	sausage	1
+S	sliced
+S	on	[plate]
+S	raw
+//
+O	bottle	1
+S	contains	{soy sauce}
+M	open	<Assumed>
+O	bottle	1
+S	opened
+S	contains	{soy sauce}
+//
+O	bottle	1
+S	opened
+S	contains	{soy sauce}
+O	soy sauce	1
+S	liquid
+S	in	[bottle]
+O	spoon	1
+M	pour	<Assumed>
+O	bottle	1
+S	contains	{soy sauce}
+O	soy sauce	1
+S	liquid
+S	in	[spoon]
+//
+O	bowl	0
+S	empty
+O	bottle	1
+S	contains	{soy sauce}
+O	soy sauce	1
+S	liquid
+S	in	[spoon]
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{soy sauce}
+O	soy sauce	1
+S	liquid
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{soy sauce}
+O	spoon	1
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[spoon]
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{soy sauce,sugar}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+//
+O	bottle	1
+S	contains	{water}
+M	open	<Assumed>
+O	bottle	1
+S	opened
+S	contains	{water}
+//
+O	bottle	1
+S	opened
+S	contains	{water}
+O	soy sauce	1
+S	liquid
+S	in	[bottle]
+O	spoon	1
+M	pour	<Assumed>
+O	bottle	1
+S	contains	{water}
+O	soy sauce	1
+S	liquid
+S	in	[spoon]
+//
+O	bowl	0
+S	contains	{soy sauce,sugar}
+O	bottle	1
+S	contains	{water}
+O	water	1
+S	liquid
+S	in	[spoon]
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{soy sauce,sugar,water}
+O	water	1
+S	liquid
+S	in	[bowl]
+//
+O	spoon	1
+O	bowl	0
+S	contains	{soy sauce,sugar,water}
+O	water	1
+S	liquid
+S	in	[bowl]
+O	sugar	1
+S	granulated
+S	in	[bowl]
+M	mix*	<Assumed>
+O	bowl	0
+S	contains	{sauce}
+O	sauce	0
+S	mixed
+S	in	[bowl]
+S	contains	{soy sauce,sugar,water}
+//
+O	frying pan	1
+S	empty
+O	stove	0
+S	off (ready)
+M	pick-and-place	<Assumed>
+O	stove	0
+S	off (ready)
+S	with	[frying pan]
+O	frying pan	1
+S	empty
+S	on	[stove]
+//
+O	stove	0
+S	off (ready)
+S	with	[frying pan]
+M	turn on	<Assumed>
+O	stove	0
+S	on
+S	with	[frying pan]
+//
+O	stove	0
+S	on
+S	with	[frying pan]
+O	frying pan	1
+S	empty
+S	on	[stove]
+M	preheat	<Assumed>
+O	frying pan	1
+S	hot
+S	empty
+S	on	[stove]
+//
+O	frying pan	1
+S	hot
+S	empty
+S	on	[stove]
+O	plate	1
+S	contains	{sausage}
+O	sausage	1
+S	sliced
+S	on	[plate]
+S	raw
+O	turner	1
+M	scoop and pour	<Assumed>
+O	frying pan	0
+S	hot
+S	contains	{sausage}
+S	on	[stove]
+O	sausage	1
+S	sliced
+S	in	[frying pan]
+S	raw
+//
+O	stove	0
+S	on
+S	with	[frying pan]
+O	frying pan	0
+S	contains	{sausage}
+S	on	[stove]
+O	sausage	1
+S	sliced
+S	in	[frying pan]
+S	raw
+O	turner	1
+M	stir and fry	<Assumed>
+O	sausage	1
+S	sliced
+S	cooked
+S	in	[frying pan]
+//
+O	packet	1
+S	contains	{carrot,corn,green pea}
+O	corn	1
+S	frozen
+S	grain
+S	in	[packet]
+O	carrot	1
+S	choppped
+S	frozen
+S	in	[packet]
+O	green pea	1
+S	bean
+S	frozen
+S	in	[packet]
+O	bowl	0
+S	empty
+M	pour	<Assumed>
+O	packet	1
+S	contains	{carrot,corn,green pea}
+O	green pea	1
+S	bean
+S	frozen
+S	in	[bowl]
+O	carrot	1
+S	choppped
+S	frozen
+S	in	[bowl]
+O	corn	1
+S	frozen
+S	grain
+S	in	[bowl]
+//
+O	frying pan	0
+S	contains	{sausage}
+S	on	[stove]
+S	hot
+O	packet	1
+S	contains	{carrot,corn,green pea}
+O	green pea	1
+S	bean
+S	frozen
+S	in	[bowl]
+O	carrot	1
+S	choppped
+S	frozen
+S	in	[bowl]
+O	corn	1
+S	frozen
+S	grain
+S	in	[bowl]
+M	pour and mix	<Assumed>
+O	frying pan	0
+S	hot
+S	contains	{carrot,corn,green pea,sausage}
+S	on	[stove]
+O	green pea	1
+S	bean
+S	frozen
+S	in	[frying pan]
+O	carrot	1
+S	choppped
+S	frozen
+S	in	[frying pan]
+O	corn	1
+S	frozen
+S	grain
+S	in	[frying pan]
+//
+O	frying pan	0
+S	hot
+S	contains	{carrot,corn,green pea,sausage}
+S	on	[stove]
+O	spoon	1
+O	bowl	1
+S	contains	{white rice}
+O	white rice	0
+S	cooked
+S	in	[bowl]
+O	spatula	1
+M	pour and scrape	<Assumed>
+O	frying pan	0
+S	hot
+S	contains	{carrot,corn,green pea,sausage,white rice}
+S	on	[stove]
+O	white rice	1
+S	cooked
+S	in	[frying pan]
+//
+O	frying pan	0
+S	hot
+S	contains	{carrot,corn,green pea,sausage,white rice}
+S	on	[stove]
+O	bowl	1
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	beaten
+S	in	[bowl]
+M	pour and scrape	<Assumed>
+O	frying pan	0
+S	hot
+S	contains	{carrot,corn,egg white and yolk,green pea,sausage,white rice}
+S	on	[stove]
+O	egg white and yolk	1
+S	beaten
+S	in	[frying pan]
+//
+O	frying pan	0
+S	contains	{carrot,corn,egg white and yolk,green pea,sausage,white rice}
+S	on	[stove]
+O	sausage	0
+S	sliced
+S	cooked
+S	in	[frying pan]
+O	egg white and yolk	0
+S	beaten
+S	in	[frying pan]
+O	white rice	0
+S	cooked
+S	in	[frying pan]
+O	green pea	0
+S	bean
+S	frozen
+S	in	[frying pan]
+O	carrot	0
+S	choppped
+S	frozen
+S	in	[frying pan]
+O	corn	0
+S	frozen
+S	grain
+S	in	[frying pan]
+O	spatula	1
+M	mix	<Assumed>
+O	frying pan	0
+S	hot
+S	contains	{fried rice}
+S	on	[stove]
+O	fried rice	1
+S	mixed
+S	in	[frying pan]
+S	contains	{carrot,corn,egg white and yolk,green pea,sausage,white rice}
+//
+O	frying pan	0
+S	hot
+S	contains	{fried rice}
+S	on	[stove]
+O	bowl	0
+S	contains	{sauce}
+O	sauce	0
+S	mixed
+S	in	[bowl]
+S	contains	{soy sauce,sugar,water}
+M	pour	<Assumed>
+O	frying pan	0
+S	hot
+S	contains	{fried rice,sauce}
+S	on	[stove]
+O	sauce	0
+S	mixed
+S	in	[frying pan]
+S	contains	{soy sauce,sugar,water}
+//
+O	frying pan	0
+S	hot
+S	contains	{rice mixture,soy mixture}
+S	on	[stove]
+O	cutting board	0
+S	contains	{green onion}
+O	green onion	1
+S	chopped
+S	on	[cutting board]
+M	pick-and-place	<Assumed>
+O	cutting board	0
+O	frying pan	0
+S	hot
+S	contains	{green onion,rice mixture,soy mixture}
+S	on	[stove]
+O	green onion	1
+S	chopped
+S	in	[frying pan]
+//
+O	stove	0
+S	on
+S	with	[frying pan]
+O	frying pan	0
+S	contains	{green onion,rice mixture,soy mixture}
+S	on	[stove]
+O	green onion	0
+S	chopped
+S	in	[frying pan]
+O	sauce	0
+S	mixed
+S	in	[frying pan]
+S	contains	{soy sauce,sugar,water}
+O	fried rice	0
+S	mixed
+S	in	[frying pan]
+S	contains	{carrot,corn,egg white and yolk,green pea,sausage,white rice}
+O	spatula	1
+M	cook and stir	<Assumed>
+O	frying pan	0
+S	hot
+S	contains	{fried rice}
+S	on	[stove]
+O	fried rice	0
+S	mixed
+S	in	[frying pan]
+S	contains	{carrot,corn,egg,green onion,green pea,sausage,soy sauce,sugar,water,white rice}
+//
+O	frying pan	0
+S	hot
+S	contains	{fried rice}
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[frying pan]
+M	turn off	<Assumed>
+O	frying pan	0
+S	contains	{fried rice}
+S	on	[stove]
+O	stove	0
+S	off
+S	with	[frying pan]
+//
+O	frying pan	0
+S	contains	{fried rice}
+S	on	[stove]
+O	fried rice	1
+S	mixed
+S	in	[frying pan]
+S	contains	{carrot,corn,egg,green onion,green pea,sausage,soy sauce,sugar,water,white rice}
+O	bowl	0
+S	empty
+O	spoon	1
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{fried rice}
+O	fried rice	1	19
+S	mixed
+S	in	[bowl]
+S	contains	{carrot,corn,egg,green onion,green pea,sausage,soy sauce,sugar,water,white rice}
+O	chinese-style fried rice	1
+S	in	[frying pan]
+S	contains	{carrot,corn,egg,green onion,green pea,sausage,soy sauce,sugar,water,white rice}
+//

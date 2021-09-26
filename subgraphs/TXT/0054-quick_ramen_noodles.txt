@@ -1,0 +1,331 @@
+O	stove	0
+S	off
+M	turn on	Assumed	Assumed
+O	stove	0
+S	on
+//
+O	stove	0
+S	on
+O	pot	1
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	pot	0
+S	heated
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pot]
+//
+O	pot	0
+S	heated
+S	on	[stove]
+O	bottle	1
+S	contains	{grapeseed oil}
+O	grapeseed oil	1
+S	in	[bottle]
+M	pour	0:38	0:40
+O	pot	0
+S	contains	{grapeseed oil}
+S	on	[stove]
+O	grapeseed oil	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{grapeseed oil}
+S	on	[stove]
+O	bowl	1
+S	contains	{garlic}
+O	garlic	1
+S	chopped
+S	in	[bowl]
+M	pour	0:42	0:43
+O	pot	0
+S	contains	{garlic}
+S	on	[stove]
+O	garlic	1
+S	chopped
+S	in	[pot]
+O	bowl	1
+//
+O	pot	0
+S	contains	{garlic}
+S	on	[stove]
+O	bowl	1
+S	contains	{scallion}
+O	scallion	1
+S	chopped
+S	in	[bowl]
+M	pour	0:45	0:47
+O	pot	0
+S	contains	{garlic,scallion}
+S	on	[stove]
+O	scallion	1
+S	chopped
+S	in	[pot]
+O	bowl	1
+//
+O	jar	0
+S	contains	{chili sauce}
+O	chili sauce	1
+S	in	[jar]
+O	spoon	1
+S	empty
+M	scoop	0:44	0:49
+O	spoon	1
+S	contains	{chili sauce}
+O	chili sauce	1
+S	in	[spoon]
+//
+O	pot	0
+S	contains	{garlic,scallion}
+S	on	[stove]
+O	spoon	1
+S	contains	{chili sauce}
+O	chili sauce	1
+S	in	[spoon]
+M	pour	0:49	0:41
+O	pot	0
+S	contains	{garlic,scallion,chili sauce}
+S	on	[stove]
+O	chili sauce	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{garlic,scallion,chili sauce}
+S	on	[stove]
+O	ginger	1
+S	peeled
+O	grater	1
+M	grate	0:57	1:00:50
+O	ginger	1
+S	peeled
+S	in	[pot]
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger}
+S	on	[stove]
+O	grater	1
+//
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger}
+S	on	[stove]
+O	spoon	1
+M	stir	1:12	1:17
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger}
+S	on	[stove]
+O	spoon	1
+//
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger}
+S	on	[stove]
+O	measuring cup	1
+S	contains	{chicken stock}
+O	chicken stock	1
+S	in	[measuring cup]
+M	pour	1:24	1:27
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock}
+S	on	[stove]
+O	chicken stock	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock}
+S	on	[stove]
+O	measuring cup	1
+S	contains	{beef stock}
+O	beef stock	1
+S	in	[measuring cup]
+M	pour	1:27	1:30
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock}
+S	on	[stove]
+O	beef stock	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock}
+S	on	[stove]
+O	cup	1
+S	contains	{soy sauce}
+O	soy sauce	1
+S	in	[cup]
+M	pour	1:32	1:34
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce}
+S	on	[stove]
+O	soy sauce	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce}
+S	on	[stove]
+O	cup	1
+S	contains	{fish sauce}
+O	fish sauce	1
+S	in	[cup]
+M	pour	1:35	1:37
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce}
+S	on	[stove]
+O	fish sauce	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce}
+S	on	[stove]
+O	measuring cup	1
+S	contains	{water}
+O	water	1
+S	in	[measuring cup]
+M	pour	1:47	1:49
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce,water}
+S	on	[stove]
+O	water	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce,water}
+S	on	[stove]
+O	spoon	1
+M	stir	1:52	1:54
+O	pot	0
+S	contains	{soup broth}
+S	on	[stove]
+O	soup broth	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce,water}
+S	in	[pot]
+//
+O	pot	0
+S	contains	{soup broth}
+S	on	[stove]
+O	soup broth	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce,water}
+S	in	[pot]
+O	egg	1
+S	uncracked
+M	crack	2:00	2:07
+O	pot	0
+S	contains	{soup broth,egg white and yolk}
+S	on	[stove]
+//
+O	stove	0
+S	on
+S	with	[pot]
+O	pot	0
+S	contains	{soup broth,egg white and yolk}
+S	on	[stove]
+M	cook	Assumed	Assumed
+O	pot	0
+S	contains	{soup broth,egg white and yolk}
+S	on	[stove]
+O	egg white and yolk	1
+S	boiled
+S	in	[pot]
+//
+O	pot	0
+S	contains	{soup broth,egg white and yolk}
+S	on	[stove]
+O	egg white and yolk	1
+S	boiled
+S	in	[pot]
+O	spoon	1
+O	bowl	1
+S	empty
+M	scoop and pour	2:10	2:20
+O	pot	0
+S	contains	{soup broth}
+S	on	[stove]
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	boiled
+S	in	[bowl]
+//
+O	pot	0
+S	contains	{soup broth}
+S	on	[stove]
+O	noodle	1
+S	uncooked
+M	pick-and-place	2:50	2:52:75
+O	pot	0
+S	contains	{soup broth,noodle}
+S	on	[stove]
+O	noodle	1
+S	uncooked
+S	in	[pot]
+//
+O	stove	0
+S	on
+S	with	[pot]
+O	pot	0
+S	contains	{soup broth,noodle}
+S	on	[stove]
+O	noodle	0
+S	uncooked
+S	in	[pot]
+M	cook	Assumed	Assumed
+O	pot	0
+S	contains	{soup broth,noodle}
+S	on	[stove]
+S	cooked
+O	noodle	0
+S	cooked
+S	in	[pot]
+//
+O	pot	0
+S	contains	{soup broth,noodle}
+S	on	[stove]
+S	cooked
+O	noodle	1
+S	cooked
+S	in	[pot]
+O	bowl	0
+S	empty
+O	tongs	1
+M	pour	2:56	3:01
+O	bowl	0
+S	contains	{noodle}
+O	noodle	1
+S	cooked
+S	in	[bowl]
+//
+O	pot	0
+S	contains	{soup broth,noodle}
+S	on	[stove]
+S	cooked
+O	bowl	0
+S	contains	{noodle}
+O	ladle	1
+M	scoop and pour	3:07	3:10
+O	bowl	0
+S	contains	{ramen}
+O	ramen	1
+S	contains	{soup broth,noodle}
+S	in	[bowl]
+O	soup broth	1
+S	in	[bowl]
+O	soup broth	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce,water}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{ramen}
+O	ramen	1
+S	contains	{soup broth,noodle}
+S	in	[bowl]
+O	soup broth	0
+S	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce,water}
+S	in	[bowl]
+O	tongs	1
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg white and yolk	0
+S	boiled
+S	in	[bowl]
+M	scrape	3:11	3:16
+O	ramen	1	14
+S	contains	{soup broth,garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce,water,noodle,egg white and yolk}
+S	in	[bowl]
+//

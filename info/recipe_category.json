@@ -1,0 +1,2036 @@
+{
+    "bread,dough,cornbread,flatbread,breadsticks,breads,flatbreads,bread_rolls,sourdough_rolls,sandwich_roll,pita": [
+        {
+            "object_label": "bread toast",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "bread",
+                "butter",
+                "sugar",
+                "milk"
+            ],
+            "relater": "cooking pan"
+        },
+        {
+            "object_label": "biscuit",
+            "object_states": [
+                "baked",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "pancake mix",
+                "sour cream",
+                "butter",
+                "rosemary"
+            ],
+            "relater": "muff"
+        },
+        {
+            "object_label": "garlic bread",
+            "object_states": [
+                "contains",
+                "on",
+                "sliced"
+            ],
+            "ingredients": [
+                "black pepper",
+                "butter",
+                "garlic",
+                "parsley",
+                "salt"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "garlic bread",
+            "object_states": [
+                "baked",
+                "contains",
+                "on",
+                "ready"
+            ],
+            "ingredients": [
+                "bread",
+                "black pepper",
+                "butter",
+                "garlic",
+                "parsley",
+                "salt"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "garlic bread",
+            "object_states": [
+                "baked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "bread",
+                "butter",
+                "garlic",
+                "parsley"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "garlic bread",
+            "object_states": [
+                "baked",
+                "contains",
+                "on",
+                "ready"
+            ],
+            "ingredients": [
+                "bread",
+                "butter",
+                "garlic salt"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "french toast",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "bread",
+                "egg mixture",
+                "egg",
+                "butter",
+                "milk",
+                "maple syrup",
+                "strawberry"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "soup,stew,chowder,stews,soups,chowders,broth,bisque,stew/soup,beans": [
+        {
+            "object_label": "mushroom soup",
+            "object_states": [
+                "thick liquid",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "butter",
+                "onion",
+                "mushroom",
+                "chicken broth",
+                "flour",
+                "half-and-half",
+                "salt",
+                "black pepper"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "black bean",
+            "object_states": [
+                "cooked",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "onion",
+                "garlic",
+                "cilantro",
+                "cayenne pepper",
+                "salt"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "tomato soup",
+            "object_states": [
+                "thick liquid",
+                "ready",
+                "in",
+                "contains"
+            ],
+            "ingredients": [
+                "broth",
+                "cinnamon",
+                "coriander",
+                "garlic",
+                "onion powder",
+                "oregano",
+                "sugar",
+                "salt",
+                "tomato",
+                "tomato paste",
+                "white pepper"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "black bean",
+            "object_states": [
+                "cooked",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "olive oil",
+                "jalapeno",
+                "onion",
+                "garlic",
+                "salt",
+                "black pepper"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "miso soup",
+            "object_states": [
+                "thick liquid",
+                "contains",
+                "in",
+                "ready"
+            ],
+            "ingredients": [
+                "water",
+                "dashi",
+                "miso",
+                "tofu",
+                "green onion"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "potato soup",
+            "object_states": [
+                "thick liquid",
+                "cooked",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "gouda",
+                "basil",
+                "black pepper",
+                "butter",
+                "carrot",
+                "celery",
+                "cheese",
+                "chicken broth",
+                "flour",
+                "garlic",
+                "heavy cream",
+                "onion",
+                "potato"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "creamed corn",
+            "object_states": [
+                "contains",
+                "in",
+                "ready"
+            ],
+            "ingredients": [
+                "corn mixture",
+                "corn kernels",
+                "water",
+                "corn",
+                "milk",
+                "butter",
+                "sugar",
+                "salt",
+                "black pepper",
+                "parmesan"
+            ],
+            "relater": "bowl"
+        }
+    ],
+    "roast,roasted,roasts,pan-roast": [
+        {
+            "object_label": "green bean",
+            "object_states": [
+                "cooked",
+                "contains",
+                "on",
+                "ready"
+            ],
+            "ingredients": [
+                "garlic",
+                "onion",
+                "tarragon",
+                "salt",
+                "black pepper",
+                "water",
+                "olive oil",
+                "sweet pepper"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "pizza,pizzas,pizzazz,pizzadillas,mini-pizzas,pizzaz": [
+        {
+            "object_label": "eggs and bacon pizza",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "sour cream",
+                "sea salt",
+                "pepper",
+                "onion",
+                "bacon",
+                "egg white and yolk",
+                "parsley"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "cheese pizza",
+            "object_states": [
+                "baked",
+                "sliced",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "flour",
+                "olive oil",
+                "salt",
+                "water",
+                "sugar",
+                "yeast",
+                "marinara",
+                "mozzarella"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "sandwich,wrap,wraps,sandwiches,panini,mini-sandwiches,sandwiche,sammies/sandwiches,burritos,burrito,taco,tacos,quesadillas,quesadilla,hotdog,hot_dogs,hotdogs,hot_dog": [
+        {
+            "object_label": "sandwich",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "peanut butter",
+                "jelly"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "sandwich",
+            "object_states": [
+                "contains",
+                "halved",
+                "on",
+                "ready"
+            ],
+            "ingredients": [
+                "bread",
+                "butter",
+                "turkey",
+                "jelly",
+                "green leaf"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "club sandwich",
+            "object_states": [
+                "portioned",
+                "contains",
+                "on",
+                "ready"
+            ],
+            "ingredients": [
+                "bacon",
+                "bread",
+                "cheese",
+                "ham",
+                "lettuce",
+                "mayonnaise",
+                "tomato",
+                "turkey"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "spring roll",
+            "object_states": [
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "vegetable oil",
+                "garlic",
+                "onion",
+                "chili pepper",
+                "carrot",
+                "cabbage",
+                "scallion",
+                "soy sauce",
+                "oyster sauce",
+                "white pepper",
+                "sugar",
+                "salt",
+                "flour",
+                "spring roll sheet"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "wrap",
+            "object_states": [
+                "contains",
+                "halved",
+                "on"
+            ],
+            "ingredients": [
+                "tortilla",
+                "butter",
+                "crayfish",
+                "mayonnaise",
+                "lemon",
+                "dill",
+                "black pepper",
+                "arugula",
+                "lemon juice"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "sandwich",
+            "object_states": [
+                "halved",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "bread",
+                "kidney bean",
+                "chipotle",
+                "chipotle sauce",
+                "salt",
+                "escarole",
+                "avocado",
+                "radish",
+                "bean sprout"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "grilled cheese sandwich",
+            "object_states": [
+                "toasted",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "black pepper",
+                "bread",
+                "cheddar",
+                "gruyere",
+                "mustard",
+                "olive oil",
+                "paprika"
+            ],
+            "relater": "aluminium foil"
+        },
+        {
+            "object_label": "enchilada",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "tortilla",
+                "meat mix",
+                "ground beef",
+                "onion",
+                "enchilada sauce",
+                "cheese",
+                "black olive"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "quesadilla",
+            "object_states": [
+                "sliced",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "vegetable oil",
+                "cheese",
+                "chicken",
+                "salt",
+                "black pepper",
+                "chili powder",
+                "garlic powder",
+                "onion powder",
+                "oregano",
+                "paprika"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "chocolate sandwich",
+            "object_states": [
+                "toasted",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "egg white and yolk",
+                "milk",
+                "chocolate",
+                "powdered sugar",
+                "butter"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "cake,treats,cupcakes,pancakes,cheesecake,brownie,scone,torte,crepe,shortcake,fruitcake,fruitcakes,cake_baked,squares": [
+        {
+            "object_label": "chocolate cake",
+            "object_states": [
+                "contains",
+                "sliced",
+                "on"
+            ],
+            "ingredients": [
+                "cake mix",
+                "egg white and yolk",
+                "milk",
+                "vegetable oil",
+                "vanilla extract",
+                "frosting"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "pancake batter",
+            "object_states": [
+                "raw",
+                "thick liquid",
+                "in",
+                "contains"
+            ],
+            "ingredients": [
+                "egg",
+                "flour",
+                "milk"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "brownie",
+            "object_states": [
+                "contains",
+                "baked",
+                "divided",
+                "in"
+            ],
+            "ingredients": [
+                "flour mixture",
+                "coffee",
+                "egg mixture",
+                "brownie batter",
+                "sugar",
+                "butter",
+                "egg white and yolk",
+                "vanilla extract",
+                "instant coffee",
+                "chocolate",
+                "flour",
+                "salt",
+                "cocoa powder"
+            ],
+            "relater": "baking tray"
+        },
+        {
+            "object_label": "apple cake",
+            "object_states": [
+                "baked",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "butter",
+                "sugar",
+                "egg white and yolk",
+                "milk",
+                "flour",
+                "baking powder",
+                "cinammon",
+                "vanilla extract",
+                "salt",
+                "apple",
+                "lemon zest",
+                "lemon juice"
+            ],
+            "relater": "baking tray"
+        },
+        {
+            "object_label": "blueberry muffin",
+            "object_states": [
+                "baked",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "sugar",
+                "butter",
+                "egg white and yolk",
+                "sour cream",
+                "milk",
+                "lemon extract",
+                "flour",
+                "baking powder",
+                "baking soda",
+                "salt",
+                "blueberry"
+            ],
+            "relater": "muffin pan"
+        },
+        {
+            "object_label": "chocolate chip muffin",
+            "object_states": [
+                "baked",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "butter",
+                "milk",
+                "egg white and yolk",
+                "sour cream",
+                "vanilla extract",
+                "brown sugar",
+                "sugar",
+                "flour",
+                "baking powder",
+                "cinnamon",
+                "salt",
+                "chocolate chip"
+            ],
+            "relater": "muffin pan"
+        },
+        {
+            "object_label": "matzo brei",
+            "object_states": [
+                "contains",
+                "cooked",
+                "on"
+            ],
+            "ingredients": [
+                "vegetable oil",
+                "matzo",
+                "water",
+                "matzo mixture",
+                "egg white and yolk",
+                "salt"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "cranberry-walnut pancake",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "pancake batter",
+                "flour mixture",
+                "pancake",
+                "cornmeal",
+                "flour",
+                "baking soda",
+                "baking powder",
+                "salt",
+                "yogurt",
+                "cranberry",
+                "maple syrup",
+                "walnut",
+                "dark chocolate",
+                "whipped cream",
+                "powdered sugar"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "pancake",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "flour",
+                "sugar",
+                "baking powder",
+                "salt",
+                "milk",
+                "egg",
+                "vegetable oil",
+                "butter",
+                "maple syrup"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "pie,pastry,pastries,pies,cobbler,cobblers,doughnut,doughnuts,gingerbread,cinnamon_roll,donuts,turnover": [
+        {
+            "object_label": "savory pastry",
+            "object_states": [
+                "fried",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "vegetable oil",
+                "garlic",
+                "green chilli",
+                "carrot",
+                "potato",
+                "water",
+                "salt",
+                "turmeric powder",
+                "cayenne pepper",
+                "spring onion",
+                "flour",
+                "milk"
+            ],
+            "relater": "napkin"
+        },
+        {
+            "object_label": "apple pie",
+            "object_states": [
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "butter",
+                "apple",
+                "salt",
+                "sugar",
+                "brown sugar",
+                "cinnamon",
+                "water",
+                "dough",
+                "egg wash"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "sauce,condiment,applesauce,sauces,sauce/marinade,dip/sauce,sauce/dressing,marinades,vinaigrette,gravy,glaze,salsa": [
+        {
+            "object_label": "greek salad dressing",
+            "object_states": [
+                "creamy",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "garlic",
+                "italian seasoning",
+                "lemon juice",
+                "olive oil",
+                "pepper",
+                "salt"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "curry paste",
+            "object_states": [
+                "in",
+                "mixed",
+                "contains"
+            ],
+            "ingredients": [
+                "black pepper",
+                "coriander",
+                "cumin",
+                "fish sauce",
+                "galangal",
+                "garlic",
+                "lemon grass",
+                "onion",
+                "paprika",
+                "shrimp",
+                "spice"
+            ],
+            "relater": "mortar"
+        },
+        {
+            "object_label": "roux",
+            "object_states": [
+                "thick liquid",
+                "contains",
+                "in",
+                "ready"
+            ],
+            "ingredients": [
+                "butter",
+                "flour"
+            ],
+            "relater": "spoon"
+        }
+    ],
+    "pudding,dessert,mousse,tart,tarts,quiche,bars,bar,trifle,trifles,tiramisu,sorbet,compote,flan": [
+        {
+            "object_label": "banana pudding",
+            "object_states": [
+                "in",
+                "contains"
+            ],
+            "ingredients": [
+                "banana",
+                "condensed milk",
+                "cream cheese",
+                "milk",
+                "pudding mix",
+                "vanilla extract",
+                "vanilla wafer",
+                "whipped cream",
+                "whipped cream"
+            ],
+            "relater": "baking dish"
+        },
+        {
+            "object_label": "breakfast muffin",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "egg",
+                "bacon",
+                "potato",
+                "cheddar",
+                "vegetable oil"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "buckeye candy",
+            "object_states": [
+                "on",
+                "contains",
+                "rolled"
+            ],
+            "ingredients": [
+                "butter",
+                "chocolate chip",
+                "peanut butter",
+                "powdered sugar",
+                "vanilla extract"
+            ],
+            "relater": "baking tray"
+        },
+        {
+            "object_label": "fudge",
+            "object_states": [
+                "contains",
+                "divided",
+                "in"
+            ],
+            "ingredients": [
+                "butter",
+                "chocolate mixture",
+                "white chocolate chip",
+                "condensed milk",
+                "oreo cookie",
+                "vanilla extract"
+            ],
+            "relater": "baking tray"
+        },
+        {
+            "object_label": "whipped cream",
+            "object_states": [
+                "in",
+                "contains",
+                "creamy",
+                "whipped",
+                "ready"
+            ],
+            "ingredients": [
+                "heavy cream",
+                "sugar"
+            ],
+            "relater": "bowl"
+        }
+    ],
+    "drinks,drink:coffee,tea,smoothie,shake,shakes,smoothies,cocktail,cocktails,martini,martinis,lemonade,sangria,margarita,latte,eggnog,punch,milk": [
+        {
+            "object_label": "dalgona coffee",
+            "object_states": [
+                "mixed",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "hot water",
+                "ice",
+                "instant coffee",
+                "milk",
+                "sugar"
+            ],
+            "relater": "drinking glass"
+        },
+        {
+            "object_label": "watermelon lemonade",
+            "object_states": [
+                "mixed",
+                "liquid",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "ice",
+                "lemon juice",
+                "water",
+                "watermelon juice",
+                "sugar"
+            ],
+            "relater": "drinking glass"
+        },
+        {
+            "object_label": "lemonade",
+            "object_states": [
+                "mixed",
+                "liquid",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "lemon juice",
+                "lemon zest",
+                "sugar",
+                "water"
+            ],
+            "relater": "drinking glass"
+        },
+        {
+            "object_label": "smoothie",
+            "object_states": [
+                "blended",
+                "thick liquid",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "flaxseed",
+                "milk",
+                "strawberry",
+                "sweetener",
+                "whey powder",
+                "yogurt"
+            ],
+            "relater": "cup"
+        },
+        {
+            "object_label": "smoothie",
+            "object_states": [
+                "blended",
+                "thick liquid",
+                "contains",
+                "in",
+                "ready"
+            ],
+            "ingredients": [
+                "strawberry",
+                "sugar syrup",
+                "tea",
+                "watermelon"
+            ],
+            "relater": "drinking glass"
+        },
+        {
+            "object_label": "cocktail",
+            "object_states": [
+                "mixed",
+                "liquid",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "vodka",
+                "ice",
+                "tomato juice",
+                "worcestershire sauce",
+                "tabasco sauce",
+                "celery salt",
+                "black pepper",
+                "lemon juice",
+                "celery"
+            ],
+            "relater": "highball glass"
+        },
+        {
+            "object_label": "mojito",
+            "object_states": [
+                "liquid",
+                "mixed",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "club soda",
+                "ice",
+                "lime",
+                "mint",
+                "sugar"
+            ],
+            "relater": "highball glass"
+        },
+        {
+            "object_label": "orange juice",
+            "object_states": [
+                "in",
+                "contains"
+            ],
+            "ingredients": [
+                "orange"
+            ],
+            "relater": "drinking glass"
+        }
+    ],
+    "cookie,biscuits,biscuit,shortbreads,shortbread,biscotti,biscottis,macaroons,macaroon,biscuits/cookies,brittle,florentine": [
+        {
+            "object_label": "chocolate chip cookie",
+            "object_states": [
+                "baked",
+                "in",
+                "contains"
+            ],
+            "ingredients": [
+                "egg mixture",
+                "flour",
+                "egg yolk",
+                "butter",
+                "chocolate chip"
+            ],
+            "relater": "jar"
+        },
+        {
+            "object_label": "peanut brittle",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "sugar mixture",
+                "butter",
+                "vanilla extract",
+                "peanut",
+                "baking soda"
+            ],
+            "relater": "sheet"
+        }
+    ],
+    "meatball,meatballs,balls,ball,kofta,koftas,meatball/kofta,croquette,croquettes": [
+        {
+            "object_label": "kofta mix",
+            "object_states": [
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "lentil",
+                "bulgur"
+            ],
+            "relater": "pot"
+        },
+        {
+            "object_label": "beef patty",
+            "object_states": [
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "worcestershire sauce",
+                "soy sauce",
+                "rice beer",
+                "white wine",
+                "hot sauce",
+                "sugar"
+            ],
+            "relater": "bread"
+        },
+        {
+            "object_label": "kofta",
+            "object_states": [
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "lentil",
+                "bulgur",
+                "onion",
+                "salt",
+                "paprika",
+                "scallion",
+                "paprika",
+                "pickle"
+            ],
+            "relater": "glass tray"
+        },
+        {
+            "object_label": "croquette",
+            "object_states": [
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "oil",
+                "onion",
+                "ground beef",
+                "salt",
+                "black pepper",
+                "potato",
+                "egg yolk",
+                "breadcrumb"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "muffin,muffins": [],
+    "pasta,penne,pennes,fettuccine,lasagna,macaroni,mac_cheese,beef-a-roni,beefaroni,rigatoni,tortellini,lasagne": [
+        {
+            "object_label": "pesto linguine",
+            "object_states": [
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "pesto",
+                "linguine",
+                "parmesan",
+                "black pepper"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "pasta alfredo",
+            "object_states": [
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "alfredo sauce",
+                "broccoli",
+                "penne",
+                "parmesan",
+                "cream",
+                "nutmeg"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "macaroni and cheese",
+            "object_states": [
+                "in",
+                "mixed",
+                "ready",
+                "contains"
+            ],
+            "ingredients": [
+                "bacon",
+                "black pepper",
+                "chive",
+                "gruyere",
+                "heavy cream",
+                "macaroni",
+                "rosemary",
+                "salt"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "beef stroganoff",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "beef",
+                "onion",
+                "cognac",
+                "beef stock",
+                "mushroom",
+                "garlic",
+                "thyme",
+                "sour cream",
+                "mustard",
+                "thyme",
+                "pasta"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "macaroni and cheese",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "vegetable oil",
+                "pasta mix",
+                "cheese sauce",
+                "water",
+                "egg white and yolk",
+                "milk",
+                "salt",
+                "black pepper",
+                "cheese",
+                "macaroni"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "noodle,spaghetti,linguine,alfredo,alfredos,carbonara": [
+        {
+            "object_label": "egg noodle",
+            "object_states": [
+                "uncooked",
+                "on",
+                "contains"
+            ],
+            "ingredients": [
+                "egg",
+                "salt",
+                "milk",
+                "flour"
+            ],
+            "relater": "cutting board"
+        },
+        {
+            "object_label": "noodle",
+            "object_states": [
+                "cooked",
+                "on",
+                "contains"
+            ],
+            "ingredients": [
+                "salt",
+                "olive oil"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "ramen",
+            "object_states": [
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "soup broth",
+                "garlic",
+                "scallion",
+                "chili sauce",
+                "ginger",
+                "chicken stock",
+                "beef stock",
+                "soy sauce",
+                "fish sauce",
+                "water",
+                "noodle",
+                "egg white and yolk"
+            ],
+            "relater": "bowl"
+        }
+    ],
+    "salad,salads,coleslaw,cole_slaw,salad_mix,ceviche": [
+        {
+            "object_label": "greek salad",
+            "object_states": [
+                "mixed",
+                "in",
+                "contains"
+            ],
+            "ingredients": [
+                "tomato",
+                "onion",
+                "cucumber",
+                "sweet pepper",
+                "green pepper",
+                "oregano",
+                "black olive",
+                "salt",
+                "lemon",
+                "olive oil",
+                "feta cheese"
+            ],
+            "relater": "mixing bowl"
+        },
+        {
+            "object_label": "edamame-mozzarella salad",
+            "object_states": [
+                "mixed",
+                "contains",
+                "in",
+                "ready"
+            ],
+            "ingredients": [
+                "mozzarella",
+                "salt",
+                "sesame oil",
+                "sesame seed",
+                "soy sauce",
+                "soybean"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "salad",
+            "object_states": [
+                "mixed",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "carrot",
+                "cherry tomato",
+                "green olive",
+                "green olive oil",
+                "lettuce",
+                "mushroom",
+                "onion",
+                "oregano",
+                "salt"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "coleslaw",
+            "object_states": [
+                "mixed",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "cabbage",
+                "carrot",
+                "mayonnaise",
+                "onion",
+                "sugar",
+                "vegetable oil",
+                "vinegar"
+            ],
+            "relater": "salad bowl"
+        },
+        {
+            "object_label": "shrimp mango salad",
+            "object_states": [
+                "mixed",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "black pepper",
+                "cilantro",
+                "lemon juice",
+                "mango",
+                "olive oil",
+                "salad greens",
+                "salt",
+                "scallion",
+                "shrimp"
+            ],
+            "relater": "salad bowl"
+        },
+        {
+            "object_label": "salad",
+            "object_states": [
+                "mixed",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "apple",
+                "black pepper",
+                "cucumber",
+                "salad dressing",
+                "mozzarella",
+                "olive oil",
+                "salt"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "potato salad",
+            "object_states": [
+                "contains",
+                "in",
+                "mixed"
+            ],
+            "ingredients": [
+                "black pepper",
+                "celery",
+                "dill",
+                "egg",
+                "green onion",
+                "mayonnaise",
+                "mustard",
+                "potato",
+                "relish",
+                "salt",
+                "shrimp"
+            ],
+            "relater": "mixing bowl"
+        },
+        {
+            "object_label": "carrot salad",
+            "object_states": [
+                "contains",
+                "in",
+                "mixed",
+                "ready"
+            ],
+            "ingredients": [
+                "carrot",
+                "lemon juice",
+                "mayonnaise",
+                "pineapple",
+                "raisin",
+                "sugar",
+                "salt",
+                "sour cream"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "caesar salad",
+            "object_states": [
+                "mixed",
+                "ready",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "anchovy",
+                "crouton",
+                "egg yolk",
+                "garlic",
+                "lemon juice",
+                "lettuce",
+                "mustard",
+                "olive oil",
+                "worcestershire sauce",
+                "parmesan",
+                "black pepper"
+            ],
+            "relater": "bowl"
+        },
+        {
+            "object_label": "blood orange salad",
+            "object_states": [
+                "contains",
+                "in",
+                "mixed"
+            ],
+            "ingredients": [
+                "avocado",
+                "basil",
+                "black pepper",
+                "blood orange",
+                "lemon juice",
+                "lime juice",
+                "olive oil",
+                "salad greens",
+                "salt"
+            ],
+            "relater": "salad bowl"
+        }
+    ],
+    "burger,hamburgers,hamburger,steakburger,beefburger,cheeseburgers,cheeseburger": [
+        {
+            "object_label": "hamburger",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "patty",
+                "lettuce",
+                "tomato"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "cheeseburger",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "ground beef",
+                "onion",
+                "garlic",
+                "salt",
+                "cheese"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "seafood,salmon,bass,shrimp,fish,tuna,scallop,clam,trout,tilapia,cod,flounder_baked,flounder_bake,flounder": [
+        {
+            "object_label": "grilled shrimp",
+            "object_states": [
+                "on",
+                "contains",
+                "cooked"
+            ],
+            "ingredients": [
+                "black pepper",
+                "olive oil",
+                "salt",
+                "shrimp"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "tuna patty",
+            "object_states": [
+                "contains",
+                "cooked",
+                "on",
+                "pressed"
+            ],
+            "ingredients": [
+                "chili pepper",
+                "chive",
+                "egg white and yolk",
+                "garlic",
+                "oats",
+                "onion",
+                "parsley",
+                "salt",
+                "tuna"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "onigiri",
+            "object_states": [
+                "pressed",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "salmon",
+                "rice",
+                "seaweed"
+            ],
+            "relater": "cutting board"
+        },
+        {
+            "object_label": "salmon",
+            "object_states": [
+                "cooked",
+                "on",
+                "contains"
+            ],
+            "ingredients": [
+                "black pepper",
+                "ginger",
+                "salt",
+                "sesame oil",
+                "vegetable oil"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "tuna sandwich",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "bread",
+                "butter",
+                "tuna",
+                "onion",
+                "mayonnaise",
+                "lettuce"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "steak,steaks,chops,ribs,lamb,medallions,tenderloin,briskets,beef_loin,lamb_loin,porkchop,beefsteak,beefsteaks": [
+        {
+            "object_label": "porkchop",
+            "object_states": [
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "salt",
+                "black pepper",
+                "butter",
+                "vegetable oil"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "ribs",
+            "object_states": [
+                "contains",
+                "ready",
+                "on"
+            ],
+            "ingredients": [
+                "barbecue sauce",
+                "black pepper",
+                "salt"
+            ],
+            "relater": "baking tray"
+        },
+        {
+            "object_label": "beefsteak",
+            "object_states": [
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "garlic",
+                "salt",
+                "black pepper"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "rib",
+            "object_states": [
+                "barbecued",
+                "contains",
+                "on",
+                "ready"
+            ],
+            "ingredients": [
+                "salt",
+                "garlic",
+                "lemon",
+                "barbecue sauce"
+            ],
+            "relater": "baking tray"
+        }
+    ],
+    "rice,pilaf": [
+        {
+            "object_label": "garlic rice",
+            "object_states": [
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "cilantro",
+                "scallion",
+                "garlic",
+                "white rice"
+            ],
+            "relater": "pot"
+        },
+        {
+            "object_label": "cilantro-lime rice",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "olive oil",
+                "rice",
+                "garlic",
+                "water",
+                "salt",
+                "lime zest",
+                "cilantro"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "fried rice",
+            "object_states": [
+                "mixed",
+                "in",
+                "contains"
+            ],
+            "ingredients": [
+                "carrot",
+                "corn",
+                "egg",
+                "green onion",
+                "green pea",
+                "sausage",
+                "soy sauce",
+                "sugar",
+                "water",
+                "white rice"
+            ],
+            "relater": "bowl"
+        }
+    ],
+    "chicken,turkey,turkeys,chicken_breast,turkey_breast,cutlet,chicken_thigh,duck,duck_breasts,chicken_wing": [
+        {
+            "object_label": "massaman curry",
+            "object_states": [
+                "incomplete",
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "curry paste",
+                "coconut milk",
+                "steak"
+            ],
+            "relater": "pot"
+        },
+        {
+            "object_label": "garlic-parmesan chicken",
+            "object_states": [
+                "baked",
+                "contains",
+                "on",
+                "ready"
+            ],
+            "ingredients": [
+                "chicken",
+                "vegetable oil",
+                "olive oil",
+                "garlic",
+                "basil",
+                "black pepper",
+                "breadcrumb",
+                "parmesan"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "casserole,casseroles,strata,stratas,kugel,kugels": [],
+    "vegetables": [
+        {
+            "object_label": "onion ring",
+            "object_states": [
+                "contains",
+                "in"
+            ],
+            "ingredients": [
+                "onion",
+                "egg",
+                "milk",
+                "flour",
+                "breadcrumb"
+            ],
+            "relater": "cooking pan"
+        },
+        {
+            "object_label": "broccoli",
+            "object_states": [
+                "sauted",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "lemon juice",
+                "olive oil",
+                "salt"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "brussel sprout",
+            "object_states": [
+                "cooked",
+                "on",
+                "contains"
+            ],
+            "ingredients": [
+                "black pepper",
+                "salt",
+                "olive oil"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "omelette,omelettes,omelet,egg,eggs,frittata,frittatas": [
+        {
+            "object_label": "omelette",
+            "object_states": [
+                "folded",
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "egg",
+                "black pepper",
+                "salt"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "omelette",
+            "object_states": [
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "egg",
+                "black pepper",
+                "onion",
+                "salt",
+                "sweet pepper",
+                "tomato",
+                "cheese"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "scrambled eggs",
+            "object_states": [
+                "mixed",
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "egg",
+                "butter",
+                "buttermilk",
+                "ricotta",
+                "salt",
+                "black pepper",
+                "avocado",
+                "tomato"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "scrambled eggs",
+            "object_states": [
+                "mixed",
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "egg",
+                "milk",
+                "cheese",
+                "butter",
+                "onion",
+                "bacon"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "scrambled eggs",
+            "object_states": [
+                "mixed",
+                "cooked",
+                "contains",
+                "on",
+                "ready"
+            ],
+            "ingredients": [
+                "butter",
+                "egg",
+                "black pepper",
+                "salt"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "frittata",
+            "object_states": [
+                "cooked",
+                "sliced",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "egg",
+                "half-and-half",
+                "salt",
+                "black pepper",
+                "olive oil",
+                "butter",
+                "onion",
+                "zucchini",
+                "sweet pepper",
+                "tomato",
+                "goat cheese",
+                "basil"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "frittata",
+            "object_states": [
+                "cooked",
+                "sliced",
+                "contains",
+                "on",
+                "ready"
+            ],
+            "ingredients": [
+                "olive oil",
+                "egg",
+                "onion",
+                "mushroom",
+                "green pepper",
+                "sweet pepper",
+                "black pepper",
+                "salt"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "potatoes,potato": [
+        {
+            "object_label": "sweet potato fries",
+            "object_states": [
+                "cooked",
+                "seasoned",
+                "on"
+            ],
+            "ingredients": [
+                "flour",
+                "vegetable oil",
+                "garlic powder",
+                "salt",
+                "black pepper",
+                "paprika"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "hashbrown",
+            "object_states": [
+                "fried",
+                "on",
+                "contains"
+            ],
+            "ingredients": [
+                "black pepper",
+                "corn starch",
+                "egg white and yolk",
+                "flour",
+                "onion",
+                "parsley",
+                "potato",
+                "salt"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "beef,kebab,kebabs,kabobs,kabob,veal": [],
+    "pork,pork_loin": [
+        {
+            "object_label": "gyoza",
+            "object_states": [
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "dumpling wrapper",
+                "cabbage",
+                "ground pork",
+                "scallion",
+                "soy sauce",
+                "sesame oil",
+                "vegetable oil",
+                "garlic",
+                "corn starch",
+                "gyoza filling"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "stir-fry,saute,stir_fry": [
+        {
+            "object_label": "stir-fried rice",
+            "object_states": [
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "zucchini",
+                "salt",
+                "celery",
+                "carrot",
+                "olive oil",
+                "onion",
+                "tofu",
+                "rice",
+                "curry powder"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "potato",
+            "object_states": [
+                "cooked",
+                "coated",
+                "on"
+            ],
+            "ingredients": [
+                "olive oil",
+                "black pepper"
+            ],
+            "relater": "plate"
+        }
+    ],
+    "meatloaf,loaf,loaves,meatloafs": [],
+    "sausage,sausages,wieners,wiener,weiners,weiner,frankfurters,bratwursts": [
+        {
+            "object_label": "pigs in a blanket",
+            "object_states": [
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "dough",
+                "cheese",
+                "sausage"
+            ],
+            "relater": "plate"
+        },
+        {
+            "object_label": "italian sausage",
+            "object_states": [
+                "cooked",
+                "contains",
+                "on"
+            ],
+            "ingredients": [
+                "sweet pepper",
+                "basil",
+                "oregano",
+                "white wine",
+                "sausage"
+            ],
+            "relater": "plate"
+        }
+    ]
+}

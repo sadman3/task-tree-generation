@@ -1,0 +1,182 @@
+O143	cutting board	0
+S39	empty
+O453	tortilla	1
+S93	plain
+M51	pick-and-place	Assumed	Assumed
+O143	cutting board	0
+S22	contains	{tortilla}
+O453	tortilla	1
+S93	plain
+S79	on	[cutting board]
+//
+O453	tortilla	0
+S93	plain
+S79	on	[cutting board]
+O46	bowl	1
+S22	contains	{butter}
+O63	butter	1
+S126	stick
+S63	in	[bowl]
+O240	knife	1
+M83	spread	0:36	0:44
+O453	tortilla	0
+S12	buttered	{butter}
+S79	on	[cutting board]
+//
+O46	bowl	1
+S22	contains	{crayfish mixture}
+O129	crayfish mixture	1
+S22	contains	{crayfish,mayonnaise,lemon,dill}
+S63	in	[bowl]
+O182	fork	1
+O453	tortilla	0
+S12	buttered	{butter}
+S79	on	[cutting board]
+M72	scrape	0:58	1:04
+O453	tortilla	0
+S22	contains	{butter,crayfish mixture}
+S79	on	[cutting board]
+O129	crayfish mixture	1
+S22	contains	{crayfish,mayonnaise,lemon,dill}
+S79	on	[tortilla]
+//
+O46	bowl	1
+S22	contains	{black pepper}
+O34	black pepper	1
+S56	ground
+S63	in	[bowl]
+O453	tortilla	0
+S22	contains	{butter,crayfish mixture}
+S79	on	[cutting board]
+M84	sprinkle	1:07	1:11
+O453	tortilla	0
+S22	contains	{butter,crayfish mixture,black pepper}
+S79	on	[cutting board]
+O34	black pepper	1
+S56	ground
+S79	on	[tortilla]
+//
+O46	bowl	1
+S22	contains	{arugula}
+O6	arugula	1
+S137	washed
+S63	in	[bowl]
+O453	tortilla	0
+S22	contains	{butter,crayfish mixture,black pepper}
+S79	on	[cutting board]
+M51	pick-and-place	1:13	1:16
+O453	tortilla	0
+S22	contains	{butter,crayfish mixture,black pepper,arugula}
+S79	on	[cutting board]
+O6	arugula	1
+S79	on	[tortilla]
+//
+O143	cutting board	0
+S22	contains	{lemon}
+O244	lemon	0
+S141	whole
+S79	on	[cutting board]
+O240	knife	1
+M80	slice	1:20	1:21
+O244	lemon	0
+S116	sliced
+S79	on	[cutting board]
+//
+O244	lemon	0
+S116	sliced
+S79	on	[cutting board]
+O453	tortilla	0
+S22	contains	{butter,crayfish mixture,black pepper,arugula}
+S79	on	[cutting board]
+M85	squeeze	1:23	1:24
+O453	tortilla	0
+S22	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S79	on	[cutting board]
+O247	lemon juice	1
+S79	on	[tortilla]
+O244	lemon	0
+S123	squeezed
+//
+O453	tortilla	1
+S22	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S79	on	[cutting board]
+M67	roll	1:28	1:37
+O453	tortilla	1
+S102	rolled
+S22	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S79	on	[cutting board]
+//
+O453	tortilla	1
+S102	rolled
+S22	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S79	on	[cutting board]
+O46	bowl	1
+S22	contains	{butter}
+O63	butter	1
+S126	stick
+S63	in	[bowl]
+O240	knife	1
+M83	spread	1:38	1:41
+O453	tortilla	1
+S102	rolled
+S12	buttered	{butter}
+S22	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S79	on	[cutting board]
+//
+O453	tortilla	1
+S102	rolled
+S12	buttered	{butter}
+S22	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S79	on	[cutting board]
+M93	tuck ends	1:42	1:52
+O491	wrap	1
+S22	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S79	on	[cutting board]
+//
+O491	wrap	1
+S22	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S79	on	[cutting board]
+O240	knife	1
+M20	cut	1:57	1:58
+O491	wrap	1
+S22	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S58	halved
+S79	on	[cutting board]
+//
+O143	cutting board	0
+S22	contains	{lemon}
+O244	lemon	1
+S141	whole
+S79	on	[cutting board]
+O240	knife	1
+M80	slice	2:02	2:06
+O244	lemon	1
+S116	sliced
+S79	on	[cutting board]
+//
+O244	lemon	1
+S116	sliced
+S79	on	[cutting board]
+O344	plate	0
+S39	empty
+M51	pick-and-place	2:06	2:08
+O344	plate	0
+S22	contains	{lemon}
+O244	lemon	1
+S116	sliced
+S79	on	[plate]
+//
+O344	plate	0
+S22	contains	{lemon}
+O491	wrap	1
+S22	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
+S58	halved
+S79	on	[cutting board]
+M51	pick-and-place	2:07	2:10
+O344	plate	0
+S22	contains	{wrap}
+O491	wrap	1	4
+S22	contains	{tortilla,butter,crayfish,mayonnaise,lemon,dill,black pepper,arugula,lemon juice}
+S58	halved
+S79	on	[plate]
+//

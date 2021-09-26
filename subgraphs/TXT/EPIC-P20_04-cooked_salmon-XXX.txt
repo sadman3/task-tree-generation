@@ -1,0 +1,447 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/EPIC-P20_04-cooked_salmon.MP4
+//
+O	packet	1
+S	contains	{salmon}
+S	sealed
+O	scissors	1
+M	cut open	<0:35,0:36>
+O	packet	0
+S	opened
+S	contains	{salmon}
+//
+O	packet	0
+S	opened
+S	contains	{salmon}
+O	salmon	1
+S	raw
+S	in	[packet]
+S	frozen
+O	bowl	0
+S	empty
+M	pick-and-place	<0:51,1:12>
+O	bowl	0
+S	contains	{salmon}
+O	salmon	0
+S	raw
+S	in	[bowl]
+S	frozen
+//
+O	bowl	1
+S	contains	{salmon}
+O	microwave	0
+S	empty (ready)
+M	put inside	<1:16,1:20>
+O	bowl	1
+S	contains	{salmon}
+S	in	[microwave]
+O	microwave	0
+S	contains	{bowl}
+//
+O	bowl	1
+S	contains	{salmon}
+S	in	[microwave]
+O	microwave	0
+S	with	[bowl]
+O	salmon	0
+S	raw
+S	in	[bowl]
+S	frozen
+M	defrost	<1:44,2:40>
+O	salmon	0
+S	raw
+S	in	[bowl]
+S	defrosted
+//
+O	bowl	1
+S	contains	{salmon}
+S	in	[microwave]
+O	microwave	0
+S	with	[bowl]
+M	remove	<2:50,2:54>
+O	bowl	1
+S	contains	{salmon}
+O	microwave	0
+S	empty
+//
+O	cutting board	0
+S	empty
+O	bowl	0
+S	contains	{salmon}
+O	salmon	1
+S	raw
+S	in	[bowl]
+S	defrosted
+M	pick-and-place	<3:35,3:39>
+O	cutting board	0
+S	contains	{salmon}
+O	salmon	0
+S	raw
+S	on	[cutting board]
+S	defrosted
+O	bowl	1
+S	empty
+//
+O	salmon	1
+S	raw
+S	on	[cutting board]
+S	defrosted
+O	knife	1
+M	peel	<3:40,5:30>
+O	salmon	0
+S	raw
+S	on	[cutting board]
+S	skinned
+//
+O	faucet	1
+S	on
+O	water	0
+S	liquid
+S	from faucet
+O	salmon	1
+S	raw
+S	on	[cutting board]
+S	skinned
+M	wash	<5:55,6:04>
+O	salmon	0
+S	raw
+S	skinned
+//
+O	cutting board	0
+S	empty
+O	salmon	0
+S	raw
+S	skinned
+M	pick-and-place	<6:35,6:38>
+O	cutting board	0
+S	contains	{salmon}
+O	salmon	0
+S	raw
+S	on	[cutting board]
+S	skinned
+//
+O	salmon	1
+S	raw
+S	on	[cutting board]
+S	skinned
+O	knife	1
+M	dice	<6:40,8:14>
+O	salmon	0
+S	raw
+S	on	[cutting board]
+S	diced
+//
+O	cutting board	0
+S	contains	{salmon}
+O	salmon	1
+S	raw
+S	on	[cutting board]
+S	diced
+O	bowl	0
+S	empty
+M	pick-and-place	<8:18,8:30>
+O	bowl	0
+S	contains	{salmon}
+O	cutting board	0
+S	empty
+O	salmon	0
+S	raw
+S	in	[bowl]
+S	diced
+//
+O	bowl	0
+S	contains	{salmon}
+O	bottle	1
+S	opened
+S	contains	{sesame oil}
+O	sesame oil	1
+S	liquid
+S	in	[bottle]
+M	pour	<8:54,8:58>
+O	bowl	0
+S	contains	{salmon,sesame oil}
+O	sesame oil	0
+S	liquid
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{salmon,sesame oil}
+O	grinder	1
+S	contains	{black pepper}
+O	black pepper	1
+S	in	[grinder]
+S	whole
+M	grind and pour	<9:08,9:15>
+O	bowl	0
+S	contains	{black pepper,salmon,sesame oil}
+O	black pepper	0
+S	in	[bowl]
+S	ground
+//
+O	bowl	0
+S	contains	{black pepper,salmon,sesame oil}
+O	black pepper	1
+S	in	[bowl]
+S	ground
+O	salmon	1
+S	raw
+S	in	[bowl]
+S	diced
+O	sesame oil	1
+S	liquid
+S	in	[bowl]
+M	mix	<9:18,9:44>
+O	bowl	0
+S	contains	{black pepper,salmon,sesame oil}
+O	salmon	1
+S	oiled
+S	in	[bowl]
+S	raw
+S	contains	{black pepper,sesame oil}
+//
+O	bowl	0
+S	empty
+O	bottle	1
+S	opened
+S	contains	{sesame oil}
+O	sesame oil	1
+S	liquid
+S	in	[bottle]
+M	pour	<10:19,10:22>
+O	bowl	0
+S	contains	{sesame oil}
+O	sesame oil	0
+S	liquid
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{sesame oil}
+O	jar	0
+S	contains	{salt}
+O	salt	1
+S	in	[jar]
+S	granulated
+O	spoon	1
+S	empty
+M	sprinkle	<10:37,10:43>
+O	bowl	0
+S	contains	{salt,sesame oil}
+O	salt	0
+S	in	[bowl]
+S	granulated
+//
+O	bowl	0
+S	contains	{salt,sesame oil}
+O	grinder	1
+S	contains	{black pepper}
+O	black pepper	1
+S	whole
+S	in	[grinder]
+M	grind and pour	<10:50,10:54>
+O	bowl	0
+S	contains	{black pepper,salt,sesame oil}
+O	black pepper	0
+S	in	[bowl]
+S	ground
+//
+O	ginger	1
+S	chunk
+O	knife	1
+M	peel	<15:22,16:13>
+O	ginger	0
+S	peeled
+S	chunk
+//
+O	bowl	0
+S	contains	{black pepper,salt,sesame oil}
+O	grater	1
+O	ginger	1
+S	peeled
+S	chunk
+M	grate	<16:30,17:45>
+O	bowl	0
+S	contains	{black pepper,ginger,salt,sesame oil}
+O	ginger	0
+S	in	[bowl]
+S	grated
+//
+O	bowl	0
+S	contains	{black pepper,ginger,salt,sesame oil}
+O	bottle	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	liquid
+S	in	[bottle]
+M	pour	<18:18,19:00>
+O	bowl	0
+S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
+O	vegetable oil	0
+S	liquid
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
+O	sesame oil	1
+S	liquid
+S	in	[bowl]
+O	ginger	1
+S	in	[bowl]
+S	grated
+O	black pepper	1
+S	in	[bowl]
+S	ground
+O	salt	1
+S	in	[bowl]
+S	granulated
+O	vegetable oil	1
+S	liquid
+S	in	[bowl]
+M	stir	<Assumed>
+O	oil mixture	0
+S	liquid
+S	mixed
+S	in	[bowl]
+S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
+//
+O	bowl	0
+S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
+O	oil mixture	0
+S	liquid
+S	mixed
+S	in	[bowl]
+S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
+O	bowl	1
+S	contains	{black pepper,salmon,sesame oil}
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{black pepper,ginger,salmon,salt,sesame oil,vegetable oil}
+//
+O	bowl	0
+S	contains	{black pepper,ginger,salmon,salt,sesame oil,vegetable oil}
+O	oil mixture	1
+S	liquid
+S	mixed
+S	in	[bowl]
+S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
+O	salmon	1
+S	oiled
+S	in	[bowl]
+S	raw
+S	contains	{black pepper,sesame oil}
+M	mix	<19:17,19:37>
+O	salmon	1
+S	oiled
+S	in	[bowl]
+S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
+S	raw
+//
+O	stove	0
+S	off (ready)
+M	turn on	<Assumed>
+O	stove	0
+S	on
+//
+O	cooking pan	1
+S	empty
+O	stove	0
+S	on
+M	pick-and-place	<20:40,20:44>
+O	cooking pan	1
+S	empty
+S	on	[stove]
+O	stove	0
+S	with	[cooking pan]
+S	on
+//
+O	cooking pan	1
+S	empty
+S	on	[stove]
+O	stove	0
+S	with	[cooking pan]
+S	on
+M	preheat	<Assumed>
+O	cooking pan	1
+S	hot
+S	empty
+S	on	[stove]
+//
+O	cooking pan	0
+S	hot
+S	empty
+S	on	[stove]
+O	bottle	1
+S	opened
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	liquid
+S	in	[bottle]
+M	pour	<Assumed>
+O	cooking pan	0
+S	hot
+S	contains	{vegetable oil}
+S	on	[stove]
+O	vegetable oil	0
+S	liquid
+S	in	[cooking pan]
+//
+O	bowl	1
+S	contains	{black pepper,oil mixture,salmon,sesame oil}
+O	salmon	1
+S	oiled
+S	in	[bowl]
+S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
+S	raw
+O	cooking pan	0
+S	hot
+S	contains	{vegetable oil}
+S	on	[stove]
+M	pour	<Assumed>
+O	cooking pan	0
+S	hot
+S	contains	{salmon,vegetable oil}
+S	on	[stove]
+O	salmon	1
+S	oiled
+S	in	[cooking pan]
+S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
+S	raw
+O	bowl	0
+S	empty
+//
+O	stove	0
+S	with	[cooking pan]
+S	on
+O	cooking pan	0
+S	hot
+S	contains	{salmon,vegetable oil}
+S	on	[stove]
+O	salmon	1
+S	oiled
+S	in	[cooking pan]
+S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
+S	raw
+O	turner	1
+M	cook and stir	<20:44,31:42>
+O	salmon	1
+S	cooked
+S	in	[cooking pan]
+S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
+//
+O	cooking pan	0
+S	hot
+S	contains	{salmon,vegetable oil}
+S	on	[stove]
+O	salmon	1
+S	cooked
+S	in	[cooking pan]
+S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
+O	turner	1
+O	plate	0
+S	empty
+M	scoop and pour	<Assumed>
+O	plate	0
+S	contains	{salmon}
+O	salmon	1	17
+S	cooked
+S	on	[plate]
+S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
+//

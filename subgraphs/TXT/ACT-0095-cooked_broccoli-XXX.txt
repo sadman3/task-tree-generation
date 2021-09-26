@@ -1,0 +1,332 @@
+# Source:	https://www.youtube.com/watch?v=j-s78O-OFNg
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/ACT-0095-cooked_broccoli.mp4
+//
+O	cutting board	0
+S	empty
+O	broccoli	1
+S	uncooked
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{broccoli}
+O	broccoli	1
+S	uncooked
+S	whole
+S	on	[cutting board]
+//
+O	broccoli	1
+S	uncooked
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	skim	<0:16-0:26>
+O	broccoli	0
+S	uncooked
+S	whole
+S	peeled
+S	on	[cutting board]
+O	broccoli	0
+S	on	[cutting board]
+S	skin
+//
+O	broccoli	0
+S	uncooked
+S	whole
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	cut off ends	<0:26-0:27>
+O	broccoli	0
+S	destemmed
+S	uncooked
+S	on	[cutting board]
+O	broccoli	0
+S	stem
+S	uncooked
+S	peeled
+S	on	[cutting board]
+//
+O	broccoli	0
+S	stem
+S	uncooked
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	cut	<0:30-0:32>
+O	broccoli	0
+S	chopped
+S	uncooked
+S	stem
+S	on	[cutting board]
+//
+O	broccoli	1
+S	destemmed
+S	floret
+S	uncooked
+S	on	[cutting board]
+M	break apart	<0:35-0:46>
+O	broccoli	1
+S	floret
+S	pieces
+S	uncooked
+S	on	[cutting board]
+//
+O	cooking pan	0
+S	hot
+S	empty
+S	on	[stove]
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[bottle]
+S	liquid
+M	pour	<Assumed>
+O	cooking pan	0
+S	hot
+S	contains	{olive oil}
+S	on	[stove]
+O	olive oil	1
+S	in	[cooking pan]
+S	liquid
+//
+O	cooking pan	0
+S	hot
+S	contains	{olive oil}
+S	on	[stove]
+O	cutting board	0
+S	contains	{broccoli}
+O	broccoli	0
+S	chopped
+S	uncooked
+S	stem
+S	on	[cutting board]
+O	broccoli	1
+S	floret
+S	pieces
+S	uncooked
+S	on	[cutting board]
+M	pick-and-place	<0:58-1:07>
+O	cooking pan	0
+S	hot
+S	contains	{broccoli,olive oil}
+O	broccoli	0
+S	pieces
+S	uncooked
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{broccoli,olive oil}
+S	on	[stove]
+O	kettle	1
+S	contains	{water}
+O	water	1
+S	liquid
+S	in	[kettle]
+M	pour	<1:13-1:26>
+O	cooking pan	0
+S	hot
+S	contains	{broccoli,olive oil,water}
+S	on	[stove]
+O	water	0
+S	liquid
+S	in	[cooking pan]
+//
+O	cooking pan	1
+S	hot
+S	contains	{broccoli,olive oil,water}
+S	on	[stove]
+O	baking tray	0
+S	empty
+M	cover	<1:30-1:32>
+O	baking tray	1
+S	empty
+S	on	[cooking pan]
+O	cooking pan	0
+S	hot
+S	contains	{broccoli,olive oil,water}
+S	covered	[baking tray]
+S	on	[stove]
+//
+O	cooking pan	0
+S	hot
+S	contains	{broccoli,olive oil,water}
+S	covered	[baking tray]
+S	on	[stove]
+O	broccoli	0
+S	pieces
+S	uncooked
+S	in	[cooking pan]
+O	stove	0
+S	with	[cooking pan]
+S	on
+M	cook	<Assumed>
+O	broccoli	0
+S	pieces
+S	steamed
+S	in	[cooking pan]
+//
+O	baking tray	1
+S	empty
+S	on	[cooking pan]
+O	cooking pan	0
+S	hot
+S	contains	{broccoli,olive oil,water}
+S	covered	[baking tray]
+S	on	[stove]
+M	uncover	<1:36-1:37>
+O	baking tray	1
+S	empty
+O	cooking pan	0
+S	hot
+S	contains	{broccoli}
+S	on	[stove]
+//
+O	cooking pan	0
+S	hot
+S	contains	{broccoli}
+S	on	[stove]
+O	broccoli	1
+S	pieces
+S	steamed
+S	in	[cooking pan]
+O	spatula	1
+M	stir	<1:37-1:45>
+O	cooking pan	0
+S	hot
+S	contains	{broccoli}
+S	on	[stove]
+O	broccoli	1
+S	mixed
+S	pieces
+S	steamed
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{broccoli}
+S	on	[stove]
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bottle]
+M	pour	<2:15-2:17>
+O	cooking pan	0
+S	hot
+S	contains	{broccoli,olive oil}
+S	on	[stove]
+O	olive oil	0
+S	liquid
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{broccoli,olive oil}
+S	on	[stove]
+O	bowl	0
+S	contains	{salt}
+O	salt	1
+S	in	[bowl]
+S	granulated
+M	sprinkle	<2:21-2:23>
+O	cooking pan	0
+S	hot
+S	contains	{broccoli,olive oil,salt}
+S	on	[stove]
+O	salt	1
+S	in	[cooking pan]
+S	granulated
+//
+O	cooking pan	0
+S	hot
+S	contains	{broccoli,olive oil,salt}
+S	on	[stove]
+O	salt	1
+S	in	[cooking pan]
+S	granulated
+O	olive oil	1
+S	liquid
+S	in	[cooking pan]
+O	broccoli	1
+S	mixed
+S	pieces
+S	steamed
+S	in	[cooking pan]
+O	spatula	1
+M	stir	<2:25-2:28>
+O	broccoli	1
+S	contains	{salt}
+S	pieces
+S	steamed
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{broccoli,olive oil,salt}
+S	on	[stove]
+O	lemon	1
+S	on	[cutting board]
+S	halved
+O	squeezer	1
+M	squeeze	<2:34-2:36>
+O	cooking pan	0
+S	hot
+S	contains	{broccoli,lemon,olive oil,salt}
+S	on	[stove]
+O	lemon	0
+S	squeezed
+S	on	[cutting board]
+S	remains
+O	lemon	1
+S	in	[cooking pan]
+S	juiced
+O	lemon juice	1
+S	juice
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{broccoli,lemon,olive oil,salt}
+S	on	[stove]
+O	lemon	1
+S	in	[cooking pan]
+S	juiced
+O	broccoli	0
+S	contains	{salt}
+S	pieces
+S	steamed
+S	in	[cooking pan]
+O	salt	1
+S	in	[cooking pan]
+S	granulated
+O	olive oil	1
+S	liquid
+S	in	[cooking pan]
+O	spatula	1
+M	cook and stir	<2:41-2:43>
+O	broccoli	0
+S	pieces
+S	sauted
+S	in	[cooking pan]
+S	contains	{lemon juice,olive oil,salt}
+//
+O	cooking pan	1
+S	hot
+S	contains	{broccoli,lemon juice,olive oil,salt}
+S	on	[stove]
+O	broccoli	1
+S	pieces
+S	sauted
+S	in	[cooking pan]
+S	contains	{lemon juice,olive oil,salt}
+O	plate	0
+S	empty
+M	pour	<2:45-2:50>
+O	plate	0
+S	contains	{broccoli}
+O	broccoli	1	22
+S	sauted
+S	contains	{lemon juice,olive oil,salt}
+S	on	[plate]
+//

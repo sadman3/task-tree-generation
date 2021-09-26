@@ -1,0 +1,354 @@
+# Source:	https://www.youtube.com/watch?v=gPBEsV6qNM0
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/ACT-0034-greek_salad.mp4
+//
+O	cutting board	0
+S	empty
+O	tomato	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{tomato}
+O	tomato	1
+S	whole
+S	on	[cutting board]
+//
+O	tomato	0
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	slice	<1:07-1:14>
+O	tomato	0
+S	sliced
+S	on	[cutting board]
+//
+O	tomato	0
+S	sliced
+S	on	[cutting board]
+O	knife	1
+M	dice	<1:17-1:21>
+O	tomato	0
+S	cubed
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{tomato}
+O	tomato	1
+S	cubed
+S	on	[cutting board]
+O	mixing bowl	0
+S	empty
+M	pick-and-place	<1:28-1:31>
+O	mixing bowl	0
+S	contains	{tomato}
+O	tomato	1
+S	cubed
+S	in	[mixing bowl]
+//
+O	onion	0
+S	whole
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	slice	<1:32-1:40>
+O	onion	0
+S	sliced
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	sliced
+S	on	[cutting board]
+O	mixing bowl	0
+S	contains	{tomato}
+O	tomato	1
+S	cubed
+S	in	[mixing bowl]
+M	pick-and-place	<1:41-1:43>
+O	mixing bowl	0
+S	contains	{tomato,onion}
+O	onion	1
+S	sliced
+S	in	[mixing bowl]
+//
+O	cucumber	1
+S	whole
+O	peeler	1
+M	peel	<1:50-1:58>
+O	cucumber	1
+S	whole
+S	peeled
+//
+O	cutting board	0
+S	empty
+O	cucumber	1
+S	whole
+S	peeled
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{cucumber}
+O	cucumber	1
+S	whole
+S	peeled
+S	on	[cutting board]
+//
+O	cucumber	0
+S	whole
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	dice	<1:59-2:09>
+O	cucumber	0
+S	diced
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{cucumber}
+O	cucumber	1
+S	on	[cutting board]
+S	diced
+O	mixing bowl	0
+S	contains	{tomato,onion}
+M	pick-and-place	<2:10-2:13>
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber}
+O	cucumber	1
+S	diced
+S	in	[mixing bowl]
+//
+O	cutting board	0
+S	empty
+O	sweet pepper	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{sweet pepper}
+O	sweet pepper	1
+S	whole
+S	on	[cutting board]
+//
+O	sweet pepper	0
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	core	<2:18-2:24>
+O	sweet pepper	0
+S	cored
+S	on	[cutting board]
+//
+O	sweet pepper	0
+S	cored
+S	on	[cutting board]
+O	knife	1
+M	dice	<2:26-2:31>
+O	sweet pepper	0
+S	cubed
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{sweet pepper}
+O	sweet pepper	0
+S	on	[cutting board]
+S	sliced
+O	knife	1
+M	cut	<2:27-2:31>
+O	sweet pepper	0
+S	diced
+S	on	[cutting board]
+//
+O	cutting board	0
+S	empty
+O	green pepper	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{green pepper}
+O	green pepper	1
+S	whole
+S	on	[cutting board]
+//
+O	green pepper	0
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	core	<2:33-2:36>
+O	green pepper	0
+S	cored
+S	on	[cutting board]
+//
+O	green pepper	0
+S	cored
+S	on	[cutting board]
+O	knife	1
+M	dice	<Assumed>
+O	green pepper	0
+S	cubed
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{sweet pepper}
+O	sweet pepper	1
+S	on	[cutting board]
+S	cubed
+O	cutting board	0
+S	contains	{green pepper}
+O	green pepper	1
+S	on	[cutting board]
+S	cubed
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber}
+M	pick-and-place	<2:38-2:43>
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper}
+O	sweet pepper	1
+S	cubed
+S	in	[mixing bowl]
+O	green pepper	1
+S	cubed
+S	in	[mixing bowl]
+//
+O	bowl	1
+S	contains	{oregano}
+O	oregano	1
+S	dried
+S	in	[bowl]
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper}
+M	pour	<2:47-2:48>
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano}
+O	oregano	1
+S	dried
+S	in	[mixing bowl]
+//
+O	bowl	1
+S	contains	{black olive}
+O	black olive	1
+S	whole
+S	in	[bowl]
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano}
+M	pour	<2:51-2:52>
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive}
+O	black olive	1
+S	whole
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive}
+O	grinder	1
+S	contains	{salt}
+O	salt	1
+S	pieces
+S	in	[grinder]
+M	grind	<2:53-2:57>
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt}
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt}
+O	lemon	1
+S	halved
+O	fork	1
+M	squeeze	<2:59-3:03>
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon}
+O	lemon	1
+S	juice
+S	in	[mixing bowl]
+//
+O	bowl	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bowl]
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon}
+M	pour	<3:06-3:08>
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}
+O	olive oil	1
+S	liquid
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}
+O	olive oil	1
+S	liquid
+S	in	[mixing bowl]
+O	lemon	1
+S	juice
+S	in	[mixing bowl]
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+O	black olive	1
+S	whole
+S	in	[mixing bowl]
+O	oregano	1
+S	dried
+S	in	[mixing bowl]
+O	sweet pepper	1
+S	cubed
+S	in	[mixing bowl]
+O	green pepper	1
+S	cubed
+S	in	[mixing bowl]
+O	cucumber	1
+S	diced
+S	in	[mixing bowl]
+O	onion	1
+S	sliced
+S	in	[mixing bowl]
+O	tomato	1
+S	cubed
+S	in	[mixing bowl]
+O	spoon	1
+S	empty
+M	mix	<3:09-3:13>
+O	salad	0
+S	mixed
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}
+S	in	[mixing bowl]
+//
+O	container	0
+S	contains	{feta cheese}
+O	feta cheese	0
+S	cubed
+S	in	[container]
+O	spoon	1
+S	empty
+M	scoop	<Assumed>
+O	spoon	1
+S	contains	{feta cheese}
+O	feta cheese	1
+S	cubed
+S	in	[spoon]
+//
+O	mixing bowl	0
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}
+O	salad	0
+S	mixed
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}
+S	in	[mixing bowl]
+O	spoon	1
+S	contains	{feta cheese}
+O	feta cheese	1
+S	cubed
+S	in	[spoon]
+M	pour	<3:13-3:19>
+O	mixing bowl	0
+S	contains	{salad}
+O	greek salad	0	15
+S	mixed
+S	in	[mixing bowl]
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil,feta cheese}
+O	salad	0
+S	mixed
+S	in	[mixing bowl]
+S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil,feta cheese}
+//

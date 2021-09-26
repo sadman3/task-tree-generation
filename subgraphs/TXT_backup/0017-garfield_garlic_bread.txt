@@ -1,0 +1,134 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0017-garfield_garlic_bread.mp4
+//
+O34	bowl	0
+S24	contains	{butter}
+O350	shaker	1
+S24	contains	{garlic salt}
+O169	garlic salt	1
+S63	granulated
+S72	in	[shaker]
+M101	sprinkle	<0:03,0:09>
+O34	bowl	0
+S24	contains	{butter,garlic salt}
+O169	garlic salt	1
+S63	granulated
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{butter,garlic salt}
+O49	butter	1
+S72	in	[bowl]
+S133	softened
+O169	garlic salt	1
+S63	granulated
+S72	in	[bowl]
+O152	fork	1
+M56	mix	<0:11,0:26>
+O165	garlic butter	0
+S24	contains	{butter,garlic salt}
+S87	mixed
+S72	in	[bowl]
+//
+O10	baking tray	0
+S46	empty
+O36	bread	1
+S130	sliced
+M61	pick-and-place	<Assumed>
+O10	baking tray	0
+S24	contains	{bread}
+O36	bread	0
+S24	contains	{baking tray}
+S130	sliced
+//
+O34	bowl	0
+S24	contains	{garlic butter}
+O165	garlic butter	1
+S24	contains	{butter,garlic salt}
+S87	mixed
+S72	in	[bowl]
+O10	baking tray	0
+S24	contains	{bread}
+O36	bread	0
+S24	contains	{baking tray}
+S130	sliced
+O217	knife	1
+M100	spread	<0:32,1:15>
+O36	bread	0
+S130	sliced
+S24	contains	{garlic butter}
+S93	on	[baking tray]
+O165	garlic butter	0
+S87	mixed
+S93	on	[bread]
+//
+O10	baking tray	1
+S24	contains	{bread}
+O276	oven	0
+S46	empty
+S93	on
+M76	put inside	<1:20,1:27>
+O10	baking tray	1
+S72	in	[oven]
+S24	contains	{bread}
+O276	oven	0
+S24	contains	{baking tray}
+S93	on
+//
+O10	baking tray	0
+S72	in	[oven]
+S24	contains	{bread}
+O276	oven	0
+S24	contains	{baking tray}
+S93	on
+O36	bread	0
+S130	sliced
+S24	contains	{garlic butter}
+S93	on	[baking tray]
+M2	bake	<Assumed>
+O10	baking tray	0
+S24	contains	{garlic bread}
+S72	in	[oven]
+O164	garlic bread	0
+S2	baked
+S24	contains	{bread,butter,garlic salt}
+S93	on	[baking tray]
+//
+O276	oven	0
+S24	contains	{baking tray}
+S93	on
+M116	turn off	<Assumed>
+O276	oven	0
+S24	contains	{baking tray}
+S90	off
+//
+O10	baking tray	0
+S24	contains	{garlic bread}
+S72	in	[oven]
+O276	oven	0
+S24	contains	{baking tray}
+S90	off
+M77	remove	<Assumed>
+O10	baking tray	0
+S24	contains	{garlic bread}
+O276	oven	0
+S90	off
+S46	empty
+//
+O10	baking tray	0
+S24	contains	{garlic bread}
+O164	garlic bread	0
+S2	baked
+S24	contains	{bread,butter,garlic salt}
+S93	on	[baking tray]
+O304	plate	1
+S46	empty
+O396	tongs	1
+M61	pick-and-place	<Assumed>
+O304	plate	0
+S24	contains	{garlic bread}
+O164	garlic bread	1	0
+S2	baked
+S24	contains	{bread,butter,garlic salt}
+S93	on	[plate]
+S110	ready
+//

@@ -1,0 +1,257 @@
+O	bag	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bag]
+O	strainer	0
+S	empty
+M	pour	Assumed	Assumed
+O	strainer	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[strainer]
+//
+O	bowl	0
+S	empty
+O	strainer	1
+S	contains	{flour}
+O	flour	0
+S	powder
+S	in	[strainer]
+M	sift	0:22	0:32
+O	bowl	0
+S	contains	{flour}
+O	flour	0
+S	sifted
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{flour}
+O	measuring cup	1
+S	empty
+O	flour	0
+S	sifted
+S	in	[bowl]
+O	spoon	1
+M	scoop	0:35	0:40
+O	measuring cup	1
+S	contains	{flour}
+O	flour	0
+S	sifted
+S	in	[measuring cup]
+//
+O	bowl	0
+S	empty
+O	egg	1
+S	uncracked
+M	crack	Assumed	Assumed
+O	bowl	0
+S	contains	{egg}
+O	egg	1
+S	cracked
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg}
+O	egg	1
+S	cracked
+S	in	[bowl]
+O	fork	1
+M	stir	0:48	0:54
+O	bowl	0
+S	contains	{egg}
+O	egg	1
+S	beaten
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg}
+O	egg	1
+S	beaten
+S	in	[bowl]
+O	bowl	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	sprinkle	0:55	0:58
+O	bowl	0
+S	contains	{egg,salt}
+//
+O	bowl	0
+S	contains	{egg,salt}
+O	bowl	1
+S	contains	{milk}
+O	milk	1
+S	in	[bowl]
+M	pour	0:59	1:03
+O	bowl	0
+S	contains	{egg,salt,milk}
+//
+O	bowl	0
+S	contains	{egg,salt,milk}
+O	fork	1
+M	mix	1:05	1:08
+O	bowl	0
+S	contains	{egg mixture}
+O	egg mixture	1
+S	in	[bowl]
+S	contains	{egg,salt,milk}
+//
+O	bowl	0
+S	contains	{egg mixture}
+O	egg mixture	0
+S	in	[bowl]
+S	contains	{egg,salt,milk}
+O	measuring cup	1
+S	contains	{flour}
+O	flour	1
+S	sifted
+S	in	[measuring cup]
+M	pour	1:09	1:11
+O	bowl	0
+S	contains	{egg mixture,flour}
+O	flour	1
+S	sifted
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg mixture,flour}
+O	fork	1
+O	flour	1
+S	sifted
+S	in	[bowl]
+O	egg mixture	1
+S	in	[bowl]
+S	contains	{egg,salt,milk}
+M	stir	1:12	1:18
+O	bowl	0
+S	contains	{dough}
+O	dough	1
+S	contains	{egg mixture,flour}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{flour}
+O	flour	1
+S	sifted
+S	in	[bowl]
+O	spoon	1
+M	scoop	Assumed	Assumed
+O	spoon	1
+S	contains	{flour}
+O	flour	1
+S	sifted
+S	in	[spoon]
+//
+O	bowl	0
+S	contains	{dough}
+O	spoon	1
+S	contains	{flour}
+O	flour	1
+S	sifted
+S	in	[spoon]
+M	pour	1:19	1:21
+O	bowl	0
+S	contains	{dough,flour}
+O	flour	1
+S	sifted
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{dough,flour}
+O	flour	1
+S	sifted
+S	in	[bowl]
+O	fork	1
+M	stir	1:22	1:25
+O	bowl	0
+S	contains	{dough}
+O	dough	1
+S	contains	{egg mixture,flour}
+S	in	[bowl]
+//
+O	cutting board	0
+S	empty
+O	jar	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[jar]
+M	sprinkle	1:38	1:43
+O	cutting board	0
+S	floured
+O	flour	1
+S	powder
+S	on	[cutting board]
+//
+O	cutting board	0
+S	floured
+O	bowl	0
+S	contains	{dough}
+O	dough	1
+S	contains	{egg mixture,flour}
+S	in	[bowl]
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{dough}
+O	dough	1
+S	contains	{egg mixture,flour}
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{dough}
+O	dough	0
+S	contains	{egg mixture,flour}
+S	on	[cutting board]
+O	scraper	1
+M	cut	1:44	1:48
+O	dough	0
+S	contains	{egg mixture,flour}
+S	halved
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{dough}
+O	dough	0
+S	contains	{egg mixture,flour}
+S	halved
+S	on	[cutting board]
+O	rolling pin	1
+M	roll	1:49	2:05
+O	dough	0
+S	flattened
+S	contains	{egg mixture,flour}
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{dough}
+O	dough	0
+S	flattened
+S	contains	{egg mixture,flour}
+S	on	[cutting board]
+O	pizza cutter	1
+M	cut	2:16	2:29
+O	dough	0
+S	stripped
+S	on	[cutting board]
+S	contains	{egg mixture,flour}
+//
+O	cutting board	0
+S	contains	{dough}
+O	dough	0
+S	stripped
+S	contains	{egg mixture,flour}
+S	on	[cutting board]
+O	flour	1
+S	powder
+S	in	[jar]
+M	sprinkle	2:30	2:38
+O	cutting board	0
+S	contains	{egg noodle}
+O	egg noodle	0	14
+S	uncooked
+S	on	[cutting board]
+S	contains	{egg,salt,milk,flour}
+//

@@ -1,0 +1,83 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0004-pancake_batter.mp4
+# Source:	https://www.youtube.com/watch?v=xqP_-vqpbFo
+//
+O6	bag	1
+S24	contains	{flour}
+O147	flour	1
+S106	powder
+S72	in	[bag]
+O34	bowl	0
+S93	on	[surface]
+S46	empty
+M65	pour	<0:10,0:15>
+O34	bowl	0
+S93	on	[surface]
+S24	contains	{flour}
+O147	flour	0
+S106	powder
+S72	in	[bowl]
+//
+O34	bowl	0
+S93	on	[surface]
+S24	contains	{flour}
+O133	egg	1
+S93	on	[surface]
+S155	whole
+M22	crack	<0:18,0:22>
+O34	bowl	0
+S93	on	[surface]
+S24	contains	{egg,flour}
+O133	egg	0
+S29	cracked
+S72	in	[bowl]
+//
+O136	egg shell	1
+S93	on	[surface]
+O399	trash bin	0
+S24	contains	{garbage}
+M114	throw away	<Assumed>
+O136	egg shell	1
+S72	in	[trash bin]
+//
+O133	egg	0
+S29	cracked
+S72	in	[bowl]
+O241	measuring cup	1
+S24	contains	{milk}
+O244	milk	1
+S81	liquid
+S72	in	[measuring cup]
+O34	bowl	0
+S93	on	[surface]
+S24	contains	{egg,flour}
+M65	pour	<0:28,0:33>
+O34	bowl	0
+S93	on	[surface]
+S24	contains	{egg,flour,milk}
+O244	milk	1
+S81	liquid
+S72	in	[bowl]
+//
+O34	bowl	0
+S93	on	[surface]
+S24	contains	{egg,flour,milk}
+O137	egg white	0
+S109	raw
+S72	in	[bowl]
+O244	milk	0
+S81	liquid
+S72	in	[bowl]
+O147	flour	0
+S106	powder
+S72	in	[bowl]
+O420	whisk	1
+M56	mix	<0:37,1:31>
+O34	bowl	0
+S93	on	[surface]
+S24	contains	{pancake batter}
+O280	pancake batter	0	5
+S109	raw
+S144	thick liquid
+S72	in	[bowl]
+S24	contains	{egg,flour,milk}
+//

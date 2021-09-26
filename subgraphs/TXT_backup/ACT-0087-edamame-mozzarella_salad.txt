@@ -1,0 +1,215 @@
+# Source:	https://www.youtube.com/watch?v=17mE8bUp000
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/ACT-0087-edamame-mozzarella_salad.mp4
+//
+O277	packet	1
+S24	contains	{soybean}
+S117	sealed
+M80	rip open	<Assumed>
+O277	packet	1
+S24	contains	{soybean}
+//
+O277	packet	1
+S24	contains	{soybean}
+O363	soybean	1
+S125	shelled
+S146	uncooked
+S72	in	[packet]
+O34	bowl	0
+S46	empty
+M65	pour	<Assumed>
+O34	bowl	0
+S24	contains	{soybean}
+O363	soybean	1
+S125	shelled
+S146	uncooked
+S72	in	[bowl]
+//
+O243	microwave	0
+S46	empty
+S90	off
+O34	bowl	1
+S24	contains	{soybean}
+M76	put inside	<Assumed>
+O34	bowl	1
+S24	contains	{soybean}
+S72	in	[microwave]
+O243	microwave	0
+S24	contains	{bowl}
+S90	off
+//
+O243	microwave	0
+S24	contains	{bowl}
+S90	off
+M117	turn on	<Assumed>
+O243	microwave	0
+S24	contains	{bowl}
+S93	on
+//
+O243	microwave	0
+S24	contains	{bowl}
+S93	on
+O363	soybean	0
+S125	shelled
+S146	uncooked
+S72	in	[bowl]
+O34	bowl	0
+S24	contains	{soybean}
+S72	in	[microwave]
+M16	cook	<Assumed>
+O363	soybean	0
+S125	shelled
+S25	cooked
+S72	in	[bowl]
+O243	microwave	0
+S24	contains	{bowl}
+S90	off
+//
+O243	microwave	0
+S24	contains	{bowl}
+S90	off
+O34	bowl	1
+S24	contains	{soybean}
+S72	in	[microwave]
+M77	remove	<Assumed>
+O34	bowl	1
+S24	contains	{soybean}
+O243	microwave	0
+S46	empty
+S90	off
+//
+O249	mixing bowl	0
+S46	empty
+O34	bowl	1
+S24	contains	{soybean}
+O363	soybean	1
+S125	shelled
+S25	cooked
+S72	in	[bowl]
+O367	spoon	1
+S46	empty
+M68	pour and scrape	<0:51-1:02>
+O34	bowl	0
+S24	contains	{soybean}
+O363	soybean	1
+S125	shelled
+S25	cooked
+S72	in	[mixing bowl]
+//
+O277	packet	1
+S24	contains	{mozzarella}
+O253	mozzarella	1
+S72	in	[packet]
+S42	diced
+O34	bowl	1
+S46	empty
+M65	pour	<Assumed>
+O277	packet	0
+S24	contains	{mozzarella}
+O253	mozzarella	1
+S72	in	[bowl]
+S42	diced
+//
+O34	bowl	0
+S24	contains	{soybean}
+O253	mozzarella	1
+S72	in	[bowl]
+S42	diced
+O34	bowl	1
+S24	contains	{mozzarella}
+O367	spoon	1
+S46	empty
+M68	pour and scrape	<1:11-1:16>
+O249	mixing bowl	0
+S24	contains	{mozzarella,soybean}
+O253	mozzarella	1
+S72	in	[mixing bowl]
+S42	diced
+//
+O249	mixing bowl	0
+S24	contains	{mozzarella,soybean}
+O34	bowl	1
+S24	contains	{sesame oil}
+O348	sesame oil	1
+S81	liquid
+S72	in	[bowl]
+M65	pour	<1:28-1:32>
+O249	mixing bowl	0
+S24	contains	{mozzarella,sesame oil,soybean}
+O348	sesame oil	1
+S81	liquid
+S72	in	[mixing bowl]
+//
+O249	mixing bowl	0
+S24	contains	{mozzarella,sesame oil,soybean}
+O34	bowl	1
+S24	contains	{soy sauce}
+O362	soy sauce	1
+S81	liquid
+S72	in	[bowl]
+M65	pour	<1:36-1:39>
+O249	mixing bowl	0
+S24	contains	{mozzarella,sesame oil,soy sauce,soybean}
+O362	soy sauce	1
+S81	liquid
+S72	in	[mixing bowl]
+//
+O249	mixing bowl	0
+S24	contains	{mozzarella,sesame oil,soy sauce,soybean}
+O34	bowl	1
+S24	contains	{salt}
+O336	salt	1
+S72	in	[bowl]
+S63	granulated
+M101	sprinkle	<1:42-1:46>
+O249	mixing bowl	0
+S24	contains	{mozzarella,salt,sesame oil,soy sauce,soybean}
+O336	salt	1
+S72	in	[mixing bowl]
+S63	granulated
+//
+O249	mixing bowl	0
+S24	contains	{mozzarella,salt,sesame oil,soy sauce,soybean}
+O363	soybean	1
+S40	deshelled
+S72	in	[mixing bowl]
+S25	cooked
+O253	mozzarella	1
+S72	in	[mixing bowl]
+S42	diced
+O362	soy sauce	1
+S81	liquid
+S72	in	[mixing bowl]
+O336	salt	1
+S72	in	[mixing bowl]
+S63	granulated
+O367	spoon	1
+S46	empty
+M104	stir	<1:48-1:56>
+O132	edamame-mozzarella salad	0
+S87	mixed
+S24	contains	{mozzarella,salt,sesame oil,soy sauce,soybean}
+S72	in	[mixing bowl]
+//
+O249	mixing bowl	0
+S24	contains	{mozzarella,salt,sesame oil,soy sauce,soybean}
+O34	bowl	1
+S24	contains	{sesame seed}
+O349	sesame seed	1
+S119	seed
+S72	in	[bowl]
+O132	edamame-mozzarella salad	0
+S87	mixed
+S24	contains	{mozzarella,salt,sesame oil,soy sauce,soybean}
+S72	in	[mixing bowl]
+M101	sprinkle	<2:00-2:13>
+O249	mixing bowl	0
+S24	contains	{mozzarella,salt,sesame oil,sesame seeds,soy sauce,soybean}
+O132	edamame-mozzarella salad	0	15
+S87	mixed
+S24	contains	{mozzarella,salt,sesame oil,sesame seed,soy sauce,soybean}
+S72	in	[bowl]
+S110	ready
+O349	sesame seed	1
+S119	seed
+S72	in	[salad bowl]
+//

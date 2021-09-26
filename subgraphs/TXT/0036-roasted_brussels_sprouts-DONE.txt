@@ -1,0 +1,239 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0036-roasted_brussel_sprouts.mp4
+# Source:	https://www.youtube.com/watch?v=snQuelNk5cw
+//
+O	brussel sprout	1
+S	whole
+S	uncooked
+S	in	[bowl]
+O	strainer	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	strainer	0
+S	contains	{brussel sprout}
+O	brussel sprout	1
+S	whole
+S	uncooked
+S	in	[strainer]
+//
+O	faucet	1
+S	on
+O	water	0
+S	from	[faucet]
+O	strainer	0
+S	contains	{brussel sprout}
+O	brussel sprout	1
+S	whole
+S	uncooked
+S	in	[strainer]
+M	rinse	0:32	0:37
+O	brussel sprout	1
+S	washed
+S	uncooked
+S	whole
+S	in	[strainer]
+//
+O	cutting board	0
+O	brussel sprout	1
+S	whole
+S	uncooked
+S	washed
+S	in	[strainer]
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{brussel sprout}
+O	brussel sprout	1
+S	whole
+S	uncooked
+S	washed
+S	on	[cutting board]
+//
+O	brussel sprout	0
+S	uncooked
+S	whole
+S	washed
+S	on	[cutting board]
+O	knife	1
+M	cut	0:40	0:43
+O	brussel sprout	0
+S	stem removed
+S	uncooked
+S	washed
+S	on	[cutting board]
+//
+O	brussel sprout	0
+S	stem removed
+S	washed
+S	on	[cutting board]
+M	peel	0:46	0:49
+O	brussel sprout	0
+S	peeled
+S	on	[cutting board]
+//
+O	spoon	1
+O	bowl	0
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	scoop	1:07	1:09
+O	spoon	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[spoon]
+//
+O	bowl	0
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+O	spoon	1
+M	scoop	Assumed	Assumed
+O	spoon	1
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[spoon]
+//
+O	plastic bag	0
+S	empty
+O	brussel sprout	1
+S	uncooked
+S	peeled
+S	on	[cutting board]
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[bottle]
+O	spoon	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[spoon]
+O	spoon	1
+S	contains	{pepper}
+O	black pepper	1
+S	ground
+S	in	[spoon]
+M	add*	0:54	1:15
+O	plastic bag	0
+S	contains	{brussel sprout,black pepper,salt,olive oil}
+O	brussel sprout	1
+S	peeled
+S	in	[plastic bag]
+O	black pepper	1
+S	ground
+S	in	[plastic bag]
+O	salt	1
+S	granulated
+S	in	[plastic bag]
+O	olive oil	1
+S	in	[plastic bag]
+//
+O	plastic bag	1
+S	contains	{brussel sprout,black pepper,salt,olive oil}
+O	brussel sprout	1
+S	uncooked
+S	peeled
+S	in	[plastic bag]
+O	black pepper	1
+S	ground
+S	in	[plastic bag]
+O	salt	1
+S	granulated
+S	in	[plastic bag]
+O	olive oil	1
+S	in	[plastic bag]
+M	shake*	1:16	1:22
+O	plastic bag	1
+S	contains	{brussel sprout,black pepper,salt,olive oil}
+O	brussel sprout	1
+S	seasoned
+S	uncooked
+S	contains	{black pepper,salt,olive oil}
+S	in	[plastic bag]
+//
+O	plastic bag	1
+S	contains	{brussel sprout}
+O	brussel sprout	1
+S	seasoned
+S	uncooked
+S	contains	{black pepper,salt,olive oil}
+S	in	[plastic bag]
+O	baking tray	0
+S	empty
+M	pour	1:23	1:26
+O	baking tray	0
+S	contains	{brussel sprout,black pepper,salt,olive oil}
+O	brussel sprout	1
+S	seasoned
+S	uncooked
+S	in	[baking tray]
+S	contains	{black pepper,salt,olive oil}
+O	plastic bag	1
+//
+O	oven	0
+S	on
+O	baking tray	1
+S	contains	{brussel sprout,black pepper,salt,olive oil}
+M	put inside	1:30	1:35
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	0
+S	contains	{brussel sprout,black pepper,salt,olive oil}
+S	in	[oven]
+//
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	0
+S	contains	{brussel sprout,black pepper,salt,olive oil}
+S	in	[oven]
+O	brussel sprout	0
+S	seasoned
+S	uncooked
+S	in	[baking tray]
+M	bake	Assumed	Assumed
+O	brussel sprout	1
+S	cooked
+S	in	[baking tray]
+S	contains	{black pepper,salt,olive oil}
+//
+O	oven	0
+S	on
+S	with	[baking tray]
+M	turn off	Assumed	Assumed
+O	oven	0
+S	off
+S	with	[baking tray]
+//
+O	oven	0
+S	off
+S	with	[baking tray]
+O	baking tray	0
+S	contains	{brussel sprout,black pepper,salt,olive oil}
+S	in	[oven]
+M	remove	Assumed	Assumed
+O	oven	0
+S	off
+O	baking tray	0
+S	contains	{brussel sprout,black pepper,salt,olive oil}
+//
+O	baking tray	0
+S	contains	{brussel sprout,black pepper,salt,olive oil}
+O	brussel sprout	1
+S	cooked
+S	contains	{black pepper,salt,olive oil}
+S	in	[baking tray]
+O	tongs	1
+O	plate	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{brussel sprout,black pepper,salt,olive oil}
+O	brussel sprout	1	22
+S	cooked
+S	on	[plate]
+S	contains	{black pepper,salt,olive oil}
+//

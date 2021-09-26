@@ -1,0 +1,280 @@
+O	corn	1
+S	whole
+O	cutting board	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{corn}
+O	corn	1
+S	whole
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{corn}
+O	corn	1
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	shave	0:04	0:46
+O	corn kernels	1
+S	uncooked
+S	on	[cutting board]
+O	corn	1
+S	shaved
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{corn}
+O	corn kernels	1
+S	uncooked
+S	on	[cutting board]
+O	pot	0
+S	empty
+O	knife	1
+M	scoop and pour	0:48	0:58
+O	pot	0
+S	contains	{corn kernels}
+O	corn kernels	1
+S	uncooked
+S	in	[pot]
+O	corn	1
+S	shaved
+S	on	[cutting board]
+//
+O	pot	0
+S	contains	{corn kernels}
+O	corn	1
+S	shaved
+S	on	[cutting board]
+O	knife	1
+M	scrape	1:12	1:30
+O	pot	0
+S	contains	{corn}
+O	corn kernels	1
+S	uncooked
+S	in	[pot]
+O	corn cob	1
+S	shaved
+//
+O	pot	0
+S	contains	{corn}
+O	corn cob	1
+S	shaved
+M	squeeze	1:33	1:41
+O	corn cob	1
+S	squeezed
+//
+O	pot	1
+S	contains	{corn}
+O	pot	0
+S	contains	{water}
+O	water	1
+S	in	[pot]
+O	spoon	1
+M	pour	1:44	1:54
+O	pot	0
+S	contains	{water,corn}
+//
+O	pot	0
+S	contains	{water,corn}
+O	measuring cup	1
+S	contains	{milk}
+O	spoon	1
+O	milk	1
+S	in	[measuring cup]
+M	pour	1:57	2:04
+O	pot	0
+S	contains	{water,corn,milk}
+O	milk	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{water,corn,milk}
+O	butter	1
+S	cubed
+S	in	[packet]
+M	pick-and-place	2:08	2:11
+O	pot	0
+S	contains	{water,corn,milk,butter}
+O	butter	1
+S	cubed
+S	in	[pot]
+//
+O	pot	0
+S	contains	{water,corn,milk,butter}
+O	bowl	1
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+M	pour	2:12	2:15
+O	pot	0
+S	contains	{water,corn,milk,butter,sugar}
+O	sugar	1
+S	granulated
+S	in	[pot]
+//
+O	pot	0
+S	contains	{water,corn,milk,butter,sugar}
+O	bowl	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	sprinkle	2:18	2:22
+O	pot	0
+S	contains	{water,corn,milk,butter,sugar,salt}
+O	salt	1
+S	granulated
+S	in	[pot]
+//
+O	pot	0
+S	contains	{water,corn,milk,butter,sugar,salt}
+O	shaker	1
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[shaker]
+M	sprinkle	2:24	2:27
+O	pot	0
+S	contains	{water,corn,milk,butter,sugar,salt,black pepper}
+O	black pepper	1
+S	ground
+S	in	[pot]
+//
+O	pot	0
+S	contains	{water,corn,milk,butter,sugar,salt,black pepper}
+O	spoon	1
+O	corn kernels	1
+S	uncooked
+S	in	[pot]
+M	stir	2:28	2:35
+O	pot	0
+S	contains	{corn mixture}
+O	corn mixture	1
+S	uncooked
+S	in	[pot]
+//
+O	pot	1
+S	contains	{corn mixture}
+O	stove	0
+S	on
+M	pick-and-place	Assumed	Assumed
+O	pot	1
+S	contains	{corn mixture}
+S	on	[stove]
+O	stove	1
+S	on
+S	with	[pot]
+//
+O	pot	1
+S	contains	{corn mixture}
+S	on	[stove]
+O	stove	1
+S	on
+S	with	[pot]
+O	corn mixture	1
+S	uncooked
+S	in	[pot]
+M	boil	3:07	3:13
+O	corn mixture	1
+S	partly cooked
+S	in	[pot]
+//
+O	measuring cup	1
+S	contains	{milk}
+O	bowl	1
+S	contains	{corn starch}
+O	corn starch	1
+S	in	[bowl]
+O	spoon	1
+M	scoop	3:22	3:27
+O	measuring cup	1
+S	contains	{milk,corn starch}
+O	corn starch	1
+S	in	[measuring cup]
+//
+O	measuring cup	1
+S	contains	{milk,corn starch}
+O	spoon	1
+M	mix	3:30	3:36
+O	measuring cup	1
+S	contains	{milk,corn starch}
+//
+O	measuring cup	1
+S	contains	{milk,corn starch}
+O	corn mixture	1
+S	partly cooked
+S	in	[pot]
+O	pot	0
+S	contains	{corn mixture}
+S	on	[stove]
+O	spoon	1
+M	pour	3:50	3:54
+O	pot	0
+S	contains	{corn mixture,milk,corn starch}
+S	on	[stove]
+//
+O	pot	0
+S	contains	{corn mixture,milk,corn starch}
+S	on	[stove]
+O	corn mixture	1
+S	partly cooked
+S	in	[pot]
+O	spoon	1
+M	cook and stir	3:58	4:28
+O	pot	0
+S	contains	{creamed corn}
+S	on	[stove]
+O	creamed corn	1
+S	cooked
+S	in	[pot]
+//
+O	pot	0
+S	contains	{creamed corn}
+S	on	[stove]
+O	creamed corn	1
+S	cooked
+S	in	[pot]
+O	bowl	1
+S	contains	{parmesan}
+O	parmesan	1
+S	grated
+S	in	[bowl]
+M	sprinkle	4:32	4:35
+O	parmesan	1
+S	grated
+S	in	[pot]
+//
+O	pot	0
+S	contains	{creamed corn}
+S	on	[stove]
+O	creamed corn	1
+S	cooked
+S	in	[pot]
+O	spoon	1
+O	parmesan	1
+S	grated
+S	in	[pot]
+M	mix*	4:36	4:48
+O	creamed corn	1
+S	cooked	{parmesan cheese}
+S	in	[pot]
+//
+O	pot	0
+S	contains	{creamed corn}
+S	on	[stove]
+O	creamed corn	1
+S	cooked	{parmesan cheese}
+S	in	[pot]
+O	bowl	0
+S	empty
+O	ladle	1
+M	scoop and pour	Assumed	Assumed
+O	bowl	0
+S	contains	{creamed corn}
+O	creamed corn	1	1
+S	contains	{corn mixture,corn kernels,water,corn,milk,butter,sugar,salt,black pepper,parmesan}
+S	in	[bowl]
+S	ready
+//

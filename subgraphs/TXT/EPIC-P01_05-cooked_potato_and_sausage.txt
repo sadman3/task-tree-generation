@@ -1,0 +1,270 @@
+O	kettle	1
+S	empty
+O	faucet	0
+S	on
+O	water	1
+S	from faucet
+M	fill	2:49	3:00
+O	kettle	0
+S	contains	{water}
+O	water	0
+S	in	[kettle]
+//
+O	kettle	1
+S	contains	{water}
+O	water	0
+S	in	[kettle]
+M	heat	3:05	6:19
+O	kettle	0
+S	contains	{water}
+O	water	0
+S	heated
+S	in	[kettle]
+//
+O	potato	1
+S	whole
+O	knife	1
+M	peel	3:33	4:25
+O	knife	0
+O	potato	0
+S	peeled
+//
+O	potato	1
+S	peeled
+O	cutting board	0
+S	empty
+M	pick-and-place	4:25	4:28
+O	cutting board	0
+S	contains	{potato}
+O	potato	1
+S	peeled
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{potato}
+O	potato	0
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	slice	4:28	4:50
+O	knife	0
+O	potato	0
+S	sliced
+S	on	[cutting board]
+//
+O	kettle	1
+S	contains	{water}
+O	water	1
+S	heated
+S	in	[kettle]
+O	pot	0
+S	heated
+S	on	[stove]
+M	pour	6:20	6:30
+O	pot	0
+S	contains	{water}
+S	on	[stove]
+O	water	1
+S	heated
+S	in	[pot]
+//
+O	spoon	1
+O	salt	0
+S	granulated
+S	in	[container]
+O	container	1
+S	contains	{salt}
+M	scoop	6:45	6:48
+O	spoon	1
+S	contains	{salt}
+O	salt	0
+S	granulated
+S	in	[spoon]
+//
+O	pot	0
+S	contains	{water}
+S	on	[stove]
+O	spoon	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[spoon]
+M	stir	6:48	6:50
+O	pot	0
+S	contains	{saltwater}
+S	on	[stove]
+O	salt	0
+S	granulated
+S	in	[pot]
+//
+O	cutting board	0
+S	contains	{potato}
+O	potato	1
+S	sliced
+S	on	[cutting board]
+O	pot	0
+S	contains	{saltwater}
+S	on	[stove]
+O	knife	1
+M	scrape	6:58	7:05
+O	cutting board	0
+O	knife	0
+O	pot	0
+S	contains	{saltwater,potato}
+S	on	[stove]
+O	potato	1
+S	sliced
+S	in	[pot]
+//
+O	container	0
+S	sealed
+S	contains	{vegetarian sausage}
+O	knife	1
+M	cut	7:22	7:26
+O	container	0
+S	partly opened
+S	contains	{vegetarian sausage}
+//
+O	container	0
+S	partly opened
+S	contains	{vegetarian sausage}
+M	rip open	7:28	7:34
+O	container	0
+S	contains	{vegetarian sausage}
+//
+O	container	1
+S	contains	{vegetarian sausage}
+O	vegetarian sausage	0
+S	in	[container]
+O	cooking pan	0
+S	heated
+S	on	[stove]
+M	pick-and-place	11:35	11:53
+O	cooking pan	0
+S	contains	{vegetarian sausage}
+S	on	[stove]
+O	vegetarian sausage	0
+S	in	[pan]
+//
+O	pot	0
+S	contains	{saltwater,potato}
+S	on	[stove]
+O	spoon	1
+O	potato	0
+S	sliced
+S	in	[pot]
+M	cook and stir	13:11	13:18
+O	spoon	1
+O	pot	0
+S	contains	{saltwater,potato}
+S	on	[stove]
+O	potato	0
+S	cooked
+S	in	[pot]
+//
+O	cooking pan	0
+S	contains	{vegetarian sausage}
+S	on	[stove]
+O	tongs	1
+O	vegetarian sausage	0
+S	in	[pan]
+M	cook and flip	16:15	16:45
+O	vegetarian sausage	0
+S	cooked
+S	in	[pan]
+O	tongs	1
+O	cooking pan	0
+S	contains	{vegetarian sausage}
+S	on	[stove]
+//
+O	pot	1
+S	contains	{saltwater,potato}
+S	on	[stove]
+O	potato	1
+S	cooked
+S	in	[pot]
+O	strainer	1
+O	sink	0
+S	empty
+M	pour	19:32	19:42
+O	strainer	1
+S	contains	{potato}
+O	potato	1
+S	cooked
+S	in	[strainer]
+//
+O	strainer	1
+S	contains	{potato}
+O	potato	1
+S	cooked
+S	in	[strainer]
+O	plate	0
+S	empty
+M	pour	19:45	19:48
+O	strainer	1
+O	plate	0
+S	contains	{potato}
+O	potato	1
+S	cooked
+S	on	[plate]
+//
+O	plate	0
+S	contains	{potato}
+O	cooking pan	1
+S	contains	{vegetarian sausage}
+S	on	[stove]
+O	fork	1
+O	vegetarian sausage	0
+S	cooked
+S	in	[pan]
+M	scrape	19:57	20:08
+O	plate	0
+S	contains	{potato,vegetarian sausage}
+O	vegetarian sausage	0
+S	cooked
+S	on	[plate]
+//
+O	plate	0
+S	contains	{potato,vegetarian sausage}
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	0
+S	in	[bottle]
+O	potato	0
+S	cooked
+S	on	[plate]
+M	pour	20:30	10:37
+O	potato	0
+S	cooked
+S	contains	{olive oil}
+S	on	[plate]
+//
+O	plate	0
+S	contains	{potato,vegetarian sausage}
+O	black pepper	0
+S	in	[container]
+O	container	1
+S	contains	{black pepper}
+O	potato	0
+S	cooked
+S	contains	{olive oil}
+S	on	[plate]
+M	sprinkle	20:48	20:55
+O	potato	0
+S	cooked
+S	contains	{olive oil,black pepper}
+S	on	[plate]
+//
+O	plate	0
+S	contains	{potato,vegetarian sausage}
+O	potato	1
+S	cooked
+S	contains	{olive oil,black pepper}
+S	on	[plate]
+O	fork	1
+M	mix	21:03	21:09
+O	potato	1	27
+S	cooked
+S	coated	{olive oil,black pepper}
+S	on	[plate]
+//

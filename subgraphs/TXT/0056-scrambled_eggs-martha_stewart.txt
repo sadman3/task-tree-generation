@@ -1,0 +1,203 @@
+# Source:	https://www.youtube.com/watch?v=we_JQ2Vt-XA
+//
+O	mixing bowl	0
+S	empty
+O	bowl	0
+S	contains	{egg}
+O	egg	1
+S	whole
+S	in	[bowl]
+M	crack	<0:04-0:08,0:10-0:16>
+O	mixing bowl	0
+S	contains	{egg white,egg yolk}
+O	egg white	0
+S	uncooked
+S	in	[mixing bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{egg white,egg yolk}
+O	egg white	0
+S	uncooked
+S	in	[mixing bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[mixing bowl]
+O	fork	1
+M	beat	<0:19-0:33>
+O	mixing bowl	0
+S	contains	{egg}
+O	egg	1
+S	beaten
+S	uncooked
+S	in	[mixing bowl]
+//
+O	skillet	1
+S	empty
+O	stove	0
+S	on
+M	pick-and-place	<Assumed>
+O	skillet	1
+S	empty
+S	on	[stove]
+O	stove	0
+S	on
+S	under	[skillet]
+//
+O	skillet	0
+S	empty
+S	on	[stove]
+O	stove	0
+S	on
+S	under	[skillet]
+M	heat	<Assumed>
+O	skillet	0
+S	empty
+S	hot
+S	on	[stove]
+//
+O	skillet	0
+S	empty
+S	hot
+S	on	[stove]
+O	plate	0
+S	contains	{butter}
+O	butter	1
+S	softened
+S	unmelted
+S	stick
+S	on	[plate]
+O	knife	1
+M	scoop and pour	<0:37-0:40>
+O	skillet	0
+S	hot
+S	contains	{butter}
+S	on	[stove]
+O	butter	1
+S	softened
+S	cubed
+S	unmelted
+S	in	[skillet]
+//
+O	skillet	0
+S	hot
+S	contains	{butter}
+S	on	[stove]
+O	butter	1
+S	softened
+S	cubed
+S	unmelted
+S	in	[skillet]
+O	knife	1
+M	spread	<0:41-0:45>
+O	butter	1
+S	melted
+S	liquid
+S	in	[skillet]
+//
+O	skillet	0
+S	hot
+S	contains	{butter}
+S	on	[stove]
+O	mixing bowl	1
+S	contains	{egg}
+O	egg	1
+S	beaten
+S	uncooked
+S	in	[mixing bowl]
+M	pour	<1:06-1:08>
+O	skillet	0
+S	hot
+S	contains	{butter,egg}
+S	on	[stove]
+O	egg	1
+S	beaten
+S	uncooked
+S	in	[skillet]
+//
+O	stove	0
+S	on
+S	under	[skillet]
+O	skillet	0
+S	hot
+S	contains	{butter,egg}
+S	on	[stove]
+O	egg	0
+S	beaten
+S	uncooked
+S	in	[skillet]
+O	spatula	1
+M	cook and stir	<1:10-1:21,1:23-1:32>
+O	skillet	0
+S	hot
+S	contains	{scrambled eggs}
+S	on	[stove]
+O	scrambled eggs	0
+S	mixed
+S	cooked
+S	contains	{butter,egg}
+S	in	[skillet]
+//
+O	skillet	0
+S	hot
+S	contains	{scrambled eggs}
+S	on	[stove]
+O	scrambled eggs	0
+S	mixed
+S	cooked
+S	contains	{butter,egg}
+S	in	[skillet]
+O	plate	0
+S	empty
+M	pour	<1:37-1:40>
+O	scrambled eggs	0
+S	mixed
+S	cooked
+S	contains	{butter,egg}
+S	on	[plate]
+//
+O	scrambled eggs	0
+S	mixed
+S	cooked
+S	contains	{butter,egg}
+S	on	[plate]
+O	bowl	0
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+M	sprinkle	<1:46-1:48>
+O	scrambled eggs	0
+S	mixed
+S	cooked
+S	contains	{butter,egg,black pepper}
+S	on	[plate]
+O	black pepper	1
+S	ground
+S	on	[scrambled eggs]
+//
+O	plate	0
+S	contains	{scrambled eggs}
+O	scrambled eggs	0
+S	mixed
+S	cooked
+S	contains	{butter,egg,black pepper}
+S	on	[plate]
+O	bowl	0
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	sprinkle	<1:48-1:50>
+O	scrambled eggs	0	23
+S	mixed
+S	cooked
+S	contains	{butter,egg,black pepper,salt}
+S	on	[plate]
+S	ready
+O	salt	1
+S	granulated
+S	on	[scrambled eggs]
+//

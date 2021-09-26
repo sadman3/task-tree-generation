@@ -1,0 +1,289 @@
+O	pot	0
+S	heated
+S	on	[stove]
+O	bowl	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[bowl]
+M	pour	0:07	0:09
+O	pot	0
+S	contains	{olive oil}
+S	on	[stove]
+O	olive oil	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{olive oil}
+S	on	[stove]
+O	bowl	1
+S	contains	{rice}
+O	rice	1
+S	uncooked
+S	in	[bowl]
+O	spoon	1
+M	pour	0:13	0:17
+O	pot	0
+S	contains	{olive oil,rice}
+S	on	[stove]
+O	rice	1
+S	uncooked
+S	in	[pot]
+//
+O	pot	0
+S	contains	{olive oil,rice}
+S	on	[stove]
+O	rice	1
+S	uncooked
+S	in	[pot]
+O	spoon	1
+M	cook and stir	0:17	0:35
+O	pot	0
+S	contains	{olive oil,rice}
+S	on	[stove]
+O	rice	1
+S	toasted
+S	in	[pot]
+//
+O	pot	0
+S	contains	{olive oil,rice}
+S	on	[stove]
+O	bowl	1
+S	contains	{garlic}
+O	garlic	1
+S	minced
+S	in	[bowl]
+M	scrape	0:35	0:41
+O	pot	0
+S	contains	{olive oil,rice,garlic}
+S	on	[stove]
+O	garlic	1
+S	minced
+S	in	[pot]
+//
+O	pot	0
+S	contains	{olive oil,rice,garlic}
+S	on	[stove]
+O	bowl	1
+S	contains	{water}
+O	water	1
+S	in	[bowl]
+M	pour	0:46	0:49
+O	pot	0
+S	contains	{olive oil,rice,garlic,water}
+S	on	[stove]
+O	water	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{olive oil,rice,garlic,water}
+S	on	[stove]
+M	cook	0:49	0:51
+O	pot	0
+S	contains	{olive oil,rice,garlic,water}
+S	on	[stove]
+//
+O	pot	0
+S	contains	{olive oil,rice,garlic,water}
+S	on	[stove]
+O	bowl	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	pour	0:51	0:53
+O	pot	0
+S	contains	{olive oil,rice,garlic,water,salt}
+S	on	[stove]
+O	salt	1
+S	granulated
+S	in	[pot]
+//
+O	pot	0
+S	contains	{olive oil,rice,garlic,water,salt}
+S	on	[stove]
+O	bowl	1
+S	contains	{lime zest}
+O	lime zest	1
+S	in	[bowl]
+M	scrape	0:55	1:00
+O	pot	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest}
+S	on	[stove]
+O	lime zest	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest}
+S	on	[stove]
+O	rice	0
+S	toasted
+S	in	[pot]
+M	cook	1:07	1:12
+O	pot	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest}
+S	on	[stove]
+O	rice	0
+S	partly cooked
+S	in	[pot]
+//
+O	pot	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest}
+S	on	[stove]
+O	pot lid	1
+M	cover	1:13	1:16
+O	pot	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest}
+S	covered
+S	on	[stove]
+O	pot lid	1
+S	on	[pan]
+//
+O	stove	0
+S	on
+S	with	[pot]
+O	pot	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest}
+S	covered
+S	on	[stove]
+O	rice	0
+S	partly cooked
+S	in	[pot]
+M	cook	Assumed	Assumed
+O	pot	0
+S	contains	{rice}
+S	covered
+S	on	[stove]
+O	rice	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest}
+S	cooked
+S	in	[pot]
+//
+O	pot	0
+S	contains	{rice}
+S	covered
+S	on	[stove]
+O	pot lid	1
+S	on	[pan]
+M	uncover	Assumed	Assumed
+O	pot	0
+S	contains	{rice}
+S	on	[stove]
+O	pot lid	1
+//
+O	stove	0
+S	on
+S	with	[pot]
+M	turn off	1:18	1:21
+O	stove	0
+S	off
+S	with	[pot]
+//
+O	pot	0
+S	contains	{rice}
+S	on	[stove]
+O	rice	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest}
+S	cooked
+S	in	[pot]
+O	fork	1
+M	stir	1:28	1:36
+O	rice	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest}
+S	fluffed
+S	in	[pot]
+//
+O	pot	0
+S	contains	{rice}
+S	on	[stove]
+O	rice	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest}
+S	fluffed
+S	in	[pot]
+O	bowl	1
+S	contains	{lime juice}
+O	lime juice	1
+S	in	[bowl]
+M	pour	1:37	1:41
+O	rice	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest,lime juice}
+S	cooked
+S	in	[pot]
+O	lime juice	1
+S	in	[pot]
+//
+O	cutting board	0
+S	contains	{cilantro}
+O	cilantro	1
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	chop	Assumed	Assumed
+O	cilantro	1
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{cilantro}
+O	cilantro	1
+S	chopped
+S	on	[cutting board]
+O	measuring cup	1
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	measuring cup	1
+S	contains	{cilantro}
+O	cilantro	1
+S	chopped
+S	in	[measuring cup]
+//
+O	pot	0
+S	contains	{rice}
+S	on	[stove]
+O	measuring cup	1
+S	contains	{cilantro}
+O	cilantro	1
+S	chopped
+S	in	[measuring cup]
+O	rice	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest,lime juice}
+S	cooked
+S	in	[pot]
+M	pour	1:43	1:47
+O	rice	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest,lime juice,cilantro}
+S	cooked
+S	in	[pot]
+O	cilantro	1
+S	chopped
+S	in	[pot]
+//
+O	pot	0
+S	contains	{rice}
+S	on	[stove]
+O	rice	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest,lime juice,cilantro}
+S	cooked
+S	in	[pot]
+O	spoon	1
+M	stir	1:48	1:59
+O	pot	0
+S	contains	{cilantro-lime rice}
+O	cilantro-lime rice	0
+S	contains	{olive oil,rice,garlic,water,salt,lime zest,cilantro}
+S	in	[pot]
+//
+O	pot	1
+S	contains	{cilantro-lime rice}
+O	cilantro-lime rice	1
+S	contains	{olive oil,rice,garlic,water,salt,lime zest,cilantro}
+S	in	[pot]
+O	plate	0
+S	empty
+O	spoon	1
+M	scoop and pour	Assumed	Assumed
+O	plate	0
+S	contains	{cilantro-lime rice}
+O	cilantro-lime rice	1	19
+S	contains	{olive oil,rice,garlic,water,salt,lime zest,cilantro}
+S	on	[plate]
+//

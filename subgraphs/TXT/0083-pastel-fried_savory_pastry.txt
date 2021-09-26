@@ -1,0 +1,831 @@
+# Source:	https://www.youtube.com/watch?v=dUzvULm8tI0
+//
+O	garlic	1
+S	clove
+S	in	[bowl]
+M	peel	Assumed	Assumed
+O	garlic	1
+S	clove
+S	peeled
+S	in	[bowl]
+//
+O	cutting board	0
+S	empty
+S	on	[surface]
+O	garlic	1
+S	clove
+S	peeled
+S	in	[bowl]
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{garlic}
+S	on	[surface]
+O	garlic	1
+S	clove
+S	peeled
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{garlic}
+S	on	[surface]
+O	garlic	1
+S	clove
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	chop	Assumed	Assumed
+O	garlic	1
+S	minced
+S	peeled
+S	on	[cutting board]
+O	knife	1
+//
+O	garlic	1
+S	minced
+S	peeled
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{garlic}
+S	on	[surface]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{garlic}
+O	garlic	1
+S	minced
+S	peeled
+S	in	[bowl]
+//
+O	cutting board	0
+S	empty
+S	on	[surface]
+O	green chilli	1
+S	whole
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{green chilli}
+S	on	[surface]
+O	green chilli	1
+S	whole
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{green chilli}
+S	on	[surface]
+O	green chilli	1
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	slice	Assumed	Assumed
+O	green chilli	1
+S	sliced
+S	on	[cutting board]
+O	knife	1
+//
+O	stove	0
+S	off
+M	turn on	Assumed	Assumed
+O	stove	0
+S	on
+//
+O	cooking pan	0
+S	empty
+O	stove	0
+S	on
+M	pick-and-place	Assumed	Assumed
+O	cooking pan	0
+S	heated
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pan]
+//
+O	cooking pan	0
+S	heated
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pan]
+O	bottle	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	in	[bottle]
+M	pour	Assumed	Assumed
+O	cooking pan	0
+S	contains	{vegetable oil}
+S	on	[stove]
+O	vegetable oil	0
+S	in	[pan]
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	cooking pan	0
+S	contains	{vegetable oil}
+S	on	[stove]
+O	garlic	1
+S	minced
+S	peeled
+S	in	[bowl]
+O	bowl	1
+S	contains	{garlic}
+O	green chilli	1
+S	sliced
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{green chilli}
+M	pour	Assumed	Assumed
+O	cooking pan	0
+S	contains	{vegetable oil,garlic,green chilli}
+S	on	[stove]
+O	garlic	1
+S	minced
+S	peeled
+S	in	[cooking pan]
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	cooking pan	0
+S	contains	{vegetable oil,garlic,green chilli}
+S	on	[stove]
+O	turner	1
+M	stir	0:16	0:17
+O	cooking pan	0
+S	contains	{vegetable oil,garlic,green chilli}
+S	on	[stove]
+O	turner	1
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	cooking pan	0
+S	contains	{vegetable oil,garlic,green chilli}
+S	on	[stove]
+O	packet	1
+S	contains	{carrot}
+O	carrot	1
+S	diced
+S	in	{packet}
+O	packet	1
+S	contains	{potato}
+O	potato	1
+S	diced
+S	in	{packet}
+O	water	1
+S	in	[cup]
+O	cup	1
+S	contains	{water}
+M	pour	0:19	0:23
+O	cooking pan	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water}
+S	on	[stove]
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	cooking pan	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water}
+S	on	[stove]
+O	turner	1
+M	cook and stir	0:32	0:37
+O	cooking pan	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water}
+S	on	[stove]
+O	turner	1
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	cooking pan	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water}
+S	on	[stove]
+O	salt	1
+S	granulated
+S	in	[container]
+O	turmeric powder	1
+S	in	[container]
+O	cayenne pepper	1
+S	in	[container]
+O	turner	1
+M	pour and stir	0:44	0:57
+O	cooking pan	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S	on	[stove]
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	cooking pan	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S	on	[stove]
+O	pan cover	1
+M	pick-and-place	1:09	1:10
+O	cooking pan	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S	on	[stove]
+S	covered
+O	pan cover	1
+S	on	[cooking pan]
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	cooking pan	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S	on	[stove]
+S	covered
+O	pan cover	0
+S	on	[cooking pan]
+M	cook	Assumed	Assumed
+O	vegetable mix	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S	softened
+S	in	[cooking pan]
+O	cooking pan	0
+S	contains	{vegetable mix}
+S	on	[stove]
+S	covered
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	vegetable mix	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S	softened
+S	in	[cooking pan]
+O	cooking pan	0
+S	contains	{vegetable mix}
+S	on	[stove]
+S	covered
+O	pan cover	0
+S	on	[cooking pan]
+M	remove	Assumed	Assumed
+O	cooking pan	0
+S	contains	{vegetable mix}
+S	on	[stove]
+O	pan cover	0
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	turner	1
+O	spring onion	1
+S	chopped
+S	in	[bowl]
+O	vegetable mix	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper}
+S	softened
+S	in	[cooking pan]
+O	cooking pan	0
+S	contains	{vegetable mix}
+S	on	[stove]
+M	pour and stir	1:15	1:30
+O	vegetable mix	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion}
+S	softened
+S	in	[cooking pan]
+//
+O	bag	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bag]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bowl]
+//
+O	container	1
+S	contains	{milk}
+O	milk	1
+S	in	[container]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{milk}
+O	milk	1
+S	in	[bowl]
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	turner	1
+O	cooking pan	0
+S	contains	{vegetable mix}
+S	on	[stove]
+O	vegetable mix	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion}
+S	softened
+S	in	[cooking pan]
+O	bowl	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bowl]
+O	bowl	0
+S	contains	{milk}
+O	milk	1
+S	in	[bowl]
+M	pour and stir	1:31	2:00
+O	savory filling	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	softened
+S	in	[cooking pan]
+O	flour	1
+S	powder
+S	in	[cooking pan]
+O	milk	1
+S	in	[cooking pan]
+O	turner	1
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	cooking pan	0
+S	contains	{savory filling}
+S	on	[stove]
+O	savory filling	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	softened
+S	in	[cooking pan]
+M	remove	Assumed	Assumed
+O	stove	0
+S	off
+O	cooking pan	0
+S	contains	{savory filling}
+O	savory filling	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	softened
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	contains	{savory filling}
+O	savory filling	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	softened
+S	in	[cooking pan]
+M	cool down	Assumed	Assumed
+O	savory filling	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	softened
+S	warm
+S	in	[cooking pan]
+//
+O	bag	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bag]
+O	container	0
+S	empty
+M	pour	Assumed	Assumed
+O	container	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[container]
+//
+O	butter	1
+S	stick
+S	wrapped
+M	remove	Assumed	Assumed
+O	wrapping paper	0
+O	butter	1
+S	stick
+//
+O	butter	1
+S	stick
+O	spoon	1
+S	empty
+M	scoop	Assumed	Assumed
+O	butter	1
+S	stick
+S	on	[spoon]
+O	spoon	1
+S	contains	{butter}
+//
+O	container	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[container]
+O	butter	1
+S	stick
+S	on	[spoon]
+O	spoon	0
+S	contains	{butter}
+O	fork	1
+S	empty
+M	scrape	2:13	2:16
+O	butter	1
+S	stick
+S	in	[container]
+O	container	0
+S	contains	{flour,butter}
+O	fork	1
+//
+O	container	0
+S	contains	{flour,butter}
+O	salt	1
+S	granulated
+S	in	[bowl]
+O	bowl	1
+S	contains	{salt}
+O	garlic powder	1
+S	in	[bowl]
+O	bowl	1
+S	contains	{garlic powder}
+M	pour	2:20	2:23
+O	container	1
+S	contains	{garlic powder,salt,garlic powder,}
+O	salt	1
+S	granulated
+S	in	[container]
+O	garlic powder	1
+S	in	[container]
+//
+O	container	0
+S	contains	{garlic powder,salt,garlic powder,}
+O	spoon	1
+S	contains	{butter}
+M	mix	2:25	2:34
+O	container	0
+S	contains	{garlic powder,salt,garlic powder,}
+//
+O	container	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	{olive oil}
+O	spoon	0
+M	pour	Assumed	Assumed
+O	spoon	0
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[spoon]
+//
+O	container	0
+S	contains	{garlic powder,salt,garlic powder,}
+O	olive oil	1
+S	in	[spoon]
+M	pour	2:36	2:38
+O	container	0
+S	contains	{garlic powder,salt,garlic powder,olive oil}
+O	olive oil	1
+S	in	[container]
+//
+O	container	0
+S	contains	{garlic powder,salt,garlic powder,olive oil}
+O	olive oil	1
+S	in	[container]
+O	spoon	0
+M	mix	2:39	2:48
+O	container	0
+S	contains	{garlic powder,salt,garlic powder,olive oil}
+//
+O	egg	1
+S	uncracked
+O	bowl	0
+S	empty
+O	egg white and yolk	1
+S	in	[bowl]
+O	bowl	0
+S	contains	{egg white and yolk}
+//
+O	egg white and yolk	1
+S	in	[bowl]
+O	bowl	0
+S	contains	{egg white and yolk}
+O	container	0
+S	contains	{garlic powder,salt,garlic powder,olive oil}
+M	pour	2:49	2:50
+O	container	0
+S	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk}
+O	egg white and yolk	1
+S	in	[container]
+//
+O	container	0
+S	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk}
+O	egg white and yolk	1
+S	in	[container]
+O	spoon	1
+M	mix	2:51	3:04
+O	container	0
+S	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk}
+//
+O	container	0
+S	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk}
+O	spoon	1
+S	empty
+O	water	1
+S	in	[bowl]
+O	bowl	1
+S	contains	{water}
+M	scoop and pour	3:11	3:15
+O	container	0
+S	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk,water}
+O	water	1
+S	in	[container]
+O	spoon	1
+//
+O	container	0
+S	contains	{garlic powder,salt,garlic powder,olive oil,egg white and yolk,water}
+O	fork	1
+M	mix	3:16	3:19
+O	container	0
+S	contains	{dough}
+O	dough	0
+S	in	[container]
+O	fork	1
+//
+O	container	1
+S	contains	{dough}
+O	dough	1
+S	in	[container]
+O	table	0
+S	empty
+M	pour	Assumed	Assumed
+O	table	0
+S	contains	{dough}
+O	dough	1
+S	on	[table]
+//
+O	dough	1
+S	on	[table]
+M	knead	3:33	3:57
+O	dough	1
+S	kneaded
+S	on	[table]
+//
+O	dough	1
+S	kneaded
+S	on	[table]
+M	shape	3:55	3:57
+O	dough	1
+S	shaped
+S	on	[table]
+//
+O	cutter	1
+O	dough	1
+S	shaped
+S	on	[table]
+M	cut	3:58	4:09
+O	dough	1
+S	cut in pieces
+S	on	[table]
+O	cutter	1
+//
+O	table	0
+S	contains	{dough}
+O	dough	1
+S	cut in pieces
+S	on	[table]
+M	shape	4:16	4:27
+O	dough	1
+S	shaped
+S	on	[table]
+//
+O	table	0
+S	contains	{dough}
+O	dough	1
+S	shaped
+S	on	[table]
+O	rolling pin	1
+M	roll	4:31	4:38
+O	dough	1
+S	flattened
+S	on	[table]
+//
+O	savory filling	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	softened
+S	warm
+S	in	[cooking pan]
+O	spoon	1
+S	empty
+M	scoop	Assumed	Assumed
+O	savory filling	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	softened
+S	warm
+S	on	[spoon]
+O	spoon	1
+S	contains	{savory filling}
+//
+O	table	0
+S	contains	{dough}
+O	dough	1
+S	flattened
+S	on	[table]
+O	savory filling	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	softened
+S	warm
+S	on	[spoon]
+O	spoon	1
+S	contains	{savory filling}
+M	pour	4:40	4:42
+O	dough	1
+S	contains	{savory filling}
+S	flattened
+S	on	[table]
+O	savory filling	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	softened
+S	warm
+S	on	[dough]
+//
+O	table	0
+S	contains	{dough}
+O	dough	1
+S	contains	{savory filling}
+S	flattened
+S	on	[table]
+O	savory filling	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	softened
+S	warm
+S	on	[dough]
+M	fold	4:45	4:49
+O	dough	1
+S	contains	{savory filling}
+S	folded
+S	on	[table]
+O	savory filling	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	softened
+S	warm
+S	in	[dough]
+//
+O	table	0
+S	contains	{dough}
+O	savory filling	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	softened
+S	warm
+S	in	[dough]
+O	dough	1
+S	contains	{savory filling}
+S	folded
+S	on	[table]
+O	cutter	1
+M	cut off ends	4:52	4:54
+O	dough	1
+S	contains	{savory filling}
+S	shaped
+S	on	[table]
+//
+O	table	0
+S	contains	{dough}
+O	savory filling	0
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	softened
+S	warm
+S	in	[dough]
+O	dough	1
+S	contains	{savory filling}
+S	shaped
+S	on	[table]
+M	fold and pinch	4:55	5:27
+O	savory pastry	0
+S	uncook
+S	on	[table]
+O	table	0
+S	contains	{savory pastry}
+//
+O	stove	0
+S	off
+M	turn on	Assumed	Assumed
+O	stove	0
+S	on
+//
+O	pot	0
+S	empty
+O	stove	0
+S	on
+M	pick-and-place	Assumed	Assumed
+O	pot	0
+S	heated
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pot]
+//
+O	pot	0
+S	heated
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pot]
+O	oil	1
+S	in	[container]
+O	container	0
+S	contains	{oil}
+M	pour	Assumed	Assumed
+O	pot	0
+S	heated
+S	on	[stove]
+S	contains	{oil}
+O	oil	1
+S	in	[pot]
+//
+O	savory pastry	1
+S	uncook
+S	on	[table]
+O	turner	0
+M	pick-and-place	Assumed	Assumed
+O	savory pastry	1
+S	uncook
+S	on	[turner]
+O	turner	0
+S	contains	{savory pastry}
+//
+O	stove	0
+S	on
+S	with	[pot]
+O	pot	0
+S	heated
+S	on	[stove]
+S	contains	{oil}
+O	oil	1
+S	in	[pot]
+O	savory pastry	1
+S	uncook
+S	on	[turner]
+O	turner	1
+S	contains	{savory pastry}
+M	pick-and-place	6:35	6:37
+O	savory pastry	1
+S	uncook
+S	in	[pot]
+O	pot	0
+S	heated
+S	on	[stove]
+S	contains	{oil,savory pastry}
+O	turner	1
+S	empty
+//
+O	stove	0
+S	on
+S	with	[pot]
+O	pot	0
+S	heated
+S	on	[stove]
+S	contains	{oil,savory pastry}
+O	savory pastry	1
+S	uncook
+S	in	[pot]
+O	tongs	1
+S	empty
+M	fry and flip	6:48	7:05
+O	savory pastry	1
+S	fried
+S	in	[pot]
+//
+O	napkin	1
+O	plate	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	napkin	1
+S	on	[plate]
+O	plate	0
+S	contains	{napkin}
+//
+O	stove	0
+S	on
+S	with	[pot]
+O	pot	0
+S	heated
+S	on	[stove]
+S	contains	{oil,savory pastry}
+O	tongs	1
+S	empty
+O	savory pastry	1
+S	fried
+S	in	[pot]
+O	napkin	1
+S	on	[plate]
+O	plate	0
+S	contains	{napkin}
+M	pick-and-place	7:06	7:11
+O	savory pastry	1	6
+S	fried
+S	contains	{vegetable oil,garlic,green chilli,carrot,potato,water,salt,turmeric powder,cayenne pepper,spring onion,flour,milk}
+S	on	[napkin]
+O	napkin	1
+S	on	[plate]
+S	contains	{savory pastry}
+O	tongs	1
+//
+O	stove	0
+S	on
+M	turn off	Assumed	Assumed
+O	stove	0
+S	off
+//

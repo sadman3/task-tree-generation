@@ -1,0 +1,291 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0021-watermelon-strawberry-passion_smoothie.mp4
+# Source:	https://www.youtube.com/watch?v=ZGzrAQARXsc
+//
+O	pot	1
+S	on	[stove]
+S	hot
+S	contains	{water}
+O	water	0
+S	liquid
+S	boiling
+S	in	[pot]
+O	drinking glass	0
+S	empty
+M	pour	<Assumed>
+O	drinking glass	0
+S	contains	{water}
+O	water	1
+S	liquid
+S	hot
+S	in	[drinking glass]
+//
+O	cutting board	0
+O	watermelon	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{watermelon}
+O	watermelon	1
+S	on	[cutting board]
+S	whole
+//
+O	watermelon	0
+S	on	[cutting board]
+S	whole
+O	knife	1
+M	slice	<Assumed>
+O	watermelon	0
+S	sliced
+S	on	[cutting board]
+//
+O	watermelon	0
+S	sliced
+S	on	[cutting board]
+O	knife	1
+M	chop	<Assumed>
+O	watermelon	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{watermelon}
+O	watermelon	1
+S	chopped
+S	on	[cutting board]
+O	plastic bag	0
+S	opened
+S	empty
+M	insert	<Assumed>
+O	cutting board	0
+O	plastic bag	0
+S	contains	{watermelon}
+O	watermelon	1
+S	chopped
+S	in	[plastic bag]
+//
+O	plastic bag	1
+S	contains	{watermelon}
+O	refrigerator	0
+S	on
+M	pick-and-place	<Assumed>
+O	refrigerator	0
+S	with	[plastic bag]
+S	on
+O	plastic bag	1
+S	contains	{watermelon}
+S	in	[refrigerator]
+//
+O	refrigerator	0
+S	with	[plastic bag]
+S	on
+O	plastic bag	1
+S	contains	{watermelon}
+S	in	[refrigerator]
+O	watermelon	1
+S	chopped
+S	in	[plastic bag]
+M	freeze	<Assumed>
+O	watermelon	1
+S	frozen
+S	chopped
+S	in	[plastic bag]
+//
+O	refrigerator	0
+S	with	[plastic bag]
+S	on
+O	plastic bag	1
+S	contains	{watermelon}
+S	in	[refrigerator]
+M	take out	<Assumed>
+O	refrigerator	0
+S	on
+O	plastic bag	1
+S	contains	{watermelon}
+//
+O	drinking glass	0
+S	contains	{water}
+O	packet	0
+S	contains	{tea bag}
+O	tea bag	1
+S	dried
+S	in	[packet]
+M	insert	<Assumed>
+O	drinking glass	0
+S	contains	{tea bag,water}
+O	tea bag	1
+S	soaked
+S	in	[drinking glass]
+O	packet	1
+S	empty
+//
+O	drinking glass	0
+S	contains	{tea bag,water}
+O	tea bag	0
+S	soaked
+S	in	[drinking glass]
+O	water	0
+S	liquid
+S	hot
+S	in	[drinking glass]
+O	tea bag	1
+S	in	[packet]
+M	brew	<Assumed>
+O	drinking glass	0
+S	contains	{tea,tea bag}
+O	tea	0
+S	liquid
+S	in	[drinking glass]
+//
+O	drinking glass	0
+S	contains	{tea,tea bag}
+O	tea bag	1
+S	soaked
+S	in	[drinking glass]
+M	remove	<Assumed>
+O	drinking glass	0
+S	contains	{tea}
+O	tea bag	1
+S	soaked
+S	in	[drinking glass]
+//
+O	blender cup	0
+S	empty
+O	plastic bag	1
+S	contains	{watermelon}
+O	watermelon	1
+S	frozen
+S	chopped
+S	in	[plastic bag]
+O	plastic bag	1
+S	contains	{strawberry}
+O	strawberry	1
+S	frozen
+S	in	[plastic bag]
+O	drinking glass	0
+S	contains	{tea}
+O	tea	1
+S	liquid
+S	in	[drinking glass]
+M	pour*	<0:46-0:48,0:52-0:54,1:04-1:07>
+O	blender cup	0
+S	contains	{strawberry,tea,watermelon}
+O	watermelon	1
+S	frozen
+S	in	[blender cup]
+S	chopped
+O	tea	1
+S	liquid
+S	in	[blender cup]
+O	drinking glass	1
+S	empty
+//
+O	blender cup	0
+S	contains	{strawberry,tea,watermelon}
+O	bowl	1
+S	contains	{sugar syrup}
+O	sugar syrup	1
+S	liquid
+S	in	[bowl]
+O	spoon	1
+S	empty
+M	scoop and pour	<1:08-1:10>
+O	blender cup	0
+S	contains	{strawberry,sugar syrup,tea,watermelon}
+O	sugar syrup	1
+S	liquid
+S	in	[blender cup]
+//
+O	blender cup	0
+S	contains	{strawberry,sugar syrup,tea,watermelon}
+O	blender lid	1
+M	cover	<Assumed>
+O	blender cup	1
+S	covered	[blender lid]
+S	contains	{strawberry,sugar syrup,tea,watermelon}
+O	blender lid	1
+S	on	[blender cup]
+//
+O	blender cup	1
+S	covered	[blender lid]
+S	contains	{strawberry,sugar syrup,tea,watermelon}
+O	blender	0
+S	off (ready)
+M	attach	<1:15-1:16>
+O	blender cup	1
+S	covered	[blender lid]
+S	contains	{strawberry,sugar syrup,tea,watermelon}
+S	attached to	[blender]
+O	blender	0
+S	with	[blender cup]
+//
+O	blender	0
+S	with	[blender cup]
+O	blender cup	0
+S	covered	[blender lid]
+S	contains	{strawberry,sugar syrup,tea,watermelon}
+S	attached to	[blender]
+O	watermelon	1
+S	frozen
+S	in	[blender cup]
+S	chopped
+O	tea	1
+S	in	[blender cup]
+O	sugar syrup	1
+S	liquid
+S	in	[blender cup]
+M	blend	<1:16-1:20>
+O	smoothie	0
+S	thick liquid
+S	blended
+S	contains	{strawberry,sugar syrup,tea,watermelon}
+S	in	[blender cup]
+O	blender cup	1
+S	covered	[blender lid]
+S	contains	{smoothie}
+S	attached to	[blender]
+//
+O	blender cup	1
+S	covered	[blender lid]
+S	contains	{smoothie}
+S	attached to	[blender]
+O	blender	0
+S	with	[blender cup]
+M	detach	<Assumed>
+O	blender cup	1
+S	covered	[blender lid]
+S	contains	{smoothie}
+O	blender	0
+S	off
+//
+O	blender cup	0
+S	covered	[blender lid]
+S	contains	{smoothie}
+O	blender lid	1
+S	on	[blender cup]
+M	uncover	<Assumed>
+O	blender cup	0
+S	contains	{smoothie}
+O	blender lid	1
+//
+O	blender cup	0
+S	contains	{smoothie}
+O	smoothie	0
+S	blended
+S	thick liquid
+S	contains	{strawberry,sugar syrup,tea,watermelon}
+S	in	[blender cup]
+O	drinking glass	0
+S	empty
+O	spoon	1
+M	scoop and pour	<1:26-1:35>
+O	drinking glass	0
+S	contains	{smoothie}
+O	smoothie	0	9
+S	blended
+S	thick liquid
+S	contains	{strawberry,sugar syrup,tea,watermelon}
+S	in	[drinking glass]
+S	ready
+O	blender cup	1
+S	empty
+//

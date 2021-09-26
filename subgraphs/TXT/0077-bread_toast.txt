@@ -1,0 +1,93 @@
+O	bread	1
+S	on	[plate]
+O	butter	1
+S	in	[bowl]
+M	spread	0:13	0:40
+O	bread	0
+S	on	[plate]
+S	contains	{butter}
+//
+O	stove	0
+S	off
+M	turn on	Assumed	Assumed
+O	stove	0
+S	on
+//
+O	stove	0
+S	on
+O	cooking pan	1
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	cooking pan	1
+S	empty
+S	on	[stove]
+//
+O	cooking pan	1
+S	empty
+S	on	[stove]
+O	bread	1
+S	on	[plate]
+S	contains	{butter}
+M	pick-and-place	0:47	0:50
+O	cooking pan	1
+S	contains	{bread,butter}
+S	on	[stove]
+O	bread	1
+S	contains	{butter}
+S	on	[cooking pan]
+//
+O	cooking pan	1
+S	contains	{bread,butter}
+S	on	[stove]
+O	bread	1
+S	contains	{butter}
+S	on	[cooking pan]
+O	sugar	1
+S	granulated
+M	spread	0:53	1:04
+O	cooking pan	1
+S	contains	{bread,butter,sugar}
+S	on	[stove]
+O	bread	1
+S	contains	{butter,sugar}
+S	on	[cooking pan]
+//
+O	cooking pan	1
+S	contains	{bread,butter,sugar}
+S	on	[stove]
+O	bread	1
+S	contains	{butter,sugar}
+S	on	[cooking pan]
+O	milk	1
+S	in	[cup]
+M	pour*	1:06	1:12
+O	cooking pan	1
+S	contains	{bread,butter,sugar,milk}
+S	on	[stove]
+O	bread	1
+S	contains	{butter,sugar,milk}
+S	on	[cooking pan]
+//
+O	cooking pan	1
+S	contains	{bread,butter,sugar,milk}
+S	on	[stove]
+O	bread	1
+S	contains	{butter,sugar,milk}
+S	on	[cooking pan]
+M	flip and stack	1:06	1:12
+O	bread	1
+S	contains	{butter,sugar,milk}
+S	on	[cooking pan]
+S	toasted
+//
+O	bread	1
+S	contains	{butter,sugar,milk}
+S	on	[cooking pan]
+S	toasted
+O	milk	1
+S	in	[cup]
+M	pour	1:32	1:35]
+O	bread toast	1	0
+S	contains	{bread,butter,sugar,milk}
+S	on	[cooking pan]
+//

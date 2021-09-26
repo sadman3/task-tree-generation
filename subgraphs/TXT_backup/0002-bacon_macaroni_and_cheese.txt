@@ -1,0 +1,548 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0002-bacon_macaroni_and_gruyere.mp4
+# Source:	https://www.youtube.com/watch?v=uwdx1voIcq8
+//
+O143	faucet	1
+S91	off (ready)
+O241	measuring cup	0
+S46	empty
+M61	pick-and-place	<Assumed>
+O241	measuring cup	0
+S7	below	[faucet]
+S46	empty
+//
+O143	faucet	1
+S91	off (ready)
+M117	turn on	<Assumed>
+O143	faucet	1
+S93	on
+O414	water	0
+S58	from	[faucet]
+S81	liquid
+//
+O143	faucet	1
+S93	on
+O414	water	0
+S58	from	[faucet]
+S81	liquid
+O241	measuring cup	0
+S7	below	[faucet]
+S46	empty
+M36	fill	<Assumed>
+O241	measuring cup	0
+S7	below	[faucet]
+S24	contains	{water}
+O414	water	0
+S72	in	[measuring cup]
+S81	liquid
+//
+O143	faucet	1
+S93	on
+O414	water	0
+S58	from	[faucet]
+S81	liquid
+M116	turn off	<Assumed>
+O143	faucet	1
+S90	off
+//
+O241	measuring cup	1
+S46	empty
+O370	stove	0
+S91	off (ready)
+M61	pick-and-place	<Assumed>
+O306	pot	1
+S93	on	[stove]
+S46	empty
+O370	stove	0
+S91	off (ready)
+S156	with	[pot]
+//
+O370	stove	0
+S91	off (ready)
+S156	with	[pot]
+M117	turn on	<Assumed>
+O370	stove	0
+S93	on
+S156	with	[pot]
+//
+O306	pot	0
+S93	on	[stove]
+S46	empty
+O241	measuring cup	1
+S7	below	[faucet]
+S24	contains	{water}
+O414	water	1
+S81	liquid
+S72	in	[measuring cup]
+M65	pour	<Assumed>
+O306	pot	0
+S93	on	[stove]
+S24	contains	{water}
+O414	water	1
+S81	liquid
+S72	in	[pot]
+//
+O306	pot	1
+S93	on	[stove]
+S24	contains	{water}
+O370	stove	0
+S93	on
+S156	with	[pot]
+M5	boil	<Assumed>
+O306	pot	1
+S93	on	[stove]
+S71	hot
+S24	contains	{water}
+O414	water	0
+S81	liquid
+S11	boiling
+S72	in	[pot]
+//
+O306	pot	0
+S93	on	[stove]
+S71	hot
+S24	contains	{water}
+O350	shaker	1
+S24	contains	{salt}
+O336	salt	1
+S63	granulated
+S72	in	[shaker]
+M101	sprinkle	<Assumed>
+O306	pot	0
+S93	on	[stove]
+S71	hot
+S24	contains	{salt,water}
+O336	salt	1
+S63	granulated
+S72	in	[pot]
+//
+O306	pot	0
+S93	on	[stove]
+S71	hot
+S24	contains	{salt,water}
+O210	jar	1
+S24	contains	{macaroni}
+O229	macaroni	1
+S72	in	[jar]
+S109	raw
+M65	pour	<0:26,0:40>
+O306	pot	0
+S93	on	[stove]
+S71	hot
+S24	contains	{macaroni,salt,water}
+O229	macaroni	1
+S72	in	[pot]
+S109	raw
+//
+O306	pot	0
+S93	on	[stove]
+S71	hot
+S24	contains	{macaroni,salt,water}
+O229	macaroni	1
+S72	in	[pot]
+S109	raw
+M16	cook	<Assumed>
+O229	macaroni	0
+S72	in	[pot]
+S25	cooked
+//
+O121	cutting board	0
+S46	empty
+O329	rosemary	1
+S138	stem
+M61	pick-and-place	<0:55,0:57>
+O121	cutting board	0
+S24	contains	{rosemary}
+O329	rosemary	1
+S93	on	[cutting board]
+S138	stem
+//
+O329	rosemary	1
+S93	on	[cutting board]
+S138	stem
+O217	knife	1
+M12	chop	<1:01,1:28>
+O329	rosemary	1
+S93	on	[cutting board]
+S17	chopped
+//
+O241	measuring cup	1
+S46	empty
+O370	stove	0
+S91	off (ready)
+M61	pick-and-place	<Assumed>
+O306	pot	1
+S93	on	[stove]
+S46	empty
+O370	stove	0
+S91	off (ready)
+S156	with	[skillet]
+//
+O370	stove	0
+S91	off (ready)
+S156	with	[skillet]
+M117	turn on	<Assumed>
+O370	stove	0
+S93	on
+S156	with	[skillet]
+//
+O306	pot	0
+S93	on	[stove]
+S46	empty
+O370	stove	0
+S93	on
+S156	with	[skillet]
+M47	heat	<Assumed>
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S46	empty
+//
+O33	bottle	1
+S24	contains	{heavy cream}
+O203	heavy cream	1
+S30	creamy
+S72	in	[bottle]
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S46	empty
+M65	pour	<1:30,1:37>
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{heavy cream}
+O203	heavy cream	0
+S30	creamy
+S72	in	[skillet]
+//
+O121	cutting board	0
+S24	contains	{rosemary}
+O329	rosemary	1
+S17	chopped
+S93	on	[cutting board]
+O346	scraper	1
+M84	scoop	<1:46,1:48>
+O346	scraper	1
+S24	contains	{rosemary}
+O329	rosemary	1
+S17	chopped
+S93	on	[scraper]
+O121	cutting board	0
+S46	empty
+//
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{heavy cream}
+O346	scraper	1
+S24	contains	{rosemary}
+O329	rosemary	1
+S17	chopped
+S93	on	[scrapper]
+M65	pour	<1:49,1:50>
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{heavy cream,rosemary}
+O329	rosemary	0
+S17	chopped
+S72	in	[skillet]
+//
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{heavy cream,rosemary}
+O34	bowl	1
+S24	contains	{salt}
+O336	salt	1
+S72	in	[bowl]
+S63	granulated
+M101	sprinkle	<1:50,1:53>
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{heavy cream,rosemary,salt}
+O336	salt	1
+S72	in	[skillet]
+S63	granulated
+//
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{heavy cream,rosemary,salt}
+O294	pepper mill	1
+S24	contains	{black pepper}
+O22	black pepper	1
+S155	whole
+S72	in	[pepper mill]
+M44	grind	<1:57,2:04>
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{black pepper,heavy cream,rosemary,salt}
+O22	black pepper	0
+S66	ground
+S72	in	[skillet]
+//
+O121	cutting board	0
+S46	empty
+O192	gruyere	1
+S156	with	[rind]
+M61	pick-and-place	<2:16,2:17>
+O121	cutting board	0
+S24	contains	{gruyere}
+O192	gruyere	1
+S93	on	[cutting board]
+S156	with	[rind]
+//
+O192	gruyere	1
+S93	on	[cutting board]
+S156	with	[rind]
+O217	knife	1
+M23	cut	<2:17,2:22>
+O192	gruyere	0
+S93	on	[cutting board]
+S153	wedge
+//
+O192	gruyere	1
+S93	on	[cutting board]
+S153	wedge
+O175	grater	0
+M43	grate	<2:33,2:38>
+O192	gruyere	1
+S93	on	[cutting board]
+S64	grated
+//
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{black pepper,heavy cream,rosemary,salt}
+O203	heavy cream	0
+S30	creamy
+S72	in	[skillet]
+M94	simmer	<Assumed>
+O424	white sauce	0
+S24	contains	{black pepper,heavy cream,rosemary,salt}
+S72	in	[skillet]
+S144	thick liquid
+//
+O277	packet	1
+S24	contains	{bacon}
+O5	bacon	1
+S72	in	[packet]
+S130	sliced
+S109	raw
+O121	cutting board	0
+M61	pick-and-place	<Assumed>
+O121	cutting board	0
+S24	contains	{bacon}
+O5	bacon	1
+S130	sliced
+S109	raw
+S93	on	[cutting board]
+//
+O5	bacon	1
+S130	sliced
+S109	raw
+S93	on	[cutting board]
+O217	knife	1
+M12	chop	<Assumed>
+O5	bacon	1
+S17	chopped
+S109	raw
+S93	on	[cutting board]
+//
+O121	cutting board	0
+S24	contains	{bacon}
+O5	bacon	1
+S17	chopped
+S109	raw
+S93	on	[cutting board]
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S46	empty
+M61	pick-and-place	<Assumed>
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{bacon}
+O5	bacon	0
+S17	chopped
+S72	in	[skillet]
+S109	raw
+//
+O370	stove	0
+S93	on
+S156	with	[skillet]
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{bacon}
+O5	bacon	0
+S17	chopped
+S72	in	[skillet]
+S109	raw
+M42	fry	<Assumed>
+O5	bacon	1
+S17	chopped
+S25	cooked
+S72	in	[skillet]
+//
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{bacon}
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{black pepper,heavy cream,rosemary,salt}
+O5	bacon	1
+S17	chopped
+S72	in	[skillet]
+S25	cooked
+O367	spoon	1
+M86	scoop and pour	<3:12,3:23>
+O355	skillet	0
+S93	on	[stove]
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{bacon,black pepper,heavy cream,rosemary,salt}
+O355	skillet	0
+S93	on	[stove]
+S46	empty
+//
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{bacon,black pepper,heavy cream,rosemary,salt}
+O356	skimmer	1
+O306	pot	0
+S93	on	[stove]
+S24	contains	{macaroni,salt,water}
+O229	macaroni	1
+S72	in	[skimmer]
+S25	cooked
+M86	scoop and pour	<3:31,3:34>
+O356	skimmer	1
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{bacon,black pepper,heavy cream,macaroni,rosemary,salt}
+O229	macaroni	1
+S72	in	[skillet]
+S25	cooked
+//
+O355	skillet	0
+S93	on	[stove]
+S71	hot
+S24	contains	{bacon,black pepper,heavy cream,macaroni,rosemary,salt}
+O229	macaroni	1
+S72	in	[skillet]
+S25	cooked
+O424	white sauce	1
+S24	contains	{black pepper,heavy cream,rosemary,salt}
+S144	thick liquid
+S72	in	[skillet]
+O5	bacon	1
+S17	chopped
+S72	in	[skillet]
+S25	cooked
+M56	mix	<3:38,3:40>
+O285	pasta	1
+S24	contains	{bacon,black pepper,heavy cream,macaroni,rosemary,salt}
+S87	mixed
+S72	in	[skillet]
+//
+O355	skillet	0
+S93	on	[stove]
+S24	contains	{bacon,black pepper,heavy cream,macaroni,rosemary,salt}
+O192	gruyere	1
+S93	on	[cutting board]
+S64	grated
+M61	pick-and-place	<3:46,3:48>
+O355	skillet	0
+S93	on	[stove]
+S24	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+O192	gruyere	0
+S64	grated
+S72	in	[skillet]
+//
+O355	skillet	0
+S93	on	[stove]
+S24	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+O285	pasta	1
+S24	contains	{bacon,black pepper,heavy cream,macaroni,rosemary,salt}
+S87	mixed
+S72	in	[skillet]
+O192	gruyere	0
+S64	grated
+S72	in	[skillet]
+O367	spoon	1
+M56	mix	<3:56,4:04>
+O230	macaroni and cheese	1
+S72	in	[skillet]
+S87	mixed
+S24	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+//
+O355	skillet	0
+S93	on	[stove]
+S24	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+O230	macaroni and cheese	1
+S72	in	[skillet]
+S87	mixed
+S24	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+O367	spoon	1
+O34	bowl	0
+S46	empty
+M86	scoop and pour	<4:21:50,4:24>
+O34	bowl	0
+S24	contains	{macaroni and cheese}
+O230	macaroni and cheese	1
+S72	in	[bowl]
+S87	mixed
+S24	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+O367	spoon	1
+//
+O121	cutting board	0
+S46	empty
+O81	chive	1
+S138	stem
+M61	pick-and-place	<Assumed>
+O121	cutting board	0
+S24	contains	{chive}
+O81	chive	1
+S93	on	[cutting board]
+S138	stem
+//
+O121	cutting board	0
+S24	contains	{chive}
+O81	chive	0
+S93	on	[cutting board]
+S138	stem
+O217	knife	1
+M12	chop	<4:24,4:26>
+O81	chive	0
+S17	chopped
+S93	on	[cutting board]
+//
+O81	chive	1
+S17	chopped
+S93	on	[cutting board]
+O34	bowl	0
+S24	contains	{macaroni and cheese}
+O230	macaroni and cheese	0
+S72	in	[bowl]
+S87	mixed
+S24	contains	{bacon,black pepper,gruyere,heavy cream,macaroni,rosemary,salt}
+M101	sprinkle	<4:26,4:28>
+O81	chive	1
+S17	chopped
+S72	in	[bowl]
+O230	macaroni and cheese	0	13
+S72	in	[bowl]
+S87	mixed
+S110	ready
+S24	contains	{bacon,black pepper,chive,gruyere,heavy cream,macaroni,rosemary,salt}
+//

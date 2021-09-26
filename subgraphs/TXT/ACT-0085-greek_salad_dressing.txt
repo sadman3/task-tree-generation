@@ -1,0 +1,185 @@
+# Source:	https://www.youtube.com/watch?v=9Bl7dbwT2ZM
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/ACT-0085-greek_salad_dressing.mp4
+//
+O	measuring cup	0
+S	empty
+O	bowl	1
+S	contains	{lemon juice}
+O	lemon juice	1
+S	in	[bowl]
+S	juice
+M	pour	<0:31-0:37>
+O	measuring cup	0
+S	contains	{lemon juice}
+O	lemon juice	1
+S	in	[measuring cup]
+//
+O	bowl	0
+S	empty
+O	shaker	1
+S	contains	{oregano}
+O	oregano	1
+S	dried
+S	in	[shaker]
+M	shake	<Assumed>
+O	bowl	0
+S	contains	{oregano}
+O	oregano	1
+S	dried
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{oregano}
+O	shaker	1
+S	contains	{basil}
+O	basil	1
+S	dried
+S	in	[shaker]
+M	shake	<Assumed>
+O	bowl	0
+S	contains	{oregano,basil}
+//
+O	bowl	0
+S	contains	{oregano,basil}
+O	shaker	1
+S	contains	{thyme}
+O	thyme	1
+S	dried
+S	in	[shaker]
+M	shake	<Assumed>
+O	bowl	0
+S	contains	{oregano,basil,thyme}
+O	thyme	1
+S	dried
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{oregano,basil,thyme}
+O	shaker	1
+S	contains	{rosemary}
+O	rosemary	1
+S	dried
+S	in	[shaker]
+M	shake	<Assumed>
+O	bowl	0
+S	contains	{oregano,basil,thyme,rosemary}
+//
+O	bowl	0
+S	contains	{oregano,basil,thyme,rosemary}
+O	shaker	1
+S	contains	{marjoram}
+O	marjoram	1
+S	dried
+S	in	[shaker]
+M	shake	<Assumed>
+O	bowl	0
+S	contains	{oregano,basil,thyme,rosemary,marjoram}
+O	marjoram	1
+S	dried
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{oregano,basil,thyme,rosemary,marjoram}
+O	oregano	0
+S	dried
+S	in	[bowl]
+O	marjoram	0
+S	dried
+S	in	[bowl]
+O	rosemary	0
+S	dried
+S	in	[bowl]
+O	thyme	0
+S	dried
+S	in	[bowl]
+O	spoon	1
+S	empty
+M	mix	<Assumed>
+O	bowl	0
+S	contains	{italian seasoning}
+O	italian seasoning	0
+S	mixed
+S	dried
+S	in	[bowl]
+//
+O	measuring cup	0
+S	contains	{lemon juice}
+O	bowl	1
+S	contains	{italian seasoning}
+O	italian seasoning	1
+S	mixed
+S	dried
+S	in	[bowl]
+M	pour	<0:38-0:42>
+O	measuring cup	0
+S	contains	{italian seasoning,lemon juice}
+O	italian seasoning	0
+S	dried
+S	mixed
+S	in	[measuring cup]
+//
+O	measuring cup	0
+S	contains	{italian seasoning,lemon juice}
+O	bowl	1
+S	contains	{garlic}
+O	garlic	1
+S	minced
+S	in	[bowl]
+M	pour	<0:42-0:50>
+O	measuring cup	0
+S	contains	{garlic,italian seasoning,lemon juice}
+O	garlic	1
+S	in	[measuring cup]
+S	minced
+//
+O	measuring cup	0
+S	contains	{garlic,italian seasoning,lemon juice}
+O	pepper mill	1
+S	contains	{black pepper}
+O	black pepper	0
+S	peppercorn
+S	in	[pepper mill]
+S	whole
+M	grind	<0:50-1:00>
+O	measuring cup	0
+S	contains	{garlic,italian seasoning,lemon juice,pepper}
+O	black pepper	0
+S	in	[measuring cup]
+S	ground
+//
+O	measuring cup	0
+S	contains	{garlic,italian seasoning,lemon juice,pepper}
+O	grinder	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	pieces
+S	in	[grinder]
+M	grind and sprinkle	<1:00-1:06>
+O	measuring cup	0
+S	contains	{garlic,italian seasoning,lemon juice,pepper,salt}
+O	salt	1
+S	in	[measuring cup]
+S	granulated
+//
+O	measuring cup	0
+S	contains	{garlic,italian seasoning,lemon juice,pepper,salt}
+O	bowl	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bowl]
+O	whisk	1
+M	pour and stir	<1:07-2:27>
+O	measuring cup	0
+S	contains	{salad dressing}
+O	salad dressing	0	7
+S	creamy
+S	mixed
+S	contains	{garlic,italian seasoning,lemon juice,olive oil,pepper,salt}
+S	in	[bowl]
+O	greek salad dressing	0	7
+S	creamy
+S	contains	{garlic,italian seasoning,lemon juice,olive oil,pepper,salt}
+S	in	[bowl]
+//

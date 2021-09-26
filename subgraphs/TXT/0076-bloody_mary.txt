@@ -1,0 +1,288 @@
+# Source:	https://www.youtube.com/watch?v=rpEzoWNbgSk
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0076-bloody_mary.mp4
+//
+O	bowl	0
+S	empty
+O	cutting board	0
+S	contains	{lemon}
+O	lemon	1
+S	halved
+S	on	[cutting board]
+M	pick-and-place	<Assumed>
+O	bowl	0
+S	contains	{lemon}
+O	lemon	1
+S	halved
+S	in	[bowl]
+//
+O	highball glass	0
+S	empty
+O	lemon	1
+S	halved
+S	in	[bowl]
+M	rub	<0:38-0:42>
+O	highball glass	0
+S	empty
+S	coated	[lemon juice]
+O	lemon juice	0
+S	juice
+S	on	[highball glass]
+//
+O	cutting board	0
+S	empty
+O	shaker	1
+S	contains	{celery salt}
+O	celery salt	1
+S	granulated
+S	in	[shaker]
+M	sprinkle	<Assumed
+O	cutting board	0
+S	contains	{celery salt}
+O	celery salt	1
+S	granulated
+S	on	[cutting board]
+//
+O	highball glass	0
+S	empty
+S	coated	[lemon juice]
+O	celery salt	1
+S	granulated
+S	on	[cutting board]
+M	rim	<0:46-0:59>
+O	highball glass	0
+S	empty
+S	coated	[celery salt]
+O	celery salt	1
+S	granulated
+S	on	[drinking glass]
+//
+O	jigger	0
+S	empty
+O	vodka	1
+S	liquid
+S	in	[bottle]
+M	measure	<1:06-1:10>
+O	jigger	0
+S	contains	{vodka}
+O	vodka	1
+S	liquid
+S	in	[jigger]
+//
+O	highball glass	0
+S	empty
+S	coated	[celery salt]
+O	jigger	1
+S	contains	{vodka}
+O	vodka	1
+S	liquid
+S	in	[jigger]
+M	pour	<1:11-1:13>
+O	highball glass	0
+S	contains	{vodka}
+S	coated	[celery salt]
+O	vodka	1
+S	liquid
+S	in	[highball glass]
+//
+O	highball glass	0
+S	contains	{vodka}
+S	coated	[celery salt]
+O	cup	1
+S	contains	{ice}
+O	ice	1
+S	cubed
+S	frozen
+S	in	[cup]
+M	pour	<1:16-1:20>
+O	highball glass	0
+S	contains	{ice,vodka}
+S	coated	[celery salt]
+O	ice	1
+S	cubed
+S	frozen
+S	in	[highball glass]
+//
+O	highball glass	0
+S	contains	{ice,vodka}
+S	coated	[celery salt]
+O	jar	1
+S	contains	{tomato juice}
+O	tomato juice	1
+S	in	[jar]
+O	vodka	0
+S	liquid
+S	in	[highball glass]
+M	pour	<1:24-1:30>
+O	highball glass	0
+S	contains	{ice,vodka,tomato juice}
+S	coated	[celery salt]
+O	cocktail	0
+S	liquid
+S	mixed
+S	contains	{vodka,ice,tomato juice}
+S	in	[highball glass]
+O	tomato juice	1
+S	in	[highball glass]
+//
+O	tomato juice	1
+S	in	[highball glass]
+O	highball glass	0
+S	contains	{ice,vodka,tomato juice}
+S	coated	[celery salt]
+O	shot glass	0
+S	contains	{worcestershire sauce}
+O	worcestershire sauce	1
+S	thick liquid
+S	in	[shot glass]
+O	cocktail	0
+S	liquid
+S	contains	{vodka,ice,tomato juice}
+S	in	[highball glass]
+M	pour	<1:35-1:37>
+O	highball glass	0
+S	contains	{ice,vodka,tomato juice,worcestershire sauce}
+S	coated	[celery salt]
+O	cocktail	0
+S	mixed
+S	liquid
+S	contains	{vodka,ice,tomato juice,worcestershire sauce}
+S	in	[highball glass]
+O	worcestershire sauce	1
+S	thick liquid
+S	in	[highball glass]
+//
+O	highball glass	0
+S	contains	{ice,vodka,tomato juice,worcestershire sauce}
+S	coated	[celery salt]
+O	cocktail	0
+S	mixed
+S	liquid
+S	contains	{vodka,ice,tomato juice,worcestershire sauce}
+S	in	[highball glass]
+O	shot glass	1
+S	contains	{tabasco sauce}
+O	tabasco sauce	1
+S	thick liquid
+S	in	[shot glass]
+M	pour	<1:41-1:43>
+O	highball glass	0
+S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce}
+S	coated	[celery salt]
+O	cocktail	0
+S	mixed
+S	liquid
+S	contains	{vodka,ice,tomato juice,worcestershire sauce,tabasco sauce}
+S	in	[highball glass]
+O	tabasco sauce	1
+S	thick liquid
+S	in	[highball glass]
+//
+O	highball glass	0
+S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce}
+S	coated	[celery salt]
+O	cocktail	0
+S	mixed
+S	liquid
+S	contains	{vodka,ice,tomato juice,worcestershire sauce,tabasco sauce}
+S	in	[highball glass]
+O	cutting board	0
+S	contains	{celery salt}
+O	celery salt	1
+S	granulated
+S	on	[cutting board]
+M	sprinkle	<1:47-1:51>
+O	highball glass	0
+S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt}
+S	coated	[celery salt]
+O	cocktail	0
+S	mixed
+S	liquid
+S	contains	{vodka,ice,tomato juice,worcestershire sauce,tabasco sauce,celery salt}
+S	in	[highball glass]
+O	celery salt	1
+S	granulated
+S	in	[highball glass]
+//
+O	highball glass	0
+S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt}
+S	coated	[celery salt]
+O	cocktail	0
+S	mixed
+S	liquid
+S	contains	{vodka,ice,tomato juice,worcestershire sauce,tabasco sauce,celery salt}
+S	in	[highball glass]
+O	pepper mill	1
+S	contains	{black pepper}
+O	black pepper	0
+S	whole
+S	peppercorn
+S	in	[pepper mill]
+M	grind	<1:54-1:57,1:58-2:01>
+O	highball glass	0
+S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper}
+S	coated	[celery salt]
+O	cocktail	0
+S	mixed
+S	liquid
+S	contains	{vodka,ice,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper}
+S	in	[highball glass]
+O	black pepper	0
+S	ground
+S	in	[highball glass]
+//
+O	highball glass	0
+S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper}
+S	coated	[celery salt]
+O	cocktail	0
+S	mixed
+S	liquid
+S	contains	{vodka,ice,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper}
+S	in	[highball glass]
+O	lemon	1
+S	halved
+S	in	[bowl]
+M	squeeze	<2:03-2:07>
+O	highball glass	0
+S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper,lemon juice}
+S	coated	[celery salt]
+O	cocktail	0
+S	mixed
+S	liquid
+S	contains	{vodka,ice,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper,lemon juice}
+S	in	[highball glass]
+O	lemon	1
+S	juice
+S	in	[highball glass]
+O	lemon	1
+S	halved
+S	squeezed
+//
+O	highball glass	0
+S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper,lemon juice}
+S	coated	[celery salt]
+O	cocktail	0
+S	mixed
+S	liquid
+S	contains	{vodka,ice,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper,lemon juice}
+S	in	[highball glass]
+O	celery	1
+S	stem
+S	on	[surface]
+M	insert	<2:09-2:11>
+O	highball glass	0
+S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper,lemon juice,celery}
+S	coated	[celery salt]
+O	bloody mary	0	9
+S	mixed
+S	liquid
+S	contains	{vodka,ice,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper,lemon juice,celery}
+S	in	[highball glass]
+O	cocktail	0	9
+S	mixed
+S	liquid
+S	contains	{vodka,ice,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper,lemon juice,celery}
+S	in	[highball glass]
+O	celery	1
+S	stem
+S	in	[highball glass]
+//

@@ -1,0 +1,132 @@
+# Source:	https://www.youtube.com/watch?v=qx6tZ8ZU0qc
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0081-roux_recipe.mp4
+//
+O370	stove	0
+S91	off (ready)
+O355	skillet	1
+S46	empty
+M61	pick-and-place	<Assumed>
+O370	stove	0
+S91	off (ready)
+S156	with	[skillet]
+O355	skillet	1
+S93	on	[stove]
+S46	empty
+//
+O370	stove	0
+S91	off (ready)
+S156	with	[skillet]
+M117	turn on	<Assumed>
+O370	stove	0
+S93	on
+S156	with	[skillet]
+//
+O370	stove	0
+S156	with	[skillet]
+S90	off
+O355	skillet	0
+S93	on	[stove]
+S46	empty
+M47	heat	<Assumed>
+O355	skillet	0
+S71	hot
+S93	on	[stove]
+S46	empty
+//
+O34	bowl	1
+S24	contains	{butter}
+O49	butter	1
+S133	softened
+S150	unmelted
+S34	cube
+S72	in	[bowl]
+O355	skillet	0
+S71	hot
+S93	on	[stove]
+S46	empty
+M65	pour	<0:45-0:47>
+O49	butter	1
+S133	softened
+S150	unmelted
+S34	cube
+S72	in	[skillet]
+O355	skillet	0
+S71	hot
+S93	on	[stove]
+S24	contains	{butter}
+//
+O49	butter	0
+S133	softened
+S150	unmelted
+S34	cube
+S72	in	[skillet]
+O355	skillet	0
+S71	hot
+S93	on	[stove]
+S24	contains	{butter}
+O420	whisk	1
+M100	spread	<0:47-0:50>
+O49	butter	0
+S81	liquid
+S85	melted
+S72	in	[skillet]
+//
+O355	skillet	0
+S71	hot
+S93	on	[stove]
+S24	contains	{butter}
+O34	bowl	1
+S24	contains	{flour}
+O147	flour	1
+S72	in	[bowl]
+S106	powder
+M65	pour	<0:51-0:54>
+O355	skillet	0
+S71	hot
+S93	on	[stove]
+S24	contains	{butter,flour}
+O147	flour	1
+S72	in	[skillet]
+S106	powder
+//
+O355	skillet	0
+S71	hot
+S93	on	[stove]
+S24	contains	{butter,flour}
+O147	flour	1
+S72	in	[skillet]
+S106	powder
+O49	butter	0
+S133	softened
+S81	liquid
+S85	melted
+S72	in	[skillet]
+O420	whisk	1
+M104	stir	<0:54-1:24>
+O355	skillet	0
+S71	hot
+S93	on	[stove]
+S24	contains	{roux}
+O330	roux	0
+S144	thick liquid
+S24	contains	{butter,flour}
+S72	in	[skillet]
+//
+O355	skillet	0
+S71	hot
+S93	on	[stove]
+S24	contains	{roux}
+O330	roux	0
+S144	thick liquid
+S24	contains	{butter,flour}
+S72	in	[skillet]
+O420	whisk	1
+M84	scoop	<Assumed>
+O367	spoon	1
+S24	contains	{roux}
+O330	roux	0	7
+S144	thick liquid
+S24	contains	{butter,flour}
+S72	in	[spoon]
+S110	ready
+//

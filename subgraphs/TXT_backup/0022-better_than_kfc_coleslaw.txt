@@ -1,0 +1,258 @@
+# Source:	https://www.youtube.com/watch?v=_DRIfPEM6qw
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0022-better_than_kfc_coleslaw.mp4
+//
+O249	mixing bowl	0
+S46	empty
+O210	jar	0
+S24	contains	{mayonnaise}
+O240	mayonnaise	0
+S30	creamy
+S72	in	[bowl]
+O367	spoon	1
+M86	scoop and pour	<Assumed>
+O249	mixing bowl	0
+S24	contains	{mayonnaise}
+O240	mayonnaise	0
+S30	creamy
+S72	in	[mixing bowl]
+//
+O34	bowl	1
+S24	contains	{sugar}
+O373	sugar	1
+S63	granulated
+S72	in	[bowl]
+O249	mixing bowl	0
+S24	contains	{mayonnaise}
+M65	pour	<1:00-1:02>
+O249	mixing bowl	0
+S24	contains	{mayonnaise,sugar}
+O373	sugar	1
+S63	granulated
+S72	in	[mixing bowl]
+O34	bowl	1
+S46	empty
+//
+O249	mixing bowl	0
+S24	contains	{mayonnaise,sugar}
+O34	bowl	1
+S24	contains	{vinegar}
+O411	vinegar	1
+S81	liquid
+S72	in	[bowl]
+M65	pour	<1:04-1:06>
+O249	mixing bowl	0
+S24	contains	{mayonnaise,sugar,vinegar}
+O411	vinegar	1
+S81	liquid
+S72	in	[mixing bowl]
+O34	bowl	1
+S46	empty
+//
+O249	mixing bowl	0
+S24	contains	{mayonnaise,sugar,vinegar}
+O34	bowl	1
+S24	contains	{vegetable oil}
+O409	vegetable oil	1
+S81	liquid
+S72	in	[bowl]
+M65	pour	<1:08-1:10>
+O249	mixing bowl	0
+S24	contains	{mayonnaise,sugar,vinegar,vegetable oil}
+O409	vegetable oil	1
+S81	liquid
+S72	in	[mixing bowl]
+O34	bowl	1
+S46	empty
+//
+O249	mixing bowl	0
+S24	contains	{mayonnaise,sugar,vegetable oil,vinegar}
+O373	sugar	0
+S63	granulated
+S72	in	[mixing bowl]
+O240	mayonnaise	0
+S30	creamy
+S72	in	[mixing bowl]
+O411	vinegar	0
+S81	liquid
+S72	in	[mixing bowl]
+O409	vegetable oil	0
+S81	liquid
+S72	in	[mixing bowl]
+O364	spatula	1
+M56	mix	<1:14-1:28>
+O249	mixing bowl	0
+S24	contains	{salad dressing}
+O333	salad dressing	0
+S30	creamy
+S24	contains	{mayonnaise,sugar,vegetable oil,vinegar}
+S72	in	[mixing bowl]
+S87	mixed
+//
+O121	cutting board	0
+S46	empty
+O51	cabbage	1
+S155	whole
+M61	pick-and-place	<Assumed>
+O121	cutting board	0
+S24	contains	{cabbage}
+O51	cabbage	1
+S155	whole
+S93	on	[cutting board]
+//
+O121	cutting board	0
+S46	empty
+O270	onion	1
+S155	whole
+S101	peeled
+M61	pick-and-place	<Assumed>
+O121	cutting board	0
+S24	contains	{onion}
+O270	onion	1
+S93	on	[cutting board]
+S155	whole
+S101	peeled
+//
+O59	carrot	0
+S155	whole
+S151	unpeeled
+O293	peeler	1
+M60	peel	<Assumed>
+O59	carrot	1
+S101	peeled
+S155	whole
+//
+O121	cutting board	0
+S46	empty
+O59	carrot	1
+S101	peeled
+S155	whole
+M61	pick-and-place	<Assumed>
+O121	cutting board	0
+S24	contains	{carrot}
+O59	carrot	1
+S155	whole
+S101	peeled
+S93	on	[cutting board]
+//
+O59	carrot	0
+S155	whole
+S101	peeled
+S93	on	[cutting board]
+O217	knife	1
+M12	chop	<1:44-1:57>
+O59	carrot	0
+S17	chopped
+S93	on	[cutting board]
+//
+O332	salad bowl	0
+S46	empty
+O121	cutting board	0
+S24	contains	{carrot}
+O59	carrot	1
+S93	on	[cutting board]
+S17	chopped
+M86	scoop and pour	<1:58-2:00>
+O332	salad bowl	0
+S24	contains	{carrot}
+O59	carrot	1
+S17	chopped
+S72	in	[salad bowl]
+O121	cutting board	0
+S46	empty
+//
+O270	onion	0
+S93	on	[cutting board]
+S101	peeled
+O217	knife	1
+M12	chop	<2:03-2:38>
+O270	onion	0
+S17	chopped
+S93	on	[cutting board]
+//
+O332	salad bowl	0
+S24	contains	{carrot}
+O270	onion	1
+S17	chopped
+S93	on	[cutting board]
+O121	cutting board	0
+S24	contains	{onion}
+M86	scoop and pour	<Assumed>
+O332	salad bowl	0
+S24	contains	{carrot,onion}
+O270	onion	1
+S17	chopped
+S72	in	[salad bowl]
+O121	cutting board	0
+S46	empty
+//
+O51	cabbage	0
+S93	on	[cutting board]
+S155	whole
+O217	knife	1
+M12	chop	<2:39-2:54>
+O51	cabbage	0
+S93	on	[cutting board]
+S17	chopped
+//
+O332	salad bowl	0
+S24	contains	{carrot,onion}
+O121	cutting board	0
+S24	contains	{cabbage}
+O51	cabbage	1
+S17	chopped
+S93	on	[cutting board]
+M86	scoop and pour	<2:55-2:57>
+O332	salad bowl	0
+S24	contains	{carrot,onion,cabbage}
+O51	cabbage	1
+S17	chopped
+S72	in	[salad bowl]
+O121	cutting board	0
+S46	empty
+//
+O332	salad bowl	0
+S24	contains	{cabbage,carrot,onion}
+O249	mixing bowl	1
+S24	contains	{salad dressing}
+O333	salad dressing	0
+S30	creamy
+S24	contains	{mayonnaise,sugar,vegetable oil,vinegar}
+S72	in	[mixing bowl]
+S87	mixed
+O364	spatula	1
+M68	pour and scrape	<3:03-3:06>
+O332	salad bowl	0
+S24	contains	{cabbage,carrot,onion,salad dressing}
+O333	salad dressing	1
+S30	creamy
+S24	contains	{mayonnaise,sugar,vegetable oil,vinegar}
+S72	in	[salad bowl]
+//
+O332	salad bowl	0
+S24	contains	{cabbage,carrot,onion,salad dressing}
+O333	salad dressing	1
+S30	creamy
+S24	contains	{mayonnaise,sugar,vegetable oil,vinegar}
+S72	in	[salad bowl]
+O270	onion	1
+S17	chopped
+S72	in	[salad bowl]
+O59	carrot	0
+S17	chopped
+S72	in	[salad bowl]
+O51	cabbage	1
+S17	chopped
+S72	in	[salad bowl]
+O364	spatula	1
+M56	mix	<3:08-3:20>
+O332	salad bowl	0
+S24	contains	{coleslaw}
+O331	salad	0	15
+S87	mixed
+S24	contains	{cabbage,carrot,mayonnaise,onion,sugar,vegetable oil,vinegar}
+S72	in	[salad bowl]
+O99	coleslaw	0	15
+S87	mixed
+S24	contains	{cabbage,carrot,mayonnaise,onion,sugar,vegetable oil,vinegar}
+S72	in	[salad bowl]
+//

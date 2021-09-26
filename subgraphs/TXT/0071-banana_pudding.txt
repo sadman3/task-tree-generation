@@ -1,0 +1,357 @@
+# Source:	https://www.youtube.com/watch?v=d_OjnL4Sc4A
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0071-banana_pudding.mp4
+//
+O	mixer	0
+S	with	[mixing bowl]
+S	off (ready)
+O	mixing bowl	0
+S	attached to	[mixer]
+S	empty
+O	packet	1
+S	contains	{cream cheese}
+S	opened
+O	cream cheese	1
+S	in	[packet]
+S	block
+M	pick-and-place	<Assumed>
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{cream cheese}
+O	cream cheese	1
+S	in	[mixing bowl]
+S	block
+//
+O	mixer	1
+S	with	[mixing bowl]
+S	on
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{cream cheese}
+O	cream cheese	1
+S	in	[mixing bowl]
+S	block
+M	blend	<0:23,0:28>
+O	cream cheese	1
+S	in	[mixing bowl]
+S	softened
+//
+O	mixer	0
+S	with	[mixing bowl]
+S	on
+O	can	1
+S	contains	{condensed milk}
+O	condensed milk	1
+S	in	[can]
+S	thick liquid
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{cream cheese}
+O	spatula	1
+M	pour	<0:30,0:38>
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{condensed milk,cream cheese}
+O	condensed milk	1
+S	in	[mixing bowl]
+S	thick liquid
+//
+O	mixer	0
+S	with	[mixing bowl]
+S	on
+O	packet	1
+S	contains	{pudding mix}
+S	opened
+O	pudding mix	1
+S	in	[packet]
+S	powder
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{condensed milk,cream cheese,pudding mix}
+M	pour and blend	<0:41,0:51>
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{condensed milk,cream cheese,pudding mix}
+O	pudding mix	1
+S	in	[mixing bowl]
+S	powder
+//
+O	mixer	0
+S	with	[mixing bowl]
+S	on
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{condensed milk,cream cheese,pudding mix}
+O	measuring cup	1
+S	contains	{milk}
+O	milk	1
+S	liquid
+S	in	[measuring cup]
+M	pour and blend	<0:55,1:35>
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{condensed milk,cream cheese,milk,pudding mix}
+O	milk	1
+S	liquid
+S	in	[mixing bowl]
+//
+O	mixer	0
+S	with	[mixing bowl]
+S	on
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{condensed milk,cream cheese,milk,pudding mix}
+O	mixing bowl	1
+S	contains	{vanilla extract}
+O	vanilla extract	1
+S	in	[mixing bowl]
+S	liquid
+M	pour	<1:38,1:40>
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract}
+O	vanilla extract	1
+S	in	[mixing bowl]
+S	liquid
+//
+O	mixer	0
+S	with	[mixing bowl]
+S	on
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract}
+O	cream cheese	1
+S	in	[mixing bowl]
+S	softened
+O	vanilla extract	1
+S	in	[mixing bowl]
+S	liquid
+O	milk	1
+S	in	[mixing bowl]
+S	liquid
+O	pudding mix	1
+S	powder
+S	in	[mixing bowl]
+O	condensed milk	1
+S	in	[mixing bowl]
+S	thick liquid
+M	blend	<Assumed>
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{pudding}
+O	pudding	1
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract}
+S	in	[mixing bowl]
+S	mixed
+S	thick liquid
+//
+O	mixer	0
+S	with	[mixing bowl]
+S	on
+M	turn off	<1:54,1:55>
+O	mixer	0
+S	with	[mixing bowl]
+S	off
+//
+O	mixer	0
+S	with	[mixing bowl]
+S	off
+O	mixing bowl	1
+S	attached to	[mixer]
+S	contains	{pudding}
+M	detach	<Assumed,Ass>
+O	mixer	0
+S	off
+O	mixing bowl	1
+S	contains	{pudding}
+//
+O	mixing bowl	0
+S	contains	{pudding}
+O	jar	1
+S	contains	{whipped cream}
+O	whipped cream	1
+S	in	[jar]
+S	whipped
+S	creamy
+O	spatula	1
+M	pour	<2:00,2:07>
+O	mixing bowl	0
+S	contains	{pudding,whipped cream}
+O	whipped cream	1
+S	in	[mixing bowl]
+S	whipped
+S	creamy
+//
+O	mixing bowl	0
+S	contains	{pudding,whipped cream}
+O	pudding	1
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract}
+S	in	[mixing bowl]
+S	mixed
+S	liquid
+S	thick liquid
+O	whipped cream	1
+S	in	[mixing bowl]
+S	whipped
+S	creamy
+O	spatula	1
+M	stir	<2:07,2:13>
+O	mixing bowl	0
+S	contains	{pudding}
+O	pudding	0
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract,whipped cream}
+S	in	[mixing bowl]
+S	thick liquid
+S	mixed
+//
+O	banana	1
+S	whole
+S	unpeeled
+M	peel	<Assumed>
+O	banana	1
+S	peeled
+S	whole
+//
+O	cutting board	0
+S	empty
+O	banana	1
+S	peeled
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{banana}
+O	banana	1
+S	peeled
+S	on	[cutting board]
+S	whole
+//
+O	banana	0
+S	peeled
+S	on	[cutting board]
+S	whole
+O	knife	1
+M	chop	<2:17,2:21>
+O	banana	0
+S	sliced
+S	on	[cutting board]
+//
+O	box	1
+S	contains	{vanilla wafer}
+O	vanilla wafer	1
+S	in	[box]
+S	whole
+O	baking dish	0
+S	empty
+M	pick-and-place	<2:21,2:28>
+O	baking dish	0
+S	contains	{vanilla wafer}
+O	vanilla wafer	1
+S	in	[baking dish]
+S	whole
+//
+O	cutting board	0
+S	contains	{banana}
+O	banana	1
+S	sliced
+S	on	[cutting board]
+O	baking dish	0
+S	contains	{vanilla wafer}
+M	pick-and-place	<2:29,2:34>
+O	cutting board	0
+S	empty
+O	baking dish	0
+S	contains	{banana,vanilla wafer}
+O	banana	1
+S	sliced
+S	in	[baking dish]
+//
+O	baking dish	0
+S	contains	{banana,vanilla wafer}
+O	mixing bowl	1
+S	contains	{pudding}
+O	pudding	1
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract,whipped cream}
+S	in	[mixing bowl]
+S	thick liquid
+S	mixed
+M	pour	<2:38,2:51>
+O	baking dish	0
+S	contains	{banana,pudding,vanilla wafer}
+O	pudding	0
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract,whipped cream}
+S	in	[baking dish]
+S	thick liquid
+S	mixed
+//
+O	baking dish	0
+S	contains	{banana,pudding,vanilla wafer}
+O	pudding	0
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract,whipped cream}
+S	in	[baking dish]
+S	thick liquid
+S	mixed
+O	vanilla wafer	1
+S	in	[box]
+S	whole
+M	insert	<2:52,2:59>
+O	pudding	0
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract,vanilla wafer,whipped cream}
+S	in	[baking dish]
+S	thick liquid
+S	mixed
+O	vanilla wafer	1
+S	in	[pudding]
+S	whole
+//
+O	baking dish	0
+S	contains	{banana,pudding,vanilla wafer}
+O	jar	1
+S	contains	{whipped cream}
+O	whipped cream	1
+S	creamy
+S	whipped
+S	in	[jar]
+O	spatula	1
+O	pudding	0
+S	in	[baking dish]
+S	incomplete
+M	pour and spread	<3:01,3:19>
+O	baking dish	0
+S	contains	{banana,pudding,vanilla wafer,whipped cream}
+O	pudding	0
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract,vanilla wafer,whipped cream}
+S	in	[baking dish]
+S	covered	[whipped cream]
+S	thick liquid
+S	mixed
+O	whipped cream	1
+S	on	[pudding]
+S	whipped
+S	creamy
+//
+O	baking dish	0
+S	contains	{banana,pudding,vanilla wafer,whipped cream}
+O	saran wrap	1
+S	in	[box]
+M	cover	<3:20,3:25>
+O	baking dish	0
+S	contains	{banana,pudding,vanilla wafer,whipped cream}
+S	covered	[saran wrap]
+O	saran wrap	1
+S	on	[baking dish]
+//
+O	baking dish	0
+S	contains	{banana,pudding,vanilla wafer,whipped cream}
+S	covered	[saran wrap]
+O	fridge	0
+S	on
+O	pudding	0
+S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract,vanilla wafer,whipped cream}
+S	in	[baking dish]
+S	covered	[whipped cream]
+S	thick liquid
+S	mixed
+M	chill	<Assumed>
+O	banana pudding	1	8
+S	in	[baking dish]
+S	contains	{banana,condensed milk,cream cheese,milk,pudding mix,vanilla extract,vanilla wafer,whipped cream,whipped cream}
+//

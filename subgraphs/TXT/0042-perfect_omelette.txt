@@ -1,0 +1,426 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0042-perfect_omelette.mp4
+# Source:	https://www.youtube.com/watch?v=Q-Yg7HSbsLY
+//
+O	bowl	0
+S	empty
+O	egg	1
+S	whole
+M	crack	<0:26-0:31,0:33-0:35,0:37-0:39>
+O	bowl	0
+S	contains	{egg white,egg yolk}
+O	egg white	0
+S	uncooked
+S	in	[bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg white,egg yolk}
+O	egg white	0
+S	uncooked
+S	in	[bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[bowl]
+O	fork	1
+M	beat	<0:39-0:52>
+O	bowl	0
+S	contains	{egg}
+O	egg	1
+S	beaten
+S	uncooked
+S	in	[bowl]
+//
+O	cooking pan	0
+S	hot
+S	empty
+S	on	[stove]
+O	bowl	1
+S	contains	{butter}
+O	butter	1
+S	softened
+S	unmelted
+S	cube
+S	in	[bowl]
+M	pour	<0:57-1:00>
+O	cooking pan	0
+S	hot
+S	contains	{butter}
+S	on	[stove]
+O	butter	1
+S	softened
+S	unmelted
+S	cubed
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter}
+S	on	[stove]
+O	butter	1
+S	softened
+S	unmelted
+S	cubed
+S	in	[cooking pan]
+O	spoon	1
+M	spread	<1:04-1:18>
+O	butter	1
+S	liquid
+S	melted
+S	in	[cooking pan]
+//
+O	tomato	1
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	chop	<Assumed>
+O	tomato	1
+S	diced
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{tomato}
+O	tomato	1
+S	diced
+S	on	[cutting board]
+O	plate	0
+S	empty
+M	scrape	<Assumed>
+O	plate	0
+S	contains	{tomato}
+O	tomato	1
+S	diced
+S	on	[plate]
+O	cutting board	0
+S	empty
+//
+O	cutting board	0
+S	empty
+O	onion	1
+S	whole
+S	peeled
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	whole
+S	peeled
+S	on	[cutting board]
+//
+O	knife	1
+O	onion	0
+S	on	[cutting board]
+S	peeled
+S	whole
+M	chop	<Assumed>
+O	onion	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	on	[cutting board]
+O	plate	0
+S	empty
+S	contains	{green pepper}
+O	plate	0
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	on	[plate]
+O	cutting board	0
+S	empty
+//
+O	cutting board	0
+S	empty
+O	green pepper	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{green pepper}
+O	green pepper	1
+S	whole
+S	on	[cutting board]
+//
+O	knife	1
+O	green pepper	0
+S	whole
+S	on	[cutting board]
+M	dice	<Assumed>
+O	green pepper	0
+S	diced
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{green pepper}
+O	green pepper	0
+S	diced
+S	on	[cutting board]
+O	plate	0
+S	empty
+M	scrape	<Assumed>
+O	plate	0
+S	contains	{green pepper}
+O	green pepper	0
+S	diced
+S	on	[plate]
+O	cutting board	0
+S	empty
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter}
+S	on	[stove]
+O	plate	1
+S	contains	{green pepper}
+O	green pepper	1
+S	diced
+S	on	[plate]
+O	spoon	1
+M	pour and scrape	<1:44-1:45>
+O	cooking pan	0
+S	hot
+S	contains	{butter,green pepper}
+S	on	[stove]
+O	green pepper	1
+S	diced
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter}
+S	on	[stove]
+O	plate	1
+S	contains	{tomato}
+O	tomato	0
+S	diced
+S	on	[plate]
+M	pour and scrape	<1:46-1:48>
+O	cooking pan	0
+S	hot
+S	contains	{butter,green pepper,tomato}
+S	on	[stove]
+O	tomato	0
+S	diced
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter,green pepper,tomato}
+S	on	[stove]
+O	plate	1
+S	contains	{onion}
+O	onion	0
+S	chopped
+S	on	[plate]
+M	pour and scrape	<1:49-1:51>
+O	cooking pan	0
+S	hot
+S	contains	{butter,green pepper,tomato,onion}
+S	on	[stove]
+O	onion	0
+S	chopped
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter,green pepper,tomato,onion}
+S	on	[stove]
+O	onion	1
+S	chopped
+S	in	[cooking pan]
+O	green pepper	1
+S	diced
+S	in	[cooking pan]
+O	tomato	1
+S	diced
+S	in	[cooking pan]
+O	spoon	1
+M	cook and stir	<1:52-2:33>
+O	onion	1
+S	chopped
+S	sauteed
+S	in	[cooking pan]
+O	green pepper	1
+S	diced
+S	sauteed
+S	in	[cooking pan]
+O	tomato	1
+S	diced
+S	sauteed
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter,green pepper,tomato,onion}
+S	on	[stove]
+O	shaker	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[shaker]
+M	sprinkle	<2:47:50-2:49:50>
+O	cooking pan	0
+S	hot
+S	contains	{butter,green pepper,tomato,onion,salt}
+S	on	[stove]
+O	salt	1
+S	granulated
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter,green pepper,tomato,onion,salt}
+S	on	[stove]
+O	shaker	1
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[shaker]
+M	sprinkle	<2:51-2:56>
+O	cooking pan	0
+S	hot
+S	contains	{butter,green pepper,tomato,onion,salt,black pepper}
+S	on	[stove]
+O	black pepper	1
+S	ground
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{butter,green pepper,tomato,onion,salt,black pepper}
+S	on	[stove]
+O	bowl	1
+S	contains	{egg}
+O	egg	1
+S	beaten
+S	uncooked
+S	in	[bowl]
+M	pour	<3:17-3:24>
+O	cooking pan	0
+S	hot
+S	contains	{egg,butter,green pepper,tomato,onion,salt,black pepper}
+S	on	[stove]
+O	egg	1
+S	beaten
+S	uncooked
+S	in	[cooking pan]
+O	bowl	1
+S	empty
+//
+O	cooking pan	0
+S	hot
+S	contains	{egg,butter,green pepper,tomato,onion,salt,black pepper}
+S	on	[stove]
+O	stove	0
+S	on
+S	under	[cooking pan]
+O	egg	0
+S	beaten
+S	uncooked
+S	in	[cooking pan]
+O	onion	0
+S	chopped
+S	sauteed
+S	in	[cooking pan]
+O	green pepper	0
+S	diced
+S	sauteed
+S	in	[cooking pan]
+O	tomato	0
+S	diced
+S	sauteed
+S	in	[cooking pan]
+O	salt	0
+S	granulated
+S	in	[cooking pan]
+O	black pepper	0
+S	ground
+S	in	[cooking pan]
+M	cook	<3:31-4:45>
+O	omelette	1
+S	mixed
+S	partly cooked
+S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato}
+S	in	[cooking pan]
+//
+O	packet	1
+S	contains	{cheese}
+O	cheese	0
+S	sliced
+S	in	[packet]
+O	plate	0
+S	empty
+M	unwrap	<Assumed>
+O	packet	1
+S	empty
+O	plate	0
+S	contains	{cheese}
+O	cheese	1
+S	sliced
+S	on	[plate]
+//
+O	omelette	1
+S	mixed
+S	partly cooked
+S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato}
+S	in	[cooking pan]
+O	plate	0
+S	contains	{cheese}
+O	cheese	1
+S	sliced
+S	on	[plate]
+M	pick-and-place	<4:49-4:54>
+O	cheese	1
+S	sliced
+S	on	[omelette]
+O	omelette	1
+S	mixed
+S	partly cooked
+S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{egg,butter,green pepper,tomato,onion,salt,black pepper}
+S	on	[stove]
+O	omelette	1
+S	mixed
+S	partly cooked
+S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	in	[cooking pan]
+O	spoon	1
+M	fold	<4:56-4:58>
+O	cooking pan	0
+S	hot
+S	contains	{omelette}
+S	on	[stove]
+O	omelette	1
+S	cooked
+S	folded
+S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{omelette}
+S	on	[stove]
+O	omelette	1
+S	cooked
+S	folded
+S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	in	[cooking pan]
+O	plate	0
+S	empty
+O	turner	1
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{omelette}
+O	omelette	1	23
+S	cooked
+S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	on	[plate]
+//

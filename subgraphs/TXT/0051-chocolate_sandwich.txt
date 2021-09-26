@@ -1,0 +1,218 @@
+O	bowl	0
+S	contains	{egg white and yolk}
+O	spoon	1
+S	contains	{milk}
+O	milk	1
+S	in	[spoon]
+M	pour	0:00	0:01
+O	bowl	0
+S	contains	{egg white and yolk,milk}
+O	milk	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg white and yolk,milk}
+O	egg white and yolk	1
+S	in	[bowl]
+O	milk	1
+S	in	[bowl]
+O	whisk	1
+M	mix	0:01	0:02:50
+O	bowl	0
+S	contains	{egg mixture}
+O	egg mixture	1
+S	in	[bowl]
+S	contains	{egg white and yolk,milk}
+//
+O	plate	0
+S	empty
+O	bread	1
+S	sliced
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{bread}
+O	bread	1
+S	sliced
+S	on	[plate]
+//
+O	plate	0
+S	contains	{bread}
+O	bread	0
+S	sliced
+S	on	[plate]
+O	chocolate	1
+S	bar
+M	pick-and-place	0:03	0:05
+O	bread	0
+S	contains	{chocolate}
+S	on	[plate]
+O	chocolate	1
+S	bar
+S	on	[bread]
+//
+O	plate	0
+S	contains	{bread}
+O	bread	0
+S	contains	{chocolate}
+S	on	[plate]
+O	bread	1
+S	sliced
+S	on	[plate]
+M	pick-and-place	0:06	0:07
+O	plate	0
+S	contains	{sandwich}
+O	sandwich	1
+S	contains	{chocolate}
+S	on	[plate]
+//
+O	bowl	1
+S	contains	{egg mixture}
+O	egg mixture	1
+S	in	[bowl]
+S	contains	{egg white and yolk,milk}
+O	plate	0
+S	empty
+M	pour	Assumed	Assumed
+O	plate	0
+S	contains	{egg mixture}
+//
+O	plate	0
+S	contains	{egg mixture}
+O	egg mixture	1
+S	in	[bowl]
+S	contains	{egg white and yolk,milk}
+O	sandwich	1
+S	contains	{chocolate}
+S	on	[plate]
+M	pick-and-place	0:07	0:09
+O	plate	0
+S	contains	{egg mixture,sandwich}
+O	sandwich	1
+S	soaked
+S	contains	{chocolate,egg mixture}
+S	on	[plate]
+//
+O	stove	0
+S	on
+O	skillet	1
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	skillet	1
+S	heated
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pan]
+//
+O	skillet	0
+S	heated
+S	on	[stove]
+O	butter	1
+S	cubed
+O	stove	0
+S	on
+S	with	[pan]
+M	pick-and-place	0:12	0:14
+O	skillet	0
+S	contains	{butter}
+S	on	[stove]
+O	butter	1
+S	cubed
+S	in	[pan]
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	skillet	0
+S	contains	{butter}
+S	on	[stove]
+O	butter	1
+S	cubed
+S	in	[pan]
+M	heat	Assumed	Assumed
+O	skillet	0
+S	greased
+S	contains	{butter}
+S	on	[stove]
+O	butter	1
+S	melted
+S	in	[pan]
+//
+O	skillet	0
+S	greased
+S	contains	{butter}
+S	on	[stove]
+O	sandwich	1
+S	soaked
+S	contains	{chocolate,egg mixture}
+S	on	[plate]
+O	turner	1
+M	pick-and-place	0:17	0:19
+O	skillet	0
+S	contains	{sandwich,butter}
+S	on	[stove]
+O	sandwich	1
+S	soaked
+S	contains	{chocolate,butter,egg mixture}
+S	in	[pan]
+//
+O	skillet	0
+S	contains	{sandwich}
+S	on	[stove]
+O	sandwich	1
+S	soaked
+S	contains	{chocolate,butter,egg mixture}
+S	in	[pan]
+O	knife	1
+O	turner	1
+M	flip	0:20	0:25
+O	sandwich	1
+S	partly toasted
+S	contains	{chocolate,butter,egg mixture}
+S	in	[pan]
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	skillet	0
+S	contains	{sandwich}
+S	on	[stove]
+O	sandwich	1
+S	partly toasted
+S	contains	{chocolate,butter,egg mixture}
+S	in	[pan]
+M	cook	Assumed	Assumed
+O	sandwich	1
+S	toasted
+S	contains	{chocolate,butter,egg mixture}
+S	in	[pan]
+//
+O	sandwich	1
+S	toasted
+S	contains	{chocolate,butter,egg mixture}
+S	in	[pan]
+O	turner	1
+O	plate	0
+S	empty
+M	pick-and-place	0:25	0:28
+O	plate	0
+S	contains	{sandwich}
+O	sandwich	1
+S	toasted
+S	contains	{chocolate,butter,egg mixture}
+S	on	[plate]
+//
+O	plate	0
+S	contains	{sandwich}
+O	sandwich	1
+S	toasted
+S	contains	{chocolate,butter,egg mixture}
+S	on	[plate]
+O	powdered sugar	1
+S	powder
+M	sprinkle	0:27	0:29
+O	chocolate sandwich	1	4
+S	toasted
+S	contains	{egg white and yolk,milk,chocolate,powdered sugar,butter}
+S	on	[plate]
+//

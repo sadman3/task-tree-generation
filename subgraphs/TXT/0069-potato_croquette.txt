@@ -1,0 +1,449 @@
+O	potato	0
+S	whole
+O	peeler	1
+M	peel	Assumed	Assumed
+O	potato	0
+S	peeled
+O	peeler	1
+//
+O	potato	1
+S	peeled
+O	cutting board	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{potato}
+O	potato	1
+S	peeled
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{potato}
+O	potato	0
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	chop	Assumed	Assumed
+O	potato	0
+S	chopped
+S	on	[cutting board]
+//
+O	stove	0
+S	off
+M	turn on	Assumed	Assumed
+O	stove	0
+S	on
+//
+O	faucet	1
+S	off
+M	turn on	Assumed	Assumed
+O	water	0
+S	from faucet
+O	faucet	1
+S	on
+//
+O	pot	1
+S	empty
+O	faucet	0
+S	on
+O	water	1
+S	from faucet
+M	fill	Assumed	Assumed
+O	pot	1
+S	contains	{water}
+O	water	1
+S	in	[pot]
+//
+O	stove	0
+S	on
+O	pot	1
+S	contains	{water}
+M	pick-and-place	Assumed	Assumed
+O	pot	1
+S	contains	{water}
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pot]
+//
+O	pot	0
+S	contains	{water}
+S	on	[stove]
+O	potato	1
+S	chopped
+S	on	[cutting board]
+M	pick-and-place	Assumed	Assumed
+O	pot	0
+S	contains	{water,potato}
+S	on	[stove]
+O	potato	1
+S	chopped
+S	in	[pot]
+//
+O	pot	0
+S	contains	{water,potato}
+S	on	[stove]
+O	potato	1
+S	chopped
+S	in	[pot]
+M	boil	Assumed	Assumed
+O	pot	0
+S	contains	{water,potato}
+S	on	[stove]
+O	potato	0
+S	cooked
+S	in	[pot]
+//
+O	pot	1
+S	contains	{water,potato}
+S	on	[stove]
+O	sink	0
+S	empty
+M	drain	Assumed	Assumed
+O	pot	1
+S	contains	{potato}
+//
+O	pot	0
+S	contains	{potato}
+O	potato	0
+S	cooked
+S	in	[pot]
+O	masher	1
+M	mash	1:26	1:32
+O	pot	0
+S	contains	{potato}
+O	potato	0
+S	mashed
+S	in	[pot]
+//
+O	stove	0
+S	on
+O	cooking pan	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	cooking pan	0
+S	heated
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pan]
+//
+O	cooking pan	0
+S	heated
+S	on	[stove]
+O	bottle	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	in	[bottle]
+M	pour	Assumed	Assumed
+O	cooking pan	0
+S	greased	{vegetable oil}
+S	on	[stove]
+O	vegetable oil	1
+S	in	[pan]
+//
+O	cooking pan	0
+S	greased	{vegetable oil}
+S	on	[stove]
+O	glass tray	1
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	in	[tray]
+O	spoon	1
+M	scrape	1:33	1:40
+O	cooking pan	0
+S	contains	{oil,onion}
+S	on	[stove]
+O	onion	1
+S	chopped
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{oil,onion}
+S	on	[stove]
+O	baking tray	1
+S	contains	{ground beef}
+O	ground beef	1
+S	uncooked
+S	in	[tray]
+O	spoon	1
+M	scrape	1:40	1:47
+O	cooking pan	0
+S	contains	{oil,onion,ground beef}
+S	on	[stove]
+O	ground beef	1
+S	uncooked
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{oil,onion,ground beef}
+S	on	[stove]
+O	ground beef	1
+S	uncooked
+S	in	[pan]
+M	cook and stir	Assumed	Assumed
+O	cooking pan	0
+S	contains	{oil,onion,ground beef}
+S	on	[stove]
+O	ground beef	1
+S	cooked
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{oil,onion,ground beef}
+S	on	[stove]
+O	spoon	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[spoon]
+M	sprinkle	1:54	1:57
+O	cooking pan	0
+S	contains	{oil,onion,ground beef,salt}
+S	on	[stove]
+O	salt	1
+S	granulated
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{oil,onion,ground beef,salt}
+S	on	[stove]
+O	spoon	1
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[spoon]
+M	sprinkle	Assumed	Assumed
+O	cooking pan	0
+S	contains	{oil,onion,ground beef,salt,black pepper}
+S	on	[stove]
+O	black pepper	1
+S	ground
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{oil,onion,ground beef,salt,black pepper}
+S	on	[stove]
+O	spoon	1
+O	ground beef	1
+S	cooked
+S	in	[pan]
+O	salt	1
+S	granulated
+S	in	[pan]
+O	black pepper	1
+S	ground
+S	in	[pan]
+M	mix	1:58	2:04
+O	cooking pan	0
+S	contains	{meat mix}
+S	on	[stove]
+O	meat mix	0
+S	cooked
+S	contains	{oil,onion,ground beef,salt,black pepper}
+S	in	[pan]
+//
+O	bowl	0
+S	empty
+O	cooking pan	1
+S	contains	{meat mix}
+S	on	[stove]
+O	meat mix	0
+S	cooked
+S	contains	{oil,onion,ground beef,salt,black pepper}
+S	in	[pan]
+O	spoon	1
+M	scrape	2:05	2:08
+O	bowl	0
+S	contains	{meat mix}
+O	meat mix	0
+S	cooked
+S	contains	{oil,onion,ground beef,salt,black pepper}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{meat mix}
+O	pot	1
+S	contains	{potato}
+O	potato	1
+S	mashed
+S	in	[pot]
+O	spoon	1
+M	scrape	2:08	2:10
+O	bowl	0
+S	contains	{meat mix,potato}
+O	potato	1
+S	mashed
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{meat mix,potato}
+O	spoon	1
+O	potato	1
+S	mashed
+S	in	[bowl]
+O	meat mix	0
+S	cooked
+S	contains	{oil,onion,ground beef,salt,black pepper}
+S	in	[bowl]
+M	mix	2:11	2:28
+O	bowl	0
+S	contains	{croquette mixture}
+O	croquette mixture	1
+S	contains	{potato,meat mix}
+S	in	[bowl]
+//
+O	fridge	0
+S	on
+O	bowl	1
+S	contains	{croquette mixture}
+M	put inside	Assumed	Assumed
+O	bowl	1
+S	contains	{croquette mixture}
+S	in	[fridge]
+O	fridge	0
+S	on
+S	with	[bowl]
+//
+O	bowl	1
+S	contains	{croquette mixture}
+S	in	[fridge]
+O	fridge	0
+S	on
+S	with	[bowl]
+M	remove	Assumed	Assumed
+O	bowl	1
+S	contains	{croquette mixture}
+O	fridge	0
+S	on
+//
+O	bowl	1
+S	contains	{croquette mixture}
+O	croquette mixture	1
+S	contains	{potato,meat mix}
+S	in	[bowl]
+M	roll	2:30	2:44
+O	croquette	1
+S	contains	{potato,meat mix}
+S	uncooked
+//
+O	croquette	1
+S	contains	{potato,meat mix}
+S	uncooked
+O	bowl	0
+S	contains	{flour}
+O	flour	0
+S	in	[bowl]
+M	dip	2:45	2:49
+O	croquette	1
+S	contains	{potato,meat mix}
+S	uncooked
+S	floured	{flour}
+//
+O	croquette	1
+S	contains	{potato,meat mix}
+S	uncooked
+S	floured	{flour}
+O	bowl	0
+S	contains	{egg yolk}
+O	egg yolk	0
+S	mixed
+S	in	[bowl]
+M	dip	2:54	3:01
+O	croquette	1
+S	contains	{potato,meat mix}
+S	uncooked
+S	coated	{flour,egg yolk}
+//
+O	croquette	1
+S	contains	{potato,meat mix}
+S	uncooked
+S	coated	{flour,egg yolk}
+O	bowl	0
+S	contains	{breadcrumb}
+O	breadcrumb	0
+S	in	[bowl]
+M	dip	3:03	3:22
+O	croquette	1
+S	contains	{potato,meat mix,egg yolk,breadcrumb}
+S	uncooked
+//
+O	pot	0
+S	heated
+S	on	[stove]
+O	bottle	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	in	[bowl]
+M	pour	Assumed	Assumed
+O	pot	0
+S	greased	{vegetable oil}
+S	on	[stove]
+O	vegetable oil	0
+S	in	[pot]
+//
+O	pot	0
+S	greased	{vegetable oil}
+S	on	[stove]
+O	croquette	1
+S	contains	{potato,meat mix,egg yolk,breadcrumb}
+S	uncooked
+M	pick-and-place	3:26	3:27
+O	pot	0
+S	contains	{vegetable oil,croquette}
+S	on	[stove]
+O	croquette	1
+S	contains	{potato,meat mix}
+S	partly cooked
+S	in	[pot]
+//
+O	pot	0
+S	contains	{vegetable oil,croquette}
+S	on	[stove]
+O	croquette	1
+S	contains	{potato,meat mix}
+S	partly cooked
+S	in	[pot]
+O	chopstick	1
+M	flip	3:44	3:51
+O	croquette	1
+S	contains	{potato,meat mix}
+S	flipped
+S	in	[pot]
+//
+O	stove	0
+S	on
+S	with	[pot]
+O	pot	0
+S	contains	{vegetable oil,croquette}
+S	on	[stove]
+O	croquette	0
+S	contains	{potato,meat mix}
+S	flipped
+S	in	[pot]
+M	cook	Assumed	Assumed
+O	pot	0
+S	contains	{croquette}
+S	on	[stove]
+O	croquette	0
+S	cooked
+S	in	[pot]
+//
+O	plate	0
+S	empty
+O	pot	1
+S	contains	{croquette}
+S	on	[stove]
+O	croquette	1
+S	cooked
+S	in	[pot]
+O	chopstick	1
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{croquette}
+O	croquette	1	11
+S	cooked
+S	contains	{oil,onion,ground beef,salt,black pepper,potato,egg yolk,breadcrumb}
+S	on	[plate]
+//

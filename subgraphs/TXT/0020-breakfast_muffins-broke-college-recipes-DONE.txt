@@ -1,0 +1,390 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0020-breakfast_muffins-broke-college-recipes.mp4
+# Source:	https://www.youtube.com/watch?v=2jql8ldThao
+//
+O	oven	0
+S	off (ready)
+M	turn on	0:00	0:02
+O	oven	0
+S	on
+//
+O	muffin pan	0
+S	empty
+O	cooking spray	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	in	[spray can]
+M	spray	Assumed	Assumed
+O	muffin pan	0
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	in	[muffin pan]
+//
+O	griddle	0
+S	off (ready)
+M	turn on	Assumed	Assumed
+O	griddle	0
+S	on
+//
+O	packet	0
+S	contains	{bacon}
+S	open
+O	griddle	0
+S	on
+O	bacon	1
+S	raw
+S	in	[packet]
+M	pick-and-place	1:12	1:19
+O	griddle	0
+S	on
+S	contains	{bacon}
+O	bacon	1
+S	raw
+S	on	[griddle]
+//
+O	griddle	0
+S	on
+S	contains	{bacon}
+M	close	1:19	1:21
+O	griddle	0
+S	on
+S	closed
+S	contains	{bacon}
+//
+O	griddle	0
+S	on
+S	closed
+S	contains	{bacon}
+O	bacon	1
+S	raw
+S	on	[griddle]
+M	cook	Assumed	Assumed
+O	bacon	1
+S	fried
+S	on	[griddle]
+//
+O	muffin pan	0
+S	contains	{vegetable oil}
+O	egg	1
+S	whole
+M	crack	1:21	1:27
+O	muffin pan	0
+S	contains	{vegetable oil,egg}
+O	egg	1
+S	cracked
+S	in	[muffin pan]
+//
+O	egg	1
+S	cracked
+S	in	[muffin pan]
+O	fork	1
+M	mix	1:31	1:39
+O	egg	1
+S	beaten
+S	in	[muffin pan]
+//
+O	griddle	0
+S	on
+S	closed
+S	contains	{bacon}
+M	open	Assumed	Assumed
+O	griddle	0
+S	on
+S	contains	{bacon}
+//
+O	griddle	0
+S	on
+S	contains	{bacon}
+M	turn off	Assumed	Assumed
+O	griddle	0
+S	off
+S	contains	{bacon}
+//
+O	bacon	0
+S	fried
+S	on	[griddle]
+O	griddle	0
+S	off
+S	contains	{bacon}
+O	tongs	1
+O	cutting board	0
+M	pick-and-place	Assumed	Assumed
+O	griddle	0
+S	off
+O	cutting board	0
+S	contains	{bacon}
+O	bacon	0
+S	fried
+S	on	[cutting board]
+//
+O	strainer	1
+S	contains	{potato}
+O	potato	1
+S	whole
+S	washed
+S	in	[strainer]
+O	cutting board	0
+M	pick-and-place	Assumed	Assumed
+O	potato	1
+S	whole
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{potato}
+O	strainer	1
+//
+O	potato	0
+S	whole
+S	on	[cutting board]
+O	peeler	1
+M	peel	Assumed	Assumed
+O	potato	1
+S	peeled
+S	on	[cutting board]
+//
+O	bowl	0
+S	empty
+O	grater	1
+M	place	Assumed	Assumed
+O	grater	1
+S	on	[bowl]
+O	bowl	0
+S	empty
+S	under	[grater]
+//
+O	potato	1
+S	peeled
+S	on	[cutting board]
+O	bowl	0
+S	empty
+S	under	[grater]
+O	grater	0
+S	on	[bowl]
+M	grate	Assumed	Assumed
+O	bowl	0
+S	contains	{potato}
+S	under	[grater]
+O	potato	1
+S	grated
+S	in	[bowl]
+O	grater	0
+S	on	[bowl]
+//
+O	bowl	0
+S	contains	{potato}
+S	under	[grater]
+O	grater	1
+S	on	[bowl]
+M	remove	Assumed	Assumed
+O	bowl	0
+S	contains	{potato}
+O	grater	1
+//
+O	griddle	0
+S	on
+O	potato	1
+S	grated
+S	in	[bowl]
+O	fork	1
+M	place and spread	1:45	1:48
+O	griddle	0
+S	on
+S	contains	{potato}
+O	potato	1
+S	grated
+S	uncooked
+S	on	[griddle]
+//
+O	griddle	0
+S	on
+S	contains	{potato}
+M	close	1:49	1:50
+O	griddle	0
+S	on
+S	contains	{potato}
+S	closed
+//
+O	cutting board	0
+S	contains	{bacon}
+O	bacon	0
+S	fried
+S	on	[cutting board]
+O	knife	1
+M	chop	1:50	1:56
+O	bacon	0
+S	fried
+S	chopped
+S	on	[cutting board]
+//
+O	griddle	0
+S	on
+S	contains	{potato}
+S	closed
+O	potato	1
+S	grated
+S	uncooked
+S	on	[griddle]
+M	cook	Assumed	Assumed
+O	potato	0
+S	fried
+S	on	[griddle]
+//
+O	griddle	0
+S	on
+S	closed
+S	contains	{potato}
+M	open	Assumed	Assumed
+O	griddle	0
+S	on
+S	contains	{potato}
+//
+O	potato	0
+S	fried
+S	on	[griddle]
+O	griddle	0
+S	on
+S	contains	{potato}
+M	turn off	Assumed	Assumed
+O	griddle	0
+S	off
+S	contains	{potato}
+//
+O	griddle	0
+S	off
+S	contains	{potato}
+O	tongs	1
+O	cutting board	0
+M	pick-and-place	Assumed	Assumed
+O	griddle	0
+S	off
+O	cutting board	0
+S	contains	{potato}
+O	potato	0
+S	fried
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{potato}
+O	potato	1
+S	fried
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{bacon}
+O	bacon	1
+S	fried
+S	chopped
+S	on	[cutting board]
+M	combine*	Assumed	Assumed
+O	cutting board	0
+S	contains	{potato,bacon}
+//
+O	muffin pan	0
+S	contains	{egg,vegetable oil}
+O	egg	1
+S	beaten
+S	in	[muffin pan]
+O	cutting board	0
+S	contains	{bacon,potato}
+O	bacon	1
+S	fried
+S	chopped
+S	on	[cutting board]
+O	potato	1
+S	fried
+S	on	[cutting board]
+O	packet	0
+S	opened
+S	contains	{cheddar}
+O	cheddar	1
+S	grated
+S	in	[packet]
+M	sprinkle*	2:05	2:20
+O	muffin pan	0
+S	contains	{egg,vegetable oil,bacon,potato,cheddar}
+O	cutting board	0
+O	potato	1
+S	fried
+S	in	[muffin pan]
+O	bacon	1
+S	chopped
+S	in	[muffin pan]
+O	cheddar	1
+S	grated
+S	in	[muffin pan]
+//
+O	muffin pan	0
+S	contains	{egg,bacon,potato,cheddar}
+O	egg	1
+S	beaten
+S	in	[muffin pan]
+O	potato	1
+S	fried
+S	in	[muffin pan]
+O	bacon	1
+S	chopped
+S	in	[muffin pan]
+O	cheddar	1
+S	grated
+S	in	[muffin pan]
+O	fork	1
+M	mix*	2:20	2:24
+O	muffin pan	0
+S	contains	{egg mixture}
+O	egg mixture	1
+S	uncooked
+S	in	[muffin pan]
+S	contains	{egg,bacon,potato,cheddar}
+//
+O	muffin pan	1
+S	contains	{egg mixture}
+O	oven	0
+S	on
+M	insert	2:25	2:28
+O	oven	0
+S	on
+S	with	[baking tray]
+O	muffin pan	1
+S	contains	{egg mixture}
+S	in	[oven]
+//
+O	oven	0
+S	on
+S	with	[baking tray]
+O	muffin pan	1
+S	contains	{egg mixture}
+S	in	[oven]
+O	egg mixture	1
+S	contains	{egg,bacon,potato,cheddar}
+S	uncooked
+S	in	[muffin pan]
+M	bake	Assumed	Assumed
+O	muffin pan	1
+S	contains	{muffin}
+S	in	[oven]
+O	muffin	1
+S	in	[muffin pan]
+//
+O	oven	0
+S	off
+S	with	[baking tray]
+O	muffin pan	1
+S	contains	{muffin}
+S	in	[oven]
+M	remove	Assumed	Assumed
+O	muffin pan	1
+S	contains	{muffin}
+O	oven	0
+S	off
+//
+O	muffin pan	0
+S	contains	{muffin}
+O	muffin	1
+S	in	[muffin pan]
+O	fork	1
+O	plate	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{breakfast muffin}
+O	breakfast muffin	1	8
+S	contains	{egg,bacon,potato,cheddar,vegetable oil}
+S	on	[plate]
+//

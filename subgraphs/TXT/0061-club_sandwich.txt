@@ -1,0 +1,389 @@
+# Source:	https://www.youtube.com/watch?v=S_1_ZSMxRfg
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0061-club_sandwich.mp4
+//
+O	cooking pan	1
+S	empty
+O	stove	0
+S	off (ready)
+M	pick-and-place	<Assumed>
+O	cooking pan	1
+S	empty
+S	on	[stove]
+O	stove	0
+S	off (ready)
+S	under	[cooking pan]
+//
+O	cooking pan	0
+S	on	[stove]
+S	empty
+O	stove	0
+S	on
+S	under	[cooking pan]
+M	heat	<Assumed>
+O	cooking pan	0
+S	empty
+S	hot
+S	on	[stove]
+//
+O	cooking pan	0
+S	empty
+S	hot
+S	on	[stove]
+O	bacon	1
+S	raw
+S	sliced
+M	pick-and-place	<0:15-0:25>
+O	cooking pan	0
+S	hot
+S	contains	{bacon}
+S	on	[stove]
+O	bacon	1
+S	raw
+S	sliced
+S	in	[cooking pan]
+//
+O	stove	0
+S	on
+S	under	[cooking pan]
+O	cooking pan	0
+S	hot
+S	contains	{bacon}
+S	on	[stove]
+O	bacon	0
+S	raw
+S	sliced
+S	in	[cooking pan]
+M	cook	<Assumed>
+O	bacon	1
+S	cooked
+S	sliced
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{bacon}
+S	on	[stove]
+O	bacon	0
+S	cooked
+S	sliced
+S	in	[cooking pan]
+O	plate	0
+S	empty
+O	fork	1
+M	pick-and-place	<0:26-0:33>
+O	cooking pan	0
+S	empty
+S	on	[stove]
+O	plate	0
+S	contains	{bacon}
+O	bacon	0
+S	cooked
+S	sliced
+S	on	[plate]
+//
+O	cutting board	0
+S	empty
+O	tomato	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{tomato}
+O	tomato	1
+S	whole
+S	on	[cutting board]
+//
+O	tomato	0
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	core	<0:35-0:39>
+O	tomato	0
+S	cored
+S	whole
+S	on	[cutting board]
+//
+O	tomato	0
+S	whole
+S	cored
+S	on	[cutting board]
+O	knife	1
+M	slice	<0:40-0:52>
+O	tomato	0
+S	sliced
+S	on	[cutting board]
+//
+O	bread	1
+S	sliced
+S	in	[toaster]
+O	toaster	0
+S	empty (ready)
+M	pick-and-place	<Assumed>
+O	toaster	0
+S	contains	{bread}
+O	bread	1
+S	sliced
+S	in	[toaster]
+//
+O	toaster	0
+S	contains	{bread}
+O	bread	1
+S	sliced
+S	in	[toaster]
+M	toast	<Assumed>
+O	bread	1
+S	sliced
+S	toasted
+S	in	[toaster]
+//
+O	toaster	0
+S	contains	{bread}
+O	cutting board	0
+S	empty
+O	bread	1
+S	sliced
+S	toasted
+S	in	[toaster]
+M	pick-and-place	<Assumed>
+O	toaster	0
+S	empty
+O	cutting board	0
+S	contains	{bread}
+O	bread	1
+S	sliced
+S	toasted
+S	on	[cutting board]
+//
+O	jar	0
+S	contains	{mayonnaise}
+O	mayonnaise	0
+S	creamy
+S	in	[jar]
+O	bread	0
+S	sliced
+S	toasted
+S	on	[cutting board]
+O	knife	1
+M	spread	<0:58-1:03,1:40-1:50,2:08-2:14>
+O	bread	0
+S	sliced
+S	contains	{mayonnaise}
+S	on	[cutting board]
+O	mayonnaise	1
+S	creamy
+S	on	[bread]
+//
+O	plate	0
+S	contains	{ham}
+O	bread	0
+S	sliced
+S	contains	{mayonnaise}
+S	on	[cutting board]
+O	ham	1
+S	cooked
+S	sliced
+S	on	[plate]
+M	pick-and-place	<1:05-1:16>
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,ham}
+S	on	[cutting board]
+O	ham	1
+S	cooked
+S	sliced
+S	on	[bread]
+//
+O	plate	0
+S	contains	{turkey}
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,ham}
+S	on	[cutting board]
+O	turkey	1
+S	cooked
+S	sliced
+S	on	[plate]
+M	pick-and-place	<1:17-1:22>
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,ham,turkey}
+S	on	[cutting board]
+O	turkey	1
+S	sliced
+S	cooked
+S	on	[bread]
+//
+O	plate	0
+S	contains	{cheese}
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,ham,turkey}
+S	on	[cutting board]
+O	cheese	1
+S	sliced
+S	on	[plate]
+M	pick-and-place	<1:22-1:25>
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,ham,turkey,cheese}
+S	on	[cutting board]
+O	cheese	1
+S	sliced
+S	on	[bread]
+//
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,ham,turkey,cheese}
+S	on	[cutting board]
+O	bread	1
+S	sliced
+S	contains	{mayonnaise}
+S	on	[cutting board]
+M	pick-and-place	<1:36-1:39>
+O	bread	1
+S	sliced
+S	contains	{mayonnaise}
+S	on	[bread]
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,ham,turkey,cheese}
+S	on	[cutting board]
+S	under	[bread]
+O	sandwich	0
+S	contains	{mayonnaise,ham,turkey,cheese}
+S	on	[cutting board]
+//
+O	plate	0
+S	contains	{bacon}
+O	bacon	1
+S	on	[plate]
+S	fried
+S	sliced
+O	bread	0
+S	sliced
+S	contains	{mayonnaise}
+S	on	[bread]
+M	pick-and-place	<1:51-1:55>
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,bacon}
+S	on	[bread]
+O	bacon	1
+S	fried
+S	sliced
+S	on	[bread]
+//
+O	plate	0
+S	contains	{lettuce}
+O	lettuce	1
+S	leaf
+S	on	[plate]
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,bacon}
+S	on	[bread]
+M	pick-and-place	<1:56-2:00>
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,bacon,lettuce}
+S	on	[bread]
+O	lettuce	1
+S	leaf
+S	on	[bread]
+//
+O	plate	0
+S	contains	{tomato}
+O	tomato	1
+S	sliced
+S	on	[cutting board]
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,bacon,lettuce}
+S	on	[bread]
+M	pick-and-place	<2:02-2:05>
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,bacon,lettuce,tomato}
+S	on	[bread]
+O	tomato	1
+S	sliced
+S	on	[bread]
+//
+O	cutting board	0
+S	contains	{bread}
+O	bread	1
+S	sliced
+S	contains	{mayonnaise}
+S	on	[cutting board]
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,bacon,lettuce,tomato}
+S	on	[bread]
+O	bread	0
+S	sliced
+S	contains	{mayonnaise,ham,turkey,cheese}
+S	on	[cutting board]
+M	pick-and-place	<2:15-2:19>
+O	cutting board	0
+S	contains	{sandwich}
+O	bread	1
+S	sliced
+S	contains	{mayonnaise}
+S	on	[bread]
+O	sandwich	0
+S	whole
+S	contains	{bacon,bread,cheese,ham,lettuce,mayonnaise,tomato,turkey}
+S	on	[cutting board]
+O	club sandwich	0	4
+S	whole
+S	contains	{bacon,bread,cheese,ham,lettuce,mayonnaise,tomato,turkey}
+S	on	[cutting board]
+//
+O	club sandwich	0	4
+S	whole
+S	contains	{bacon,bread,cheese,ham,lettuce,mayonnaise,tomato,turkey}
+S	on	[cutting board]
+O	knife	1
+M	divide	<2:40-2:49>
+O	club sandwich	0	4
+S	portioned
+S	contains	{bacon,bread,cheese,ham,lettuce,mayonnaise,tomato,turkey}
+S	on	[cutting board]
+//
+O	plate	0
+S	empty
+O	bowl	1
+S	contains	{fries}
+O	fries	1
+S	cooked
+S	in	[bowl]
+M	pour	<2:51-2:56>
+O	plate	0
+S	contains	{fries}
+O	fries	1
+S	cooked
+S	on	[plate]
+O	bowl	1
+S	empty
+//
+O	fries	1
+S	cooked
+S	on	[plate]
+O	cutting board	0
+S	contains	{sandwich}
+O	plate	0
+S	contains	{fries}
+O	club sandwich	1
+S	portioned
+S	contains	{bacon,bread,cheese,ham,lettuce,mayonnaise,tomato,turkey}
+S	on	[cutting board]
+M	pick-and-place	<2:58-3:07>
+O	plate	0
+S	contains	{club sandwich,fries}
+O	club sandwich	1	4
+S	portioned
+S	contains	{bacon,bread,cheese,ham,lettuce,mayonnaise,tomato,turkey}
+S	on	[plate]
+S	ready
+O	cutting board	0
+S	empty
+//

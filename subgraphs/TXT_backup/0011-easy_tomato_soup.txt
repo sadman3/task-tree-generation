@@ -1,0 +1,568 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0011-easy_tomato_soup.mp4
+# Source:	https://www.youtube.com/watch?v=XMX_DmycSY0
+//
+O26	blender jar	1
+S46	empty
+O23	blender	0
+S91	off (ready)
+M1	attach	<Assumed>
+O26	blender jar	1
+S1	attached to	[blender]
+S46	empty
+O23	blender	0
+S156	with	[blender jar]
+S91	off (ready)
+//
+O61	carton	1
+S24	contains	{broth}
+O41	broth	1
+S81	liquid
+S72	in	[carton]
+O241	measuring cup	0
+S46	empty
+M65	pour	<Assumed>
+O241	measuring cup	0
+S24	contains	{broth}
+O41	broth	1
+S81	liquid
+S72	in	[measuring cup]
+//
+O56	can	0
+S24	contains	{tomato,tomato paste}
+S117	sealed
+O57	can opener	1
+M59	open	<Assumed>
+O56	can	0
+S24	contains	{tomato,tomato paste}
+S95	opened
+//
+O34	bowl	0
+S46	empty
+O56	can	0
+S24	contains	{tomato,tomato paste}
+S95	opened
+O394	tomato paste	1
+S100	paste
+S72	in	[can]
+O367	spoon	1
+M88	scrape	<Assumed>
+O34	bowl	0
+S24	contains	{tomato,tomato paste}
+O394	tomato paste	1
+S100	paste
+S72	in	[bowl]
+O56	can	0
+S46	empty
+//
+O34	bowl	0
+S46	empty
+O163	garlic	1
+S21	clove
+S101	peeled
+M61	pick-and-place	<Assumed>
+O34	bowl	0
+S24	contains	{garlic}
+O163	garlic	1
+S21	clove
+S72	in	[bowl]
+S101	peeled
+//
+O350	shaker	1
+S24	contains	{oregano}
+O274	oregano	1
+S72	in	[shaker]
+S44	dried
+O34	bowl	1
+S46	empty
+M65	pour	<Assumed>
+O34	bowl	1
+S24	contains	{oregano}
+O274	oregano	1
+S72	in	[bowl]
+S44	dried
+//
+O26	blender jar	0
+S1	attached to	[blender]
+S46	empty
+O34	bowl	1
+S24	contains	{tomato}
+O392	tomato	1
+S41	destemmed
+S72	in	[bowl]
+S155	whole
+M65	pour	<0:44,0:47>
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{tomato}
+O392	tomato	1
+S41	destemmed
+S72	in	[blender jar]
+S155	whole
+//
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{tomato}
+O34	bowl	1
+S24	contains	{tomato paste}
+O394	tomato paste	1
+S100	paste
+S72	in	[bowl]
+O367	spoon	1
+M86	scoop and pour	<0:48,0:56>
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{tomato,tomato paste}
+O392	tomato	1
+S100	paste
+S72	in	[blender jar]
+O34	bowl	1
+S46	empty
+//
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{tomato,tomato paste}
+O34	bowl	1
+S24	contains	{garlic}
+O163	garlic	1
+S21	clove
+S72	in	[bowl]
+S101	peeled
+M65	pour	<0:59,1:01>
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{garlic,tomato,tomato paste}
+O163	garlic	1
+S21	clove
+S72	in	[blender jar]
+S101	peeled
+O34	bowl	1
+S46	empty
+//
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{garlic,tomato,tomato paste}
+O34	bowl	1
+S24	contains	{oregano}
+O274	oregano	1
+S44	dried
+S72	in	[bowl]
+M65	pour	<1:02,1:08>
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{garlic,oregano,tomato,tomato paste}
+O274	oregano	1
+S44	dried
+S72	in	[blender jar]
+O34	bowl	1
+S46	empty
+//
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{garlic,oregano,tomato,tomato paste}
+O34	bowl	1
+S24	contains	{sugar}
+O373	sugar	1
+S63	granulated
+S72	in	[bowl]
+M65	pour	<1:09,1:14>
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{sugar,garlic,oregano,tomato,tomato paste}
+O373	sugar	1
+S63	granulated
+S72	in	[blender jar]
+O34	bowl	1
+S46	empty
+//
+O304	plate	0
+S46	empty
+O350	shaker	1
+S24	contains	{cinnamon}
+O91	cinnamon	1
+S66	ground
+S72	in	[shaker]
+M101	sprinkle	<Assumed>
+O304	plate	0
+S24	contains	{cinnamon}
+O91	cinnamon	1
+S66	ground
+S93	on	[plate]
+//
+O304	plate	0
+S46	empty
+O350	shaker	1
+S24	contains	{onion powder}
+O271	onion powder	1
+S66	ground
+S72	in	[shaker]
+M101	sprinkle	<Assumed>
+O304	plate	0
+S24	contains	{onion powder}
+O271	onion powder	1
+S66	ground
+S93	on	[plate]
+//
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{sugar,garlic,oregano,tomato,tomato paste}
+O304	plate	1
+S24	contains	{cinnamon}
+O91	cinnamon	1
+S66	ground
+S93	on	[plate]
+M88	scrape	<1:19,1:21>
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{sugar,cinnamon,garlic,oregano,tomato,tomato paste}
+O91	cinnamon	1
+S66	ground
+S72	in	[blender jar]
+//
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{sugar,cinnamon,garlic,oregano,tomato,tomato paste}
+O304	plate	1
+S24	contains	{onion powder}
+O271	onion powder	1
+S66	ground
+S93	on	[plate]
+M88	scrape	<1:21,1:24>
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{sugar,cinnamon,garlic,onion powder,oregano,tomato,tomato paste}
+O271	onion powder	1
+S66	ground
+S72	in	[blender jar]
+//
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{sugar,cinnamon,garlic,onion powder,oregano,tomato,tomato paste}
+O304	plate	1
+S24	contains	{salt}
+O336	salt	1
+S63	granulated
+S93	on	[plate]
+M88	scrape	<1:25,1:31>
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{sugar,cinnamon,garlic,onion powder,oregano,salt,tomato,tomato paste}
+O336	salt	1
+S63	granulated
+S72	in	[blender jar]
+//
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{sugar,cinnamon,garlic,onion powder,oregano,salt,tomato,tomato paste}
+O304	plate	1
+S24	contains	{white pepper}
+O422	white pepper	1
+S66	ground
+S93	on	[plate]
+M88	scrape	<1:32,1:34>
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{sugar,cinnamon,garlic,onion powder,oregano,salt,tomato,tomato paste,white pepper}
+O422	white pepper	1
+S66	ground
+S72	in	[blender jar]
+//
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{sugar,cinnamon,garlic,onion powder,oregano,salt,tomato,tomato paste,white pepper}
+O241	measuring cup	1
+S24	contains	{broth}
+O41	broth	1
+S81	liquid
+S72	in	[measuring cup]
+M65	pour	<1:35,1:42>
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{sugar,broth,cinnamon,garlic,onion powder,oregano,salt,tomato,tomato paste,white pepper}
+O41	broth	1
+S81	liquid
+S72	in	[blender jar]
+//
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{sugar,broth,cinnamon,garlic,onion powder,oregano,salt,tomato,tomato paste,white pepper}
+O24	blender cover	1
+M21	cover	<1:45,1:46>
+O26	blender jar	0
+S1	attached to	[blender]
+S27	covered	[blender cover]
+S24	contains	{sugar,broth,cinnamon,garlic,onion powder,oregano,salt,tomato,tomato paste,white pepper}
+O24	blender cover	1
+S93	on	[blender jar]
+//
+O23	blender	0
+S156	with	[blender jar]
+S93	on
+O26	blender jar	0
+S1	attached to	[blender]
+S27	covered	[blender cover]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O392	tomato	1
+S41	destemmed
+S72	in	[blender jar]
+S155	whole
+O373	sugar	1
+S63	granulated
+S72	in	[blender jar]
+O392	tomato	1
+S100	paste
+S72	in	[blender jar]
+O163	garlic	1
+S72	in	[blender jar]
+S101	peeled
+O274	oregano	1
+S44	dried
+S72	in	[blender jar]
+O91	cinnamon	1
+S66	ground
+S72	in	[blender jar]
+O271	onion powder	1
+S66	ground
+S72	in	[blender jar]
+O336	salt	1
+S63	granulated
+S72	in	[blender jar]
+O422	white pepper	1
+S66	ground
+S72	in	[blender jar]
+O41	broth	1
+S81	liquid
+S72	in	[blender jar]
+M4	blend	<1:52,1:54>
+O250	mixture	1
+S144	thick liquid
+S8	blended
+S72	in	[blender jar]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+//
+O26	blender jar	0
+S1	attached to	[blender]
+S27	covered	[blender cover]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O24	blender cover	1
+S93	on	[blender jar]
+M118	uncover	<1:55,1:58>
+O26	blender jar	0
+S1	attached to	[blender]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O24	blender cover	1
+//
+O23	blender	0
+S90	off
+S156	with	[blender jar]
+O26	blender jar	1
+S1	attached to	[blender]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+M29	detach	<2:06,2:08>
+O26	blender jar	1
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O23	blender	0
+S90	off
+//
+O26	blender jar	1
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O250	mixture	1
+S144	thick liquid
+S8	blended
+S72	in	[blender jar]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O306	pot	0
+S46	empty
+M65	pour	<2:10,2:20>
+O26	blender jar	1
+S46	empty
+O306	pot	0
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O358	soup	1
+S144	thick liquid
+S146	uncooked
+S72	in	[pot]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+//
+O306	pot	1
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O370	stove	0
+S91	off (ready)
+M61	pick-and-place	<Assumed>
+O306	pot	1
+S93	on	[stove]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O370	stove	0
+S91	off (ready)
+S156	with	[pot]
+//
+O370	stove	0
+S91	off (ready)
+S156	with	[pot]
+M117	turn on	<2:23,2:24>
+O370	stove	0
+S93	on
+S156	with	[pot]
+//
+O306	pot	0
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+S93	on	[stove]
+O370	stove	0
+S93	on
+S156	with	[pot]
+M47	heat	<Assumed>
+O306	pot	0
+S71	hot
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+S93	on	[stove]
+//
+O370	stove	0
+S93	on
+S156	with	[pot]
+O306	pot	1
+S71	hot
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+S93	on	[stove]
+O358	soup	1
+S144	thick liquid
+S146	uncooked
+S72	in	[pot]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O367	spoon	1
+M19	cook and stir	<2:27,2:32>
+O358	soup	1
+S144	thick liquid
+S97	partly cooked
+S72	in	[pot]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+//
+O306	pot	0
+S71	hot
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+S93	on	[stove]
+O307	pot lid	1
+M21	cover	<Assumed>
+O306	pot	0
+S27	covered	[pot lid]
+S71	hot
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+S93	on	[stove]
+O307	pot lid	1
+S93	on	[pot]
+//
+O370	stove	0
+S93	on
+S156	with	[pot]
+O306	pot	0
+S27	covered	[pot lid]
+S71	hot
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+S93	on	[stove]
+O358	soup	1
+S144	thick liquid
+S97	partly cooked
+S72	in	[pot]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+M94	simmer	<Assumed>
+O306	pot	0
+S27	covered	[pot lid]
+S71	hot
+S24	contains	{soup}
+S93	on	[stove]
+O395	tomato soup	1
+S144	thick liquid
+S25	cooked
+S72	in	[pot]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+//
+O306	pot	0
+S27	covered	[pot lid]
+S71	hot
+S24	contains	{soup}
+S93	on	[stove]
+O307	pot lid	1
+S93	on	[pot]
+M118	uncover	<Assumed>
+O306	pot	0
+S24	contains	{soup}
+S93	on	[stove]
+O307	pot lid	1
+//
+O306	pot	0
+S24	contains	{soup}
+S93	on	[stove]
+O395	tomato soup	1
+S144	thick liquid
+S25	cooked
+S72	in	[pot]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O218	ladle	1
+O34	bowl	0
+S46	empty
+M86	scoop and pour	<Assumed>
+O34	bowl	0
+S24	contains	{soup}
+O395	tomato soup	1	1
+S144	thick liquid
+S72	in	[bowl]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+//
+O61	carton	1
+S24	contains	{milk}
+O244	milk	1
+S81	liquid
+S72	in	[carton]
+O34	bowl	0
+S46	empty
+M65	pour	<Assumed>
+O34	bowl	0
+S24	contains	{milk}
+O244	milk	1
+S81	liquid
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{soup}
+O395	tomato soup	1
+S144	thick liquid
+S72	in	[bowl]
+S24	contains	{broth,cinnamon,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O34	bowl	0
+S24	contains	{milk}
+O244	milk	1
+S81	liquid
+S72	in	[bowl]
+O367	spoon	1
+M86	scoop and pour	<3:36,3:46>
+O34	bowl	0
+S24	contains	{milk,soup}
+O395	tomato soup	1
+S144	thick liquid
+S72	in	[bowl]
+S24	contains	{broth,cinnamon,garlic,milk,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O244	milk	1
+S81	liquid
+S93	on	[soup]
+//
+O34	bowl	0
+S24	contains	{milk,soup}
+O395	tomato soup	0
+S144	thick liquid
+S72	in	[bowl]
+S24	contains	{broth,cinnamon,garlic,milk,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O101	container	0
+S24	contains	{coriander}
+O105	coriander	1
+S72	in	[container]
+S78	leaf
+M101	sprinkle	<3:49,4:03>
+O34	bowl	0
+S24	contains	{coriander,milk,soup}
+O395	tomato soup	0	1
+S144	thick liquid
+S110	ready
+S72	in	[bowl]
+S24	contains	{broth,cinnamon,coriander,garlic,onion powder,oregano,sugar,salt,tomato,tomato paste,white pepper}
+O105	coriander	1
+S93	on	[soup]
+S78	leaf
+//

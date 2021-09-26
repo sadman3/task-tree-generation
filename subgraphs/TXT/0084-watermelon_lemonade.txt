@@ -1,0 +1,361 @@
+# Source:	https://www.youtube.com/watch?v=b34taRvrR20
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0084-watermelon_lemonade.mp4
+//
+O	cutting board	0
+S	empty
+O	watermelon	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{watermelon}
+O	watermelon	1
+S	whole
+S	on	[cutting board]
+//
+O	watermelon	0
+S	whole
+O	knife	1
+M	slice	<Assumed>
+O	watermelon	0
+S	halved
+S	on	[cutting board]
+//
+O	bowl	0
+S	empty
+O	spoon	1
+S	empty
+O	watermelon	1
+S	halved
+S	on	[cutting board]
+M	scoop and pour	<0:25-0:37>
+O	bowl	0
+S	contains	{watermelon}
+O	watermelon	0
+S	chopped
+S	in	[bowl]
+//
+O	cutting board	0
+S	empty
+O	lemon	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{lemon}
+O	lemon	1
+S	whole
+S	on	[cutting board]
+//
+O	lemon	0
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	cut	<0:41-0:45>
+O	lemon	0
+S	halved
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{lemon}
+O	lemon	1
+S	halved
+S	on	[cutting board]
+O	squeezer	0
+S	empty
+M	insert	<Assumed>
+O	squeezer	0
+S	contains	{lemon}
+O	lemon	1
+S	halved
+S	in	[squeezer]
+//
+O	squeezer	0
+S	contains	{lemon}
+O	lemon	0
+S	halved
+S	in	[squeezer]
+O	measuring cup	0
+S	empty
+S	under	[squeezer]
+M	squeeze	<0:46-0:53>
+O	measuring cup	0
+S	contains	{lemon juice}
+O	lemon juice	0
+S	contains	{lemon}
+S	in	[measuring cup]
+O	lemon	0
+S	halved
+S	squeezed
+S	in	[squeezer]
+//
+O	bowl	1
+S	contains	{watermelon}
+S	on	[surface]
+O	food processor bowl	0
+S	empty
+O	watermelon	1
+S	chopped
+S	in	[bowl]
+M	pick-and-place	<1:06-1:13>
+O	food processor bowl	0
+S	contains	{watermelon}
+O	watermelon	1
+S	chopped
+S	in	[food processor bowl]
+//
+O	food processor bowl	0
+S	contains	{watermelon}
+O	watermelon	0
+S	chopped
+S	in	[food processor bowl]
+O	food processor lid	1
+M	cover	<Assumed>
+O	food processor bowl	1
+S	contains	{watermelon}
+S	covered	[food processor lid]
+O	food processor lid	1
+S	on	[food processor bowl]
+//
+O	food processor bowl	1
+S	contains	{watermelon}
+S	covered	[food processor lid]
+O	food processor	0
+S	off (ready)
+M	attach	<Assumed>
+O	food processor bowl	1
+S	contains	{watermelon}
+S	covered	[food processor lid]
+S	attached to	[food processor]
+O	food processor	0
+S	off (ready)
+S	attached to	[food processor bowl]
+//
+O	food processor	0
+S	off (ready)
+S	attached	[food processor bowl]
+M	turn on	<Assumed>
+O	food processor	0
+S	on
+S	attached to	[food processor bowl]
+//
+O	food processor	0
+S	on
+S	attached to	[food processor bowl]
+O	food processor bowl	1
+S	contains	{watermelon}
+S	covered	[food processor lid]
+S	attached to	[food processor]
+O	watermelon	0
+S	chopped
+S	in	[blender cup]
+M	blend	<1:13-1:19>
+O	food processor bowl	0
+S	contains	{watermelon juice}
+S	covered	[food processor lid]
+S	attached to	[food processor]
+O	watermelon	0
+S	juice
+S	in	[blender cup]
+//
+O	food processor	0
+S	on
+S	attached	[food processor bowl]
+M	turn off	<Assumed>
+O	food processor	0
+S	off
+S	attached to	[food processor bowl]
+//
+O	food processor	0
+S	off
+S	attached to	[food processor bowl]
+O	food processor bowl	1
+S	contains	{watermelon juice}
+S	covered	[food processor lid]
+S	attached to	[food processor]
+M	detach	<Assumed>
+O	food processor bowl	1
+S	contains	{watermelon juice}
+S	covered	[food processor lid]
+O	food processor	0
+S	off
+//
+O	food processor bowl	1
+S	contains	{watermelon juice}
+S	covered	[food processor lid]
+O	food processor lid	1
+S	on	[food processor bowl]
+M	uncover	<Assumed>
+O	food processor bowl	0
+S	contains	{watermelon juice}
+O	food processor lid	1
+//
+O	measuring cup	0
+S	empty
+O	strainer	1
+S	empty
+M	pick-and-place	<Assumed>
+O	strainer	1
+S	empty
+S	on	[measuring cup]
+O	measuring cup	0
+S	empty
+S	under	[strainer]
+//
+O	strainer	0
+S	empty
+S	on	[measuring cup]
+O	food processor bowl	0
+S	contains	{watermelon juice}
+O	watermelon	1
+S	juice
+S	in	[food processor bowl]
+M	pour	<1:24-1:26>
+O	strainer	0
+S	contains	{watermelon juice}
+S	on	[measuring cup]
+O	watermelon	1
+S	juice
+S	in	[strainer]
+//
+O	spoon	1
+S	empty
+O	strainer	0
+S	contains	{watermelon juice}
+S	on	[measuring cup]
+O	watermelon	1
+S	juice
+S	in	[strainer]
+O	measuring cup	0
+S	empty
+S	under	[strainer]
+M	stir and strain	<1:26-1:38>
+O	watermelon	1
+S	juice
+S	sifted
+S	in	[measuring cup]
+O	measuring cup	0
+S	contains	{watermelon juice}
+O	strainer	0
+S	contains	{pulp}
+//
+O	pitcher	0
+S	empty
+O	measuring cup	1
+S	contains	{watermelon juice}
+O	watermelon	1
+S	juice
+S	sifted
+S	in	[measuring cup]
+M	pour	<1:44-1:50>
+O	pitcher	0
+S	contains	{watermelon juice}
+O	watermelon	1
+S	juice
+S	in	[pitcher]
+//
+O	pitcher	0
+S	contains	{watermelon juice}
+O	lemon juice	0
+S	contains	{lemon}
+S	in	[measuring cup]
+O	measuring cup	1
+S	contains	{lemon juice}
+M	pour	<1:53-1:57>
+O	pitcher	0
+S	contains	{watermelon juice,lemon juice}
+O	lemon	1
+S	juice
+S	in	[pitcher]
+//
+O	pitcher	0
+S	contains	{watermelon juice,lemon juice}
+O	measuring cup	1
+S	contains	{water}
+O	water	1
+S	liquid
+S	in	[measuring cup]
+M	pour	<1:58-2:02>
+O	pitcher	0
+S	contains	{lemon juice,water,watermelon juice}
+O	water	1
+S	liquid
+S	in	[pitcher]
+//
+O	pitcher	0
+S	contains	{lemon juice,water,watermelon juice}
+O	bowl	1
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+M	pour	<2:05-2:10>
+O	pitcher	0
+S	contains	{lemon juice,sugar,water,watermelon juice}
+O	sugar	1
+S	granulated
+S	in	[pitcher]
+//
+O	pitcher	0
+S	contains	{lemon juice,sugar,water,watermelon juice}
+O	sugar	0
+S	granulated
+S	in	[pitcher]
+O	water	0
+S	liquid
+S	in	[pitcher]
+O	lemon	0
+S	juice
+S	in	[pitcher]
+O	spoon	1
+S	empty
+M	stir	<2:11-2:21>
+O	lemonade	0
+S	mixed
+S	liquid
+S	contains	{lemon juice,water,watermelon juice,sugar}
+S	in	[pitcher]
+//
+O	drinking glass	0
+S	empty
+O	bucket	0
+S	contains	{ice}
+O	ice	1
+S	crushed
+S	frozen
+S	in	[bowl]
+O	measuring cup	1
+S	empty
+M	scoop and pour	<2:23-2:26>
+O	drinking glass	0
+S	contains	{ice}
+O	ice	1
+S	crushed
+S	frozen
+S	in	[drinking glass]
+//
+O	ice	1
+S	crushed
+S	frozen
+S	in	[drinking glass]
+O	drinking glass	0
+S	contains	{ice}
+O	pitcher	1
+S	contains	{lemon juice,sugar,water,watermelon juice}
+O	lemonade	1
+S	mixed
+S	liquid
+S	contains	{lemon juice,water,watermelon juice,sugar}
+S	in	[pitcher]
+M	pour	<2:27-2:38>
+O	drinking glass	0
+S	contains	{ice,lemonade}
+O	lemonade	1	9
+S	mixed
+S	liquid
+S	contains	{ice,lemon juice,water,watermelon juice,sugar}
+S	in	[drinking glass]
+O	watermelon lemonade	1	9
+S	mixed
+S	liquid
+S	contains	{ice,lemon juice,water,watermelon juice,sugar}
+S	in	[drinking glass]
+//

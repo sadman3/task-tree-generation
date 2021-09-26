@@ -1,0 +1,398 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/EPIC-P01_17-salad.MP4
+//
+O	packet	1
+S	contains	{lettuce}
+O	lettuce	1
+S	in	[packet]
+S	whole
+M	remove	<1:39-1:42>
+O	packet	1
+S	empty
+O	lettuce	1
+S	whole
+//
+O	cutting board	0
+S	empty
+O	lettuce	1
+S	whole
+M	tear apart	<1:40-2:04>
+O	cutting board	0
+S	contains	{lettuce}
+O	lettuce	1
+S	on	[cutting board]
+S	leaf
+//
+O	lettuce	1
+S	on	[cutting board]
+S	leaf
+O	faucet	0
+S	on
+O	water	0
+S	liquid
+S	from	[faucet]
+M	wash	<2:28-2:38,2:41-2:56>
+O	lettuce	1
+S	leaf
+S	washed
+//
+O	lettuce	1
+S	leaf
+S	washed
+O	strainer	0
+S	empty
+M	place	<2:39-2:40,2:57-2:58>
+O	strainer	0
+S	contains	{lettuce}
+O	lettuce	1
+S	in	[strainer]
+S	leaf
+S	washed
+//
+O	packet	0
+S	contains	{lettuce}
+O	lettuce	1
+S	leaf
+S	washed
+S	in	[strainer]
+O	cutting board	0
+S	empty
+M	pick-and-place	<4:08-4:10>
+O	cutting board	0
+S	contains	{lettuce}
+O	lettuce	1
+S	on	[cutting board]
+S	leaf
+S	washed
+//
+O	lettuce	1
+S	leaf
+S	washed
+S	on	[cutting board]
+O	knife	1
+M	chop	<4:11-4:58>
+O	lettuce	0
+S	on	[cutting board]
+S	chopped
+//
+O	cutting board	1
+S	contains	{lettuce}
+O	lettuce	1
+S	on	[cutting board]
+S	chopped
+O	knife	1
+O	bowl	0
+S	empty
+M	pour and scrape	<5:02-5:19>
+O	bowl	0
+S	contains	{lettuce}
+O	lettuce	1
+S	in	[bowl]
+S	chopped
+//
+O	bowl	1
+S	contains	{mushroom}
+O	mushroom	1
+S	in	[bowl]
+S	sliced
+O	cutting board	0
+S	empty
+M	pour	<5:37-5:39>
+O	cutting board	0
+S	contains	{mushroom}
+O	mushroom	1
+S	on	[cutting board]
+S	sliced
+//
+O	mushroom	0
+S	on	[cutting board]
+S	sliced
+O	knife	1
+M	dice	<5:49-6:08>
+O	mushroom	0
+S	on	[cutting board]
+S	diced
+//
+O	cutting board	0
+S	contains	{mushroom}
+O	mushroom	1
+S	on	[cutting board]
+S	diced
+O	bowl	0
+S	contains	{lettuce}
+O	knife	1
+M	pour and scrape	<6:12-6:18>
+O	bowl	0
+S	contains	{lettuce,mushroom}
+O	mushroom	1
+S	in	[bowl]
+S	diced
+//
+O	carrot	1
+S	unpeeled
+S	whole
+O	faucet	0
+S	on
+O	water	0
+S	liquid
+S	from	[faucet]
+M	wash	<6:26-6:35>
+O	carrot	1
+S	washed
+S	unpeeled
+S	whole
+//
+O	carrot	1
+S	washed
+S	unpeeled
+S	whole
+O	cutting board	0
+S	empty
+M	pick-and-place	<6:37-6:43>
+O	cutting board	0
+S	contains	{carrot}
+O	carrot	1
+S	on	[cutting board]
+S	unpeeled
+S	whole
+//
+O	carrot	0
+S	on	[cutting board]
+S	unpeeled
+S	whole
+O	knife	1
+M	cut	<6:44-6:46>
+O	carrot	0
+S	on	[cutting board]
+S	unpeeled
+S	halved
+//
+O	bowl	0
+S	contains	{lettuce,mushroom}
+O	carrot	1
+S	on	[cutting board]
+S	unpeeled
+S	halved
+O	grater	0
+M	grate	<7:00-7:32>
+O	bowl	0
+S	contains	{carrot,lettuce,mushroom}
+O	carrot	1
+S	in	[bowl]
+S	grated
+//
+O	packet	1
+S	contains	{cherry tomato}
+S	sealed
+M	open	<7:58-8:03>
+O	packet	1
+S	contains	{cherry tomato}
+//
+O	packet	1
+S	contains	{cherry tomato}
+O	cherry tomato	1
+S	on	[stem]
+S	in	[packet]
+S	whole
+O	strainer	0
+S	empty
+M	pick-and-place	<Assumed>
+O	strainer	0
+S	contains	{cherry tomato}
+O	cherry tomato	1
+S	destemmed
+S	in	[strainer]
+S	whole
+//
+O	strainer	1
+S	contains	{cherry tomato}
+O	cherry tomato	1
+S	destemmed
+S	in	[strainer]
+S	whole
+O	faucet	0
+S	on
+O	water	0
+S	liquid
+S	from	[faucet]
+M	wash	<8:31-8:35>
+O	cherry tomato	1
+S	destemmed
+S	in	[strainer]
+S	washed
+S	whole
+//
+O	strainer	0
+S	contains	{cherry tomato}
+O	cherry tomato	1
+S	destemmed
+S	in	[strainer]
+S	washed
+S	whole
+O	cutting board	0
+S	empty
+M	pick-and-place	<8:50-8:57>
+O	cutting board	0
+S	contains	{cherry tomato}
+O	cherry tomato	1
+S	whole
+S	on	[cutting board]
+//
+O	cherry tomato	0
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	cut	<8:59-9:34>
+O	cherry tomato	0
+S	cut
+S	quartered
+S	on	[cutting board]
+//
+O	cutting board	1
+S	contains	{cherry tomato}
+O	cherry tomato	1
+S	on	[cutting board]
+S	cut
+S	quartered
+O	bowl	0
+S	contains	{carrot,lettuce,mushroom}
+O	knife	1
+M	scrape	<9:37-9:47>
+O	bowl	0
+S	contains	{carrot,cherry tomato,lettuce,mushroom}
+O	cherry tomato	1
+S	in	[bowl]
+S	quartered
+S	cut
+//
+O	bowl	0
+S	contains	{carrot,cherry tomato,lettuce,mushroom}
+O	container	1
+S	contains	{onion}
+O	onion	1
+S	in	[container]
+S	chopped
+M	pour	<9:54-9:56>
+O	bowl	0
+S	contains	{carrot,cherry tomato,lettuce,mushroom,onion}
+O	onion	1
+S	in	[bowl]
+S	chopped
+//
+O	cutting board	0
+S	empty
+O	jar	1
+S	contains	{green olive}
+O	green olive	1
+S	in	[jar]
+S	whole
+M	pick-and-place	<10:18-10:43>
+O	cutting board	0
+S	contains	{green olive}
+O	green olive	1
+S	on	[cutting board]
+S	whole
+//
+O	green olive	0
+S	on	[cutting board]
+S	whole
+O	knife	1
+M	slice	<11:06-11:31>
+O	green olive	0
+S	on	[cutting board]
+S	sliced
+//
+O	cutting board	0
+S	contains	{green olive}
+O	green olive	1
+S	on	[cutting board]
+S	sliced
+O	bowl	0
+S	contains	{carrot,cherry tomato,lettuce,mushroom,onion}
+O	knife	1
+M	scrape	<11:33-11:38>
+O	bowl	0
+S	contains	{carrot,cherry tomato,green olive,lettuce,mushroom,onion}
+O	green olive	1
+S	sliced
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{carrot,cherry tomato,green olive,lettuce,mushroom,onion}
+O	shaker	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[shaker]
+M	sprinkle	<11:46-11:49>
+O	bowl	0
+S	contains	{carrot,cherry tomato,green olive,lettuce,mushroom,onion,salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{carrot,cherry tomato,green olive,lettuce,mushroom,onion,salt}
+O	bottle	1
+S	contains	{green olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bottle]
+M	pour	<12:02-12:06>
+O	bowl	0
+S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,salt}
+O	olive oil	1
+S	liquid
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,salt}
+O	jar	1
+S	contains	{oregano}
+O	oregano	1
+S	dried
+S	in	[jar]
+M	sprinkle	<12:17-12:21>
+O	bowl	0
+S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,oregano,salt}
+O	oregano	1
+S	dried
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,oregano,salt}
+O	lettuce	1
+S	in	[bowl]
+S	chopped
+O	mushroom	1
+S	in	[bowl]
+S	diced
+O	carrot	1
+S	in	[bowl]
+S	grated
+O	cherry tomato	0
+S	cut
+S	quartered
+S	in	[bowl]
+O	onion	1
+S	chopped
+S	in	[bowl]
+O	green olive	1
+S	in	[bowl]
+S	sliced
+O	salt	1
+S	granulated
+S	in	[bowl]
+O	olive oil	1
+S	liquid
+S	in	[bowl]
+O	oregano	1
+S	dried
+S	in	[bowl]
+O	spoon	1
+S	empty
+M	mix	<12:29-12:59>
+O	salad	0	15
+S	mixed
+S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,oregano,salt}
+S	in	[bowl]
+//

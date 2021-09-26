@@ -1,0 +1,134 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0017-garfield_garlic_bread.mp4
+//
+O	bowl	0
+S	contains	{butter}
+O	shaker	1
+S	contains	{garlic salt}
+O	garlic salt	1
+S	granulated
+S	in	[shaker]
+M	sprinkle	<0:03,0:09>
+O	bowl	0
+S	contains	{butter,garlic salt}
+O	garlic salt	1
+S	granulated
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{butter,garlic salt}
+O	butter	1
+S	in	[bowl]
+S	softened
+O	garlic salt	1
+S	granulated
+S	in	[bowl]
+O	fork	1
+M	mix	<0:11,0:26>
+O	garlic butter	0
+S	contains	{butter,garlic salt}
+S	mixed
+S	in	[bowl]
+//
+O	baking tray	0
+S	empty
+O	bread	1
+S	sliced
+M	pick-and-place	<Assumed>
+O	baking tray	0
+S	contains	{bread}
+O	bread	0
+S	contains	{baking tray}
+S	sliced
+//
+O	bowl	0
+S	contains	{garlic butter}
+O	garlic butter	1
+S	contains	{butter,garlic salt}
+S	mixed
+S	in	[bowl]
+O	baking tray	0
+S	contains	{bread}
+O	bread	0
+S	contains	{baking tray}
+S	sliced
+O	knife	1
+M	spread	<0:32,1:15>
+O	bread	0
+S	sliced
+S	contains	{garlic butter}
+S	on	[baking tray]
+O	garlic butter	0
+S	mixed
+S	on	[bread]
+//
+O	baking tray	1
+S	contains	{bread}
+O	oven	0
+S	empty
+S	on
+M	put inside	<1:20,1:27>
+O	baking tray	1
+S	in	[oven]
+S	contains	{bread}
+O	oven	0
+S	contains	{baking tray}
+S	on
+//
+O	baking tray	0
+S	in	[oven]
+S	contains	{bread}
+O	oven	0
+S	contains	{baking tray}
+S	on
+O	bread	0
+S	sliced
+S	contains	{garlic butter}
+S	on	[baking tray]
+M	bake	<Assumed>
+O	baking tray	0
+S	contains	{garlic bread}
+S	in	[oven]
+O	garlic bread	0
+S	baked
+S	contains	{bread,butter,garlic salt}
+S	on	[baking tray]
+//
+O	oven	0
+S	contains	{baking tray}
+S	on
+M	turn off	<Assumed>
+O	oven	0
+S	contains	{baking tray}
+S	off
+//
+O	baking tray	0
+S	contains	{garlic bread}
+S	in	[oven]
+O	oven	0
+S	contains	{baking tray}
+S	off
+M	remove	<Assumed>
+O	baking tray	0
+S	contains	{garlic bread}
+O	oven	0
+S	off
+S	empty
+//
+O	baking tray	0
+S	contains	{garlic bread}
+O	garlic bread	0
+S	baked
+S	contains	{bread,butter,garlic salt}
+S	on	[baking tray]
+O	plate	1
+S	empty
+O	tongs	1
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{garlic bread}
+O	garlic bread	1	0
+S	baked
+S	contains	{bread,butter,garlic salt}
+S	on	[plate]
+S	ready
+//

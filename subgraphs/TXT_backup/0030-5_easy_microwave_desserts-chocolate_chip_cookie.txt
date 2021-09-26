@@ -1,0 +1,144 @@
+O133	egg	1
+S147	uncracked
+O210	jar	0
+S46	empty
+M22	crack	Assumed	Assumed
+O210	jar	0
+S24	contains	{egg}
+O133	egg	0
+S29	cracked
+S72	in	[jar]
+//
+O210	jar	1
+S24	contains	{egg}
+O133	egg	0
+S29	cracked
+S72	in	[jar]
+O367	spoon	1
+S24	contains	{sugar}
+O373	sugar	1
+S63	granulated
+S72	in	[spoon]
+M65	pour	Assumed	Assumed
+O210	jar	0
+S24	contains	{egg,sugar}
+O373	sugar	1
+S63	granulated
+S72	in	[jar]
+//
+O210	jar	0
+S24	contains	{egg,sugar}
+O34	bowl	1
+S24	contains	{salt}
+O336	salt	1
+S63	granulated
+S72	in	[bowl]
+M65	pour	Assumed	Assumed
+O210	jar	0
+S24	contains	{egg,sugar,salt}
+O336	salt	1
+S63	granulated
+S72	in	[jar]
+//
+O210	jar	1
+S24	contains	{egg,sugar,salt}
+M90	shake	Assumed	Assumed
+O210	jar	1
+S24	contains	{egg mixture}
+//
+O210	jar	0
+S24	contains	{egg mixture}
+O367	spoon	1
+S24	contains	{flour}
+O147	flour	1
+S106	powder
+S72	in	[spoon]
+M65	pour	Assumed	Assumed
+O210	jar	0
+S24	contains	{egg mixture,flour}
+O147	flour	1
+S106	powder
+S72	in	[jar]
+//
+O34	bowl	1
+S24	contains	{egg yolk}
+O139	egg yolk	1
+S72	in	[bowl]
+O210	jar	0
+S24	contains	{egg mixture,flour}
+M65	pour	Assumed	Assumed
+O210	jar	0
+S24	contains	{egg mixture,flour,egg yolk}
+O139	egg yolk	1
+S72	in	[jar]
+//
+O34	bowl	1
+S24	contains	{butter}
+O49	butter	1
+S72	in	[bowl]
+O210	jar	0
+S24	contains	{egg mixture,flour,egg yolk}
+M65	pour	Assumed	Assumed
+O210	jar	0
+S24	contains	{egg mixture,flour,egg yolk,butter}
+O49	butter	1
+S72	in	[jar]
+//
+O210	jar	0
+S24	contains	{egg mixture,flour,egg yolk,butter}
+O34	bowl	1
+S24	contains	{chocolate chip}
+O84	chocolate chip	1
+S72	in	[bowl]
+M65	pour	Assumed	Assumed
+O210	jar	0
+S24	contains	{egg mixture,flour,egg yolk,butter,chocolate chip}
+O84	chocolate chip	1
+S72	in	[jar]
+//
+O210	jar	0
+S24	contains	{egg mixture,flour,egg yolk,butter,chocolate chip}
+O152	fork	1
+M104	stir	Assumed	Assumed
+O210	jar	0
+S24	contains	{cookie dough}
+O102	cookie dough	0
+S146	uncooked
+S72	in	[jar]
+S24	contains	{egg mixture,flour,egg yolk,butter,chocolate chip}
+//
+O210	jar	1
+S24	contains	{cookie dough}
+O243	microwave	0
+S46	empty
+M76	put inside	Assumed	Assumed
+O243	microwave	0
+S156	with	[jar]
+O210	jar	1
+S24	contains	{cookie dough}
+S72	in	[microwave]
+//
+O243	microwave	0
+S156	with	[jar]
+O210	jar	0
+S24	contains	{cookie dough}
+S72	in	[microwave]
+O102	cookie dough	0
+S146	uncooked
+S72	in	[jar]
+O102	cookie dough	0
+S146	uncooked
+S72	in	[jar]
+S24	contains	{egg mixture,flour,egg yolk,butter,chocolate chip}
+M47	heat	Assumed	Assumed
+O102	cookie dough	0
+S25	cooked
+S72	in	[jar]
+O210	jar	0
+S24	contains	{cookie}
+S72	in	[microwave]
+O85	chocolate chip cookie	0	10
+S2	baked
+S72	in	[jar]
+S24	contains	{egg mixture,flour,egg yolk,butter,chocolate chip}
+//

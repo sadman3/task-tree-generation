@@ -1,0 +1,345 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0012-grilled-grilled_cheese_sandwich.mp4
+# Source:	https://www.youtube.com/watch?v=RllWJUvrxEY
+//
+O	bowl	0
+S	empty
+O	gruyere	1
+S	block
+O	grater	0
+M	grate	<Assumed>
+O	bowl	0
+S	contains	{gruyere}
+O	gruyere	1
+S	grated
+S	in	[bowl]
+O	grater	0
+//
+O	bowl	0
+S	empty
+O	gruyere	1
+S	block
+O	grater	0
+M	grate	<Assumed>
+O	bowl	0
+S	contains	{cheddar}
+O	gruyere	1
+S	grated
+S	in	[bowl]
+O	grater	0
+//
+O	bowl	1
+S	contains	{cheddar}
+O	gruyere	1
+S	grated
+S	in	[bowl]
+O	bowl	1
+S	contains	{gruyere}
+O	bowl	0
+S	empty
+M	pour	<1:42,1:44>
+O	mixing bowl	0
+S	contains	{cheddar,gruyere}
+O	gruyere	1
+S	grated
+S	in	[mixing bowl]
+O	bowl	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{cheddar,gruyere}
+O	bowl	1
+S	contains	{mustard}
+O	mustard	1
+S	in	[bowl]
+S	dried
+S	ground
+M	pour	<1:48,1:49>
+O	mixing bowl	0
+S	contains	{cheddar,gruyere,mustard}
+O	mustard	1
+S	in	[mixing bowl]
+S	dried
+S	ground
+O	bowl	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{cheddar,gruyere,mustard}
+O	bowl	1
+S	contains	{paprika}
+O	mustard	1
+S	in	[bowl]
+S	dried
+S	ground
+M	pour	<1:50,1:51>
+O	mixing bowl	0
+S	contains	{cheddar,gruyere,mustard,paprika}
+O	mustard	1
+S	in	[mixing bowl]
+S	dried
+S	ground
+O	bowl	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{cheddar,gruyere,mustard,paprika}
+O	bowl	1
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+M	pour	<1:52,1:53>
+O	mixing bowl	0
+S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+O	black pepper	1
+S	in	[mixing bowl]
+S	ground
+O	bowl	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+O	mustard	1
+S	in	[mixing bowl]
+S	dried
+S	ground
+O	paprika	1
+S	dried
+S	in	[mixing bowl]
+S	ground
+O	black pepper	1
+S	in	[mixing bowl]
+S	ground
+O	cheddar	1
+S	in	[mixing bowl]
+S	grated
+M	mix	<1:55,2:02>
+O	cheese	0
+S	mixed
+S	in	[mixing bowl]
+S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+//
+O	mixing bowl	0
+S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+O	cheese	1
+S	mixed
+S	in	[mixing bowl]
+S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+O	grill spatula	0
+M	sprinkle	<2:21,2:31>
+O	grill spatula	0
+S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+O	cheese	1
+S	mixed
+S	on	[grill spatula]
+S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+O	bowl	1
+S	empty
+//
+O	grill	1
+S	off (ready)
+S	empty
+M	light	<Assumed>
+O	grill	0
+S	on
+S	empty
+//
+O	grill	0
+S	on
+S	empty
+O	grill spatula	1
+S	contains	{cheese}
+M	pick-and-place	<2:31,2:43>
+O	grill	0
+S	on
+S	contains	{grill spatula}
+O	grill spatula	1
+S	on	[grill]
+S	contains	{cheese}
+//
+O	plate	0
+S	contains	{bread}
+O	bread	0
+S	on	[plate]
+S	sliced
+O	cooking spray	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[spray bottle]
+M	spray	<2:56,3:04>
+O	bread	0
+S	sliced
+S	on	[plate]
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	on	[bread]
+//
+O	plate	0
+S	contains	{bread}
+O	bread	1
+S	on	[plate]
+S	contains	{olive oil}
+S	sliced
+O	grill	0
+S	on
+O	tongs	1
+M	pick-and-place	<3:06,3:17>
+O	bread	1
+S	on	[grill]
+S	contains	{olive oil}
+S	sliced
+O	grill	0
+S	contains	{bread}
+S	on
+O	plate	0
+S	empty
+//
+O	grill	0
+S	contains	{bread}
+S	on
+O	bread	0
+S	on	[grill]
+S	contains	{olive oil}
+S	sliced
+M	heat	<Assumed>
+O	bread	0
+S	on	[grill]
+S	partly toasted
+S	contains	{olive oil}
+S	sliced
+//
+O	grill	0
+S	contains	{bread}
+S	on
+O	bread	1
+S	on	[grill]
+S	partly toasted
+S	contains	{olive oil}
+S	sliced
+O	tongs	1
+M	flip	<3:19,3:23>
+O	bread	1
+S	on	[grill]
+S	flipped
+S	partly toasted
+S	contains	{olive oil}
+S	sliced
+//
+O	grill	0
+S	on
+S	contains	{grill spatula}
+O	grill spatula	0
+S	on	[grill]
+S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+O	cheese	0
+S	mixed
+S	on	[grill spatula]
+S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+M	heat	<Assumed>
+O	cheese	0
+S	melted
+S	on	[grill spatula]
+S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+//
+O	grill	0
+S	on
+S	contains	{bread}
+O	bread	1
+S	on	[grill]
+S	flipped
+S	partly toasted
+S	contains	{olive oil}
+S	sliced
+O	tongs	1
+M	flip	<3:18,3:24>
+O	bread	1
+S	on	[grill]
+S	toasted
+S	contains	{olive oil}
+S	sliced
+//
+O	box	1
+S	contains	{aluminium foil}
+O	aluminium foil	1
+S	in	[box]
+S	sheet
+O	surface	0
+S	empty
+M	tear and place	<Assumed>
+O	aluminium foil	1
+S	on	[surface]
+S	sheet
+O	surface	0
+S	covered	[aluminium foil]
+//
+O	grill	0
+S	on
+S	contains	{bread}
+O	bread	1
+S	toasted
+S	on	[grill]
+S	contains	{olive oil}
+S	sliced
+O	aluminium foil	0
+S	sheet
+S	on	[surface]
+O	tongs	1
+M	remove	<3:31,3:36>
+O	grill	0
+S	on
+O	bread	0
+S	toasted
+S	on	[aluminium foil]
+S	contains	{olive oil}
+S	sliced
+O	aluminium foil	0
+S	sheet
+S	contains	{bread}
+//
+O	grill spatula	0
+S	on	[grill]
+S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+O	cheese	0
+S	melted
+S	on	[grill spatula]
+S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+O	bread	0
+S	toasted
+S	contains	{olive oil}
+S	on	[aluminium foil]
+S	sliced
+M	scoop and pour	<3:48,3:51>
+O	bread	0
+S	toasted
+S	contains	{cheese,olive oil}
+S	on	[aluminium foil]
+S	sliced
+O	cheese	0
+S	melted
+S	on	[bread]
+S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
+O	grill spatula	0
+//
+O	aluminium foil	0
+S	sheet
+S	contains	{bread}
+O	bread	1
+S	toasted
+S	contains	{olive oil}
+S	on	[aluminium foil]
+S	sliced
+O	bread	0
+S	toasted
+S	contains	{cheese,olive oil}
+S	on	[aluminium foil]
+S	sliced
+M	pick-and-place	<3:52,3:53>
+O	aluminium foil	0
+S	contains	{sandwich}
+O	grilled cheese sandwich	1	4
+S	toasted
+S	contains	{black pepper,bread,cheddar,gruyere,mustard,olive oil,paprika}
+S	on	[aluminium foil]
+//

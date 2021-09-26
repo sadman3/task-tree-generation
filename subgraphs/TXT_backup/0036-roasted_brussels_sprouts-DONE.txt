@@ -1,0 +1,239 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0036-roasted_brussel_sprouts.mp4
+# Source:	https://www.youtube.com/watch?v=snQuelNk5cw
+//
+O46	brussel sprout	1
+S155	whole
+S146	uncooked
+S72	in	[bowl]
+O371	strainer	0
+S46	empty
+M61	pick-and-place	Assumed	Assumed
+O371	strainer	0
+S24	contains	{brussel sprout}
+O46	brussel sprout	1
+S155	whole
+S146	uncooked
+S72	in	[strainer]
+//
+O143	faucet	1
+S93	on
+O414	water	0
+S58	from	[faucet]
+O371	strainer	0
+S24	contains	{brussel sprout}
+O46	brussel sprout	1
+S155	whole
+S146	uncooked
+S72	in	[strainer]
+M79	rinse	0:32	0:37
+O46	brussel sprout	1
+S152	washed
+S146	uncooked
+S155	whole
+S72	in	[strainer]
+//
+O121	cutting board	0
+O46	brussel sprout	1
+S155	whole
+S146	uncooked
+S152	washed
+S72	in	[strainer]
+M61	pick-and-place	Assumed	Assumed
+O121	cutting board	0
+S24	contains	{brussel sprout}
+O46	brussel sprout	1
+S155	whole
+S146	uncooked
+S152	washed
+S93	on	[cutting board]
+//
+O46	brussel sprout	0
+S146	uncooked
+S155	whole
+S152	washed
+S93	on	[cutting board]
+O217	knife	1
+M23	cut	0:40	0:43
+O46	brussel sprout	0
+S139	stem removed
+S146	uncooked
+S152	washed
+S93	on	[cutting board]
+//
+O46	brussel sprout	0
+S139	stem removed
+S152	washed
+S93	on	[cutting board]
+M60	peel	0:46	0:49
+O46	brussel sprout	0
+S101	peeled
+S93	on	[cutting board]
+//
+O367	spoon	1
+O34	bowl	0
+S24	contains	{salt}
+O336	salt	1
+S63	granulated
+S72	in	[bowl]
+M84	scoop	1:07	1:09
+O367	spoon	1
+S24	contains	{salt}
+O336	salt	1
+S63	granulated
+S72	in	[spoon]
+//
+O34	bowl	0
+S24	contains	{black pepper}
+O22	black pepper	1
+S66	ground
+S72	in	[bowl]
+O367	spoon	1
+M84	scoop	Assumed	Assumed
+O367	spoon	1
+S24	contains	{black pepper}
+O22	black pepper	1
+S66	ground
+S72	in	[spoon]
+//
+O303	plastic bag	0
+S46	empty
+O46	brussel sprout	1
+S146	uncooked
+S101	peeled
+S93	on	[cutting board]
+O33	bottle	1
+S24	contains	{olive oil}
+O267	olive oil	1
+S72	in	[bottle]
+O367	spoon	1
+S24	contains	{salt}
+O336	salt	1
+S63	granulated
+S72	in	[spoon]
+O367	spoon	1
+S24	contains	{pepper}
+O22	black pepper	1
+S66	ground
+S72	in	[spoon]
+M0	add*	0:54	1:15
+O303	plastic bag	0
+S24	contains	{brussel sprout,black pepper,salt,olive oil}
+O46	brussel sprout	1
+S101	peeled
+S72	in	[plastic bag]
+O22	black pepper	1
+S66	ground
+S72	in	[plastic bag]
+O336	salt	1
+S63	granulated
+S72	in	[plastic bag]
+O267	olive oil	1
+S72	in	[plastic bag]
+//
+O303	plastic bag	1
+S24	contains	{brussel sprout,black pepper,salt,olive oil}
+O46	brussel sprout	1
+S146	uncooked
+S101	peeled
+S72	in	[plastic bag]
+O22	black pepper	1
+S66	ground
+S72	in	[plastic bag]
+O336	salt	1
+S63	granulated
+S72	in	[plastic bag]
+O267	olive oil	1
+S72	in	[plastic bag]
+M90	shake*	1:16	1:22
+O303	plastic bag	1
+S24	contains	{brussel sprout,black pepper,salt,olive oil}
+O46	brussel sprout	1
+S118	seasoned
+S146	uncooked
+S24	contains	{black pepper,salt,olive oil}
+S72	in	[plastic bag]
+//
+O303	plastic bag	1
+S24	contains	{brussel sprout}
+O46	brussel sprout	1
+S118	seasoned
+S146	uncooked
+S24	contains	{black pepper,salt,olive oil}
+S72	in	[plastic bag]
+O10	baking tray	0
+S46	empty
+M65	pour	1:23	1:26
+O10	baking tray	0
+S24	contains	{brussel sprout,black pepper,salt,olive oil}
+O46	brussel sprout	1
+S118	seasoned
+S146	uncooked
+S72	in	[baking tray]
+S24	contains	{black pepper,salt,olive oil}
+O303	plastic bag	1
+//
+O276	oven	0
+S93	on
+O10	baking tray	1
+S24	contains	{brussel sprout,black pepper,salt,olive oil}
+M76	put inside	1:30	1:35
+O276	oven	0
+S93	on
+S156	with	[baking tray]
+O10	baking tray	0
+S24	contains	{brussel sprout,black pepper,salt,olive oil}
+S72	in	[oven]
+//
+O276	oven	0
+S93	on
+S156	with	[baking tray]
+O10	baking tray	0
+S24	contains	{brussel sprout,black pepper,salt,olive oil}
+S72	in	[oven]
+O46	brussel sprout	0
+S118	seasoned
+S146	uncooked
+S72	in	[baking tray]
+M2	bake	Assumed	Assumed
+O46	brussel sprout	1
+S25	cooked
+S72	in	[baking tray]
+S24	contains	{black pepper,salt,olive oil}
+//
+O276	oven	0
+S93	on
+S156	with	[baking tray]
+M116	turn off	Assumed	Assumed
+O276	oven	0
+S90	off
+S156	with	[baking tray]
+//
+O276	oven	0
+S90	off
+S156	with	[baking tray]
+O10	baking tray	0
+S24	contains	{brussel sprout,black pepper,salt,olive oil}
+S72	in	[oven]
+M77	remove	Assumed	Assumed
+O276	oven	0
+S90	off
+O10	baking tray	0
+S24	contains	{brussel sprout,black pepper,salt,olive oil}
+//
+O10	baking tray	0
+S24	contains	{brussel sprout,black pepper,salt,olive oil}
+O46	brussel sprout	1
+S25	cooked
+S24	contains	{black pepper,salt,olive oil}
+S72	in	[baking tray]
+O396	tongs	1
+O304	plate	0
+S46	empty
+M61	pick-and-place	Assumed	Assumed
+O304	plate	0
+S24	contains	{brussel sprout,black pepper,salt,olive oil}
+O46	brussel sprout	1	22
+S25	cooked
+S93	on	[plate]
+S24	contains	{black pepper,salt,olive oil}
+//

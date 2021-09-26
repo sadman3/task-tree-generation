@@ -1,0 +1,332 @@
+# Source:	https://www.youtube.com/watch?v=j-s78O-OFNg
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/ACT-0095-cooked_broccoli.mp4
+//
+O121	cutting board	0
+S46	empty
+O40	broccoli	1
+S146	uncooked
+S155	whole
+M61	pick-and-place	<Assumed>
+O121	cutting board	0
+S24	contains	{broccoli}
+O40	broccoli	1
+S146	uncooked
+S155	whole
+S93	on	[cutting board]
+//
+O40	broccoli	1
+S146	uncooked
+S155	whole
+S93	on	[cutting board]
+O217	knife	1
+M96	skim	<0:16-0:26>
+O40	broccoli	0
+S146	uncooked
+S155	whole
+S101	peeled
+S93	on	[cutting board]
+O40	broccoli	0
+S93	on	[cutting board]
+S128	skin
+//
+O40	broccoli	0
+S146	uncooked
+S155	whole
+S101	peeled
+S93	on	[cutting board]
+O217	knife	1
+M25	cut off ends	<0:26-0:27>
+O40	broccoli	0
+S41	destemmed
+S146	uncooked
+S93	on	[cutting board]
+O40	broccoli	0
+S138	stem
+S146	uncooked
+S101	peeled
+S93	on	[cutting board]
+//
+O40	broccoli	0
+S138	stem
+S146	uncooked
+S101	peeled
+S93	on	[cutting board]
+O217	knife	1
+M23	cut	<0:30-0:32>
+O40	broccoli	0
+S17	chopped
+S146	uncooked
+S138	stem
+S93	on	[cutting board]
+//
+O40	broccoli	1
+S41	destemmed
+S53	floret
+S146	uncooked
+S93	on	[cutting board]
+M7	break apart	<0:35-0:46>
+O40	broccoli	1
+S53	floret
+S103	pieces
+S146	uncooked
+S93	on	[cutting board]
+//
+O103	cooking pan	0
+S71	hot
+S46	empty
+S93	on	[stove]
+O33	bottle	1
+S24	contains	{olive oil}
+O267	olive oil	1
+S72	in	[bottle]
+S81	liquid
+M65	pour	<Assumed>
+O103	cooking pan	0
+S71	hot
+S24	contains	{olive oil}
+S93	on	[stove]
+O267	olive oil	1
+S72	in	[cooking pan]
+S81	liquid
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{olive oil}
+S93	on	[stove]
+O121	cutting board	0
+S24	contains	{broccoli}
+O40	broccoli	0
+S17	chopped
+S146	uncooked
+S138	stem
+S93	on	[cutting board]
+O40	broccoli	1
+S53	floret
+S103	pieces
+S146	uncooked
+S93	on	[cutting board]
+M61	pick-and-place	<0:58-1:07>
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli,olive oil}
+O40	broccoli	0
+S103	pieces
+S146	uncooked
+S72	in	[cooking pan]
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli,olive oil}
+S93	on	[stove]
+O215	kettle	1
+S24	contains	{water}
+O414	water	1
+S81	liquid
+S72	in	[kettle]
+M65	pour	<1:13-1:26>
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli,olive oil,water}
+S93	on	[stove]
+O414	water	0
+S81	liquid
+S72	in	[cooking pan]
+//
+O103	cooking pan	1
+S71	hot
+S24	contains	{broccoli,olive oil,water}
+S93	on	[stove]
+O10	baking tray	0
+S46	empty
+M21	cover	<1:30-1:32>
+O10	baking tray	1
+S46	empty
+S93	on	[cooking pan]
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli,olive oil,water}
+S27	covered	[baking tray]
+S93	on	[stove]
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli,olive oil,water}
+S27	covered	[baking tray]
+S93	on	[stove]
+O40	broccoli	0
+S103	pieces
+S146	uncooked
+S72	in	[cooking pan]
+O370	stove	0
+S156	with	[cooking pan]
+S93	on
+M16	cook	<Assumed>
+O40	broccoli	0
+S103	pieces
+S137	steamed
+S72	in	[cooking pan]
+//
+O10	baking tray	1
+S46	empty
+S93	on	[cooking pan]
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli,olive oil,water}
+S27	covered	[baking tray]
+S93	on	[stove]
+M118	uncover	<1:36-1:37>
+O10	baking tray	1
+S46	empty
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli}
+S93	on	[stove]
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli}
+S93	on	[stove]
+O40	broccoli	1
+S103	pieces
+S137	steamed
+S72	in	[cooking pan]
+O364	spatula	1
+M104	stir	<1:37-1:45>
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli}
+S93	on	[stove]
+O40	broccoli	1
+S87	mixed
+S103	pieces
+S137	steamed
+S72	in	[cooking pan]
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli}
+S93	on	[stove]
+O33	bottle	1
+S24	contains	{olive oil}
+O267	olive oil	1
+S81	liquid
+S72	in	[bottle]
+M65	pour	<2:15-2:17>
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli,olive oil}
+S93	on	[stove]
+O267	olive oil	0
+S81	liquid
+S72	in	[cooking pan]
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli,olive oil}
+S93	on	[stove]
+O34	bowl	0
+S24	contains	{salt}
+O336	salt	1
+S72	in	[bowl]
+S63	granulated
+M101	sprinkle	<2:21-2:23>
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli,olive oil,salt}
+S93	on	[stove]
+O336	salt	1
+S72	in	[cooking pan]
+S63	granulated
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli,olive oil,salt}
+S93	on	[stove]
+O336	salt	1
+S72	in	[cooking pan]
+S63	granulated
+O267	olive oil	1
+S81	liquid
+S72	in	[cooking pan]
+O40	broccoli	1
+S87	mixed
+S103	pieces
+S137	steamed
+S72	in	[cooking pan]
+O364	spatula	1
+M104	stir	<2:25-2:28>
+O40	broccoli	1
+S24	contains	{salt}
+S103	pieces
+S137	steamed
+S72	in	[cooking pan]
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli,olive oil,salt}
+S93	on	[stove]
+O219	lemon	1
+S93	on	[cutting board]
+S67	halved
+O369	squeezer	1
+M102	squeeze	<2:34-2:36>
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli,lemon,olive oil,salt}
+S93	on	[stove]
+O219	lemon	0
+S136	squeezed
+S93	on	[cutting board]
+S111	remains
+O219	lemon	1
+S72	in	[cooking pan]
+S75	juiced
+O222	lemon juice	1
+S74	juice
+S72	in	[cooking pan]
+//
+O103	cooking pan	0
+S71	hot
+S24	contains	{broccoli,lemon,olive oil,salt}
+S93	on	[stove]
+O219	lemon	1
+S72	in	[cooking pan]
+S75	juiced
+O40	broccoli	0
+S24	contains	{salt}
+S103	pieces
+S137	steamed
+S72	in	[cooking pan]
+O336	salt	1
+S72	in	[cooking pan]
+S63	granulated
+O267	olive oil	1
+S81	liquid
+S72	in	[cooking pan]
+O364	spatula	1
+M19	cook and stir	<2:41-2:43>
+O40	broccoli	0
+S103	pieces
+S115	sauted
+S72	in	[cooking pan]
+S24	contains	{lemon juice,olive oil,salt}
+//
+O103	cooking pan	1
+S71	hot
+S24	contains	{broccoli,lemon juice,olive oil,salt}
+S93	on	[stove]
+O40	broccoli	1
+S103	pieces
+S115	sauted
+S72	in	[cooking pan]
+S24	contains	{lemon juice,olive oil,salt}
+O304	plate	0
+S46	empty
+M65	pour	<2:45-2:50>
+O304	plate	0
+S24	contains	{broccoli}
+O40	broccoli	1	22
+S115	sauted
+S24	contains	{lemon juice,olive oil,salt}
+S93	on	[plate]
+//

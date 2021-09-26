@@ -1,0 +1,128 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0001-whipped_cream.mp4
+# Source:	https://www.youtube.com/watch?v=jWvoUR_s1Vs
+//
+O	mixer	0
+S	off (ready)
+S	with	[mixing bowl]
+O	mixing bowl	0
+S	attached to	[mixer]
+S	empty
+M	turn on	<1:10,1:11>
+O	mixer	0
+S	on
+S	with	[mixing bowl]
+//
+O	carton	1
+S	contains	{heavy cream}
+O	heavy cream	1
+S	in	[carton]
+S	creamy
+O	measuring cup	0
+S	empty
+M	pour	<Assumed>
+O	carton	0
+S	contains	{heavy cream}
+O	heavy cream	1
+S	in	[measuring cup]
+S	creamy
+//
+O	mixer	0
+S	on
+S	with	[mixing bowl]
+O	mixing bowl	0
+S	attached to	[mixer]
+S	empty
+O	measuring cup	1
+S	contains	{heavy cream}
+O	heavy cream	1
+S	in	[measuring cup]
+S	creamy
+M	pour	<1:15,1:17>
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{heavy cream}
+O	heavy cream	1
+S	in	[mixing bowl]
+S	creamy
+//
+O	mixer	0
+S	on
+S	with	[mixing bowl]
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{heavy cream}
+O	spoon	1
+S	contains	{sugar}
+O	sugar	1
+S	in	[spoon]
+S	granulated
+M	pour	<1:21,1:31>
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{heavy cream,sugar}
+O	sugar	1
+S	in	[mixing bowl]
+S	granulated
+//
+O	mixer	0
+S	on
+S	with	[mixing bowl]
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{heavy cream,sugar}
+O	heavy cream	1
+S	in	[mixing bowl]
+S	creamy
+O	sugar	1
+S	in	[mixing bowl]
+S	granulated
+M	mix	<1:32,2:31>
+O	mixing bowl	0
+S	attached to	[mixer]
+S	contains	{whipped cream}
+O	whipped cream	0
+S	in	[mixing bowl]
+S	creamy
+S	contains	{heavy cream,sugar}
+S	whipped
+//
+O	mixer	0
+S	on
+S	with	[mixing bowl]
+M	turn off	<Assumed>
+O	mixer	0
+S	off
+S	with	[mixing bowl]
+//
+O	mixer	0
+S	off
+S	with	[mixing bowl]
+O	mixing bowl	1
+S	attached to	[mixer]
+S	contains	{whipped cream}
+M	detach	<2:59,3:01>
+O	mixer	0
+S	off
+O	mixing bowl	1
+S	contains	{whipped cream}
+//
+O	mixing bowl	0
+S	contains	{whipped cream}
+O	whipped cream	1
+S	in	[mixing bowl]
+S	creamy
+S	contains	{heavy cream,sugar}
+S	whipped
+O	spatula	1
+O	bowl	0
+S	empty
+M	scrape	<3:04,3:10>
+O	mixing bowl	1
+S	contains	{whipped cream}
+O	whipped cream	0	8
+S	in	[bowl]
+S	contains	{heavy cream,sugar}
+S	creamy
+S	whipped
+S	ready
+//

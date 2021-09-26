@@ -1,0 +1,258 @@
+O370	stove	0
+S90	off
+M117	turn on	Assumed	Assumed
+O370	stove	0
+S93	on
+//
+O241	measuring cup	0
+S46	empty
+O133	egg	1
+S147	uncracked
+M22	crack	Assumed	Assumed
+O241	measuring cup	0
+S24	contains	{egg}
+O133	egg	1
+S29	cracked
+S72	in	[measuring cup]
+//
+O133	egg	1
+S29	cracked
+S72	in	[measuring cup]
+O34	bowl	0
+S46	empty
+M65	pour	1:18	1:21
+O34	bowl	0
+S24	contains	{egg}
+O133	egg	1
+S29	cracked
+S72	in	[bowl]
+//
+O34	bowl	1
+S24	contains	{milk}
+O244	milk	1
+S72	in	[bowl]
+O133	egg	1
+S29	cracked
+S72	in	[bowl]
+M65	pour	1:22	1:24
+O34	bowl	0
+S24	contains	{egg,milk}
+//
+O34	bowl	0
+S24	contains	{egg,milk}
+O152	fork	1
+M56	mix	1:24	1:38:50
+O34	bowl	0
+S24	contains	{egg mixture}
+O134	egg mixture	0
+S72	in	[bowl]
+S24	contains	{egg,milk}
+//
+O355	skillet	1
+S46	empty
+O370	stove	0
+S93	on
+M47	heat	1:40	1:42
+O355	skillet	0
+S69	heated
+S93	on	[stove]
+//
+O34	bowl	1
+S24	contains	{butter}
+O49	butter	1
+S35	cubed
+S72	in	[bowl]
+O355	skillet	0
+S69	heated
+S93	on	[stove]
+M65	pour	1:57	2:00
+O49	butter	0
+S35	cubed
+S72	in	[pan]
+O355	skillet	0
+S24	contains	{butter}
+S93	on	[stove]
+//
+O370	stove	0
+S93	on
+S156	with	[pan]
+O49	butter	0
+S35	cubed
+S72	in	[pan]
+O355	skillet	0
+S24	contains	{butter}
+S93	on	[stove]
+M47	heat	Assumed	Assumed
+O49	butter	0
+S85	melted
+S72	in	[pan]
+O355	skillet	0
+S24	contains	{butter}
+S93	on	[stove]
+//
+O36	bread	1
+S130	sliced
+O34	bowl	0
+S24	contains	{egg mixture}
+M61	pick-and-place	2:01:50	2:04
+O34	bowl	0
+S24	contains	{egg,milk,bread}
+O36	bread	0
+S24	contains	{egg mixture}
+S72	in	[bowl]
+//
+O36	bread	1
+S24	contains	{egg mixture}
+S72	in	[bowl]
+O34	bowl	0
+S24	contains	{egg,milk,bread}
+M37	flip	2:07	2:10
+O36	bread	1
+S98	partly soaked
+S24	contains	{egg mixture}
+S72	in	[bowl]
+//
+O36	bread	1
+S98	partly soaked
+S24	contains	{egg mixture}
+S72	in	[bowl]
+O34	bowl	0
+S24	contains	{egg,milk,bread}
+M37	flip	2:12	2:15
+O36	bread	1
+S132	soaked
+S24	contains	{egg mixture}
+S72	in	[bowl]
+//
+O36	bread	1
+S132	soaked
+S24	contains	{egg mixture}
+S72	in	[bowl]
+O355	skillet	0
+S23	contain	{butter}
+S93	on	[stove]
+M61	pick-and-place	2:37:50	2:41
+O355	skillet	0
+S24	contains	{bread}
+S93	on	[stove]
+O36	bread	1
+S132	soaked
+S24	contains	{egg mixture}
+S72	in	[pan]
+//
+O36	bread	1
+S132	soaked
+S24	contains	{egg mixture}
+S72	in	[pan]
+O355	skillet	0
+S24	contains	{bread}
+S93	on	[stove]
+O406	turner	1
+M37	flip	Assumed	Assumed
+O153	french toast	1
+S97	partly cooked
+S72	in	[pan]
+S24	contains	{bread,egg mixture,egg,milk,butter}
+//
+O370	stove	0
+S93	on
+S156	with	[pan]
+O355	skillet	0
+S24	contains	{bread}
+S93	on	[stove]
+O153	french toast	1
+S97	partly cooked
+S72	in	[pan]
+S24	contains	{bread,egg mixture,egg,milk,butter}
+M16	cook	Assumed	Assumed
+O355	skillet	0
+S24	contains	{french toast}
+S93	on	[stove]
+O153	french toast	1
+S25	cooked
+S72	in	[pan]
+S24	contains	{bread,egg mixture,egg,milk,butter}
+//
+O304	plate	0
+S46	empty
+O153	french toast	1
+S25	cooked
+S72	in	[pan]
+S24	contains	{bread,egg mixture,egg,milk,butter}
+O355	skillet	0
+S24	contains	{french toast}
+S93	on	[stove]
+M61	pick-and-place	2:52	3:00:50
+O304	plate	0
+S24	contains	{french toast}
+O153	french toast	1
+S25	cooked
+S93	on	[plate]
+S24	contains	{bread,egg mixture,egg,milk,butter}
+//
+O304	plate	0
+S24	contains	{french toast}
+O153	french toast	1
+S25	cooked
+S93	on	[plate]
+S24	contains	{bread,egg mixture,egg,milk,butter}
+O34	bowl	1
+S24	contains	{maple syrup}
+O233	maple syrup	1
+S72	in	[bowl]
+M65	pour*	3:08	3:13
+O153	french toast	1
+S93	on	[plate]
+S24	contains	{bread,egg mixture,egg,butter,maple syrup}
+//
+O121	cutting board	0
+S46	empty
+O372	strawberry	0
+S155	whole
+M61	pick-and-place	Assumed	Assumed
+O121	cutting board	0
+S24	contains	{strawberry}
+O372	strawberry	0
+S155	whole
+S93	on	[cutting board]
+//
+O121	cutting board	0
+S24	contains	{strawberry}
+O372	strawberry	0
+S155	whole
+S93	on	[cutting board]
+M12	chop	Assumed	Assumed
+O372	strawberry	0
+S17	chopped
+S93	on	[cutting board]
+//
+O121	cutting board	0
+S24	contains	{strawberry}
+O372	strawberry	0
+S17	chopped
+S93	on	[cutting board]
+O34	bowl	0
+S46	empty
+M65	pour	Assumed	Assumed
+O34	bowl	0
+S24	contains	{strawberry}
+O372	strawberry	0
+S17	chopped
+S72	in	[bowl]
+//
+O304	plate	0
+S24	contains	{french toast}
+O153	french toast	1
+S25	cooked
+S93	on	[plate]
+S24	contains	{bread,egg mixture,egg,milk,butter,maple syrup}
+O34	bowl	1
+S24	contains	{strawberry}
+O372	strawberry	1
+S17	chopped
+S72	in	[bowl]
+M61	pick-and-place	3:14	3:22
+O153	french toast	1	0
+S24	contains	{bread,egg mixture,egg,butter,milk,maple syrup,strawberry}
+S93	on	[plate]
+//

@@ -1,0 +1,174 @@
+# Source:	https://www.youtube.com/watch?v=5DW0t34Lr5Y
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0080-virgin_mojito.mp4
+//
+O	cutting board	0
+S	empty
+O	lime	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{lime}
+O	lime	1
+S	whole
+S	on	[cutting board]
+//
+O	lime	1
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	chop	<Assumed>
+O	lime	1
+S	chopped
+S	on	[cutting board]
+//
+O	bowl	0
+S	empty
+O	lime	1
+S	chopped
+S	on	[cutting board]
+M	pick-and-place	<Assumed>
+O	bowl	0
+S	contains	{lime}
+O	lime	1
+S	chopped
+S	in	[bowl]
+//
+O	container	0
+S	contains	{sugar}
+O	sugar	0
+S	granulated
+S	in	[container]
+O	spoon	1
+S	empty
+M	scoop	<0:20-0:22>
+O	spoon	1
+S	contains	{sugar}
+O	sugar	0
+S	granulated
+S	in	[spoon]
+//
+O	highball glass	0
+S	empty
+O	spoon	1
+S	contains	{sugar}
+O	sugar	0
+S	granulated
+S	in	[spoon]
+M	pour	<0:22-0:25>
+O	highball glass	0
+S	contains	{sugar}
+O	sugar	0
+S	granulated
+S	in	[highball glass]
+//
+O	highball glass	0
+S	contains	{sugar}
+O	bowl	1
+S	contains	{lime}
+O	lime	1
+S	chopped
+S	in	[bowl]
+M	pour	<0:27-0:33>
+O	highball glass	0
+S	contains	{lime,sugar}
+O	lime	1
+S	chopped
+S	in	[highball glass]
+//
+O	highball glass	0
+S	contains	{lime,sugar}
+O	bowl	1
+S	contains	{mint}
+O	mint	1
+S	in	[bowl]
+S	leaf
+M	pour	<0:42-0:45>
+O	highball glass	0
+S	contains	{lime,mint,sugar}
+O	mint	1
+S	in	[highball glass]
+S	leaf
+//
+O	muddler	1
+O	highball glass	0
+S	contains	{lime,mint,sugar}
+O	lime	0
+S	chopped
+S	in	[highball glass]
+O	mint	0
+S	in	[highball glass]
+S	leaf
+M	mash	<0:42-0:45>
+O	lime	0
+S	chopped
+S	mashed
+S	in	[highball glass]
+O	mint	0
+S	mashed
+S	in	[highball glass]
+S	leaf
+//
+O	highball glass	0
+S	contains	{lime,mint,sugar}
+O	bucket	0
+S	contains	{ice}
+O	ice	1
+S	crushed
+S	frozen
+S	in	[bucket]
+O	scoop	1
+M	scoop and pour	<1:21-1:22>
+O	highball glass	0
+S	contains	{ice,lime,mint,sugar}
+O	ice	1
+S	crushed
+S	frozen
+S	in	[highball glass]
+//
+O	highball glass	0
+S	contains	{ice,lime,mint,sugar}
+O	bottle	1
+S	contains	{club soda}
+O	club soda	1
+S	liquid
+S	in	[bottle]
+M	pour	<1:35-1:45>
+O	highball glass	0
+S	contains	{club soda,ice,lime,mint,sugar}
+O	club soda	1
+S	liquid
+S	in	[highball glass]
+//
+O	highball glass	0
+S	contains	{club soda,ice,lime,mint,sugar}
+O	lime	0
+S	chopped
+S	mashed
+S	in	[highball glass]
+O	mint	0
+S	mashed
+S	in	[highball glass]
+S	leaf
+O	ice	0
+S	crushed
+S	in	[highball glass]
+O	sugar	0
+S	granulated
+S	in	[highball glass]
+O	club soda	0
+S	in	[highball glass]
+S	liquid
+O	spoon	1
+S	empty
+M	stir	<1:49-1:57>
+O	cocktail	0	9
+S	liquid
+S	mixed
+S	contains	{club soda,ice,lime,mint,sugar}
+S	in	[highball glass]
+O	mojito	0	9
+S	liquid
+S	mixed
+S	contains	{club soda,ice,lime,mint,sugar}
+S	in	[highball glass]
+//

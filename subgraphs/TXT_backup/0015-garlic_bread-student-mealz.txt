@@ -1,0 +1,276 @@
+# Source:	https://www.youtube.com/watch?v=CMoxSgxWIIg
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0015-garlic_bread-student-mealz.mp4
+//
+O36	bread	1
+S155	whole
+S82	loaf
+O121	cutting board	0
+M61	pick-and-place	<Assumed>
+O121	cutting board	0
+S24	contains	{bread}
+O36	bread	1
+S155	whole
+S82	loaf
+S93	on	[cutting board]
+//
+O36	bread	1
+S155	whole
+S82	loaf
+S93	on	[cutting board]
+O217	knife	1
+M97	slice	<0:42,0:48>
+O36	bread	0
+S93	on	[cutting board]
+S130	sliced
+//
+O121	cutting board	0
+S24	contains	{bread}
+O36	bread	1
+S93	on	[cutting board]
+S130	sliced
+O304	plate	0
+S46	empty
+M61	pick-and-place	<0:48,0:51>
+O304	plate	0
+S24	contains	{bread}
+O36	bread	1
+S93	on	[plate]
+S130	sliced
+O121	cutting board	0
+S46	empty
+//
+O121	cutting board	0
+S46	empty
+O284	parsley	1
+S138	stem
+M61	pick-and-place	<Assumed>
+O121	cutting board	0
+S24	contains	{parsley}
+O284	parsley	1
+S93	on	[cutting board]
+S138	stem
+//
+O284	parsley	0
+S93	on	[cutting board]
+S138	stem
+O217	knife	1
+M12	chop	<0:54,1:02>
+O284	parsley	0
+S17	chopped
+S93	on	[cutting board]
+//
+O121	cutting board	1
+S24	contains	{parsley}
+O284	parsley	1
+S17	chopped
+S93	on	[cutting board]
+O34	bowl	0
+S24	contains	{butter}
+M68	pour and scrape	<1:08,1:12>
+O34	bowl	0
+S24	contains	{butter,parsley}
+O284	parsley	1
+S17	chopped
+S72	in	[bowl]
+O121	cutting board	1
+S46	empty
+//
+O167	garlic press	1
+S46	empty
+S20	closed
+M59	open	<Assumed>
+O167	garlic press	1
+S46	empty
+S95	opened
+//
+O167	garlic press	0
+S46	empty
+S95	opened
+O163	garlic	1
+S21	clove
+S101	peeled
+M48	insert	<Assumed>
+O167	garlic press	0
+S95	opened
+S24	contains	{garlic}
+O163	garlic	1
+S21	clove
+S72	in	[garlic press]
+S101	peeled
+//
+O34	bowl	0
+S24	contains	{butter,parsley}
+O167	garlic press	1
+S24	contains	{garlic}
+S95	opened
+O163	garlic	1
+S21	clove
+S72	in	[garlic press]
+S101	peeled
+O217	knife	1
+M103	squeeze and scrape	<Assumed>
+O34	bowl	0
+S24	contains	{butter,garlic,parsley}
+O163	garlic	1
+S72	in	[mixing bowl]
+S86	minced
+O167	garlic press	1
+S20	closed
+//
+O34	bowl	0
+S24	contains	{butter,garlic,parsley}
+O350	shaker	1
+S24	contains	{salt}
+O336	salt	1
+S72	in	[shaker]
+S63	granulated
+M101	sprinkle	<1:27,1:30>
+O34	bowl	0
+S24	contains	{butter,garlic,parsley,salt}
+O336	salt	1
+S72	in	[bowl]
+S63	granulated
+//
+O34	bowl	0
+S24	contains	{butter,garlic,parsley,salt}
+O294	pepper mill	1
+S24	contains	{black pepper}
+O22	black pepper	1
+S155	whole
+S72	in	[pepper mill]
+S102	peppercorn
+M44	grind	<1:31,1:34>
+O34	bowl	0
+S24	contains	{black pepper,butter,garlic,parsley,salt}
+O22	black pepper	1
+S72	in	[bowl]
+S66	ground
+//
+O34	bowl	0
+S24	contains	{black pepper,butter,garlic,parsley,salt}
+O49	butter	0
+S133	softened
+S140	stick
+S72	in	[bowl]
+O284	parsley	1
+S17	chopped
+S72	in	[bowl]
+O163	garlic	1
+S86	minced
+S72	in	[bowl]
+O336	salt	1
+S72	in	[bowl]
+S63	granulated
+O22	black pepper	1
+S72	in	[bowl]
+S66	ground
+O367	spoon	1
+M56	mix	<1:35,1:38:50>
+O165	garlic butter	0
+S87	mixed
+S72	in	[bowl]
+S24	contains	{black pepper,butter,garlic,parsley,salt}
+//
+O35	box	1
+S24	contains	{parchment paper}
+O282	parchment paper	1
+S124	sheet
+S72	in	[box]
+O10	baking tray	0
+S46	empty
+M112	tear and place	<Assumed>
+O10	baking tray	0
+S46	empty
+S156	with	[parchment paper]
+O282	parchment paper	1
+S124	sheet
+S93	on	[baking tray]
+//
+O34	bowl	0
+S24	contains	{black pepper,butter,garlic,parsley,salt}
+O165	garlic butter	1
+S87	mixed
+S72	in	[bowl]
+S24	contains	{black pepper,butter,garlic,parsley,salt}
+O304	plate	0
+S24	contains	{bread}
+O36	bread	1
+S93	on	[plate]
+S130	sliced
+O217	knife	1
+M100	spread	<1:43,1:48>
+O36	bread	0
+S24	contains	{garlic butter}
+S130	sliced
+O165	garlic butter	1
+S87	mixed
+S93	on	[bread]
+S24	contains	{black pepper,butter,garlic,parsley,salt}
+//
+O10	baking tray	0
+S46	empty
+S156	with	[parchment paper]
+O36	bread	0
+S24	contains	{garlic butter}
+S130	sliced
+M61	pick-and-place	<1:48,1:50>
+O10	baking tray	0
+S156	with	[parchment paper]
+S24	contains	{bread}
+O36	bread	0
+S24	contains	{garlic butter}
+S93	on	[baking tray]
+S130	sliced
+//
+O276	oven	0
+S46	empty
+S93	on
+O10	baking tray	0
+S156	with	[parchment paper]
+S24	contains	{bread}
+M76	put inside	<2:06:50,2:10:50>
+O276	oven	0
+S24	contains	{baking tray}
+S93	on
+O10	baking tray	0
+S156	with	[parchment paper]
+S72	in	[oven]
+S24	contains	{bread}
+//
+O276	oven	0
+S24	contains	{baking tray}
+S93	on
+O10	baking tray	0
+S156	with	[parchment paper]
+S72	in	[oven]
+S24	contains	{bread}
+O36	bread	0
+S24	contains	{garlic butter}
+S93	on	[baking tray]
+S130	sliced
+O165	garlic butter	1
+S87	mixed
+S93	on	[bread]
+S24	contains	{black pepper,butter,garlic,parsley,salt}
+M2	bake	<Assumed>
+O164	garlic bread	0
+S2	baked
+S24	contains	{bread,black pepper,butter,garlic,parsley,salt}
+S93	on	[baking tray]
+//
+O164	garlic bread	1
+S2	baked
+S24	contains	{bread,black pepper,butter,garlic,parsley,salt}
+S93	on	[baking tray]
+O304	plate	0
+S46	empty
+O396	tongs	1
+M61	pick-and-place	<Assumed>
+O10	baking tray	0
+S46	empty
+O164	garlic bread	1	0
+S2	baked
+S24	contains	{bread,black pepper,butter,garlic,parsley,salt}
+S93	on	[plate]
+S110	ready
+//

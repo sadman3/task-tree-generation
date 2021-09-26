@@ -1,0 +1,300 @@
+O	onion	1
+S	peeled
+O	cutting board	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	peeled
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{onion}
+O	onion	0
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	chop	0:20	0:22
+O	onion	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	1
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	in	[bowl]
+//
+O	cutting board	0
+S	empty
+O	garlic	1
+S	peeled
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{garlic}
+O	garlic	1
+S	peeled
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{garlic}
+O	garlic	1
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	chop	0:23	0:27
+O	garlic	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	1
+S	contains	{garlic}
+O	garlic	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{garlic}
+O	garlic	1
+S	chopped
+S	in	[bowl]
+O	cutting board	1
+//
+O	cilantro	1
+S	whole
+O	cutting board	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{cilantro}
+O	cilantro	1
+S	whole
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{cilantro}
+O	cilantro	1
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	cut	0:28	0:33
+O	cilantro	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	1
+S	contains	{cilantro}
+O	cilantro	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{cilantro}
+O	cilantro	1
+S	chopped
+S	in	[bowl]
+O	cutting board	1
+//
+O	stove	0
+S	on
+O	pot	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	stove	0
+S	on
+S	with	[pot]
+O	pot	0
+S	heated
+S	on	[stove]
+//
+O	pot	0
+S	heated
+S	on	[stove]
+O	tin can	1
+S	contains	{black bean}
+O	black bean	1
+S	in	[tin can]
+M	pour	0:34	0:38
+O	pot	0
+S	contains	{black bean}
+S	on	[stove]
+O	black bean	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{black bean}
+S	on	[stove]
+O	bowl	1
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	in	[bowl]
+M	pour	0:40	0:42
+O	pot	0
+S	contains	{black bean,onion}
+S	on	[stove]
+O	onion	1
+S	chopped
+S	in	[pot]
+//
+O	pot	0
+S	contains	{black bean,onion}
+S	on	[stove]
+O	bowl	1
+S	contains	{garlic}
+O	garlic	1
+S	chopped
+S	in	[bowl]
+M	pour	0:42	0:44
+O	pot	0
+S	contains	{black bean,onion,garlic}
+S	on	[stove]
+O	garlic	1
+S	chopped
+S	in	[pot]
+//
+O	pot	0
+S	contains	{black bean,onion,garlic}
+S	on	[stove]
+O	garlic	1
+S	chopped
+S	in	[pot]
+O	onion	1
+S	chopped
+S	in	[pot]
+O	spoon	1
+O	black bean	1
+S	in	[pot]
+M	cook and stir	0:45	0:49
+O	pot	0
+S	contains	{black bean,onion,garlic}
+S	on	[stove]
+O	garlic	1
+S	fried
+S	in	[pot]
+O	onion	1
+S	fried
+S	in	[pot]
+O	black bean	1
+S	partly cooked
+S	contains	{onion,garlic}
+S	in	[pot]
+//
+O	pot	0
+S	contains	{black bean,onion,garlic}
+S	on	[stove]
+O	bowl	1
+S	contains	{cilantro}
+O	cilantro	1
+S	chopped
+S	in	[bowl]
+M	pour	0:50	0:52
+O	pot	0
+S	contains	{black bean,onion,garlic,cilantro}
+S	on	[stove]
+O	cilantro	1
+S	chopped
+S	in	[pot]
+//
+O	pot	0
+S	contains	{black bean,onion,garlic,cilantro}
+S	on	[stove]
+O	bowl	1
+S	contains	{cayenne pepper}
+O	cayenne pepper	1
+S	ground
+S	in	[bowl]
+M	sprinkle	0:53	0:55
+O	pot	0
+S	contains	{black bean,onion,garlic,cilantro,cayenne pepper}
+S	on	[stove]
+O	cayenne pepper	1
+S	ground
+S	in	[pot]
+//
+O	pot	0
+S	contains	{black bean,onion,garlic,cilantro}
+S	on	[stove]
+O	salt	1
+S	granulated
+M	sprinkle	0:56	0:59
+O	pot	0
+S	contains	{black bean,onion,garlic,cilantro,cayenne pepper,salt}
+S	on	[stove]
+O	salt	1
+S	granulated
+S	in	[pot]
+//
+O	pot	0
+S	contains	{black bean,onion,garlic,cilantro,cayenne pepper,salt}
+S	on	[stove]
+O	cilantro	1
+S	chopped
+S	in	[pot]
+O	cayenne pepper	1
+S	ground
+S	in	[pot]
+O	salt	1
+S	granulated
+S	in	[pot]
+O	spoon	1
+O	black bean	1
+S	partly cooked
+S	contains	{onion,garlic}
+S	in	[pot]
+M	stir	1:00	1:05
+O	pot	0
+S	contains	{black bean,onion,garlic,cilantro,cayenne pepper,salt}
+S	on	[stove]
+O	black bean	1
+S	partly cooked
+S	contains	{onion,garlic,cilantro,cayenne pepper,salt}
+S	in	[pot]
+//
+O	pot	0
+S	contains	{black bean,onion,garlic,cilantro,cayenne pepper,salt}
+S	on	[stove]
+O	black bean	1
+S	partly cooked
+S	contains	{onion,garlic,cilantro,cayenne pepper,salt}
+S	in	[pot]
+M	cook	Assumed	Assumed
+O	pot	0
+S	contains	{black bean}
+S	on	[stove]
+O	black bean	1
+S	cooked
+S	contains	{onion,garlic,cilantro,cayenne pepper,salt}
+S	in	[pot]
+//
+O	pot	0
+S	contains	{black bean}
+S	on	[stove]
+O	black bean	1
+S	cooked
+S	contains	{onion,garlic,cilantro,cayenne pepper,salt}
+S	in	[pot]
+O	ladle	1
+O	bowl	1
+S	empty
+M	scoop and pour	Assumed	Assumed
+O	black bean	1	1
+S	cooked
+S	contains	{onion,garlic,cilantro,cayenne pepper,salt}
+S	in	[bowl]
+O	bowl	1
+S	contains	{black bean}
+//

@@ -1,0 +1,258 @@
+# Source:	https://www.youtube.com/watch?v=_DRIfPEM6qw
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0022-better_than_kfc_coleslaw.mp4
+//
+O	mixing bowl	0
+S	empty
+O	jar	0
+S	contains	{mayonnaise}
+O	mayonnaise	0
+S	creamy
+S	in	[bowl]
+O	spoon	1
+M	scoop and pour	<Assumed>
+O	mixing bowl	0
+S	contains	{mayonnaise}
+O	mayonnaise	0
+S	creamy
+S	in	[mixing bowl]
+//
+O	bowl	1
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+O	mixing bowl	0
+S	contains	{mayonnaise}
+M	pour	<1:00-1:02>
+O	mixing bowl	0
+S	contains	{mayonnaise,sugar}
+O	sugar	1
+S	granulated
+S	in	[mixing bowl]
+O	bowl	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{mayonnaise,sugar}
+O	bowl	1
+S	contains	{vinegar}
+O	vinegar	1
+S	liquid
+S	in	[bowl]
+M	pour	<1:04-1:06>
+O	mixing bowl	0
+S	contains	{mayonnaise,sugar,vinegar}
+O	vinegar	1
+S	liquid
+S	in	[mixing bowl]
+O	bowl	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{mayonnaise,sugar,vinegar}
+O	bowl	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	liquid
+S	in	[bowl]
+M	pour	<1:08-1:10>
+O	mixing bowl	0
+S	contains	{mayonnaise,sugar,vinegar,vegetable oil}
+O	vegetable oil	1
+S	liquid
+S	in	[mixing bowl]
+O	bowl	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{mayonnaise,sugar,vegetable oil,vinegar}
+O	sugar	0
+S	granulated
+S	in	[mixing bowl]
+O	mayonnaise	0
+S	creamy
+S	in	[mixing bowl]
+O	vinegar	0
+S	liquid
+S	in	[mixing bowl]
+O	vegetable oil	0
+S	liquid
+S	in	[mixing bowl]
+O	spatula	1
+M	mix	<1:14-1:28>
+O	mixing bowl	0
+S	contains	{salad dressing}
+O	salad dressing	0
+S	creamy
+S	contains	{mayonnaise,sugar,vegetable oil,vinegar}
+S	in	[mixing bowl]
+S	mixed
+//
+O	cutting board	0
+S	empty
+O	cabbage	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{cabbage}
+O	cabbage	1
+S	whole
+S	on	[cutting board]
+//
+O	cutting board	0
+S	empty
+O	onion	1
+S	whole
+S	peeled
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	on	[cutting board]
+S	whole
+S	peeled
+//
+O	carrot	0
+S	whole
+S	unpeeled
+O	peeler	1
+M	peel	<Assumed>
+O	carrot	1
+S	peeled
+S	whole
+//
+O	cutting board	0
+S	empty
+O	carrot	1
+S	peeled
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{carrot}
+O	carrot	1
+S	whole
+S	peeled
+S	on	[cutting board]
+//
+O	carrot	0
+S	whole
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	chop	<1:44-1:57>
+O	carrot	0
+S	chopped
+S	on	[cutting board]
+//
+O	salad bowl	0
+S	empty
+O	cutting board	0
+S	contains	{carrot}
+O	carrot	1
+S	on	[cutting board]
+S	chopped
+M	scoop and pour	<1:58-2:00>
+O	salad bowl	0
+S	contains	{carrot}
+O	carrot	1
+S	chopped
+S	in	[salad bowl]
+O	cutting board	0
+S	empty
+//
+O	onion	0
+S	on	[cutting board]
+S	peeled
+O	knife	1
+M	chop	<2:03-2:38>
+O	onion	0
+S	chopped
+S	on	[cutting board]
+//
+O	salad bowl	0
+S	contains	{carrot}
+O	onion	1
+S	chopped
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{onion}
+M	scoop and pour	<Assumed>
+O	salad bowl	0
+S	contains	{carrot,onion}
+O	onion	1
+S	chopped
+S	in	[salad bowl]
+O	cutting board	0
+S	empty
+//
+O	cabbage	0
+S	on	[cutting board]
+S	whole
+O	knife	1
+M	chop	<2:39-2:54>
+O	cabbage	0
+S	on	[cutting board]
+S	chopped
+//
+O	salad bowl	0
+S	contains	{carrot,onion}
+O	cutting board	0
+S	contains	{cabbage}
+O	cabbage	1
+S	chopped
+S	on	[cutting board]
+M	scoop and pour	<2:55-2:57>
+O	salad bowl	0
+S	contains	{carrot,onion,cabbage}
+O	cabbage	1
+S	chopped
+S	in	[salad bowl]
+O	cutting board	0
+S	empty
+//
+O	salad bowl	0
+S	contains	{cabbage,carrot,onion}
+O	mixing bowl	1
+S	contains	{salad dressing}
+O	salad dressing	0
+S	creamy
+S	contains	{mayonnaise,sugar,vegetable oil,vinegar}
+S	in	[mixing bowl]
+S	mixed
+O	spatula	1
+M	pour and scrape	<3:03-3:06>
+O	salad bowl	0
+S	contains	{cabbage,carrot,onion,salad dressing}
+O	salad dressing	1
+S	creamy
+S	contains	{mayonnaise,sugar,vegetable oil,vinegar}
+S	in	[salad bowl]
+//
+O	salad bowl	0
+S	contains	{cabbage,carrot,onion,salad dressing}
+O	salad dressing	1
+S	creamy
+S	contains	{mayonnaise,sugar,vegetable oil,vinegar}
+S	in	[salad bowl]
+O	onion	1
+S	chopped
+S	in	[salad bowl]
+O	carrot	0
+S	chopped
+S	in	[salad bowl]
+O	cabbage	1
+S	chopped
+S	in	[salad bowl]
+O	spatula	1
+M	mix	<3:08-3:20>
+O	salad bowl	0
+S	contains	{coleslaw}
+O	salad	0	15
+S	mixed
+S	contains	{cabbage,carrot,mayonnaise,onion,sugar,vegetable oil,vinegar}
+S	in	[salad bowl]
+O	coleslaw	0	15
+S	mixed
+S	contains	{cabbage,carrot,mayonnaise,onion,sugar,vegetable oil,vinegar}
+S	in	[salad bowl]
+//

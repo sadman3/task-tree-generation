@@ -1,0 +1,352 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0039-crispy_hash_browns.mp4
+# Source:	https://www.youtube.com/watch?v=qHhjAnASggk
+//
+O	stove	0
+S	off (ready)
+O	skillet	1
+S	empty
+M	pick-and-place	<Assumed>
+O	stove	0
+S	off (ready)
+S	with	[skillet]
+O	skillet	1
+S	empty
+S	on	[stove]
+//
+O	bottle	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	liquid
+S	in	[bottle]
+O	skillet	0
+S	on	[stove]
+S	empty
+M	pour	<Assumed>
+O	skillet	0
+S	on	[stove]
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	liquid
+S	in	[skillet]
+//
+O	stove	0
+S	off (ready)
+S	with	[skillet]
+M	turn on	<Assumed>
+O	stove	0
+S	on
+S	with	[skillet]
+//
+O	potato	0
+S	whole
+O	peeler	1
+M	peel	<Assumed>
+O	potato	0
+S	peeled
+//
+O	mandoline	1
+O	mixing bowl	0
+S	empty
+M	pick-and-place	<Assumed>
+O	mixing bowl	0
+S	with	[mandoline]
+S	empty
+O	mandoline	1
+S	on	[mixing bowl]
+//
+O	mixing bowl	0
+S	with	[mandoline]
+S	empty
+O	mandoline	1
+S	on	[mixing bowl]
+O	potato	1
+S	peeled
+M	grate	<Assumed>
+O	mixing bowl	0
+S	contains	{potato}
+O	potato	1
+S	grated
+S	julienned
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{potato}
+O	bowl	1
+S	contains	{onion}
+O	onion	1
+S	sliced
+S	julienned
+S	in	[bowl]
+M	pour	<Assumed>
+O	mixing bowl	0
+S	contains	{onion,potato}
+O	onion	1
+S	sliced
+S	julienned
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{onion,potato}
+O	onion	1
+S	sliced
+S	julienned
+S	in	[mixing bowl]
+O	potato	1
+S	grated
+S	julienned
+S	in	[mixing bowl]
+O	tongs	1
+M	mix	<Assumed>
+O	hashbrown mix	0
+S	mixed
+S	in	[mixing bowl]
+S	contains	{onion,potato}
+//
+O	shaker	1
+S	contains	{parsley}
+O	parsley	1
+S	in	[shaker]
+S	dried
+O	spoon	1
+M	pour	<Assumed>
+O	spoon	1
+S	contains	{parsley}
+O	parsley	1
+S	dried
+S	in	[spoon]
+//
+O	mixing bowl	0
+S	contains	{onion,potato}
+O	spoon	1
+S	contains	{parsley}
+O	parsley	1
+S	dried
+S	in	[spoon]
+M	sprinkle*	<Assumed>
+O	mixing bowl	0
+S	contains	{onion,parsley,potato}
+//
+O	mixing bowl	0
+S	contains	{onion,parsley,potato}
+O	spoon	1
+S	contains	{flour}
+O	flour	1
+S	in	[spoon]
+S	powder
+M	sprinkle*	<Assumed>
+O	mixing bowl	0
+S	contains	{flour,onion,parsley,potato}
+O	flour	1
+S	in	[mixing bowl]
+S	powder
+//
+O	container	1
+S	contains	{corn starch}
+O	corn starch	1
+S	in	[container]
+S	powder
+O	spoon	1
+M	scoop	<Assumed>
+O	spoon	1
+S	contains	{corn starch}
+O	corn starch	1
+S	in	[spoon]
+S	powder
+//
+O	mixing bowl	0
+S	contains	{flour,onion,parsley,potato}
+O	spoon	1
+S	contains	{corn starch}
+O	corn starch	1
+S	in	[spoon]
+S	powder
+M	pour*	<Assumed>
+O	mixing bowl	0
+S	contains	{corn starch,flour,onion,parsley,potato}
+O	corn starch	0
+S	in	[mixing bowl]
+S	powder
+//
+O	mixing bowl	0
+S	contains	{corn starch,flour,onion,parsley,potato}
+O	spoon	1
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[spoon]
+M	sprinkle*	<Assumed>
+O	mixing bowl	0
+S	contains	{black pepper,corn starch,flour,onion,parsley,potato}
+O	black pepper	1
+S	ground
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{black pepper,corn starch,flour,onion,parsley,potato}
+O	spoon	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[spoon]
+M	sprinkle*	<Assumed>
+O	mixing bowl	0
+S	contains	{black pepper,corn starch,flour,onion,parsley,potato,salt}
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{black pepper,corn starch,flour,onion,parsley,potato,salt}
+O	hashbrown mix	0
+S	mixed
+S	in	[mixing bowl]
+S	contains	{onion,potato}
+O	corn starch	0
+S	in	[mixing bowl]
+S	powder
+O	black pepper	1
+S	ground
+S	in	[mixing bowl]
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+O	tongs	1
+M	mix*	<Assumed>
+O	hashbrown mix	1
+S	mixed
+S	in	[mixing bowl]
+S	contains	{black pepper,corn starch,flour,onion,parsley,potato,salt}
+//
+O	mixing bowl	0
+S	contains	{black pepper,corn starch,flour,onion,parsley,potato,salt}
+O	bowl	1
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	beaten
+S	in	[bowl]
+M	pour	<Assumed>
+O	mixing bowl	0
+S	contains	{black pepper,corn starch,egg,flour,onion,parsley,potato,salt}
+O	egg white and yolk	1
+S	beaten
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{egg white and yolk,hashbrown mix}
+O	hashbrown mix	1
+S	mixed
+S	in	[mixing bowl]
+S	contains	{black pepper,corn starch,flour,onion,parsley,potato,salt}
+O	egg white and yolk	1
+S	beaten
+S	in	[mixing bowl]
+O	tongs	1
+M	mix	<Assumed>
+O	mixing bowl	0
+S	contains	{hashbrown mix}
+O	hashbrown mix	1
+S	mixed
+S	in	[mixing bowl]
+S	contains	{black pepper,corn starch,egg white and yolk,flour,onion,parsley,potato,salt}
+//
+O	stove	0
+S	on
+S	with	[skillet]
+O	skillet	0
+S	contains	{vegetable oil}
+S	on	[stove]
+M	preheat	<Assumed>
+O	skillet	0
+S	hot
+S	contains	{vegetable oil}
+S	on	[stove]
+//
+O	mixing bowl	0
+S	contains	{hashbrown mix}
+O	hashbrown mix	1
+S	mixed
+S	in	[mixing bowl]
+S	contains	{black pepper,corn starch,egg white and yolk,flour,onion,parsley,potato,salt}
+O	skillet	0
+S	hot
+S	contains	{vegetable oil}
+S	on	[stove]
+O	tongs	1
+M	pick-and-place	<Assumed>
+O	skillet	0
+S	hot
+S	contains	{hashbrown mix,vegetable oil}
+S	on	[stove]
+O	hashbrown mix	1
+S	mixed
+S	in	[skillet]
+S	contains	{black pepper,corn starch,egg white and yolk,flour,onion,parsley,potato,salt}
+//
+O	skillet	0
+S	hot
+S	contains	{hashbrown mix,vegetable oil}
+S	on	[stove]
+O	hashbrown mix	1
+S	mixed
+S	in	[skillet]
+S	contains	{black pepper,corn starch,egg white and yolk,flour,onion,parsley,potato,salt}
+M	cook	<Assumed>
+O	skillet	0
+S	hot
+S	contains	{hashbrown,vegetable oil}
+S	on	[stove]
+O	hashbrown	1
+S	partly cooked
+S	in	[skillet]
+S	contains	{black pepper,corn starch,egg white and yolk,flour,onion,parsley,potato,salt}
+//
+O	skillet	0
+S	hot
+S	contains	{hashbrown,vegetable oil}
+S	on	[stove]
+O	hashbrown	1
+S	partly cooked
+S	in	[skillet]
+S	contains	{black pepper,corn starch,egg white and yolk,flour,onion,parsley,potato,salt}
+O	turner	1
+M	flip	<Assumed>
+O	hashbrown	1
+S	flipped
+S	partly cooked
+S	in	[skillet]
+S	contains	{black pepper,corn starch,egg white and yolk,flour,onion,parsley,potato,salt}
+//
+O	skillet	0
+S	hot
+S	contains	{hashbrown,vegetable oil}
+S	on	[stove]
+O	hashbrown	1
+S	flipped
+S	partly cooked
+S	in	[skillet]
+S	contains	{black pepper,corn starch,egg white and yolk,flour,onion,parsley,potato,salt}
+M	cook	<Assumed>
+O	hashbrown	1
+S	fried
+S	in	[skillet]
+S	contains	{black pepper,corn starch,egg white and yolk,flour,onion,parsley,potato,salt}
+//
+O	hashbrown	1
+S	fried
+S	in	[skillet]
+S	contains	{black pepper,corn starch,egg white and yolk,flour,onion,parsley,potato,salt}
+O	skillet	0
+S	hot
+S	contains	{hash brown}
+S	on	[stove]
+O	plate	0
+S	empty
+O	spatula	1
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{hash brown}
+O	hashbrown	1	24
+S	fried
+S	on	[plate]
+S	contains	{black pepper,corn starch,egg white and yolk,flour,onion,parsley,potato,salt}
+//

@@ -1,0 +1,474 @@
+# Source:	https://www.youtube.com/watch?v=2TNY4B21ZFI
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0082-homemade_cheese_pizza.mp4
+//
+O	measuring cup	0
+S	contains	{water}
+O	water	0
+S	liquid
+S	in	[measuring cup]
+O	bowl	1
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+M	pour	<0:11-0:13>
+O	measuring cup	0
+S	contains	{water,sugar}
+O	sugar	1
+S	granulated
+S	in	[measuring cup]
+//
+O	measuring cup	0
+S	contains	{water,sugar}
+O	water	0
+S	liquid
+S	in	[measuring cup]
+O	bowl	1
+S	contains	{yeast}
+O	yeast	1
+S	powder
+S	in	[bowl]
+M	pour	<0:14-0:18>
+O	measuring cup	0
+S	contains	{water,sugar,yeast}
+O	yeast	1
+S	powder
+S	in	[measuring cup]
+//
+O	measuring cup	0
+S	contains	{water,sugar,yeast}
+O	sugar	0
+S	granulated
+S	in	[measuring cup]
+O	water	0
+S	liquid
+S	in	[measuring cup]
+O	bowl	1
+S	contains	{yeast}
+O	yeast	1
+S	powder
+S	in	[measuring cup]
+O	spoon	1
+S	empty
+M	stir	<0:18-0:21>
+O	water	0
+S	mixed
+S	contains	{water,sugar,yeast}
+S	in	[measuring cup]
+//
+O	packet	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[packet]
+O	mixing bowl	0
+S	empty
+M	pour	<Assumed>
+O	mixing bowl	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{flour}
+O	bowl	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	pour	<0:28-0:30>
+O	mixing bowl	0
+S	contains	{flour,salt}
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{flour,salt}
+O	bowl	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bowl]
+M	pour	<0:31-0:34>
+O	mixing bowl	0
+S	contains	{flour,olive oil,salt}
+O	olive oil	1
+S	liquid
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{flour,olive oil,salt}
+O	measuring cup	1
+S	contains	{water,sugar,yeast}
+O	water	1
+S	mixed
+S	contains	{water,sugar,yeast}
+S	in	[measuring cup]
+M	pour	<0:36-0:41>
+O	mixing bowl	0
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+O	water	1
+S	mixed
+S	contains	{water,sugar,yeast}
+S	in	[mixing bowl]
+O	measuring cup	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+O	water	1
+S	mixed
+S	contains	{water,sugar,yeast}
+S	in	[mixing bowl]
+O	flour	1
+S	powder
+S	in	[mixing bowl]
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+O	olive oil	1
+S	liquid
+S	in	[mixing bowl]
+O	spatula	1
+M	mix	<0:44-0:51>
+O	mixing bowl	0
+S	contains	{dough}
+O	dough	0
+S	mixed
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	empty
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bottle]
+M	pour	<0:54-0:58>
+O	mixing bowl	0
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{dough}
+O	mixing bowl	0
+S	contains	{olive oil}
+O	dough	0
+S	mixed
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	in	[mixing bowl]
+O	spatula	1
+M	scrape	<1:00-1:03>
+O	mixing bowl	0
+S	contains	{olive oil,dough}
+//
+O	mixing bowl	0
+S	contains	{olive oil,dough}
+O	dough	1
+S	mixed
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	in	[mixing bowl]
+O	olive oil	1
+S	liquid
+S	in	[mixing bowl]
+M	knead	<1:05-1:34>
+O	dough	1
+S	kneaded
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	in	[mixing bowl]
+O	olive oil	1
+S	liquid
+S	on	[dough]
+//
+O	box	1
+S	contains	{saran wrap}
+O	saran wrap	1
+S	sheet
+S	in	[box]
+O	mixing bowl	0
+S	contains	{olive oil,dough}
+O	dough	0
+S	kneaded
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	in	[mixing bowl]
+M	tear and cover	<Assumed>
+O	mixing bowl	0
+S	contains	{olive oil,dough}
+S	under	[saran wrap]
+O	saran wrap	1
+S	sheet
+S	on	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{olive oil,dough}
+S	under	[saran wrap]
+O	dough	0
+S	kneaded
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	in	[mixing bowl]
+O	saran wrap	0
+S	sheet
+S	on	[mixing bowl]
+M	ferment	<Assumed>
+O	mixing bowl	0
+S	contains	{pizza dough}
+S	under	[saran wrap]
+O	pizza dough	0
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	in	[mixing bowl]
+//
+O	packet	0
+S	contains	{flour}
+O	flour	1
+S	in	[packet]
+S	powder
+O	table	0
+S	empty
+M	sprinkle	<1:46-1:52>
+O	flour	1
+S	powder
+S	on	[table]
+O	table	0
+S	contains	{flour}
+//
+O	mixing bowl	0
+S	contains	{pizza dough}
+S	under	[saran wrap]
+O	saran wrap	1
+S	sheet
+S	on	[mixing bowl]
+M	remove	<1:53-1:57>
+O	mixing bowl	0
+S	contains	{pizza dough}
+//
+O	table	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	on	[table]
+O	mixing bowl	1
+S	contains	{pizza dough}
+O	pizza dough	1
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	in	[mixing bowl]
+M	scrape	<1:58-2:07>
+O	table	0
+S	contains	{flour,pizza dough}
+O	mixing bowl	1
+S	empty
+O	pizza dough	0
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	on	[table]
+//
+O	table	0
+S	contains	{flour,pizza dough}
+O	flour	1
+S	powder
+S	on	[table]
+O	pizza dough	0
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	on	[table]
+M	knead	<2:08-2:19>
+O	table	0
+S	contains	{pizza dough}
+O	flour	1
+S	powder
+S	on	[pizza dough]
+O	pizza dough	1
+S	kneaded
+S	floured
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	on	[table]
+//
+O	table	0
+S	contains	{pizza dough}
+O	pizza dough	1
+S	kneaded
+S	floured
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	on	[table]
+M	press	<2:57-3:21>
+O	pizza dough	1
+S	flattened
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	on	[table]
+//
+O	table	0
+S	contains	{pizza dough}
+O	pizza dough	1
+S	flattened
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	on	[table]
+O	pizza pan	0
+S	empty
+M	pick-and-place	<3:22-3:27>
+O	table	0
+S	empty
+O	pizza pan	0
+S	contains	{pizza dough}
+O	pizza dough	1
+S	flattened
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	in	[pizza pan]
+//
+O	bowl	0
+S	contains	{marinara}
+O	marinara	0
+S	thick liquid
+S	in	[bowl]
+O	spoon	1
+S	empty
+M	scoop	<3:34-3:36>
+O	spoon	1
+S	contains	{marinara}
+O	marinara	0
+S	thick liquid
+S	in	[spoon]
+//
+O	pizza pan	0
+S	contains	{pizza dough}
+O	pizza dough	1
+S	flattened
+S	contains	{flour,olive oil,salt,water,sugar,yeast}
+S	in	[pizza pan]
+O	spoon	1
+S	contains	{marinara}
+O	marinara	0
+S	thick liquid
+S	in	[spoon]
+M	pour and spread	<3:36-3:41>
+O	pizza pan	0
+S	contains	{pizza}
+O	pizza	0
+S	uncooked
+S	contains	{flour,olive oil,salt,water,sugar,yeast,marinara}
+S	in	[pizza pan]
+O	marinara	0
+S	spread
+S	thick liquid
+S	on	[pizza]
+//
+O	pizza pan	0
+S	contains	{pizza}
+O	pizza	0
+S	uncooked
+S	contains	{flour,olive oil,salt,water,sugar,yeast,marinara}
+S	in	[pizza pan]
+O	packet	0
+S	contains	{mozzarella}
+O	mozzarella	1
+S	shredded
+S	in	[packet]
+M	sprinkle	<3:44-3:52>
+O	pizza	0
+S	uncooked
+S	contains	{flour,olive oil,salt,water,sugar,yeast,marinara,mozzarella}
+S	in	[pizza pan]
+O	mozzarella	1
+S	shredded
+S	on	[pizza]
+//
+O	oven	1
+S	off
+S	empty
+M	turn on	<Assumed>
+O	oven	1
+S	on
+S	empty
+//
+O	oven	0
+S	on
+S	empty
+O	pizza pan	1
+S	contains	{pizza}
+O	pizza	0
+S	uncooked
+S	contains	{flour,olive oil,salt,water,sugar,yeast,marinara,mozzarella}
+S	in	[pizza pan]
+M	insert	<Assumed>
+O	oven	0
+S	contains	{pizza pan}
+S	on
+O	pizza pan	1
+S	contains	{pizza}
+S	in	[oven]
+//
+O	oven	0
+S	contains	{pizza pan}
+S	on
+O	pizza pan	0
+S	contains	{pizza dough}
+S	in	[oven]
+O	pizza	0
+S	uncooked
+S	contains	{flour,olive oil,salt,water,sugar,yeast,marinara,mozzarella}
+S	in	[pizza pan]
+M	bake	<3:56-4:02>
+O	cheese pizza	0
+S	baked
+S	contains	{flour,olive oil,salt,water,sugar,yeast,marinara,mozzarella}
+S	in	[pizza pan]
+//
+O	oven	0
+S	contains	{pizza pan}
+S	on
+M	turn off	<Assumed>
+O	oven	0
+S	contains	{pizza pan}
+S	off
+//
+O	oven	0
+S	contains	{pizza pan}
+S	off
+O	pizza pan	1
+S	contains	{pizza}
+S	in	[oven]
+O	pizza	0
+S	baked
+S	contains	{flour,olive oil,salt,water,sugar,yeast,marinara,mozzarella}
+S	in	[pizza pan]
+M	remove	<Assumed>
+O	oven	0
+S	empty
+S	off
+O	pizza pan	1
+S	contains	{cheese pizza}
+//
+O	pizza pan	0
+S	contains	{cheese pizza}
+O	cheese pizza	0
+S	baked
+S	contains	{flour,olive oil,salt,water,sugar,yeast,marinara,mozzarella}
+S	in	[pizza pan]
+O	pizza cutter	1
+M	divide	<Assumed>
+O	cheese pizza	0
+S	baked
+S	sliced
+S	contains	{flour,olive oil,salt,water,sugar,yeast,marinara,mozzarella}
+S	in	[pizza pan]
+//
+O	pizza pan	0
+S	contains	{cheese pizza}
+O	cheese pizza	1
+S	baked
+S	sliced
+S	contains	{flour,olive oil,salt,water,sugar,yeast,marinara,mozzarella}
+S	in	[pizza pan]
+O	turner	1
+O	plate	0
+S	empty
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{cheese pizza}
+O	cheese pizza	1	3
+S	baked
+S	sliced
+S	contains	{flour,olive oil,salt,water,sugar,yeast,marinara,mozzarella}
+S	on	[plate]
+//

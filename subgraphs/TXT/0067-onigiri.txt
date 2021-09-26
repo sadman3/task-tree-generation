@@ -1,0 +1,250 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0067-onigiri.mp4
+# Source:	https://www.youtube.com/watch?v=Uug0oNO-S1U
+//
+O	packet	1
+S	contains	{white rice}
+O	white rice	1
+S	uncooked
+S	in	[packet]
+O	measuring cup	0
+S	empty
+M	pour	<Assumed>
+O	measuring cup	0
+S	contains	{white rice}
+O	white rice	1
+S	uncooked
+S	in	[measuring cup]
+//
+O	rice cooker	0
+S	off
+S	empty
+O	measuring cup	1
+S	contains	{rice}
+O	white rice	1
+S	uncooked
+S	in	[measuring cup]
+M	pour	<Assumed>
+O	rice cooker	0
+S	off
+S	contains	{rice}
+O	measuring cup	1
+S	empty
+O	white rice	1
+S	uncooked
+S	in	[rice cooker]
+//
+O	rice cooker	0
+S	off
+S	contains	{rice}
+O	measuring cup	1
+S	contains	{water}
+O	water	1
+S	liquid
+S	in	[measuring cup]
+M	pour	<Assumed>
+O	rice cooker	0
+S	off
+S	contains	{rice,water}
+O	water	0
+S	liquid
+S	in	[rice cooker]
+//
+O	rice cooker	0
+S	off
+S	contains	{rice,water}
+M	turn on	<Assumed>
+O	rice cooker	0
+S	on
+S	contains	{rice,water}
+//
+O	rice cooker	0
+S	on
+S	contains	{rice,water}
+O	water	0
+S	liquid
+S	in	[rice cooker]
+O	white rice	0
+S	uncooked
+S	in	[rice cooker]
+M	cook	<Assumed>
+O	rice cooker	0
+S	on
+S	contains	{rice}
+O	white rice	0
+S	cooked
+S	in	[rice cooker]
+//
+O	bowl	0
+S	empty
+O	rice cooker	0
+S	on
+S	contains	{rice}
+O	white rice	1
+S	cooked
+S	in	[rice cooker]
+O	spoon	1
+S	empty
+M	scoop and pour	<Assumed>
+O	bowl	0
+S	contains	{rice}
+O	white rice	1
+S	cooked
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{rice}
+O	white rice	0
+S	cooked
+S	in	[bowl]
+O	hand	1
+S	empty
+M	scoop	<2:44-2:48>
+O	hand	1
+S	contains	{rice}
+O	white rice	0
+S	cooked
+S	in	[hand]
+//
+O	hand	1
+S	contains	{rice}
+O	white rice	1
+S	cooked
+S	in	[hand]
+M	shape	<2:51-3:04>
+O	hand	1
+S	contains	{rice ball}
+O	rice ball	1
+S	rolled
+S	contains	{rice}
+S	in	[hand]
+//
+O	hand	1
+S	contains	{rice ball}
+O	rice ball	1
+S	rolled
+S	contains	{rice}
+S	in	[hand]
+M	press	<3:05-3:22>
+O	rice ball	1
+S	pressed
+S	contains	{rice}
+S	in	[hand]
+//
+O	rice ball	1
+S	pressed
+S	contains	{rice}
+S	in	[hand]
+M	poke	<Assumed>
+O	rice ball	1
+S	holed
+S	contains	{rice}
+S	in	[hand]
+//
+O	rice ball	0
+S	holed
+S	contains	{rice}
+S	in	[hand]
+O	bowl	0
+S	contains	{salmon}
+O	salmon	1
+S	cooked
+S	flaked
+S	in	[bowl]
+O	spoon	1
+S	empty
+M	scoop and pour	<3:43-3:48>
+O	rice ball	0
+S	holed
+S	contains	{rice,salmon}
+S	in	[hand]
+O	salmon	1
+S	flaked
+S	cooked
+S	in	[rice ball]
+//
+O	hand	1
+S	contains	{rice ball}
+O	rice ball	1
+S	holed
+S	contains	{rice,salmon}
+S	in	[hand]
+O	salmon	1
+S	flaked
+S	cooked
+S	in	[rice ball]
+M	roll	<4:03-4:05>
+O	rice ball	1
+S	rolled
+S	contains	{rice,salmon}
+S	in	[hand]
+//
+O	hand	1
+S	contains	{rice ball}
+O	rice ball	1
+S	rolled
+S	contains	{rice,salmon}
+S	in	[hand]
+M	press	<4:06-4:21>
+O	rice ball	1
+S	pressed
+S	contains	{rice,salmon}
+S	in	[hand]
+//
+O	packet	0
+S	contains	{seaweed}
+O	seaweed	1
+S	sheet
+S	in	[packet]
+O	cutting board	0
+S	empty
+M	remove	<Assumed>
+O	cutting board	0
+S	contains	{seaweed}
+O	seaweed	1
+S	sheet
+S	on	[cutting board]
+//
+O	hand	1
+S	contains	{rice ball}
+O	rice ball	1
+S	pressed
+S	contains	{rice,salmon}
+S	in	[hand]
+O	cutting board	0
+S	contains	{seaweed}
+O	seaweed	0
+S	sheet
+S	on	[cutting board]
+M	place	<6:45-6:46>
+O	hand	1
+S	empty
+O	cutting board	0
+S	contains	{seaweed,rice ball}
+O	rice ball	1
+S	pressed
+S	contains	{rice,salmon}
+S	on	[seaweed]
+O	seaweed	0
+S	sheet
+S	under	[rice ball]
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{seaweed,rice ball}
+O	rice ball	1
+S	pressed
+S	contains	{rice,salmon}
+S	on	[seaweed]
+O	seaweed	0
+S	sheet
+S	under	[rice ball]
+S	on	[cutting board]
+M	wrap	<Assumed>
+O	onigiri	1	17
+S	pressed
+S	contains	{salmon,rice,seaweed}
+S	on	[cutting board]
+O	seaweed	0
+S	sheet
+S	over	[rice ball]
+//

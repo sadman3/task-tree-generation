@@ -1,0 +1,423 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0027-best_hamburger_ever.mp4
+# Source:	https://www.youtube.com/watch?v=y_BvHnHgI-M
+//
+O	grill	1
+S	off
+M	heat	<0:31-0:33>
+O	grill	0
+S	on
+//
+O	mixing bowl	0
+S	empty
+O	packet	0
+S	contains	{ground beef}
+O	ground beef	1
+S	raw
+S	in	[packet]
+M	pick-and-place	<Assumed>
+O	mixing bowl	0
+S	contains	{ground beef}
+O	ground beef	1
+S	raw
+S	in	[mixing bowl]
+//
+O	bowl	0
+S	contains	{egg white,egg yolk}
+O	egg white	0
+S	uncooked
+S	in	[bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[bowl]
+O	whisk	1
+M	beat	<Assumed>
+O	bowl	0
+S	contains	{egg}
+O	egg	0
+S	uncooked
+S	beaten
+S	in	[bowl]
+//
+O	mixing bowl	0
+S	contains	{ground beef}
+O	bowl	1
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	in	[bowl]
+M	pour	<0:39-0:42:50>
+O	mixing bowl	0
+S	contains	{ground beef,onion}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion}
+O	bowl	1
+S	contains	{cheese}
+O	cheese	1
+S	grated
+S	in	[bowl]
+M	pour	<0:42-0:45>
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese}
+O	bowl	1
+S	contains	{egg}
+O	egg	1
+S	uncooked
+S	beaten
+S	in	[bowl]
+M	pour	<0:46-0:48>
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg}
+O	bowl	1
+S	contains	{soup mix}
+O	soup mix	1
+S	powder
+S	in	[bowl]
+M	pour	<0:49-0:52>
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix}
+O	bowl	1
+S	contains	{garlic}
+O	garlic	1
+S	in	[bowl]
+S	minced
+M	pour	<0:53-0:54:50>
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic}
+O	bowl	1
+S	contains	{garlic powder}
+O	garlic	1
+S	powder
+S	in	[bowl]
+M	pour	<0:55-0:57>
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder}
+O	bowl	1
+S	contains	{soy sauce}
+O	soy sauce	1
+S	liquid
+S	in	[bowl]
+M	pour	<0:58-1:00>
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce}
+O	bowl	1
+S	contains	{worcestershire sauce}
+O	worcestershire sauce	1
+S	liquid
+S	in	[bowl]
+M	pour	<1:01-1:03>
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce}
+O	bowl	1
+S	contains	{parsley}
+O	parsley	1
+S	dried
+S	in	[bowl]
+M	pour	<1:04-1:06:50>
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley}
+O	bowl	1
+S	contains	{basil}
+O	basil	1
+S	dried
+S	in	[bowl]
+M	pour	<1:06:50-1:08>
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil}
+O	bowl	1
+S	contains	{oregano}
+O	oregano	1
+S	dried
+S	in	[bowl]
+M	pour	<1:08:50-1:10>
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano}
+O	bowl	1
+S	contains	{rosemary}
+O	rosemary	1
+S	dried
+S	in	[bowl]
+M	pour	<1:11-1:12>
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary}
+O	bowl	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	sprinkle	<1:14-1:17>
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt}
+O	bowl	1
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+M	sprinkle	<1:18-1:20>
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+//
+O	mixing bowl	0
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+O	ground beef	0
+S	raw
+S	in	[mixing bowl]
+O	spatula	1
+M	mix*	<1:21-1:26>
+O	ground beef	1
+S	raw
+S	contains	{onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	in	[bowl]
+//
+O	ground beef	1
+S	raw
+S	contains	{onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	in	[bowl]
+M	shape	<1:27-1:45>
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	in	[hand]
+//
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	in	[hand]
+O	plate	0
+S	empty
+M	place	<Assumed>
+O	plate	0
+S	contains	{patty}
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	on	[plate]
+//
+O	grill	0
+S	on
+O	plate	0
+S	contains	{patty}
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	on	[plate]
+O	tongs	1
+O	spatula	1
+M	scoop and place	<1:49-1:50>
+O	grill	0
+S	on
+S	contains	{patty}
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	on	[grill]
+//
+O	grill	0
+S	contains	{patty}
+S	on
+O	patty	1
+S	raw
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	on	[grill]
+M	cook	<Assumed>
+O	patty	1
+S	partly cooked
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	on	[grill]
+//
+O	grill	0
+S	contains	{patty}
+S	on
+O	patty	1
+S	partly cooked
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	on	[grill]
+O	spatula	1
+M	flip	<1:50-1:55>
+O	patty	1
+S	flipped
+S	partly cooked
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	on	[grill]
+//
+O	grill	0
+S	contains	{patty}
+S	on
+O	patty	1
+S	flipped
+S	partly cooked
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	on	[grill]
+M	cook	<Assumed>
+O	patty	1
+S	cooked
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	on	[grill]
+//
+O	tomato	0
+S	on	[cutting board]
+S	whole
+O	knife	1
+M	slice	<Assumed>
+O	tomato	0
+S	on	[cutting board]
+S	sliced
+//
+O	packet	0
+S	contains	{hamburger bun}
+O	hamburger bun	1
+S	in	[packet]
+S	plain
+O	plate	0
+S	empty
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{hamburger bun}
+O	hamburger bun	1
+S	plain
+S	on	[plate]
+//
+O	plate	0
+S	contains	{hamburger bun}
+O	patty	1
+S	cooked
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	on	[grill]
+O	hamburger bun	1
+S	plain
+S	on	[plate]
+O	tongs	1
+M	pick-and-place	<Assumed>
+O	patty	1
+S	cooked
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	on	[hamburger bun]
+O	hamburger bun	0
+S	plain
+S	contains	{patty}
+S	on	[plate]
+//
+O	packet	1
+S	contains	{lettuce}
+O	lettuce	1
+S	in	[packet]
+S	whole
+M	remove	<Assumed>
+O	packet	1
+S	empty
+O	lettuce	1
+S	whole
+//
+O	cutting board	0
+S	empty
+O	lettuce	1
+S	whole
+M	tear apart	<1:40-2:04>
+O	cutting board	0
+S	contains	{lettuce}
+O	lettuce	1
+S	leaf
+S	on	[cutting board]
+//
+O	plate	0
+S	contains	{hamburger bun}
+O	hamburger bun	0
+S	plain
+S	contains	{patty}
+S	on	[plate]
+O	cutting board	0
+S	contains	{lettuce}
+O	lettuce	1
+S	leaf
+S	on	[cutting board]
+M	pick-and-place	<Assumed>
+O	hamburger bun	0
+S	plain
+S	contains	{patty,lettuce}
+S	on	[plate]
+O	lettuce	1
+S	leaf
+S	on	[hamburger bun]
+//
+O	plate	0
+S	contains	{hamburger bun}
+O	cutting board	0
+S	contains	{tomato}
+O	tomato	1
+S	sliced
+S	on	[cutting board]
+O	hamburger bun	0
+S	plain
+S	contains	{patty,lettuce}
+S	on	[plate]
+M	pick-and-place	<Assumed>
+O	hamburger bun	0
+S	plain
+S	contains	{patty,lettuce,tomato}
+S	on	[plate]
+O	tomato	1
+S	sliced
+S	on	[hamburger bun]
+//
+O	plate	0
+S	contains	{hamburger bun}
+O	hamburger bun	1
+S	plain
+S	on	[plate]
+O	hamburger bun	0
+S	plain
+S	contains	{patty,lettuce,tomato}
+S	on	[plate]
+O	patty	0
+S	cooked
+S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
+S	on	[hamburger bun]
+O	tomato	0
+S	sliced
+S	on	[hamburger bun]
+O	lettuce	0
+S	leaf
+S	on	[hamburger bun]
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{hamburger}
+O	hamburger	0	16
+S	contains	{patty,lettuce,tomato}
+S	on	[plate]
+//

@@ -1,0 +1,283 @@
+# Source:	https://www.youtube.com/watch?v=KLePf2B1G-Q
+//
+O	bread	0
+S	whole
+S	loaf
+S	on	[cutting board]
+O	knife	1
+M	cut	<1:06,1:11>
+O	bread	0
+S	sliced
+S	on	[cutting board]
+//
+O	bowl	0
+S	empty
+O	packet	1
+S	contains	{butter}
+O	butter	1
+S	softened
+S	unmelted
+S	in	[packet]
+S	stick
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{butter}
+O	butter	0
+S	softened
+S	unmelted
+S	in	[bowl]
+S	stick
+//
+O	bowl	1
+S	contains	{butter}
+O	microwave	0
+S	empty (ready)
+M	put inside	<Assumed>
+O	bowl	1
+S	in	[microwave]
+S	contains	{butter}
+O	microwave	0
+S	contains	{bowl}
+//
+O	microwave	0
+S	contains	{bowl}
+O	bowl	0
+S	in	[microwave]
+S	contains	{butter}
+O	butter	0
+S	softened
+S	unmelted
+S	in	[bowl]
+S	stick
+M	heat	<Assumed>
+O	butter	0
+S	softened
+S	in	[bowl]
+S	stick
+//
+O	microwave	0
+S	contains	{bowl}
+O	bowl	1
+S	in	[microwave]
+S	contains	{butter}
+M	remove	<Assumed>
+O	bowl	0
+S	contains	{butter}
+O	microwave	0
+S	empty
+//
+O	bowl	0
+S	contains	{butter}
+O	jar	0
+S	contains	{garlic}
+S	opened
+O	garlic	1
+S	in	[jar]
+S	minced
+O	spoon	1
+M	scoop and pour	<1:45,1:53>
+O	bowl	0
+S	contains	{butter,garlic}
+O	garlic	1
+S	in	[bowl]
+S	minced
+//
+O	bowl	0
+S	contains	{butter,garlic}
+O	shaker	1
+S	contains	{parsley}
+O	parsley	1
+S	in	[shaker]
+S	dried
+M	sprinkle	<1:58,2:06>
+O	bowl	0
+S	contains	{butter,garlic,parsley}
+//
+O	bowl	0
+S	contains	{butter,garlic,parsley}
+O	butter	0
+S	softened
+S	in	[bowl]
+S	stick
+O	garlic	0
+S	in	[bowl]
+S	minced
+O	spoon	1
+M	mix	<2:07,2:10>
+O	garlic butter	0
+S	mixed
+S	contains	{butter,garlic,parsley}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{butter,garlic,parsley}
+O	garlic butter	1
+S	mixed
+S	contains	{butter,garlic,parsley}
+S	in	[bowl]
+O	bread	0
+S	on	[cutting board]
+S	sliced
+O	knife	1
+M	scoop and spread	<2:22,2:26>
+O	bread	0
+S	sliced
+S	on	[cutting board]
+S	contains	{garlic butter}
+O	garlic butter	1
+S	mixed
+S	contains	{butter,garlic,parsley}
+S	on	[bread]
+//
+O	bread	1
+S	sliced
+S	on	[cutting board]
+S	contains	{garlic butter}
+M	attach	<2:37,2:41>
+O	bread	1
+S	loaf
+S	contains	{garlic butter}
+S	on	[cutting board]
+//
+O	box	0
+S	contains	{aluminium foil}
+O	aluminium foil	1
+S	in	[box]
+M	tear	<Assumed>
+O	aluminium foil	1
+S	on	[surface]
+S	sheet
+//
+O	cutting board	0
+S	contains	{bread}
+O	bread	1
+S	loaf
+S	contains	{garlic butter}
+S	on	[cutting board]
+O	aluminium foil	0
+S	on	[surface]
+S	sheet
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	empty
+O	bread	1
+S	loaf
+S	contains	{garlic butter}
+S	on	[aluminium foil]
+O	aluminium foil	0
+S	sheet
+S	under	[bread]
+//
+O	bread	0
+S	loaf
+S	contains	{garlic butter}
+S	on	[aluminium foil]
+O	aluminium foil	1
+S	sheet
+S	under	[bread]
+M	wrap	<2:44,2:50>
+O	bread	0
+S	loaf
+S	contains	{garlic butter}
+S	in	[aluminium foil]
+O	aluminium foil	1
+S	sheet
+S	covering	[bread]
+//
+O	oven	0
+S	on
+S	empty
+O	bread	1
+S	loaf
+S	contains	{garlic butter}
+S	in	[aluminium foil]
+M	put inside	<Assumed>
+O	oven	0
+S	on
+S	contains	{bread}
+O	bread	1
+S	loaf
+S	contains	{garlic butter}
+S	in	[aluminium foil]
+S	in	[oven]
+//
+O	oven	0
+S	on
+S	contains	{bread}
+O	bread	1
+S	loaf
+S	contains	{garlic butter}
+S	in	[aluminium foil]
+S	in	[oven]
+O	garlic butter	1
+S	mixed
+S	contains	{butter,garlic,parsley}
+S	on	[bread]
+M	bake	<Assumed>
+O	oven	0
+S	on
+S	contains	{garlic bread}
+O	garlic bread	0
+S	baked
+S	contains	{bread,butter,garlic,parsley}
+S	in	[aluminium foil]
+S	in	[oven]
+//
+O	oven	0
+S	on
+S	contains	{garlic bread}
+M	turn off	<Assumed>
+O	oven	0
+S	off
+S	contains	{garlic bread}
+//
+O	oven	0
+S	off
+S	contains	{garlic bread}
+O	garlic bread	0
+S	baked
+S	contains	{bread,butter,garlic,parsley}
+S	in	[aluminium foil]
+S	in	[oven]
+M	remove	<Assumed>
+O	oven	0
+S	off
+S	empty
+O	garlic bread	1
+S	baked
+S	contains	{bread,butter,garlic,parsley}
+S	in	[aluminium foil]
+//
+O	garlic bread	1
+S	baked
+S	contains	{bread,butter,garlic,parsley}
+S	in	[aluminium foil]
+O	aluminium foil	1
+S	sheet
+S	covering	[bread]
+M	unwrap	<Assumed>
+O	garlic bread	1
+S	baked
+S	contains	{bread,butter,garlic,parsley}
+S	on	[aluminium foil]
+O	aluminium foil	1
+S	sheet
+S	under	[garlic bread]
+//
+O	aluminium foil	0
+S	sheet
+S	under	[garlic bread]
+O	garlic bread	1
+S	baked
+S	contains	{bread,butter,garlic,parsley}
+S	on	[aluminium foil]
+O	plate	0
+S	empty
+M	pick-and-place	<Assumed>
+O	garlic bread	1	0
+S	baked
+S	contains	{bread,butter,garlic,parsley}
+S	on	[plate]
+O	aluminium foil	1
+S	sheet
+//

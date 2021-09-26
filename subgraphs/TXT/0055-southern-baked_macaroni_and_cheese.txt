@@ -1,0 +1,258 @@
+O	pot	0
+S	contains	{water}
+S	on	[stove]
+O	packet	1
+S	contains	{macaroni}
+O	macaroni	1
+S	uncooked
+S	in	[packet]
+M	pour	0:14	0:18
+O	pot	0
+S	contains	{water,macaroni}
+S	on	[stove]
+O	macaroni	1
+S	uncooked
+S	in	[pot]
+//
+O	pot	0
+S	contains	{water,macaroni}
+S	on	[stove]
+O	spoon	1
+O	macaroni	1
+S	uncooked
+S	in	[pot]
+M	cook and stir	0:19	0:22
+O	pot	0
+S	contains	{water,macaroni}
+S	on	[stove]
+O	macaroni	1
+S	partly cooked
+S	in	[pot]
+//
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	in	[bowl]
+O	whisk	1
+M	mix	0:37	0:42
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	beaten
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg white and yolk}
+O	tin can	1
+S	contains	{milk}
+O	milk	1
+S	in	[tin can]
+M	pour	0:43	0:52
+O	bowl	0
+S	contains	{egg white and yolk,milk}
+O	milk	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg white and yolk,milk}
+O	spoon	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[spoon]
+M	sprinkle	0:51	0:54
+O	bowl	0
+S	contains	{egg white and yolk,salt,milk}
+O	salt	1
+S	granulated
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg white and yolk,salt,milk}
+O	spoon	1
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[spoon]
+M	sprinkle	0:56	0:58
+O	bowl	0
+S	contains	{egg white and yolk,milk,salt,black pepper}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg white and yolk,milk,salt,black pepper}
+O	cheese	1
+S	grated
+M	pour	1:01	1:05
+O	bowl	0
+S	contains	{egg white and yolk,milk,salt,black pepper,cheese}
+O	cheese	1
+S	grated
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg white and yolk,milk,salt,black pepper,cheese}
+O	spatula	1
+O	egg white and yolk	1
+S	beaten
+S	in	[bowl]
+O	milk	1
+S	in	[bowl]
+O	black pepper	1
+S	ground
+S	in	[bowl]
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	stir*	1:05	1:09
+O	bowl	0
+S	contains	{cheese sauce}
+O	cheese sauce	1
+S	contains	{egg white and yolk,milk,salt,black pepper,cheese}
+S	in	[bowl]
+//
+O	pot	1
+S	contains	{water,macaroni}
+S	on	[stove]
+O	strainer	0
+S	empty
+O	macaroni	1
+S	partly cooked
+S	in	[pot]
+M	pour	Assumed	Assumed
+O	strainer	0
+S	contains	{macaroni}
+O	macaroni	1
+S	partly cooked
+S	in	[strainer]
+O	pot	1
+//
+O	bowl	0
+S	contains	{cheese sauce}
+O	strainer	1
+S	contains	{macaroni}
+O	macaroni	1
+S	partly cooked
+S	in	[strainer]
+M	pour	1:11	1:14
+O	strainer	1
+O	bowl	0
+S	contains	{cheese sauce,macaroni}
+O	macaroni	1
+S	partly cooked
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{cheese sauce,macaroni}
+O	cheese sauce	1
+S	contains	{egg white and yolk,milk,salt,black pepper,cheese}
+S	in	[bowl]
+O	macaroni	1
+S	partly cooked
+S	in	[bowl]
+O	spatula	1
+M	stir	1:15	1:22
+O	bowl	0
+S	contains	{cheese sauce,macaroni}
+//
+O	baking tray	0
+S	empty
+O	cooking spray	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	in	[spray bottle]
+M	spray	1:23	1:27
+O	baking tray	0
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	in	[baking tray]
+//
+O	baking tray	0
+S	contains	{vegetable oil}
+O	bowl	1
+S	contains	{cheese sauce,macaroni}
+M	pour	1:28	1:33
+O	baking tray	0
+S	contains	{pasta mix}
+O	pasta mix	1
+S	contains	{vegetable oil,cheese sauce,macaroni}
+S	uncooked
+S	in	[baking tray]
+O	bowl	1
+//
+O	baking tray	0
+S	contains	{pasta mix}
+O	pasta mix	1
+S	contains	{vegetable oil,cheese sauce,macaroni}
+S	uncooked
+S	in	[baking tray]
+O	cheese	1
+S	grated
+M	sprinkle	1:35	1:40
+O	pasta mix	1
+S	uncooked
+S	contains	{vegetable oil,cheese sauce,macaroni,cheese}
+S	in	[baking tray]
+O	cheese	1
+S	grated
+S	on	[macaroni]
+//
+O	oven	0
+S	on
+O	baking tray	0
+S	contains	{pasta mix}
+M	put inside	Assumed	Assumed
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	0
+S	contains	{pasta mix}
+S	in	[oven]
+//
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	0
+S	contains	{pasta mix}
+S	in	[oven]
+O	pasta mix	1
+S	uncooked
+S	contains	{vegetable oil,cheese sauce,macaroni,cheese}
+S	in	[baking tray]
+M	bake	1:50	1:56
+O	baking tray	1
+S	contains	{macaroni and cheese}
+S	in	[oven]
+O	macaroni and cheese	1
+S	contains	{cheese sauce,macaroni,cheese}
+S	in	[baking tray]
+//
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	1
+S	contains	{macaroni and cheese}
+S	in	[oven]
+M	remove	Assumed	Assumed
+O	oven	0
+S	off
+O	baking tray	1
+S	contains	{macaroni and cheese}
+//
+O	baking tray	1
+S	contains	{macaroni and cheese}
+O	macaroni and cheese	1
+S	contains	{cheese sauce,macaroni,cheese}
+S	in	[baking tray]
+O	plate	0
+S	empty
+O	spatula	1
+M	scoop and pour	Assumed	Assumed
+O	plate	0
+S	contains	{macaroni and cheese}
+O	macaroni and cheese	1	13
+S	contains	{vegetable oil,pasta mix,cheese sauce,water,egg white and yolk,milk,salt,black pepper,cheese,macaroni}
+S	on	[plate]
+//

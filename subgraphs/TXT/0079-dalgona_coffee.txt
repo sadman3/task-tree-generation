@@ -1,0 +1,199 @@
+# Source:	https://www.youtube.com/watch?v=O1rvJZo8O4k
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0079-dalgona_coffee.mp4
+//
+O	jar	0
+S	contains	{instant coffee}
+O	instant coffee	0
+S	powder
+S	in	[jar]
+O	spoon	1
+S	empty
+M	scoop	<Assumed>
+O	spoon	1
+S	contains	{instant coffee}
+O	instant coffee	0
+S	powder
+S	in	[spoon]
+//
+O	spoon	1
+S	contains	{instant coffee}
+O	instant coffee	1
+S	in	[spoon]
+S	powder
+O	bowl	0
+S	empty
+M	pour	<Assumed>
+O	bowl	1
+S	contains	{instant coffee}
+O	instant coffee	1
+S	powder
+S	in	[bowl]
+//
+O	mixing bowl	0
+S	empty
+O	bowl	1
+S	contains	{instant coffee}
+O	instant coffee	1
+S	powder
+S	in	[bowl]
+M	pour	<0:15-0:18>
+O	mixing bowl	0
+S	contains	{instant coffee}
+O	instant coffee	1
+S	powder
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{instant coffee}
+O	bowl	1
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+M	pour	<0:20-0:22>
+O	mixing bowl	0
+S	contains	{instant coffee,sugar}
+O	sugar	1
+S	granulated
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{instant coffee,sugar}
+O	bowl	1
+S	contains	{water}
+O	water	1
+S	liquid
+S	hot
+S	in	[bowl]
+M	pour	<0:23-0:25>
+O	mixing bowl	0
+S	contains	{instant coffee,sugar,water}
+O	water	1
+S	liquid
+S	hot
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{instant coffee,sugar,water}
+O	instant coffee	0
+S	in	[mixing bowl]
+S	powder
+O	water	0
+S	liquid
+S	hot
+S	in	[mixing bowl]
+O	sugar	0
+S	granulated
+S	in	[mixing bowl]
+O	whisk	1
+M	beat	<0:28-0:58>
+O	whipped coffee	1
+S	whipped
+S	contains	{instant coffee,sugar,water}
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{instant coffee,sugar,water}
+O	whipped coffee	1
+S	whipped
+S	contains	{instant coffee,sugar,water}
+S	in	[mixing bowl]
+O	spoon	1
+S	empty
+M	scoop	<Assumed>
+O	spoon	1
+S	contains	{whipped coffee}
+O	whipped coffee	1
+S	whipped
+S	contains	{instant coffee,sugar,water}
+S	in	[spoon]
+//
+O	drinking glass	0
+S	empty
+O	measuring cup	1
+S	contains	{ice}
+O	ice	1
+S	cubed
+S	frozen
+S	in	[measuring cup]
+M	pour	<1:11-1:13>
+O	drinking glass	0
+S	contains	{ice}
+O	ice	1
+S	frozen
+S	cubed
+S	in	[drinking glass]
+//
+O	measuring cup	0
+S	empty
+O	carton	1
+S	contains	{milk}
+O	milk	1
+S	liquid
+S	in	[carton]
+M	measure	<Assumed>
+O	measuring cup	0
+S	contains	{milk}
+O	milk	1
+S	liquid
+S	in	[measuring cup]
+//
+O	drinking glass	0
+S	contains	{ice}
+O	measuring cup	1
+S	contains	{milk}
+O	milk	1
+S	liquid
+S	in	[measuring cup]
+M	pour	<1:14-1:19>
+O	drinking glass	0
+S	contains	{ice,milk}
+O	milk	1
+S	liquid
+S	in	[drinking glass]
+//
+O	drinking glass	0
+S	contains	{ice,milk}
+O	spoon	1
+S	contains	{whipped coffee}
+O	whipped coffee	1
+S	whipped
+S	contains	{instant coffee,sugar,water}
+S	in	[spoon]
+M	pour and spread	<1:21-1:37>
+O	drinking glass	0
+S	contains	{ice,milk,whipped coffee}
+O	whipped coffee	1
+S	whipped
+S	contains	{instant coffee,sugar,water}
+S	in	[drinking glass]
+//
+O	drinking glass	0
+S	contains	{ice,milk,whipped coffee}
+O	spoon	1
+S	contains	{instant coffee}
+O	instant coffee	1
+S	in	[spoon]
+S	powder
+O	whipped coffee	0
+S	whipped
+S	contains	{instant coffee,sugar,water}
+S	in	[drinking glass]
+O	ice	0
+S	frozen
+S	cubed
+S	in	[drinking glass]
+O	milk	0
+S	liquid
+S	in	[drinking glass]
+M	sprinkle	<1:37-1:44>
+O	drinking glass	0
+S	contains	{ice,milk,whipped coffee,instant coffee}
+O	instant coffee	1
+S	powder
+S	in	[drinking glass]
+O	dalgona coffee	0	9
+S	mixed
+S	contains	{hot water,ice,instant coffee,milk,sugar}
+S	in	[drinking glass]
+//

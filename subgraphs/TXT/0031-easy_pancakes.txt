@@ -1,0 +1,293 @@
+O	jar	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[jar]
+O	measuring cup	1
+S	empty
+M	scoop	0:25	0:26
+O	measuring cup	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[measuring cup]
+//
+O	bowl	0
+S	empty
+O	measuring cup	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[measuring cup]
+M	pour	0:30	0:33
+O	bowl	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bowl]
+//
+O	jar	0
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[jar]
+O	spoon	1
+M	scoop	0:34	0:36
+O	spoon	1
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[spoon]
+//
+O	spoon	1
+S	contains	{sugar}
+O	bowl	0
+S	contains	{flour}
+O	sugar	1
+S	granulated
+S	in	[spoon]
+M	pour	0:36	0:37
+O	bowl	0
+S	contains	{flour,sugar}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+//
+O	spoon	1
+O	baking powder	0
+S	powder
+S	in	[container]
+M	scoop	0:38	0:42
+O	spoon	1
+S	contains	{baking powder}
+//
+O	spoon	1
+S	contains	{baking powder}
+O	baking powder	0
+S	powder
+S	in	[spoon]
+O	bowl	0
+S	contains	{flour,sugar}
+M	pour	0:43	0:45
+O	bowl	0
+S	contains	{flour,sugar,baking powder}
+//
+O	spoon	1
+O	bowl	0
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	scoop	0:45	0:48
+O	spoon	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[spoon]
+//
+O	spoon	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[spoon]
+O	bowl	0
+S	contains	{flour,sugar,baking powder}
+M	pour	0:49	0:50
+O	bowl	0
+S	contains	{flour,sugar,baking powder,salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{flour,sugar,baking powder,salt}
+O	whisk	1
+M	mix	0:51	1:00
+O	bowl	0
+S	contains	{flour mixture}
+O	flour mixture	1
+S	contains	{flour,sugar,baking powder,salt}
+S	in	[bowl]
+//
+O	carton	1
+S	contains	{milk}
+O	milk	1
+S	in	[carton]
+O	measuring cup	0
+S	empty
+M	pour	Assumed	Assumed
+O	measuring cup	0
+S	contains	{milk}
+O	milk	1
+S	in	[measuring cup]
+//
+O	measuring cup	0
+S	contains	{milk}
+O	milk	1
+S	in	[measuring cup]
+O	bowl	0
+S	contains	{flour mixture}
+O	flour mixture	1
+S	contains	{flour,sugar,baking powder,salt}
+S	in	[bowl]
+M	pour	1:09	1:11
+O	bowl	0
+S	contains	{flour mixture,milk}
+//
+O	bowl	0
+S	empty
+O	egg	1
+S	uncracked
+M	crack	1:12	1:14
+O	egg white and yolk	1
+S	in	[bowl]
+O	bowl	0
+S	contains	{egg white and yolk}
+//
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	in	[bowl]
+O	fork	1
+M	stir	1:16	1:19:50
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	beaten
+S	in	[bowl]
+//
+O	bowl	1
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	beaten
+S	in	[bowl]
+O	bowl	0
+S	contains	{flour mixture,milk}
+M	pour	1:21	1:23
+O	bowl	0
+S	contains	{flour mixture,milk,egg white and yolk}
+//
+O	bowl	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	in	[bowl]
+O	bowl	0
+S	contains	{flour mixture,milk,egg white and yolk,vegetable oil}
+M	pour	1:24	1:26
+O	bowl	0
+S	contains	{flour mixture,milk,egg white and yolk,vegetable oil}
+//
+O	bowl	0
+S	contains	{flour mixture,milk,egg white and yolk,vegetable oil}
+O	flour mixture	1
+S	contains	{flour,sugar,baking powder,salt}
+S	in	[bowl]
+O	whisk	1
+M	mix	1:28	1:41
+O	bowl	0
+S	contains	{pancake batter}
+O	pancake batter	0
+S	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S	in	[bowl]
+//
+O	cooking pan	0
+S	contains	{butter}
+S	on	[stove]
+O	bowl	0
+S	contains	{pancake batter}
+O	pancake batter	1
+S	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S	in	[bowl]
+O	measuring cup	1
+S	empty
+M	pour	1:47	1:52
+O	cooking pan	0
+S	contains	{pancake batter}
+S	on	[stove]
+O	pancake batter	1
+S	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S	in	[pan]
+//
+O	pancake batter	1
+S	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S	in	[pan]
+O	turner	1
+O	cooking pan	0
+S	contains	{pancake batter}
+S	on	[stove]
+M	flip	2:03	2:07
+O	cooking pan	0
+S	contains	{pancake}
+S	on	[stove]
+O	pancake	1
+S	partly cooked
+S	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{pancake}
+S	on	[stove]
+O	pancake	0
+S	partly cooked
+S	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S	in	[pan]
+M	cook	Assumed	Assumed
+O	cooking pan	0
+S	contains	{pancake}
+O	pancake	0
+S	cooked
+S	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S	in	[pan]
+//
+O	cooking pan	0
+S	contains	{pancake}
+O	pancake	1
+S	cooked
+S	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S	in	[pan]
+O	turner	1
+O	plate	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	pancake	1
+S	cooked
+S	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S	on	[plate]
+O	plate	0
+S	contains	{pancake}
+//
+O	pancake	0
+S	cooked
+S	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil}
+S	on	[plate]
+O	plate	0
+S	contains	{pancake}
+O	knife	1
+O	plate	0
+S	contains	{butter}
+O	butter	1
+S	stick
+S	on	[plate]
+M	spread	Assumed	Assumed
+O	pancake	0
+S	cooked	{butter}
+S	on	[plate]
+O	butter	1
+S	on	[pancake]
+//
+O	plate	0
+S	contains	{pancake}
+O	pancake	0
+S	cooked	{butter}
+S	on	[plate]
+O	bowl	1
+S	contains	{maple syrup}
+O	maple syrup	1
+S	in	[bowl]
+M	pour	2:16	2:20
+O	pancake	0	5
+S	contains	{flour,sugar,baking powder,salt,milk,egg,vegetable oil,butter,maple syrup}
+S	on	[plate]
+O	maple syrup	1
+S	on	[pancake]
+//

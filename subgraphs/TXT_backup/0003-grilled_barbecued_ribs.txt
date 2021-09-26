@@ -1,0 +1,229 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0003-grilled_barbecued_ribs.mp4
+# Source:	https://www.youtube.com/watch?v=VqBze3vr5xs
+//
+O277	packet	0
+S24	contains	{ribs}
+O10	baking tray	0
+S46	empty
+O322	ribs	1
+S72	in	[packet]
+S109	raw
+M61	pick-and-place	<Assumed>
+O10	baking tray	0
+S24	contains	{ribs}
+O322	ribs	1
+S93	on	[baking tray]
+S109	raw
+//
+O34	bowl	0
+S24	contains	{salt}
+O336	salt	1
+S63	granulated
+S72	in	[bowl]
+O322	ribs	0
+S93	on	[baking tray]
+S109	raw
+M101	sprinkle	<0:17,0:22>
+O322	ribs	0
+S24	contains	{salt}
+S93	on	[baking tray]
+S109	raw
+O336	salt	1
+S63	granulated
+S93	on	[ribs]
+//
+O34	bowl	0
+S24	contains	{black pepper}
+O22	black pepper	1
+S66	ground
+S72	in	[bowl]
+O322	ribs	0
+S24	contains	{salt}
+S93	on	[baking tray]
+S109	raw
+M101	sprinkle	<0:22,0:25>
+O322	ribs	0
+S24	contains	{black pepper,salt}
+S93	on	[baking tray]
+S109	raw
+O22	black pepper	1
+S66	ground
+S93	on	[ribs]
+//
+O276	oven	0
+S91	off (ready)
+S46	empty
+M117	turn on	<Assumed>
+O276	oven	0
+S93	on
+S46	empty
+//
+O10	baking tray	1
+S24	contains	{ribs}
+O276	oven	0
+S93	on
+S46	empty
+M76	put inside	<Assumed>
+O276	oven	0
+S24	contains	{baking tray}
+S93	on
+O10	baking tray	1
+S24	contains	{ribs}
+S72	in	[oven]
+//
+O276	oven	0
+S24	contains	{baking tray}
+S93	on
+O10	baking tray	1
+S24	contains	{ribs}
+S72	in	[oven]
+O322	ribs	0
+S24	contains	{black pepper,salt}
+S93	on	[baking tray]
+S109	raw
+M2	bake	<Assumed>
+O322	ribs	0
+S24	contains	{black pepper,salt}
+S93	on	[baking tray]
+S97	partly cooked
+//
+O276	oven	0
+S24	contains	{baking tray}
+S93	on
+M116	turn off	<Assumed>
+O276	oven	0
+S24	contains	{baking tray}
+S90	off
+//
+O276	oven	0
+S24	contains	{baking tray}
+S90	off
+O10	baking tray	1
+S24	contains	{ribs}
+S72	in	[oven]
+M77	remove	<Assumed>
+O276	oven	0
+S90	off
+S46	empty
+O10	baking tray	1
+S24	contains	{ribs}
+//
+O185	grill	0
+S91	off (ready)
+S46	empty
+M50	light	<Assumed>
+O185	grill	0
+S93	on
+S46	empty
+//
+O185	grill	0
+S93	on
+S46	empty
+O322	ribs	1
+S24	contains	{black pepper,salt}
+S93	on	[baking tray]
+S97	partly cooked
+O396	tongs	1
+M61	pick-and-place	<Assumed>
+O185	grill	0
+S93	on
+S24	contains	{ribs}
+O322	ribs	0
+S24	contains	{black pepper,salt}
+S93	on	[grill]
+S97	partly cooked
+//
+O34	bowl	0
+S46	empty
+O33	bottle	1
+S24	contains	{barbecue sauce}
+O13	barbecue sauce	1
+S144	thick liquid
+S72	in	[bottle]
+M65	pour*	<Assumed>
+O34	bowl	0
+S24	contains	{barbecue sauce}
+O13	barbecue sauce	1
+S144	thick liquid
+S72	in	[bowl]
+//
+O34	bowl	1
+S24	contains	{barbecue sauce}
+O13	barbecue sauce	1
+S144	thick liquid
+S72	in	[bowl]
+O322	ribs	0
+S24	contains	{black pepper,salt}
+S93	on	[grill]
+S97	partly cooked
+O45	brush	1
+M10	brush	<Assumed>
+O322	ribs	0
+S24	contains	{barbecue sauce,black pepper,salt}
+S93	on	[grill]
+S97	partly cooked
+O13	barbecue sauce	1
+S144	thick liquid
+S93	on	[ribs]
+//
+O185	grill	0
+S93	on
+S24	contains	{ribs}
+M13	close	<Assumed>
+O185	grill	0
+S93	on
+S20	closed
+S24	contains	{ribs}
+//
+O185	grill	0
+S93	on
+S20	closed
+S24	contains	{ribs}
+O322	ribs	0
+S24	contains	{barbecue sauce,black pepper,salt}
+S93	on	[grill]
+S97	partly cooked
+M16	cook	<Assumed>
+O322	ribs	0
+S24	contains	{barbecue sauce,black pepper,salt}
+S25	cooked
+S93	on	[grill]
+//
+O185	grill	0
+S93	on
+S20	closed
+S24	contains	{ribs}
+M59	open	<Assumed>
+O185	grill	0
+S93	on
+S24	contains	{ribs}
+//
+O185	grill	0
+S93	on
+S24	contains	{ribs}
+M116	turn off	<Assumed>
+O185	grill	0
+S90	off
+S24	contains	{ribs}
+//
+O185	grill	0
+S90	off
+S24	contains	{ribs}
+O322	ribs	1
+S24	contains	{barbecue sauce,black pepper,salt}
+S25	cooked
+S93	on	[grill]
+O396	tongs	1
+O10	baking tray	0
+S46	empty
+M61	pick-and-place	<Assumed>
+O10	baking tray	0
+S24	contains	{ribs}
+O322	ribs	0	18
+S24	contains	{barbecue sauce,black pepper,salt}
+S110	ready
+S93	on	[baking tray]
+O185	grill	0
+S90	off
+S46	empty
+//

@@ -1,0 +1,108 @@
+O	noodle	1
+S	uncooked
+O	pot	0
+S	contains	{water}
+S	on	[stove]
+M	pick-and-place	0:36	0:46
+O	noodle	1
+S	uncooked
+S	in	[pot]
+O	pot	0
+S	contains	{water,noodle}
+S	on	[stove]
+//
+O	salt	1
+S	granulated
+O	pot	0
+S	contains	{water,noodle}
+S	on	[stove]
+M	sprinkle	0:49	0:57
+O	pot	0
+S	contains	{water,noodle,salt}
+S	on	[stove]
+O	salt	1
+S	granulated
+S	in	[pot]
+//
+O	spoon	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[spoon]
+O	pot	0
+S	contains	{water,noodle,salt}
+S	on	[stove]
+M	pour	1:01	1:03
+O	pot	0
+S	contains	{water,noodle,salt,olive oil}
+S	on	[stove]
+O	olive oil	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{water,noodle,salt,olive oil}
+S	on	[stove]
+O	measuring cup	1
+S	contains	{water}
+O	water	1
+S	in	[measuring cup]
+M	pour	1:06	1:08
+O	pot	0
+S	contains	{water,noodle,salt,olive oil}
+S	on	[stove]
+//
+O	pot	0
+S	contains	{water,noodle,salt,olive oil}
+S	on	[stove]
+O	spoon	1
+M	stir	1:09	1:16
+O	pot	0
+S	contains	{water,noodle,salt,olive oil}
+S	on	[stove]
+//
+O	pot	0
+S	contains	{water,noodle,salt,olive oil}
+S	on	[stove]
+O	noodle	0
+S	uncooked
+S	in	[pot]
+M	boil	Assumed	Assumed
+O	pot	0
+S	contains	{water,noodle,salt,olive oil}
+S	on	[stove]
+O	noodle	0
+S	cooked
+S	in	[pot]
+//
+O	pot	1
+S	contains	{water,noodle,salt,olive oil}
+S	on	[stove]
+O	strainer	0
+S	empty
+O	noodle	0
+S	cooked
+S	in	[pot]
+M	pour	2:01	2:09
+O	strainer	0
+S	contains	{noodle,salt,olive oil}
+O	noodle	0
+S	cooked
+S	in	[strainer]
+S	contains	{salt,olive oil}
+//
+O	strainer	0
+S	contains	{noodle,salt,olive oil}
+O	noodle	0
+S	cooked
+S	in	[strainer]
+S	contains	{salt,olive oil}
+O	tongs	1
+O	plate	0
+S	empty
+M	pour	Assumed	Assumed
+O	plate	0
+S	contains	{noodle,salt,olive oil}
+O	noodle	0	14
+S	cooked
+S	on	[plate]
+S	contains	{salt,olive oil}
+//

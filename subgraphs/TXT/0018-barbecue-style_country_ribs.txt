@@ -1,0 +1,273 @@
+# Source:	https://www.youtube.com/watch?v=v1GIU0WDaRk
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0018-barbecue-style_country_ribs.mp4
+//
+O	oven	1
+S	off (ready)
+M	turn on	0:24	0:27
+O	oven	1
+S	on
+//
+O	cutting board	0
+S	empty
+O	garlic	1
+S	peeled
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{garlic}
+O	garlic	1
+S	peeled
+S	on	[cutting board]
+//
+O	garlic	0
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	chop	0:27	0:35
+O	garlic	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+O	lemon	1
+S	whole
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{lemon}
+O	lemon	1
+S	whole
+S	on	[cutting board]
+//
+O	lemon	0
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	slice	0:36	0:41
+O	lemon	0
+S	sliced
+S	on	[cutting board]
+//
+O	box	1
+S	contains	{aluminium foil}
+O	aluminium foil	1
+S	in	[box]
+M	tear	Assumed	Assumed
+O	aluminium foil	1
+S	sheet
+//
+O	aluminium foil	1
+S	sheet
+O	baking tray	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	baking tray	0
+S	with	[aluminium foil]
+O	aluminium foil	1
+S	sheet
+S	on	[baking tray]
+//
+O	packet	0
+S	contains	{rib}
+O	rib	0
+S	raw
+S	in	[packet]
+O	knife	1
+M	cut open	Assumed	Assumed
+O	packet	0
+S	opened
+S	contains	{rib}
+//
+O	packet	0
+S	opened
+S	contains	{rib}
+O	rib	0
+S	raw
+S	in	[packet]
+O	parchment paper	0
+S	sheet
+S	on	[surface]
+O	tongs	1
+M	pick-and-place	Assumed	Assumed
+//
+O	tongs	1
+O	rib	1
+S	raw
+S	in	[packet]
+O	baking tray	0
+S	with	[sheet]
+M	pick-and-place	0:42	0:48
+O	baking tray	0
+S	contains	{rib}
+O	rib	1
+S	raw
+S	on	[baking tray]
+//
+O	salt	1
+S	granulated
+O	rib	1
+S	raw
+S	on	[baking tray]
+O	baking tray	0
+S	contains	{rib}
+M	sprinkle	0:52	0:56
+O	rib	0
+S	salted
+S	on	[baking tray]
+//
+O	garlic	0
+S	chopped
+S	on	[cutting board]
+O	spoon	1
+M	scoop	Assumed	Assumed
+O	spoon	1
+S	contains	{garlic}
+O	garlic	0
+S	chopped
+S	in	[spoon]
+//
+O	spoon	1
+S	contains	{garlic}
+O	garlic	1
+S	chopped
+S	in	[spoon]
+O	rib	0
+S	salted
+S	on	[baking tray]
+O	baking tray	0
+S	contains	{rib}
+M	spread	0:57	1:02
+O	rib	0
+S	seasoned	{salt,garlic}
+S	on	[baking tray]
+O	garlic	1
+S	chopped
+S	on	[rib]
+//
+O	lemon	1
+S	sliced
+S	on	[surface]
+O	rib	0
+S	seasoned	{salt,garlic}
+S	on	[baking tray]
+O	baking tray	0
+S	contains	{rib}
+M	pick-and-place	1:03	1:06
+O	rib	0
+S	garnished	{salt,garlic,lemon}
+S	on	[baking tray]
+O	lemon	1
+S	sliced
+S	on	[rib]
+//
+O	rib	0
+S	garnished	{salt,garlic,lemon}
+S	on	[baking tray]
+O	baking tray	0
+S	contains	{rib}
+O	oven	0
+S	on
+M	put inside	1:07	1:12
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	0
+S	contains	{rib}
+S	in	[oven]
+//
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	0
+S	contains	{rib}
+S	in	[oven]
+O	rib	0
+S	garnished	{salt,garlic,lemon}
+S	on	[baking tray]
+M	cook	Assumed	Assumed
+O	rib	0
+S	partly cooked
+S	on	[baking tray]
+//
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	0
+S	contains	{rib}
+S	in	[oven]
+M	remove	Assumed	Assumed
+O	oven	0
+S	off
+O	baking tray	0
+S	contains	{rib}
+//
+O	rib	0
+S	partly cooked
+S	on	[baking tray]
+O	baking tray	0
+S	contains	{rib}
+O	barbecue sauce	1
+S	in	[bottle]
+M	pour	1:26	1:34
+O	rib	0
+S	coated	{salt,garlic,lemon,barbecue sauce}
+S	on	[baking tray]
+//
+O	rib	0
+S	coated	{salt,garlic,lemon,barbecue sauce}
+S	on	[baking tray]
+O	baking tray	1
+S	contains	{rib}
+O	oven	0
+S	on
+M	pick-and-place	Assumed	Assumed
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	1
+S	contains	{rib}
+S	in	[oven]
+//
+O	oven	0
+S	on
+S	with	[baking tray]
+O	rib	0
+S	coated	{salt,garlic,lemon,barbecue sauce}
+S	on	[baking tray]
+O	baking tray	1
+S	contains	{rib}
+S	in	[oven]
+M	cook	Assumed	Assumed
+O	rib	0
+S	barbecued
+S	contains	{salt,garlic,lemon,barbecue sauce}
+S	on	[baking tray]
+//
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	0
+S	contains	{rib}
+S	in	[oven]
+M	remove	Assumed	Assumed
+O	oven	0
+S	off
+O	baking tray	0
+S	contains	{rib}
+//
+O	baking tray	0
+S	contains	{rib}
+O	tongs	1
+O	rib	0
+S	barbecued
+S	contains	{salt,garlic,lemon,barbecue sauce}
+S	on	[baking tray]
+O	plate	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	rib	0	18
+S	barbecued
+S	contains	{salt,garlic,lemon,barbecue sauce}
+S	on	[baking tray]
+S	ready
+O	plate	0
+S	contains	{rib}
+//

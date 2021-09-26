@@ -1,0 +1,183 @@
+O	plate	0
+S	empty
+O	porkchop	1
+S	uncooked
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{porkchop}
+O	porkchop	1
+S	uncooked
+S	on	[plate]
+//
+O	bowl	0
+S	contains	{salt,black pepper}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+O	salt	1
+S	granulated
+S	in	[bowl]
+O	plate	0
+S	contains	{porkchop}
+O	porkchop	1
+S	uncooked
+S	on	[plate]
+M	sprinkle	0:22	0:24
+O	porkchop	0
+S	contains	{salt,black pepper}
+S	seasoned
+S	on	[plate]
+//
+O	cooking pan	1
+S	empty
+O	stove	0
+S	on
+M	pick-and-place	Assumed	Assumed
+O	stove	1
+S	on
+S	with	[cooking pan]
+O	cooking pan	0
+S	heated
+S	on	[stove]
+//
+O	cooking pan	0
+S	heated
+S	on	[stove]
+O	knife	1
+O	plate	0
+S	contains	{butter}
+O	butter	1
+S	stick
+S	on	[plate]
+M	scoop and pour	0:46	0:50
+O	cooking pan	0
+S	contains	{butter}
+S	on	[stove]
+O	butter	1
+S	cubed
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	contains	{butter}
+S	on	[stove]
+O	bottle	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	in	[bottle]
+M	pour	0:54	0:57
+O	cooking pan	0
+S	contains	{butter,vegetable oil}
+S	on	[stove]
+O	vegetable oil	1
+S	in	[cooking pan]
+//
+O	cooking pan	1
+S	contains	{butter,vegetable oil}
+S	on	[stove]
+O	butter	1
+S	cubed
+S	in	[cooking pan]
+O	vegetable oil	1
+S	in	[cooking pan]
+M	spread	1:01	1:06
+O	cooking pan	1
+S	greased
+S	contains	{butter,vegetable oil}
+S	on	[stove]
+//
+O	cooking pan	1
+S	greased
+S	contains	{butter,vegetable oil}
+S	on	[stove]
+O	plate	0
+S	contains	{porkchop}
+O	porkchop	0
+S	contains	{salt,black pepper}
+S	seasoned
+S	on	[plate]
+O	tongs	1
+M	pick-and-place	1:42	1:48
+O	cooking pan	0
+S	contains	{porkchop,butter,vegetable oil}
+S	on	[stove]
+O	porkchop	0
+S	contains	{salt,black pepper,butter,vegetable oil}
+S	seasoned
+S	in	[cooking pan]
+O	plate	0
+//
+O	cooking pan	0
+S	contains	{porkchop,butter,vegetable oil}
+S	on	[stove]
+O	porkchop	0
+S	contains	{salt,black pepper,butter,vegetable oil}
+S	seasoned
+S	in	[cooking pan]
+O	tongs	1
+M	flip	2:00	2:03
+O	porkchop	0
+S	contains	{salt,black pepper,butter,vegetable oil}
+S	seasoned
+S	partly cooked
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	contains	{porkchop,butter,vegetable oil}
+S	on	[stove]
+O	baking tray	1
+S	empty
+M	cover	2:30	2:33
+O	cooking pan	0
+S	covered
+S	contains	{porkchop,butter,vegetable oil}
+S	on	[stove]
+O	baking tray	1
+S	on	[cooking pan]
+//
+O	cooking pan	0
+S	covered
+S	contains	{porkchop,butter,vegetable oil}
+S	on	[stove]
+O	porkchop	0
+S	contains	{salt,black pepper,butter,vegetable oil}
+S	seasoned
+S	partly cooked
+S	in	[cooking pan]
+M	cook	Assumed	Assumed
+O	porkchop	0
+S	cooked
+S	contains	{salt,black pepper,butter,vegetable oil}
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	covered
+S	contains	{porkchop,butter,vegetable oil}
+S	on	[stove]
+O	baking tray	1
+S	on	[cooking pan]
+M	uncover	Assumed	Assumed
+O	cooking pan	0
+S	contains	{porkchop,butter,vegetable oil}
+S	on	[stove]
+O	baking tray	1
+//
+O	cooking pan	0
+S	contains	{porkchop,butter,vegetable oil}
+S	on	[stove]
+O	plate	0
+S	empty
+O	porkchop	0
+S	cooked
+S	contains	{salt,black pepper,butter,vegetable oil}
+S	in	[cooking pan]
+O	tongs	1
+M	pick-and-place	3:28	3:31
+O	cooking pan	0
+O	plate	0
+S	contains	{porkchop,butter,vegetable oil}
+S	on	[stove]
+O	porkchop	1	18
+S	cooked
+S	contains	{salt,black pepper,butter,vegetable oil}
+S	on	[plate]
+//

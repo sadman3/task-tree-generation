@@ -1,0 +1,260 @@
+# Source:	https://www.youtube.com/watch?v=9K3HfJqsY-M
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0033-miso_soup.mp4
+//
+O	cutting board	0
+S	empty
+O	green onion	1
+S	whole
+S	stem
+M	pick-and-place	<Assumed,Assume>
+O	cutting board	0
+S	contains	{green onion}
+O	green onion	1
+S	whole
+S	stem
+S	on	[cutting board]
+//
+O	knife	1
+O	green onion	0
+S	whole
+S	stem
+S	on	[cutting board]
+M	slice	<0:22-0:35>
+O	green onion	0
+S	sliced
+S	on	[cutting board]
+//
+O	cutting board	1
+S	contains	{green onion}
+O	green onion	1
+S	sliced
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pour	<Assumed>
+O	cutting board	1
+S	empty
+O	bowl	0
+S	contains	{green onion}
+O	green onion	1
+S	sliced
+S	in	[bowl]
+//
+O	cutting board	0
+S	empty
+O	packet	0
+S	contains	{tofu}
+O	tofu	1
+S	block
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{tofu}
+O	tofu	1
+S	block
+S	whole
+S	on	[cutting board]
+//
+O	tofu	1
+S	block
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	cut	<0:40-0:55>
+O	tofu	0
+S	diced
+S	on	[cutting board]
+//
+O	saucepan	0
+S	hot
+S	empty
+S	on	[stove]
+O	measuring cup	1
+S	contains	{water}
+O	water	1
+S	liquid
+S	in	[measuring cup]
+M	pour	<1:02-1:08>
+O	measuring cup	1
+S	empty
+O	saucepan	0
+S	hot
+S	contains	{water}
+S	on	[stove]
+O	water	1
+S	liquid
+S	in	[saucepan]
+//
+O	saucepan	0
+S	hot
+S	contains	{water}
+S	on	[stove]
+O	bowl	1
+S	contains	{dashi}
+O	dashi	1
+S	granulated
+S	in	[bowl]
+M	pour	<1:13-1:17>
+O	saucepan	0
+S	hot
+S	contains	{dashi,water}
+S	on	[stove]
+O	dashi	1
+S	granulated
+S	in	[saucepan]
+O	bowl	1
+S	empty
+//
+O	saucepan	0
+S	hot
+S	contains	{dashi,water}
+S	on	[stove]
+O	dashi	0
+S	granulated
+S	in	[saucepan]
+O	spoon	1
+O	water	0
+S	liquid
+S	in	[saucepan]
+M	cook and stir	<1:22-1:27:50>
+O	broth	0
+S	mixed
+S	liquid
+S	contains	{water,dashi}
+S	in	[saucepan]
+//
+O	saucepan	0
+S	hot
+S	on	[stove]
+S	contains	{water,dashi}
+O	bowl	0
+S	contains	{miso}
+O	miso	1
+S	paste
+S	in	[bowl]
+O	spoon	1
+M	pour and scrape	<1:43-1:46>
+O	saucepan	0
+S	hot
+S	on	[stove]
+S	contains	{water,dashi,miso}
+O	miso	1
+S	paste
+S	in	[saucepan]
+//
+O	saucepan	0
+S	hot
+S	on	[stove]
+S	contains	{water,dashi,miso}
+O	broth	0
+S	mixed
+S	liquid
+S	contains	{water,dashi}
+S	in	[saucepan]
+O	miso	0
+S	paste
+S	in	[saucepan]
+O	spoon	1
+M	stir	<1:49-2:00>
+O	broth	0
+S	mixed
+S	liquid
+S	contains	{water,dashi,miso}
+S	in	[saucepan]
+//
+O	saucepan	0
+S	hot
+S	on	[stove]
+S	contains	{water,dashi,miso}
+O	cutting board	1
+S	contains	{tofu}
+O	tofu	1
+S	diced
+S	on	[cutting board]
+O	spoon	1
+M	scrape	<2:06-2:09>
+O	saucepan	0
+S	hot
+S	on	[stove]
+S	contains	{water,dashi,miso,tofu}
+O	tofu	1
+S	diced
+S	in	[saucepan]
+O	cutting board	1
+S	empty
+//
+O	saucepan	0
+S	hot
+S	on	[stove]
+S	contains	{water,dashi,miso,tofu}
+O	bowl	1
+S	contains	{green onion}
+O	green onion	1
+S	sliced
+S	in	[bowl]
+M	pour	<2:16-2:18:50>
+O	saucepan	0
+S	hot
+S	on	[stove]
+S	contains	{water,dashi,miso,tofu,green onion}
+O	green onion	1
+S	sliced
+S	in	[saucepan]
+//
+O	stove	0
+S	on
+S	under	[saucepan]
+O	saucepan	0
+S	hot
+S	on	[stove]
+S	contains	{water,dashi,miso,tofu,green onion}
+O	green onion	0
+S	sliced
+S	in	[saucepan]
+O	broth	0
+S	mixed
+S	liquid
+S	contains	{water,dashi,miso}
+S	in	[saucepan]
+O	tofu	0
+S	diced
+S	in	[saucepan]
+O	spoon	1
+M	cook and stir*	<2:21-2:23>
+O	saucepan	0
+S	hot
+S	on	[stove]
+S	contains	{soup}
+O	soup	1
+S	thick liquid
+S	contains	{water,dashi,miso,tofu,green onion}
+S	in	[saucepan]
+O	miso soup	1
+S	thick liquid
+S	contains	{water,dashi,miso,tofu,green onion}
+S	in	[saucepan]
+//
+O	saucepan	0
+S	hot
+S	on	[stove]
+S	contains	{soup}
+O	miso soup	1
+S	thick liquid
+S	contains	{water,dashi,miso,tofu,green onion}
+S	in	[saucepan]
+O	bowl	0
+S	empty
+O	ladle	1
+M	scoop and pour	<Assumed>
+O	bowl	0
+S	contains	{soup}
+O	soup	1
+S	thick liquid
+S	contains	{water,dashi,miso,tofu,green onion}
+S	in	[bowl]
+O	miso soup	1	1
+S	thick liquid
+S	contains	{water,dashi,miso,tofu,green onion}
+S	in	[bowl]
+S	ready
+//

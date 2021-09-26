@@ -1,0 +1,141 @@
+O	tin can	0
+S	contains	{tuna}
+S	sealed
+O	can opener	1
+M	open	Assumed	Assumed
+O	tin can	0
+S	opened
+S	contains	{water,tuna}
+//
+O	tin can	1
+S	opened
+S	contains	{water,tuna}
+M	drain	Assumed	Assumed
+O	tin can	1
+S	contains	{tuna}
+//
+O	bowl	0
+S	empty
+O	tin can	1
+S	contains	{tuna}
+O	tuna	1
+S	in	[tin can]
+O	fork	1
+M	scrape	0:02	0:05
+O	bowl	0
+S	contains	{tuna}
+O	tuna	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{onion,mayonnaise}
+O	mayonnaise	1
+S	in	[bowl]
+O	onion	1
+S	chopped
+S	in	[bowl]
+O	bowl	1
+S	contains	{tuna}
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{tuna,onion,mayonnaise}
+//
+O	bowl	0
+S	contains	{tuna,onion,mayonnaise}
+O	mayonnaise	1
+S	in	[bowl]
+O	onion	1
+S	chopped
+S	in	[bowl]
+O	tuna	1
+S	in	[bowl]
+O	fork	1
+M	mix	0:09	0:11
+O	bowl	0
+S	contains	{tuna spread}
+O	tuna spread	1
+S	contains	{tuna,onion,mayonnaise}
+S	in	[bowl]
+//
+O	plate	0
+S	empty
+O	bread	1
+S	toasted
+S	in	[toaster]
+O	toaster	0
+S	contains	{bread}
+M	remove	Assumed	Assumed
+O	plate	0
+S	contains	{bread}
+O	bread	1
+S	toasted
+S	on	[plate]
+//
+O	plate	0
+S	contains	{bread}
+O	bread	0
+S	toasted
+S	on	[plate]
+O	knife	1
+O	butter	0
+S	in	[container]
+M	spread	0:13	0:14
+O	bread	0
+S	buttered	{butter}
+S	on	[plate]
+O	butter	0
+S	spread
+S	on	[bread]
+//
+O	plate	0
+S	contains	{bread}
+O	bowl	0
+S	contains	{tuna spread}
+O	tuna spread	1
+S	contains	{tuna,onion,mayonnaise}
+S	in	[bowl]
+O	bread	0
+S	buttered	{butter}
+S	on	[plate]
+O	fork	1
+M	scoop and pour	0:16	0:19
+O	bread	0
+S	contains	{butter,tuna spread}
+S	on	[plate]
+O	tuna spread	1
+S	contains	{tuna,onion,mayonnaise}
+S	on	[bread]
+//
+O	plate	0
+S	contains	{bread}
+O	bread	0
+S	contains	{butter,tuna spread}
+S	on	[plate]
+O	bowl	0
+S	contains	{lettuce}
+O	lettuce	1
+S	separated
+S	in	[bowl]
+M	pick-and-place	0:20	0:26
+O	bread	0
+S	contains	{butter,tuna spread,lettuce}
+S	on	[plate]
+O	lettuce	1
+S	separated
+S	on	[bread]
+//
+O	plate	0
+S	contains	{bread}
+O	bread	1
+S	buttered	{butter}
+S	on	[plate]
+O	bread	1
+S	contains	{butter,tuna spread,lettuce}
+S	on	[plate]
+M	pick-and-place	0:27	0:29
+O	plate	0
+S	contains	{tuna sandwich}
+O	tuna sandwich	1	17
+S	contains	{bread,butter,tuna,onion,mayonnaise,lettuce}
+S	on	[plate]
+//

@@ -1,0 +1,604 @@
+# Source:	https://www.youtube.com/watch?v=ihZcb5WxTCU
+//
+O	onion	1
+S	whole
+S	in	[bowl]
+M	peel	Assumed	Assumed
+O	onion	1
+S	whole
+S	peeled
+S	in	[bowl]
+//
+O	cutting board	0
+S	empty
+S	on	[surface]
+O	onion	1
+S	whole
+S	peeled
+S	in	[bowl]
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{onion}
+S	on	[surface]
+O	onion	1
+S	whole
+S	peeled
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{onion}
+S	on	[surface]
+O	onion	1
+S	whole
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	cut	Assumed	Assumed
+O	onion	1
+S	halved
+S	peeled
+S	on	[cutting board]
+O	knife	1
+//
+O	cutting board	0
+S	contains	{onion}
+S	on	[surface]
+O	onion	1
+S	halved
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	slice	0:24	0:32
+O	onion	1
+S	sliced
+S	peeled
+S	on	[cutting board]
+O	knife	1
+//
+O	packet	1
+S	sealed
+S	contains	{bacon}
+O	bacon	1
+S	defrosted
+S	in	[packet]
+O	scissors	1
+M	cut open	Assumed	Assumed
+O	packet	1
+S	contains	{bacon}
+//
+O	cutting board	0
+S	empty
+S	on	[surface]
+O	packet	0
+S	contains	{bacon}
+O	bacon	1
+S	defrosted
+S	in	[packet]
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{bacon}
+S	on	[surface]
+O	bacon	1
+S	defrosted
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{bacon}
+S	on	[surface]
+O	bacon	1
+S	defrosted
+S	on	[cutting board]
+M	chop	0:32	0:40
+O	bacon	1
+S	defrosted
+S	chopped
+S	on	[cutting board]
+//
+O	bowl	1
+S	empty
+M	pick-and-place	0:40	0:41
+O	bowl	1
+S	empty
+S	on	[surface]
+//
+O	bag	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bag]
+O	measuring cup	0
+S	empty
+M	pour	Assumed	Assumed
+O	measuring cup	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[measuring cup]
+//
+O	measuring cup	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[measuring cup]
+O	bowl	1
+S	empty
+S	on	[surface]
+M	pour	0:47	0:49
+O	bowl	1
+S	contains	{flour}
+S	on	[surface]
+//
+O	bag	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bag]
+O	table spoon	0
+S	empty
+M	pour	Assumed	Assumed
+O	table spoon	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[table spoon]
+//
+O	table spoon	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[table spoon]
+O	bowl	0
+S	contains	{flour}
+S	on	[surface]
+M	pour	0:47	0:49
+O	bowl	0
+S	contains	{flour}
+S	on	[surface]
+//
+O	teaspoon	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	on	[teaspoon]
+O	bowl	0
+S	contains	{flour}
+S	on	[surface]
+M	pour	0:58	0:59
+O	salt	1
+S	granulated
+S	in	[bowl]
+O	bowl	0
+S	contains	{flour,salt}
+S	on	[surface]
+//
+O	bowl	0
+S	contains	{flour,salt}
+S	on	[surface]
+O	fork	1
+M	mix	1:00	1:04
+O	bowl	0
+S	contains	{flour,salt}
+S	on	[surface]
+O	fork	1
+//
+O	bottle	1
+S	contains	{olive oil}
+S	covered
+O	olive oil	0
+S	in	[bottle]
+M	remove	Assumed	Assumed
+O	bottle	1
+S	contains	{olive oil}
+//
+O	table spoon	0
+S	empty
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[bottle]
+M	pour	1:06	1:07
+O	table spoon	0
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[table spoon]
+//
+O	bowl	0
+S	contains	{flour,salt}
+S	on	[surface]
+O	table spoon	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[table spoon]
+M	pour	1:08	1:09
+O	bowl	0
+S	contains	{flour,salt,olive oil}
+S	on	[surface]
+O	olive oil	1
+S	in	[bowl]
+//
+O	faucet	1
+S	off
+O	measuring cup	0
+S	empty
+M	turn on	Assumed	Assumed
+O	faucet	1
+S	on
+O	water	0
+S	in	[measuring cup]
+S	from	[faucet]
+O	measuring cup	0
+S	contains	{water}
+//
+O	faucet	1
+S	on
+M	turn off	Assumed	Assumed
+O	faucet	1
+S	off
+//
+O	water	1
+S	in	[measuring cup]
+S	from	[faucet]
+O	measuring cup	1
+S	contains	{water}
+O	bowl	0
+S	contains	{flour,salt,olive oil}
+S	on	[surface]
+M	pour	1:09	1:10
+O	water	1
+S	in	[bowl]
+S	from	[faucet]
+O	bowl	0
+S	contains	{dough mixture}
+S	on	[surface]
+O	dough mixture	0
+S	contains	{flour,salt,olive oil,water}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{dough mixture}
+S	on	[surface]
+O	dough mixture	0
+S	contains	{flour,salt,olive oil,water}
+S	in	[bowl]
+O	fork	1
+M	mix	1:11	1:15
+O	bowl	0
+S	contains	{pizza dough}
+S	on	[surface]
+O	pizza dough	1
+S	in	[bowl]
+O	fork	1
+//
+O	table	0
+S	empty
+O	bag	0
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bag]
+M	sprinkle	1:31	1:33
+O	flour	1
+S	powder
+S	on	[table]
+O	table	0
+S	with	[item]
+//
+O	flour	1
+S	powder
+S	on	[table]
+O	table	0
+S	with	[item]
+O	bowl	0
+S	contains	{pizza dough}
+S	on	[surface]
+O	pizza dough	1
+S	in	[bowl]
+M	pick-and-place	1:34	1:35
+O	table	0
+S	with	[item]
+O	pizza dough	1
+S	on	[table]
+//
+O	table	0
+S	with	[item]
+O	pizza dough	0
+S	on	[table]
+O	flour	0
+S	powder
+S	on	[table]
+O	knife	1
+M	cut with slits	1:37	1:39
+O	pizza dough	0
+S	halved
+S	on	[table]
+O	knife	1
+//
+O	rolling pin	1
+O	pizza dough	0
+S	halved
+S	on	[table]
+O	table	0
+S	with	[item]
+M	roll	1:40	1:48
+O	pizza dough	0
+S	flattened
+S	on	[table]
+//
+O	parchment paper	1
+O	baking tray	0
+S	empty
+S	on	[surface]
+M	pick-and-place	Assumed	Assumed
+O	baking tray	0
+S	contains	[parchment paper]
+S	on	[surface]
+O	parchment paper	1
+S	on	[baking tray]
+//
+O	brush	0
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[bottle]
+M	pour	Assumed	Assumed
+O	brush	0
+S	contains	{olive oil}
+O	olive oil	1
+S	on	{brush}
+//
+O	brush	1
+S	contains	{olive oil}
+O	olive oil	0
+S	on	{brush}
+O	baking tray	0
+S	contains	[parchment paper]
+S	on	[surface]
+O	parchment paper	1
+S	on	[baking tray]
+M	brush	Assumed	Assumed
+O	parchment paper	1
+S	contains	{olive oil}
+S	on	[baking tray]
+//
+O	pizza dough	1
+S	flattened
+S	on	[table]
+O	baking tray	0
+S	contains	[parchment paper]
+S	on	[surface]
+O	parchment paper	1
+S	contains	{olive oil}
+S	on	[baking tray]
+M	pick-and-place	2:17	2:19
+O	pizza dough	1
+S	flattened
+S	on	[parchment paper]
+O	parchment paper	1
+S	contains	{olive oil,pizza dough}
+S	on	[baking tray]
+//
+O	pizza dough	1
+S	flattened
+S	on	[parchment paper]
+O	parchment paper	1
+S	contains	{olive oil,pizza dough}
+S	on	[baking tray]
+O	baking tray	0
+S	contains	[parchment paper]
+S	on	[surface]
+M	shape	2:20	2:28
+O	pizza dough	1
+S	flattened
+S	on	[parchment paper]
+//
+O	bottle	1
+S	contains	{sour cream}
+S	covered
+O	sour cream	0
+S	in	[bottle]
+M	remove	Assumed	Assumed
+O	bottle	1
+S	contains	{sour cream}
+//
+O	scraper	1
+O	bottle	0
+S	contains	{sour cream}
+M	scoop	2:37	2:38
+O	scraper	1
+S	contains	{sour cream}
+//
+O	pizza dough	0
+S	flattened
+S	on	[parchment paper]
+O	parchment paper	0
+S	contains	{olive oil,pizza dough}
+S	on	[baking tray]
+O	baking tray	0
+S	contains	[parchment paper]
+S	on	[surface]
+O	scraper	1
+S	contains	{sour cream}
+M	spread	2:28	2:44
+O	pizza dough	0
+S	flattened
+S	contains	{sour cream}
+S	on	[parchment paper]
+//
+O	pizza dough	0
+S	flattened
+S	contains	{sour cream}
+S	on	[parchment paper]
+O	parchment paper	0
+S	contains	{olive oil,pizza dough}
+S	on	[baking tray]
+O	baking tray	0
+S	contains	[parchment paper]
+S	on	[surface]
+O	sea salt	1
+S	granulated
+O	pepper	1
+S	in	[bottle]
+M	sprinkle	2:45	2:48
+O	pizza dough	0
+S	flattened
+S	contains	{sour cream,sea salt,pepper}
+S	on	[parchment paper]
+//
+O	onion	1
+S	sliced
+S	peeled
+S	on	[cutting board]
+O	pizza dough	0
+S	flattened
+S	contains	{sour cream,sea salt,pepper}
+S	on	[parchment paper]
+O	parchment paper	0
+S	contains	{olive oil,pizza dough}
+S	on	[baking tray]
+O	baking tray	0
+S	contains	[parchment paper]
+S	on	[surface]
+O	bacon	1
+S	defrosted
+S	chopped
+S	on	[cutting board]
+M	sprinkle	2:49	2:56
+O	onion	1
+S	sliced
+S	peeled
+S	on	{pizza dough}
+O	bacon	1
+S	defrosted
+S	chopped
+S	on	{pizza dough}
+O	pizza dough	0
+S	flattened
+S	contains	{sour cream,sea salt,pepper,onion,bacon}
+S	on	[parchment paper]
+//
+O	egg	1
+S	uncracked
+O	pizza dough	0
+S	flattened
+S	contains	{sour cream,sea salt,pepper,onion,bacon}
+S	on	[parchment paper]
+O	parchment paper	0
+S	contains	{olive oil,pizza dough}
+S	on	[baking tray]
+O	baking tray	0
+S	contains	[parchment paper]
+S	on	[surface]
+M	crack	3:11	3:13
+O	pizza dough	0
+S	flattened
+S	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk}
+S	on	[parchment paper]
+O	egg white and yolk	1
+S	on	{pizza dough}
+//
+O	oven	1
+S	off
+M	turn on	Assumed	Assumed
+O	oven	1
+S	on
+//
+O	oven	1
+S	on
+M	preheat	Assumed	Assumed
+O	oven	1
+S	on
+S	preheated
+//
+O	oven	0
+S	on
+S	preheated
+O	pizza dough	0
+S	flattened
+S	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk}
+S	on	[parchment paper]
+O	parchment paper	0
+S	contains	{olive oil,pizza dough}
+S	on	[baking tray]
+O	baking tray	0
+S	contains	[parchment paper]
+S	on	[surface]
+M	pick-and-place	3:26	3:30
+O	oven	0
+S	on
+S	preheated
+S	contains	[baking tray]
+O	baking tray	0
+S	contains	[parchment paper]
+S	in	[oven]
+//
+O	oven	1
+S	on
+S	preheated
+S	contains	[baking tray]
+O	baking tray	0
+S	contains	[parchment paper]
+S	in	[oven]
+O	pizza dough	0
+S	flattened
+S	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk}
+S	on	[parchment paper]
+O	parchment paper	0
+S	contains	{olive oil,pizza dough}
+S	on	[baking tray]
+M	bake	Assumed	Assumed
+O	eggs and bacon pizza	0
+S	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk}
+S	on	[parchment paper]
+O	parchment paper	0
+S	contains	{eggs and bacon pizza}
+S	on	[baking tray]
+//
+O	eggs and bacon pizza	1
+S	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk}
+S	on	[parchment paper]
+O	baking tray	1
+S	contains	[parchment paper]
+S	in	[oven]
+O	parchment paper	1
+S	contains	{eggs and bacon pizza}
+S	on	[baking tray]
+M	remove	Assumed	Assumed
+O	oven	0
+S	off
+//
+O	eggs and bacon pizza	0
+S	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk}
+S	on	[parchment paper]
+O	baking tray	1
+S	contains	[parchment paper]
+S	in	[oven]
+O	parchment paper	1
+S	contains	{eggs and bacon pizza}
+S	on	[baking tray]
+O	parsley	1
+S	chopped
+S	in	[bow]
+M	sprinkle	4:10	4:12
+O	eggs and bacon pizza	0
+S	contains	{parsley}
+S	on	[parchment paper]
+//
+O	eggs and bacon pizza	1
+S	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk,parsley}
+S	on	[parchment paper]
+O	baking tray	1
+S	contains	[parchment paper]
+S	in	[oven]
+O	parchment paper	1
+S	contains	{eggs and bacon pizza}
+S	on	[baking tray]
+O	plate	0
+S	empty
+O	tongs	1
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{eggs and bacon pizza}
+O	eggs and bacon pizza	1	3
+S	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk,parsley}
+S	on	[plate]
+//

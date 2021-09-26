@@ -1,0 +1,630 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0026-cheddar_frittata.mp4
+# Source:	https://www.youtube.com/watch?v=pInOF0S6uxg
+//
+O	cutting board	0
+S	empty
+O	sweet pepper	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{sweet pepper}
+O	sweet pepper	1
+S	whole
+S	on	[cutting board]
+//
+O	knife	1
+O	sweet pepper	0
+S	whole
+S	on	[cutting board]
+M	chop	<0:25-0:41>
+O	sweet pepper	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{sweet pepper}
+O	sweet pepper	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pick-and-place	<0:41-0:46>
+O	bowl	0
+S	contains	{sweet pepper}
+O	sweet pepper	1
+S	chopped
+S	in	[bowl]
+O	cutting board	0
+S	empty
+//
+O	cutting board	0
+S	empty
+O	mushroom	1
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{mushroom}
+O	mushroom	1
+S	on	[cutting board]
+S	whole
+//
+O	mushroom	0
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	chop	<0:54-1:01>
+O	mushroom	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{mushroom}
+O	mushroom	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pick-and-place	<1:10-1:13>
+O	bowl	0
+S	contains	{mushroom}
+O	mushroom	1
+S	chopped
+S	in	[bowl]
+O	cutting board	0
+S	empty
+//
+O	onion	1
+S	whole
+S	unpeeled
+M	peel	<Assumed>
+O	onion	1
+S	whole
+S	peeled
+//
+O	cutting board	0
+S	empty
+O	onion	1
+S	whole
+S	peeled
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	whole
+S	peeled
+S	on	[cutting board]
+//
+O	onion	0
+S	whole
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	chop	<Assumed>
+O	onion	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pick-and-place	<Assumed>
+O	bowl	0
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	in	[bowl]
+O	cutting board	0
+//
+O	cooking pan	1
+S	empty
+O	stove	0
+S	off (ready)
+M	pick-and-place	<Assumed>
+O	stove	0
+S	off (ready)
+S	under [cooking pan]
+O	cooking pan	1
+S	on	[stove]
+S	empty
+//
+O	stove	1
+S	off (ready)
+S	under [cooking pan]
+M	turn on	<Assumed>
+O	stove	1
+S	on
+S	under [cooking pan]
+//
+O	cooking pan	0
+S	empty
+S	on	[stove]
+O	stove	0
+S	on
+S	under [cooking pan]
+M	preheat	<Assumed>
+O	cooking pan	0
+S	on	[stove]
+S	hot
+S	empty
+//
+O	cooking pan	0
+S	on	[stove]
+S	hot
+S	empty
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bottle]
+M	pour	<1:28-1:34>
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[cooking pan]
+//
+O	olive oil	1
+S	liquid
+S	in	[cooking pan]
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil}
+O	bowl	1
+S	contains	{onion}
+O	onion	1
+S	chopped
+S	in	[bowl]
+O	turner	1
+M	pour and scrape	<1:36-1:41>
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,onion}
+O	onion	1
+S	chopped
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,onion}
+O	bowl	1
+S	contains	{mushroom}
+O	mushroom	1
+S	chopped
+S	in	[bowl]
+O	turner	1
+M	pour and scrape	<1:42-1:45>
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,onion,mushroom}
+O	mushroom	1
+S	chopped
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,onion,mushroom}
+O	bowl	1
+S	contains	{green pepper}
+O	green pepper	1
+S	chopped
+S	in	[bowl]
+O	turner	1
+M	pour and scrape	<1:46-1:48>
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,onion,mushroom,green pepper}
+O	green pepper	1
+S	chopped
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,onion,mushroom,green pepper}
+O	bowl	1
+S	contains	{sweet pepper}
+O	sweet pepper	1
+S	chopped
+S	in	[bowl]
+O	turner	1
+M	pour and scrape	<1:49-1:51>
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper}
+O	sweet pepper	1
+S	chopped
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper}
+O	onion	0
+S	chopped
+S	in	[cooking pan]
+O	mushroom	0
+S	chopped
+S	in	[cooking pan]
+O	sweet pepper	0
+S	chopped
+S	in	[cooking pan]
+O	green pepper	0
+S	chopped
+S	in	[cooking pan]
+O	turner	1
+M	cook and stir	<1:52-1:59>
+O	onion	0
+S	chopped
+S	sauteed
+S	in	[cooking pan]
+O	mushroom	0
+S	chopped
+S	sauteed
+S	in	[cooking pan]
+O	sweet pepper	0
+S	chopped
+S	sauteed
+S	in	[cooking pan]
+O	green pepper	0
+S	chopped
+S	sauteed
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper}
+O	pepper mill	1
+S	contains	{black pepper}
+O	black pepper	1
+S	peppercorn
+S	whole
+S	in	[pepper mill]
+M	grind	<2:01-2:02>
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper,black pepper}
+O	black pepper	1
+S	ground
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper,black pepper}
+O	jar	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[jar]
+M	sprinkle	<2:02-2:04>
+O	cooking pan	0
+S	hot
+S	on	[stove]
+S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper,black pepper,salt}
+O	salt	1
+S	granulated
+S	in	[cooking pan]
+//
+O	mixing bowl	0
+S	empty
+O	bowl	0
+S	contains	{egg}
+O	egg	1
+S	whole
+S	in	[bowl]
+M	crack	<2:12-2:24>
+O	mixing bowl	0
+S	contains	{egg white,egg yolk}
+O	egg white	0
+S	uncooked
+S	in	[mixing bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{egg white,egg yolk}
+O	egg white	0
+S	uncooked
+S	in	[mixing bowl]
+O	egg yolk	0
+S	uncooked
+S	in	[mixing bowl]
+O	whisk	1
+M	beat	<2:25-2:34>
+O	mixing bowl	0
+S	contains	{egg}
+O	egg	1
+S	beaten
+S	uncooked
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{egg}
+O	jar	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[jar]
+M	sprinkle	<2:36-2:42>
+O	mixing bowl	0
+S	contains	{egg,salt}
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{egg,salt}
+O	pepper mill	1
+S	contains	{black pepper}
+O	black pepper	1
+S	peppercorn
+S	in	[pepper mill]
+M	grind	<2:40-2:42>
+O	mixing bowl	0
+S	contains	{egg,salt,black pepper}
+O	black pepper	1
+S	ground
+S	in	[mixing bowl]
+//
+O	cutting board	0
+S	empty
+O	cheddar	1
+S	block
+O	grater	0
+S	over	[cutting board]
+M	grate	<2:44-2:46>
+O	cutting board	0
+S	contains	{cheddar}
+O	cheddar	1
+S	grated
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{cheddar}
+O	bowl	0
+S	empty
+O	cheddar	1
+S	grated
+S	on	[cutting board]
+M	pick-and-place	<Assumed>
+O	bowl	0
+S	contains	{cheddar}
+O	cheddar	1
+S	grated
+S	in	[bowl]
+O	cutting board	0
+S	empty
+//
+O	mixing bowl	0
+S	contains	{egg,salt,black pepper}
+O	bowl	1
+S	contains	{cheddar}
+O	cheddar	1
+S	grated
+S	in	[bowl]
+M	pour	<2:46-2:50>
+O	mixing bowl	0
+S	contains	{egg,salt,black pepper,cheddar}
+O	cheddar	1
+S	grated
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{egg,salt,black pepper,cheddar}
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+O	black pepper	1
+S	ground
+S	in	[mixing bowl]
+O	cheddar	1
+S	grated
+S	in	[mixing bowl]
+O	egg	1
+S	beaten
+S	uncooked
+S	in	[mixing bowl]
+O	whisk	1
+M	beat	<2:49-2:51>
+O	egg	0
+S	beaten
+S	uncooked
+S	contains	{black pepper,cheddar,salt}
+S	in	[mixing bowl]
+//
+O	cooking pan	0
+S	hot
+S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper,black pepper,salt}
+S	on	[stove]
+O	mixing bowl	0
+S	contains	{egg,salt,black pepper,cheddar}
+O	egg	0
+S	beaten
+S	uncooked
+S	contains	{black pepper,cheddar,salt}
+S	in	[mixing bowl]
+M	pour	<2:54-2:57>
+O	cooking pan	0
+S	hot
+S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper,black pepper,salt,egg}
+S	on	[stove]
+O	egg	0
+S	beaten
+S	uncooked
+S	contains	{black pepper,cheddar,salt}
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	hot
+S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper,black pepper,salt,egg}
+S	on	[stove]
+O	egg	0
+S	beaten
+S	uncooked
+S	contains	{black pepper,cheddar,salt}
+S	in	[cooking pan]
+O	onion	0
+S	chopped
+S	sauteed
+S	in	[cooking pan]
+O	mushroom	0
+S	chopped
+S	sauteed
+S	in	[cooking pan]
+O	sweet pepper	0
+S	chopped
+S	sauteed
+S	in	[cooking pan]
+O	green pepper	0
+S	chopped
+S	sauteed
+S	in	[cooking pan]
+M	cook	<Assumed>
+O	frittata	0
+S	partly cooked
+S	contains	{egg,onion,mushroom,green pepper,sweet pepper,black pepper,salt}
+S	in	[cooking pan]
+//
+O	oven	1
+S	empty
+S	off (ready)
+M	turn on	<Assumed>
+O	oven	1
+S	empty
+S	on
+//
+O	cooking pan	0
+S	hot
+S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper,black pepper,salt,egg}
+S	on	[stove]
+O	oven	0
+S	empty
+S	on
+O	stove	0
+S	on
+S	under [cooking pan]
+M	insert	<3:31-3:37>
+O	oven	0
+S	on
+S	contains	{cooking pan}
+O	cooking pan	0
+S	hot
+S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper,black pepper,salt,egg}
+S	in	[oven]
+O	stove	0
+S	on
+//
+O	stove	0
+S	on
+M	turn off	<Assumed>
+O	stove	0
+S	off
+//
+O	oven	0
+S	on
+S	contains	{cooking pan}
+O	cooking pan	0
+S	hot
+S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper,black pepper,salt,egg}
+S	in	[oven]
+O	frittata	0
+S	partly cooked
+S	contains	{egg,onion,mushroom,green pepper,sweet pepper,black pepper,salt}
+S	in	[cooking pan]
+M	bake	<Assumed>
+O	cooking pan	0
+S	hot
+S	contains	{frittata}
+S	in	[oven]
+O	frittata	0
+S	cooked
+S	contains	{olive oil,egg,onion,mushroom,green pepper,sweet pepper,black pepper,salt}
+S	in	[cooking pan]
+//
+O	oven	0
+S	on
+S	contains	{cooking pan}
+M	turn off	<Assumed>
+O	oven	0
+S	off
+S	contains	{cooking pan}
+//
+O	oven	0
+S	off
+S	contains	{cooking pan}
+O	cooking pan	1
+S	hot
+S	contains	{frittata}
+S	in	[oven]
+M	remove	<3:45-3:55>
+O	oven	0
+S	off
+S	empty
+O	cooking pan	1
+S	hot
+S	contains	{frittata}
+S	in	[hand]
+//
+O	cooking pan	1
+S	hot
+S	contains	{frittata}
+S	in	[hand]
+O	cutting board	0
+S	empty
+M	place	<3:55-3:56>
+O	cutting board	0
+S	empty
+S	under	[cooking pan]
+O	cooking pan	1
+S	contains	{frittata}
+S	on	[cutting board]
+//
+O	frittata	0
+S	cooked
+S	contains	{olive oil,egg,onion,mushroom,green pepper,sweet pepper,black pepper,salt}
+S	in	[cooking pan]
+O	knife	1
+M	slice	<4:09-4:12>
+O	frittata	0
+S	cooked
+S	sliced
+S	contains	{olive oil,egg,onion,mushroom,green pepper,sweet pepper,black pepper,salt}
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	contains	{frittata}
+S	on	[cutting board]
+O	frittata	0
+S	cooked
+S	sliced
+S	contains	{olive oil,egg,onion,mushroom,green pepper,sweet pepper,black pepper,salt}
+S	in	[cooking pan]
+O	plate	0
+S	empty
+O	turner	1
+M	pick-and-place	<4:13-4:19>
+O	plate	0
+S	contains	{frittata}
+O	frittata	0	23
+S	cooked
+S	sliced
+S	contains	{olive oil,egg,onion,mushroom,green pepper,sweet pepper,black pepper,salt}
+S	on	[plate]
+S	ready
+//

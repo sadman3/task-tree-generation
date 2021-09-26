@@ -1,0 +1,218 @@
+O34	bowl	0
+S24	contains	{egg white and yolk}
+O367	spoon	1
+S24	contains	{milk}
+O244	milk	1
+S72	in	[spoon]
+M65	pour	0:00	0:01
+O34	bowl	0
+S24	contains	{egg white and yolk,milk}
+O244	milk	1
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{egg white and yolk,milk}
+O138	egg white and yolk	1
+S72	in	[bowl]
+O244	milk	1
+S72	in	[bowl]
+O420	whisk	1
+M56	mix	0:01	0:02:50
+O34	bowl	0
+S24	contains	{egg mixture}
+O134	egg mixture	1
+S72	in	[bowl]
+S24	contains	{egg white and yolk,milk}
+//
+O304	plate	0
+S46	empty
+O36	bread	1
+S130	sliced
+M61	pick-and-place	Assumed	Assumed
+O304	plate	0
+S24	contains	{bread}
+O36	bread	1
+S130	sliced
+S93	on	[plate]
+//
+O304	plate	0
+S24	contains	{bread}
+O36	bread	0
+S130	sliced
+S93	on	[plate]
+O82	chocolate	1
+S3	bar
+M61	pick-and-place	0:03	0:05
+O36	bread	0
+S24	contains	{chocolate}
+S93	on	[plate]
+O82	chocolate	1
+S3	bar
+S93	on	[bread]
+//
+O304	plate	0
+S24	contains	{bread}
+O36	bread	0
+S24	contains	{chocolate}
+S93	on	[plate]
+O36	bread	1
+S130	sliced
+S93	on	[plate]
+M61	pick-and-place	0:06	0:07
+O304	plate	0
+S24	contains	{sandwich}
+O337	sandwich	1
+S24	contains	{chocolate}
+S93	on	[plate]
+//
+O34	bowl	1
+S24	contains	{egg mixture}
+O134	egg mixture	1
+S72	in	[bowl]
+S24	contains	{egg white and yolk,milk}
+O304	plate	0
+S46	empty
+M65	pour	Assumed	Assumed
+O304	plate	0
+S24	contains	{egg mixture}
+//
+O304	plate	0
+S24	contains	{egg mixture}
+O134	egg mixture	1
+S72	in	[bowl]
+S24	contains	{egg white and yolk,milk}
+O337	sandwich	1
+S24	contains	{chocolate}
+S93	on	[plate]
+M61	pick-and-place	0:07	0:09
+O304	plate	0
+S24	contains	{egg mixture,sandwich}
+O337	sandwich	1
+S132	soaked
+S24	contains	{chocolate,egg mixture}
+S93	on	[plate]
+//
+O370	stove	0
+S93	on
+O355	skillet	1
+S46	empty
+M61	pick-and-place	Assumed	Assumed
+O355	skillet	1
+S69	heated
+S93	on	[stove]
+O370	stove	0
+S93	on
+S156	with	[pan]
+//
+O355	skillet	0
+S69	heated
+S93	on	[stove]
+O49	butter	1
+S35	cubed
+O370	stove	0
+S93	on
+S156	with	[pan]
+M61	pick-and-place	0:12	0:14
+O355	skillet	0
+S24	contains	{butter}
+S93	on	[stove]
+O49	butter	1
+S35	cubed
+S72	in	[pan]
+//
+O370	stove	0
+S93	on
+S156	with	[pan]
+O355	skillet	0
+S24	contains	{butter}
+S93	on	[stove]
+O49	butter	1
+S35	cubed
+S72	in	[pan]
+M47	heat	Assumed	Assumed
+O355	skillet	0
+S65	greased
+S24	contains	{butter}
+S93	on	[stove]
+O49	butter	1
+S85	melted
+S72	in	[pan]
+//
+O355	skillet	0
+S65	greased
+S24	contains	{butter}
+S93	on	[stove]
+O337	sandwich	1
+S132	soaked
+S24	contains	{chocolate,egg mixture}
+S93	on	[plate]
+O406	turner	1
+M61	pick-and-place	0:17	0:19
+O355	skillet	0
+S24	contains	{sandwich,butter}
+S93	on	[stove]
+O337	sandwich	1
+S132	soaked
+S24	contains	{chocolate,butter,egg mixture}
+S72	in	[pan]
+//
+O355	skillet	0
+S24	contains	{sandwich}
+S93	on	[stove]
+O337	sandwich	1
+S132	soaked
+S24	contains	{chocolate,butter,egg mixture}
+S72	in	[pan]
+O217	knife	1
+O406	turner	1
+M37	flip	0:20	0:25
+O337	sandwich	1
+S99	partly toasted
+S24	contains	{chocolate,butter,egg mixture}
+S72	in	[pan]
+//
+O370	stove	0
+S93	on
+S156	with	[pan]
+O355	skillet	0
+S24	contains	{sandwich}
+S93	on	[stove]
+O337	sandwich	1
+S99	partly toasted
+S24	contains	{chocolate,butter,egg mixture}
+S72	in	[pan]
+M16	cook	Assumed	Assumed
+O337	sandwich	1
+S145	toasted
+S24	contains	{chocolate,butter,egg mixture}
+S72	in	[pan]
+//
+O337	sandwich	1
+S145	toasted
+S24	contains	{chocolate,butter,egg mixture}
+S72	in	[pan]
+O406	turner	1
+O304	plate	0
+S46	empty
+M61	pick-and-place	0:25	0:28
+O304	plate	0
+S24	contains	{sandwich}
+O337	sandwich	1
+S145	toasted
+S24	contains	{chocolate,butter,egg mixture}
+S93	on	[plate]
+//
+O304	plate	0
+S24	contains	{sandwich}
+O337	sandwich	1
+S145	toasted
+S24	contains	{chocolate,butter,egg mixture}
+S93	on	[plate]
+O311	powdered sugar	1
+S106	powder
+M101	sprinkle	0:27	0:29
+O88	chocolate sandwich	1	4
+S145	toasted
+S24	contains	{egg white and yolk,milk,chocolate,powdered sugar,butter}
+S93	on	[plate]
+//

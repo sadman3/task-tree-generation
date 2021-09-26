@@ -1,0 +1,626 @@
+# Source:	https://www.youtube.com/watch?v=II2gnuhe0NY
+//
+O	apple	1
+S	whole
+O	colander	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	apple	1
+S	whole
+S	in	[colander]
+O	colander	0
+S	contains	{apple}
+//
+O	faucet	1
+S	off
+M	turn on	Assumed	Assumed
+O	faucet	1
+S	on
+O	water	1
+S	from faucet
+//
+O	faucet	0
+S	on
+O	water	0
+S	from	[faucet]
+O	colander	1
+S	contains	{apple}
+O	apple	1
+S	whole
+S	in	[colander]
+M	wash	Assumed	Assumed
+O	apple	1
+S	whole
+S	washed
+S	in	[colander]
+//
+O	faucet	1
+S	on
+O	water	1
+S	from faucet
+M	turn off	Assumed	Assumed
+O	faucet	1
+S	off
+//
+O	bowl	0
+S	empty
+O	colander	0
+S	contains	{apple}
+O	apple	1
+S	whole
+S	washed
+S	in	[colander]
+M	pick-and-place	Assumed	Assumed
+O	bowl	0
+S	contains	{apple}
+O	apple	1
+S	whole
+S	in	[bowl]
+O	colander	0
+//
+O	bowl	0
+S	contains	{apple}
+O	apple	1
+S	whole
+S	in	[bowl]
+O	cutting board	0
+S	empty
+S	on	[surface]
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{apple}
+S	on	[surface]
+O	apple	1
+S	whole
+S	on	[cutting board]
+//
+O	apple	1
+S	whole
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{apple}
+S	on	[surface]
+O	peeler	1
+M	peel	0:29	0:44
+O	apple	1
+S	whole
+S	peeled
+O	peeler	1
+O	cutting board	0
+S	on	[surface]
+//
+O	apple	1
+S	whole
+S	peeled
+O	cutting board	0
+S	empty
+S	on	[surface]
+M	pick-and-place	Assumed	Assumed
+O	apple	1
+S	whole
+S	peeled
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{apple}
+S	on	[surface]
+//
+O	cutting board	0
+S	contains	{apple}
+O	apple	0
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	cut	0:46	0:50
+O	apple	0
+S	cut in pieces
+S	on	[cutting board]
+//
+O	apple	0
+S	cut in pieces
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{apple}
+O	knife	1
+M	cut	0:59	1:01
+O	apple	0
+S	cut in pieces
+S	seed removed
+S	on	[cutting board]
+//
+O	apple	0
+S	cut in pieces
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{apple}
+O	knife	1
+M	chop	1:05	1:12
+O	apple	0
+S	chopped
+S	on	[cutting board]
+O	knife	1
+//
+O	cutting board	0
+S	contains	{apple}
+O	apple	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	bowl	0
+S	contains	{apple}
+O	apple	0
+S	chopped
+S	in	[bowl]
+O	cutting board	0
+S	empty
+//
+O	cooking pan	0
+S	heated
+S	on	[stove]
+O	bowl	0
+S	contains	{butter}
+O	butter	1
+S	stick
+S	in	[bowl]
+M	scoop and pour	Assumed	Assumed
+O	cooking pan	0
+S	contains	{butter}
+S	on	[stove]
+O	butter	1
+S	cubed
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	contains	{butter}
+S	on	[stove]
+O	spatula	1
+O	butter	1
+S	cubed
+S	in	[pan]
+M	heat	Assumed	Assumed
+O	cooking pan	0
+S	contains	{butter}
+S	on	[stove]
+O	butter	1
+S	melted
+S	in	[pan]
+//
+O	bowl	0
+S	contains	{apple}
+O	apple	0
+S	chopped
+S	in	[bowl]
+O	cooking pan	0
+S	contains	{butter}
+S	on	[stove]
+O	butter	1
+S	melted
+S	in	[pan]
+M	pour	1:27	1:28
+O	cooking pan	0
+S	contains	{butter,apple}
+S	on	[stove]
+O	apple	0
+S	chopped
+S	in	[cooking pan]
+//
+O	bowl	0
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+O	cooking pan	0
+S	contains	{butter,apple}
+S	on	[stove]
+M	sprinkle	1:29	1:30
+O	cooking pan	0
+S	contains	{butter,apple,salt}
+S	on	[stove]
+O	salt	1
+S	granulated
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	contains	{butter,apple,salt}
+S	on	[stove]
+O	salt	1
+S	granulated
+S	in	[cooking pan]
+O	spatula	1
+M	stir	1:31	1:35
+O	salt	1
+S	melted
+S	in	[cooking pan]
+//
+O	bowl	1
+S	contains	{sugar}
+O	sugar	1
+S	white
+S	granulated
+S	in	[bowl]
+O	bowl	1
+S	contains	{brown sugar}
+O	brown sugar	1
+S	granulated
+S	in	[bowl]
+O	cooking pan	0
+S	contains	{butter,apple,salt}
+S	on	[stove]
+M	pour	1:36	1:40
+O	cooking pan	0
+S	contains	{butter,apple,salt,sugar,brown sugar}
+S	on	[stove]
+O	sugar	1
+S	white
+S	granulated
+S	in	[cooking pan]
+O	brown sugar	1
+S	granulated
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	contains	{butter,apple,salt,sugar,brown sugar}
+S	on	[stove]
+O	spatula	1
+M	stir	1:41	2:00
+O	cooking pan	0
+S	contains	{butter,apple,salt,sugar,brown sugar}
+S	on	[stove]
+//
+O	bowl	1
+S	contains	{cinnamon}
+O	cinnamon	1
+S	in	[bowl]
+O	cooking pan	0
+S	contains	{butter,apple,salt,sugar,brown sugar}
+S	on	[stove]
+M	pour and stir	2:01	2:14
+O	cooking pan	0
+S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon}
+S	on	[stove]
+O	cinnamon	1
+S	in	[cooking pan]
+//
+O	cooking pan	0
+S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon}
+S	on	[stove]
+O	bowl	1
+S	contains	{water}
+O	water	1
+S	in	[bowl]
+M	pour and stir	2:15	2:36
+O	cooking pan	0
+S	contains	{filling}
+S	on	[stove]
+O	filling	0
+S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+O	water	1
+S	in	[cooking pan]
+//
+O	plate	0
+S	empty
+O	cooking pan	1
+S	contains	{filling}
+S	on	[stove]
+O	filling	1
+S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	in	[cooking pan]
+M	pour	2:37	2:28
+O	plate	0
+S	contains	{filling}
+O	filling	1
+S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	in	[plate]
+O	cooking pan	1
+//
+O	tin can	1
+S	contains	{dough}
+O	dough	0
+S	rolled
+S	in	[tin can]
+M	open	Assumed	Assumed
+O	tin can	1
+S	contains	{dough}
+S	opened
+//
+O	table	0
+S	empty
+O	flour	1
+S	in	[bowl]
+O	bowl	0
+S	contains	{flour}
+M	sprinkle	Assumed	Assumed
+O	table	0
+S	contains	{flour}
+//
+O	table	0
+S	contains	{flour}
+O	tin can	1
+S	contains	{dough}
+S	opened
+O	dough	0
+S	rolled
+S	in	[tin can]
+M	pick-and-place	Assumed	Assumed
+O	table	0
+S	contains	{flour,dough}
+O	dough	0
+S	rolled
+S	on	[table]
+//
+O	table	0
+S	contains	{flour,dough}
+O	dough	0
+S	rolled
+S	on	[table]
+O	rolling pin	1
+M	roll	3:00	3:10
+O	dough	0
+S	flattened
+S	on	[table]
+//
+O	spoon	1
+S	empty
+O	plate	0
+S	contains	{filling}
+O	filling	1
+S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	in	[plate]
+M	scoop	Assumed	Assumed
+O	spoon	1
+S	contains	{filling}
+O	filling	1
+S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	on	[spoon]
+//
+O	table	0
+S	contains	{flour,dough}
+O	dough	0
+S	flattened
+S	on	[table]
+O	spoon	1
+S	contains	{filling}
+O	filling	1
+S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	on	[spoon]
+M	pour	3:17	3:21
+O	dough	0
+S	flattened
+S	contains	{filling}
+S	on	[table]
+O	filling	1
+S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	on	{dough}
+//
+O	dough	1
+S	flattened
+S	contains	{filling}
+S	on	[table]
+M	fold and pinch	3:23	3:34
+O	dough	1
+S	flattened
+S	contains	{filling}
+S	folded
+S	on	[table]
+//
+O	dough	1
+S	flattened
+S	contains	{filling}
+S	folded
+S	on	[table]
+M	fold	3:35	4:14
+O	apple pie	1
+S	uncooked
+S	contains	{dough,filling}
+S	on	[table]
+//
+O	apple pie	0
+S	uncooked
+S	contains	{dough,filling}
+S	on	[table]
+O	baking tray	0
+S	empty
+O	scraper	1
+M	pick-and-place	4:17	4:18
+O	baking tray	0
+S	contains	{apple pie}
+O	apple pie	0
+S	uncooked
+S	contains	{dough,filling}
+S	on	[baking tray]
+O	scraper	1
+//
+O	egg	1
+S	uncracked
+O	bowl	0
+S	empty
+M	crack	Assumed	Assumed
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	in	[bowl]
+O	fork	1
+M	mix	Assumed	Assumed
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	beaten
+S	in	[bowl]
+//
+O	jug	1
+S	contains	{milk}
+O	milk	1
+S	in	[jug]
+O	bowl	0
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	beaten
+S	in	[bowl]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{egg wash}
+O	egg wash	0
+S	contains	{egg white and yolk}
+S	in	[bowl]
+O	milk	1
+S	in	[bowl]
+//
+O	brush	1
+O	bowl	0
+S	contains	{egg wash}
+O	egg wash	0
+S	contains	{egg white and yolk}
+S	in	[bowl]
+M	dip	Assumed	Assumed
+O	brush	1
+S	contains	{egg wash}
+O	egg wash	0
+S	contains	{egg white and yolk}
+S	on	[brush]
+//
+O	brush	1
+S	contains	{egg wash}
+O	egg wash	0
+S	contains	{egg white and yolk}
+S	on	[brush]
+O	apple pie	0
+S	uncooked
+S	contains	{dough,filling}
+S	on	[baking tray]
+O	baking tray	0
+S	contains	{apple pie}
+M	brush	4:19	4:26
+O	egg wash	0
+S	contains	{egg white and yolk}
+S	on	[apple pie]
+O	apple pie	0
+S	uncooked
+S	contains	{dough,filling,egg wash}
+S	on	[baking tray]
+//
+O	apple pie	0
+S	uncooked
+S	contains	{dough,filling,egg wash}
+S	on	[baking try]
+O	baking tray	0
+S	contains	{apple pie}
+O	bowl	1
+S	contains	{sugar}
+O	sugar	1
+S	white
+S	granulated
+S	in	[bowl]
+M	sprinkle	4:28	4:33
+O	apple pie	0
+S	uncooked
+S	contains	{dough,filling,egg wash,sugar}
+S	on	[baking tray]
+O	sugar	1
+S	white
+S	granulated
+S	on	[apple pie]
+//
+O	knife	1
+O	apple pie	0
+S	uncooked
+S	contains	{dough,filling,egg wash,sugar}
+S	on	[baking tray]
+O	baking tray	0
+S	contains	{apple pie}
+M	poke	4:35	4:49
+O	apple pie	0
+S	uncooked
+S	contains	{dough,filling,egg wash,sugar}
+S	poked
+S	on	[baking tray]
+O	knife	1
+//
+O	oven	1
+S	off
+M	turn on	Assumed	Assumed
+O	oven	1
+S	on
+//
+O	oven	1
+S	on
+M	preheat	Assumed	Assumed
+O	oven	1
+S	on
+S	preheated
+//
+O	oven	0
+S	on
+S	preheated
+O	apple pie	0
+S	uncooked
+S	contains	{dough,filling,egg wash,sugar}
+S	poked
+S	on	[baking tray]
+O	baking tray	0
+S	contains	{apple pie}
+M	pick-and-place	Assumed	Assumed
+O	oven	0
+S	on
+S	preheated
+S	contains	{baking tray}
+O	baking tray	0
+S	contains	{apple pie}
+S	in	[oven]
+//
+O	oven	0
+S	on
+S	preheated
+S	contains	{baking tray}
+O	baking tray	0
+S	contains	{apple pie}
+S	in	[oven]
+O	apple pie	0
+S	uncooked
+S	contains	{dough,filling,egg wash,sugar}
+S	poked
+S	on	[baking tray]
+M	bake	Assumed	Assumed
+O	apple pie	0
+S	cooked
+S	on	[baking tray]
+O	oven	0
+S	on
+S	contains	{baking tray}
+//
+O	oven	0
+S	on
+S	contains	{apple pie}
+O	apple pie	0
+S	cooked
+S	on	[baking tray]
+O	baking tray	0
+S	contains	{apple pie}
+S	in	[oven]
+M	remove	Assumed	Assumed
+O	oven	0
+S	off
+O	baking tray	0
+S	contains	{apple pie}
+//
+O	apple pie	0
+S	cooked
+S	on	[baking tray]
+O	baking tray	0
+S	contains	{apple pie}
+O	plate	0
+S	empty
+O	tongs	1
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{apple pie}
+O	apple pie	0	6
+S	cooked
+S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water,dough,egg wash}
+S	on	[plate]
+//

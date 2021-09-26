@@ -1,0 +1,399 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0006-blood_orange_salad.mp4 
+# Source:	https://www.youtube.com/watch?v=26z5ErTwGEo
+//
+O	packet	1
+S	contains	{salad greens}
+O	salad greens	1
+S	leaf
+S	in	[packet]
+O	bowl	0
+S	empty
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{salad greens}
+O	salad greens	1
+S	leaf
+S	in	[bowl]
+O	packet	1
+S	empty
+//
+O	faucet	1
+S	on
+O	water	0
+S	liquid
+S	from	[faucet]
+O	salad greens	1
+S	leaf
+S	in	[bowl]
+O	bowl	0
+S	contains	{salad greens}
+M	rinse	<Assumed>
+O	salad greens	1
+S	leaf
+S	in	[bowl]
+S	washed
+//
+O	packet	1
+S	contains	{basil}
+O	basil	1
+S	leaf
+S	in	[packet]
+O	bowl	0
+S	empty
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{basil}
+O	basil	1
+S	leaf
+S	in	[bowl]
+O	packet	1
+S	empty
+//
+O	faucet	1
+S	on
+O	water	0
+S	liquid
+S	from	[faucet]
+O	basil	1
+S	leaf
+S	in	[bowl]
+O	bowl	0
+S	contains	{basil}
+M	rinse	<Assumed>
+O	basil	1
+S	leaf
+S	in	[bowl]
+S	washed
+//
+O	cutting board	0
+S	empty
+O	avocado	1
+S	whole
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{avocado}
+O	avocado	1
+S	whole
+S	on	[cutting board]
+//
+O	avocado	1
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	cut	1:00	1:04
+O	avocado	1
+S	slit
+S	on	[cutting board]
+//
+O	avocado	1
+S	slit
+S	on	[cutting board]
+M	pull apart	1:04	1:07
+O	avocado	0
+S	halved
+S	on	[cutting board]
+//
+O	avocado	1
+S	halved
+S	on	[cutting board]
+M	peel	1:08	1:25
+O	avocado	0
+S	halved
+S	peeled
+S	on	[cutting board]
+//
+O	avocado	0
+S	on	[cutting board]
+S	halved
+S	peeled
+O	knife	1
+M	dice	<1:26-1:33>
+O	avocado	0
+S	on	[cutting board]
+S	diced
+//
+O	cutting board	0
+S	contains	{avocado}
+O	bowl	0
+S	empty
+O	avocado	0
+S	on	[cutting board]
+S	diced
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	empty
+O	bowl	0
+S	contains	{avocado}
+O	avocado	1
+S	in	[bowl]
+S	diced
+//
+O	cutting board	0
+S	empty
+O	blood orange	1
+S	whole
+S	unpeeled
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{blood orange}
+O	blood orange	1
+S	on	[cutting board]
+S	whole
+S	unpeeled
+//
+O	blood orange	1
+S	on	[cutting board]
+S	whole
+S	unpeeled
+M	peel	<Assumed>
+O	blood orange	1
+S	on	[cutting board]
+S	peeled
+S	whole
+//
+O	blood orange	1
+S	on	[cutting board]
+S	peeled
+S	whole
+O	knife	1
+M	dice	<Assumed>
+O	blood orange	1
+S	on	[cutting board]
+S	diced
+//
+O	cutting board	0
+S	contains	{blood orange}
+O	bowl	0
+S	empty
+O	blood orange	1
+S	on	[cutting board]
+S	diced
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	empty
+O	bowl	0
+S	contains	{blood orange}
+O	blood orange	1
+S	in	[bowl]
+S	diced
+//
+O	bottle	1
+S	contains	{olive oil}
+O	bowl	0
+S	empty
+O	olive oil	1
+S	in	[bottle]
+S	liquid
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[bowl]
+S	liquid
+//
+O	bottle	1
+S	contains	{lime juice}
+O	bowl	0
+S	empty
+O	lime juice	1
+S	in	[bottle]
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{lime juice}
+O	lime juice	1
+S	in	[bowl]
+//
+O	bottle	1
+S	contains	{lemon juice}
+O	bowl	0
+S	empty
+O	lemon juice	1
+S	in	[bottle]
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{lemon juice}
+O	lemon juice	1
+S	in	[bowl]
+S	juice
+//
+O	bowl	1
+S	contains	{salad greens}
+O	salad greens	1
+S	leaf
+S	in	[bowl]
+S	washed
+O	salad bowl	0
+S	empty
+M	pour and scrape	<1:14-1:17>
+O	salad bowl	0
+S	contains	{salad greens}
+O	salad greens	1
+S	leaf
+S	in	[salad bowl]
+S	washed
+O	bowl	1
+S	empty
+//
+O	salad bowl	0
+S	contains	{salad greens}
+O	bowl	1
+S	contains	{basil}
+O	basil	1
+S	leaf
+S	in	[bowl]
+S	washed
+M	sprinkle	<1:21-1:23>
+O	salad bowl	0
+S	contains	{basil,salad greens}
+O	basil	1
+S	leaf
+S	in	[salad bowl]
+S	washed
+O	bowl	1
+S	empty
+//
+O	salad bowl	0
+S	contains	{basil,salad greens}
+O	bowl	1
+S	contains	{avocado}
+O	avocado	1
+S	in	[bowl]
+S	diced
+M	pour and scrape	<1:26-1:28>
+O	salad bowl	0
+S	contains	{avocado,basil,salad greens}
+O	avocado	1
+S	in	[salad bowl]
+S	diced
+O	bowl	1
+S	empty
+//
+O	salad bowl	0
+S	contains	{avocado,basil,salad greens}
+O	bowl	1
+S	contains	{blood orange}
+O	blood orange	1
+S	in	[bowl]
+S	diced
+M	pour and scrape	<1:31-1:33>
+O	salad bowl	0
+S	contains	{avocado,basil,blood orange,salad greens}
+O	blood orange	1
+S	in	[salad bowl]
+S	diced
+O	bowl	1
+S	empty
+//
+O	salad bowl	0
+S	contains	{avocado,basil,blood orange,salad greens}
+O	bowl	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[bowl]
+S	liquid
+M	pour	<1:39-1:42>
+O	salad bowl	0
+S	contains	{avocado,basil,blood orange,olive oil,salad greens}
+O	olive oil	1
+S	in	[salad bowl]
+S	liquid
+O	bowl	1
+S	empty
+//
+O	salad bowl	0
+S	contains	{avocado,basil,blood orange,olive oil,salad greens}
+O	bowl	1
+S	contains	{lime juice}
+O	lime juice	1
+S	in	[bowl]
+M	pour	<1:44-1:45>
+O	salad bowl	0
+S	contains	{avocado,basil,blood orange,lime juice,olive oil,salad greens}
+O	olive oil	1
+S	in	[salad bowl]
+S	liquid
+O	bowl	1
+S	empty
+//
+O	salad bowl	0
+S	contains	{avocado,basil,blood orange,lime juice,olive oil,salad greens}
+O	bowl	1
+S	contains	{lemon juice}
+O	lemon juice	1
+S	in	[bowl]
+M	pour	<1:47-1:48>
+O	salad bowl	0
+S	contains	{avocado,basil,blood orange,lemon juice,lime juice,olive oil,salad greens}
+O	lemon juice	1
+S	in	[salad bowl]
+O	bowl	1
+S	empty
+//
+O	salad bowl	0
+S	contains	{avocado,basil,blood orange,lemon juice,lime juice,olive oil,salad greens}
+O	bowl	1
+S	contains	{salt}
+O	salt	1
+S	in	[bowl]
+S	granulated
+M	sprinkle	<1:52-1:53>
+O	salad bowl	0
+S	contains	{avocado,basil,blood orange,lemon juice,lime juice,olive oil,salad greens,salt}
+O	salt	1
+S	in	[salad bowl]
+S	granulated
+//
+O	salad bowl	0
+S	contains	{avocado,basil,blood orange,lemon juice,lime juice,olive oil,salad greens,salt}
+O	bowl	1
+S	contains	{black pepper}
+O	black pepper	1
+S	in	[bowl]
+S	ground
+M	sprinkle	<1:56-1:57>
+O	salad bowl	0
+S	contains	{avocado,basil,black pepper,blood orange,lemon juice,lime juice,olive oil,salad greens,salt}
+O	black pepper	1
+S	in	[salad bowl]
+S	ground
+//
+O	salad bowl	0
+S	contains	{avocado,basil,black pepper,blood orange,lemon juice,lime juice,olive oil,salad greens,salt}
+O	salt	0
+S	in	[salad bowl]
+S	granulated
+O	black pepper	0
+S	in	[salad bowl]
+S	ground
+O	salad greens	0
+S	leaf
+S	in	[salad bowl]
+S	washed
+O	basil	0
+S	leaf
+S	in	[salad bowl]
+S	washed
+O	olive oil	0
+S	in	[salad bowl]
+S	liquid
+O	blood orange	0
+S	in	[salad bowl]
+S	diced
+O	avocado	0
+S	in	[salad bowl]
+S	diced
+O	lime juice	0
+S	in	[salad bowl]
+O	lemon juice	0
+S	in	[salad bowl]
+O	spoon	1
+S	empty
+M	mix	<1:59-2:16>
+O	salad	0	15
+S	in	[salad bowl]
+S	mixed
+O	blood orange salad	0	15
+S	contains	{avocado,basil,black pepper,blood orange,lemon juice,lime juice,olive oil,salad greens,salt}
+S	in	[salad bowl]
+S	mixed
+//

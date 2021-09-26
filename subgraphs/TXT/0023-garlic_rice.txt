@@ -1,0 +1,316 @@
+O	stove	0
+S	on
+O	pot	0
+S	empty
+M	pick-and-place	0:42	0:45
+O	stove	0
+S	on
+S	with	[pot]
+O	pot	0
+S	heated
+S	on	[stove]
+//
+O	pot	0
+S	heated
+S	on	[stove]
+O	butter	1
+S	stick
+S	in	[packet]
+M	pick-and-place	0:47	0:49
+O	pot	0
+S	greased	{butter}
+S	on	[stove]
+O	butter	1
+S	stick
+S	in	[pot]
+//
+O	knife	1
+O	cutting board	0
+S	contains	{garlic}
+O	garlic	0
+S	clove
+S	on	[cutting board]
+M	chop	1:03	1:08
+O	garlic	0
+S	chopped
+S	on	[cutting board]
+//
+O	garlic	1
+S	chopped
+S	on	[cutting board]
+O	cutting board	1
+S	contains	{garlic}
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{garlic}
+O	garlic	1
+S	chopped
+S	in	[bowl]
+//
+O	pot	0
+S	contains	{butter}
+S	on	[stove]
+O	bowl	1
+S	contains	{garlic}
+O	garlic	1
+S	chopped
+S	in	[bowl]
+M	pour	1:11	1:13
+O	pot	0
+S	contains	{butter,garlic}
+S	on	[stove]
+O	garlic	1
+S	chopped
+S	in	[pot]
+//
+O	pot	0
+S	contains	{butter,garlic}
+S	on	[stove]
+O	garlic	1
+S	chopped
+S	in	[pot]
+O	spoon	1
+M	stir	1:13	1:18
+O	garlic	0
+S	spread out
+S	in	[pot]
+//
+O	pot	0
+S	contains	{butter,garlic}
+S	on	[stove]
+O	garlic	0
+S	spread out
+S	in	[pot]
+M	fry	1:19	1:22
+O	garlic	0
+S	fried
+S	in	[pot]
+//
+O	pot	0
+S	contains	{butter,garlic}
+S	on	[stove]
+O	garlic	1
+S	fried
+S	in	[pot]
+O	spoon	1
+M	stir	1:25	1:30
+O	garlic	1
+S	fried
+S	in	[pot]
+//
+O	plate	0
+S	empty
+O	napkin	1
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	with	[napkin]
+O	napkin	1
+S	on	[plate]
+//
+O	garlic	0
+S	fried
+S	in	[pot]
+O	pot	0
+S	contains	{butter,garlic}
+S	on	[stove]
+O	spoon	1
+O	plate	0
+S	with	[napkin]
+M	scoop and pour	1:33	1:37
+O	plate	0
+S	contains	{garlic}
+O	pot	0
+S	contains	{butter}
+S	on	[stove]
+//
+O	cup	1
+S	empty
+O	white rice	1
+S	uncooked
+S	in	[packet]
+M	pour	Assumed	Assumed
+O	cup	1
+S	contains	{rice}
+O	white rice	1
+S	uncooked
+S	in	[cup]
+//
+O	cup	1
+S	contains	{rice}
+O	white rice	1
+S	uncooked
+S	in	[cup]
+O	pot	0
+S	contains	{butter}
+S	on	[stove]
+M	pour	1:52	1:55
+O	pot	0
+S	on	[stove]
+S	contains	{butter,rice}
+O	white rice	1
+S	uncooked
+S	in	[pot]
+//
+O	pot	0
+S	contains	{butter,rice}
+S	on	[stove]
+O	white rice	0
+S	uncooked
+S	in	[pot]
+O	spoon	1
+M	stir	1:56	2:00
+O	white rice	0
+S	toasted
+S	in	[pot]
+//
+O	pot	0
+S	contains	{butter,rice}
+S	on	[stove]
+O	bowl	1
+S	contains	{water}
+O	water	1
+S	in	[bowl]
+M	pour	2:07	2:10
+O	pot	0
+S	contains	{butter,rice,water}
+S	on	[stove]
+O	water	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{butter,rice,water}
+S	on	[stove]
+O	water	1
+S	in	[pot]
+O	white rice	0
+S	toasted
+S	in	[pot]
+O	spoon	1
+M	cook and stir	2:10	2:12
+O	pot	0
+S	contains	{butter,rice,water}
+S	on	[stove]
+O	water	1
+S	boiling
+S	in	[pot]
+O	white rice	0
+S	partly cooked
+S	in	[pot]
+//
+O	pot	0
+S	contains	{butter,rice,water}
+S	on	[stove]
+O	pot lid	1
+M	cover	2:12	2:14
+O	pot	0
+S	covered
+S	contains	{butter,rice,water}
+S	on	[stove]
+O	pot lid	1
+S	on	[pot]
+//
+O	pot	0
+S	covered
+S	contains	{butter,rice,water}
+S	on	[stove]
+O	white rice	0
+S	partly cooked
+S	in	[pot]
+M	simmer	Assumed	Assumed
+O	pot	0
+S	covered
+S	contains	{rice}
+S	on	[stove]
+O	white rice	0
+S	cooked
+S	in	[pot]
+//
+O	cutting board	0
+S	empty
+O	scallion	1
+S	whole
+M	pick-and-place	Assumed	Assumed
+O	scallion	1
+S	whole
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{scallion}
+//
+O	cutting board	0
+S	contains	{scallion}
+O	cilantro	1
+S	whole
+M	pick-and-place	Assumed	Assumed
+O	cilantro	1
+S	whole
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{cilantro,scallion}
+//
+O	cutting board	0
+S	contains	{cilantro,scallion}
+O	knife	1
+O	cilantro	0
+S	whole
+S	on	[cutting board]
+O	scallion	0
+S	whole
+S	on	[cutting board]
+M	cut	3:00	3:03
+O	scallion	0
+S	chopped
+S	on	[cutting board]
+O	cilantro	0
+S	chopped
+S	on	[cutting board]
+//
+O	pot	0
+S	covered
+S	contains	{rice}
+S	on	[stove]
+O	pot lid	1
+S	on	[pot]
+M	uncover	3:17	3:19
+O	pot	0
+S	contains	{rice}
+S	on	[stove]
+O	pot lid	1
+//
+O	cutting board	1
+S	contains	{cilantro,scallion}
+O	scallion	0
+S	chopped
+S	on	[cutting board]
+O	cilantro	1
+S	chopped
+S	on	[cutting board]
+O	pot	0
+S	contains	{rice}
+S	on	[stove]
+O	white rice	0
+S	cooked
+S	in	[pot]
+M	sprinkle	3:42	3:46
+O	white rice	0
+S	garnished	{cilantro,scallion}
+S	in	[pot]
+O	cutting board	1
+//
+O	pot	0
+S	contains	{rice}
+S	on	[stove]
+O	garlic	1
+S	fried
+S	on	[plate]
+O	plate	1
+S	contains	{garlic}
+O	white rice	0
+S	garnished	{cilantro,scallion}
+S	in	[pot]
+M	pour	3:46	3:50
+O	garlic rice	0	19
+S	contains	{cilantro,scallion,garlic,white rice}
+S	in	[pot]
+//

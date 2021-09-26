@@ -1,0 +1,508 @@
+# Source:	https://www.youtube.com/watch?v=Epv8L8DrFmQ 
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0005-chipotle-bean_sandwich.mp4
+//
+O	can	0
+S	contains	{kidney bean}
+S	sealed
+O	can opener	1
+M	open	<Assumed>
+O	can	0
+S	contains	{bean mix,water}
+S	opened
+O	can opener	1
+//
+O	can	0
+S	contains	{bean mix,water}
+S	opened
+O	kidney bean	1
+S	in	[can]
+S	cooked
+S	soaked
+M	drain	<Assumed>
+O	can	0
+S	contains	{kidney bean}
+O	kidney bean	1
+S	in	[can]
+S	cooked
+//
+O	can	1
+S	contains	{kidney bean}
+O	kidney bean	1
+S	in	[can]
+S	cooked
+O	bowl	0
+S	empty
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{kidney bean}
+O	kidney bean	1
+S	in	[bowl]
+S	cooked
+O	can	1
+//
+O	can	1
+O	trash bin	0
+S	contains	{garbage}
+M	throw away	<Assumed>
+O	can	1
+S	in	[trash bin]
+//
+O	bowl	0
+S	contains	{kidney bean}
+O	kidney bean	0
+S	in	[bowl]
+S	cooked
+O	masher	1
+M	mash	<0:14,0:20>
+O	kidney bean	0
+S	in	[bowl]
+S	mashed
+//
+O	bowl	0
+S	empty
+O	bottle	1
+S	contains	{chipotle sauce}
+O	chipotle sauce	1
+S	thick liquid
+S	in	[bottle]
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{chipotle sauce}
+O	chipotle sauce	1
+S	thick liquid
+S	in	[bowl]
+//
+O	packet	0
+S	contains	{chipotle}
+M	open	<Assumed>
+O	packet	0
+S	contains	{chipotle}
+S	opened
+O	chipotle	1
+S	dried
+S	in	[packet]
+//
+O	bowl	0
+S	contains	{chipotle sauce}
+O	packet	0
+S	contains	{chipotle}
+S	opened
+O	chipotle	1
+S	dried
+S	in	[packet]
+M	add	<Assumed>
+O	bowl	1
+S	contains	{chipotle,chipotle sauce}
+O	chipotle	1
+S	dried
+S	in	[bowl]
+//
+O	bowl	1
+S	contains	{chipotle,chipotle sauce}
+O	chipotle sauce	1
+S	thick liquid
+S	in	[bowl]
+O	chipotle	1
+S	dried
+S	in	[bowl]
+O	can opener	1
+M	mix	<Assumed>
+O	chipotle mix	1
+S	mixed
+S	contains	{chipotle,chipotle sauce}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{kidney bean}
+O	bowl	0
+S	contains	{chipotle,chipotle sauce}
+O	spatula	1
+M	pour and scrape	<0:25,0:31>
+O	bowl	0
+S	contains	{kidney bean,chipotle,chipotle sauce}
+O	can opener	1
+O	spatula	1
+//
+O	bowl	0
+S	contains	{kidney bean,chipotle,chipotle sauce}
+O	kidney bean	0
+S	in	[bowl]
+S	mashed
+O	chipotle mix	1
+S	mixed
+S	contains	{chipotle,chipotle sauce}
+S	in	[bowl]
+O	masher	1
+M	mash	<0:40,0:46>
+O	bean mix	0
+S	mixed
+S	mashed
+S	contains	{kidney bean,chipotle,chipotle sauce}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{kidney bean,chipotle,chipotle sauce}
+O	bowl	0
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	sprinkle	<0:46,0:48>
+O	bowl	0
+S	contains	{kidney bean,chipotle,chipotle sauce,salt}
+O	salt	1
+S	granulated
+S	on	[bean mix]
+//
+O	bowl	0
+S	contains	{kidney bean,chipotle,chipotle sauce,salt}
+O	salt	0
+S	granulated
+S	on	[bean mix]
+O	bean mix	0
+S	mixed
+S	mashed
+S	contains	{kidney bean,chipotle,chipotle sauce}
+S	in	[bowl]
+O	masher	1
+M	mash	<0:50,0:54>
+O	bean mix	0
+S	mixed
+S	mashed
+S	contains	{kidney bean,chipotle,chipotle sauce,salt}
+S	in	[bowl]
+//
+O	cutting board	0
+S	empty
+O	avocado	1
+S	whole
+S	unpeeled
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{avocado}
+O	avocado	1
+S	on	[cutting board]
+S	unpeeled
+S	whole
+//
+O	avocado	1
+S	on	[cutting board]
+S	whole
+S	unpeeled
+O	knife	1
+M	cut	<1:00,1:04>
+O	avocado	1
+S	on	[cutting board]
+S	slit
+S	unpeeled
+//
+O	avocado	1
+S	on	[cutting board]
+S	slit
+S	unpeeled
+M	pull apart	<1:04,1:07>
+O	avocado	0
+S	on	[cutting board]
+S	halved
+S	unpeeled
+//
+O	avocado	1
+S	on	[cutting board]
+S	halved
+S	unpeeled
+M	peel	<1:08,1:25>
+O	avocado	0
+S	on	[cutting board]
+S	halved
+S	peeled
+//
+O	avocado	0
+S	on	[cutting board]
+S	halved
+S	peeled
+O	knife	1
+M	slice	<1:26,1:33>
+O	avocado	0
+S	on	[cutting board]
+S	sliced
+//
+O	packet	0
+S	opened
+S	contains	{bread}
+O	plate	0
+S	empty
+O	bread	1
+S	in	[packet]
+S	sliced
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{bread}
+O	bread	1
+S	on	[plate]
+S	sliced
+//
+O	plate	0
+S	contains	{bread}
+O	bread	1
+S	on	[plate]
+S	sliced
+O	toaster	0
+S	empty
+S	off (ready)
+M	pick-and-place	<Assumed>
+O	toaster	0
+S	off (ready)
+S	contains	{bread}
+O	bread	0
+S	in	[toaster]
+S	sliced
+O	plate	0
+//
+O	toaster	0
+S	off (ready)
+S	contains	{bread}
+M	turn on	<Assumed>
+O	toaster	0
+S	on
+S	contains	{bread}
+//
+O	toaster	0
+S	on
+S	contains	{bread}
+O	bread	0
+S	in	[toaster]
+S	sliced
+M	heat	<Assumed>
+O	bread	0
+S	in	[toaster]
+S	sliced
+S	toasted
+//
+O	toaster	0
+S	on
+S	contains	{bread}
+M	turn off	<Assumed>
+O	toaster	0
+S	off
+S	contains	{bread}
+//
+O	toaster	0
+S	off
+S	contains	{bread}
+O	bread	1
+S	in	[toaster]
+S	sliced
+S	toasted
+O	cutting board	0
+M	pick-and-place	<Assumed>
+O	bread	1
+S	on	[cutting board]
+S	sliced
+S	toasted
+O	cutting board	0
+S	contains	{bread}
+//
+O	bowl	0
+S	contains	{kidney bean,chipotle,chipotle sauce,salt}
+O	bean mix	0
+S	mixed
+S	mashed
+S	contains	{kidney bean,chipotle,chipotle sauce,salt}
+S	in	[bowl]
+O	spatula	1
+O	bread	0
+S	on	[cutting board]
+S	sliced
+S	toasted
+M	spread	<1:43,1:49>
+O	spatula	1
+O	bread	0
+S	sliced
+S	contains	{kidney bean,chipotle,chipotle sauce,salt}
+S	on	[cutting board]
+O	bean mix	1
+S	mixed
+S	mashed
+S	contains	{kidney bean,chipotle,chipotle sauce,salt}
+S	on	[bread]
+//
+O	bread	0
+S	on	[cutting board]
+S	sliced
+S	toasted
+O	avocado	1
+S	on	[cutting board]
+S	sliced
+O	knife	1
+M	pick-and-place	<1:51,1:56>
+O	bread	0
+S	sliced
+S	contains	{avocado}
+S	on	[cutting board]
+O	avocado	1
+S	sliced
+S	on	[bread]
+O	knife	1
+//
+O	bowl	0
+S	contains	{escarole}
+O	escarole	1
+S	in	[bowl]
+S	leaf
+O	bread	0
+S	sliced
+S	contains	{kidney bean,chipotle,chipotle sauce,salt}
+S	on	[cutting board]
+M	pick-and-place	<2:04,2:08>
+O	bread	0
+S	sliced
+S	contains	{kidney bean,chipotle,chipotle sauce,salt,escarole}
+S	on	[cutting board]
+O	escarole	1
+S	leaf
+S	on	[bread]
+//
+O	radish	0
+S	whole
+S	unpeeled
+O	peeler	1
+M	peel	<Assumed>
+O	radish	0
+S	peeled
+S	whole
+O	peeler	1
+//
+O	cutting board	1
+S	empty
+O	radish	1
+S	peeled
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{radish}
+O	radish	1
+S	on	[cutting board]
+S	peeled
+S	whole
+//
+O	radish	1
+S	on	[cutting board]
+S	peeled
+S	whole
+O	knife	1
+M	slice	<Assumed>
+O	radish	1
+S	on	[cutting board]
+S	sliced
+//
+O	cutting board	0
+S	contains	{radish}
+O	bowl	0
+S	empty
+O	radish	1
+S	on	[cutting board]
+S	sliced
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	empty
+O	bowl	0
+S	contains	{radish}
+O	radish	1
+S	in	[bowl]
+S	sliced
+//
+O	bread	0
+S	sliced
+S	on	[cutting board]
+S	contains	{avocado}
+O	bowl	0
+S	contains	{radish}
+O	radish	1
+S	in	[bowl]
+S	sliced
+M	pick-and-place	<2:15,2:20>
+O	bread	0
+S	sliced
+S	on	[cutting board]
+S	contains	{avocado,radish}
+O	radish	1
+S	on	[bread]
+S	sliced
+//
+O	bread	0
+S	sliced
+S	on	[cutting board]
+S	contains	{avocado,radish}
+O	bowl	0
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	sprinkle	<2:25,2:28>
+O	bread	0
+S	sliced
+S	on	[cutting board]
+S	contains	{avocado,radish,salt}
+O	salt	1
+S	granulated
+S	on	[bread]
+//
+O	bread	0
+S	sliced
+S	on	[cutting board]
+S	contains	{avocado,radish,salt}
+O	bowl	0
+S	contains	{bean sprout}
+O	bean sprout	1
+S	leaf
+S	in	[bowl]
+M	pick-and-place	<2:30,2:42>
+O	bread	0
+S	sliced
+S	on	[cutting board]
+S	contains	{avocado,bean sprout,radish,salt}
+O	bean sprout	1
+S	leaf
+S	on	[bread]
+//
+O	bread	0
+S	sliced
+S	on	[cutting board]
+S	contains	{kidney bean,chipotle,chipotle sauce,salt,escarole}
+O	bread	1
+S	sliced
+S	on	[cutting board]
+S	contains	{avocado,bean sprout,radish,salt}
+M	pick-and-place	<2:42,2:48>
+O	sandwich	0
+S	contains	{bread,kidney bean,chipotle,chipotle sauce,salt,escarole,avocado,radish,bean sprout}
+S	on	[cutting board]
+//
+O	sandwich	0
+S	contains	{bread,kidney bean,chipotle,chipotle sauce,salt,escarole,avocado,radish,bean sprout}
+S	on	[cutting board]
+O	knife	1
+M	cut	<2:53,3:00>
+O	sandwich	0
+S	contains	{bread,kidney bean,chipotle,chipotle sauce,salt,escarole,avocado,radish,bean sprout}
+S	halved
+S	on	[cutting board]
+//
+O	plate	0
+S	empty
+O	sandwich	1
+S	contains	{bread,kidney bean,chipotle,chipotle sauce,salt,escarole,avocado,radish,bean sprout}
+S	halved
+S	on	[cutting board]
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{sandwich}
+O	chipotle-avocado sandwich	1	4
+S	contains	{bread,kidney bean,chipotle,chipotle sauce,salt,escarole,avocado,radish,bean sprout}
+S	halved
+S	on	[plate]
+O	sandwich	1	4
+S	halved
+S	contains	{bread,kidney bean,chipotle,chipotle sauce,salt,escarole,avocado,radish,bean sprout}
+S	on	[plate]
+//

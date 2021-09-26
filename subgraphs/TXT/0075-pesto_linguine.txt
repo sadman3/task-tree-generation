@@ -1,0 +1,503 @@
+O	stove	0
+S	on
+O	pot	1
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	pot	1
+S	heated
+S	on	[stove]
+O	stove	0
+S	on
+S	with	[pot]
+//
+O	faucet	0
+S	on
+O	water	0
+S	from faucet
+O	measuring cup	1
+S	empty
+M	fill	Assumed	Assumed
+O	measuring cup	1
+S	contains	{water}
+O	water	1
+S	in	[measuring cup]
+//
+O	pot	0
+S	heated
+S	on	[stove]
+O	measuring cup	1
+S	contains	{water}
+O	water	1
+S	in	[measuring cup]
+M	pour	Assumed	Assumed
+O	pot	0
+S	contains	{water}
+S	on	[stove]
+O	water	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{water}
+S	on	[stove]
+O	shaker	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[shaker]
+M	sprinkle	Assumed	Assumed
+O	pot	0
+S	contains	{water,salt}
+S	on	[stove]
+O	salt	1
+S	granulated
+S	in	[pot]
+//
+O	pot	0
+S	contains	{water,salt}
+S	on	[stove]
+O	salt	1
+S	granulated
+S	in	[pot]
+O	water	1
+S	in	[pot]
+O	spoon	1
+M	stir	Assumed	Assumed
+O	pot	0
+S	contains	{saltwater}
+S	on	[stove]
+O	saltwater	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{saltwater}
+S	on	[stove]
+O	linguine	1
+S	uncooked
+S	on	[plate]
+M	pick-and-place	Assumed	Assumed
+O	pot	0
+S	contains	{saltwater,linguine}
+S	on	[stove]
+O	linguine	1
+S	uncooked
+S	in	[pot]
+//
+O	stove	0
+S	on
+S	with	[pot]
+O	pot	0
+S	contains	{saltwater,linguine}
+S	on	[stove]
+O	linguine	1
+S	uncooked
+S	in	[pot]
+O	spoon	1
+M	cook and stir	Assumed	Assumed
+O	pot	0
+S	contains	{saltwater,linguine}
+S	on	[stove]
+O	linguine	1
+S	cooked
+S	in	[pot]
+//
+O	pot	0
+S	contains	{saltwater,linguine}
+S	on	[stove]
+O	linguine	1
+S	cooked
+S	in	[pot]
+O	strainer	1
+S	over sink
+M	pour	Assumed	Assumed
+O	strainer	1
+S	contains	{linguine}
+O	linguine	1
+S	cooked
+S	in	[strainer]
+O	pot	0
+//
+O	pot	0
+S	empty
+O	strainer	1
+S	contains	{linguine}
+O	linguine	1
+S	cooked
+S	in	[strainer]
+M	pour	Assumed	Assumed
+O	pot	0
+S	contains	{linguine}
+O	linguine	1
+S	cooked
+S	in	[pot]
+O	strainer	1
+//
+O	blender jar	0
+S	empty
+S	attached to	[blender]
+O	bowl	1
+S	contains	{basil}
+O	basil	1
+S	washed
+S	in	[bowl]
+M	pour	Assumed	Assumed
+O	bowl	1
+O	blender jar	0
+S	contains	{basil}
+S	attached to	[blender]
+O	basil	1
+S	washed
+S	in	[blender jar]
+//
+O	blender jar	0
+S	contains	{basil}
+S	attached to	[blender]
+O	bowl	1
+S	contains	{pine nut}
+O	pine nut	1
+S	toasted
+S	in	[bowl]
+M	pour	1:40	1:41
+O	blender jar	0
+S	contains	{basil,pine nut}
+S	attached to	[blender]
+O	bowl	1
+O	pine nut	1
+S	toasted
+S	in	[blender jar]
+//
+O	blender jar	0
+S	contains	{basil,pine nut}
+S	attached to	[blender]
+O	garlic	1
+S	peeled
+S	on	[surface]
+M	pick-and-place	1:44	1:45
+O	blender jar	0
+S	contains	{basil,pine nut,garlic}
+S	attached to	[blender]
+O	garlic	1
+S	peeled
+S	in	[blender jar]
+//
+O	blender jar	0
+S	contains	{basil,pine nut,garlic}
+S	attached to	[blender]
+O	grinder	1
+S	contains	{black pepper}
+O	black pepper	1
+S	in	[grinder]
+M	grind	1:48	1:50
+O	blender jar	0
+S	contains	{basil,pine nut,garlic,black pepper}
+S	attached to	[blender]
+O	black pepper	1
+S	ground
+S	in	[blender jar]
+//
+O	blender jar	0
+S	contains	{basil,pine nut,garlic,black pepper}
+S	attached to	[blender]
+O	container	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[container]
+M	sprinkle	1:52	1:54
+O	blender jar	0
+S	contains	{basil,pine nut,garlic,black pepper,salt}
+S	attached to	[blender]
+O	salt	1
+S	granulated
+S	in	[blender jar]
+//
+O	blender jar	0
+S	contains	{basil,pine nut,garlic,black pepper}
+S	attached to	[blender]
+O	container	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[container]
+M	sprinkle	1:52	1:54
+O	blender jar	0
+S	contains	{basil,pine nut,garlic,black pepper,salt}
+S	attached to	[blender]
+O	salt	1
+S	granulated
+S	in	[blender jar]
+//
+O	grater	1
+O	lemon	1
+S	whole
+O	blender jar	0
+S	contains	{basil,pine nut,garlic,black pepper,salt}
+S	attached to	[blender]
+M	grate	1:57	2:02
+O	blender jar	0
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S	attached to	[blender]
+O	lemon zest	1
+S	in	[blender jar]
+O	lemon	1
+S	zested
+S	on	[surface]
+//
+O	lemon	0
+S	zested
+S	on	[surface]
+O	knife	1
+M	cut	2:08	2:09
+O	lemon	0
+S	halved
+S	on	[surface]
+//
+O	lemon	0
+S	halved
+O	blender jar	0
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S	attached to	[blender]
+M	squeeze	2:10	2:14
+O	blender jar	0
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice}
+S	attached to	[blender]
+O	lemon juice	1
+S	in	[blender jar]
+O	lemon	1
+S	squeezed
+//
+O	blender jar	0
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S	attached to	[blender]
+O	blender lid	1
+M	cover	2:17	2:18
+O	blender lid	1
+S	on	[blender]
+O	blender jar	0
+S	covered	{blender lid}
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S	attached to	[blender]
+//
+O	blender	0
+S	with	[blender jar]
+O	blender jar	0
+S	covered	{blender lid}
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S	attached to	[blender]
+O	basil	1
+S	washed
+S	in	[blender jar]
+O	pine nut	1
+S	toasted
+S	in	[blender jar]
+O	garlic	1
+S	peeled
+S	in	[blender jar]
+O	black pepper	1
+S	ground
+S	in	[blender jar]
+O	salt	1
+S	granulated
+S	in	[blender jar]
+O	lemon zest	1
+S	in	[blender jar]
+O	lemon juice	1
+S	in	[blender jar]
+M	blend	2:25	2:26
+O	blender jar	0
+S	covered	{blender lid}
+S	contains	{basil mixture}
+S	attached to	[blender]
+O	basil mixture	0
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S	in	[blender jar]
+//
+O	blender jar	0
+S	covered	{blender lid}
+S	contains	{basil mixture}
+S	attached to	[blender]
+O	basil mixture	0
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
+S	in	[blender jar]
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[bottle]
+M	pour and blend	2:49	2:51
+O	basil mixture	0
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil}
+S	in	[blender jar]
+//
+O	blender jar	0
+S	covered	{blender lid}
+S	contains	{basil mixture}
+S	attached to	[blender]
+O	blender lid	1
+S	on	[blender]
+M	uncover	2:52	2:53
+O	blender lid	1
+O	blender jar	0
+S	contains	{basil mixture}
+S	attached to	[blender]
+//
+O	blender jar	0
+S	contains	{basil mixture}
+S	attached to	[blender]
+O	blender	0
+S	with	[blender jar]
+M	detach	2:57	2:58
+O	blender jar	0
+S	contains	{basil mixture}
+O	blender	0
+S	off
+//
+O	blender jar	1
+S	contains	{basil mixture}
+O	basil mixture	1
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil}
+S	in	[blender jar]
+O	bowl	0
+S	empty
+M	pour	2:59	3:04
+O	bowl	0
+S	contains	{basil mixture}
+O	basil mixture	0
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil}
+S	in	[bowl]
+O	blender jar	1
+//
+O	grater	1
+O	parmesan	1
+S	block
+O	bowl	0
+S	contains	{basil mixture}
+M	grate	3:07	3:19
+O	bowl	0
+S	contains	{basil mixture,parmesan}
+O	parmesan	1
+S	grated
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{basil mixture,parmesan}
+O	parmesan	1
+S	grated
+S	in	[bowl]
+O	basil mixture	0
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil}
+S	in	[bowl]
+O	spatula	1
+M	stir	3:23	3:33
+O	bowl	0
+S	contains	{pesto}
+O	pesto	0
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil,parmesan}
+S	in	[bowl]
+O	spatula	1
+//
+O	bowl	1
+S	contains	{pesto}
+O	pesto	1
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil,parmesan}
+S	in	[bowl]
+O	pot	0
+S	contains	{linguine}
+O	spatula	1
+M	scrape	3:40	3:43
+O	pot	0
+S	contains	{linguine,pesto}
+O	spatula	1
+O	bowl	1
+O	pesto	1
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil,parmesan}
+S	in	[pot]
+//
+O	mug	1
+S	contains	{saltwater}
+O	saltwater	1
+S	in	[mug]
+O	pot	0
+S	contains	{linguine,pesto}
+M	pour	3:49	3:52
+O	pot	0
+S	contains	{linguine,pesto,saltwater}
+O	saltwater	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{linguine,pesto,saltwater}
+O	saltwater	1
+S	in	[pot]
+O	pesto	1
+S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,olive oil,parmesan}
+S	in	[pot]
+O	linguine	0
+S	cooked
+S	in	[pot]
+O	tongs	1
+M	mix	3:54	3:57
+O	pot	0
+S	contains	{pesto linguine}
+O	pesto linguine	1
+S	contains	{pesto,linguine}
+S	in	[pot]
+//
+O	grater	1
+O	parmesan	1
+S	block
+O	pot	0
+S	contains	{pesto linguine}
+O	pesto linguine	0
+S	contains	{pesto,linguine}
+S	in	[pot]
+M	grate	3:59	4:04
+O	pesto linguine	0
+S	contains	{pesto,linguine,parmesan}
+S	in	[pot]
+O	parmesan	1
+S	grated
+S	in	[pot]
+//
+O	pot	0
+S	contains	{pesto linguine}
+O	pesto linguine	0
+S	contains	{pesto,linguine,parmesan}
+S	in	[pot]
+O	grinder	1
+S	contains	{black pepper}
+O	black pepper	1
+S	in	[grinder]
+M	grind	4:07	4:09
+O	pesto linguine	0
+S	contains	{pesto,linguine,parmesan,black pepper}
+S	in	[pot]
+O	black pepper	1
+S	in	[pot]
+//
+O	pot	0
+S	contains	{pesto linguine}
+O	pesto linguine	1
+S	contains	{pesto,linguine,parmesan,black pepper}
+S	in	[pot]
+O	tongs	1
+M	mix	4:11	4:20
+O	pesto linguine	1
+S	contains	{pesto,linguine,parmesan,black pepper}
+S	in	[pot]
+O	tongs	1
+//
+O	bowl	0
+S	empty
+O	pot	0
+S	contains	{pesto linguine}
+O	pesto linguine	1
+S	contains	{pesto,linguine,parmesan,black pepper}
+S	in	[pot]
+O	tongs	1
+M	pick-and-place	4:23	4:30
+O	pesto linguine	1	13
+S	contains	{pesto,linguine,parmesan,black pepper}
+S	in	[bowl]
+O	bowl	1
+S	contains	{pesto linguine}
+O	tongs	1
+//

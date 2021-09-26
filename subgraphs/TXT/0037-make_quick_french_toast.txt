@@ -1,0 +1,258 @@
+O	stove	0
+S	off
+M	turn on	Assumed	Assumed
+O	stove	0
+S	on
+//
+O	measuring cup	0
+S	empty
+O	egg	1
+S	uncracked
+M	crack	Assumed	Assumed
+O	measuring cup	0
+S	contains	{egg}
+O	egg	1
+S	cracked
+S	in	[measuring cup]
+//
+O	egg	1
+S	cracked
+S	in	[measuring cup]
+O	bowl	0
+S	empty
+M	pour	1:18	1:21
+O	bowl	0
+S	contains	{egg}
+O	egg	1
+S	cracked
+S	in	[bowl]
+//
+O	bowl	1
+S	contains	{milk}
+O	milk	1
+S	in	[bowl]
+O	egg	1
+S	cracked
+S	in	[bowl]
+M	pour	1:22	1:24
+O	bowl	0
+S	contains	{egg,milk}
+//
+O	bowl	0
+S	contains	{egg,milk}
+O	fork	1
+M	mix	1:24	1:38:50
+O	bowl	0
+S	contains	{egg mixture}
+O	egg mixture	0
+S	in	[bowl]
+S	contains	{egg,milk}
+//
+O	skillet	1
+S	empty
+O	stove	0
+S	on
+M	heat	1:40	1:42
+O	skillet	0
+S	heated
+S	on	[stove]
+//
+O	bowl	1
+S	contains	{butter}
+O	butter	1
+S	cubed
+S	in	[bowl]
+O	skillet	0
+S	heated
+S	on	[stove]
+M	pour	1:57	2:00
+O	butter	0
+S	cubed
+S	in	[pan]
+O	skillet	0
+S	contains	{butter}
+S	on	[stove]
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	butter	0
+S	cubed
+S	in	[pan]
+O	skillet	0
+S	contains	{butter}
+S	on	[stove]
+M	heat	Assumed	Assumed
+O	butter	0
+S	melted
+S	in	[pan]
+O	skillet	0
+S	contains	{butter}
+S	on	[stove]
+//
+O	bread	1
+S	sliced
+O	bowl	0
+S	contains	{egg mixture}
+M	pick-and-place	2:01:50	2:04
+O	bowl	0
+S	contains	{egg,milk,bread}
+O	bread	0
+S	contains	{egg mixture}
+S	in	[bowl]
+//
+O	bread	1
+S	contains	{egg mixture}
+S	in	[bowl]
+O	bowl	0
+S	contains	{egg,milk,bread}
+M	flip	2:07	2:10
+O	bread	1
+S	partly soaked
+S	contains	{egg mixture}
+S	in	[bowl]
+//
+O	bread	1
+S	partly soaked
+S	contains	{egg mixture}
+S	in	[bowl]
+O	bowl	0
+S	contains	{egg,milk,bread}
+M	flip	2:12	2:15
+O	bread	1
+S	soaked
+S	contains	{egg mixture}
+S	in	[bowl]
+//
+O	bread	1
+S	soaked
+S	contains	{egg mixture}
+S	in	[bowl]
+O	skillet	0
+S	contain	{butter}
+S	on	[stove]
+M	pick-and-place	2:37:50	2:41
+O	skillet	0
+S	contains	{bread}
+S	on	[stove]
+O	bread	1
+S	soaked
+S	contains	{egg mixture}
+S	in	[pan]
+//
+O	bread	1
+S	soaked
+S	contains	{egg mixture}
+S	in	[pan]
+O	skillet	0
+S	contains	{bread}
+S	on	[stove]
+O	turner	1
+M	flip	Assumed	Assumed
+O	french toast	1
+S	partly cooked
+S	in	[pan]
+S	contains	{bread,egg mixture,egg,milk,butter}
+//
+O	stove	0
+S	on
+S	with	[pan]
+O	skillet	0
+S	contains	{bread}
+S	on	[stove]
+O	french toast	1
+S	partly cooked
+S	in	[pan]
+S	contains	{bread,egg mixture,egg,milk,butter}
+M	cook	Assumed	Assumed
+O	skillet	0
+S	contains	{french toast}
+S	on	[stove]
+O	french toast	1
+S	cooked
+S	in	[pan]
+S	contains	{bread,egg mixture,egg,milk,butter}
+//
+O	plate	0
+S	empty
+O	french toast	1
+S	cooked
+S	in	[pan]
+S	contains	{bread,egg mixture,egg,milk,butter}
+O	skillet	0
+S	contains	{french toast}
+S	on	[stove]
+M	pick-and-place	2:52	3:00:50
+O	plate	0
+S	contains	{french toast}
+O	french toast	1
+S	cooked
+S	on	[plate]
+S	contains	{bread,egg mixture,egg,milk,butter}
+//
+O	plate	0
+S	contains	{french toast}
+O	french toast	1
+S	cooked
+S	on	[plate]
+S	contains	{bread,egg mixture,egg,milk,butter}
+O	bowl	1
+S	contains	{maple syrup}
+O	maple syrup	1
+S	in	[bowl]
+M	pour*	3:08	3:13
+O	french toast	1
+S	on	[plate]
+S	contains	{bread,egg mixture,egg,butter,maple syrup}
+//
+O	cutting board	0
+S	empty
+O	strawberry	0
+S	whole
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{strawberry}
+O	strawberry	0
+S	whole
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{strawberry}
+O	strawberry	0
+S	whole
+S	on	[cutting board]
+M	chop	Assumed	Assumed
+O	strawberry	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{strawberry}
+O	strawberry	0
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{strawberry}
+O	strawberry	0
+S	chopped
+S	in	[bowl]
+//
+O	plate	0
+S	contains	{french toast}
+O	french toast	1
+S	cooked
+S	on	[plate]
+S	contains	{bread,egg mixture,egg,milk,butter,maple syrup}
+O	bowl	1
+S	contains	{strawberry}
+O	strawberry	1
+S	chopped
+S	in	[bowl]
+M	pick-and-place	3:14	3:22
+O	french toast	1	0
+S	contains	{bread,egg mixture,egg,butter,milk,maple syrup,strawberry}
+S	on	[plate]
+//

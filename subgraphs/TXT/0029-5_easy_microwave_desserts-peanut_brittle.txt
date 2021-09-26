@@ -1,0 +1,203 @@
+O	measuring cup	1
+S	contains	{corn syrup}
+O	corn syrup	1
+S	in	[measuring cup]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{corn syrup}
+O	corn syrup	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{corn syrup}
+O	measuring cup	1
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[measuring cup]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{corn syrup,sugar}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+//
+O	bowl	1
+S	contains	{corn syrup,sugar}
+O	microwave	0
+S	empty
+M	put inside	Assumed	Assumed
+O	microwave	0
+S	with	[bowl]
+O	bowl	1
+S	contains	{corn syrup,sugar}
+S	in	[microwave]
+//
+O	microwave	0
+S	with	[bowl]
+O	bowl	1
+S	contains	{corn syrup,sugar}
+S	in	[microwave]
+M	heat	Assumed	Assumed
+O	bowl	0
+S	contains	{sugar mixture}
+S	in	[microwave]
+O	sugar mixture	1
+S	melted
+S	in	[bowl]
+//
+O	bowl	1
+S	contains	{sugar mixture}
+S	in	[microwave]
+O	microwave	0
+S	with	[bowl]
+M	remove	Assumed	Assumed
+O	bowl	1
+S	contains	{sugar mixture}
+O	microwave	0
+S	empty
+//
+O	bowl	0
+S	contains	{sugar mixture}
+O	bowl	1
+S	contains	{butter}
+O	butter	1
+S	cubed
+S	in	[bowl]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{sugar mixture,butter}
+O	butter	1
+S	melted
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{sugar mixture,butter}
+O	bowl	1
+S	contains	{vanilla extract}
+O	vanilla extract	1
+S	in	[bowl]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{sugar mixture,butter,vanilla extract}
+//
+O	bowl	0
+S	contains	{sugar mixture,butter,vanilla extract}
+O	measuring cup	1
+S	contains	{peanut}
+O	peanut	1
+S	in	[measuring cup]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{sugar mixture,butter,vanilla extract,peanut}
+O	peanut	1
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{sugar mixture,butter,vanilla extract,peanut}
+O	fork	1
+M	stir	Assumed	Assumed
+O	bowl	0
+S	contains	{peanut mixture}
+O	peanut mixture	1
+S	contains	{sugar mixture,butter,vanilla extract,peanut}
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{peanut mixture}
+O	peanut mixture	1
+S	contains	{sugar mixture,butter,vanilla extract,peanut}
+S	in	[bowl]
+O	microwave	0
+S	off
+M	pick-and-place	Assumed	Assumed
+O	microwave	0
+S	with	[bowl]
+O	bowl	0
+S	contains	{peanut mixture}
+S	in	[microwave]
+//
+O	microwave	0
+S	with	[bowl]
+O	peanut mixture	1
+S	contains	{sugar mixture,butter,vanilla extract,peanut}
+S	in	[bowl]
+O	bowl	0
+S	contains	{peanut mixture}
+S	in	[microwave]
+M	heat	Assumed	Assumed
+O	bowl	0
+S	contains	{peanut mixture}
+S	in	[microwave]
+O	peanut mixture	1
+S	heated
+S	contains	{sugar mixture,butter,vanilla extract,peanut}
+S	in	[bowl]
+//
+O	microwave	0
+S	with	[bowl]
+O	bowl	1
+S	contains	{peanut mixture}
+S	in	[microwave]
+M	remove	Assumed	Assumed
+O	microwave	0
+S	off
+O	bowl	1
+S	contains	{peanut mixture}
+//
+O	bowl	1
+S	contains	{baking soda}
+O	baking soda	1
+S	in	[bowl]
+O	bowl	0
+S	contains	{peanut mixture}
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{peanut mixture,baking soda}
+//
+O	bowl	0
+S	contains	{peanut mixture,baking soda}
+O	peanut mixture	0
+S	heated
+S	contains	{sugar mixture,butter,vanilla extract,peanut}
+S	in	[bowl]
+O	fork	1
+M	stir	Assumed	Assumed
+O	bowl	0
+S	contains	{peanut mixture}
+O	peanut mixture	0
+S	heated
+S	contains	{sugar mixture,butter,vanilla extract,peanut,baking soda}
+S	in	[bowl]
+//
+O	bowl	1
+S	contains	{peanut mixture}
+O	peanut mixture	0
+S	heated
+S	contains	{sugar mixture,butter,vanilla extract,peanut,baking soda}
+S	in	[bowl]
+O	parchment paper	0
+S	empty
+M	pour	Assumed	Assumed
+O	parchment paper	0
+S	contains	{peanut mixture}
+O	peanut mixture	1
+S	heated
+S	contains	{sugar mixture,butter,vanilla extract,peanut,baking soda}
+S	on	[sheet]
+//
+O	peanut mixture	0
+S	heated
+S	contains	{sugar mixture,butter,vanilla extract,peanut,baking soda}
+S	on	[sheet]
+O	parchment paper	0
+S	contains	{peanut mixture}
+M	sit	Assumed	Assumed
+O	parchment paper	0
+S	contains	{peanut brittle}
+O	peanut brittle	0	10
+S	contains	{sugar mixture,butter,vanilla extract,peanut,baking soda}
+S	on	[sheet]
+//

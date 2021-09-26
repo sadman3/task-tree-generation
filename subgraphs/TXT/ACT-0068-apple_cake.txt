@@ -1,0 +1,413 @@
+O	apple	0
+S	whole
+O	peeler	1
+M	peel	Assumed	Assumed
+O	apple	0
+S	peeled
+O	peeler	0
+//
+O	cutting board	0
+S	empty
+O	apple	1
+S	peeled
+M	pick-and-place	Assumed	Assumed
+O	apple	0
+S	peeled
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{apple}
+//
+O	cutting board	0
+S	contains	{apple}
+O	apple	0
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	cut	Assumed	Assumed
+O	apple	0
+S	halved
+S	on	[cutting board]
+//
+O	apple	0
+S	halved
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{apple}
+O	knife	1
+M	chop	1:08	1:17
+O	apple	0
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{apple}
+O	apple	1
+S	chopped
+S	on	[cutting board]
+O	bowl	0
+S	empty
+M	pick-and-place	1:18	1:23
+O	bowl	0
+S	contains	{apple}
+O	apple	0
+S	chopped
+S	in	[bowl]
+O	cutting board	0
+S	empty
+//
+O	lemon	1
+S	whole
+O	grater	0
+O	bowl	0
+S	empty
+M	grate	Assumed	Assumed
+O	bowl	0
+S	contains	{lemon zest}
+O	lemon	0
+S	grated
+O	lemon zest	0
+S	in	[bowl]
+S	contains	{lemon}
+//
+O	bowl	0
+S	contains	{apple}
+O	bowl	0
+S	contains	{lemon zest}
+O	lemon zest	0
+S	in	[bowl]
+S	contains	{lemon}
+O	spoon	1
+M	scrape	1:26	1:29
+O	bowl	0
+S	contains	{apple,lemon zest}
+//
+O	bottle	1
+S	contains	{lemon juice}
+O	lemon juice	1
+S	in	[bottle]
+O	mug	1
+S	empty
+M	pour	Assumed	Assumed
+O	mug	0
+S	contains	{lemon juice}
+O	lemon juice	1
+S	in	[mug]
+//
+O	bowl	0
+S	contains	{apple,lemon zest}
+O	mug	1
+S	contains	{lemon juice}
+O	lemon juice	1
+S	in	[mug]
+M	pour	1:31	1:34
+O	bowl	0
+S	contains	{apple,lemon zest,lemon juice}
+O	lemon juice	0
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{apple,lemon zest,lemon juice}
+O	lemon juice	1
+S	in	[bowl]
+O	lemon zest	1
+S	in	[bowl]
+S	contains	{lemon}
+O	apple	1
+S	chopped
+S	in	[bowl]
+O	spoon	1
+M	mix	1:36	1:41
+O	bowl	0
+S	contains	{apple,lemon zest,lemon juice}
+//
+O	blender jar	0
+S	empty
+S	attached to	[blender]
+O	bowl	1
+S	contains	{butter}
+O	butter	1
+S	stick
+S	in	[bowl]
+O	spatula	1
+M	scrape	Assumed	Assumed
+O	spatula	1
+O	bowl	1
+O	blender jar	0
+S	contains	{butter}
+S	attached to	[blender]
+O	butter	1
+S	stick
+S	in	[blender jar]
+//
+O	blender jar	0
+S	contains	{butter}
+S	attached to	[blender]
+O	bowl	1
+S	contains	{sugar}
+O	sugar	1
+S	granulated
+S	in	[bowl]
+M	pour	Assumed	Assumed
+O	blender jar	0
+S	contains	{butter,sugar}
+S	attached to	[blender]
+O	bowl	1
+O	sugar	0
+S	granulated
+S	in	[blender jar]
+//
+O	blender jar	0
+S	contains	{butter,sugar}
+S	attached to	[blender]
+O	bowl	1
+S	contains	{egg white and yolk}
+O	egg white and yolk	1
+S	in	[bowl]
+M	pour	2:07	2:09
+O	blender jar	0
+S	contains	{butter,sugar,egg white and yolk}
+S	attached to	[blender]
+O	bowl	1
+O	egg white and yolk	0
+S	in	[blender jar]
+//
+O	blender jar	0
+S	contains	{butter,sugar,egg white and yolk}
+S	attached to	[blender]
+O	jug	1
+S	contains	{milk}
+O	milk	1
+S	in	[jug]
+M	pour	2:12	2:14
+O	blender jar	0
+S	contains	{butter,sugar,egg white and yolk,milk}
+S	attached to	[blender]
+O	jug	1
+O	milk	0
+S	in	[blender jar]
+//
+O	blender	0
+S	with	[blender jar]
+O	blender jar	1
+S	contains	{butter,sugar,egg white and yolk,milk}
+S	attached to	[blender]
+O	egg white and yolk	1
+S	in	[blender jar]
+O	milk	1
+S	in	[blender jar]
+O	sugar	1
+S	granulated
+S	in	[blender jar]
+O	butter	1
+S	stick
+S	in	[blender jar]
+M	blend	2:17	2:20
+O	blender jar	1
+S	contains	{egg mixture}
+S	attached to	[blender]
+O	egg mixture	1
+S	contains	{butter,sugar,egg white and yolk,milk}
+S	in	[blender jar]
+//
+O	blender jar	1
+S	contains	{egg mixture}
+S	attached to	[blender]
+O	blender	0
+S	with	[blender jar]
+M	detach	Assumed	Assumed
+O	blender jar	1
+S	contains	{egg mixture}
+O	blender	0
+S	off
+//
+O	blender jar	1
+S	contains	{egg mixture}
+O	egg mixture	1
+S	contains	{butter,sugar,egg white and yolk,milk}
+S	in	[blender jar]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{egg mixture}
+O	egg mixture	1
+S	contains	{butter,sugar,egg white and yolk,milk}
+S	in	[bowl]
+O	blender jar	1
+//
+O	bowl	0
+S	contains	{egg mixture}
+O	bowl	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bowl]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{egg mixture,flour}
+O	bowl	1
+//
+O	bowl	0
+S	contains	{egg mixture,flour}
+O	bowl	1
+S	contains	{baking powder}
+O	baking powder	1
+S	powder
+S	in	[bowl]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{egg mixture,flour,baking powder}
+O	bowl	1
+//
+O	shaker	1
+S	contains	{cinnamon}
+O	cinnamon	1
+S	ground
+S	in	[shaker]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{cinnamon}
+O	cinnamon	1
+S	ground
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{egg mixture,flour,baking powder}
+O	bowl	1
+S	contains	{cinnamon}
+O	cinnamon	1
+S	ground
+S	in	[bowl]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{egg mixture,flour,baking powder,cinammon}
+O	bowl	1
+//
+O	bowl	0
+S	contains	{egg mixture,flour,baking powder,cinammon}
+O	bowl	1
+S	contains	{vanilla extract}
+O	vanilla extract	1
+S	in	[bowl]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{egg mixture,flour,baking powder,cinammon,vanilla extract}
+O	bowl	1
+//
+O	bowl	0
+S	contains	{egg mixture,flour,baking powder,cinammon,vanilla extract}
+O	bowl	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	pour	Assumed	Assumed
+O	bowl	0
+S	contains	{egg mixture,flour,baking powder,cinammon,vanilla extract,salt}
+O	bowl	1
+//
+O	bowl	0
+S	contains	{egg mixture,flour,baking powder,cinammon,vanilla extract,salt}
+O	vanilla extract	1
+S	in	[bowl]
+O	salt	1
+S	granulated
+S	in	[bowl]
+O	flour	1
+S	powder
+S	in	[bowl]
+O	baking powder	1
+S	powder
+S	in	[bowl]
+O	cinnamon	1
+S	ground
+S	in	[bowl]
+O	spoon	1
+O	egg mixture	1
+S	contains	{butter,sugar,egg white and yolk,milk}
+S	in	[bowl]
+M	mix	Assumed	Assumed
+O	cake batter	1
+S	contains	{egg mixture,flour,baking powder,cinammon,vanilla extract,salt}
+S	in	[bowl]
+O	spoon	1
+//
+O	bowl	1
+S	contains	{apple,lemon zest,lemon juice}
+O	cake batter	1
+S	contains	{egg mixture,flour,baking powder,cinammon,vanilla extract,salt}
+S	in	[bowl]
+O	spoon	1
+M	scrape	2:41	2:45
+O	bowl	0
+S	contains	{cake batter,apple,lemon zest,lemon juice}
+//
+O	bowl	0
+S	contains	{cake batter,apple,lemon zest,lemon juice}
+O	cake batter	1
+S	contains	{egg mixture,flour,baking powder,cinammon,vanilla extract,salt}
+S	in	[bowl]
+O	lemon juice	1
+S	in	[bowl]
+O	lemon zest	1
+S	in	[bowl]
+S	contains	{lemon}
+O	apple	1
+S	chopped
+S	in	[bowl]
+O	spoon	1
+M	mix	2:48	2:54
+O	cake batter	1
+S	contains	{egg mixture,flour,baking powder,cinammon,vanilla extract,salt,apple,lemon zest,lemon juice}
+S	in	[bowl]
+//
+O	cake batter	1
+S	contains	{egg mixture,flour,baking powder,cinammon,vanilla extract,salt,apple,lemon zest,lemon juice}
+S	in	[bowl]
+O	baking tray	0
+S	with	[sheet]
+M	pour	Assumed	Assumed
+O	baking tray	0
+S	with	[sheet]
+S	contains	{cake batter}
+O	cake batter	1
+S	contains	{egg mixture,flour,baking powder,cinammon,vanilla extract,salt,apple,lemon zest,lemon juice}
+S	in	[pbaking trayan]
+O	bowl	1
+//
+O	baking tray	1
+S	with	[sheet]
+S	contains	{cake batter}
+O	oven	0
+S	on
+M	put inside	Assumed	Assumed
+O	baking tray	1
+S	with	[sheet]
+S	contains	{cake batter}
+S	in	[oven]
+O	oven	0
+S	on
+S	with	[baking tray]
+//
+O	baking tray	0
+S	with	[sheet]
+S	contains	{cake batter}
+S	in	[oven]
+O	oven	0
+S	on
+S	with	[baking tray]
+O	cake batter	1
+S	contains	{egg mixture,flour,baking powder,cinammon,vanilla extract,salt,apple,lemon zest,lemon juice}
+S	in	[baking tray]
+M	bake	Assumed	Assumed
+O	baking tray	1
+S	with	[sheet]
+S	contains	{apple cake}
+S	in	[oven]
+O	apple cake	1	5
+S	baked
+S	contains	{butter,sugar,egg white and yolk,milk,flour,baking powder,cinammon,vanilla extract,salt,apple,lemon zest,lemon juice}
+S	in	[baking tray]
+//

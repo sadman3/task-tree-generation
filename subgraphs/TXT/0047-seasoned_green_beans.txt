@@ -1,0 +1,343 @@
+O	box	1
+S	contains	{foil}
+O	aluminium foil	1
+S	in	[box]
+M	spread	Assumed	Assumed
+O	aluminium foil	1
+S	spread out
+S	on	[surface]
+//
+O	aluminium foil	0
+S	spread out
+S	on	[surface]
+O	plate	0
+S	contains	{green bean}
+O	green bean	1
+S	whole
+S	on	[plate]
+M	pick-and-place	1:03	1:10
+O	aluminium foil	0
+S	contains	{green bean}
+S	on	[surface]
+O	green bean	1
+S	whole
+S	on	[sheet]
+//
+O	garlic	1
+S	peeled
+O	plate	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{garlic}
+O	garlic	1
+S	peeled
+S	on	[plate]
+//
+O	aluminium foil	0
+S	contains	{green bean}
+S	on	[surface]
+O	green bean	0
+S	whole
+S	on	[sheet]
+O	plate	0
+S	contains	{garlic}
+O	garlic	1
+S	peeled
+S	on	[plate]
+M	pick-and-place	1:24	1:27
+O	green bean	0
+S	contains	{garlic}
+S	seasoned
+S	on	[sheet]
+O	aluminium foil	0
+S	contains	{green bean,garlic}
+S	on	[surface]
+O	garlic	1
+S	peeled
+S	on	[sheet]
+//
+O	onion	1
+S	sliced
+O	plate	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{onion}
+O	onion	1
+S	sliced
+S	on	[plate]
+//
+O	aluminium foil	0
+S	contains	{green bean,garlic}
+S	on	[surface]
+O	plate	0
+S	contains	{onion}
+O	green bean	0
+S	contains	{garlic}
+S	seasoned
+S	on	[sheet]
+O	onion	1
+S	sliced
+S	on	[plate]
+M	pour	1:32	1:34
+O	green bean	0
+S	contains	{garlic,onion}
+S	seasoned
+S	on	[sheet]
+O	aluminium foil	0
+S	contains	{green bean,garlic,onion}
+S	on	[surface]
+O	onion	1
+S	sliced
+S	on	[sheet]
+//
+O	cutting board	0
+S	empty
+O	tarragon	0
+S	whole
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{tarragon}
+O	tarragon	0
+S	whole
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{tarragon}
+O	tarragon	0
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	chop	Assumed	Assumed
+O	tarragon	0
+S	chopped
+S	on	[cutting board]
+O	knife	1
+//
+O	cutting board	0
+S	contains	{tarragon}
+O	tarragon	1
+S	chopped
+S	on	[cutting board]
+O	plate	0
+S	empty
+M	pour	Assumed	Assumed
+O	cutting board	0
+O	plate	0
+S	contains	{tarragon}
+O	tarragon	1
+S	chopped
+S	on	[plate]
+//
+O	aluminium foil	0
+S	contains	{green bean,garlic,onion}
+S	on	[surface]
+O	plate	0
+S	contains	{tarragon}
+O	tarragon	1
+S	chopped
+S	on	[plate]
+O	green bean	0
+S	contains	{garlic,onion}
+S	seasoned
+S	on	[sheet]
+M	pour	1:39	1:41
+O	green bean	0
+S	contains	{garlic,onion,tarragon}
+S	seasoned
+S	on	[sheet]
+O	aluminium foil	0
+S	contains	{green bean,garlic,onion,tarragon}
+S	on	[surface]
+O	tarragon	1
+S	chopped
+S	on	[sheet]
+//
+O	aluminium foil	0
+S	contains	{green bean,garlic,onion,tarragon}
+S	on	[surface]
+O	grinder	1
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[shaker]
+O	green bean	0
+S	contains	{garlic,onion,tarragon}
+S	seasoned
+S	on	[sheet]
+M	grind	1:54	2:01
+O	aluminium foil	0
+S	contains	{green bean,garlic,onion,tarragon,salt}
+S	on	[surface]
+O	salt	1
+S	granulated
+S	on	[sheet]
+O	green bean	0
+S	contains	{garlic,onion,tarragon,salt}
+S	seasoned
+S	on	[sheet]
+//
+O	aluminium foil	0
+S	contains	{green bean,garlic,onion,tarragon,salt}
+S	on	[surface]
+O	grinder	1
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[shaker]
+O	green bean	0
+S	contains	{garlic,onion,tarragon,salt}
+S	seasoned
+S	on	[sheet]
+M	grind	2:05	2:08
+O	aluminium foil	0
+S	contains	{green bean,garlic,onion,tarragon,salt,pepper}
+S	on	[surface]
+O	green bean	0
+S	contains	{garlic,onion,tarragon,salt,black pepper}
+S	seasoned
+S	on	[sheet]
+O	black pepper	1
+S	ground
+S	on	[sheet]
+//
+O	aluminium foil	0
+S	contains	{green bean,garlic,onion,tarragon,salt,pepper}
+S	on	[surface]
+O	bowl	0
+S	contains	{water}
+O	water	1
+S	in	[bowl]
+M	pour	2:13	2:15
+O	aluminium foil	0
+S	contains	{green bean,garlic,onion,tarragon,salt,pepper,water}
+S	on	[surface]
+O	water	1
+S	on	[sheet]
+//
+O	aluminium foil	0
+S	contains	{green bean,garlic,onion,tarragon,salt,pepper,water}
+S	on	[surface]
+O	cooking spray	1
+S	contains	{olive oil}
+O	olive oil	1
+S	in	[spray can]
+M	pour	2:21	2:24
+O	aluminium foil	0
+S	contains	{green bean,garlic,onion,tarragon,salt,pepper,water,olive oil}
+S	on	[surface]
+O	olive oil	1
+S	on	[sheet]
+//
+O	aluminium foil	1
+S	contains	{green bean,garlic,onion,tarragon,salt,pepper,water,olive oil}
+S	on	[surface]
+O	green bean	0
+S	contains	{garlic,onion,tarragon,salt,black pepper}
+S	seasoned
+S	on	[sheet]
+M	wrap	2:31	2:51
+O	aluminium foil	1
+S	contains	{green bean,garlic,onion,tarragon,salt,pepper,water,olive oil}
+S	wrapped
+O	green bean	0
+S	uncooked
+S	contains	{garlic,onion,tarragon,salt,black pepper,water,olive oil}
+S	seasoned
+S	wrapped
+//
+O	aluminium foil	1
+S	contains	{green bean,garlic,onion,tarragon,salt,pepper,water,olive oil}
+S	wrapped
+O	green bean	0
+S	uncooked
+S	contains	{garlic,onion,tarragon,salt,black pepper,water,olive oil}
+S	seasoned
+S	wrapped
+O	grill	0
+S	on
+M	pick-and-place	2:55	2:57
+O	grill	0
+S	on
+S	with	[aluminium]
+O	aluminium foil	1
+S	contains	{green bean,garlic,onion,tarragon,salt,pepper,water,olive oil}
+S	wrapped
+S	on	[grill]
+//
+O	grill	0
+S	on
+S	with	[aluminium]
+O	aluminium foil	0
+S	contains	{green bean,garlic,onion,tarragon,salt,pepper,water,olive oil}
+S	wrapped
+S	on	[grill]
+O	green bean	0
+S	uncooked
+S	contains	{garlic,onion,tarragon,salt,black pepper,water,olive oil}
+S	seasoned
+S	wrapped
+M	cook	2:58	3:01
+O	green bean	0
+S	cooked
+S	contains	{garlic,onion,tarragon,salt,black pepper,water,olive oil}
+S	wrapped
+O	aluminium foil	0
+S	contains	{green bean}
+S	wrapped
+S	on	[grill]
+//
+O	aluminium foil	1
+S	contains	{green bean}
+S	wrapped
+S	on	[grill]
+O	green bean	0
+S	cooked
+S	contains	{garlic,onion,tarragon,salt,black pepper,water,olive oil}
+S	wrapped
+M	unwrap	3:06	3:08
+O	aluminium foil	1
+S	contains	{green bean}
+S	on	[grill]
+O	green bean	0
+S	cooked
+S	contains	{garlic,onion,tarragon,salt,black pepper,water,olive oil}
+S	on	[sheet]
+//
+O	aluminium foil	0
+S	contains	{green bean}
+S	on	[grill]
+O	green bean	0
+S	cooked
+S	contains	{garlic,onion,tarragon,salt,black pepper,water,olive oil}
+S	on	[sheet]
+O	plate	0
+S	empty
+O	tongs	1
+M	pick-and-place	3:14	3:25
+O	plate	0
+S	contains	{green bean}
+O	green bean	0
+S	cooked
+S	contains	{garlic,onion,tarragon,salt,black pepper,water,olive oil}
+S	on	[plate]
+//
+O	plate	0
+S	contains	{green bean}
+O	green bean	0
+S	cooked
+S	contains	{garlic,onion,tarragon,salt,black pepper,water,olive oil}
+S	on	[plate]
+O	sweet pepper	1
+S	chopped
+M	sprinkle	3:40	3:48
+O	green bean	0	2
+S	cooked
+S	contains	{garlic,onion,tarragon,salt,black pepper,water,olive oil,sweet pepper}
+S	on	[plate]
+S	ready
+O	sweet pepper	1
+S	chopped
+S	on	[plate]
+//

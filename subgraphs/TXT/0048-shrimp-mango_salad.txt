@@ -1,0 +1,540 @@
+# Source:	https://www.youtube.com/watch?v=2a_cJQ3z5oI
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0048-shrimp-mango_salad.mp4
+//
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bottle]
+O	bowl	0
+S	empty
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bowl]
+//
+O	bowl	0
+S	empty
+O	bowl	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bowl]
+O	spoon	1
+S	empty
+M	pour and scrape	<0:36-0:37>
+O	bowl	0
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[mixing bowl]
+//
+O	cutting board	0
+S	empty
+O	lemon	0
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{lemon}
+O	lemon	0
+S	on	[cutting board]
+S	whole
+//
+O	knife	1
+O	lemon	0
+S	on	[cutting board]
+S	whole
+M	cut	<Assumed>
+O	lemon	0
+S	on	[cutting board]
+S	halved
+//
+O	lemon	1
+S	on	[cutting board]
+S	halved
+O	squeezer	0
+S	empty
+M	squeeze	<Assumed>
+O	squeezer	0
+S	contains	{lemon juice}
+O	lemon	1
+S	on	[cutting board]
+S	squeezed
+S	halved
+O	lemon	1
+S	in	[squeezer]
+S	juice
+//
+O	bowl	0
+S	empty
+O	squeezer	1
+S	contains	{lemon juice}
+O	lemon	1
+S	in	[squeezer]
+S	juice
+M	pour	<Assumed>
+O	bowl	0
+S	contains	{lemon juice}
+O	lemon	1
+S	in	[in bowl]
+S	juice
+//
+O	mixing bowl	0
+S	contains	{olive oil}
+O	bowl	1
+S	contains	{lemon juice}
+O	lemon	1
+S	juice
+S	in	[bowl]
+O	spoon	1
+S	empty
+M	pour and scrape	<0:39-0:41>
+O	mixing bowl	0
+S	contains	{lemon juice,olive oil}
+O	lemon	1
+S	juice
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{lemon juice,olive oil}
+O	lemon	1
+S	in	[mixing bowl]
+S	juice
+O	olive oil	1
+S	in	[mixing bowl]
+S	liquid
+O	spoon	1
+S	empty
+M	mix	<0:43-0:57>
+O	vinaigrette	1
+S	creamy
+S	in	[mixing bowl]
+S	mixed
+S	contains	{lemon juice,olive oil}
+//
+O	bowl	1
+S	contains	{salad greens}
+O	salad greens	1
+S	in	[bowl]
+S	washed
+S	leaf
+O	salad bowl	0
+S	empty
+M	pour and scrape	<1:01-1:06>
+O	salad bowl	0
+S	contains	{salad greens}
+O	salad greens	1
+S	in	[salad bowl]
+S	washed
+S	leaf
+//
+O	cutting board	0
+S	empty
+O	cilantro	1
+S	leaf
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{cilantro}
+O	cilantro	1
+S	on	[cutting board]
+S	leaf
+S	whole
+//
+O	knife	1
+O	cilantro	0
+S	leaf
+S	on	[cutting board]
+S	whole
+M	chop	<Assumed>
+O	cilantro	1
+S	on	[cutting board]
+S	chopped
+//
+O	cutting board	0
+S	contains	{cilantro}
+O	bowl	0
+S	empty
+O	cilantro	1
+S	on	[cutting board]
+S	chopped
+M	pick-and-place	<Assumed>
+O	bowl	0
+S	contains	{cilantro}
+O	cilantro	1
+S	chopped
+S	in	[bowl]
+O	cutting board	0
+S	empty
+//
+O	bowl	0
+S	contains	{cilantro}
+O	cilantro	1
+S	chopped
+S	in	[bowl]
+O	mixing bowl	0
+S	contains	{lemon juice,olive oil}
+M	pour and scrape	<1:11-1:13>
+O	mixing bowl	0
+S	contains	{cilantro,lemon juice,olive oil}
+O	cilantro	1
+S	chopped
+S	in	[mixing bowl]
+O	bowl	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{cilantro,lemon juice,olive oil}
+O	cilantro	1
+S	chopped
+S	in	[mixing bowl]
+O	vinaigrette	1
+S	creamy
+S	in	[mixing bowl]
+S	contains	{lemon juice,olive oil}
+O	spoon	1
+S	empty
+M	mix	<1:14-1:22>
+O	vinaigrette	1
+S	creamy
+S	in	[mixing bowl]
+S	mixed
+S	contains	{cilantro,lemon juice,olive oil}
+//
+O	cutting board	0
+S	empty
+O	plate	1
+S	contains	{shrimp}
+O	shrimp	1
+S	on	[plate]
+S	cooked
+S	whole
+M	pour	<Assumed>
+O	plate	1
+S	empty
+O	cutting board	0
+S	contains	{shrimp}
+O	shrimp	1
+S	on	[cutting board]
+S	cooked
+S	whole
+//
+O	knife	1
+O	shrimp	0
+S	on	[cutting board]
+S	cooked
+S	whole
+M	chop	<Assumed>
+O	shrimp	1
+S	on	[cutting board]
+S	cooked
+S	chopped
+//
+O	cutting board	1
+S	contains	{shrimp}
+O	shrimp	1
+S	on	[cutting board]
+S	cooked
+S	chopped
+O	bowl	0
+S	empty
+M	pour and scrape	<Assumed>
+O	bowl	0
+S	contains	{shrimp}
+O	shrimp	1
+S	in	[bowl]
+S	cooked
+S	chopped
+O	cutting board	1
+S	empty
+//
+O	salad bowl	0
+S	contains	{salad greens}
+O	bowl	1
+S	contains	{shrimp}
+O	shrimp	1
+S	in	[bowl]
+S	cooked
+S	chopped
+M	pour and scrape	<1:24-1:28>
+O	salad bowl	0
+S	contains	{salad greens,shrimp}
+O	shrimp	1
+S	in	[salad bowl]
+S	cooked
+S	chopped
+O	cutting board	1
+S	empty
+//
+O	cutting board	0
+S	empty
+O	mango	1
+S	unpeeled
+S	whole
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{mango}
+O	mango	1
+S	on	[cutting board]
+S	unpeeled
+S	whole
+//
+O	knife	1
+O	mango	0
+S	on	[cutting board]
+S	unpeeled
+S	whole
+M	cut	<Assumed>
+O	mango	0
+S	on	[cutting board]
+S	halved
+S	unpeeled
+O	mango	0
+S	on	[cutting board]
+S	seed
+//
+O	knife	1
+O	mango	0
+O	mango	0
+S	on	[cutting board]
+S	halved
+S	unpeeled
+M	make slits	<Assumed>
+O	mango	0
+S	on	[cutting board]
+S	halved
+S	cut with slits
+S	unpeeled
+//
+O	knife	1
+O	mango	0
+S	on	[cutting board]
+S	halved
+S	cut with slits
+S	unpeeled
+M	cut off skin	<Assumed>
+O	mango	0
+S	on	[cutting board]
+S	diced
+O	mango	0
+S	on	[cutting board]
+S	skin
+//
+O	cutting board	1
+S	contains	{mango}
+O	mango	1
+S	on	[cutting board]
+S	diced
+O	bowl	0
+S	empty
+M	pour and scrape	<Assumed>
+O	bowl	0
+S	contains	{mango}
+O	mango	1
+S	in	[bowl]
+S	diced
+O	cutting board	1
+S	empty
+//
+O	salad bowl	0
+S	contains	{salad greens,shrimp}
+O	bowl	1
+S	contains	{mango}
+O	mango	1
+S	in	[bowl]
+S	diced
+M	pour and scrape	<1:31-1:34>
+O	salad bowl	0
+S	contains	{mango,salad greens,shrimp}
+O	mango	1
+S	in	[salad bowl]
+S	diced
+O	bowl	1
+S	empty
+//
+O	knife	1
+O	shallot	0
+S	whole
+S	unpeeled
+M	peel	<Assumed>
+O	shallot	0
+S	whole
+S	peeled
+//
+O	cutting board	0
+S	empty
+O	shallot	1
+S	whole
+S	peeled
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{shallot}
+O	shallot	1
+S	whole
+S	peeled
+S	on	[cutting board]
+//
+O	knife	1
+O	shallot	0
+S	whole
+S	peeled
+S	on	[cutting board]
+M	chop	<Assumed>
+O	shallot	1
+S	on	[cutting board]
+S	chopped
+//
+O	cutting board	1
+S	contains	{shallot}
+O	bowl	0
+S	empty
+O	shallot	1
+S	on	[cutting board]
+S	chopped
+M	pour and scrape	<Assumed>
+O	bowl	0
+S	contains	{shallot}
+O	shallot	1
+S	in	[bowl]
+S	chopped
+O	cutting board	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{cilantro,lemon juice,olive oil}
+O	bowl	1
+S	contains	{shallot}
+O	shallot	1
+S	chopped
+S	in	[bowl]
+O	spoon	1
+S	empty
+M	pour and scrape	<1:39-1:42>
+O	mixing bowl	0
+S	contains	{cilantro,lemon juice,olive oil,shallot}
+O	shallot	1
+S	chopped
+S	in	[mixing bowl]
+O	bowl	1
+S	empty
+//
+O	mixing bowl	0
+S	contains	{cilantro,lemon juice,olive oil,shallot}
+O	shallot	1
+S	chopped
+S	in	[mixing bowl]
+O	vinaigrette	1
+S	creamy
+S	in	[mixing bowl]
+S	mixed
+S	contains	{cilantro,lemon juice,olive oil}
+O	spoon	1
+S	empty
+M	mix	<1:43-1:46>
+O	vinaigrette	1
+S	creamy
+S	in	[mixing bowl]
+S	mixed
+S	contains	{cilantro,lemon juice,olive oil,shallot}
+//
+O	mixing bowl	0
+S	contains	{cilantro,lemon juice,olive oil,shallot}
+O	bowl	0
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	sprinkle	<1:48-1:49>
+O	mixing bowl	0
+S	contains	{cilantro,lemon juice,olive oil,salt,shallot}
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{cilantro,lemon juice,olive oil,salt,shallot}
+O	bowl	0
+S	contains	{black pepper}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+M	sprinkle	<1:50-1:51>
+O	mixing bowl	0
+S	contains	{black pepper,cilantro,lemon juice,olive oil,salt,shallot}
+O	black pepper	1
+S	ground
+S	in	[mixing bowl]
+//
+O	mixing bowl	0
+S	contains	{black pepper,cilantro,lemon juice,olive oil,salt,shallot}
+O	vinaigrette	1
+S	creamy
+S	in	[mixing bowl]
+S	mixed
+S	contains	{cilantro,lemon juice,olive oil,shallot}
+O	black pepper	1
+S	ground
+S	in	[mixing bowl]
+O	salt	1
+S	granulated
+S	in	[mixing bowl]
+M	mix	<1:51-1:55>
+O	mixing bowl	0
+S	contains	{salad dressing}
+O	salad dressing	1
+S	creamy
+S	in	[mixing bowl]
+S	mixed
+S	contains	{black pepper,cilantro,lemon juice,olive oil,salt,shallot}
+//
+O	mixing bowl	0
+S	contains	{black pepper,cilantro,lemon juice,olive oil,salt,shallot}
+O	salad dressing	1
+S	creamy
+S	in	[mixing bowl]
+S	mixed
+S	contains	{black pepper,cilantro,lemon juice,olive oil,salt,shallot}
+O	salad bowl	0
+S	contains	{mango,salad greens,shrimp}
+O	spoon	1
+S	empty
+M	pour and scrape	<1:56-2:05>
+O	salad bowl	0
+S	contains	{mango,salad dressing,salad greens,shrimp}
+O	salad dressing	1
+S	creamy
+S	in	[salad bowl]
+S	mixed
+S	contains	{black pepper,cilantro,lemon juice,olive oil,salt,shallot}
+O	mixing bowl	0
+S	empty
+//
+O	salad bowl	0
+S	contains	{mango,salad dressing,salad greens,shrimp}
+O	salad dressing	1
+S	creamy
+S	in	[salad bowl]
+S	mixed
+S	contains	{black pepper,cilantro,lemon juice,olive oil,salt,shallot}
+O	mango	1
+S	diced
+S	in	[salad bowl]
+O	shrimp	1
+S	chopped
+S	in	[salad bowl]
+O	salad greens	1
+S	leaf
+S	in	[salad bowl]
+S	washed
+O	spoon	1
+S	empty
+M	stir	<2:08-2:17>
+O	salad bowl	0
+S	contains	{shrimp mango salad}
+O	shrimp mango salad	1	15
+S	mixed
+S	contains	{black pepper,cilantro,lemon juice,mango,olive oil,salad greens,salt,scallion,shrimp}
+S	in	[salad bowl]
+//

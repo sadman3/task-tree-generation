@@ -1,0 +1,236 @@
+O	sweet potato	0
+S	whole
+O	knife	1
+M	peel	0:31	0:36
+O	sweet potato	0
+S	peeled
+//
+O	cutting board	0
+S	empty
+O	sweet potato	1
+S	peeled
+M	pick-and-place	Assumed	Assumed
+O	cutting board	0
+S	contains	{sweet potato}
+O	sweet potato	1
+S	peeled
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{sweet potato}
+O	sweet potato	0
+S	peeled
+S	on	[cutting board]
+O	knife	1
+M	cut	0:37	1:01
+O	sweet potato	0
+S	chopped
+S	on	[cutting board]
+//
+O	plastic bag	0
+S	empty
+M	open	1:02	1:07
+O	plastic bag	0
+S	opened
+//
+O	sweet potato	1
+S	chopped
+S	on	[cutting board]
+O	cutting board	0
+S	contains	{sweet potato}
+O	plastic bag	0
+S	opened
+M	pick-and-place	1:06	1:11
+O	plastic bag	0
+S	contains	{sweet potato}
+O	sweet potato	1
+S	chopped
+S	in	[bag]
+//
+O	plastic bag	0
+S	contains	{sweet potato}
+O	bowl	1
+S	contains	{flour}
+O	flour	1
+S	powder
+S	in	[bowl]
+M	pour	1:12	1:16
+O	plastic bag	0
+S	contains	{sweet potato,flour}
+O	flour	1
+S	powder
+S	in	[bag]
+//
+O	plastic bag	1
+S	contains	{sweet potato,flour}
+M	close	1:17	1:22
+O	plastic bag	1
+S	closed	{sweet potato,flour}
+//
+O	plastic bag	1
+S	closed	{sweet potato,flour}
+O	sweet potato	1
+S	chopped
+S	in	[bag]
+M	shake	1:23	1:48
+O	plastic bag	1
+S	contains	{sweet potato,flour}
+O	sweet potato	1
+S	floured
+S	in	[bag]
+//
+O	plastic bag	1
+S	contains	{sweet potato,flour}
+O	sweet potato	1
+S	floured
+S	in	[bag]
+O	bowl	0
+S	empty
+M	pour	Assumed	Assumed
+O	plastic bag	1
+O	bowl	0
+S	contains	{sweet potato}
+O	sweet potato	1
+S	floured
+S	in	[bowl]
+//
+O	bowl	0
+S	contains	{sweet potato}
+O	bowl	1
+S	contains	{vegetable oil}
+O	sweet potato	1
+S	floured
+S	in	[bowl]
+O	vegetable oil	1
+S	in	[bowl]
+M	pour	1:50	1:58
+O	bowl	0
+S	contains	{sweet potato,vegetable oil}
+//
+O	bowl	0
+S	contains	{sweet potato,vegetable oil}
+O	bowl	1
+S	contains	{garlic powder}
+O	garlic powder	1
+S	in	[bowl]
+M	sprinkle	2:00	2:03
+O	bowl	0
+S	contains	{sweet potato,vegetable oil,garlic powder}
+//
+O	bowl	0
+S	contains	{sweet potato,vegetable oil,garlic powder}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	sprinkle	2:06	2:11
+O	bowl	0
+S	contains	{sweet potato,flour,vegetable oil,garlic powder,salt}
+//
+O	bowl	0
+S	contains	{sweet potato,flour,vegetable oil,garlic powder,salt}
+O	black pepper	1
+S	ground
+S	in	[bowl]
+M	sprinkle	Assumed	Assumed
+O	bowl	0
+S	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper}
+//
+O	bowl	0
+S	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper}
+O	paprika	1
+S	ground
+S	in	[bowl]
+M	sprinkle	2:14	2:17
+O	bowl	0
+S	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+//
+O	bowl	0
+S	contains	{sweet potato,flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+O	spatula	1
+O	sweet potato	1
+S	floured
+S	in	[bowl]
+M	mix	2:19	2:25
+O	bowl	0
+S	contains	{sweet potato fries}
+O	sweet potato fries	1
+S	uncooked
+S	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S	in	[bowl]
+//
+O	baking tray	0
+S	with	[sheet]
+O	bowl	0
+S	contains	{sweet potato fries}
+O	sweet potato fries	1
+S	uncooked
+S	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S	in	[bowl]
+M	pick-and-place	2:36	2:59
+O	baking tray	0
+S	contains	{sweet potato fries}
+O	sweet potato fries	1
+S	uncooked
+S	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S	in	[baking tray]
+//
+O	baking tray	0
+S	contains	{sweet potato fries}
+O	oven	0
+S	on
+M	put inside	Assumed	Assumed
+O	oven	0
+S	on
+S	with	[baking tray]
+O	baking tray	0
+S	contains	{sweet potato fries}
+S	in	[oven]
+//
+O	baking tray	0
+S	contains	{sweet potato fries}
+S	in	[oven]
+O	oven	0
+S	on
+S	with	[baking tray]
+O	sweet potato fries	1
+S	uncooked
+S	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S	in	[baking tray]
+M	bake	Assumed	Assumed
+O	baking tray	0
+S	contains	{sweet potato fries}
+S	in	[oven]
+O	sweet potato fries	1
+S	cooked
+S	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S	in	[baking tray]
+//
+O	baking tray	0
+S	contains	{sweet potato fries}
+S	in	[oven]
+O	oven	0
+S	on
+S	with	[baking tray]
+M	remove	Assumed	Assumed
+O	baking tray	0
+S	contains	{sweet potato fries}
+O	oven	0
+S	off
+//
+O	baking tray	0
+S	contains	{sweet potato fries}
+O	sweet potato fries	1
+S	cooked
+S	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S	in	[baking tray]
+O	turner	1
+O	plate	0
+S	empty
+M	pick-and-place	Assumed	Assumed
+O	plate	0
+S	contains	{sweet potato fries}
+O	sweet potato fries	1	24
+S	cooked
+S	seasoned	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
+S	on	[plate]
+//

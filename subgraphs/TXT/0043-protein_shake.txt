@@ -1,0 +1,289 @@
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0043-protein_shake.mp4
+//
+O	container	0
+S	contains	{yogurt}
+O	yogurt	0
+S	creamy
+S	in	[container]
+O	cup	0
+S	empty
+O	measuring cup	1
+S	empty
+M	measure	<0:03-0:04>
+O	measuring cup	0
+S	contains	{yogurt}
+O	yogurt	0
+S	creamy
+S	in	[measuring cup]
+//
+O	blender cup	0
+S	empty
+O	measuring cup	1
+S	contains	{yogurt}
+O	yogurt	0
+S	creamy
+S	in	[measuring cup]
+M	pour	<0:05-0:08>
+O	blender cup	0
+S	contains	{yogurt}
+O	yogurt	0
+S	creamy
+S	in	[blender cup]
+O	measuring cup	1
+S	empty
+//
+O	bowl	0
+S	empty
+O	strawberry	1
+S	whole
+S	in	[container]
+O	container	0
+S	contains	{strawberry}
+M	pick-and-place	<Assumed>
+O	bowl	0
+S	contains	{strawberry}
+O	strawberry	1
+S	whole
+S	in	[bowl]
+//
+O	faucet	1
+S	on
+O	water	0
+S	liquid
+S	from	[faucet]
+O	bowl	0
+S	contains	{strawberry}
+O	strawberry	1
+S	whole
+S	in	[bowl]
+M	wash	<Assumed>
+O	strawberry	1
+S	whole
+S	washed
+S	in	[bowl]
+//
+O	blender cup	0
+S	contains	{yogurt}
+O	bowl	1
+S	contains	{strawberry}
+O	strawberry	1
+S	washed
+S	whole
+S	in	[bowl]
+M	pour	<0:10-0:14>
+O	blender cup	0
+S	contains	{strawberry,yogurt}
+O	strawberry	1
+S	washed
+S	whole
+S	in	[blender cup]
+//
+O	blender cup	0
+S	contains	{strawberry,yogurt}
+O	carton	1
+S	contains	{milk}
+O	milk	1
+S	liquid
+S	in	[carton]
+M	pour	<0:24-0:31>
+O	blender cup	0
+S	contains	{milk,strawberry,yogurt}
+O	milk	1
+S	liquid
+S	in	[blender cup]
+//
+O	blender cup	0
+S	contains	{milk,strawberry,yogurt}
+O	packet	0
+S	contains	{flaxseed}
+O	flaxseed	1
+S	ground
+S	powder
+S	in	[packet]
+M	pour	<0:42-0:49>
+O	blender cup	0
+S	contains	{flaxseed,milk,strawberry,yogurt}
+O	flaxseed	1
+S	ground
+S	powder
+S	in	[blender cup]
+//
+O	jar	0
+S	contains	{whey powder}
+O	whey powder	0
+S	powder
+S	in	[jar]
+O	measuring cup	1
+S	empty
+M	measure	<0:55-0:57>
+O	measuring cup	1
+S	contains	{whey powder}
+O	whey powder	0
+S	powder
+S	in	[measuring cup]
+//
+O	blender cup	0
+S	contains	{flaxseed,milk,strawberry,yogurt}
+O	measuring cup	1
+S	contains	{whey powder}
+O	whey powder	0
+S	powder
+S	in	[measuring cup]
+M	pour	<0:57-0:59>
+O	blender cup	0
+S	contains	{flaxseed,milk,strawberry,whey powder,yogurt}
+O	whey powder	1
+S	powder
+S	in	[blender cup]
+//
+O	bottle	0
+S	contains	{sweetener}
+O	dropper	1
+S	empty
+O	sweetener	0
+S	liquid
+S	in	[bottle]
+M	squeeze	<Assumed>
+O	dropper	1
+S	contains	{sweetener}
+O	sweetener	0
+S	liquid
+S	in	[dropper]
+//
+O	blender cup	0
+S	contains	{flaxseed,milk,strawberry,whey powder,yogurt}
+O	dropper	1
+S	contains	{sweetener}
+O	sweetener	1
+S	liquid
+S	in	[dropper]
+M	drip	<1:07-1:11>
+O	blender cup	0
+S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}
+O	sweetener	1
+S	liquid
+S	in	[blender cup]
+//
+O	blender cup	0
+S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}
+O	blender lid	1
+M	cover	<1:14-1:17>
+O	blender cup	0
+S	covered	[blender lid]
+S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}
+O	blender lid	1
+S	on	[blender cup]
+//
+O	blender cup	1
+S	covered	[blender lid]
+S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}
+O	blender	0
+S	off (ready)
+M	attach	<1:20-1:21>
+O	blender cup	1
+S	covered	[blender lid]
+S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}
+S	on	[blender]
+O	blender	0
+S	off (ready)
+S	under	[blender cup]
+//
+O	blender	0
+S	off (ready)
+S	under	[blender cup]
+M	turn on	<Assumed>
+O	blender	0
+S	on
+S	under	[blender cup]
+//
+O	blender cup	0
+S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}
+S	covered	[blender lid]
+S	on	[blender]
+O	blender	0
+S	on
+S	under	[blender cup]
+O	yogurt	0
+S	creamy
+S	in	[measuring cup]
+O	strawberry	0
+S	washed
+S	whole
+S	in	[blender cup]
+O	milk	0
+S	liquid
+S	in	[blender cup]
+O	flaxseed	0
+S	ground
+S	powder
+S	in	[blender cup]
+O	whey powder	0
+S	powder
+S	in	[blender cup]
+O	sweetener	1
+S	liquid
+S	in	[blender cup]
+M	blend	<1:22-1:27>
+O	blender cup	0
+S	covered	[blender lid]
+S	contains	{protein shake}
+S	on	[blender]
+O	protein shake	0
+S	blended
+S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}
+S	in	[blender cup]
+//
+O	blender	0
+S	on
+S	under	[blender cup]
+M	turn off	<Assumed>
+O	blender	0
+S	off
+S	under	[blender cup]
+//
+O	blender cup	0
+S	covered	[blender lid]
+S	contains	{protein shake}
+S	on	[blender]
+O	blender	0
+S	off
+S	with	[blender cup]
+M	detach	<Assumed>
+O	blender cup	0
+S	covered	[blender lid]
+S	contains	{protein shake}
+O	blender	0
+S	off
+//
+O	blender cup	0
+S	covered	[blender lid]
+S	contains	{protein shake}
+O	blender lid	1
+S	on	[blender cup]
+M	uncover	<Assumed>
+O	blender cup	1
+S	contains	{protein shake}
+O	blender lid	1
+//
+O	blender cup	1
+S	contains	{protein shake}
+O	protein shake	0
+S	blended
+S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}
+S	in	[blender cup]
+O	cup	0
+S	empty
+M	pour	<Assumed>
+O	cup	0
+S	contains	{smoothie}
+O	protein shake	0	9
+S	blended
+S	thick liquid
+S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}
+S	in	[cup]
+O	smoothie	0	9
+S	blended
+S	thick liquid
+S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}
+S	in	[cup]
+//

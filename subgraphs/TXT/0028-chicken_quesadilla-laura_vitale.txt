@@ -1,0 +1,590 @@
+# Source:	https://www.youtube.com/watch?v=TTagMrBZ1z8
+# Source:	http://foonets.com/foon_subgraphs/subgraphs/0028-chicken_quesadilla-laura_vitale.mp4
+//
+O	bottle	1
+S	contains	{olive oil}
+O	olive oil	1
+S	liquid
+S	in	[bottle]
+O	skillet	0
+S	hot
+S	on	[stove]
+S	empty
+M	pour	<0:55-0:58>
+O	skillet	0
+S	hot
+S	contains	{olive oil}
+S	on	[stove]
+O	olive oil	1
+S	liquid
+S	in	[skillet]
+//
+O	plate	0
+S	contains	{butter}
+O	butter	1
+S	softened
+S	cubed
+S	unmelted
+S	on	[plate]
+O	skillet	0
+S	hot
+S	contains	{olive oil}
+S	on	[stove]
+O	spoon	1
+S	empty
+M	scrape	<1:02-1:03>
+O	butter	0
+S	softened
+S	unmelted
+S	cubed
+S	in	[skillet]
+O	skillet	0
+S	hot
+S	contains	{olive oil,butter}
+S	on	[stove]
+//
+O	skillet	0
+S	hot
+S	contains	{olive oil,butter}
+S	on	[stove]
+O	spoon	1
+S	empty
+O	butter	0
+S	softened
+S	unmelted
+S	cubed
+S	in	[skillet]
+M	spread	<1:03-1:06>
+O	butter	0
+S	melted
+S	liquid
+S	in	[skillet]
+//
+O	packet	0
+S	contains	{chicken}
+O	chicken	1
+S	uncooked
+S	whole
+S	in	[packet]
+O	cutting board	0
+S	empty
+M	pick-and-place	<Assumed>
+O	cutting board	0
+S	contains	{chicken}
+O	chicken	1
+S	uncooked
+S	whole
+S	on	[cutting board]
+//
+O	chicken	0
+S	uncooked
+S	whole
+S	on	[cutting board]
+O	knife	1
+M	chop	<Assumed>
+O	chicken	0
+S	uncooked
+S	chopped
+S	on	[cutting board]
+//
+O	cutting board	1
+S	contains	{chicken}
+O	chicken	0
+S	uncooked
+S	chopped
+S	on	[cutting board]
+O	plate	0
+S	empty
+O	knife	1
+M	scrape	<Assumed>
+O	plate	0
+S	contains	{chicken}
+O	chicken	0
+S	uncooked
+S	chopped
+S	on	[plate]
+O	cutting board	1
+S	empty
+//
+O	pepper mill	1
+S	contains	{black pepper}
+O	black pepper	1
+S	peppercorn
+S	in	[pepper mill]
+O	plate	0
+S	contains	{chicken}
+M	grind	<1:19-1:23>
+O	plate	0
+S	contains	{chicken,black pepper}
+O	black pepper	1
+S	ground
+S	on	[plate]
+//
+O	plate	0
+S	contains	{chicken,black pepper}
+O	bowl	0
+S	contains	{salt}
+O	salt	1
+S	granulated
+S	in	[bowl]
+M	sprinkle	<1:25-1:27,1:28-1:30>
+O	plate	0
+S	contains	{chicken,black pepper,salt}
+O	salt	1
+S	granulated
+S	on	[plate]
+//
+O	plate	0
+S	empty
+O	shaker	1
+S	contains	{oregano}
+O	oregano	1
+S	dried
+S	in	[shaker]
+O	shaker	1
+S	contains	{paprika}
+O	paprika	1
+S	powder
+S	in	[shaker]
+O	shaker	1
+S	contains	{onion powder}
+O	onion	1
+S	powder
+S	in	[shaker]
+O	shaker	1
+S	contains	{garlic powder}
+O	garlic	1
+S	powder
+S	in	[shaker]
+O	shaker	1
+S	contains	{chili powder}
+O	chili powder	1
+S	powder
+S	in	[shaker]
+M	pour	<Assumed>
+O	plate	0
+S	contains	{chili powder,garlic powder,onion powder,oregano,paprika}
+O	oregano	1
+S	dried
+S	on	[plate]
+O	paprika	1
+S	ground
+S	on	[plate]
+O	onion	1
+S	powder
+S	on	[plate]
+O	garlic	1
+S	powder
+S	on	[plate]
+O	chili powder	1
+S	powder
+S	on	[plate]
+//
+O	plate	0
+S	contains	{chili powder,garlic powder,onion powder,oregano,paprika}
+O	oregano	1
+S	dried
+S	on	[plate]
+O	paprika	1
+S	ground
+S	on	[plate]
+O	onion	1
+S	powder
+S	on	[plate]
+O	garlic	1
+S	powder
+S	on	[plate]
+O	chili powder	1
+S	powder
+S	on	[plate]
+O	spoon	1
+S	empty
+M	mix	<1:34-1:37>
+O	taco seasoning	1
+S	mixed
+S	contains	{chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[plate]
+//
+O	plate	0
+S	contains	{chicken,black pepper,salt}
+O	plate	1
+S	contains	{chili powder,garlic powder,onion powder,oregano,paprika}
+O	taco seasoning	1
+S	mixed
+S	contains	{chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[plate]
+M	sprinkle	<1:38-1:40:50>
+O	plate	0
+S	contains	{chicken,black pepper,salt,taco seasoning}
+O	taco seasoning	1
+S	mixed
+S	contains	{chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[plate]
+//
+O	plate	0
+S	contains	{chicken,black pepper,salt,taco seasoning}
+O	chicken	0
+S	uncooked
+S	chopped
+S	on	[plate]
+O	taco seasoning	0
+S	mixed
+S	contains	{chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[plate]
+O	black pepper	0
+S	ground
+S	on	[plate]
+O	salt	0
+S	granulated
+S	on	[plate]
+O	spoon	1
+S	empty
+M	mix	<1:41-1:47,2:07-2:15>
+O	chicken	0
+S	uncooked
+S	chopped
+S	contains	{salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[plate]
+//
+O	plate	0
+S	contains	{chicken,black pepper,salt,taco seasoning}
+O	chicken	0
+S	uncooked
+S	chopped
+S	contains	{salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[plate]
+O	skillet	0
+S	hot
+S	contains	{olive oil,butter}
+S	on	[stove]
+O	spoon	1
+S	empty
+M	scrape	<2:16-2:18>
+O	skillet	0
+S	hot
+S	contains	{olive oil,butter,chicken}
+S	on	[stove]
+O	chicken	1
+S	uncooked
+S	chopped
+S	contains	{salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	in	[skillet]
+//
+O	stove	0
+S	on
+S	under	[skillet]
+O	skillet	0
+S	hot
+S	contains	{olive oil,butter,chicken}
+S	on	[stove]
+O	chicken	0
+S	uncooked
+S	chopped
+S	contains	{salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	in	[skillet]
+O	olive oil	0
+S	liquid
+S	in	[skillet]
+O	butter	0
+S	melted
+S	liquid
+S	in	[skillet]
+O	spoon	1
+S	empty
+M	cook and stir	<2:22-2:24,2:30-2:33>
+O	chicken	0
+S	cooked
+S	chopped
+S	contains	{salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	in	[skillet]
+//
+O	skillet	0
+S	hot
+S	contains	{olive oil,butter,chicken}
+S	on	[stove]
+O	chicken	0
+S	cooked
+S	chopped
+S	contains	{salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	in	[skillet]
+O	spoon	1
+S	empty
+O	plate	0
+S	empty
+M	scoop and pour	<Assumed>
+O	plate	0
+S	contains	{chicken}
+O	chicken	1
+S	cooked
+S	chopped
+S	contains	{salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[plate]
+//
+O	packet	0
+S	contains	{tortilla}
+O	tortilla	1
+S	plain
+S	in	[packet]
+O	plate	0
+S	empty
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{tortilla}
+O	tortilla	0
+S	plain
+S	on	[plate]
+//
+O	plate	0
+S	contains	{tortilla}
+O	tortilla	0
+S	plain
+S	on	[plate]
+O	bottle	1
+S	contains	{vegetable oil}
+O	vegetable oil	1
+S	liquid
+S	in	[bottle]
+M	pour	<2:50-2:52>
+O	tortilla	0
+S	contains	{vegetable oil}
+S	on	[plate]
+O	vegetable oil	1
+S	liquid
+S	on	[tortilla]
+//
+O	plate	0
+S	contains	{tortilla}
+O	tortilla	0
+S	contains	{vegetable oil}
+S	on	[plate]
+O	vegetable oil	1
+S	liquid
+S	on	[tortilla]
+O	brush	1
+M	brush	<2:52-2:57>
+O	vegetable oil	1
+S	liquid
+S	spread
+S	on	[tortilla]
+//
+O	plate	0
+S	contains	{tortilla}
+O	tortilla	1
+S	contains	{vegetable oil}
+S	on	[plate]
+M	flip	<2:58-3:01>
+O	tortilla	1
+S	contains	{vegetable oil}
+S	flipped
+S	on	[plate]
+//
+O	plate	0
+S	contains	{tortilla}
+O	tortilla	1
+S	contains	{vegetable oil}
+S	flipped
+S	on	[plate]
+O	plate	0
+S	contains	{cheese}
+O	cheese	1
+S	grated
+S	on	[plate]
+M	sprinkle	<3:02-3:08>
+O	tortilla	0
+S	contains	{vegetable oil,cheese}
+S	on	[plate]
+O	cheese	1
+S	grated
+S	on	[tortilla]
+//
+O	plate	0
+S	contains	{tortilla}
+O	tortilla	0
+S	contains	{vegetable oil,cheese}
+S	on	[plate]
+O	plate	0
+S	contains	{chicken}
+O	chicken	1
+S	cooked
+S	chopped
+S	contains	{salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[plate]
+M	sprinkle	<3:08-3:17>
+O	tortilla	0
+S	contains	{vegetable oil,cheese,chicken}
+S	on	[plate]
+O	chicken	1
+S	cooked
+S	chopped
+S	contains	{salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[tortilla]
+//
+O	plate	0
+S	contains	{tortilla}
+O	tortilla	1
+S	contains	{vegetable oil,cheese,chicken}
+S	on	[plate]
+M	fold	<3:36-3:39>
+O	quesadilla	1
+S	uncooked
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[plate]
+//
+O	skillet	1
+S	empty
+O	stove	0
+S	on
+M	pick-and-place	<Assumed>
+O	stove	0
+S	on
+S	under	[skillet]
+O	skillet	1
+S	empty
+S	on	[stove]
+//
+O	stove	0
+S	on
+S	under	[skillet]
+O	skillet	0
+S	empty
+S	on	[stove]
+M	heat	<Assumed>
+O	skillet	0
+S	hot
+S	empty
+S	on	[stove]
+//
+O	plate	0
+S	contains	{tortilla}
+O	quesadilla	1
+S	uncooked
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[plate]
+O	skillet	0
+S	hot
+S	empty
+S	on	[stove]
+M	pick-and-place	<3:39-3:42>
+O	skillet	0
+S	hot
+S	contains	{quesadilla}
+S	on	[stove]
+O	quesadilla	1
+S	uncooked
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	in	[skillet]
+//
+O	stove	0
+S	on
+S	under	[skillet]
+O	skillet	0
+S	hot
+S	contains	{quesadilla}
+S	on	[stove]
+O	quesadilla	1
+S	uncooked
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	in	[skillet]
+O	spatula	1
+M	press and cook	<Assumed>
+O	quesadilla	1
+S	partly cooked
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	in	[skillet]
+//
+O	skillet	0
+S	hot
+S	contains	{quesadilla}
+S	on	[stove]
+O	quesadilla	1
+S	partly cooked
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	in	[skillet]
+O	spatula	1
+M	flip	<Assumed
+O	quesadilla	1
+S	partly cooked
+S	flipped
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	in	[skillet]
+//
+O	stove	0
+S	on
+S	under	[skillet]
+O	skillet	0
+S	hot
+S	contains	{quesadilla}
+S	on	[stove]
+O	quesadilla	0
+S	partly cooked
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	in	[skillet]
+O	spatula	1
+M	press and cook	<Assumed>
+O	quesadilla	0
+S	cooked
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	in	[skillet]
+//
+O	skillet	0
+S	hot
+S	contains	{quesadilla}
+S	on	[stove]
+O	quesadilla	0
+S	cooked
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	in	[skillet]
+O	plate	0
+S	empty
+O	spatula	1
+M	pick-and-place	<Assumed>
+O	plate	0
+S	contains	{quesadilla}
+O	quesadilla	0
+S	cooked
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[plate]
+//
+O	plate	0
+S	contains	{quesadilla}
+O	quesadilla	0
+S	cooked
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[plate]
+O	cutting board	0
+S	empty
+M	pick-and-place	<4:02-4:04>
+O	cutting board	0
+S	contains	{quesadilla}
+O	quesadilla	0
+S	cooked
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[cutting board]
+//
+O	quesadilla	0
+S	cooked
+S	contains	{cheese,chicken,olive oil,taco seasoning,tortilla}
+S	on	[cutting board]
+O	knife	1
+M	cut	<4:07-4:14>
+O	quesadilla	0
+S	sliced
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[cutting board]
+//
+O	cutting board	0
+S	contains	{quesadilla}
+O	quesadilla	0
+S	sliced
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[cutting board]
+O	plate	0
+S	empty
+M	pick-and-place	<4:14-4:16>
+O	plate	0
+S	contains	{quesadilla}
+O	quesadilla	0	4
+S	sliced
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
+S	on	[plate]
+//

@@ -1,0 +1,377 @@
+O34	bowl	0
+S46	empty
+O49	butter	1
+S140	stick
+S72	in	[packet]
+M61	pick-and-place	1:22	1:25
+O34	bowl	0
+S24	contains	{butter}
+O49	butter	1
+S140	stick
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{butter}
+O34	bowl	0
+S24	contains	{sugar}
+O373	sugar	1
+S63	granulated
+S72	in	[bowl]
+M65	pour	1:31	1:33
+O34	bowl	0
+S24	contains	{butter,sugar}
+//
+O34	bowl	0
+S24	contains	{butter,sugar}
+O373	sugar	1
+S63	granulated
+S72	in	[bowl]
+O49	butter	1
+S140	stick
+S72	in	[bowl]
+M56	mix	1:38	1:58
+O34	bowl	0
+S24	contains	{butter,sugar}
+S87	mixed
+//
+O34	bowl	0
+S24	contains	{butter,sugar}
+S87	mixed
+O420	whisk	1
+M3	beat	2:00	2:11
+O34	bowl	0
+S24	contains	{butter,sugar}
+S6	beaten
+//
+O210	jar	0
+S24	contains	{instant coffee}
+O207	instant coffee	1
+S106	powder
+S72	in	[jar]
+O367	spoon	1
+O304	plate	0
+S46	empty
+M86	scoop and pour	Assumed	Assumed
+O304	plate	0
+S24	contains	{instant coffee}
+O207	instant coffee	1
+S106	powder
+S93	on	[plate]
+//
+O34	bowl	0
+S24	contains	{water}
+O304	plate	0
+S24	contains	{instant coffee}
+O207	instant coffee	1
+S106	powder
+S93	on	[plate]
+O367	spoon	1
+M88	scrape	2:16	2:20
+O34	bowl	0
+S24	contains	{water,instant coffee}
+O207	instant coffee	0
+S106	powder
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{water,instant coffee}
+O367	spoon	1
+M104	stir	2:21	2:40
+O34	bowl	0
+S24	contains	{coffee}
+O97	coffee	1
+S72	in	[bowl]
+//
+O133	egg	1
+S147	uncracked
+M22	crack	2:37	2:47
+O133	egg	1
+S29	cracked
+//
+O34	bowl	0
+S24	contains	{sugar,butter}
+S6	beaten
+O133	egg	1
+S29	cracked
+M65	pour	2:56	2:58
+O34	bowl	0
+S24	contains	{sugar,butter,egg white and yolk}
+O138	egg white and yolk	0
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{sugar,butter,egg white and yolk}
+O138	egg white and yolk	0
+S72	in	[bowl]
+O373	sugar	1
+S63	granulated
+S72	in	[bowl]
+O49	butter	1
+S140	stick
+S72	in	[bowl]
+O420	whisk	1
+M3	beat	2:58	3:04
+O34	bowl	0
+S24	contains	{egg mixture}
+O134	egg mixture	0
+S24	contains	{sugar,butter,egg}
+S72	in	[bowl]
+//
+O33	bottle	1
+S24	contains	{vanilla extract}
+O407	vanilla extract	1
+S72	in	[bottle]
+O34	bowl	0
+S24	contains	{egg mixture}
+M65	pour	3:06	3:09
+O34	bowl	0
+S24	contains	{egg mixture,vanilla extract}
+O407	vanilla extract	0
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{egg mixture,vanilla extract}
+O134	egg mixture	0
+S24	contains	{sugar,butter,egg}
+S72	in	[bowl]
+O407	vanilla extract	0
+S72	in	[bowl]
+O420	whisk	1
+M3	beat	3:10	3:19
+O34	bowl	0
+S24	contains	{egg mixture,vanilla extract}
+O134	egg mixture	1
+S24	contains	{sugar,butter,egg white and yolk,vanilla extract}
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{egg mixture,vanilla extract}
+O34	bowl	1
+S24	contains	{coffee}
+O97	coffee	1
+S72	in	[bowl]
+M65	pour	3:20	3:24
+O34	bowl	0
+S24	contains	{egg mixture,vanilla extract,coffee}
+O34	bowl	0
+//
+O34	bowl	0
+S24	contains	{egg mixture,vanilla extract,coffee}
+O134	egg mixture	1
+S24	contains	{sugar,butter,egg white and yolk,vanilla extract}
+S72	in	[bowl]
+O97	coffee	1
+S72	in	[bowl]
+O420	whisk	1
+M3	beat	3:25	3:33
+O34	bowl	0
+S24	contains	{batter}
+O15	batter	1
+S24	contains	{sugar,butter,egg white and yolk,vanilla extract,coffee}
+S72	in	[bowl]
+//
+O34	bowl	1
+S24	contains	{cocoa powder}
+O96	cocoa powder	1
+S72	in	[bowl]
+O34	bowl	0
+S24	contains	{flour}
+M65	pour	3:35	3:37
+O34	bowl	0
+S24	contains	{cocoa powder,flour}
+O34	bowl	0
+//
+O34	bowl	1
+S24	contains	{salt,instant coffee}
+O34	bowl	0
+S24	contains	{flour,cocoa powder}
+O207	instant coffee	0
+S72	in	[bowl]
+O336	salt	1
+S63	granulated
+S72	in	[bowl]
+M65	pour	3:39	3:40
+O34	bowl	0
+S24	contains	{flour,cocoa powder,salt,instant coffee}
+O34	bowl	0
+//
+O34	bowl	0
+S24	contains	{flour,cocoa powder,salt,instant coffee}
+O367	spoon	1
+O207	instant coffee	1
+S72	in	[bowl]
+O336	salt	1
+S63	granulated
+S72	in	[bowl]
+O96	cocoa powder	1
+S72	in	[bowl]
+O147	flour	1
+S106	powder
+S72	in	[bowl]
+M56	mix*	3:41	3:50
+O34	bowl	0
+S24	contains	{flour mixture}
+O148	flour mixture	1
+S24	contains	{flour,cocoa powder,salt,instant coffee}
+S72	in	[bowl]
+//
+O34	bowl	0
+S24	contains	{batter}
+O34	bowl	1
+S24	contains	{chocolate}
+O82	chocolate	1
+S85	melted
+S72	in	[bowl]
+M65	pour	3:53	4:04
+O34	bowl	0
+S24	contains	{batter,chocolate}
+//
+O34	bowl	0
+S24	contains	{batter,chocolate}
+O82	chocolate	1
+S85	melted
+S72	in	[bowl]
+O15	batter	1
+S24	contains	{sugar,butter,egg white and yolk,vanilla extract,coffee}
+S72	in	[bowl]
+O420	whisk	1
+M56	mix	4:12	4:18
+O34	bowl	0
+S24	contains	{brownie batter}
+O15	batter	1
+S24	contains	{sugar,butter,egg white and yolk,vanilla extract,coffee,choocolate}
+S72	in	[bowl]
+//
+O34	bowl	1
+S24	contains	{flour mixture}
+O34	bowl	0
+S24	contains	{batter}
+M65	pour	4:20	4:22
+O34	bowl	0
+S24	contains	{flour mixture,batter}
+O34	bowl	1
+//
+O34	bowl	0
+S24	contains	{flour mixture,batter}
+O148	flour mixture	1
+S24	contains	{flour,cocoa powder,salt,instant coffee}
+S72	in	[bowl]
+O15	batter	1
+S24	contains	{sugar,butter,egg white and yolk,vanilla extract,coffee,choocolate}
+S72	in	[bowl]
+O420	whisk	1
+M56	mix	4:25	4:44
+O34	bowl	0
+S24	contains	{brownie batter}
+O44	brownie batter	1
+S72	in	[bowl]
+//
+O364	spatula	1
+O34	bowl	0
+S24	contains	{brownie batter}
+O44	brownie batter	1
+S72	in	[bowl]
+M56	mix	4:51	5:00
+O34	bowl	0
+S24	contains	{brownie batter}
+O44	brownie batter	1
+S24	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S72	in	[bowl]
+//
+O10	baking tray	0
+S156	with	[sheet]
+O34	bowl	1
+S24	contains	{brownie batter}
+O44	brownie batter	1
+S24	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S72	in	[bowl]
+M88	scrape	5:09	5:13
+O44	brownie batter	1
+S24	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S72	in	[baking tray]
+O10	baking tray	0
+S24	contains	{brownie batter}
+O34	bowl	1
+//
+O44	brownie batter	1
+S24	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S72	in	[baking tray]
+O10	baking tray	0
+S24	contains	{brownie batter}
+M91	shape	5:15	5:33
+O44	brownie batter	1
+S24	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S80	leveled
+S72	in	[baking tray]
+//
+O276	oven	0
+S93	on
+O10	baking tray	1
+S24	contains	{brownie batter}
+M76	put inside	Assumed	Assumed
+O276	oven	0
+S93	on
+S156	with	[baking tray]
+O10	baking tray	1
+S24	contains	{brownie batter}
+S72	in	[oven]
+//
+O276	oven	0
+S93	on
+S156	with	[baking tray]
+O10	baking tray	0
+S24	contains	{brownie batter}
+S72	in	[oven]
+O44	brownie batter	1
+S24	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S80	leveled
+S72	in	[baking tray]
+M16	cook	5:50	6:00
+O10	baking tray	0
+S24	contains	{brownie}
+S72	in	[oven]
+O43	brownie	1
+S2	baked
+S72	in	[baking tray]
+//
+O10	baking tray	1
+S24	contains	{brownie}
+S72	in	[oven]
+O276	oven	0
+S93	on
+S156	with	[baking tray]
+M77	remove	Assumed	Assumed
+O10	baking tray	1
+S24	contains	{brownie}
+O276	oven	0
+S90	off
+//
+O10	baking tray	1
+S24	contains	{brownie}
+O43	brownie	1
+S2	baked
+S72	in	[baking tray]
+O121	cutting board	0
+S46	empty
+M61	pick-and-place	Assumed	Assumed
+O121	cutting board	0
+S24	contains	{brownie}
+O43	brownie	1
+S24	contains	{sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S2	baked
+S93	on	[cutting board]
+O10	baking tray	1
+//
+O43	brownie	1
+S2	baked
+S93	on	[cutting board]
+O121	cutting board	0
+S24	contains	{brownie}
+O217	knife	1
+M23	cut	6:06	6:15
+O43	brownie	1	5
+S24	contains	{flour mixture,coffee,egg mixture,brownie batter,sugar,butter,egg white and yolk,vanilla extract,instant coffee,chocolate,flour,salt,cocoa powder}
+S2	baked
+S43	divided
+S72	in	[baking tray]
+//
