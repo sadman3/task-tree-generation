@@ -49,6 +49,21 @@ class Object:
     def print(self):
         print(self.get_object_as_text())
 
+    # checks if two objects are same
+    def check_object_equal(self, T):
+        if self.label == T.label and sorted(self.states) == sorted(T.states) \
+            and sorted(self.ingredients) == sorted(T.ingredients) \
+                and self.container == T.container:
+            return True
+        return False
+
+    # checks if an objet exist in a list of objects
+    def check_object_exist(self, object_list):
+        for object in object_list:
+            if self.check_object_equal(object):
+                return True
+        return False
+
 
 class FunctionalUnit:
     def __init__(self):
@@ -70,3 +85,26 @@ class FunctionalUnit:
 
     def print(self):
         print(self.get_FU_as_text())
+
+    def check_if_FU_exist(self, functional_units):
+
+        for FU in functional_units:
+            if self.motion_node != FU.motion_node or \
+                len(self.input_nodes) != len(FU.input_nodes) or \
+                    len(self.output_nodes) != len(FU.output_nodes):
+                continue
+
+            input_found = 0
+            for node in self.input_nodes:
+                if node.check_object_exist(FU.input_nodes):
+                    input_found += 1
+
+            output_found = 0
+            for node in self.output_nodes:
+                if node.check_object_exist(FU.output_nodes):
+                    output_found += 1
+
+            if input_found == len(self.input_nodes) and output_found == len(self.output_nodes):
+                return True
+
+        return False
