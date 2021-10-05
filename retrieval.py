@@ -43,19 +43,20 @@ def process_input(filepath):
         returns: recipe id, dish type and ingredient list
     """
 
-    input = json.load(open(filepath))
+    _input = json.load(open(filepath))
 
-    recipe_id = input["id"]
-    dish_type = input["type"]
-    ingredients = input["ingredients"]
+    recipe_id = _input["id"]
+    dish_type = _input["type"]
+    ingredients = _input["ingredients"]
 
     utensils = get_utensils()
     processed_ingredients = []
+    print(utensils)
     for ing in ingredients:
         if ing["object"] not in utensils:
             processed_ingredients.append(ing)
 
-    return recipe_id, dish_type, ingredients
+    return recipe_id, dish_type, processed_ingredients
 
 
 # -----------------------------------------------------------------------------------------------------------------------------#
@@ -69,10 +70,6 @@ def find_goal_node(dish_type, ingredients):
     """
 
     reference_goal_node = {}
-
-    recipe_id = input["id"]
-    dish_type = input["type"]
-    ingredients = input["ingredients"]
 
     return
 
@@ -103,6 +100,7 @@ def retrieval():
 if __name__ == "__main__":
     input_file = '/Users/sadman/repository/task-tree-generation/input/00d23f6efb.json'
     recipe_id, dish_type, ingredients = process_input(input_file)
+    print(ingredients)
 
     # step 1: find the reference goal node
     reference_goal_node = find_goal_node(dish_type, ingredients)
