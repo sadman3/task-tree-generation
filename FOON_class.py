@@ -19,7 +19,7 @@ class Object:
         self.ingredients = []
         self.container = []
         self.object_in_motion = 0
-        self.is_goal_node = False
+        self.recipe_category = -1  # -1, if not a goal node, else it will have a category id
 
     def get_ingredients_as_text(self):
         ingredients_list = self.ingredients

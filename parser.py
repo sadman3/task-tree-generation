@@ -91,7 +91,7 @@ def get_FU_list(filepath):
             new_object = Object(label[1])
             new_object.object_in_motion = label[2]
             if len(label) > 3:
-                new_object.is_goal_node = True
+                new_object.recipe_category = label[3].rstrip()
 
         if line.startswith("S"):
 
@@ -147,11 +147,48 @@ def merge(dir=subgraph_dir):
         for FU in functional_units:
             F.write(FU.get_FU_as_text() + "\n")
         F.close()
+        print('-- universal foon saved to', foon_txt)
 
     # save universal foon in a pickle file
     if create_foon_pkl:
         F = open(foon_pkl, "wb")
         pickle.dump(functional_units, F)
+        F.close()
+        print('-- universal foon saved to', foon_pkl)
+
+    print('-- total functional unit:', len(functional_units))
+    # create recipe classification
+    create_recipe_classification(functional_units)
+    print('-- recipe classification created in', recipe_category_path)
+
+# -----------------------------------------------------------------------------------------------------------------------------#
+
+
+def create_recipe_classification(functional_units):
+    """
+        parameters: a list of all functional units
+        creates: recipe classification in a json file
+    """
+
+    recipe_categories = {}
+    categories = read_categories()
+    for _, value in categories.items():
+        recipe_categories[value] = []
+
+    for FU in functional_units:
+        for node in FU.output_nodes:
+            category_id = node.recipe_category
+            if category_id != -1:
+                goal_node = {
+                    "label": node.label,
+                    "states": node.states,
+                    "ingredients": node.ingredients,
+                    "container": node.container
+                }
+                recipe_categories[categories[category_id]].append(goal_node)
+
+    # save recipe classification in a json file
+    json.dump(recipe_categories, open(recipe_category_path, 'w'), indent=4)
 
 
 if __name__ == "__main__":
