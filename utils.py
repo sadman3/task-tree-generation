@@ -1,4 +1,4 @@
-import json
+import spacy
 
 
 def process_object_label(label):
