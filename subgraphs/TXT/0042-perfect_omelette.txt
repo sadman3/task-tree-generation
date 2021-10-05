@@ -125,7 +125,7 @@ S	chopped
 S	on	[cutting board]
 O	plate	0
 S	empty
-S	contains	{green pepper}
+M	pick-and-place	<Assumed>
 O	plate	0
 S	contains	{onion}
 O	onion	1
