@@ -2267,6 +2267,18 @@ S	thick liquid
 S	contains	{egg,flour,milk}
 S	in	[bowl]
 //
+O	stove
+S	on
+O	pot
+S	empty
+M	pick-and-place
+O	pot
+S	heated
+S	in	[stove]
+O	stove
+S	on
+S	in	[pot]
+//
 O	faucet
 S	on
 O	water
@@ -2449,6 +2461,22 @@ S	contains	{basil,pine nut,garlic,black pepper}
 S	in	[blender]
 O	black pepper
 S	ground
+S	in	[blender jar]
+//
+O	blender jar
+S	contains	{basil,pine nut,garlic,black pepper}
+S	in	[blender]
+O	container
+S	contains	{salt}
+O	salt
+S	granulated
+S	in	[container]
+M	sprinkle
+O	blender jar
+S	contains	{basil,pine nut,garlic,black pepper,salt}
+S	in	[blender]
+O	salt
+S	granulated
 S	in	[blender jar]
 //
 O	blender jar
@@ -2736,6 +2764,20 @@ S	in	[bowl]
 O	bowl
 S	contains	{pesto linguine}
 O	tongs
+//
+O	bowl
+S	empty
+O	egg
+S	whole
+M	crack
+O	bowl
+S	contains	{egg white,egg yolk}
+O	egg white
+S	uncooked
+S	in	[bowl]
+O	egg yolk
+S	uncooked
+S	in	[bowl]
 //
 O	bowl
 S	contains	{egg white,egg yolk}
@@ -3288,19 +3330,6 @@ O	flour
 S	powder
 S	in	[table spoon]
 //
-O	table spoon
-S	contains	{flour}
-O	flour
-S	powder
-S	in	[table spoon]
-O	bowl
-S	contains	{flour}
-S	in	[surface]
-M	pour
-O	bowl
-S	contains	{flour}
-S	in	[surface]
-//
 O	teaspoon
 S	contains	{salt}
 O	salt
@@ -3630,12 +3659,6 @@ S	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk}
 S	in	[parchment paper]
 O	egg white and yolk
 S	contains	{pizza dough}
-//
-O	oven
-S	off
-M	turn on
-O	oven
-S	on
 //
 O	oven
 S	on
@@ -5556,6 +5579,17 @@ O	sweet pepper
 S	diced
 S	in	[cutting board]
 //
+O	cutting board
+S	empty
+O	green pepper
+S	whole
+M	pick-and-place
+O	cutting board
+S	contains	{green pepper}
+O	green pepper
+S	whole
+S	in	[cutting board]
+//
 O	green pepper
 S	whole
 S	in	[cutting board]
@@ -6226,6 +6260,18 @@ S	chopped
 S	in	[bowl]
 O	cutting board
 //
+O	stove
+S	on
+O	pot
+S	empty
+M	pick-and-place
+O	stove
+S	on
+S	in	[pot]
+O	pot
+S	heated
+S	in	[stove]
+//
 O	pot
 S	heated
 S	in	[stove]
@@ -6680,6 +6726,28 @@ S	clove
 M	peel
 O	garlic
 S	peeled
+//
+O	cutting board
+S	empty
+O	garlic
+S	peeled
+M	pick-and-place
+O	garlic
+S	peeled
+S	in	[cutting board]
+O	cutting board
+S	contains	{garlic}
+//
+O	knife
+O	garlic
+S	peeled
+S	in	[cutting board]
+O	cutting board
+S	contains	{garlic}
+M	chop
+O	garlic
+S	chopped
+S	in	[cutting board]
 //
 O	stove
 S	on
@@ -10767,6 +10835,17 @@ S	partly cooked
 S	contains	{egg,butter,buttermilk,ricotta,salt,black pepper,avocado}
 S	in	[cooking pan]
 //
+O	cutting board
+S	empty
+O	tomato
+S	whole
+M	pick-and-place
+O	cutting board
+S	contains	{tomato}
+O	tomato
+S	whole
+S	in	[cutting board]
+//
 O	tomato
 S	whole
 S	in	[cutting board]
@@ -12496,6 +12575,15 @@ S	cooked
 S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
 S	in	[grill]
 //
+O	tomato
+S	whole
+S	in	[cutting board]
+O	knife
+M	slice
+O	tomato
+S	sliced
+S	in	[cutting board]
+//
 O	packet
 S	contains	{hamburger bun}
 O	hamburger bun
@@ -12666,14 +12754,6 @@ S	in	[baking tray]
 O	black pepper
 S	ground
 S	in	[ribs]
-//
-O	oven
-S	off (ready)
-S	empty
-M	turn on
-O	oven
-S	on
-S	empty
 //
 O	baking tray
 S	contains	{ribs}
@@ -13107,6 +13187,17 @@ S	ready
 S	contains	{bread,black pepper,butter,garlic,parsley,salt}
 S	in	[plate]
 //
+O	bowl
+S	contains	{sugar}
+O	sugar
+S	granulated
+S	in	[bowl]
+O	bowl
+S	empty
+M	pour
+O	bowl
+S	contains	{sugar}
+//
 O	hand mixer
 S	off
 M	turn on
@@ -13530,20 +13621,6 @@ S	leaf
 S	in	[bowl]
 //
 O	bowl
-S	contains	{black pepper}
-O	black pepper
-S	ground
-S	in	[jar]
-O	spoon
-S	empty
-M	scoop
-O	spoon
-S	contains	{black pepper}
-O	black pepper
-S	ground
-S	in	[spoon]
-//
-O	bowl
 S	contains	{breadcrumb,parmesan,basil}
 O	spoon
 S	contains	{black pepper}
@@ -13714,6 +13791,28 @@ S	baked
 S	ready
 S	contains	{chicken,vegetable oil,olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
 S	in	[plate]
+//
+O	packet
+S	contains	{lettuce}
+O	lettuce
+S	whole
+S	in	[packet]
+M	remove
+O	packet
+S	empty
+O	lettuce
+S	whole
+//
+O	cutting board
+S	empty
+O	lettuce
+S	whole
+M	tear apart
+O	cutting board
+S	contains	{lettuce}
+O	lettuce
+S	leaf
+S	in	[cutting board]
 //
 O	lettuce
 S	leaf
@@ -15363,6 +15462,18 @@ S	in	[cooking pan]
 //
 O	cooking pan
 S	empty
+S	in	[stove]
+O	stove
+S	on
+S	in	[cooking pan]
+M	heat
+O	cooking pan
+S	empty
+S	hot
+S	in	[stove]
+//
+O	cooking pan
+S	empty
 S	hot
 S	in	[stove]
 O	bacon
@@ -15416,6 +15527,17 @@ O	bacon
 S	cooked
 S	sliced
 S	in	[plate]
+//
+O	cutting board
+S	empty
+O	tomato
+S	whole
+M	pick-and-place
+O	cutting board
+S	contains	{tomato}
+O	tomato
+S	whole
+S	in	[cutting board]
 //
 O	tomato
 S	whole
@@ -15983,6 +16105,18 @@ S	baked
 S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
 S	in	[muffin pan]
 //
+O	stove
+S	on
+O	pot
+S	empty
+M	pick-and-place
+O	pot
+S	heated
+S	in	[stove]
+O	stove
+S	on
+S	in	[pot]
+//
 O	pot
 S	heated
 S	in	[stove]
@@ -16406,16 +16540,6 @@ S	halved
 S	peeled
 S	in	[cutting board]
 //
-O	onion
-S	halved
-S	peeled
-S	in	[cutting board]
-O	knife
-M	chop
-O	onion
-S	chopped
-S	in	[cutting board]
-//
 O	cutting board
 S	contains	{onion}
 O	onion
@@ -16447,6 +16571,21 @@ S	chopped
 S	in	[mixing bowl]
 O	bowl
 S	empty
+//
+O	garlic press
+S	empty
+S	opened
+O	garlic
+S	clove
+S	peeled
+M	insert
+O	garlic press
+S	opened
+S	contains	{garlic}
+O	garlic
+S	clove
+S	peeled
+S	in	[garlic press]
 //
 O	mixing bowl
 S	contains	{onion,tuna}
@@ -16794,6 +16933,24 @@ O	tuna patty
 S	pressed
 S	uncooked
 S	contains	{chili pepper,chive,egg white and yolk,garlic,oats,onion,parsley,salt,tuna}
+//
+O	cooking pan
+S	empty
+S	hot
+S	in	[stove]
+O	bottle
+S	contains	{olive oil}
+O	olive oil
+S	liquid
+S	in	[bottle]
+M	pour
+O	cooking pan
+S	hot
+S	contains	{olive oil}
+S	in	[stove]
+O	olive oil
+S	liquid
+S	in	[cooking pan]
 //
 O	cooking pan
 S	hot
@@ -17728,19 +17885,6 @@ S	fried
 S	in	[pan]
 //
 O	spoon
-O	container
-S	contains	{salt}
-O	salt
-S	granulated
-S	in	[container]
-M	scoop
-O	spoon
-S	contains	{salt}
-O	salt
-S	granulated
-S	in	[spoon]
-//
-O	spoon
 S	contains	{salt}
 O	salt
 S	granulated
@@ -18080,6 +18224,19 @@ O	cabbage
 S	whole
 S	in	[cutting board]
 //
+O	cutting board
+S	empty
+O	onion
+S	whole
+S	peeled
+M	pick-and-place
+O	cutting board
+S	contains	{onion}
+O	onion
+S	whole
+S	peeled
+S	in	[cutting board]
+//
 O	carrot
 S	whole
 S	unpeeled
@@ -18127,15 +18284,6 @@ S	chopped
 S	in	[salad bowl]
 O	cutting board
 S	empty
-//
-O	onion
-S	peeled
-S	in	[cutting board]
-O	knife
-M	chop
-O	onion
-S	chopped
-S	in	[cutting board]
 //
 O	salad bowl
 S	contains	{carrot}
@@ -19064,6 +19212,32 @@ S	cut
 S	in	[bowl]
 //
 O	cooking pan
+S	empty
+O	stove
+S	on
+M	pick-and-place
+O	cooking pan
+S	heated
+S	in	[stove]
+O	stove
+S	on
+S	in	[pan]
+//
+O	cooking pan
+S	heated
+S	in	[stove]
+O	bowl
+S	contains	{vegetable oil}
+O	vegetable oil
+S	in	[bowl]
+M	pour
+O	cooking pan
+S	contains	{vegetable oil}
+S	in	[stove]
+O	vegetable oil
+S	in	[pan]
+//
+O	cooking pan
 S	contains	{vegetable oil}
 S	in	[stove]
 O	bowl
@@ -19966,6 +20140,17 @@ S	halved
 S	contains	{butter,crayfish mixture,black pepper,arugula,lemon juice}
 S	in	[cutting board]
 //
+O	cutting board
+S	contains	{lemon}
+O	lemon
+S	whole
+S	in	[cutting board]
+O	knife
+M	slice
+O	lemon
+S	sliced
+S	in	[cutting board]
+//
 O	lemon
 S	sliced
 S	in	[cutting board]
@@ -20465,19 +20650,6 @@ S	in	[bread]
 //
 O	baking tray
 S	contains	{bread}
-O	oven
-S	empty
-S	on
-M	put inside
-O	baking tray
-S	contains	{bread}
-S	in	[oven]
-O	oven
-S	on
-S	contains	{baking tray}
-//
-O	baking tray
-S	contains	{bread}
 S	in	[oven]
 O	oven
 S	on
@@ -20526,12 +20698,34 @@ S	ready
 S	contains	{bread,butter,garlic salt}
 S	in	[plate]
 //
+O	frying pan
+S	empty
+S	in	[stove]
 O	stove
-S	off (ready)
+S	off
 S	in	[frying pan]
-M	turn on
-O	stove
-S	on
+M	preheat
+O	frying pan
+S	hot
+S	empty
+S	in	[stove]
+//
+O	frying pan
+S	hot
+S	empty
+S	in	[stove]
+O	bowl
+S	contains	{olive oil}
+O	olive oil
+S	liquid
+S	in	[bowl]
+M	pour
+O	frying pan
+S	hot
+S	contains	{olive oil}
+S	in	[stove]
+O	olive oil
+S	liquid
 S	in	[frying pan]
 //
 O	frying pan
@@ -20556,6 +20750,21 @@ S	unmelted
 S	cubed
 S	in	[frying pan]
 //
+O	frying pan
+S	hot
+S	contains	{olive oil,butter}
+S	in	[stove]
+O	butter
+S	softened
+S	unmelted
+S	cubed
+S	in	[frying pan]
+M	spread
+O	butter
+S	melted
+S	liquid
+S	in	[frying pan]
+//
 O	onion
 S	whole
 S	unpeeled
@@ -20563,6 +20772,29 @@ M	peel
 O	onion
 S	whole
 S	peeled
+//
+O	cutting board
+S	empty
+O	onion
+S	whole
+S	peeled
+M	pick-and-place
+O	cutting board
+S	contains	{onion}
+O	onion
+S	whole
+S	peeled
+S	in	[cutting board]
+//
+O	onion
+S	whole
+S	peeled
+S	in	[cutting board]
+O	knife
+M	chop
+O	onion
+S	chopped
+S	in	[cutting board]
 //
 O	cutting board
 S	contains	{onion}
@@ -20620,6 +20852,40 @@ O	onion
 S	chopped
 S	sauteed
 S	in	[frying pan]
+//
+O	bowl
+S	empty
+O	egg
+S	whole
+M	crack
+O	bowl
+S	contains	{egg white,egg yolk}
+O	egg white
+S	uncooked
+S	in	[bowl]
+O	egg yolk
+S	uncooked
+S	in	[bowl]
+//
+O	mixing bowl
+S	empty
+O	bowl
+S	contains	{egg white,egg yolk}
+O	egg white
+S	uncooked
+S	in	[bowl]
+O	egg yolk
+S	uncooked
+S	in	[bowl]
+M	pour
+O	mixing bowl
+S	contains	{egg white,egg yolk}
+O	egg white
+S	uncooked
+S	in	[mixing bowl]
+O	egg yolk
+S	uncooked
+S	in	[mixing bowl]
 //
 O	mixing bowl
 S	contains	{egg white,egg yolk}
@@ -20707,6 +20973,17 @@ S	in	[stove]
 O	zucchini
 S	chopped
 S	in	[frying pan]
+//
+O	cutting board
+S	empty
+O	sweet pepper
+S	whole
+M	pick-and-place
+O	cutting board
+S	contains	{sweet pepper}
+O	sweet pepper
+S	whole
+S	in	[cutting board]
 //
 O	knife
 O	sweet pepper
@@ -22179,6 +22456,20 @@ O	breakfast muffin
 S	contains	{egg,bacon,potato,cheddar,vegetable oil}
 S	in	[plate]
 //
+O	bottle
+S	contains	{olive oil}
+O	olive oil
+S	liquid
+S	in	[bottle]
+O	bowl
+S	empty
+M	pour
+O	bowl
+S	contains	{olive oil}
+O	olive oil
+S	liquid
+S	in	[bowl]
+//
 O	bowl
 S	empty
 O	bowl
@@ -22194,6 +22485,26 @@ S	contains	{olive oil}
 O	olive oil
 S	liquid
 S	in	[mixing bowl]
+//
+O	cutting board
+S	empty
+O	lemon
+S	whole
+M	pick-and-place
+O	cutting board
+S	contains	{lemon}
+O	lemon
+S	whole
+S	in	[cutting board]
+//
+O	knife
+O	lemon
+S	whole
+S	in	[cutting board]
+M	cut
+O	lemon
+S	halved
+S	in	[cutting board]
 //
 O	lemon
 S	halved
@@ -22842,18 +23153,6 @@ S	cooked
 S	contains	{olive oil,rice,garlic,water,salt,lime zest}
 S	in	[pot]
 //
-O	pot
-S	covered
-S	contains	{rice}
-S	in	[stove]
-O	pot lid
-S	in	[pan]
-M	uncover
-O	pot
-S	contains	{rice}
-S	in	[stove]
-O	pot lid
-//
 O	stove
 S	on
 S	in	[pot]
@@ -22973,6 +23272,50 @@ S	in	[plate]
 //
 O	cutting board
 S	empty
+O	onion
+S	peeled
+M	pick-and-place
+O	cutting board
+S	contains	{onion}
+O	onion
+S	peeled
+S	in	[cutting board]
+//
+O	cutting board
+S	contains	{onion}
+O	onion
+S	peeled
+S	in	[cutting board]
+O	knife
+M	chop
+O	onion
+S	chopped
+S	in	[cutting board]
+//
+O	cutting board
+S	empty
+O	garlic
+S	peeled
+M	pick-and-place
+O	cutting board
+S	contains	{garlic}
+O	garlic
+S	peeled
+S	in	[cutting board]
+//
+O	cutting board
+S	contains	{garlic}
+O	knife
+O	garlic
+S	peeled
+S	in	[cutting board]
+M	chop
+O	garlic
+S	chopped
+S	in	[cutting board]
+//
+O	cutting board
+S	empty
 O	jalapeno
 S	whole
 M	pick-and-place
@@ -23037,6 +23380,18 @@ O	jalapeno
 S	chopped
 S	in	[plate]
 O	cutting board
+//
+O	bottle
+S	contains	{olive oil}
+O	olive oil
+S	in	[bottle]
+O	cooking pan
+S	heated
+S	in	[stove]
+M	pour
+O	cooking pan
+S	contains	{olive oil}
+S	in	[stove]
 //
 O	cooking pan
 S	contains	{olive oil}
@@ -24248,6 +24603,18 @@ S	in	[baking tray]
 //
 O	baking tray
 S	contains	{beefsteak}
+S	in	[oven]
+O	oven
+S	on
+S	in	[baking tray]
+M	remove
+O	baking tray
+S	contains	{beefsteak}
+O	oven
+S	off
+//
+O	baking tray
+S	contains	{beefsteak}
 O	beefsteak
 S	cooked
 S	in	[baking tray]
@@ -24596,11 +24963,17 @@ S	raw
 S	contains	{black pepper,ginger,salt,sesame oil,vegetable oil}
 S	in	[bowl]
 //
-O	stove
-S	off (ready)
-M	turn on
+O	cooking pan
+S	empty
 O	stove
 S	on
+M	pick-and-place
+O	cooking pan
+S	empty
+S	in	[stove]
+O	stove
+S	on
+S	in	[cooking pan]
 //
 O	cooking pan
 S	empty
@@ -25152,17 +25525,6 @@ O	onion
 S	skin
 S	in	[trash bin]
 //
-O	onion
-S	destemmed
-S	halved
-S	peeled
-S	in	[cutting board]
-O	knife
-M	chop
-O	onion
-S	chopped
-S	in	[cutting board]
-//
 O	cutting board
 S	contains	{onion}
 O	onion
@@ -25464,6 +25826,15 @@ S	in	[faucet]
 M	wash
 O	spoon
 //
+O	faucet
+S	on
+O	water
+S	liquid
+S	in	[faucet]
+M	turn off
+O	faucet
+S	off
+//
 O	jar
 S	closed
 S	contains	{galangal}
@@ -25589,6 +25960,17 @@ O	curry paste
 S	mixed
 S	contains	{black pepper,coriander,cumin,fish sauce,galangal,garlic,lemon grass,onion,paprika,shrimp,spice}
 S	in	[mortar]
+//
+O	cutting board
+S	empty
+O	garlic
+S	peeled
+M	pick-and-place
+O	cutting board
+S	contains	{garlic}
+O	garlic
+S	peeled
+S	in	[cutting board]
 //
 O	garlic
 S	peeled
@@ -25812,6 +26194,18 @@ O	rib
 S	barbecued
 S	contains	{salt,garlic,lemon,barbecue sauce}
 S	in	[baking tray]
+//
+O	oven
+S	on
+S	in	[baking tray]
+O	baking tray
+S	contains	{rib}
+S	in	[oven]
+M	remove
+O	oven
+S	off
+O	baking tray
+S	contains	{rib}
 //
 O	baking tray
 S	contains	{rib}
@@ -26247,6 +26641,18 @@ O	green chilli
 S	sliced
 S	in	[cutting board]
 O	knife
+//
+O	cooking pan
+S	empty
+O	stove
+S	on
+M	pick-and-place
+O	cooking pan
+S	heated
+S	in	[stove]
+O	stove
+S	on
+S	in	[pan]
 //
 O	cooking pan
 S	heated
@@ -26846,6 +27252,18 @@ O	table
 S	contains	{savory pastry}
 //
 O	pot
+S	empty
+O	stove
+S	on
+M	pick-and-place
+O	pot
+S	heated
+S	in	[stove]
+O	stove
+S	on
+S	in	[pot]
+//
+O	pot
 S	heated
 S	in	[stove]
 O	stove
@@ -26956,6 +27374,18 @@ S	on
 M	turn off
 O	stove
 S	off
+//
+O	cooking pan
+S	empty
+O	stove
+S	on
+M	pick-and-place
+O	stove
+S	on
+S	in	[pan]
+O	cooking pan
+S	heated
+S	in	[stove]
 //
 O	bowl
 S	contains	{ground beef}
@@ -27213,14 +27643,14 @@ O	plate
 S	contains	{enchilada}
 //
 O	stove
-S	off
-S	in	[skillet]
+S	off (ready)
 O	skillet
 S	empty
-S	in	[stove]
-M	heat
+M	pick-and-place
+O	stove
+S	off (ready)
+S	in	[skillet]
 O	skillet
-S	hot
 S	empty
 S	in	[stove]
 //
@@ -27245,22 +27675,6 @@ O	skillet
 S	hot
 S	contains	{butter}
 S	in	[stove]
-//
-O	butter
-S	softened
-S	unmelted
-S	cube
-S	in	[skillet]
-O	skillet
-S	hot
-S	contains	{butter}
-S	in	[stove]
-O	whisk
-M	spread
-O	butter
-S	liquid
-S	melted
-S	in	[skillet]
 //
 O	skillet
 S	hot
@@ -27582,6 +27996,29 @@ S	peeled
 S	whole
 //
 O	cutting board
+S	empty
+O	onion
+S	peeled
+S	whole
+M	pick-and-place
+O	cutting board
+S	contains	{onion}
+O	onion
+S	peeled
+S	whole
+S	in	[cutting board]
+//
+O	onion
+S	peeled
+S	whole
+S	in	[cutting board]
+O	knife
+M	chop
+O	onion
+S	chopped
+S	in	[cutting board]
+//
+O	cutting board
 S	contains	{onion}
 O	onion
 S	chopped
@@ -27612,14 +28049,28 @@ S	in	[plate]
 O	cutting board
 S	empty
 //
-O	onion
-S	unpeeled
-S	whole
-O	knife
-M	peel
+O	cutting board
+S	empty
 O	carrot
 S	whole
 S	peeled
+M	pick-and-place
+O	cutting board
+S	contains	{carrot}
+O	carrot
+S	whole
+S	peeled
+S	in	[cutting board]
+//
+O	carrot
+S	whole
+S	peeled
+S	in	[cutting board]
+O	knife
+M	chop
+O	carrot
+S	chopped
+S	in	[cutting board]
 //
 O	cutting board
 S	contains	{carrot}
@@ -28980,6 +29431,18 @@ S	contains	{water}
 O	water
 S	in	[pot]
 //
+O	stove
+S	on
+O	pot
+S	contains	{water}
+M	pick-and-place
+O	pot
+S	contains	{water}
+S	in	[stove]
+O	stove
+S	on
+S	in	[pot]
+//
 O	pot
 S	contains	{water}
 S	in	[stove]
@@ -29030,18 +29493,16 @@ O	potato
 S	mashed
 S	in	[pot]
 //
+O	stove
+S	on
+O	cooking pan
+S	empty
+M	pick-and-place
 O	cooking pan
 S	heated
 S	in	[stove]
-O	bottle
-S	contains	{vegetable oil}
-O	vegetable oil
-S	in	[bottle]
-M	pour
-O	cooking pan
-S	contains	{vegetable oil}
-S	in	[stove]
-O	vegetable oil
+O	stove
+S	on
 S	in	[pan]
 //
 O	cooking pan
@@ -29346,6 +29807,17 @@ S	contains	{oil,onion,ground beef,salt,black pepper,potato,egg yolk,breadcrumb}
 S	in	[plate]
 //
 O	cutting board
+S	contains	{onion}
+O	knife
+O	onion
+S	peeled
+S	in	[cutting board]
+M	slice
+O	onion
+S	sliced
+S	in	[cutting board]
+//
+O	cutting board
 S	contains	{sweet pepper}
 O	knife
 O	sweet pepper
@@ -29370,6 +29842,17 @@ S	contains	{sweet pepper}
 O	sweet pepper
 S	sliced
 S	in	[bowl]
+//
+O	cutting board
+S	contains	{garlic}
+O	knife
+O	garlic
+S	peeled
+S	in	[cutting board]
+M	chop
+O	garlic
+S	chopped
+S	in	[cutting board]
 //
 O	tongs
 O	cooking pan
@@ -30092,6 +30575,30 @@ S	uncooked
 S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
 S	in	[plate]
 //
+O	skillet
+S	empty
+O	stove
+S	on
+M	pick-and-place
+O	stove
+S	on
+S	in	[skillet]
+O	skillet
+S	empty
+S	in	[stove]
+//
+O	stove
+S	on
+S	in	[skillet]
+O	skillet
+S	empty
+S	in	[stove]
+M	heat
+O	skillet
+S	hot
+S	empty
+S	in	[stove]
+//
 O	plate
 S	contains	{tortilla}
 O	quesadilla
@@ -30506,6 +31013,15 @@ S	ready
 S	contains	{corn mixture,corn kernels,water,corn,milk,butter,sugar,salt,black pepper,parmesan}
 S	in	[bowl]
 //
+O	carrot
+S	whole
+S	unpeeled
+O	peeler
+M	peel
+O	carrot
+S	peeled
+S	whole
+//
 O	bowl
 S	empty
 O	carrot
@@ -30595,21 +31111,6 @@ O	bowl
 S	contains	{sour cream}
 O	sour cream
 S	creamy
-S	in	[bowl]
-//
-O	bowl
-S	empty
-O	bag
-S	opened
-S	contains	{sugar}
-O	sugar
-S	granulated
-S	in	[bag]
-M	pour
-O	bowl
-S	contains	{sugar}
-O	sugar
-S	granulated
 S	in	[bowl]
 //
 O	mixing bowl
@@ -31182,14 +31683,6 @@ S	whole
 S	washed
 S	in	[colander]
 //
-O	faucet
-S	on
-O	water
-S	from faucet
-M	turn off
-O	faucet
-S	off
-//
 O	bowl
 S	empty
 O	colander
@@ -31286,6 +31779,22 @@ O	apple
 S	chopped
 S	in	[cutting board]
 O	knife
+//
+O	cutting board
+S	contains	{apple}
+O	apple
+S	chopped
+S	in	[cutting board]
+O	bowl
+S	empty
+M	pick-and-place
+O	bowl
+S	contains	{apple}
+O	apple
+S	chopped
+S	in	[bowl]
+O	cutting board
+S	empty
 //
 O	cooking pan
 S	heated
@@ -31446,6 +31955,16 @@ S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
 S	in	[plate]
 O	cooking pan
 //
+O	tin can
+S	contains	{dough}
+O	dough
+S	rolled
+S	in	[tin can]
+M	open
+O	tin can
+S	opened
+S	contains	{dough}
+//
 O	table
 S	empty
 O	flour
@@ -31469,17 +31988,6 @@ O	table
 S	contains	{flour,dough}
 O	dough
 S	rolled
-S	in	[table]
-//
-O	table
-S	contains	{flour,dough}
-O	dough
-S	rolled
-S	in	[table]
-O	rolling pin
-M	roll
-O	dough
-S	flattened
 S	in	[table]
 //
 O	spoon
@@ -31920,6 +32428,20 @@ S	heated
 S	in	[stove]
 //
 O	cooking pan
+S	heated
+S	in	[stove]
+O	bowl
+S	contains	{vegetable oil}
+O	vegetable oil
+S	in	[bowl]
+M	pour
+O	cooking pan
+S	contains	{vegetable oil}
+S	in	[stove]
+O	vegetable oil
+S	in	[pan]
+//
+O	cooking pan
 S	contains	{vegetable oil}
 S	in	[stove]
 O	dumpling
@@ -32216,18 +32738,6 @@ S	contains	{sugar mixture,butter,vanilla extract,peanut,baking soda}
 S	in	[sheet]
 //
 O	bowl
-S	contains	{egg white and yolk}
-O	spoon
-S	contains	{milk}
-O	milk
-S	in	[spoon]
-M	pour
-O	bowl
-S	contains	{egg white and yolk,milk}
-O	milk
-S	in	[bowl]
-//
-O	bowl
 S	contains	{egg white and yolk,milk}
 O	egg white and yolk
 S	in	[bowl]
@@ -32240,6 +32750,17 @@ S	contains	{egg mixture}
 O	egg mixture
 S	contains	{egg white and yolk,milk}
 S	in	[bowl]
+//
+O	plate
+S	empty
+O	bread
+S	sliced
+M	pick-and-place
+O	plate
+S	contains	{bread}
+O	bread
+S	sliced
+S	in	[plate]
 //
 O	plate
 S	contains	{bread}
@@ -32436,33 +32957,6 @@ O	flour
 S	powder
 S	in	[measuring cup]
 //
-O	bowl
-S	empty
-O	measuring cup
-S	contains	{flour}
-O	flour
-S	powder
-S	in	[measuring cup]
-M	pour
-O	bowl
-S	contains	{flour}
-O	flour
-S	powder
-S	in	[bowl]
-//
-O	jar
-S	contains	{sugar}
-O	sugar
-S	granulated
-S	in	[jar]
-O	spoon
-M	scoop
-O	spoon
-S	contains	{sugar}
-O	sugar
-S	granulated
-S	in	[spoon]
-//
 O	spoon
 S	contains	{sugar}
 O	bowl
@@ -32495,6 +32989,19 @@ S	contains	{flour,sugar}
 M	pour
 O	bowl
 S	contains	{flour,sugar,baking powder}
+//
+O	spoon
+O	bowl
+S	contains	{salt}
+O	salt
+S	granulated
+S	in	[bowl]
+M	scoop
+O	spoon
+S	contains	{salt}
+O	salt
+S	granulated
+S	in	[spoon]
 //
 O	spoon
 S	contains	{salt}
@@ -32544,6 +33051,16 @@ S	in	[bowl]
 M	pour
 O	bowl
 S	contains	{flour mixture,milk}
+//
+O	bowl
+S	empty
+O	egg
+S	uncracked
+M	crack
+O	egg white and yolk
+S	in	[bowl]
+O	bowl
+S	contains	{egg white and yolk}
 //
 O	bowl
 S	contains	{egg white and yolk}
@@ -32723,6 +33240,17 @@ O	knife
 O	potato
 S	peeled
 //
+O	potato
+S	peeled
+O	cutting board
+S	empty
+M	pick-and-place
+O	cutting board
+S	contains	{potato}
+O	potato
+S	peeled
+S	in	[cutting board]
+//
 O	cutting board
 S	contains	{potato}
 O	potato
@@ -32734,6 +33262,22 @@ O	knife
 O	potato
 S	sliced
 S	in	[cutting board]
+//
+O	kettle
+S	contains	{water}
+O	water
+S	heated
+S	in	[kettle]
+O	pot
+S	heated
+S	in	[stove]
+M	pour
+O	pot
+S	contains	{water}
+S	in	[stove]
+O	water
+S	heated
+S	in	[pot]
 //
 O	pot
 S	contains	{water}
@@ -33208,14 +33752,6 @@ S	liquid
 S	in	[pot]
 O	measuring cup
 S	empty
-//
-O	stove
-S	off
-S	in	[pot]
-M	turn on
-O	stove
-S	on
-S	in	[pot]
 //
 O	pot
 S	contains	{water}
@@ -33804,12 +34340,18 @@ S	ready
 S	contains	{anchovy,crouton,egg yolk,garlic,lemon juice,lettuce,mustard,olive oil,worcestershire sauce,parmesan,black pepper}
 S	in	[bowl]
 //
-O	onion
-S	whole
-M	peel
+O	cutting board
+S	empty
 O	onion
 S	peeled
 S	whole
+M	pick-and-place
+O	cutting board
+S	contains	{onion}
+O	onion
+S	peeled
+S	whole
+S	in	[cutting board]
 //
 O	onion
 S	whole
@@ -34411,6 +34953,53 @@ S	divided
 S	contains	{butter,chocolate mixture,white chocolate chip,condensed milk,oreo cookie,vanilla extract}
 S	in	[baking tray]
 //
+O	cutting board
+S	empty
+O	sweet pepper
+S	whole
+M	pick-and-place
+O	cutting board
+S	contains	{sweet pepper}
+O	sweet pepper
+S	whole
+S	in	[cutting board]
+//
+O	knife
+O	sweet pepper
+S	whole
+S	in	[cutting board]
+M	chop
+O	sweet pepper
+S	chopped
+S	in	[cutting board]
+//
+O	cutting board
+S	contains	{sweet pepper}
+O	sweet pepper
+S	chopped
+S	in	[cutting board]
+O	bowl
+S	empty
+M	pick-and-place
+O	bowl
+S	contains	{sweet pepper}
+O	sweet pepper
+S	chopped
+S	in	[bowl]
+O	cutting board
+S	empty
+//
+O	cutting board
+S	empty
+O	mushroom
+S	whole
+M	pick-and-place
+O	cutting board
+S	contains	{mushroom}
+O	mushroom
+S	whole
+S	in	[cutting board]
+//
 O	mushroom
 S	whole
 S	in	[cutting board]
@@ -34436,6 +35025,44 @@ S	in	[bowl]
 O	cutting board
 S	empty
 //
+O	cutting board
+S	empty
+O	onion
+S	whole
+S	peeled
+M	pick-and-place
+O	cutting board
+S	contains	{onion}
+O	onion
+S	whole
+S	peeled
+S	in	[cutting board]
+//
+O	onion
+S	whole
+S	peeled
+S	in	[cutting board]
+O	knife
+M	chop
+O	onion
+S	chopped
+S	in	[cutting board]
+//
+O	cutting board
+S	contains	{onion}
+O	onion
+S	chopped
+S	in	[cutting board]
+O	bowl
+S	empty
+M	pick-and-place
+O	bowl
+S	contains	{onion}
+O	onion
+S	chopped
+S	in	[bowl]
+O	cutting board
+//
 O	cooking pan
 S	empty
 O	stove
@@ -34457,16 +35084,22 @@ S	on
 S	under [cooking pan]
 //
 O	cooking pan
-S	empty
-S	in	[stove]
-O	stove
-S	on
-S	under [cooking pan]
-M	preheat
-O	cooking pan
 S	hot
 S	empty
 S	in	[stove]
+O	bottle
+S	contains	{olive oil}
+O	olive oil
+S	liquid
+S	in	[bottle]
+M	pour
+O	cooking pan
+S	hot
+S	contains	{olive oil}
+S	in	[stove]
+O	olive oil
+S	liquid
+S	in	[cooking pan]
 //
 O	olive oil
 S	liquid
@@ -34618,6 +35251,40 @@ S	in	[stove]
 O	salt
 S	granulated
 S	in	[cooking pan]
+//
+O	mixing bowl
+S	empty
+O	bowl
+S	contains	{egg}
+O	egg
+S	whole
+S	in	[bowl]
+M	crack
+O	mixing bowl
+S	contains	{egg white,egg yolk}
+O	egg white
+S	uncooked
+S	in	[mixing bowl]
+O	egg yolk
+S	uncooked
+S	in	[mixing bowl]
+//
+O	mixing bowl
+S	contains	{egg white,egg yolk}
+O	egg white
+S	uncooked
+S	in	[mixing bowl]
+O	egg yolk
+S	uncooked
+S	in	[mixing bowl]
+O	whisk
+M	beat
+O	mixing bowl
+S	contains	{egg}
+O	egg
+S	beaten
+S	uncooked
+S	in	[mixing bowl]
 //
 O	mixing bowl
 S	contains	{egg}
@@ -34973,15 +35640,6 @@ S	in	[cutting board]
 //
 O	avocado
 S	halved
-S	in	[cutting board]
-M	peel
-O	avocado
-S	halved
-S	peeled
-S	in	[cutting board]
-//
-O	avocado
-S	halved
 S	peeled
 S	in	[cutting board]
 O	knife
@@ -35053,6 +35711,20 @@ O	bowl
 S	contains	{blood orange}
 O	blood orange
 S	diced
+S	in	[bowl]
+//
+O	bottle
+S	contains	{olive oil}
+O	bowl
+S	empty
+O	olive oil
+S	liquid
+S	in	[bottle]
+M	pour
+O	bowl
+S	contains	{olive oil}
+O	olive oil
+S	liquid
 S	in	[bowl]
 //
 O	bottle
@@ -35564,18 +36236,6 @@ O	stove
 S	off (ready)
 S	in	[frying pan]
 O	frying pan
-S	empty
-S	in	[stove]
-//
-O	stove
-S	on
-S	in	[frying pan]
-O	frying pan
-S	empty
-S	in	[stove]
-M	preheat
-O	frying pan
-S	hot
 S	empty
 S	in	[stove]
 //

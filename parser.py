@@ -150,9 +150,40 @@ def merge(dir=subgraph_dir):
         print('-- universal foon saved to', foon_txt)
 
     # save universal foon in a pickle file
+    object_nodes = []
     if create_foon_pkl:
+        for FU in functional_units:
+            for input in FU.input_nodes:
+                # avoid adding duplicate objects
+                if input.check_object_exist(object_nodes) == -1:
+                    object_nodes.append(input)
+
+            for output in FU.output_nodes:
+                if output.check_object_exist(object_nodes) == -1:
+                    object_nodes.append(output)
+
+        object_to_FU_map = {}
+
+        # create a mapping between output node to functional units
+        for FU_index, FU in enumerate(functional_units):
+            for output in FU.output_nodes:
+
+                # ignore object that has no state like "knife"
+                if len(output.states) == 0 and len(output.ingredients) == 0 and output.container == None:
+                    continue
+
+                object_index = output.check_object_exist(object_nodes)
+                if object_index not in object_to_FU_map:
+                    object_to_FU_map[object_index] = []
+                object_to_FU_map[object_index].append(FU_index)
+
         F = open(foon_pkl, "wb")
-        pickle.dump(functional_units, F)
+        pickle_data = {
+            "functional_units": functional_units,
+            "object_nodes": object_nodes,
+            "object_to_FU_map": object_to_FU_map
+        }
+        pickle.dump(pickle_data, F)
         F.close()
         print('-- universal foon saved to', foon_pkl)
 

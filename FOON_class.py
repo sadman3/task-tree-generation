@@ -17,7 +17,7 @@ class Object:
         self.label = label
         self.states = []
         self.ingredients = []
-        self.container = []
+        self.container = None
         self.object_in_motion = 0
         self.recipe_category = -1  # -1, if not a goal node, else it will have a category id
 
@@ -59,10 +59,10 @@ class Object:
 
     # checks if an objet exist in a list of objects
     def check_object_exist(self, object_list):
-        for object in object_list:
+        for index, object in enumerate(object_list):
             if self.check_object_equal(object):
-                return True
-        return False
+                return index
+        return -1
 
 
 class FunctionalUnit:
@@ -96,12 +96,12 @@ class FunctionalUnit:
 
             input_found = 0
             for node in self.input_nodes:
-                if node.check_object_exist(FU.input_nodes):
+                if node.check_object_exist(FU.input_nodes) != 1:
                     input_found += 1
 
             output_found = 0
             for node in self.output_nodes:
-                if node.check_object_exist(FU.output_nodes):
+                if node.check_object_exist(FU.output_nodes) != -1:
                     output_found += 1
 
             if input_found == len(self.input_nodes) and output_found == len(self.output_nodes):
