@@ -24,6 +24,7 @@ def create_adjacency_list(filepath=foon_pkl):
         parameters: path of universal foon (pickle file)
         returns: a map. key = object, value = list of functional units
     """
+    return None
 
 
 def retrieval():
