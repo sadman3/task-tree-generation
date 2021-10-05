@@ -95,6 +95,18 @@ def find_goal_node(dish_type, ingredients):
                     goal_node.container = candidate["container"]
 
     return goal_node
+# -----------------------------------------------------------------------------------------------------------------------------#
+# Given a goal node, this method finds the reference task tree
+# The search uses heuristic (ingredient overlap) to select a FU from candidate FUs.
+
+
+def extract_reference_task_tree(functional_units, object_nodes, object_to_FU_map, goal_node):
+    """
+        parameters: a list of functioal units, a list of object nodes,
+                    object to functional unit mapping, a goal node
+        returns: a task tree that consists some functional units
+    """
+
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -102,7 +114,7 @@ def find_goal_node(dish_type, ingredients):
 # each object has a list of functional list where it is an output
 
 
-def create_adjacency_list(filepath=foon_pkl):
+def read_universal_foon(filepath=foon_pkl):
     """
         parameters: path of universal foon (pickle file)
         returns: a map. key = object, value = list of functional units
@@ -110,26 +122,7 @@ def create_adjacency_list(filepath=foon_pkl):
     pickle_data = pickle.load(open(filepath, 'rb'))
     functional_units = pickle_data["functional_units"]
     object_nodes = pickle_data["object_nodes"]
-
-    # in this map, key = object index in object_nodes,
-    # value = index of all FU where this object is an output
-    object_to_FU_map = {}
-
-    for FU_index, FU in enumerate(functional_units):
-        for output in FU.output_nodes:
-
-            # ignore object that has no state like "knife"
-            if len(output.states) == 0 and len(output.ingredients) == 0 and output.container == None:
-                continue
-
-            object_index = output.check_object_exist(object_nodes)
-            if object_index not in object_to_FU_map:
-                object_to_FU_map[object_index] = []
-            object_to_FU_map[object_index].append(FU_index)
-
-    # object_nodes[key].print()
-    # for FU_id in value:
-    #     functional_units[FU_id].print()
+    object_to_FU_map = pickle_data["object_to_FU_map"]
 
     return functional_units, object_nodes, object_to_FU_map
 # -----------------------------------------------------------------------------------------------------------------------------#
@@ -155,7 +148,9 @@ def retrieval(functional_units, object_nodes, object_to_FU_map):
 if __name__ == "__main__":
 
     # construct the graph
-    functional_units, object_nodes, object_to_FU_map = create_adjacency_list()
+    print('-- Reading universal foon from', foon_pkl)
+    functional_units, object_nodes, object_to_FU_map = read_universal_foon()
 
     # do the retrieval
+    print("-- STARTING RETRIEVAL")
     retrieval(functional_units, object_nodes, object_to_FU_map)

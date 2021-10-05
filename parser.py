@@ -165,6 +165,8 @@ def merge(dir=subgraph_dir):
         object_to_FU_map = {}
 
         # create a mapping between output node to functional units
+        # in this map, key = object index in object_nodes,
+        # value = index of all FU where this object is an output
         for FU_index, FU in enumerate(functional_units):
             for output in FU.output_nodes:
 
