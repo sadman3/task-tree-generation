@@ -11,10 +11,27 @@ config_file = 'config.ini'
 config = ConfigParser()
 config.read(config_file)
 
-
+utensils_path = config['info']['utensils']
 subgraph_dir = config['source']['data_source']
 foon_pkl = config['source']['foon_pkl']
 recipe_category_path = config["info"]["recipe_category"]
+
+# -----------------------------------------------------------------------------------------------------------------------------#
+
+# Create a list of utensils
+
+
+def get_utensils(filepath=utensils_path):
+    """
+        parameters: path of a text file that contains all utensils
+        returns: a list of utensils
+    """
+
+    utensils = []
+    with open(filepath, 'r') as f:
+        for line in f:
+            utensils.append(line.rstrip())
+    return utensils
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -31,6 +48,12 @@ def process_input(filepath):
     recipe_id = input["id"]
     dish_type = input["type"]
     ingredients = input["ingredients"]
+
+    utensils = get_utensils()
+    processed_ingredients = []
+    for ing in ingredients:
+        if ing["object"] not in utensils:
+            processed_ingredients.append(ing)
 
     return recipe_id, dish_type, ingredients
 
