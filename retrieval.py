@@ -15,6 +15,7 @@ utensils_path = config['info']['utensils']
 subgraph_dir = config['source']['data_source']
 foon_pkl = config['source']['foon_pkl']
 recipe_category_path = config["info"]["recipe_category"]
+kitchen_path = config['info']['kitchen']
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -32,6 +33,27 @@ def get_utensils(filepath=utensils_path):
         for line in f:
             utensils.append(line.rstrip())
     return utensils
+
+# -----------------------------------------------------------------------------------------------------------------------------#
+
+# Checks an ingredient exists in kitchen
+
+
+def check_if_exist_in_kitchen(kitchen_items, ingredient):
+    """
+        parameters: a list of all kitchen items,
+                    an ingredient to be searched in the kitchen
+        returns: True if ingredient exists in the kitchen
+    """
+
+    for item in kitchen_items:
+        if item["label"] == ingredient.label \
+                and sorted(item["states"]) == sorted(ingredient.states) \
+                and sorted(item["ingredients"] == sorted(ingredient.ingredients)) \
+                and item["container"] == ingredient.container:
+            return True
+
+    return False
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -107,6 +129,9 @@ def extract_reference_task_tree(functional_units, object_nodes, object_to_FU_map
         returns: a task tree that consists some functional units
     """
 
+    # load the kitchen file
+    kitchen_items = json.load(open(kitchen_path))
+
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -138,6 +163,8 @@ def retrieval(functional_units, object_nodes, object_to_FU_map):
     reference_goal_node = find_goal_node(dish_type, ingredients)
 
     # step 2: find the reference task tree
+    extract_reference_task_tree(
+        functional_units, object_nodes, object_to_FU_map, reference_goal_node)
 
     # step 3: modify the reference task tree
 
