@@ -64,6 +64,14 @@ class Object:
                 return index
         return -1
 
+    def get_object_as_json(self):
+        return {
+            "label": self.label,
+            "states": self.states,
+            "ingredients": self.ingredients,
+            "container": self.container
+        }
+
 
 class FunctionalUnit:
     def __init__(self):

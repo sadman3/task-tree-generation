@@ -355,6 +355,7 @@ S	beaten
 S	in	[frying pan]
 //
 O	frying pan	0
+S	hot
 S	contains	{carrot,corn,egg white and yolk,green pea,sausage,white rice}
 S	on	[stove]
 O	sausage	0
@@ -433,6 +434,7 @@ O	stove	0
 S	on
 S	with	[frying pan]
 O	frying pan	0
+S	hot
 S	contains	{green onion,rice mixture,soy mixture}
 S	on	[stove]
 O	green onion	0

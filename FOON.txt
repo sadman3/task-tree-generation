@@ -1,4 +1,4 @@
-# Date created:	05.10.2021
+# Date created:	06.10.2021
 //
 O	onion
 S	whole
@@ -36384,6 +36384,7 @@ S	beaten
 S	in	[frying pan]
 //
 O	frying pan
+S	hot
 S	contains	{carrot,corn,egg white and yolk,green pea,sausage,white rice}
 S	in	[stove]
 O	sausage
@@ -36462,6 +36463,7 @@ O	stove
 S	on
 S	in	[frying pan]
 O	frying pan
+S	hot
 S	contains	{green onion,rice mixture,soy mixture}
 S	in	[stove]
 O	green onion

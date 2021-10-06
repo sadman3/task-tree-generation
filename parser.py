@@ -20,7 +20,6 @@ foon_pkl = config['source']['foon_pkl']
 dish_type_path = config["info"]["dish_type"]
 recipe_category_path = config["info"]["recipe_category"]
 create_foon_txt = config["flag"]["create_foon_txt"]
-create_foon_pkl = config["flag"]["create_foon_pkl"]
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 
@@ -151,43 +150,42 @@ def merge(dir=subgraph_dir):
 
     # save universal foon in a pickle file
     object_nodes = []
-    if create_foon_pkl:
-        for FU in functional_units:
-            for input in FU.input_nodes:
-                # avoid adding duplicate objects
-                if input.check_object_exist(object_nodes) == -1:
-                    object_nodes.append(input)
+    for FU in functional_units:
+        for input in FU.input_nodes:
+            # avoid adding duplicate objects
+            if input.check_object_exist(object_nodes) == -1:
+                object_nodes.append(input)
 
-            for output in FU.output_nodes:
-                if output.check_object_exist(object_nodes) == -1:
-                    object_nodes.append(output)
+        for output in FU.output_nodes:
+            if output.check_object_exist(object_nodes) == -1:
+                object_nodes.append(output)
 
-        object_to_FU_map = {}
+    object_to_FU_map = {}
 
-        # create a mapping between output node to functional units
-        # in this map, key = object index in object_nodes,
-        # value = index of all FU where this object is an output
-        for FU_index, FU in enumerate(functional_units):
-            for output in FU.output_nodes:
+    # create a mapping between output node to functional units
+    # in this map, key = object index in object_nodes,
+    # value = index of all FU where this object is an output
+    for FU_index, FU in enumerate(functional_units):
+        for output in FU.output_nodes:
 
-                # ignore object that has no state like "knife"
-                if len(output.states) == 0 and len(output.ingredients) == 0 and output.container == None:
-                    continue
+            # ignore object that has no state like "knife"
+            if len(output.states) == 0 and len(output.ingredients) == 0 and output.container == None:
+                continue
 
-                object_index = output.check_object_exist(object_nodes)
-                if object_index not in object_to_FU_map:
-                    object_to_FU_map[object_index] = []
-                object_to_FU_map[object_index].append(FU_index)
+            object_index = output.check_object_exist(object_nodes)
+            if object_index not in object_to_FU_map:
+                object_to_FU_map[object_index] = []
+            object_to_FU_map[object_index].append(FU_index)
 
-        F = open(foon_pkl, "wb")
-        pickle_data = {
-            "functional_units": functional_units,
-            "object_nodes": object_nodes,
-            "object_to_FU_map": object_to_FU_map
-        }
-        pickle.dump(pickle_data, F)
-        F.close()
-        print('-- universal foon saved to', foon_pkl)
+    F = open(foon_pkl, "wb")
+    pickle_data = {
+        "functional_units": functional_units,
+        "object_nodes": object_nodes,
+        "object_to_FU_map": object_to_FU_map
+    }
+    pickle.dump(pickle_data, F)
+    F.close()
+    print('-- universal foon saved to', foon_pkl)
 
     print('-- total functional unit:', len(functional_units))
     # create recipe classification
