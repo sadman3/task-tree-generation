@@ -428,7 +428,7 @@ S	off
 O	pizza pan	1
 S	contains	{pizza}
 S	in	[oven]
-O	pizza	0
+O	cheese pizza	0
 S	baked
 S	contains	{flour,olive oil,salt,water,sugar,yeast,marinara,mozzarella}
 S	in	[pizza pan]

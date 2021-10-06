@@ -231,7 +231,6 @@ O	grill	0
 S	on
 S	contains	{grill spatula}
 O	grill spatula	0
-S	on	[grill]
 S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
 O	cheese	0
 S	mixed
@@ -299,7 +298,6 @@ S	sheet
 S	contains	{bread}
 //
 O	grill spatula	0
-S	on	[grill]
 S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
 O	cheese	0
 S	melted

@@ -944,20 +944,6 @@
         "container": "bow"
     },
     {
-        "label": "eggs and bacon pizza",
-        "states": [],
-        "ingredients": [
-            "sour cream",
-            "sea salt",
-            "pepper",
-            "onion",
-            "bacon",
-            "egg white and yolk",
-            "parsley"
-        ],
-        "container": "parchment paper"
-    },
-    {
         "label": "bottle",
         "states": [],
         "ingredients": [
@@ -1228,22 +1214,6 @@
         ],
         "ingredients": [],
         "container": "jar"
-    },
-    {
-        "label": "pudding",
-        "states": [
-            "mixed",
-            "liquid",
-            "thick liquid"
-        ],
-        "ingredients": [
-            "condensed milk",
-            "cream cheese",
-            "milk",
-            "pudding mix",
-            "vanilla extract"
-        ],
-        "container": "mixing bowl"
     },
     {
         "label": "banana",
@@ -2251,22 +2221,6 @@
         "container": null
     },
     {
-        "label": "cake batter",
-        "states": [],
-        "ingredients": [
-            "egg mixture",
-            "flour",
-            "baking powder",
-            "cinammon",
-            "vanilla extract",
-            "salt",
-            "apple",
-            "lemon zest",
-            "lemon juice"
-        ],
-        "container": "baking tray"
-    },
-    {
         "label": "bread",
         "states": [
             "sliced"
@@ -3141,24 +3095,6 @@
         "container": "packet"
     },
     {
-        "label": "muffin batter",
-        "states": [],
-        "ingredients": [
-            "sugar",
-            "butter",
-            "egg white and yolk",
-            "sour cream",
-            "milk",
-            "lemon extract",
-            "flour",
-            "baking powder",
-            "baking soda",
-            "salt",
-            "blueberry"
-        ],
-        "container": null
-    },
-    {
         "label": "spray can",
         "states": [],
         "ingredients": [
@@ -3238,38 +3174,6 @@
         ],
         "ingredients": [],
         "container": "plate"
-    },
-    {
-        "label": "chicken",
-        "states": [
-            "raw"
-        ],
-        "ingredients": [
-            "olive oil",
-            "garlic",
-            "basil",
-            "black pepper",
-            "breadcrumb",
-            "parmesan"
-        ],
-        "container": "bowl"
-    },
-    {
-        "label": "garlic-parmesan chicken",
-        "states": [
-            "baked"
-        ],
-        "ingredients": [
-            "chicken",
-            "vegetable oil",
-            "olive oil",
-            "garlic",
-            "basil",
-            "black pepper",
-            "breadcrumb",
-            "parmesan"
-        ],
-        "container": "baking tray"
     },
     {
         "label": "carrot",
@@ -3559,23 +3463,6 @@
         "container": "oven"
     },
     {
-        "label": "pizza",
-        "states": [
-            "baked"
-        ],
-        "ingredients": [
-            "flour",
-            "olive oil",
-            "salt",
-            "water",
-            "sugar",
-            "yeast",
-            "marinara",
-            "mozzarella"
-        ],
-        "container": "pizza pan"
-    },
-    {
         "label": "noodle",
         "states": [
             "uncooked"
@@ -3720,22 +3607,6 @@
         "states": [],
         "ingredients": [],
         "container": null
-    },
-    {
-        "label": "bowl",
-        "states": [],
-        "ingredients": [
-            "brown sugar"
-        ],
-        "container": null
-    },
-    {
-        "label": "brown sugar",
-        "states": [
-            "granulated"
-        ],
-        "ingredients": [],
-        "container": "bowl"
     },
     {
         "label": "bottle",
@@ -4813,21 +4684,6 @@
         "container": null
     },
     {
-        "label": "french toast",
-        "states": [
-            "cooked"
-        ],
-        "ingredients": [
-            "bread",
-            "egg mixture",
-            "egg",
-            "milk",
-            "butter",
-            "maple syrup"
-        ],
-        "container": "plate"
-    },
-    {
         "label": "lime",
         "states": [
             "whole"
@@ -5790,18 +5646,6 @@
         "container": "spray bottle"
     },
     {
-        "label": "grill spatula",
-        "states": [],
-        "ingredients": [
-            "black pepper",
-            "cheddar",
-            "gruyere",
-            "mustard",
-            "paprika"
-        ],
-        "container": "grill"
-    },
-    {
         "label": "surface",
         "states": [
             "empty"
@@ -6500,20 +6344,6 @@
         "container": "plate"
     },
     {
-        "label": "quesadilla",
-        "states": [
-            "cooked"
-        ],
-        "ingredients": [
-            "cheese",
-            "chicken",
-            "olive oil",
-            "taco seasoning",
-            "tortilla"
-        ],
-        "container": "cutting board"
-    },
-    {
         "label": "corn",
         "states": [
             "whole"
@@ -6657,20 +6487,6 @@
         "states": [],
         "ingredients": [],
         "container": "bowl"
-    },
-    {
-        "label": "filling",
-        "states": [],
-        "ingredients": [
-            "butter",
-            "apple",
-            "salt",
-            "sugar",
-            "brown sugar",
-            "cinnamon",
-            "water"
-        ],
-        "container": "cooking pan"
     },
     {
         "label": "apple pie",
@@ -7293,16 +7109,5 @@
             "white rice"
         ],
         "container": null
-    },
-    {
-        "label": "frying pan",
-        "states": [
-            "hot"
-        ],
-        "ingredients": [
-            "rice mixture",
-            "soy mixture"
-        ],
-        "container": "stove"
     }
 ]

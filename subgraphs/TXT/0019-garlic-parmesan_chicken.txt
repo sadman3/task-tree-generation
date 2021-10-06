@@ -232,7 +232,7 @@ S	in	[bowl]
 M	coat	<1:18-1:26>
 O	chicken	1
 S	raw
-S	contains	{olive oil,garlic,basil,black pepper,parmesan}
+S	contains	{olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
 S	in	[bowl]
 O	breadcrumb	0
 S	mixed
@@ -292,7 +292,7 @@ S	baked
 S	on	[baking tray]
 O	garlic-parmesan chicken	1
 S	baked
-S	contains	{chicken,egetable oil,olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
+S	contains	{chicken,vegetable oil,olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
 S	on	[baking tray]
 //
 O	oven	0

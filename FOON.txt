@@ -3733,7 +3733,7 @@ S	chopped
 S	in	[bow]
 M	sprinkle
 O	eggs and bacon pizza
-S	contains	{parsley}
+S	contains	{sour cream,sea salt,pepper,onion,bacon,egg white and yolk,parsley}
 S	in	[parchment paper]
 //
 O	eggs and bacon pizza
@@ -5020,7 +5020,6 @@ O	mixing bowl
 S	contains	{pudding,whipped cream}
 O	pudding
 S	mixed
-S	liquid
 S	thick liquid
 S	contains	{condensed milk,cream cheese,milk,pudding mix,vanilla extract}
 S	in	[mixing bowl]
@@ -9244,7 +9243,7 @@ S	contains	{cake batter}
 S	in	[sheet]
 O	cake batter
 S	contains	{egg mixture,flour,baking powder,cinammon,vanilla extract,salt,apple,lemon zest,lemon juice}
-S	in	[pbaking trayan]
+S	in	[baking tray]
 O	bowl
 //
 O	baking tray
@@ -13450,6 +13449,7 @@ O	muffin pan
 S	contains	{muffin batter}
 O	muffin batter
 S	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt,blueberry}
+S	in	[muffin pan]
 O	oven
 S	on
 M	put inside
@@ -13695,7 +13695,7 @@ S	in	[bowl]
 M	coat
 O	chicken
 S	raw
-S	contains	{olive oil,garlic,basil,black pepper,parmesan}
+S	contains	{olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
 S	in	[bowl]
 O	breadcrumb
 S	mixed
@@ -13755,7 +13755,7 @@ S	baked
 S	in	[baking tray]
 O	garlic-parmesan chicken
 S	baked
-S	contains	{chicken,egetable oil,olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
+S	contains	{chicken,vegetable oil,olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
 S	in	[baking tray]
 //
 O	oven
@@ -15296,7 +15296,7 @@ S	contains	{pizza pan}
 O	pizza pan
 S	contains	{pizza}
 S	in	[oven]
-O	pizza
+O	cheese pizza
 S	baked
 S	contains	{flour,olive oil,salt,water,sugar,yeast,marinara,mozzarella}
 S	in	[pizza pan]
@@ -15955,17 +15955,17 @@ S	in	[bowl]
 O	bowl
 S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract}
 O	bowl
-S	contains	{brown sugar}
-O	brown sugar
+S	contains	{sugar}
+O	sugar
 S	granulated
 S	in	[bowl]
 M	pour
 O	bowl
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar}
 O	bowl
 //
 O	bowl
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar}
 O	bowl
 S	contains	{sugar}
 O	sugar
@@ -15973,11 +15973,11 @@ S	granulated
 S	in	[bowl]
 M	pour
 O	bowl
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar}
 O	bowl
 //
 O	bowl
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar}
 O	butter
 S	melted
 S	in	[mug]
@@ -15989,7 +15989,7 @@ O	sour cream
 S	in	[bowl]
 O	vanilla extract
 S	in	[bowl]
-O	brown sugar
+O	sugar
 S	granulated
 S	in	[bowl]
 O	sugar
@@ -15998,26 +15998,26 @@ S	in	[bowl]
 O	whisk
 M	beat
 O	bowl
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar}
 O	whisk
 //
 O	bowl
 S	contains	{flour,baking powder,cinnamon,salt}
 O	bowl
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar}
 M	pour
 O	bowl
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar,flour,baking powder,cinnamon,salt}
 O	bowl
 //
 O	bowl
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar,flour,baking powder,cinnamon,salt}
 O	whisk
 M	mix
 O	bowl
 S	contains	{muffin batter}
 O	muffin batter
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar,flour,baking powder,cinnamon,salt}
 S	in	[bowl]
 O	whisk
 //
@@ -16038,7 +16038,7 @@ O	spatula
 O	bowl
 S	contains	{muffin batter,chocolate chip}
 O	muffin batter
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar,flour,baking powder,cinnamon,salt}
 S	in	[bowl]
 O	chocolate chip
 S	contains	{flour}
@@ -16047,7 +16047,7 @@ M	fold
 O	bowl
 S	contains	{muffin batter,chocolate chip}
 O	muffin batter
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
 S	in	[bowl]
 //
 O	muffin pan
@@ -16063,14 +16063,14 @@ S	in	[muffin pan]
 O	bowl
 S	contains	{muffin batter,chocolate chip}
 O	muffin batter
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
 S	in	[bowl]
 O	muffin pan
 S	in	[muffin cup]
 O	scoop
 M	scoop and pour
 O	muffin batter
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
 S	in	[muffin pan]
 O	muffin pan
 S	contains	{muffin batter}
@@ -16091,7 +16091,7 @@ S	in	[pan]
 O	muffin pan
 S	contains	{muffin batter}
 O	muffin batter
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
 S	in	[muffin pan]
 O	oven
 S	on
@@ -16102,7 +16102,7 @@ S	contains	{chocolate chip muffin}
 S	in	[oven]
 O	chocolate chip muffin
 S	baked
-S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,brown sugar,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
+S	contains	{butter,milk,egg white and yolk,sour cream,vanilla extract,sugar,flour,baking powder,cinnamon,salt,chocolate chip}
 S	in	[muffin pan]
 //
 O	stove
@@ -21662,7 +21662,7 @@ O	maple syrup
 S	in	[bowl]
 M	pour*
 O	french toast
-S	contains	{bread,egg mixture,egg,butter,maple syrup}
+S	contains	{bread,egg mixture,egg,milk,butter,maple syrup}
 S	in	[plate]
 //
 O	cutting board
@@ -21703,7 +21703,6 @@ S	in	[bowl]
 O	plate
 S	contains	{french toast}
 O	french toast
-S	cooked
 S	contains	{bread,egg mixture,egg,milk,butter,maple syrup}
 S	in	[plate]
 O	bowl
@@ -26448,7 +26447,6 @@ S	on
 S	contains	{grill spatula}
 O	grill spatula
 S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
-S	in	[grill]
 O	cheese
 S	mixed
 S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
@@ -26516,7 +26514,6 @@ S	contains	{bread}
 //
 O	grill spatula
 S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
-S	in	[grill]
 O	cheese
 S	melted
 S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
@@ -26997,7 +26994,7 @@ O	bowl
 S	contains	{garlic powder}
 M	pour
 O	container
-S	contains	{garlic powder,salt,garlic powder,}
+S	contains	{garlic powder,salt,garlic powder}
 O	salt
 S	granulated
 S	in	[container]
@@ -27005,12 +27002,12 @@ O	garlic powder
 S	in	[container]
 //
 O	container
-S	contains	{garlic powder,salt,garlic powder,}
+S	contains	{garlic powder,salt,garlic powder}
 O	spoon
 S	contains	{butter}
 M	mix
 O	container
-S	contains	{garlic powder,salt,garlic powder,}
+S	contains	{garlic powder,salt,garlic powder}
 //
 O	container
 S	contains	{olive oil}
@@ -27024,7 +27021,7 @@ O	olive oil
 S	in	[spoon]
 //
 O	container
-S	contains	{garlic powder,salt,garlic powder,}
+S	contains	{garlic powder,salt,garlic powder}
 O	olive oil
 S	in	[spoon]
 M	pour
@@ -30708,7 +30705,7 @@ S	in	[cutting board]
 //
 O	quesadilla
 S	cooked
-S	contains	{cheese,chicken,olive oil,taco seasoning,tortilla}
+S	contains	{vegetable oil,cheese,chicken,salt,black pepper,chili powder,garlic powder,onion powder,oregano,paprika}
 S	in	[cutting board]
 O	knife
 M	cut
@@ -31881,8 +31878,8 @@ S	white
 S	granulated
 S	in	[bowl]
 O	bowl
-S	contains	{brown sugar}
-O	brown sugar
+S	contains	{sugar}
+O	sugar
 S	granulated
 S	in	[bowl]
 O	cooking pan
@@ -31890,23 +31887,23 @@ S	contains	{butter,apple,salt}
 S	in	[stove]
 M	pour
 O	cooking pan
-S	contains	{butter,apple,salt,sugar,brown sugar}
+S	contains	{butter,apple,salt,sugar,sugar}
 S	in	[stove]
 O	sugar
 S	white
 S	granulated
 S	in	[cooking pan]
-O	brown sugar
+O	sugar
 S	granulated
 S	in	[cooking pan]
 //
 O	cooking pan
-S	contains	{butter,apple,salt,sugar,brown sugar}
+S	contains	{butter,apple,salt,sugar,sugar}
 S	in	[stove]
 O	spatula
 M	stir
 O	cooking pan
-S	contains	{butter,apple,salt,sugar,brown sugar}
+S	contains	{butter,apple,salt,sugar,sugar}
 S	in	[stove]
 //
 O	bowl
@@ -31914,17 +31911,17 @@ S	contains	{cinnamon}
 O	cinnamon
 S	in	[bowl]
 O	cooking pan
-S	contains	{butter,apple,salt,sugar,brown sugar}
+S	contains	{butter,apple,salt,sugar,sugar}
 S	in	[stove]
 M	pour and stir
 O	cooking pan
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon}
 S	in	[stove]
 O	cinnamon
 S	in	[cooking pan]
 //
 O	cooking pan
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon}
 S	in	[stove]
 O	bowl
 S	contains	{water}
@@ -31935,8 +31932,7 @@ O	cooking pan
 S	contains	{filling}
 S	in	[stove]
 O	filling
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
-O	water
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water}
 S	in	[cooking pan]
 //
 O	plate
@@ -31945,13 +31941,13 @@ O	cooking pan
 S	contains	{filling}
 S	in	[stove]
 O	filling
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water}
 S	in	[cooking pan]
 M	pour
 O	plate
 S	contains	{filling}
 O	filling
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water}
 S	in	[plate]
 O	cooking pan
 //
@@ -31995,13 +31991,13 @@ S	empty
 O	plate
 S	contains	{filling}
 O	filling
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water}
 S	in	[plate]
 M	scoop
 O	spoon
 S	contains	{filling}
 O	filling
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water}
 S	in	[spoon]
 //
 O	table
@@ -32012,7 +32008,7 @@ S	in	[table]
 O	spoon
 S	contains	{filling}
 O	filling
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water}
 S	in	[spoon]
 M	pour
 O	dough
@@ -32237,7 +32233,7 @@ O	plate
 S	contains	{apple pie}
 O	apple pie
 S	cooked
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water,dough,egg wash}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water,dough,egg wash}
 S	in	[plate]
 //
 O	bowl
@@ -36442,7 +36438,7 @@ S	in	[frying pan]
 //
 O	frying pan
 S	hot
-S	contains	{rice mixture,soy mixture}
+S	contains	{fried rice,sauce}
 S	in	[stove]
 O	cutting board
 S	contains	{green onion}
@@ -36453,7 +36449,7 @@ M	pick-and-place
 O	cutting board
 O	frying pan
 S	hot
-S	contains	{green onion,rice mixture,soy mixture}
+S	contains	{green onion,fried rice,sauce}
 S	in	[stove]
 O	green onion
 S	chopped
@@ -36464,7 +36460,7 @@ S	on
 S	in	[frying pan]
 O	frying pan
 S	hot
-S	contains	{green onion,rice mixture,soy mixture}
+S	contains	{green onion,fried rice,sauce}
 S	in	[stove]
 O	green onion
 S	chopped

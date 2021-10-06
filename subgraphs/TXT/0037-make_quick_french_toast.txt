@@ -203,7 +203,7 @@ S	in	[bowl]
 M	pour*	3:08	3:13
 O	french toast	1
 S	on	[plate]
-S	contains	{bread,egg mixture,egg,butter,maple syrup}
+S	contains	{bread,egg mixture,egg,milk,butter,maple syrup}
 //
 O	cutting board	0
 S	empty
@@ -243,7 +243,6 @@ S	in	[bowl]
 O	plate	0
 S	contains	{french toast}
 O	french toast	1
-S	cooked
 S	on	[plate]
 S	contains	{bread,egg mixture,egg,milk,butter,maple syrup}
 O	bowl	1

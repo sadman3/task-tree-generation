@@ -261,6 +261,7 @@ O	muffin pan	1
 S	contains	{muffin batter}
 O	muffin batter	1
 S	contains	{sugar,butter,egg white and yolk,sour cream,milk,lemon extract,flour,baking powder,baking soda,salt,blueberry}
+S	in	[muffin pan]
 O	oven	0
 S	on
 M	put inside	Assumed	Assumed

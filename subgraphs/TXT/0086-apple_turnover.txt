@@ -240,8 +240,8 @@ S	white
 S	granulated
 S	in	[bowl]
 O	bowl	1
-S	contains	{brown sugar}
-O	brown sugar	1
+S	contains	{sugar}
+O	sugar	1
 S	granulated
 S	in	[bowl]
 O	cooking pan	0
@@ -249,23 +249,23 @@ S	contains	{butter,apple,salt}
 S	on	[stove]
 M	pour	1:36	1:40
 O	cooking pan	0
-S	contains	{butter,apple,salt,sugar,brown sugar}
+S	contains	{butter,apple,salt,sugar,sugar}
 S	on	[stove]
 O	sugar	1
 S	white
 S	granulated
 S	in	[cooking pan]
-O	brown sugar	1
+O	sugar	1
 S	granulated
 S	in	[cooking pan]
 //
 O	cooking pan	0
-S	contains	{butter,apple,salt,sugar,brown sugar}
+S	contains	{butter,apple,salt,sugar,sugar}
 S	on	[stove]
 O	spatula	1
 M	stir	1:41	2:00
 O	cooking pan	0
-S	contains	{butter,apple,salt,sugar,brown sugar}
+S	contains	{butter,apple,salt,sugar,sugar}
 S	on	[stove]
 //
 O	bowl	1
@@ -273,17 +273,17 @@ S	contains	{cinnamon}
 O	cinnamon	1
 S	in	[bowl]
 O	cooking pan	0
-S	contains	{butter,apple,salt,sugar,brown sugar}
+S	contains	{butter,apple,salt,sugar,sugar}
 S	on	[stove]
 M	pour and stir	2:01	2:14
 O	cooking pan	0
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon}
 S	on	[stove]
 O	cinnamon	1
 S	in	[cooking pan]
 //
 O	cooking pan	0
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon}
 S	on	[stove]
 O	bowl	1
 S	contains	{water}
@@ -294,8 +294,7 @@ O	cooking pan	0
 S	contains	{filling}
 S	on	[stove]
 O	filling	0
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
-O	water	1
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water}
 S	in	[cooking pan]
 //
 O	plate	0
@@ -304,13 +303,13 @@ O	cooking pan	1
 S	contains	{filling}
 S	on	[stove]
 O	filling	1
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water}
 S	in	[cooking pan]
 M	pour	2:37	2:28
 O	plate	0
 S	contains	{filling}
 O	filling	1
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water}
 S	in	[plate]
 O	cooking pan	1
 //
@@ -365,13 +364,13 @@ S	empty
 O	plate	0
 S	contains	{filling}
 O	filling	1
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water}
 S	in	[plate]
 M	scoop	Assumed	Assumed
 O	spoon	1
 S	contains	{filling}
 O	filling	1
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water}
 S	on	[spoon]
 //
 O	table	0
@@ -382,7 +381,7 @@ S	on	[table]
 O	spoon	1
 S	contains	{filling}
 O	filling	1
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water}
 S	on	[spoon]
 M	pour	3:17	3:21
 O	dough	0
@@ -390,7 +389,7 @@ S	flattened
 S	contains	{filling}
 S	on	[table]
 O	filling	1
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water}
 S	on	{dough}
 //
 O	dough	1
@@ -621,6 +620,6 @@ O	plate	0
 S	contains	{apple pie}
 O	apple pie	0	6
 S	cooked
-S	contains	{butter,apple,salt,sugar,brown sugar,cinnamon,water,dough,egg wash}
+S	contains	{butter,apple,salt,sugar,sugar,cinnamon,water,dough,egg wash}
 S	on	[plate]
 //

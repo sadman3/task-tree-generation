@@ -444,7 +444,7 @@ O	bowl	1
 S	contains	{garlic powder}
 M	pour	2:20	2:23
 O	container	1
-S	contains	{garlic powder,salt,garlic powder,}
+S	contains	{garlic powder,salt,garlic powder}
 O	salt	1
 S	granulated
 S	in	[container]
@@ -452,12 +452,12 @@ O	garlic powder	1
 S	in	[container]
 //
 O	container	0
-S	contains	{garlic powder,salt,garlic powder,}
+S	contains	{garlic powder,salt,garlic powder}
 O	spoon	1
 S	contains	{butter}
 M	mix	2:25	2:34
 O	container	0
-S	contains	{garlic powder,salt,garlic powder,}
+S	contains	{garlic powder,salt,garlic powder}
 //
 O	container	1
 S	contains	{olive oil}
@@ -471,7 +471,7 @@ O	olive oil	1
 S	in	[spoon]
 //
 O	container	0
-S	contains	{garlic powder,salt,garlic powder,}
+S	contains	{garlic powder,salt,garlic powder}
 O	olive oil	1
 S	in	[spoon]
 M	pour	2:36	2:38

@@ -413,7 +413,7 @@ S	contains	{soy sauce,sugar,water}
 //
 O	frying pan	0
 S	hot
-S	contains	{rice mixture,soy mixture}
+S	contains	{fried rice,sauce}
 S	on	[stove]
 O	cutting board	0
 S	contains	{green onion}
@@ -424,7 +424,7 @@ M	pick-and-place	<Assumed>
 O	cutting board	0
 O	frying pan	0
 S	hot
-S	contains	{green onion,rice mixture,soy mixture}
+S	contains	{green onion,fried rice,sauce}
 S	on	[stove]
 O	green onion	1
 S	chopped
@@ -435,7 +435,7 @@ S	on
 S	with	[frying pan]
 O	frying pan	0
 S	hot
-S	contains	{green onion,rice mixture,soy mixture}
+S	contains	{green onion,fried rice,sauce}
 S	on	[stove]
 O	green onion	0
 S	chopped
