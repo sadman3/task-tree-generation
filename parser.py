@@ -130,13 +130,16 @@ def merge(dir=subgraph_dir):
         creates: a merged version of all subgraphs (universal FOON)
     """
     functional_units = []
+    fu_id = 0
     for subgraph in os.listdir(dir):
         filepath = os.path.join(dir, subgraph)
         FU_list = get_FU_list(filepath)
         for FU in FU_list:
             # checking duplicate functional unit
             if not FU.check_if_FU_exist(functional_units):
+                FU.id = fu_id  # set the id according to its index
                 functional_units.append(FU)
+                fu_id += 1
 
     # save universal foon in a text file
     if create_foon_txt:
@@ -151,15 +154,30 @@ def merge(dir=subgraph_dir):
 
     # save universal foon in a pickle file
     object_nodes = []
+    object_id = 0
     for FU in functional_units:
-        for input in FU.input_nodes:
+        for _input in FU.input_nodes:
             # avoid adding duplicate objects
-            if input.check_object_exist(object_nodes) == -1:
-                object_nodes.append(input)
+            existing_object_id = _input.check_object_exist(object_nodes)
 
-        for output in FU.output_nodes:
-            if output.check_object_exist(object_nodes) == -1:
-                object_nodes.append(output)
+            # if the object exists, assign the existing object id
+            # if it does not, give it a new id
+            if existing_object_id == -1:  # object is not found
+                _input.id = object_id
+                object_nodes.append(_input)
+                object_id += 1
+            else:
+                _input.id = existing_object_id
+
+        for _output in FU.output_nodes:
+            existing_object_id = _output.check_object_exist(object_nodes)
+
+            if existing_object_id == -1:  # object is not found
+                _output.id = object_id
+                object_nodes.append(_output)
+                object_id += 1
+            else:
+                _output.id = existing_object_id
 
     object_to_FU_map = {}
 
@@ -167,13 +185,13 @@ def merge(dir=subgraph_dir):
     # in this map, key = object index in object_nodes,
     # value = index of all FU where this object is an output
     for FU_index, FU in enumerate(functional_units):
-        for output in FU.output_nodes:
+        for _output in FU.output_nodes:
 
             # ignore object that has no state like "knife"
-            if len(output.states) == 0 and len(output.ingredients) == 0 and output.container == None:
+            if len(_output.states) == 0 and len(_output.ingredients) == 0 and _output.container == None:
                 continue
 
-            object_index = output.check_object_exist(object_nodes)
+            object_index = _output.id
             if object_index not in object_to_FU_map:
                 object_to_FU_map[object_index] = []
             object_to_FU_map[object_index].append(FU_index)
@@ -192,6 +210,7 @@ def merge(dir=subgraph_dir):
     # create recipe classification
     create_recipe_classification(functional_units)
     print('-- recipe classification created in', recipe_category_path)
+
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -215,7 +234,8 @@ def create_recipe_classification(functional_units):
                     "label": node.label,
                     "states": node.states,
                     "ingredients": node.ingredients,
-                    "container": node.container
+                    "container": node.container,
+                    "id": node.id
                 }
                 recipe_categories[categories[category_id]].append(goal_node)
 
@@ -234,9 +254,21 @@ def prepare_kitchen(foon_path=foon_pkl, kitchen_path=kitchen_path):
     object_nodes = pickle_data["object_nodes"]
     object_to_FU_map = pickle_data["object_to_FU_map"]
 
+    default_starting_states = ['off', 'clean', 'empty', 'whole']
+
     start_nodes = []
     # check which object does not have any FU mapping
-    for object_index, object in enumerate(object_nodes):
+    for object in object_nodes:
+        object_index = object.id
+        # if object state is in default_starting_states
+        if len(object.states) == 1:
+            state = object.states[0]
+            if state in default_starting_states:
+                object_json = object.get_object_as_json()
+                start_nodes.append(object_json)
+                continue
+
+        # if object is not a part of output in any fu
         if object_index not in object_to_FU_map:
             object_json = object.get_object_as_json()
             start_nodes.append(object_json)

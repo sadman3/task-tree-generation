@@ -20,6 +20,7 @@ class Object:
         self.container = None
         self.object_in_motion = 0
         self.recipe_category = -1  # -1, if not a goal node, else it will have a category id
+        self.id = None  # id = index of this object in the object list
 
     def get_ingredients_as_text(self):
         ingredients_list = self.ingredients
@@ -62,6 +63,7 @@ class Object:
         for index, object in enumerate(object_list):
             if self.check_object_equal(object):
                 return index
+
         return -1
 
     def get_object_as_json(self):
@@ -79,6 +81,7 @@ class FunctionalUnit:
         self.input_nodes = []
         self.output_nodes = []
         self.motion_node = None
+        self.id = None  # id = index of this FU in the functional unit list
     # enddef
 
     def get_FU_as_text(self):
@@ -104,7 +107,7 @@ class FunctionalUnit:
 
             input_found = 0
             for node in self.input_nodes:
-                if node.check_object_exist(FU.input_nodes) != 1:
+                if node.check_object_exist(FU.input_nodes) != -1:
                     input_found += 1
 
             output_found = 0

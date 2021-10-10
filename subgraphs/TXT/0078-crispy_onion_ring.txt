@@ -33,14 +33,6 @@ S	contains	{wheat flour,baking powder,salt}
 //
 O	bowl	0
 S	contains	{wheat flour,baking powder,salt}
-O	whisk	1
-M	mix	0:35	0:37
-O	bowl	0
-S	contains	{wheat flour,baking powder,salt}
-O	whisk	1
-//
-O	bowl	0
-S	contains	{wheat flour,baking powder,salt}
 O	onion	1
 S	ring shaped
 M	mix	0:38	0:44

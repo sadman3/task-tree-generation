@@ -3,7 +3,6 @@ import json
 from configparser import ConfigParser
 from FOON_class import FunctionalUnit, Object
 
-
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 # load the config file
@@ -49,7 +48,7 @@ def check_if_exist_in_kitchen(kitchen_items, ingredient):
     for item in kitchen_items:
         if item["label"] == ingredient.label \
                 and sorted(item["states"]) == sorted(ingredient.states) \
-                and sorted(item["ingredients"] == sorted(ingredient.ingredients)) \
+                and sorted(item["ingredients"]) == sorted(ingredient.ingredients) \
                 and item["container"] == ingredient.container:
             return True
 
@@ -58,7 +57,36 @@ def check_if_exist_in_kitchen(kitchen_items, ingredient):
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 
+# select a candidate that has best overlap with input ingredients
+
+
+def select_best_candidate(input_ingredinets, candidates):
+    """
+        parameters: input ingredient: a list of objects,
+                    a list of indices candidate functional units
+        returns: returns the id of the best candidate unit
+    """
+    candidate_FU = []
+    for i in candidates:
+        FU = functional_units[i]
+        candidate_FU.append(FU)
+
+    # sort the candidate FUs based on the number of input objects
+    # https://stackoverflow.com/questions/403421/how-to-sort-a-list-of-objects-based-on-an-attribute-of-the-objects
+    candidate_FU.sort(key=lambda x: len(x.input_nodes))
+
+    # if len(candidate_FU) > 2:
+    #     for fu in candidate_FU:
+    #         fu.print()
+    #     input()
+
+    return candidate_FU[0].id
+# -----------------------------------------------------------------------------------------------------------------------------#
+
+
 # Extracts the dish type and ingredient list given input file path
+
+
 def process_input(filepath):
     """
         parameters: path of input json file
@@ -115,22 +143,72 @@ def find_goal_node(dish_type, ingredients):
                     goal_node.states = candidate["states"]
                     goal_node.ingredients = candidate["ingredients"]
                     goal_node.container = candidate["container"]
-
+                    goal_node.id = candidate["id"]
     return goal_node
+
+
 # -----------------------------------------------------------------------------------------------------------------------------#
 # Given a goal node, this method finds the reference task tree
 # The search uses heuristic (ingredient overlap) to select a FU from candidate FUs.
 
 
-def extract_reference_task_tree(functional_units, object_nodes, object_to_FU_map, goal_node):
+def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_FU_map={},
+                                kitchen_items=[], input_ingredients=[], goal_node=None):
     """
         parameters: a list of functioal units, a list of object nodes,
-                    object to functional unit mapping, a goal node
+                    object to functional unit mapping, list of kitchen items,
+                    a goal node
+
+                    object_to_FU_map {
+                        key = object index
+                        value = list of index of functional units
+                    }
+
+                    function
         returns: a task tree that consists some functional units
     """
 
-    # load the kitchen file
-    kitchen_items = json.load(open(kitchen_path))
+    # list of indices of functional units
+    reference_task_tree = []
+
+    # list of object indices that need to be searched
+    items_to_search = []
+
+    # find the index of the goal node in object node list
+    items_to_search.append(goal_node.id)
+
+    while len(items_to_search) > 0:
+        current_item_index = items_to_search.pop(0)  # pop the first element
+
+        current_item = object_nodes[current_item_index]
+
+        if not check_if_exist_in_kitchen(kitchen_items, current_item):
+            candidate_units = object_to_FU_map[current_item_index]
+
+            best_candidate_idx = select_best_candidate(
+                input_ingredients, candidate_units)
+
+            # if an fu is already taken, do not process it again
+            if best_candidate_idx in reference_task_tree:
+                continue
+
+            # functional_units[best_candidate_idx].print()
+            # input()
+
+            reference_task_tree.append(best_candidate_idx)
+
+            # all input of the selected FU need to be explored
+            for node in functional_units[best_candidate_idx].input_nodes:
+                node_idx = node.id
+                if node_idx not in items_to_search:
+                    items_to_search.append(node_idx)
+
+    # reverse the task tree
+    reference_task_tree.reverse()
+
+    for id in reference_task_tree:
+        functional_units[id].print()
+    return reference_task_tree
 
 
 # -----------------------------------------------------------------------------------------------------------------------------#
@@ -154,17 +232,22 @@ def read_universal_foon(filepath=foon_pkl):
 # this method creates the task using three major steps mentioned in the paper
 
 
-def retrieval(functional_units, object_nodes, object_to_FU_map):
+def retrieval(functional_units, object_nodes, object_to_FU_map, kitchen_items):
 
     input_file = '/Users/sadman/repository/task-tree-generation/input/00d23f6efb.json'
     recipe_id, dish_type, ingredients = process_input(input_file)
 
     # step 1: find the reference goal node
     reference_goal_node = find_goal_node(dish_type, ingredients)
+    print("-------- REFERENCE GOAL NODE --------")
+    reference_goal_node.print()
 
     # step 2: find the reference task tree
-    extract_reference_task_tree(
-        functional_units, object_nodes, object_to_FU_map, reference_goal_node)
+    print("extracting reference task tree")
+    reference_task_tree = extract_reference_task_tree(
+        functional_units, object_nodes, object_to_FU_map, kitchen_items, ingredients, reference_goal_node)
+
+    print(reference_task_tree)
 
     # step 3: modify the reference task tree
 
@@ -178,6 +261,9 @@ if __name__ == "__main__":
     print('-- Reading universal foon from', foon_pkl)
     functional_units, object_nodes, object_to_FU_map = read_universal_foon()
 
+    # load the kitchen file
+    kitchen_items = json.load(open(kitchen_path))
+
     # do the retrieval
     print("-- STARTING RETRIEVAL")
-    retrieval(functional_units, object_nodes, object_to_FU_map)
+    retrieval(functional_units, object_nodes, object_to_FU_map, kitchen_items)
