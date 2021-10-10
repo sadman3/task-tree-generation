@@ -4,6 +4,8 @@ from configparser import ConfigParser
 from FOON_class import FunctionalUnit, Object
 import os
 
+from utils import compare_two_recipe
+
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 # load the config file
@@ -34,6 +36,8 @@ def get_utensils(filepath=utensils_path):
             utensils.append(line.rstrip())
     return utensils
 
+
+utensils = get_utensils()
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 # Checks an ingredient exists in kitchen
@@ -61,27 +65,52 @@ def check_if_exist_in_kitchen(kitchen_items, ingredient):
 # select a candidate that has best overlap with input ingredients
 
 
-def select_best_candidate(input_ingredinets, candidates):
+def select_best_candidate(input_ingredinets, candidates, functional_units):
     """
         parameters: input ingredient: a list of objects,
-                    a list of indices candidate functional units
+                    a list of candidate functional units
         returns: returns the id of the best candidate unit
     """
-    candidate_FU = []
+
+    input_objects = []
+    for ingredient in input_ingredinets:
+        input_objects.append(ingredient["object"])
+
+    candidate_FUs = []
     for i in candidates:
         FU = functional_units[i]
-        candidate_FU.append(FU)
-
+        candidate_FUs.append(FU)
     # sort the candidate FUs based on the number of input objects
     # https://stackoverflow.com/questions/403421/how-to-sort-a-list-of-objects-based-on-an-attribute-of-the-objects
-    candidate_FU.sort(key=lambda x: len(x.input_nodes))
+    candidate_FUs.sort(key=lambda x: len(x.input_nodes))
 
-    # if len(candidate_FU) > 2:
-    #     for fu in candidate_FU:
-    #         fu.print()
-    #     input()
+    best_score = -1
+    best_candidate = None
+    for fu in candidate_FUs:
 
-    return candidate_FU[0].id
+        # create the candidate ingredient list with all input output  object and their ingredients
+        candidate_ingredient_list = []
+        for _input in fu.input_nodes:
+            candidate_ingredient_list.append(_input.label)
+            candidate_ingredient_list += _input.ingredients
+
+        for _output in fu.output_nodes:
+            candidate_ingredient_list.append(_output.label)
+            candidate_ingredient_list += _output.ingredients
+
+        # remove the utensils
+        candidate_ingredient_list = list(filter(
+            lambda s: s not in utensils, candidate_ingredient_list))
+
+        candidate_ingredient_list = list(set(candidate_ingredient_list))
+
+        score = compare_two_recipe(input_ingredients=input_objects,
+                                   candidate_recipe_ingredients=candidate_ingredient_list)
+        if score > best_score:
+            best_candidate = fu
+            best_score = score
+
+    return best_candidate.id
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 
@@ -186,7 +215,7 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
             candidate_units = object_to_FU_map[current_item_index]
 
             best_candidate_idx = select_best_candidate(
-                input_ingredients, candidate_units)
+                input_ingredients, candidate_units, functional_units)
 
             # if an fu is already taken, do not process it again
             if best_candidate_idx in reference_task_tree:
@@ -239,12 +268,12 @@ def retrieval(functional_units, object_nodes, object_to_FU_map, kitchen_items, d
     print("-------- REFERENCE GOAL NODE --------")
     reference_goal_node.print()
 
-    # # step 2: find the reference task tree
-    # print("extracting reference task tree")
-    # reference_task_tree = extract_reference_task_tree(
-    #     functional_units, object_nodes, object_to_FU_map, kitchen_items, ingredients, reference_goal_node)
+    # step 2: find the reference task tree
+    print("extracting reference task tree")
+    reference_task_tree = extract_reference_task_tree(
+        functional_units, object_nodes, object_to_FU_map, kitchen_items, ingredients, reference_goal_node)
 
-    # print(reference_task_tree)
+    print(reference_task_tree)
 
     # step 3: modify the reference task tree
 

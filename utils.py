@@ -1,5 +1,6 @@
 from configparser import ConfigParser
 import copy
+from nltk.corpus import wordnet
 
 
 # -----------------------------------------------------------------------------------------------------------------------------#
@@ -22,7 +23,8 @@ word2vec_model = config["constant"]["word2vec_model"]
 if word2vec_model == "large":
     import spacy
     #nlp_model = spacy.load('en_vectors_web_lg', disable=["tagger", "parser"])
-    nlp_model = spacy.load('word2vec.model')
+    nlp_model = spacy.load(
+        'en_vectors_web_lg', disable=["tagger", "parser"])
 else:
     import en_core_web_sm
     nlp_model = en_core_web_sm.load()
@@ -56,6 +58,14 @@ def get_object_similarity(object1, object2):
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 
+def get_synonyms(word):
+    for synset in wordnet.synsets(word):
+        for lemma in synset.lemma_names():
+            print(lemma)
+
+# -----------------------------------------------------------------------------------------------------------------------------#
+
+
 def get_nlp_vector(object):
     if object in nlp_vector_map:
         doc = nlp_vector_map[object]
@@ -83,6 +93,7 @@ def get_doc_similarity(doc1, doc2):
 def compare_two_recipe(input_ingredients, candidate_recipe_ingredients):
 
     curr_recipe = copy.deepcopy(candidate_recipe_ingredients)
+    print(curr_recipe)
     score = 0
     for input_item in input_ingredients:
         input_item = get_singular_form(input_item)
@@ -96,6 +107,7 @@ def compare_two_recipe(input_ingredients, candidate_recipe_ingredients):
                 score += 1
 
                 # if a item is already matched, remove it
+                print(recipe_item)
                 curr_recipe.remove(recipe_item)
                 break
     return score
