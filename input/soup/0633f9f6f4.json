@@ -1,0 +1,66 @@
+{
+       "id": "0633f9f6f4",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "diced"
+              },
+              {
+                     "object": "corn",
+                     "state": "whole"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "seasoning",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "cumin",
+                     "state": "ground"
+              },
+              {
+                     "object": "chili",
+                     "state": "ground"
+              },
+              {
+                     "object": "chips",
+                     "state": "baked"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "minced"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cheese",
+                     "state": "shredded"
+              }
+       ]
+}

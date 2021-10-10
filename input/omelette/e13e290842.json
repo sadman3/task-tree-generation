@@ -1,0 +1,34 @@
+{
+       "id": "e13e290842",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "ham",
+                     "state": "sliced"
+              },
+              {
+                     "object": "mozzarella",
+                     "state": "shredded"
+              },
+              {
+                     "object": "bread",
+                     "state": "sliced"
+              }
+       ]
+}

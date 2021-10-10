@@ -1,0 +1,46 @@
+{
+       "id": "007d8ef84e",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "carrots",
+                     "state": "chopped"
+              },
+              {
+                     "object": "celery",
+                     "state": "diced"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "potatoes",
+                     "state": "diced"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "chicken",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "thyme",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

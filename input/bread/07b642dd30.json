@@ -1,0 +1,22 @@
+{
+       "id": "07b642dd30",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "vinaigrette",
+                     "state": "creamy"
+              },
+              {
+                     "object": "pizza dough",
+                     "state": "whole"
+              },
+              {
+                     "object": "rosemary",
+                     "state": "chopped"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "grated"
+              }
+       ]
+}

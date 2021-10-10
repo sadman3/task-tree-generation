@@ -1,0 +1,46 @@
+{
+       "id": "077ef8d4d7",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "carrots",
+                     "state": "peeled"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "tenderloin",
+                     "state": "halved"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "curry",
+                     "state": "ground"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              }
+       ]
+}

@@ -1,0 +1,30 @@
+{
+       "id": "007a39cf73",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "tomatoes",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "mozzarella",
+                     "state": "peeled"
+              },
+              {
+                     "object": "basil",
+                     "state": "leaves"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              }
+       ]
+}

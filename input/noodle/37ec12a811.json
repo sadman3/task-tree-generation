@@ -1,0 +1,42 @@
+{
+       "id": "37ec12a811",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "whole"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "grated"
+              },
+              {
+                     "object": "water",
+                     "state": "minced"
+              },
+              {
+                     "object": "breadcrumbs",
+                     "state": "crumbs"
+              }
+       ]
+}

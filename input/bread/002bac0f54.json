@@ -1,0 +1,38 @@
+{
+       "id": "002bac0f54",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "yeast",
+                     "state": "dried"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "nuts",
+                     "state": "dried"
+              },
+              {
+                     "object": "herbs",
+                     "state": "minced"
+              }
+       ]
+}

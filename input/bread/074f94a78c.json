@@ -1,0 +1,50 @@
+{
+       "id": "074f94a78c",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "orange",
+                     "state": "minced"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "cranberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "walnuts",
+                     "state": "chopped"
+              }
+       ]
+}

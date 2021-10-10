@@ -1,0 +1,26 @@
+{
+       "id": "370c74ee57",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "strawberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

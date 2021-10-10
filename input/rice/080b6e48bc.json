@@ -1,0 +1,42 @@
+{
+       "id": "080b6e48bc",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "bacon",
+                     "state": "sliced"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "celery",
+                     "state": "sliced"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "chervil",
+                     "state": "dried"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "corn",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "parsley",
+                     "state": "minced"
+              }
+       ]
+}

@@ -1,0 +1,58 @@
+{
+       "id": "02d73cc987",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "lemon",
+                     "state": "minced"
+              },
+              {
+                     "object": "orange",
+                     "state": "minced"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "parsley",
+                     "state": "leaves"
+              },
+              {
+                     "object": "basil",
+                     "state": "leaves"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "pasta",
+                     "state": "unknown"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "corn",
+                     "state": "grain"
+              },
+              {
+                     "object": "celery",
+                     "state": "diced"
+              },
+              {
+                     "object": "cucumber",
+                     "state": "seeded"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              }
+       ]
+}

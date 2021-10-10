@@ -1,0 +1,38 @@
+{
+       "id": "2d5aeddb88",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "pork",
+                     "state": "baked"
+              },
+              {
+                     "object": "noodles",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "soup",
+                     "state": "creamy"
+              },
+              {
+                     "object": "corn",
+                     "state": "whole"
+              },
+              {
+                     "object": "pimiento",
+                     "state": "sliced"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              },
+              {
+                     "object": "pepper",
+                     "state": "diced"
+              }
+       ]
+}

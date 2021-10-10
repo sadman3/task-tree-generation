@@ -1,0 +1,50 @@
+{
+       "id": "0791e7c14e",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "cucumber",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "horseradish",
+                     "state": "sliced"
+              },
+              {
+                     "object": "dill",
+                     "state": "minced"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "peeled"
+              },
+              {
+                     "object": "spices",
+                     "state": "ground"
+              },
+              {
+                     "object": "turmeric",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "clean",
+                     "state": "juice"
+              }
+       ]
+}

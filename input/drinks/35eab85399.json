@@ -1,0 +1,22 @@
+{
+       "id": "35eab85399",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "mint",
+                     "state": "leaves"
+              }
+       ]
+}

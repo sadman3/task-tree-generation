@@ -1,0 +1,34 @@
+{
+       "id": "1ec449faa3",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "espresso",
+                     "state": "ground"
+              },
+              {
+                     "object": "cocoa",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "banana",
+                     "state": "peeled"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

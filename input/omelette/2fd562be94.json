@@ -1,0 +1,34 @@
+{
+       "id": "2fd562be94",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              },
+              {
+                     "object": "bacon",
+                     "state": "diced"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

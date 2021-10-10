@@ -1,0 +1,30 @@
+{
+       "id": "01573cf54a",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "molasses",
+                     "state": "ground"
+              },
+              {
+                     "object": "yeast",
+                     "state": "dried"
+              },
+              {
+                     "object": "flour",
+                     "state": "whole"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              }
+       ]
+}

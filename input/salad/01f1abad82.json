@@ -1,0 +1,34 @@
+{
+       "id": "01f1abad82",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "walnuts",
+                     "state": "chopped"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "greens",
+                     "state": "mixed"
+              }
+       ]
+}

@@ -1,0 +1,50 @@
+{
+       "id": "02bddb4eb6",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "lemon",
+                     "state": "grated"
+              },
+              {
+                     "object": "egg",
+                     "state": "baked"
+              },
+              {
+                     "object": "bread",
+                     "state": "sliced"
+              },
+              {
+                     "object": "bacon",
+                     "state": "sliced"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "sliced"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "leaves"
+              }
+       ]
+}

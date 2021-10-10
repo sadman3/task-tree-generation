@@ -1,0 +1,42 @@
+{
+       "id": "1790e0b61d",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "beef",
+                     "state": "ground"
+              },
+              {
+                     "object": "pasta",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "soup",
+                     "state": "creamy"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "spinach",
+                     "state": "creamy"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "creamy"
+              },
+              {
+                     "object": "mozzarella",
+                     "state": "creamy"
+              },
+              {
+                     "object": "salt",
+                     "state": "flakes"
+              }
+       ]
+}

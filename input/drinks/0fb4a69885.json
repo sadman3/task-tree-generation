@@ -1,0 +1,38 @@
+{
+       "id": "0fb4a69885",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "strawberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "blueberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "cottage cheese",
+                     "state": "creamy"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "sweetener",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              }
+       ]
+}

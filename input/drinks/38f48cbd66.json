@@ -1,0 +1,26 @@
+{
+       "id": "38f48cbd66",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "banana",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milo",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "minced"
+              }
+       ]
+}

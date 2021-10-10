@@ -1,0 +1,42 @@
+{
+       "id": "04dc951bc4",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "banana",
+                     "state": "mashed"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "nuts",
+                     "state": "chopped"
+              }
+       ]
+}

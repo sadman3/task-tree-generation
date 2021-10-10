@@ -1,0 +1,46 @@
+{
+       "id": "3a8279b623",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "bacon",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "seasoning",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "spinach",
+                     "state": "leaves"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "grated"
+              }
+       ]
+}

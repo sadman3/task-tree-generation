@@ -1,0 +1,38 @@
+{
+       "id": "a81e56b636",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "shallots",
+                     "state": "whole"
+              },
+              {
+                     "object": "ham",
+                     "state": "baked"
+              },
+              {
+                     "object": "pepper",
+                     "state": "diced"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              }
+       ]
+}

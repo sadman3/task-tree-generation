@@ -1,0 +1,22 @@
+{
+       "id": "001fc91fde",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "salsa",
+                     "state": "halved"
+              },
+              {
+                     "object": "chips",
+                     "state": "pieces"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "shredded"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              }
+       ]
+}

@@ -1,0 +1,38 @@
+{
+       "id": "40c4dfeb04",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "hoisin sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "sliced"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "steaks"
+              },
+              {
+                     "object": "sprouts",
+                     "state": "steaks"
+              }
+       ]
+}

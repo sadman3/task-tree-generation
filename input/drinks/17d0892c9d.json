@@ -1,0 +1,26 @@
+{
+       "id": "17d0892c9d",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "jello",
+                     "state": "jelly"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "ice",
+                     "state": "crushed"
+              },
+              {
+                     "object": "fat",
+                     "state": "whipped"
+              }
+       ]
+}

@@ -1,0 +1,30 @@
+{
+       "id": "04f5271c7b",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "cheese",
+                     "state": "softened"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "mozzarella",
+                     "state": "shredded"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "bread",
+                     "state": "whole"
+              }
+       ]
+}

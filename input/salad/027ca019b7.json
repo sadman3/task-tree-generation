@@ -1,0 +1,34 @@
+{
+       "id": "027ca019b7",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "pepper",
+                     "state": "pieces"
+              },
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "bacon",
+                     "state": "baked"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "ranch dressing",
+                     "state": "creamy"
+              }
+       ]
+}

@@ -1,0 +1,46 @@
+{
+       "id": "2b1b1e68e2",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "cucumber",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "spinach",
+                     "state": "unknown"
+              },
+              {
+                     "object": "kale",
+                     "state": "chopped"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "wheat",
+                     "state": "unknown"
+              },
+              {
+                     "object": "blueberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "berries",
+                     "state": "mixed"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              }
+       ]
+}

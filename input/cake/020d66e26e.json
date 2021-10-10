@@ -1,0 +1,38 @@
+{
+       "id": "020d66e26e",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "potatoes",
+                     "state": "peeled"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              }
+       ]
+}

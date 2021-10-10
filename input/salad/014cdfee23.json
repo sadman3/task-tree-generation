@@ -1,0 +1,42 @@
+{
+       "id": "014cdfee23",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "chicken",
+                     "state": "meat"
+              },
+              {
+                     "object": "apple",
+                     "state": "diced"
+              },
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "curry",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "bread",
+                     "state": "sliced"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              }
+       ]
+}

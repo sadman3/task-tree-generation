@@ -1,0 +1,26 @@
+{
+       "id": "0f86c0f257",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "banana",
+                     "state": "pieces"
+              },
+              {
+                     "object": "chocolate milk",
+                     "state": "ground"
+              }
+       ]
+}

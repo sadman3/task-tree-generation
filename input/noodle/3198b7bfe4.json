@@ -1,0 +1,74 @@
+{
+       "id": "3198b7bfe4",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "spaghetti",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "fish",
+                     "state": "sauce"
+              },
+              {
+                     "object": "chili",
+                     "state": "sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "cucumber",
+                     "state": "seeded"
+              },
+              {
+                     "object": "pepper",
+                     "state": "seeded"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "vegetables",
+                     "state": "chopped"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "chopped"
+              }
+       ]
+}

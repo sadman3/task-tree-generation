@@ -1,0 +1,58 @@
+{
+       "id": "1779eeca3b",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "cornstarch",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "tamari",
+                     "state": "sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "baked"
+              },
+              {
+                     "object": "mirin",
+                     "state": "juice"
+              },
+              {
+                     "object": "gingerroot",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "crushed"
+              },
+              {
+                     "object": "tofu",
+                     "state": "diced"
+              },
+              {
+                     "object": "sprouts",
+                     "state": "bean"
+              },
+              {
+                     "object": "sprouts",
+                     "state": "sliced"
+              }
+       ]
+}

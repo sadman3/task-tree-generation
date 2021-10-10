@@ -1,0 +1,54 @@
+{
+       "id": "06398db17f",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "pecans",
+                     "state": "chopped"
+              },
+              {
+                     "object": "chips",
+                     "state": "pieces"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "shortening",
+                     "state": "creamy"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "banana",
+                     "state": "mashed"
+              },
+              {
+                     "object": "buttermilk",
+                     "state": "juice"
+              }
+       ]
+}

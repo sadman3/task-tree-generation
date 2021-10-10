@@ -1,0 +1,38 @@
+{
+       "id": "4a62f212dd",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "haddock",
+                     "state": "baked"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "creamy"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              }
+       ]
+}

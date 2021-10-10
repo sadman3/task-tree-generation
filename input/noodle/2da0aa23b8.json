@@ -1,0 +1,70 @@
+{
+       "id": "2da0aa23b8",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "seasoning",
+                     "state": "mixed"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "parsley",
+                     "state": "leaves"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "basil",
+                     "state": "ground"
+              },
+              {
+                     "object": "carrots",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "chicken",
+                     "state": "solid"
+              },
+              {
+                     "object": "chicken",
+                     "state": "diced"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "arrowroot",
+                     "state": "ground"
+              },
+              {
+                     "object": "thyme",
+                     "state": "ground"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "scallion",
+                     "state": "whole_veg"
+              }
+       ]
+}

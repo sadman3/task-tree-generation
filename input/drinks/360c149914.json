@@ -1,0 +1,34 @@
+{
+       "id": "360c149914",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "pumpkin",
+                     "state": "chopped"
+              },
+              {
+                     "object": "soymilk",
+                     "state": "juice"
+              },
+              {
+                     "object": "pumpkin",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "sweetener",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

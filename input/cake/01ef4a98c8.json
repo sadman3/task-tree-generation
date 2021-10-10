@@ -1,0 +1,22 @@
+{
+       "id": "01ef4a98c8",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "gingersnaps",
+                     "state": "unknown"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "lemon",
+                     "state": "ground"
+              },
+              {
+                     "object": "cool whip",
+                     "state": "whipped"
+              }
+       ]
+}

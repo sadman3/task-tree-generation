@@ -1,0 +1,38 @@
+{
+       "id": "05e4d256c7",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "potatoes",
+                     "state": "peeled"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "garlic",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "stock",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "rosemary",
+                     "state": "ground"
+              },
+              {
+                     "object": "paprika",
+                     "state": "ground"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "minced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

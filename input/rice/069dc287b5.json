@@ -1,0 +1,42 @@
+{
+       "id": "069dc287b5",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "zucchini",
+                     "state": "diced"
+              },
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "cottage cheese",
+                     "state": "creamy"
+              },
+              {
+                     "object": "soup",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sausage",
+                     "state": "processed_meat"
+              },
+              {
+                     "object": "oregano",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              }
+       ]
+}

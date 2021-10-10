@@ -1,0 +1,30 @@
+{
+       "id": "19d03d9e2b",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "mango",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              }
+       ]
+}

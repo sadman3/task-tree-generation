@@ -1,0 +1,46 @@
+{
+       "id": "23a597ca2d",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "cucumber",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "sticks",
+                     "state": "small_meat"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "seasoning",
+                     "state": "ground"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              }
+       ]
+}

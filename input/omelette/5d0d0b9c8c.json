@@ -1,0 +1,38 @@
+{
+       "id": "5d0d0b9c8c",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "bread",
+                     "state": "sliced"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "sliced"
+              },
+              {
+                     "object": "pate",
+                     "state": "unknown"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              }
+       ]
+}

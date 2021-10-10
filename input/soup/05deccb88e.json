@@ -1,0 +1,50 @@
+{
+       "id": "05deccb88e",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "juice",
+                     "state": "diced"
+              },
+              {
+                     "object": "corn",
+                     "state": "grain"
+              },
+              {
+                     "object": "chili",
+                     "state": "minced"
+              },
+              {
+                     "object": "cumin",
+                     "state": "ground"
+              },
+              {
+                     "object": "chicken",
+                     "state": "steaks"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "chopped"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              }
+       ]
+}

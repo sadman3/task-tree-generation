@@ -1,0 +1,26 @@
+{
+       "id": "24caabe21c",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "peas",
+                     "state": "berries"
+              },
+              {
+                     "object": "soup",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "tuna",
+                     "state": "minced"
+              },
+              {
+                     "object": "noodles",
+                     "state": "processed_raw"
+              }
+       ]
+}

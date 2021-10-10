@@ -1,0 +1,54 @@
+{
+       "id": "02b1493a6a",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "apple",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "syrup",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "tenderloin",
+                     "state": "whole"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "whole_leafy"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "spinach",
+                     "state": "whole_leafy"
+              }
+       ]
+}

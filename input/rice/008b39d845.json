@@ -1,0 +1,42 @@
+{
+       "id": "008b39d845",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "sofrito sauce",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "sauce"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

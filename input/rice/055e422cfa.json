@@ -1,0 +1,38 @@
+{
+       "id": "055e422cfa",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "edible flowers",
+                     "state": "unknown"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "seeded"
+              },
+              {
+                     "object": "pepper",
+                     "state": "seeded"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              }
+       ]
+}

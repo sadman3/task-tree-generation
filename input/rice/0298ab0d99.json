@@ -1,0 +1,30 @@
+{
+       "id": "0298ab0d99",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "meat",
+                     "state": "ground"
+              },
+              {
+                     "object": "cabbage",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              }
+       ]
+}

@@ -1,0 +1,26 @@
+{
+       "id": "3922d99d13",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "mango",
+                     "state": "peeled"
+              },
+              {
+                     "object": "strawberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

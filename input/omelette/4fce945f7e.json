@@ -1,0 +1,50 @@
+{
+       "id": "4fce945f7e",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "asparagus",
+                     "state": "halved"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "egg",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "creme fraiche",
+                     "state": "creamy"
+              },
+              {
+                     "object": "chives",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "creamy"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

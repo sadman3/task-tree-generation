@@ -1,0 +1,30 @@
+{
+       "id": "03b1c1d28f",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "almonds",
+                     "state": "baked"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              }
+       ]
+}

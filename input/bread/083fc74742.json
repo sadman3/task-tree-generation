@@ -1,0 +1,46 @@
+{
+       "id": "083fc74742",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "rolls",
+                     "state": "sliced"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "minced"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "parsley",
+                     "state": "minced"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "grated"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "gravy",
+                     "state": "meat"
+              }
+       ]
+}

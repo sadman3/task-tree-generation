@@ -1,0 +1,46 @@
+{
+       "id": "013cdc210f",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "cooking spray",
+                     "state": "oily"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "apple",
+                     "state": "peeled"
+              }
+       ]
+}

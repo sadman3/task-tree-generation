@@ -1,0 +1,38 @@
+{
+       "id": "2346c46390",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "soup",
+                     "state": "meat"
+              },
+              {
+                     "object": "chicken",
+                     "state": "meat"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "bouillon",
+                     "state": "solid"
+              },
+              {
+                     "object": "carrots",
+                     "state": "sliced"
+              },
+              {
+                     "object": "ribs",
+                     "state": "sliced"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "thyme",
+                     "state": "ground"
+              }
+       ]
+}

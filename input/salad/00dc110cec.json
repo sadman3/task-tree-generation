@@ -1,0 +1,30 @@
+{
+       "id": "00dc110cec",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "onion",
+                     "state": "minced"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "diced"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "almonds",
+                     "state": "baked"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "miracle whip",
+                     "state": "whipped"
+              }
+       ]
+}

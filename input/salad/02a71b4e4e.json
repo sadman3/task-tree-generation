@@ -1,0 +1,42 @@
+{
+       "id": "02a71b4e4e",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "potatoes",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "italian dressing",
+                     "state": "creamy"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "celery",
+                     "state": "sliced"
+              },
+              {
+                     "object": "egg",
+                     "state": "baked"
+              },
+              {
+                     "object": "relish",
+                     "state": "ground"
+              }
+       ]
+}

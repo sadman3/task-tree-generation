@@ -1,0 +1,42 @@
+{
+       "id": "04db5ff63b",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "orange",
+                     "state": "minced"
+              },
+              {
+                     "object": "mace blade",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "yeast",
+                     "state": "dried"
+              }
+       ]
+}

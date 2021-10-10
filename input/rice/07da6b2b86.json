@@ -1,0 +1,22 @@
+{
+       "id": "07da6b2b86",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "mango",
+                     "state": "sliced"
+              }
+       ]
+}

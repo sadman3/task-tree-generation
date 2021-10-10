@@ -1,0 +1,54 @@
+{
+       "id": "033d7c038f",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "margarine",
+                     "state": "creamy"
+              },
+              {
+                     "object": "applesauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "flour",
+                     "state": "whole"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "buttermilk",
+                     "state": "juice"
+              },
+              {
+                     "object": "raspberries",
+                     "state": "thawed"
+              },
+              {
+                     "object": "food coloring",
+                     "state": "juice"
+              },
+              {
+                     "object": "cocoa",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              }
+       ]
+}

@@ -1,0 +1,34 @@
+{
+       "id": "01df7a451d",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "pineapple",
+                     "state": "crushed"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "cheese",
+                     "state": "softened"
+              },
+              {
+                     "object": "whipped topping",
+                     "state": "whipped"
+              },
+              {
+                     "object": "coconut",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "nuts",
+                     "state": "whole_nuts"
+              }
+       ]
+}

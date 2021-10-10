@@ -1,0 +1,50 @@
+{
+       "id": "13edd94736",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "celery",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "chopped"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheese",
+                     "state": "shredded"
+              },
+              {
+                     "object": "breadcrumbs",
+                     "state": "dried"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              }
+       ]
+}

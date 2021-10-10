@@ -1,0 +1,30 @@
+{
+       "id": "1f5f2b42c5",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "oats",
+                     "state": "rolled"
+              },
+              {
+                     "object": "soymilk",
+                     "state": "juice"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "agave",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "blackberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "banana",
+                     "state": "halved"
+              }
+       ]
+}

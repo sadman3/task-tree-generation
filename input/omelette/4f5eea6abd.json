@@ -1,0 +1,50 @@
+{
+       "id": "4f5eea6abd",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg substitute",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "cheese",
+                     "state": "shredded"
+              },
+              {
+                     "object": "pepper",
+                     "state": "sliced"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "sliced"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "spinach",
+                     "state": "chopped"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "creamy"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

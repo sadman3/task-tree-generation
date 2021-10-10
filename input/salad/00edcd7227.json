@@ -1,0 +1,62 @@
+{
+       "id": "00edcd7227",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "lemon",
+                     "state": "grated"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "pear",
+                     "state": "halved"
+              },
+              {
+                     "object": "apple",
+                     "state": "halved"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "quinoa",
+                     "state": "grain"
+              },
+              {
+                     "object": "bay leaf",
+                     "state": "leaves"
+              },
+              {
+                     "object": "thyme",
+                     "state": "minced"
+              },
+              {
+                     "object": "chicken",
+                     "state": "meat"
+              },
+              {
+                     "object": "coriander",
+                     "state": "leaves"
+              },
+              {
+                     "object": "parsley",
+                     "state": "minced"
+              }
+       ]
+}

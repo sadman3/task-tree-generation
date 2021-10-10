@@ -1,0 +1,50 @@
+{
+       "id": "010143f655",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "minced"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "pumpkin",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "applesauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "egg",
+                     "state": "thick_liquid"
+              }
+       ]
+}

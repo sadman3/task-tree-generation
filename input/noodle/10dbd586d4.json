@@ -1,0 +1,46 @@
+{
+       "id": "10dbd586d4",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "vermicelli",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "ginger",
+                     "state": "grated"
+              },
+              {
+                     "object": "chili",
+                     "state": "sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "chicken",
+                     "state": "diced"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "chopped"
+              }
+       ]
+}

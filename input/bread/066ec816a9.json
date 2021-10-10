@@ -1,0 +1,42 @@
+{
+       "id": "066ec816a9",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "walnuts",
+                     "state": "chopped"
+              }
+       ]
+}

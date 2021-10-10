@@ -1,0 +1,46 @@
+{
+       "id": "01f5cccf3c",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "crackers",
+                     "state": "whole_snack"
+              },
+              {
+                     "object": "pudding",
+                     "state": "juice"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "whipped topping",
+                     "state": "whipped"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cocoa",
+                     "state": "solid"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "syrup",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              }
+       ]
+}

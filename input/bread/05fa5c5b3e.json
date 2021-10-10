@@ -1,0 +1,22 @@
+{
+       "id": "05fa5c5b3e",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "bread",
+                     "state": "whole"
+              },
+              {
+                     "object": "cheese",
+                     "state": "shredded"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "ham",
+                     "state": "sliced"
+              }
+       ]
+}

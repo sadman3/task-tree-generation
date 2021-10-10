@@ -1,0 +1,66 @@
+{
+       "id": "0e20d7a324",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "dried"
+              },
+              {
+                     "object": "ginger",
+                     "state": "pieces"
+              },
+              {
+                     "object": "garlic",
+                     "state": "crushed"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "mixed"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "dry sherry",
+                     "state": "unknown"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "scallion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "furikake",
+                     "state": "ground"
+              }
+       ]
+}

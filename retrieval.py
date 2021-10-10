@@ -2,6 +2,7 @@ import pickle
 import json
 from configparser import ConfigParser
 from FOON_class import FunctionalUnit, Object
+import os
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -122,7 +123,6 @@ def find_goal_node(dish_type, ingredients):
     input_objects = []
     for ing in ingredients:
         input_objects.append(ing["object"])
-
     # read the recipe classification
     with open(recipe_category_path) as f:
         categories = json.load(f)
@@ -206,8 +206,8 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
     # reverse the task tree
     reference_task_tree.reverse()
 
-    for id in reference_task_tree:
-        functional_units[id].print()
+    # for id in reference_task_tree:
+    #     functional_units[id].print()
     return reference_task_tree
 
 
@@ -232,22 +232,19 @@ def read_universal_foon(filepath=foon_pkl):
 # this method creates the task using three major steps mentioned in the paper
 
 
-def retrieval(functional_units, object_nodes, object_to_FU_map, kitchen_items):
-
-    input_file = '/Users/sadman/repository/task-tree-generation/input/00d23f6efb.json'
-    recipe_id, dish_type, ingredients = process_input(input_file)
+def retrieval(functional_units, object_nodes, object_to_FU_map, kitchen_items, dish_type, ingredients):
 
     # step 1: find the reference goal node
     reference_goal_node = find_goal_node(dish_type, ingredients)
     print("-------- REFERENCE GOAL NODE --------")
     reference_goal_node.print()
 
-    # step 2: find the reference task tree
-    print("extracting reference task tree")
-    reference_task_tree = extract_reference_task_tree(
-        functional_units, object_nodes, object_to_FU_map, kitchen_items, ingredients, reference_goal_node)
+    # # step 2: find the reference task tree
+    # print("extracting reference task tree")
+    # reference_task_tree = extract_reference_task_tree(
+    #     functional_units, object_nodes, object_to_FU_map, kitchen_items, ingredients, reference_goal_node)
 
-    print(reference_task_tree)
+    # print(reference_task_tree)
 
     # step 3: modify the reference task tree
 
@@ -264,6 +261,12 @@ if __name__ == "__main__":
     # load the kitchen file
     kitchen_items = json.load(open(kitchen_path))
 
-    # do the retrieval
-    print("-- STARTING RETRIEVAL")
-    retrieval(functional_units, object_nodes, object_to_FU_map, kitchen_items)
+    input_dir = 'input/salad'
+    for input_file in os.listdir(input_dir):
+        input_file = os.path.join(input_dir, input_file)
+        recipe_id, dish_type, ingredients = process_input(input_file)
+
+        # do the retrieval
+        print("-- STARTING RETRIEVAL")
+        retrieval(functional_units, object_nodes, object_to_FU_map,
+                  kitchen_items, dish_type, ingredients)

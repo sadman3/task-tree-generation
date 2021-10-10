@@ -1,0 +1,30 @@
+{
+       "id": "19767a2951",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "strawberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "cool whip",
+                     "state": "whipped"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "pudding",
+                     "state": "creamy"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              }
+       ]
+}

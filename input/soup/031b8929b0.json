@@ -1,0 +1,46 @@
+{
+       "id": "031b8929b0",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "carrots",
+                     "state": "sliced"
+              },
+              {
+                     "object": "celery",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "corn",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "basil",
+                     "state": "crushed"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              }
+       ]
+}

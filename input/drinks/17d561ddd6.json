@@ -1,0 +1,38 @@
+{
+       "id": "17d561ddd6",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "avocado",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "spinach",
+                     "state": "chopped"
+              },
+              {
+                     "object": "soymilk",
+                     "state": "juice"
+              },
+              {
+                     "object": "cashews",
+                     "state": "chopped"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "chips",
+                     "state": "pieces"
+              }
+       ]
+}

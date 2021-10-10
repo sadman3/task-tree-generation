@@ -1,0 +1,26 @@
+{
+       "id": "21832622b0",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "cider",
+                     "state": "juice"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "cherries",
+                     "state": "seeded"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "sorbet",
+                     "state": "berries"
+              }
+       ]
+}

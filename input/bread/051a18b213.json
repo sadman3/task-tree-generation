@@ -1,0 +1,34 @@
+{
+       "id": "051a18b213",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "whole"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "yeast",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              }
+       ]
+}

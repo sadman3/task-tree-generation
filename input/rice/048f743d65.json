@@ -1,0 +1,38 @@
+{
+       "id": "048f743d65",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "sausage",
+                     "state": "meat"
+              },
+              {
+                     "object": "onion",
+                     "state": "minced"
+              },
+              {
+                     "object": "celery",
+                     "state": "minced"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "sauce"
+              },
+              {
+                     "object": "raisins",
+                     "state": "dried"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              }
+       ]
+}

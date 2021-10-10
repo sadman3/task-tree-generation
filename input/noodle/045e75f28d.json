@@ -1,0 +1,46 @@
+{
+       "id": "045e75f28d",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "paprika",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "cheese",
+                     "state": "creamy"
+              }
+       ]
+}

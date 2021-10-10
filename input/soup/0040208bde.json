@@ -1,0 +1,34 @@
+{
+       "id": "0040208bde",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "leeks",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "thyme",
+                     "state": "dried"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "stock",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "cream",
+                     "state": "whipped"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              }
+       ]
+}

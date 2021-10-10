@@ -1,0 +1,22 @@
+{
+       "id": "1a632e8879",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "jelly",
+                     "state": "jelly"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              }
+       ]
+}

@@ -1,0 +1,30 @@
+{
+       "id": "05bec63ae1",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "rolls",
+                     "state": "thawed"
+              },
+              {
+                     "object": "salsa",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              },
+              {
+                     "object": "pepper",
+                     "state": "diced"
+              },
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "olives",
+                     "state": "sliced"
+              }
+       ]
+}

@@ -1,0 +1,38 @@
+{
+       "id": "57a4823c68",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "fillets",
+                     "state": "baked"
+              },
+              {
+                     "object": "butter",
+                     "state": "halved"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "grated"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

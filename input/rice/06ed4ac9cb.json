@@ -1,0 +1,50 @@
+{
+       "id": "06ed4ac9cb",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "shallots",
+                     "state": "chopped"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "turmeric",
+                     "state": "ground"
+              },
+              {
+                     "object": "coriander",
+                     "state": "ground"
+              },
+              {
+                     "object": "sticks",
+                     "state": "whole"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "cumin",
+                     "state": "ground"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "lime",
+                     "state": "whole"
+              },
+              {
+                     "object": "currants",
+                     "state": "ground"
+              }
+       ]
+}

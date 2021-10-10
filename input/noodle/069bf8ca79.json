@@ -1,0 +1,46 @@
+{
+       "id": "069bf8ca79",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "soup",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "turkey",
+                     "state": "diced"
+              },
+              {
+                     "object": "breadcrumbs",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "cheese",
+                     "state": "shredded"
+              },
+              {
+                     "object": "pepper",
+                     "state": "minced"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "pimentos",
+                     "state": "minced"
+              }
+       ]
+}

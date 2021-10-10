@@ -1,0 +1,42 @@
+{
+       "id": "040cef9797",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "strawberries",
+                     "state": "mashed"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "nuts",
+                     "state": "chopped"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              }
+       ]
+}

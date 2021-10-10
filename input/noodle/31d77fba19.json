@@ -1,0 +1,54 @@
+{
+       "id": "31d77fba19",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "celery",
+                     "state": "diced"
+              },
+              {
+                     "object": "carrots",
+                     "state": "diced"
+              },
+              {
+                     "object": "rosemary",
+                     "state": "chopped"
+              },
+              {
+                     "object": "tarragon",
+                     "state": "chopped"
+              },
+              {
+                     "object": "thyme",
+                     "state": "chopped"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "chicken",
+                     "state": "diced"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

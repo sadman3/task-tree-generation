@@ -1,0 +1,38 @@
+{
+       "id": "36d828545f",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "beef",
+                     "state": "ground"
+              },
+              {
+                     "object": "corn",
+                     "state": "whole"
+              },
+              {
+                     "object": "soup",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

@@ -1,0 +1,46 @@
+{
+       "id": "06870b88de",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "chili",
+                     "state": "chopped"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "grated"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              }
+       ]
+}

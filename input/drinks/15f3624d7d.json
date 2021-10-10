@@ -1,0 +1,26 @@
+{
+       "id": "15f3624d7d",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "banana",
+                     "state": "halved"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "seeds",
+                     "state": "ground"
+              },
+              {
+                     "object": "syrup",
+                     "state": "thick_sauce"
+              }
+       ]
+}

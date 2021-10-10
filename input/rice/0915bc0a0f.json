@@ -1,0 +1,42 @@
+{
+       "id": "0915bc0a0f",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "dill",
+                     "state": "dried"
+              },
+              {
+                     "object": "lemon",
+                     "state": "juice"
+              },
+              {
+                     "object": "lemon",
+                     "state": "minced"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              }
+       ]
+}

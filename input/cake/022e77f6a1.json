@@ -1,0 +1,42 @@
+{
+       "id": "022e77f6a1",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "cake",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "walnuts",
+                     "state": "chopped"
+              },
+              {
+                     "object": "orange",
+                     "state": "halved"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "pineapple",
+                     "state": "crushed"
+              },
+              {
+                     "object": "pie filling mix",
+                     "state": "creamy"
+              },
+              {
+                     "object": "orange",
+                     "state": "grated"
+              },
+              {
+                     "object": "whipped topping",
+                     "state": "whipped"
+              }
+       ]
+}

@@ -1,0 +1,58 @@
+{
+       "id": "005ad8ac22",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "pasta",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "dill",
+                     "state": "dried"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "grapes",
+                     "state": "halved"
+              },
+              {
+                     "object": "ham",
+                     "state": "diced"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "diced"
+              }
+       ]
+}

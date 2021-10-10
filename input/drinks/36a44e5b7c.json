@@ -1,0 +1,30 @@
+{
+       "id": "36a44e5b7c",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "strawberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "tofu",
+                     "state": "diced"
+              },
+              {
+                     "object": "ginger",
+                     "state": "grated"
+              },
+              {
+                     "object": "spinach",
+                     "state": "whole_leafy"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              }
+       ]
+}

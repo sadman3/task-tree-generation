@@ -1,0 +1,22 @@
+{
+       "id": "1e5fe51d43",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "noodles",
+                     "state": "processed_raw"
+              }
+       ]
+}

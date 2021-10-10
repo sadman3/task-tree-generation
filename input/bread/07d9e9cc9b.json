@@ -1,0 +1,46 @@
+{
+       "id": "07d9e9cc9b",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "yeast",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "dill",
+                     "state": "ground"
+              },
+              {
+                     "object": "seasoning",
+                     "state": "ground"
+              }
+       ]
+}

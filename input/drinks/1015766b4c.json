@@ -1,0 +1,30 @@
+{
+       "id": "1015766b4c",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "strawberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "stevia",
+                     "state": "unknown"
+              }
+       ]
+}

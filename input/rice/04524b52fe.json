@@ -1,0 +1,30 @@
+{
+       "id": "04524b52fe",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "miracle whip",
+                     "state": "whipped"
+              },
+              {
+                     "object": "curry",
+                     "state": "ground"
+              },
+              {
+                     "object": "asparagus",
+                     "state": "baked"
+              }
+       ]
+}

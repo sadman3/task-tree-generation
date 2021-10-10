@@ -1,0 +1,50 @@
+{
+       "id": "0389c623d9",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "cheddar",
+                     "state": "grated"
+              },
+              {
+                     "object": "sage",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "celery",
+                     "state": "minced"
+              },
+              {
+                     "object": "onion",
+                     "state": "minced"
+              },
+              {
+                     "object": "seeds",
+                     "state": "baked"
+              },
+              {
+                     "object": "walnuts",
+                     "state": "baked"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              }
+       ]
+}

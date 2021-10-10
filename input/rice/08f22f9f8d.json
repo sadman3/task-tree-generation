@@ -1,0 +1,42 @@
+{
+       "id": "08f22f9f8d",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "sake",
+                     "state": "juice"
+              },
+              {
+                     "object": "mirin",
+                     "state": "juice"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "stock",
+                     "state": "ground"
+              },
+              {
+                     "object": "ginger",
+                     "state": "chopped"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "grated"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "egg",
+                     "state": "baked"
+              }
+       ]
+}

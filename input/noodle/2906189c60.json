@@ -1,0 +1,42 @@
+{
+       "id": "2906189c60",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "creamy"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "parsley",
+                     "state": "flakes"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "baked"
+              }
+       ]
+}

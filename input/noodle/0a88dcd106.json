@@ -1,0 +1,42 @@
+{
+       "id": "0a88dcd106",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "turkey",
+                     "state": "meat"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "seasoning",
+                     "state": "ground"
+              },
+              {
+                     "object": "parsley",
+                     "state": "minced"
+              },
+              {
+                     "object": "cheese",
+                     "state": "sliced"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "creamy"
+              }
+       ]
+}

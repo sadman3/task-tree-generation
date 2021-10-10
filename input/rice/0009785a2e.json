@@ -1,0 +1,38 @@
+{
+       "id": "0009785a2e",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "butter",
+                     "state": "halved"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "capers",
+                     "state": "juice"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              }
+       ]
+}

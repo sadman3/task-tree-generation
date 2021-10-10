@@ -1,0 +1,42 @@
+{
+       "id": "03707846d1",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "brown sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "grated"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "puree",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "raisins",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              }
+       ]
+}

@@ -1,0 +1,34 @@
+{
+       "id": "04ae9b9d19",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "turkey",
+                     "state": "ground"
+              },
+              {
+                     "object": "carrots",
+                     "state": "diced"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "spinach",
+                     "state": "thawed"
+              },
+              {
+                     "object": "egg",
+                     "state": "baked"
+              }
+       ]
+}

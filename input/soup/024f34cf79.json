@@ -1,0 +1,58 @@
+{
+       "id": "024f34cf79",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "carrots",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "garlic",
+                     "state": "diced"
+              },
+              {
+                     "object": "basil",
+                     "state": "dried"
+              },
+              {
+                     "object": "ham",
+                     "state": "diced"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "macaroni",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "grated"
+              }
+       ]
+}

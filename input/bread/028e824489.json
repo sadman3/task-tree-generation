@@ -1,0 +1,38 @@
+{
+       "id": "028e824489",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "lavender",
+                     "state": "chopped"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

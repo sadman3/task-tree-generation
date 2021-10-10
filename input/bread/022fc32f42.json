@@ -1,0 +1,50 @@
+{
+       "id": "022fc32f42",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "peach",
+                     "state": "whole"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole"
+              },
+              {
+                     "object": "orange",
+                     "state": "whole"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              }
+       ]
+}

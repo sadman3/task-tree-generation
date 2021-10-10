@@ -1,0 +1,22 @@
+{
+       "id": "2f2e1b1b91",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "banana",
+                     "state": "sliced"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "artificial sweetener",
+                     "state": "ground"
+              }
+       ]
+}

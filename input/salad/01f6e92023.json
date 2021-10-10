@@ -1,0 +1,34 @@
+{
+       "id": "01f6e92023",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "kale",
+                     "state": "leaves"
+              },
+              {
+                     "object": "chard leaves",
+                     "state": "leaves"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "cucumber",
+                     "state": "chopped"
+              },
+              {
+                     "object": "oregano",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "olives",
+                     "state": "halved"
+              }
+       ]
+}

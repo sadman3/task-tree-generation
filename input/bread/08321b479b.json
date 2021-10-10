@@ -1,0 +1,38 @@
+{
+       "id": "08321b479b",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "soymilk",
+                     "state": "juice"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "flour",
+                     "state": "whole"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "molasses",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "raisins",
+                     "state": "dried"
+              }
+       ]
+}

@@ -1,0 +1,50 @@
+{
+       "id": "014fac2852",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "crushed"
+              },
+              {
+                     "object": "horseradish",
+                     "state": "creamy"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "yeast",
+                     "state": "dried"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              }
+       ]
+}

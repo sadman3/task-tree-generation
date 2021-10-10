@@ -1,0 +1,34 @@
+{
+       "id": "060beb1f86",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "stock",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "ginger",
+                     "state": "grated"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "ribs",
+                     "state": "sliced"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "hoisin sauce",
+                     "state": "sauce"
+              }
+       ]
+}

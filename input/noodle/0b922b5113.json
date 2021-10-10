@@ -1,0 +1,58 @@
+{
+       "id": "0b922b5113",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "parmesan",
+                     "state": "grated"
+              },
+              {
+                     "object": "breadcrumbs",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "noodles",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "minced"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "minced"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "grated"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "paprika",
+                     "state": "ground"
+              }
+       ]
+}

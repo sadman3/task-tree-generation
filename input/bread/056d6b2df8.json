@@ -1,0 +1,50 @@
+{
+       "id": "056d6b2df8",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "cucumber",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              },
+              {
+                     "object": "turmeric",
+                     "state": "ground"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              }
+       ]
+}

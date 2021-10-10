@@ -1,0 +1,30 @@
+{
+       "id": "010eff5d82",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "hamburger",
+                     "state": "processed_meat"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "soup",
+                     "state": "creamy"
+              },
+              {
+                     "object": "soup",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              }
+       ]
+}

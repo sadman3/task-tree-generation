@@ -1,0 +1,42 @@
+{
+       "id": "0708dab4e9",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "shortening",
+                     "state": "creamy"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "banana",
+                     "state": "mashed"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

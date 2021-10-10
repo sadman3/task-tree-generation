@@ -1,0 +1,34 @@
+{
+       "id": "0073191039",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "butter",
+                     "state": "pieces"
+              },
+              {
+                     "object": "cornbread",
+                     "state": "dried_mix"
+              },
+              {
+                     "object": "corn",
+                     "state": "thawed"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              }
+       ]
+}

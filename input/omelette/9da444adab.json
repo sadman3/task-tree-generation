@@ -1,0 +1,42 @@
+{
+       "id": "9da444adab",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "paprika",
+                     "state": "baked"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "fillets",
+                     "state": "baked"
+              },
+              {
+                     "object": "parsley",
+                     "state": "leaves"
+              },
+              {
+                     "object": "rocket",
+                     "state": "leaves"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "sliced"
+              }
+       ]
+}

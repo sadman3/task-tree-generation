@@ -1,0 +1,62 @@
+{
+       "id": "022c653690",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "leaves"
+              },
+              {
+                     "object": "avocado",
+                     "state": "peeled"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "orange",
+                     "state": "halved"
+              },
+              {
+                     "object": "cheese",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "bacon",
+                     "state": "crumbs"
+              }
+       ]
+}

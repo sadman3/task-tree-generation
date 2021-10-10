@@ -1,0 +1,42 @@
+{
+       "id": "010c0020af",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "applesauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "raisins",
+                     "state": "dried"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "minced"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

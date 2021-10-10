@@ -1,0 +1,42 @@
+{
+       "id": "0226b5df5f",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "banana",
+                     "state": "whole"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "walnuts",
+                     "state": "chopped"
+              }
+       ]
+}

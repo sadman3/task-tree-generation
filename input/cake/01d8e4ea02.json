@@ -1,0 +1,62 @@
+{
+       "id": "01d8e4ea02",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "margarine",
+                     "state": "creamy"
+              },
+              {
+                     "object": "buttermilk",
+                     "state": "juice"
+              },
+              {
+                     "object": "banana",
+                     "state": "mashed"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              },
+              {
+                     "object": "buttermilk",
+                     "state": "juice"
+              },
+              {
+                     "object": "cheese",
+                     "state": "softened"
+              },
+              {
+                     "object": "margarine",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              }
+       ]
+}

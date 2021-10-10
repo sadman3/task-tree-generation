@@ -1,0 +1,30 @@
+{
+       "id": "0204238f85",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "baked"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "chives",
+                     "state": "chopped"
+              },
+              {
+                     "object": "scallion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              }
+       ]
+}

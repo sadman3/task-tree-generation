@@ -1,0 +1,50 @@
+{
+       "id": "056e200885",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "potatoes",
+                     "state": "peeled"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "corn",
+                     "state": "grain"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "jalapeno",
+                     "state": "minced"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "cumin",
+                     "state": "ground"
+              },
+              {
+                     "object": "chili",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "hot sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "ground"
+              }
+       ]
+}

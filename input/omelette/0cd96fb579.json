@@ -1,0 +1,30 @@
+{
+       "id": "0cd96fb579",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "sausage",
+                     "state": "processed_meat"
+              },
+              {
+                     "object": "cheese",
+                     "state": "creamy"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              }
+       ]
+}

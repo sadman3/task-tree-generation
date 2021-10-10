@@ -1,0 +1,54 @@
+{
+       "id": "02f021290a",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "margarine",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "buttermilk",
+                     "state": "juice"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "dates",
+                     "state": "chopped"
+              },
+              {
+                     "object": "candy",
+                     "state": "sliced"
+              },
+              {
+                     "object": "nuts",
+                     "state": "whole_nuts"
+              },
+              {
+                     "object": "coconut",
+                     "state": "flakes"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              }
+       ]
+}

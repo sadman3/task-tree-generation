@@ -1,0 +1,26 @@
+{
+       "id": "247163c6e6",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "pizza sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "pepperoni",
+                     "state": "processed_meat"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "sliced"
+              },
+              {
+                     "object": "mozzarella",
+                     "state": "creamy"
+              }
+       ]
+}

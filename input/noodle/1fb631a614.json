@@ -1,0 +1,42 @@
+{
+       "id": "1fb631a614",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "ground"
+              },
+              {
+                     "object": "almonds",
+                     "state": "sliced"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "edamame",
+                     "state": "peeled"
+              },
+              {
+                     "object": "mango",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "salad dressing",
+                     "state": "creamy"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              }
+       ]
+}

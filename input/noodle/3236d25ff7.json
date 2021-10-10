@@ -1,0 +1,38 @@
+{
+       "id": "3236d25ff7",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "chicken",
+                     "state": "diced"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "vegetables",
+                     "state": "mixed"
+              },
+              {
+                     "object": "chicken",
+                     "state": "solid"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "bay leaf",
+                     "state": "leaves"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

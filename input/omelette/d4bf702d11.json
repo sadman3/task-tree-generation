@@ -1,0 +1,50 @@
+{
+       "id": "d4bf702d11",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "chicken",
+                     "state": "halved"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "vegetables",
+                     "state": "mixed"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "ketchup",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              }
+       ]
+}

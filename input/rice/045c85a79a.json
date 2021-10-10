@@ -1,0 +1,46 @@
+{
+       "id": "045c85a79a",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "basil",
+                     "state": "leaves"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              },
+              {
+                     "object": "mozzarella",
+                     "state": "creamy"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "rice",
+                     "state": "dried"
+              }
+       ]
+}

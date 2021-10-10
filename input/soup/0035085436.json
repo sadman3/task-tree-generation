@@ -1,0 +1,54 @@
+{
+       "id": "0035085436",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "cheese",
+                     "state": "grated"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "chopped"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "whole_nuts"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "leeks",
+                     "state": "halved"
+              },
+              {
+                     "object": "chard leaves",
+                     "state": "leaves"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "leaves"
+              },
+              {
+                     "object": "water",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

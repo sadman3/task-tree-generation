@@ -1,0 +1,30 @@
+{
+       "id": "4e4c6d5f9e",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "swiss chard",
+                     "state": "chopped"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "hot sauce",
+                     "state": "sauce"
+              }
+       ]
+}

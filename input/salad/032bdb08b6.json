@@ -1,0 +1,50 @@
+{
+       "id": "032bdb08b6",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "scallops",
+                     "state": "baked"
+              },
+              {
+                     "object": "shrimp",
+                     "state": "baked"
+              },
+              {
+                     "object": "crabmeat",
+                     "state": "small_meat"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "baked"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "chives",
+                     "state": "chopped"
+              },
+              {
+                     "object": "lemon",
+                     "state": "minced"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              }
+       ]
+}

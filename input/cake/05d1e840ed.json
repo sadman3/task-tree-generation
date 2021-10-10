@@ -1,0 +1,42 @@
+{
+       "id": "05d1e840ed",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "grated"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              }
+       ]
+}

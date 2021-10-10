@@ -1,0 +1,22 @@
+{
+       "id": "048ecf6f8d",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "sausage",
+                     "state": "processed_meat"
+              },
+              {
+                     "object": "soup",
+                     "state": "creamy"
+              }
+       ]
+}

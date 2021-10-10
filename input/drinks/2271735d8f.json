@@ -1,0 +1,34 @@
+{
+       "id": "2271735d8f",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              }
+       ]
+}

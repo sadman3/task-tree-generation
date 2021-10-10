@@ -1,0 +1,66 @@
+{
+       "id": "0659fa09e5",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "carrots",
+                     "state": "diced"
+              },
+              {
+                     "object": "celery",
+                     "state": "sliced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "peas",
+                     "state": "berries"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "thyme",
+                     "state": "chopped"
+              },
+              {
+                     "object": "tabasco sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

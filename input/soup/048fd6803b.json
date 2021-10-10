@@ -1,0 +1,38 @@
+{
+       "id": "048fd6803b",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "celery",
+                     "state": "chopped"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "stock",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "cooked ditalini",
+                     "state": "unknown"
+              },
+              {
+                     "object": "parsley",
+                     "state": "leaves"
+              }
+       ]
+}

@@ -1,0 +1,42 @@
+{
+       "id": "0540814247",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "food coloring",
+                     "state": "juice"
+              },
+              {
+                     "object": "rhubarb",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cake",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "ground"
+              },
+              {
+                     "object": "cream",
+                     "state": "whipped"
+              }
+       ]
+}

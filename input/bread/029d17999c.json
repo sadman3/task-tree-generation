@@ -1,0 +1,30 @@
+{
+       "id": "029d17999c",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "breadcrumbs",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

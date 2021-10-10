@@ -1,0 +1,70 @@
+{
+       "id": "01ed08ceec",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "pasta",
+                     "state": "dried"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "seasoning",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "peeled"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "corn",
+                     "state": "baked"
+              },
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "carrots",
+                     "state": "peeled"
+              },
+              {
+                     "object": "ribs",
+                     "state": "sliced"
+              },
+              {
+                     "object": "olives",
+                     "state": "sliced"
+              }
+       ]
+}

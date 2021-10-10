@@ -1,0 +1,34 @@
+{
+       "id": "017fe379f7",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "bacon",
+                     "state": "sliced"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "halved"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "mozzarella",
+                     "state": "shredded"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              }
+       ]
+}

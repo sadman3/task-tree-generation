@@ -1,0 +1,30 @@
+{
+       "id": "5bcccb4e9b",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "halved"
+              },
+              {
+                     "object": "potatoes",
+                     "state": "diced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              }
+       ]
+}

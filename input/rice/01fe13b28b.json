@@ -1,0 +1,54 @@
+{
+       "id": "01fe13b28b",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              },
+              {
+                     "object": "onion",
+                     "state": "dried"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "sauce"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "worcestershire sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "mustard",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "halved"
+              }
+       ]
+}

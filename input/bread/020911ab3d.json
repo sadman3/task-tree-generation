@@ -1,0 +1,66 @@
+{
+       "id": "020911ab3d",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "milk",
+                     "state": "whole"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "meal",
+                     "state": "chopped"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "xanthan gum",
+                     "state": "ground"
+              },
+              {
+                     "object": "yeast",
+                     "state": "dried"
+              }
+       ]
+}

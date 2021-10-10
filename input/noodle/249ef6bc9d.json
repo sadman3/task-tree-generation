@@ -1,0 +1,50 @@
+{
+       "id": "249ef6bc9d",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "dried"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "chili",
+                     "state": "sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "sliced"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "chopped"
+              },
+              {
+                     "object": "peanuts",
+                     "state": "baked"
+              }
+       ]
+}

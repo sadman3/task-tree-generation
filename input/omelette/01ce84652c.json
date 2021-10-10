@@ -1,0 +1,42 @@
+{
+       "id": "01ce84652c",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "chives",
+                     "state": "chopped"
+              },
+              {
+                     "object": "dill",
+                     "state": "chopped"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cheese",
+                     "state": "creamy"
+              }
+       ]
+}

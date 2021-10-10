@@ -1,0 +1,22 @@
+{
+       "id": "2b35e44361",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "ice",
+                     "state": "crushed"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              }
+       ]
+}

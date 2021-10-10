@@ -1,0 +1,38 @@
+{
+       "id": "06e6bdceaf",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              },
+              {
+                     "object": "beans",
+                     "state": "mixed"
+              },
+              {
+                     "object": "mint",
+                     "state": "leaves"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

@@ -1,0 +1,50 @@
+{
+       "id": "0951cdf356",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "turkey",
+                     "state": "ground"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "sauce"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "beans",
+                     "state": "baked"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "chili",
+                     "state": "ground"
+              },
+              {
+                     "object": "cumin",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              }
+       ]
+}

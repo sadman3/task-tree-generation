@@ -1,0 +1,34 @@
+{
+       "id": "24d9c0e12a",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "banana",
+                     "state": "whole"
+              },
+              {
+                     "object": "cherries",
+                     "state": "seeded"
+              },
+              {
+                     "object": "coffee",
+                     "state": "juice"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "ground"
+              },
+              {
+                     "object": "cacao",
+                     "state": "ground"
+              },
+              {
+                     "object": "stevia",
+                     "state": "juice"
+              }
+       ]
+}

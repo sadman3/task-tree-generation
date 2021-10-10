@@ -1,0 +1,38 @@
+{
+       "id": "0483c1ef9f",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "cake",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "apple",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              }
+       ]
+}

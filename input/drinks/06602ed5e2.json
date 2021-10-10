@@ -1,0 +1,30 @@
+{
+       "id": "06602ed5e2",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "oats",
+                     "state": "rolled"
+              },
+              {
+                     "object": "raisins",
+                     "state": "dried"
+              },
+              {
+                     "object": "pumpkin",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "whole"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "brown sugar",
+                     "state": "ground"
+              }
+       ]
+}

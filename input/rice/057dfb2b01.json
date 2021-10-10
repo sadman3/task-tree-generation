@@ -1,0 +1,34 @@
+{
+       "id": "057dfb2b01",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "consomme",
+                     "state": "meat"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "oregano",
+                     "state": "ground"
+              }
+       ]
+}

@@ -1,0 +1,26 @@
+{
+       "id": "110176b473",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "apricot",
+                     "state": "juice"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "milk",
+                     "state": "ground"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

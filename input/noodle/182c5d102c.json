@@ -1,0 +1,58 @@
+{
+       "id": "182c5d102c",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "peanuts",
+                     "state": "baked"
+              },
+              {
+                     "object": "shallots",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "cumin",
+                     "state": "ground"
+              },
+              {
+                     "object": "chili",
+                     "state": "sauce"
+              },
+              {
+                     "object": "turmeric",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "leaves"
+              }
+       ]
+}

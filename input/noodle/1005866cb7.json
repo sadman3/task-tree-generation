@@ -1,0 +1,42 @@
+{
+       "id": "1005866cb7",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "celery",
+                     "state": "minced"
+              },
+              {
+                     "object": "onion",
+                     "state": "minced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "minced"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheese",
+                     "state": "creamy"
+              },
+              {
+                     "object": "olives",
+                     "state": "stuffed"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "juice"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "noodles",
+                     "state": "whole_leafy"
+              }
+       ]
+}

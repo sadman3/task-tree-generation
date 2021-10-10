@@ -1,0 +1,50 @@
+{
+       "id": "060f4e6632",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "whole"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "quinoa",
+                     "state": "ground"
+              },
+              {
+                     "object": "soybeans",
+                     "state": "ground"
+              },
+              {
+                     "object": "seeds",
+                     "state": "ground"
+              },
+              {
+                     "object": "carrots",
+                     "state": "shredded"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "yeast",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "tahini",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

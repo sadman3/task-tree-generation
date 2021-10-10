@@ -1,0 +1,50 @@
+{
+       "id": "00196f106d",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "whole"
+              },
+              {
+                     "object": "wheat",
+                     "state": "flakes"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cumin",
+                     "state": "ground"
+              },
+              {
+                     "object": "basil",
+                     "state": "dried"
+              },
+              {
+                     "object": "thyme",
+                     "state": "dried"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              },
+              {
+                     "object": "olives",
+                     "state": "chopped"
+              }
+       ]
+}

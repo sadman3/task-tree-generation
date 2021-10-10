@@ -1,0 +1,38 @@
+{
+       "id": "09d1bdc14b",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "meat",
+                     "state": "pieces"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "gravy",
+                     "state": "meat"
+              },
+              {
+                     "object": "noodles",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "ketchup",
+                     "state": "thick_sauce"
+              }
+       ]
+}

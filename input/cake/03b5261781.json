@@ -1,0 +1,30 @@
+{
+       "id": "03b5261781",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "cheese",
+                     "state": "softened"
+              },
+              {
+                     "object": "chocolate",
+                     "state": "solid"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "almonds",
+                     "state": "ground"
+              }
+       ]
+}

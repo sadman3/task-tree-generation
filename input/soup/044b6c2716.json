@@ -1,0 +1,50 @@
+{
+       "id": "044b6c2716",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "zucchini",
+                     "state": "chopped"
+              },
+              {
+                     "object": "carrots",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cauliflower",
+                     "state": "chopped"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "barley",
+                     "state": "baked"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "seasoning",
+                     "state": "ground"
+              }
+       ]
+}

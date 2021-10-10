@@ -1,0 +1,42 @@
+{
+       "id": "03855b6179",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "escarole",
+                     "state": "unknown"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "carrots",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "bouillon",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "tortellini",
+                     "state": "unknown"
+              }
+       ]
+}

@@ -1,0 +1,50 @@
+{
+       "id": "06324586e2",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "carrots",
+                     "state": "grated"
+              },
+              {
+                     "object": "walnuts",
+                     "state": "chopped"
+              },
+              {
+                     "object": "juice",
+                     "state": "crushed"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

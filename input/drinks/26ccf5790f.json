@@ -1,0 +1,38 @@
+{
+       "id": "26ccf5790f",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "blueberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "cocoa",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "ground"
+              },
+              {
+                     "object": "syrup",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

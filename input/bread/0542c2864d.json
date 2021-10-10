@@ -1,0 +1,26 @@
+{
+       "id": "0542c2864d",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "snack cake",
+                     "state": "halved"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

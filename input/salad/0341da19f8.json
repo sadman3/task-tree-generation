@@ -1,0 +1,50 @@
+{
+       "id": "0341da19f8",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "squash",
+                     "state": "baked"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "diced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "diced"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "crushed"
+              },
+              {
+                     "object": "oregano",
+                     "state": "dried"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

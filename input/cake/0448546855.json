@@ -1,0 +1,42 @@
+{
+       "id": "0448546855",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "whole"
+              },
+              {
+                     "object": "buttermilk",
+                     "state": "juice"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "cherries",
+                     "state": "seeded"
+              }
+       ]
+}

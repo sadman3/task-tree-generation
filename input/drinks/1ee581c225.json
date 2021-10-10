@@ -1,0 +1,22 @@
+{
+       "id": "1ee581c225",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              },
+              {
+                     "object": "whipped topping",
+                     "state": "whipped"
+              }
+       ]
+}

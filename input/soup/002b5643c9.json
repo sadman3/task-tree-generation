@@ -1,0 +1,30 @@
+{
+       "id": "002b5643c9",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "bacon",
+                     "state": "sliced"
+              },
+              {
+                     "object": "philadelphia",
+                     "state": "shredded"
+              },
+              {
+                     "object": "dill",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              }
+       ]
+}

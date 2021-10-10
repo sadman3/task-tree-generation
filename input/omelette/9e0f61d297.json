@@ -1,0 +1,38 @@
+{
+       "id": "9e0f61d297",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "dried"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheese",
+                     "state": "creamy"
+              }
+       ]
+}

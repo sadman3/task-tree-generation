@@ -1,0 +1,22 @@
+{
+       "id": "0246d9db70",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "orange",
+                     "state": "peel"
+              },
+              {
+                     "object": "apple",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              }
+       ]
+}

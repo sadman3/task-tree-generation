@@ -1,0 +1,26 @@
+{
+       "id": "968a716a11",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "potatoes",
+                     "state": "baked"
+              },
+              {
+                     "object": "onion",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "sliced"
+              },
+              {
+                     "object": "ham",
+                     "state": "diced"
+              }
+       ]
+}

@@ -1,0 +1,22 @@
+{
+       "id": "3439307f86",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "mango",
+                     "state": "halved"
+              },
+              {
+                     "object": "pineapple",
+                     "state": "chopped"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

@@ -1,0 +1,54 @@
+{
+       "id": "01d7c849fd",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "cooking spray",
+                     "state": "oily"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "oregano",
+                     "state": "dried"
+              },
+              {
+                     "object": "cumin",
+                     "state": "ground"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "carrots",
+                     "state": "baked"
+              },
+              {
+                     "object": "peas",
+                     "state": "thawed"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

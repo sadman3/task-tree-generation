@@ -1,0 +1,54 @@
+{
+       "id": "051ed986fb",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "flour",
+                     "state": "whole"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "bread",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "ground"
+              },
+              {
+                     "object": "linseed_sunflower_seeds_and_almond_mix",
+                     "state": "grain"
+              },
+              {
+                     "object": "yeast",
+                     "state": "dried"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              }
+       ]
+}

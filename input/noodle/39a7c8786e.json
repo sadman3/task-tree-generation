@@ -1,0 +1,50 @@
+{
+       "id": "39a7c8786e",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "half and half",
+                     "state": "juice"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "cheese",
+                     "state": "grated"
+              },
+              {
+                     "object": "mustard",
+                     "state": "dried"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "ham",
+                     "state": "baked"
+              },
+              {
+                     "object": "peas",
+                     "state": "berries"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              }
+       ]
+}

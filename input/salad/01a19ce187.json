@@ -1,0 +1,26 @@
+{
+       "id": "01a19ce187",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "coating mix",
+                     "state": "meat"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "leaves"
+              },
+              {
+                     "object": "croutons",
+                     "state": "whole_snack"
+              },
+              {
+                     "object": "cheese",
+                     "state": "grated"
+              },
+              {
+                     "object": "salad dressing",
+                     "state": "creamy"
+              }
+       ]
+}

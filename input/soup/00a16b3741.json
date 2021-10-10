@@ -1,0 +1,46 @@
+{
+       "id": "00a16b3741",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cauliflower",
+                     "state": "chopped"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "parsley",
+                     "state": "minced"
+              },
+              {
+                     "object": "croutons",
+                     "state": "whole_snack"
+              }
+       ]
+}

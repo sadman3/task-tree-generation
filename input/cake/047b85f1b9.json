@@ -1,0 +1,38 @@
+{
+       "id": "047b85f1b9",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              },
+              {
+                     "object": "walnuts",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cherries",
+                     "state": "chopped"
+              },
+              {
+                     "object": "coconut",
+                     "state": "shredded"
+              }
+       ]
+}

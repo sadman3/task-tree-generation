@@ -1,0 +1,54 @@
+{
+       "id": "01c1ee8609",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "apple",
+                     "state": "peeled"
+              },
+              {
+                     "object": "raisins",
+                     "state": "dried"
+              },
+              {
+                     "object": "walnuts",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cherries",
+                     "state": "halved"
+              }
+       ]
+}

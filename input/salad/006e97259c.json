@@ -1,0 +1,38 @@
+{
+       "id": "006e97259c",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "kale",
+                     "state": "chopped"
+              },
+              {
+                     "object": "spinach",
+                     "state": "leaves"
+              },
+              {
+                     "object": "chicken",
+                     "state": "shredded"
+              },
+              {
+                     "object": "peas",
+                     "state": "ground"
+              },
+              {
+                     "object": "blueberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "onion",
+                     "state": "peeled"
+              },
+              {
+                     "object": "ranch dressing",
+                     "state": "creamy"
+              },
+              {
+                     "object": "pecan halves",
+                     "state": "halved"
+              }
+       ]
+}

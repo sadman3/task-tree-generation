@@ -1,0 +1,66 @@
+{
+       "id": "0a3fcfcdaf",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "small_meat"
+              },
+              {
+                     "object": "shrimp",
+                     "state": "peeled"
+              },
+              {
+                     "object": "cornstarch",
+                     "state": "ground"
+              },
+              {
+                     "object": "zucchini",
+                     "state": "whole"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole"
+              },
+              {
+                     "object": "pepper",
+                     "state": "whole"
+              },
+              {
+                     "object": "stock",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "fish",
+                     "state": "sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "baked"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "horseradish",
+                     "state": "minced"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              }
+       ]
+}

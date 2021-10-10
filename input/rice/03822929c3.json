@@ -1,0 +1,34 @@
+{
+       "id": "03822929c3",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "chicken",
+                     "state": "meat"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "garlic",
+                     "state": "diced"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "seasoning",
+                     "state": "ground"
+              },
+              {
+                     "object": "turmeric",
+                     "state": "ground"
+              }
+       ]
+}

@@ -1,0 +1,42 @@
+{
+       "id": "00d23f6efb",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "whole"
+              },
+              {
+                     "object": "pepper",
+                     "state": "seeded"
+              },
+              {
+                     "object": "asparagus",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "basil",
+                     "state": "chopped"
+              }
+       ]
+}

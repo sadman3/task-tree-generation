@@ -1,0 +1,38 @@
+{
+       "id": "061177fc31",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "walnuts",
+                     "state": "baked"
+              },
+              {
+                     "object": "raisins",
+                     "state": "dried"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "lemon",
+                     "state": "minced"
+              },
+              {
+                     "object": "biscuits",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              }
+       ]
+}

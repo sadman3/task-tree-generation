@@ -1,0 +1,42 @@
+{
+       "id": "249bbac3df",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "carrots",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "bay leaf",
+                     "state": "leaves"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "peas",
+                     "state": "berries"
+              }
+       ]
+}

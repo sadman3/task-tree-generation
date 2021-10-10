@@ -1,0 +1,22 @@
+{
+       "id": "17174dd34b",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              },
+              {
+                     "object": "mango",
+                     "state": "sliced"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              }
+       ]
+}

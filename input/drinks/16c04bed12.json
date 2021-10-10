@@ -1,0 +1,34 @@
+{
+       "id": "16c04bed12",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "cheese",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              },
+              {
+                     "object": "cool whip",
+                     "state": "thawed"
+              }
+       ]
+}

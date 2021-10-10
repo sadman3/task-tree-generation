@@ -1,0 +1,38 @@
+{
+       "id": "0366d783c2",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "spinach",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "grated"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "pizza dough",
+                     "state": "whole"
+              },
+              {
+                     "object": "mozzarella",
+                     "state": "shredded"
+              }
+       ]
+}

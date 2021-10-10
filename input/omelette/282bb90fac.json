@@ -1,0 +1,34 @@
+{
+       "id": "282bb90fac",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "bread",
+                     "state": "sliced"
+              },
+              {
+                     "object": "ham",
+                     "state": "diced"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              }
+       ]
+}

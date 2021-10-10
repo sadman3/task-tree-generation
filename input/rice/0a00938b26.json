@@ -1,0 +1,50 @@
+{
+       "id": "0a00938b26",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "bacon",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "diced"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "diced"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "hot sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "worcestershire sauce",
+                     "state": "sauce"
+              }
+       ]
+}

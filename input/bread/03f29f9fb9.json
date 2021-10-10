@@ -1,0 +1,46 @@
+{
+       "id": "03f29f9fb9",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "yeast",
+                     "state": "dried"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "rosemary",
+                     "state": "minced"
+              },
+              {
+                     "object": "olives",
+                     "state": "berries"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

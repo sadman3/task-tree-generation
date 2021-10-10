@@ -1,0 +1,42 @@
+{
+       "id": "219909f17a",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "sausage",
+                     "state": "meat"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "soup",
+                     "state": "creamy"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "baked"
+              }
+       ]
+}

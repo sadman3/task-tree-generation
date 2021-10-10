@@ -1,0 +1,46 @@
+{
+       "id": "070d6440ad",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "rolls",
+                     "state": "pieces"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "apple",
+                     "state": "peeled"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "brandy",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "bean"
+              },
+              {
+                     "object": "cream",
+                     "state": "whipped"
+              }
+       ]
+}

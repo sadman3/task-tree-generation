@@ -1,0 +1,38 @@
+{
+       "id": "0947b88e6a",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "sticks",
+                     "state": "sticks"
+              },
+              {
+                     "object": "salt",
+                     "state": "halved"
+              },
+              {
+                     "object": "ghee",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "masala",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "peas",
+                     "state": "bean"
+              }
+       ]
+}

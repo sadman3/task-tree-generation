@@ -1,0 +1,54 @@
+{
+       "id": "08391108d7",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "pineapple",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "pepper",
+                     "state": "grated"
+              },
+              {
+                     "object": "scallion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "anchovy",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "turmeric",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "shrimp",
+                     "state": "peeled"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "coriander",
+                     "state": "chopped"
+              }
+       ]
+}

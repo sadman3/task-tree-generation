@@ -1,0 +1,30 @@
+{
+       "id": "1a07d8afb1",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "chicken",
+                     "state": "chopped"
+              },
+              {
+                     "object": "bok choy",
+                     "state": "leaves"
+              },
+              {
+                     "object": "carrots",
+                     "state": "sliced"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              }
+       ]
+}

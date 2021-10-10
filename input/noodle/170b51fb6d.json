@@ -1,0 +1,30 @@
+{
+       "id": "170b51fb6d",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "corn",
+                     "state": "grain"
+              },
+              {
+                     "object": "cheese",
+                     "state": "chopped"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

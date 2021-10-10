@@ -1,0 +1,18 @@
+{
+       "id": "318d22aa11",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "berries",
+                     "state": "mixed"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              }
+       ]
+}

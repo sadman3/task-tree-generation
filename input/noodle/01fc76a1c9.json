@@ -1,0 +1,34 @@
+{
+       "id": "01fc76a1c9",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cottage cheese",
+                     "state": "creamy"
+              },
+              {
+                     "object": "raisins",
+                     "state": "dried"
+              }
+       ]
+}

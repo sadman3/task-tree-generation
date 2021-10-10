@@ -1,0 +1,22 @@
+{
+       "id": "370435a7e7",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "banana",
+                     "state": "halved"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

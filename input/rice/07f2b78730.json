@@ -1,0 +1,30 @@
+{
+       "id": "07f2b78730",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "soup",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "chicken",
+                     "state": "pieces"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

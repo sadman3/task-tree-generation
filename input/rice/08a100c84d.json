@@ -1,0 +1,62 @@
+{
+       "id": "08a100c84d",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "steaks",
+                     "state": "steaks"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "wine",
+                     "state": "juice"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "olives",
+                     "state": "sliced"
+              },
+              {
+                     "object": "brown sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "bay leaves",
+                     "state": "leaves"
+              },
+              {
+                     "object": "raisins",
+                     "state": "dried"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              }
+       ]
+}

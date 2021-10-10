@@ -1,0 +1,22 @@
+{
+       "id": "b1516e1700",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "sausage",
+                     "state": "processed_meat"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "bread",
+                     "state": "baked"
+              }
+       ]
+}

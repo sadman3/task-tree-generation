@@ -1,0 +1,46 @@
+{
+       "id": "1c0efb1c9c",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "nuts",
+                     "state": "minced"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "bacon",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "potatoes",
+                     "state": "sliced"
+              },
+              {
+                     "object": "spinach",
+                     "state": "leaves"
+              },
+              {
+                     "object": "cheese",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

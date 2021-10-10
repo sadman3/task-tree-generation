@@ -1,0 +1,46 @@
+{
+       "id": "1ab155d836",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "ham",
+                     "state": "baked"
+              },
+              {
+                     "object": "pineapple",
+                     "state": "sliced"
+              },
+              {
+                     "object": "vegetables",
+                     "state": "sliced"
+              },
+              {
+                     "object": "greens",
+                     "state": "leaves"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              }
+       ]
+}

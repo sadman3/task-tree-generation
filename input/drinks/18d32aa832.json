@@ -1,0 +1,26 @@
+{
+       "id": "18d32aa832",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "mango",
+                     "state": "peeled"
+              },
+              {
+                     "object": "brown sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "mint",
+                     "state": "minced"
+              }
+       ]
+}

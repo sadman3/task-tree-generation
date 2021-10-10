@@ -1,0 +1,38 @@
+{
+       "id": "004ac39841",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "yeast",
+                     "state": "dried"
+              },
+              {
+                     "object": "herbs",
+                     "state": "dried"
+              },
+              {
+                     "object": "semolina",
+                     "state": "ground"
+              }
+       ]
+}

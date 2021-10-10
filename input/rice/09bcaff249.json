@@ -1,0 +1,30 @@
+{
+       "id": "09bcaff249",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "rice blend",
+                     "state": "grain"
+              },
+              {
+                     "object": "sausage",
+                     "state": "processed_meat"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "soup",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "breadcrumbs",
+                     "state": "crumbs"
+              }
+       ]
+}

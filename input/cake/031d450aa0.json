@@ -1,0 +1,26 @@
+{
+       "id": "031d450aa0",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cocoa",
+                     "state": "solid"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              }
+       ]
+}

@@ -1,0 +1,38 @@
+{
+       "id": "0300e0d779",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "couscous",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "chickpeas",
+                     "state": "bean"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "curry",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

@@ -1,0 +1,30 @@
+{
+       "id": "3648e2e970",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "banana",
+                     "state": "sliced"
+              },
+              {
+                     "object": "mango",
+                     "state": "diced"
+              },
+              {
+                     "object": "pineapple",
+                     "state": "diced"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              }
+       ]
+}

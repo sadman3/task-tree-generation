@@ -1,0 +1,58 @@
+{
+       "id": "0333543d7b",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "baked"
+              },
+              {
+                     "object": "herbs",
+                     "state": "chopped"
+              },
+              {
+                     "object": "ribs",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "arugula",
+                     "state": "whole_leafy"
+              }
+       ]
+}

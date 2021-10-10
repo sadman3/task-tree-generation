@@ -1,0 +1,38 @@
+{
+       "id": "382c38223c",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "potatoes",
+                     "state": "whole"
+              },
+              {
+                     "object": "cheese",
+                     "state": "shredded"
+              },
+              {
+                     "object": "bread",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "chili",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole"
+              }
+       ]
+}

@@ -1,0 +1,38 @@
+{
+       "id": "07317426ba",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "steaks",
+                     "state": "steaks"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "minced"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "pimentos",
+                     "state": "juice"
+              }
+       ]
+}

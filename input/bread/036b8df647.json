@@ -1,0 +1,54 @@
+{
+       "id": "036b8df647",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "whole"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "mace blade",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "dried"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "cranberries",
+                     "state": "dried"
+              },
+              {
+                     "object": "pineapple",
+                     "state": "dried"
+              },
+              {
+                     "object": "yeast",
+                     "state": "dried"
+              }
+       ]
+}

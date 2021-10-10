@@ -1,0 +1,26 @@
+{
+       "id": "0a3c0695ac",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "mozzarella",
+                     "state": "shredded"
+              },
+              {
+                     "object": "pepperoni",
+                     "state": "diced"
+              },
+              {
+                     "object": "vegetables",
+                     "state": "mixed"
+              },
+              {
+                     "object": "salad dressing",
+                     "state": "creamy"
+              }
+       ]
+}

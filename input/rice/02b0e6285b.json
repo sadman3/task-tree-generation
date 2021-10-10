@@ -1,0 +1,58 @@
+{
+       "id": "02b0e6285b",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "chicken",
+                     "state": "meat"
+              },
+              {
+                     "object": "almonds",
+                     "state": "peeled"
+              },
+              {
+                     "object": "raisins",
+                     "state": "ground"
+              },
+              {
+                     "object": "nuts",
+                     "state": "minced"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "minced"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

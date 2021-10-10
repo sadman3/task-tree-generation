@@ -1,0 +1,38 @@
+{
+       "id": "05d5b6b657",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "cake",
+                     "state": "dried"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "chips",
+                     "state": "pieces"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "candy",
+                     "state": "whole"
+              }
+       ]
+}

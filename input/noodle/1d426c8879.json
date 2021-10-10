@@ -1,0 +1,54 @@
+{
+       "id": "1d426c8879",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "celery",
+                     "state": "sliced"
+              },
+              {
+                     "object": "carrots",
+                     "state": "sliced"
+              },
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "kale",
+                     "state": "chopped"
+              },
+              {
+                     "object": "chicken",
+                     "state": "ground"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "bay leaves",
+                     "state": "leaves"
+              },
+              {
+                     "object": "sage",
+                     "state": "ground"
+              },
+              {
+                     "object": "thyme",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              }
+       ]
+}

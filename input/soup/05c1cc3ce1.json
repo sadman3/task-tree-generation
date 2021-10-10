@@ -1,0 +1,62 @@
+{
+       "id": "05c1cc3ce1",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "chicken",
+                     "state": "meat"
+              },
+              {
+                     "object": "carrots",
+                     "state": "diced"
+              },
+              {
+                     "object": "celery",
+                     "state": "diced"
+              },
+              {
+                     "object": "parsley",
+                     "state": "minced"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "minced"
+              },
+              {
+                     "object": "meal",
+                     "state": "baked"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "ginger",
+                     "state": "grated"
+              },
+              {
+                     "object": "spinach",
+                     "state": "leaves"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "sprouts",
+                     "state": "bean"
+              }
+       ]
+}

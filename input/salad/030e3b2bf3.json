@@ -1,0 +1,70 @@
+{
+       "id": "030e3b2bf3",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "crushed"
+              },
+              {
+                     "object": "cumin",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "lime",
+                     "state": "juice"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "chili",
+                     "state": "ground"
+              },
+              {
+                     "object": "fillets",
+                     "state": "steaks"
+              },
+              {
+                     "object": "pepper",
+                     "state": "seeded"
+              },
+              {
+                     "object": "corn",
+                     "state": "grain"
+              },
+              {
+                     "object": "stock",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "leaves"
+              },
+              {
+                     "object": "spinach",
+                     "state": "whole_leafy"
+              }
+       ]
+}

@@ -1,0 +1,38 @@
+{
+       "id": "0ee832803c",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "almonds",
+                     "state": "sliced"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "soup",
+                     "state": "whole"
+              },
+              {
+                     "object": "noodles",
+                     "state": "uncooked"
+              }
+       ]
+}

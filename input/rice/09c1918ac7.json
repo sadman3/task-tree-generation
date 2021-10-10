@@ -1,0 +1,54 @@
+{
+       "id": "09c1918ac7",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "cooking spray",
+                     "state": "oily"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "chicken",
+                     "state": "steaks"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "potatoes",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              },
+              {
+                     "object": "buttermilk",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "crackers",
+                     "state": "whole"
+              }
+       ]
+}

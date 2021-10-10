@@ -1,0 +1,30 @@
+{
+       "id": "035db80f1b",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "spinach",
+                     "state": "leaves"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "grated"
+              }
+       ]
+}

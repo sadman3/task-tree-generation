@@ -1,0 +1,30 @@
+{
+       "id": "206149a1ab",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "cauliflower",
+                     "state": "baked"
+              },
+              {
+                     "object": "cheese",
+                     "state": "sliced"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

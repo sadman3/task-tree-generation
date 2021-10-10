@@ -1,0 +1,46 @@
+{
+       "id": "04eabbd49e",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "banana",
+                     "state": "mashed"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "nature_valley_banana_nut_crunchy_granola_bars",
+                     "state": "crushed"
+              },
+              {
+                     "object": "coconut",
+                     "state": "flakes"
+              }
+       ]
+}

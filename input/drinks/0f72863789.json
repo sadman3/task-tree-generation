@@ -1,0 +1,26 @@
+{
+       "id": "0f72863789",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "banana",
+                     "state": "halved"
+              },
+              {
+                     "object": "blueberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              }
+       ]
+}

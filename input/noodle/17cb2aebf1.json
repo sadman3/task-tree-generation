@@ -1,0 +1,26 @@
+{
+       "id": "17cb2aebf1",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "pasta",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "peas",
+                     "state": "bean"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "pepper",
+                     "state": "sauce"
+              }
+       ]
+}

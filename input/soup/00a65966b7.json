@@ -1,0 +1,42 @@
+{
+       "id": "00a65966b7",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "margarine",
+                     "state": "softened"
+              },
+              {
+                     "object": "celery",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "stock",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "peas",
+                     "state": "thawed"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "whole_nuts"
+              }
+       ]
+}

@@ -1,0 +1,26 @@
+{
+       "id": "308008f102",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "strawberries",
+                     "state": "diced"
+              },
+              {
+                     "object": "banana",
+                     "state": "diced"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              }
+       ]
+}

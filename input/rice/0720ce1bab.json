@@ -1,0 +1,26 @@
+{
+       "id": "0720ce1bab",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "ham",
+                     "state": "baked"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "cheese",
+                     "state": "creamy"
+              }
+       ]
+}

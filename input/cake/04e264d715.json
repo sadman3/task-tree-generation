@@ -1,0 +1,58 @@
+{
+       "id": "04e264d715",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "whole"
+              },
+              {
+                     "object": "bran",
+                     "state": "ground"
+              },
+              {
+                     "object": "wheat",
+                     "state": "flakes"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "vegetables",
+                     "state": "grated"
+              },
+              {
+                     "object": "walnuts",
+                     "state": "chopped"
+              },
+              {
+                     "object": "raisins",
+                     "state": "dried"
+              },
+              {
+                     "object": "coconut",
+                     "state": "juice"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              }
+       ]
+}

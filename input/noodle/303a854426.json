@@ -1,0 +1,42 @@
+{
+       "id": "303a854426",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "chicken",
+                     "state": "whole"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "stock",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "celery",
+                     "state": "diced"
+              },
+              {
+                     "object": "carrots",
+                     "state": "diced"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              }
+       ]
+}

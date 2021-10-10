@@ -1,0 +1,46 @@
+{
+       "id": "220fe3f832",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "spinach",
+                     "state": "chopped"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "seasoning",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "crushed"
+              },
+              {
+                     "object": "bay leaves",
+                     "state": "leaves"
+              },
+              {
+                     "object": "noodles",
+                     "state": "whole"
+              }
+       ]
+}

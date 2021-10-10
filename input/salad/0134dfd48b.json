@@ -1,0 +1,54 @@
+{
+       "id": "0134dfd48b",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "bread",
+                     "state": "sliced"
+              },
+              {
+                     "object": "cooking spray",
+                     "state": "oily"
+              },
+              {
+                     "object": "garlic",
+                     "state": "halved"
+              },
+              {
+                     "object": "fillets",
+                     "state": "halved"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "whole_leafy"
+              },
+              {
+                     "object": "cheese",
+                     "state": "peeled"
+              }
+       ]
+}

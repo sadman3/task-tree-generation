@@ -1,0 +1,38 @@
+{
+       "id": "07150fd91a",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "parsley",
+                     "state": "flakes"
+              },
+              {
+                     "object": "mozzarella",
+                     "state": "creamy"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "pizza sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "cooking spray",
+                     "state": "oily"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "creamy"
+              }
+       ]
+}

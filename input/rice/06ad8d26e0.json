@@ -1,0 +1,26 @@
+{
+       "id": "06ad8d26e0",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "chestnuts",
+                     "state": "unknown"
+              },
+              {
+                     "object": "stock",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              }
+       ]
+}

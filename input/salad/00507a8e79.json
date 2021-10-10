@@ -1,0 +1,46 @@
+{
+       "id": "00507a8e79",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "pasta",
+                     "state": "whole"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "chopped"
+              },
+              {
+                     "object": "wheat",
+                     "state": "flakes"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              }
+       ]
+}

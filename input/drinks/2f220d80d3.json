@@ -1,0 +1,26 @@
+{
+       "id": "2f220d80d3",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "lime",
+                     "state": "peel"
+              },
+              {
+                     "object": "cantaloupe",
+                     "state": "diced"
+              },
+              {
+                     "object": "peach",
+                     "state": "diced"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

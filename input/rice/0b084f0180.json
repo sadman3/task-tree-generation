@@ -1,0 +1,26 @@
+{
+       "id": "0b084f0180",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "pork",
+                     "state": "halved"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

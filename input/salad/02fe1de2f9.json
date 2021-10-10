@@ -1,0 +1,38 @@
+{
+       "id": "02fe1de2f9",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "oregano",
+                     "state": "chopped"
+              },
+              {
+                     "object": "thyme",
+                     "state": "chopped"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "steaks"
+              },
+              {
+                     "object": "zucchini",
+                     "state": "steaks"
+              },
+              {
+                     "object": "squash",
+                     "state": "steaks"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

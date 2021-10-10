@@ -1,0 +1,46 @@
+{
+       "id": "07242702a3",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "whole"
+              },
+              {
+                     "object": "bran",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "whole"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "yeast",
+                     "state": "dried"
+              },
+              {
+                     "object": "cornmeal",
+                     "state": "ground"
+              },
+              {
+                     "object": "oats",
+                     "state": "ground"
+              },
+              {
+                     "object": "seeds",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              }
+       ]
+}

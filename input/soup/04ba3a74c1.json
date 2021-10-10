@@ -1,0 +1,50 @@
+{
+       "id": "04ba3a74c1",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "chili",
+                     "state": "ground"
+              },
+              {
+                     "object": "cumin",
+                     "state": "ground"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "chickpeas",
+                     "state": "bean"
+              },
+              {
+                     "object": "pumpkin",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "corn",
+                     "state": "grain"
+              },
+              {
+                     "object": "salsa",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "cheese",
+                     "state": "shredded"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              }
+       ]
+}

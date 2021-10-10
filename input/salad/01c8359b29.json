@@ -1,0 +1,26 @@
+{
+       "id": "01c8359b29",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "gelatin",
+                     "state": "jelly"
+              },
+              {
+                     "object": "orange",
+                     "state": "peel"
+              },
+              {
+                     "object": "pineapple",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "whipped topping",
+                     "state": "whipped"
+              }
+       ]
+}

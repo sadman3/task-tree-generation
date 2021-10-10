@@ -1,0 +1,30 @@
+{
+       "id": "02100a384d",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "artichoke",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "chives",
+                     "state": "chopped"
+              },
+              {
+                     "object": "watercress",
+                     "state": "minced"
+              },
+              {
+                     "object": "radish",
+                     "state": "whole_veg"
+              }
+       ]
+}

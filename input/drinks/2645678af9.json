@@ -1,0 +1,30 @@
+{
+       "id": "2645678af9",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "peach",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              },
+              {
+                     "object": "almonds",
+                     "state": "sliced"
+              }
+       ]
+}

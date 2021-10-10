@@ -1,0 +1,42 @@
+{
+       "id": "02115914de",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "whole_leafy"
+              },
+              {
+                     "object": "apple",
+                     "state": "whole"
+              },
+              {
+                     "object": "cranberries",
+                     "state": "dried"
+              },
+              {
+                     "object": "cheese",
+                     "state": "creamy"
+              },
+              {
+                     "object": "croutons",
+                     "state": "whole_snack"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "creamy"
+              }
+       ]
+}

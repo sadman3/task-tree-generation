@@ -1,0 +1,42 @@
+{
+       "id": "00c3c131bb",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "meat",
+                     "state": "baked"
+              },
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "grapes",
+                     "state": "berries"
+              },
+              {
+                     "object": "almonds",
+                     "state": "baked"
+              }
+       ]
+}

@@ -1,0 +1,26 @@
+{
+       "id": "33e4b2db4f",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "strawberries",
+                     "state": "sliced"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "ale",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "cherries",
+                     "state": "berries"
+              }
+       ]
+}

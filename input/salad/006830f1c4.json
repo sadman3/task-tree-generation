@@ -1,0 +1,46 @@
+{
+       "id": "006830f1c4",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "potatoes",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "dill",
+                     "state": "dried"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "ground"
+              },
+              {
+                     "object": "chives",
+                     "state": "chopped"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "baked"
+              }
+       ]
+}

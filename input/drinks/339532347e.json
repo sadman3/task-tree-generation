@@ -1,0 +1,30 @@
+{
+       "id": "339532347e",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "spinach",
+                     "state": "whole_leafy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "avocado",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

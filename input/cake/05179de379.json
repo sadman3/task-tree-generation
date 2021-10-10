@@ -1,0 +1,42 @@
+{
+       "id": "05179de379",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "apple",
+                     "state": "peeled"
+              },
+              {
+                     "object": "nuts",
+                     "state": "chopped"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              }
+       ]
+}

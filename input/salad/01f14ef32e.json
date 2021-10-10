@@ -1,0 +1,26 @@
+{
+       "id": "01f14ef32e",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "lemon",
+                     "state": "peel"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "mustard",
+                     "state": "mixed"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

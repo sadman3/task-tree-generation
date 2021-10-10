@@ -1,0 +1,42 @@
+{
+       "id": "01f0bba484",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "lettuce",
+                     "state": "shredded"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "celery",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "green pea",
+                     "state": "bean"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "grated"
+              },
+              {
+                     "object": "bacon",
+                     "state": "baked"
+              }
+       ]
+}

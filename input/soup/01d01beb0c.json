@@ -1,0 +1,58 @@
+{
+       "id": "01d01beb0c",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "chicken",
+                     "state": "pieces"
+              },
+              {
+                     "object": "onion",
+                     "state": "halved"
+              },
+              {
+                     "object": "garlic",
+                     "state": "crushed"
+              },
+              {
+                     "object": "bay leaf",
+                     "state": "leaves"
+              },
+              {
+                     "object": "carrots",
+                     "state": "peeled"
+              },
+              {
+                     "object": "ribs",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "stock",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "scallion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "dill",
+                     "state": "chopped"
+              },
+              {
+                     "object": "lemon",
+                     "state": "minced"
+              }
+       ]
+}

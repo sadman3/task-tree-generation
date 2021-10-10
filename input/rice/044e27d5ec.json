@@ -1,0 +1,62 @@
+{
+       "id": "044e27d5ec",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "curry",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "chicken",
+                     "state": "ground"
+              },
+              {
+                     "object": "bacon",
+                     "state": "sliced"
+              },
+              {
+                     "object": "ham",
+                     "state": "sliced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "worcestershire sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "almonds",
+                     "state": "sliced"
+              },
+              {
+                     "object": "pecan halves",
+                     "state": "halved"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "chopped"
+              }
+       ]
+}

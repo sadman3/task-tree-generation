@@ -1,0 +1,54 @@
+{
+       "id": "02fe7f43f2",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "juice"
+              },
+              {
+                     "object": "ginger",
+                     "state": "dried"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "mixed"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "molasses",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "syrup",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "gingerroot",
+                     "state": "chopped"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              }
+       ]
+}

@@ -1,0 +1,30 @@
+{
+       "id": "00cd17969f",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "beets",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "oregano",
+                     "state": "dried"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

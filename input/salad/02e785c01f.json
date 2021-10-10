@@ -1,0 +1,66 @@
+{
+       "id": "02e785c01f",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "baked"
+              },
+              {
+                     "object": "pasta",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "water",
+                     "state": "minced"
+              },
+              {
+                     "object": "carrots",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "mustard",
+                     "state": "ground"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "whole_leafy"
+              },
+              {
+                     "object": "creme fraiche",
+                     "state": "creamy"
+              },
+              {
+                     "object": "chives",
+                     "state": "minced"
+              },
+              {
+                     "object": "croutons",
+                     "state": "whole_snack"
+              }
+       ]
+}

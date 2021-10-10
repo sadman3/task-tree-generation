@@ -1,0 +1,74 @@
+{
+       "id": "05eefb9457",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "zucchini",
+                     "state": "chopped"
+              },
+              {
+                     "object": "carrots",
+                     "state": "peeled"
+              },
+              {
+                     "object": "celery",
+                     "state": "leaves"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "ginger",
+                     "state": "minced"
+              },
+              {
+                     "object": "turmeric",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "saffron",
+                     "state": "crushed"
+              }
+       ]
+}

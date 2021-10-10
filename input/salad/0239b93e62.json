@@ -1,0 +1,46 @@
+{
+       "id": "0239b93e62",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "baked"
+              },
+              {
+                     "object": "celery",
+                     "state": "diced"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "mustard",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "bacon",
+                     "state": "baked"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "leaves"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "sliced"
+              },
+              {
+                     "object": "croissants",
+                     "state": "whole"
+              }
+       ]
+}

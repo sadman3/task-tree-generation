@@ -1,0 +1,70 @@
+{
+       "id": "004adc5321",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "pasta",
+                     "state": "baked"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cucumber",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "seeded"
+              },
+              {
+                     "object": "pepper",
+                     "state": "seeded"
+              },
+              {
+                     "object": "celery",
+                     "state": "chopped"
+              },
+              {
+                     "object": "olives",
+                     "state": "seeded"
+              },
+              {
+                     "object": "artichoke",
+                     "state": "halved"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "basil",
+                     "state": "chopped"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cheese",
+                     "state": "crumbs"
+              }
+       ]
+}

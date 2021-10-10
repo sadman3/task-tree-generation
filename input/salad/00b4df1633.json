@@ -1,0 +1,38 @@
+{
+       "id": "00b4df1633",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "apple",
+                     "state": "halved"
+              },
+              {
+                     "object": "celery",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "walnuts",
+                     "state": "baked"
+              },
+              {
+                     "object": "cheese",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "lemon",
+                     "state": "peel"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              }
+       ]
+}

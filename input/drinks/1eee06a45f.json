@@ -1,0 +1,22 @@
+{
+       "id": "1eee06a45f",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "blueberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "peach",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              }
+       ]
+}

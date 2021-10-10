@@ -1,0 +1,26 @@
+{
+       "id": "064f5fbaeb",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "ham",
+                     "state": "baked"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "thawed"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "cheese",
+                     "state": "creamy"
+              }
+       ]
+}

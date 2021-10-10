@@ -1,0 +1,42 @@
+{
+       "id": "0442bdcde3",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "paprika",
+                     "state": "ground"
+              },
+              {
+                     "object": "bay leaves",
+                     "state": "leaves"
+              },
+              {
+                     "object": "pepper",
+                     "state": "sauce"
+              },
+              {
+                     "object": "oregano",
+                     "state": "leaves"
+              },
+              {
+                     "object": "turkey",
+                     "state": "meat"
+              },
+              {
+                     "object": "bread",
+                     "state": "whole"
+              },
+              {
+                     "object": "bacon",
+                     "state": "sliced"
+              }
+       ]
+}

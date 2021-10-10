@@ -1,0 +1,50 @@
+{
+       "id": "03889cb05b",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "egg substitute",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "banana",
+                     "state": "mashed"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "fat",
+                     "state": "pieces"
+              },
+              {
+                     "object": "nuts",
+                     "state": "chopped"
+              }
+       ]
+}

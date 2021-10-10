@@ -1,0 +1,54 @@
+{
+       "id": "014f12f741",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "",
+                     "state": "halved"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "halved"
+              },
+              {
+                     "object": "celery",
+                     "state": "sliced"
+              },
+              {
+                     "object": "olives",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "basil",
+                     "state": "chopped"
+              },
+              {
+                     "object": "mint",
+                     "state": "chopped"
+              },
+              {
+                     "object": "oregano",
+                     "state": "dried"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

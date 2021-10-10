@@ -1,0 +1,62 @@
+{
+       "id": "31d1a24e0f",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "ginger",
+                     "state": "minced"
+              },
+              {
+                     "object": "carrots",
+                     "state": "peeled"
+              },
+              {
+                     "object": "ribs",
+                     "state": "diced"
+              },
+              {
+                     "object": "broth",
+                     "state": "meat"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "chicken",
+                     "state": "ground"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

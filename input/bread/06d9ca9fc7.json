@@ -1,0 +1,50 @@
+{
+       "id": "06d9ca9fc7",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "cucumber",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "whole"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "turmeric",
+                     "state": "ground"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              }
+       ]
+}

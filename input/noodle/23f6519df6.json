@@ -1,0 +1,26 @@
+{
+       "id": "23f6519df6",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "spaghetti",
+                     "state": "baked"
+              },
+              {
+                     "object": "soup",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "tuna",
+                     "state": "minced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

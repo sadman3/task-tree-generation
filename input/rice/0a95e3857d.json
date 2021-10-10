@@ -1,0 +1,42 @@
+{
+       "id": "0a95e3857d",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "cool whip",
+                     "state": "whipped"
+              },
+              {
+                     "object": "peach",
+                     "state": "sliced"
+              },
+              {
+                     "object": "cranberries",
+                     "state": "dried"
+              },
+              {
+                     "object": "banana",
+                     "state": "sliced"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "peas",
+                     "state": "berries"
+              },
+              {
+                     "object": "margarine",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              }
+       ]
+}

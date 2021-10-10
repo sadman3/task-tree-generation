@@ -1,0 +1,54 @@
+{
+       "id": "e7eaac531d",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "ground"
+              },
+              {
+                     "object": "curry",
+                     "state": "ground"
+              },
+              {
+                     "object": "bacon",
+                     "state": "processed_meat"
+              },
+              {
+                     "object": "parsley",
+                     "state": "ground"
+              }
+       ]
+}

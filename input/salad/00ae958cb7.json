@@ -1,0 +1,34 @@
+{
+       "id": "00ae958cb7",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "pasta",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cucumber",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "vinaigrette",
+                     "state": "creamy"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

@@ -1,0 +1,42 @@
+{
+       "id": "010c7c6d51",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "yellow_cake_layer",
+                     "state": "baked"
+              },
+              {
+                     "object": "yellow_cake_layer",
+                     "state": "baked"
+              },
+              {
+                     "object": "frosting",
+                     "state": "creamy"
+              },
+              {
+                     "object": "wafers",
+                     "state": "juice"
+              },
+              {
+                     "object": "ice",
+                     "state": "creamy"
+              },
+              {
+                     "object": "ice",
+                     "state": "creamy"
+              },
+              {
+                     "object": "ice cream cones",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sticks",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "candies",
+                     "state": "baked"
+              }
+       ]
+}

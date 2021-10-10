@@ -1,0 +1,46 @@
+{
+       "id": "04e2c650b0",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "peas",
+                     "state": "dried"
+              },
+              {
+                     "object": "hock",
+                     "state": "processed_meat"
+              },
+              {
+                     "object": "carrots",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "celery",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "beef",
+                     "state": "solid"
+              },
+              {
+                     "object": "sausage",
+                     "state": "sliced"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

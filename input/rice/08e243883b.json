@@ -1,0 +1,34 @@
+{
+       "id": "08e243883b",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "celery",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pimentos",
+                     "state": "stuffed"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

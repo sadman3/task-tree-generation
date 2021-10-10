@@ -1,0 +1,50 @@
+{
+       "id": "0049a8b6dc",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "fish",
+                     "state": "sauce"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "mirin",
+                     "state": "juice"
+              },
+              {
+                     "object": "curry",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "curry",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "chopped"
+              },
+              {
+                     "object": "scallion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "ginger",
+                     "state": "shredded"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

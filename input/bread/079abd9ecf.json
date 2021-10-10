@@ -1,0 +1,30 @@
+{
+       "id": "079abd9ecf",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "crushed"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "shredded"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "crushed"
+              }
+       ]
+}

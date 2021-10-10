@@ -1,0 +1,34 @@
+{
+       "id": "01c639a4e6",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "strawberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "raspberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "blueberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "mint",
+                     "state": "leaves"
+              }
+       ]
+}

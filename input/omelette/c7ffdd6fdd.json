@@ -1,0 +1,22 @@
+{
+       "id": "c7ffdd6fdd",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "cheese",
+                     "state": "grated"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

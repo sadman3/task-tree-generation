@@ -1,0 +1,22 @@
+{
+       "id": "afa2585838",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "ham",
+                     "state": "sliced"
+              },
+              {
+                     "object": "spinach",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cheese",
+                     "state": "shredded"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              }
+       ]
+}

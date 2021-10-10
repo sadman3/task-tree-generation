@@ -1,0 +1,34 @@
+{
+       "id": "02598df179",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "cheese",
+                     "state": "creamy"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cream",
+                     "state": "whipped"
+              },
+              {
+                     "object": "cherries",
+                     "state": "halved"
+              },
+              {
+                     "object": "cherries",
+                     "state": "halved"
+              },
+              {
+                     "object": "fruit cocktail",
+                     "state": "chopped"
+              },
+              {
+                     "object": "marshmallows",
+                     "state": "diced"
+              }
+       ]
+}

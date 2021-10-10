@@ -1,0 +1,58 @@
+{
+       "id": "0190d40036",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "garlic",
+                     "state": "grain"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "cucumber",
+                     "state": "seeded"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "carrots",
+                     "state": "shredded"
+              },
+              {
+                     "object": "mint",
+                     "state": "chopped"
+              },
+              {
+                     "object": "basil",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "chopped"
+              },
+              {
+                     "object": "lime",
+                     "state": "minced"
+              }
+       ]
+}

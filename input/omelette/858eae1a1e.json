@@ -1,0 +1,38 @@
+{
+       "id": "858eae1a1e",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "potatoes",
+                     "state": "baked"
+              },
+              {
+                     "object": "cheese",
+                     "state": "grated"
+              },
+              {
+                     "object": "shrimp",
+                     "state": "baked"
+              },
+              {
+                     "object": "chives",
+                     "state": "chopped"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "whole_veg"
+              }
+       ]
+}

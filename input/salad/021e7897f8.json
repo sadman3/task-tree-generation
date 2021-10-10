@@ -1,0 +1,30 @@
+{
+       "id": "021e7897f8",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "tuna",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "baked"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              }
+       ]
+}

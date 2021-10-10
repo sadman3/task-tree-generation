@@ -1,0 +1,34 @@
+{
+       "id": "26b2688b7a",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "strawberries",
+                     "state": "thawed"
+              },
+              {
+                     "object": "blackberries",
+                     "state": "thawed"
+              },
+              {
+                     "object": "raspberries",
+                     "state": "thawed"
+              },
+              {
+                     "object": "banana",
+                     "state": "peeled"
+              },
+              {
+                     "object": "agave",
+                     "state": "ground"
+              }
+       ]
+}

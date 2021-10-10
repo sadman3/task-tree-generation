@@ -1,0 +1,38 @@
+{
+       "id": "08289ed5c5",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "yeast",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "potatoes",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "dill",
+                     "state": "chopped"
+              }
+       ]
+}

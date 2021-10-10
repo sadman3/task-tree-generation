@@ -1,0 +1,34 @@
+{
+       "id": "04745dea7e",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "chives",
+                     "state": "chopped"
+              }
+       ]
+}

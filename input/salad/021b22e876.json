@@ -1,0 +1,50 @@
+{
+       "id": "021b22e876",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "shrimp",
+                     "state": "small_meat"
+              },
+              {
+                     "object": "asparagus",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "lemon",
+                     "state": "juice"
+              },
+              {
+                     "object": "lemon",
+                     "state": "minced"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

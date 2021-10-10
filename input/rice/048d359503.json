@@ -1,0 +1,42 @@
+{
+       "id": "048d359503",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "nofood"
+              },
+              {
+                     "object": "cabbage",
+                     "state": "chopped"
+              },
+              {
+                     "object": "carrots",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "celery",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              },
+              {
+                     "object": "crabmeat",
+                     "state": "chopped"
+              },
+              {
+                     "object": "chili",
+                     "state": "sauce"
+              }
+       ]
+}

@@ -1,0 +1,26 @@
+{
+       "id": "393cb29e4a",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sherbet",
+                     "state": "peel"
+              },
+              {
+                     "object": "coffee",
+                     "state": "juice"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              }
+       ]
+}

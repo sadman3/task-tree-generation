@@ -1,0 +1,26 @@
+{
+       "id": "27ab43c62c",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "blueberries",
+                     "state": "thawed"
+              },
+              {
+                     "object": "fat",
+                     "state": "juice"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "cardamom",
+                     "state": "ground"
+              }
+       ]
+}

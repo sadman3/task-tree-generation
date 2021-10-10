@@ -1,0 +1,46 @@
+{
+       "id": "05af5e7477",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "chicken",
+                     "state": "meat"
+              },
+              {
+                     "object": "corn",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "rotel",
+                     "state": "unknown"
+              },
+              {
+                     "object": "stock",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "garlic",
+                     "state": "crushed"
+              },
+              {
+                     "object": "salsa",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cheese",
+                     "state": "shredded"
+              },
+              {
+                     "object": "chips",
+                     "state": "pieces"
+              }
+       ]
+}

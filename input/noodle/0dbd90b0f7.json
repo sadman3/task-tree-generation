@@ -1,0 +1,42 @@
+{
+       "id": "0dbd90b0f7",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "carrots",
+                     "state": "peeled"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "chicken",
+                     "state": "meat"
+              },
+              {
+                     "object": "dill",
+                     "state": "leaves"
+              },
+              {
+                     "object": "noodles",
+                     "state": "dried"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

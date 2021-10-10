@@ -1,0 +1,26 @@
+{
+       "id": "2b0d05302f",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "pineapple",
+                     "state": "halved"
+              },
+              {
+                     "object": "coconut",
+                     "state": "flakes"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

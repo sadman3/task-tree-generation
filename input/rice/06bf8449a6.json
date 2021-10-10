@@ -1,0 +1,38 @@
+{
+       "id": "06bf8449a6",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "mussels",
+                     "state": "baked"
+              },
+              {
+                     "object": "mussels",
+                     "state": "small_meat"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "thyme",
+                     "state": "chopped"
+              },
+              {
+                     "object": "lemon",
+                     "state": "grated"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              }
+       ]
+}

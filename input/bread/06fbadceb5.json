@@ -1,0 +1,50 @@
+{
+       "id": "06fbadceb5",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "preserves",
+                     "state": "preserved"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "lemon",
+                     "state": "grated"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "yeast",
+                     "state": "dried"
+              },
+              {
+                     "object": "apricot",
+                     "state": "dried"
+              },
+              {
+                     "object": "cranberries",
+                     "state": "dried"
+              },
+              {
+                     "object": "nuts",
+                     "state": "chopped"
+              }
+       ]
+}

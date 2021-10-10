@@ -1,0 +1,22 @@
+{
+       "id": "0a803f9b7e",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "salsa",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "cheese",
+                     "state": "creamy"
+              }
+       ]
+}

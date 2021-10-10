@@ -1,0 +1,34 @@
+{
+       "id": "5aa38a5689",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "cooking spray",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "crushed"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "sliced"
+              },
+              {
+                     "object": "spinach",
+                     "state": "leaves"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              }
+       ]
+}

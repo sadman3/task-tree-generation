@@ -1,0 +1,30 @@
+{
+       "id": "1eb1ac5cfc",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "oats",
+                     "state": "ground"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              }
+       ]
+}

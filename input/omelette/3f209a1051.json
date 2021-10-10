@@ -1,0 +1,34 @@
+{
+       "id": "3f209a1051",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "cheese",
+                     "state": "chopped"
+              },
+              {
+                     "object": "vegetables",
+                     "state": "baked"
+              },
+              {
+                     "object": "worcestershire sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

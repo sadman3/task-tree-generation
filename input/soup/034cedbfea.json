@@ -1,0 +1,38 @@
+{
+       "id": "034cedbfea",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "carrots",
+                     "state": "peeled"
+              },
+              {
+                     "object": "parsnips",
+                     "state": "halved"
+              },
+              {
+                     "object": "onion",
+                     "state": "halved"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "baguette",
+                     "state": "sliced"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              }
+       ]
+}

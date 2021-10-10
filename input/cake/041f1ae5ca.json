@@ -1,0 +1,86 @@
+{
+       "id": "041f1ae5ca",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "allspice",
+                     "state": "ground"
+              },
+              {
+                     "object": "raisins",
+                     "state": "chopped"
+              },
+              {
+                     "object": "almonds",
+                     "state": "chopped"
+              },
+              {
+                     "object": "orange",
+                     "state": "grated"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "coconut",
+                     "state": "flakes"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "cornstarch",
+                     "state": "ground"
+              },
+              {
+                     "object": "frosting",
+                     "state": "creamy"
+              }
+       ]
+}

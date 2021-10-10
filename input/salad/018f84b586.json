@@ -1,0 +1,42 @@
+{
+       "id": "018f84b586",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "tomatoes",
+                     "state": "peeled"
+              },
+              {
+                     "object": "cucumber",
+                     "state": "peeled"
+              },
+              {
+                     "object": "pepper",
+                     "state": "peeled"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "cheese",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "olives",
+                     "state": "berries"
+              }
+       ]
+}

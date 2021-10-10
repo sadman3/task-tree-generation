@@ -1,0 +1,50 @@
+{
+       "id": "009a6b771a",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "lettuce",
+                     "state": "whole_leafy"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "whole_leafy"
+              },
+              {
+                     "object": "artichoke",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "hearts of palm",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pimiento",
+                     "state": "diced"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "salami",
+                     "state": "peeled"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "creamy"
+              }
+       ]
+}

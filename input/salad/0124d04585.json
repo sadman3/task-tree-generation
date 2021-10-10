@@ -1,0 +1,50 @@
+{
+       "id": "0124d04585",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "peas",
+                     "state": "baked"
+              },
+              {
+                     "object": "pepper",
+                     "state": "minced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "minced"
+              },
+              {
+                     "object": "onion",
+                     "state": "minced"
+              },
+              {
+                     "object": "celery",
+                     "state": "minced"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "seeded"
+              },
+              {
+                     "object": "parsley",
+                     "state": "minced"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "orange",
+                     "state": "minced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

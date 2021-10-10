@@ -1,0 +1,38 @@
+{
+       "id": "011f7e666c",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "soup mix",
+                     "state": "unknown"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              },
+              {
+                     "object": "potatoes",
+                     "state": "pieces"
+              },
+              {
+                     "object": "cabbage",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "vegetables",
+                     "state": "mixed"
+              },
+              {
+                     "object": "parsley",
+                     "state": "dried"
+              },
+              {
+                     "object": "thyme",
+                     "state": "dried"
+              }
+       ]
+}

@@ -1,0 +1,50 @@
+{
+       "id": "049c1a6870",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "cumin",
+                     "state": "ground"
+              },
+              {
+                     "object": "saffron",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "carrots",
+                     "state": "halved"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "cherries",
+                     "state": "dried"
+              }
+       ]
+}

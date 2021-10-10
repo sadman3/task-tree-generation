@@ -1,0 +1,50 @@
+{
+       "id": "030245ef0f",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "macaroni",
+                     "state": "baked"
+              },
+              {
+                     "object": "pepper",
+                     "state": "whole"
+              },
+              {
+                     "object": "carrots",
+                     "state": "grated"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              }
+       ]
+}

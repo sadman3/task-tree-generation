@@ -1,0 +1,34 @@
+{
+       "id": "035ab64c50",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "cucumber",
+                     "state": "peeled"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "basil",
+                     "state": "leaves"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "cheese",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

@@ -1,0 +1,54 @@
+{
+       "id": "089cf5b571",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "halved"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "diced"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "potatoes",
+                     "state": "sliced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "zucchini",
+                     "state": "sliced"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "breadcrumbs",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "grated"
+              }
+       ]
+}

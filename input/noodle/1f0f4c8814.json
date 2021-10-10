@@ -1,0 +1,46 @@
+{
+       "id": "1f0f4c8814",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "macaroni",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "cream",
+                     "state": "whole"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "peas",
+                     "state": "berries"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              },
+              {
+                     "object": "chips",
+                     "state": "crushed"
+              },
+              {
+                     "object": "onion",
+                     "state": "baked"
+              }
+       ]
+}

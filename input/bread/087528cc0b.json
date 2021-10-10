@@ -1,0 +1,34 @@
+{
+       "id": "087528cc0b",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "banana",
+                     "state": "halved"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "oats",
+                     "state": "flakes"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "whole_nuts"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              }
+       ]
+}

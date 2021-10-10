@@ -1,0 +1,58 @@
+{
+       "id": "1bf9c24e6a",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "chicken",
+                     "state": "whole"
+              },
+              {
+                     "object": "onion",
+                     "state": "peeled"
+              },
+              {
+                     "object": "carrots",
+                     "state": "peeled"
+              },
+              {
+                     "object": "parsley",
+                     "state": "leaves"
+              },
+              {
+                     "object": "thyme",
+                     "state": "crushed"
+              },
+              {
+                     "object": "marjoram",
+                     "state": "crushed"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "sliced"
+              },
+              {
+                     "object": "spinach",
+                     "state": "whole_leafy"
+              },
+              {
+                     "object": "celery",
+                     "state": "leaves"
+              }
+       ]
+}

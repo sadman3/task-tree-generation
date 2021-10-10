@@ -1,0 +1,54 @@
+{
+       "id": "1aa9fb2f13",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "linguine",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "oil",
+                     "state": "baked"
+              },
+              {
+                     "object": "seeds",
+                     "state": "baked"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "bok choy",
+                     "state": "sliced"
+              },
+              {
+                     "object": "cabbage",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "pieces"
+              },
+              {
+                     "object": "cucumber",
+                     "state": "sliced"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "leaves"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "miso",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              }
+       ]
+}

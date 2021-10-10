@@ -1,0 +1,22 @@
+{
+       "id": "0de6cbc2be",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "spinach",
+                     "state": "whole_leafy"
+              },
+              {
+                     "object": "apple",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "banana",
+                     "state": "peeled"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              }
+       ]
+}

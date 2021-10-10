@@ -1,0 +1,62 @@
+{
+       "id": "03e41dd21a",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "lentils",
+                     "state": "baked"
+              },
+              {
+                     "object": "apple",
+                     "state": "diced"
+              },
+              {
+                     "object": "grapes",
+                     "state": "halved"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "celery",
+                     "state": "chopped"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "garlic",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "tarragon",
+                     "state": "ground"
+              },
+              {
+                     "object": "thyme",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

@@ -1,0 +1,54 @@
+{
+       "id": "00c2c6e0f6",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "beef",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "sauce"
+              },
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "sauce"
+              },
+              {
+                     "object": "chili",
+                     "state": "ground"
+              },
+              {
+                     "object": "oregano",
+                     "state": "dried"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "crushed"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              }
+       ]
+}

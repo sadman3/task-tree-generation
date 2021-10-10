@@ -1,0 +1,26 @@
+{
+       "id": "0fb62e6dcf",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "berries",
+                     "state": "berries"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

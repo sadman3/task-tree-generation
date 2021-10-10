@@ -1,0 +1,50 @@
+{
+       "id": "0647148654",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "asparagus",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "pasta",
+                     "state": "dried"
+              },
+              {
+                     "object": "peas",
+                     "state": "berries"
+              },
+              {
+                     "object": "spinach",
+                     "state": "leaves"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "basil",
+                     "state": "ground"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "shredded"
+              }
+       ]
+}

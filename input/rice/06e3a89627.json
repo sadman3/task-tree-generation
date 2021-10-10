@@ -1,0 +1,30 @@
+{
+       "id": "06e3a89627",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "cheese",
+                     "state": "diced"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "chopped"
+              }
+       ]
+}

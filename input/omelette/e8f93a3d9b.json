@@ -1,0 +1,38 @@
+{
+       "id": "e8f93a3d9b",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "mint",
+                     "state": "leaves"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "leaves"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "curry",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              }
+       ]
+}

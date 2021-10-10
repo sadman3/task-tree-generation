@@ -1,0 +1,46 @@
+{
+       "id": "02f2e13a1c",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "cake",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cream",
+                     "state": "whipped"
+              },
+              {
+                     "object": "jam",
+                     "state": "berries"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "chocolate",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "truffles",
+                     "state": "solid"
+              },
+              {
+                     "object": "truffles",
+                     "state": "solid"
+              },
+              {
+                     "object": "sugar crystals",
+                     "state": "ground"
+              }
+       ]
+}

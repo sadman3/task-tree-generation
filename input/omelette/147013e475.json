@@ -1,0 +1,38 @@
+{
+       "id": "147013e475",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "spaghetti",
+                     "state": "sauce"
+              },
+              {
+                     "object": "basil",
+                     "state": "leaves"
+              },
+              {
+                     "object": "mozzarella",
+                     "state": "creamy"
+              },
+              {
+                     "object": "parmesan",
+                     "state": "creamy"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

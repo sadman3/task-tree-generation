@@ -1,0 +1,42 @@
+{
+       "id": "28b03f5009",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "tenderloin",
+                     "state": "halved"
+              },
+              {
+                     "object": "pepper",
+                     "state": "pieces"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "pieces"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "noodles",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "parsley",
+                     "state": "minced"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              }
+       ]
+}

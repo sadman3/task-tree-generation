@@ -1,0 +1,26 @@
+{
+       "id": "07150d1301",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "creamy"
+              },
+              {
+                     "object": "salsa",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

@@ -1,0 +1,34 @@
+{
+       "id": "0ab7ef2dc7",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "chicken",
+                     "state": "meat"
+              },
+              {
+                     "object": "oil",
+                     "state": "berries"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "bouillon",
+                     "state": "solid"
+              }
+       ]
+}

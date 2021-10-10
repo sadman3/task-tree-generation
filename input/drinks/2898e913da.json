@@ -1,0 +1,26 @@
+{
+       "id": "2898e913da",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "peach",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "spinach",
+                     "state": "whole_leafy"
+              },
+              {
+                     "object": "parsley",
+                     "state": "minced"
+              }
+       ]
+}

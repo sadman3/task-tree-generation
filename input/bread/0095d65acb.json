@@ -1,0 +1,34 @@
+{
+       "id": "0095d65acb",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "bread",
+                     "state": "whole"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "cream",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

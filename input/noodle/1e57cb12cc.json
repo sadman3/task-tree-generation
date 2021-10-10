@@ -1,0 +1,46 @@
+{
+       "id": "1e57cb12cc",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "beef",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "paprika",
+                     "state": "ground"
+              },
+              {
+                     "object": "thyme",
+                     "state": "ground"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              }
+       ]
+}

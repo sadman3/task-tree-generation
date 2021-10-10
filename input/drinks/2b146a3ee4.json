@@ -1,0 +1,30 @@
+{
+       "id": "2b146a3ee4",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "spinach",
+                     "state": "chopped"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "unknown"
+              },
+              {
+                     "object": "pear",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              }
+       ]
+}

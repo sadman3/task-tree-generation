@@ -1,0 +1,66 @@
+{
+       "id": "010e2ce6c4",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "lime",
+                     "state": "minced"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "shallots",
+                     "state": "sliced"
+              },
+              {
+                     "object": "shrimp",
+                     "state": "baked"
+              },
+              {
+                     "object": "bok choy",
+                     "state": "leaves"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "shredded"
+              },
+              {
+                     "object": "sprouts",
+                     "state": "bean"
+              },
+              {
+                     "object": "pepper",
+                     "state": "sliced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "sliced"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "sliced"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "ground"
+              },
+              {
+                     "object": "crabmeat",
+                     "state": "small_meat"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

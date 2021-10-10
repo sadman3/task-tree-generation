@@ -1,0 +1,42 @@
+{
+       "id": "0a4fcfcac9",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "thyme",
+                     "state": "minced"
+              },
+              {
+                     "object": "garlic",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "scallion",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "peas",
+                     "state": "juice"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "whole"
+              }
+       ]
+}

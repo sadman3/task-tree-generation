@@ -1,0 +1,34 @@
+{
+       "id": "09126322ca",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "marinade",
+                     "state": "peel"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "mixed"
+              },
+              {
+                     "object": "paprika",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "turmeric",
+                     "state": "ground"
+              }
+       ]
+}

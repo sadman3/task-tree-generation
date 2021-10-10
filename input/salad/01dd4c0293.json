@@ -1,0 +1,34 @@
+{
+       "id": "01dd4c0293",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "apricot",
+                     "state": "dried"
+              },
+              {
+                     "object": "prunes",
+                     "state": "seeded"
+              },
+              {
+                     "object": "almonds",
+                     "state": "baked"
+              },
+              {
+                     "object": "raisins",
+                     "state": "dried"
+              },
+              {
+                     "object": "pistachios",
+                     "state": "chopped"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              }
+       ]
+}

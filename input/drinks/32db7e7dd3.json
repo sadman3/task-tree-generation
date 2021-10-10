@@ -1,0 +1,38 @@
+{
+       "id": "32db7e7dd3",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "protein powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "seeds",
+                     "state": "ground"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "stevia",
+                     "state": "ground"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

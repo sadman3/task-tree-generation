@@ -1,0 +1,50 @@
+{
+       "id": "01ca8aac07",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "onion",
+                     "state": "minced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "minced"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "jalapeno",
+                     "state": "minced"
+              },
+              {
+                     "object": "cumin",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "muffins",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "cheese",
+                     "state": "grated"
+              },
+              {
+                     "object": "turkey",
+                     "state": "steaks"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              }
+       ]
+}

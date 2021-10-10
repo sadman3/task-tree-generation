@@ -1,0 +1,78 @@
+{
+       "id": "0db33434db",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "oil",
+                     "state": "halved"
+              },
+              {
+                     "object": "shrimp",
+                     "state": "peeled"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "squash",
+                     "state": "grated"
+              },
+              {
+                     "object": "carrots",
+                     "state": "grated"
+              },
+              {
+                     "object": "celery",
+                     "state": "sliced"
+              },
+              {
+                     "object": "edamame",
+                     "state": "peeled"
+              },
+              {
+                     "object": "sprouts",
+                     "state": "bean"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole"
+              },
+              {
+                     "object": "cornstarch",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "ginger",
+                     "state": "minced"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              }
+       ]
+}

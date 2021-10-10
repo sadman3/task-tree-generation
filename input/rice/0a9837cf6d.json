@@ -1,0 +1,54 @@
+{
+       "id": "0a9837cf6d",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "shrimp",
+                     "state": "dried"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "dried"
+              },
+              {
+                     "object": "radish",
+                     "state": "grated"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "shrimp",
+                     "state": "peeled"
+              },
+              {
+                     "object": "fish",
+                     "state": "meat"
+              },
+              {
+                     "object": "fillets",
+                     "state": "steaks"
+              },
+              {
+                     "object": "baby_oysters",
+                     "state": "small_meat"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "minced"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              }
+       ]
+}

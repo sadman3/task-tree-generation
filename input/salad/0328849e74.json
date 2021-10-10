@@ -1,0 +1,42 @@
+{
+       "id": "0328849e74",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "bacon",
+                     "state": "sliced"
+              },
+              {
+                     "object": "turkey",
+                     "state": "diced"
+              },
+              {
+                     "object": "french dressing",
+                     "state": "creamy"
+              },
+              {
+                     "object": "chives",
+                     "state": "minced"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "horseradish",
+                     "state": "minced"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "pieces"
+              }
+       ]
+}

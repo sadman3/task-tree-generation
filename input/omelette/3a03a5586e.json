@@ -1,0 +1,50 @@
+{
+       "id": "3a03a5586e",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "parsley",
+                     "state": "chopped"
+              },
+              {
+                     "object": "chives",
+                     "state": "chopped"
+              },
+              {
+                     "object": "tarragon",
+                     "state": "chopped"
+              },
+              {
+                     "object": "thyme",
+                     "state": "chopped"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "cheese",
+                     "state": "sliced"
+              },
+              {
+                     "object": "chives",
+                     "state": "minced"
+              }
+       ]
+}

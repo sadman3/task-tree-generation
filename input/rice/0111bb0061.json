@@ -1,0 +1,34 @@
+{
+       "id": "0111bb0061",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "egg",
+                     "state": "diced"
+              },
+              {
+                     "object": "carrots",
+                     "state": "berries"
+              },
+              {
+                     "object": "onion",
+                     "state": "minced"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "meat",
+                     "state": "meat"
+              }
+       ]
+}

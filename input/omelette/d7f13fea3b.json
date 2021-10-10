@@ -1,0 +1,38 @@
+{
+       "id": "d7f13fea3b",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "sage",
+                     "state": "chopped"
+              },
+              {
+                     "object": "thyme",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cheese",
+                     "state": "grated"
+              },
+              {
+                     "object": "asparagus",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              }
+       ]
+}

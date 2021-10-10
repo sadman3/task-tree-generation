@@ -1,0 +1,30 @@
+{
+       "id": "117a4f45f2",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "strawberries",
+                     "state": "halved"
+              },
+              {
+                     "object": "protein powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "sweetener",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

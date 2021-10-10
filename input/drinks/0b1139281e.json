@@ -1,0 +1,34 @@
+{
+       "id": "0b1139281e",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "ice",
+                     "state": "solid"
+              },
+              {
+                     "object": "mango",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "banana",
+                     "state": "chopped"
+              },
+              {
+                     "object": "guava",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "rum",
+                     "state": "juice"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "orange",
+                     "state": "sliced"
+              }
+       ]
+}

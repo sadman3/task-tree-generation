@@ -1,0 +1,54 @@
+{
+       "id": "0104b6cff1",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "sausage",
+                     "state": "baked"
+              },
+              {
+                     "object": "kidney bean",
+                     "state": "bean"
+              },
+              {
+                     "object": "chili",
+                     "state": "ground"
+              },
+              {
+                     "object": "cumin",
+                     "state": "ground"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "pieces"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "halved"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "grated"
+              },
+              {
+                     "object": "avocado",
+                     "state": "sliced"
+              },
+              {
+                     "object": "ribs",
+                     "state": "sliced"
+              },
+              {
+                     "object": "salad dressing",
+                     "state": "creamy"
+              },
+              {
+                     "object": "pepper",
+                     "state": "sauce"
+              },
+              {
+                     "object": "taco",
+                     "state": "crushed"
+              }
+       ]
+}

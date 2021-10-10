@@ -1,0 +1,30 @@
+{
+       "id": "1e8ce1ebb8",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "ice",
+                     "state": "solid"
+              },
+              {
+                     "object": "cream",
+                     "state": "whipped"
+              },
+              {
+                     "object": "strawberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              }
+       ]
+}

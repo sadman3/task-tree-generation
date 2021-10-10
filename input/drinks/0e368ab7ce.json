@@ -1,0 +1,22 @@
+{
+       "id": "0e368ab7ce",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "blueberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "grapes",
+                     "state": "berries"
+              },
+              {
+                     "object": "tofu",
+                     "state": "creamy"
+              }
+       ]
+}

@@ -1,0 +1,50 @@
+{
+       "id": "1d208cd651",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "ginger",
+                     "state": "chopped"
+              },
+              {
+                     "object": "chile",
+                     "state": "minced"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "noodles",
+                     "state": "bean"
+              },
+              {
+                     "object": "cucumber",
+                     "state": "halved"
+              },
+              {
+                     "object": "scallion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "mango",
+                     "state": "peeled"
+              },
+              {
+                     "object": "carrots",
+                     "state": "sliced"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "ground"
+              }
+       ]
+}

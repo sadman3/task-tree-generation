@@ -1,0 +1,42 @@
+{
+       "id": "003c17c817",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "margarine",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "apple",
+                     "state": "sliced"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              }
+       ]
+}

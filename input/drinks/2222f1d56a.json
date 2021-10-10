@@ -1,0 +1,30 @@
+{
+       "id": "2222f1d56a",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "rum",
+                     "state": "juice"
+              },
+              {
+                     "object": "cacao",
+                     "state": "juice"
+              },
+              {
+                     "object": "creme de banane",
+                     "state": "juice"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              }
+       ]
+}

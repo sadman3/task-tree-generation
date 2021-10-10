@@ -1,0 +1,38 @@
+{
+       "id": "a303b4d7ff",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "shrimp",
+                     "state": "small_meat"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "oysters",
+                     "state": "sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "cornstarch",
+                     "state": "ground"
+              }
+       ]
+}

@@ -1,0 +1,22 @@
+{
+       "id": "00e33c6121",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "chicken",
+                     "state": "meat"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              }
+       ]
+}

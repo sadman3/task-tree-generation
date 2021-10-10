@@ -1,0 +1,30 @@
+{
+       "id": "3a3e0093a3",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "tea",
+                     "state": "juice"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "pineapple",
+                     "state": "chopped"
+              },
+              {
+                     "object": "apricot",
+                     "state": "peeled"
+              },
+              {
+                     "object": "orange",
+                     "state": "peeled"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

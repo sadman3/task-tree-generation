@@ -1,0 +1,46 @@
+{
+       "id": "0017bcd23f",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "hamburger",
+                     "state": "processed_meat"
+              },
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "diced"
+              },
+              {
+                     "object": "celery",
+                     "state": "diced"
+              },
+              {
+                     "object": "chili",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "tabasco sauce",
+                     "state": "sauce"
+              }
+       ]
+}

@@ -1,0 +1,26 @@
+{
+       "id": "1a7f1913e1",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "powdered drink",
+                     "state": "juice"
+              },
+              {
+                     "object": "peach",
+                     "state": "sliced"
+              },
+              {
+                     "object": "strawberries",
+                     "state": "berries"
+              }
+       ]
+}

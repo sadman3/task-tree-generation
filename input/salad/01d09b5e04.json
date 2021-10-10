@@ -1,0 +1,42 @@
+{
+       "id": "01d09b5e04",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "potatoes",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "egg",
+                     "state": "baked"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "bacon",
+                     "state": "processed_meat"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "dill",
+                     "state": "ground"
+              },
+              {
+                     "object": "mustard",
+                     "state": "ground"
+              },
+              {
+                     "object": "relish",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

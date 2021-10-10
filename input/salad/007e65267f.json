@@ -1,0 +1,34 @@
+{
+       "id": "007e65267f",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "olives",
+                     "state": "chopped"
+              },
+              {
+                     "object": "celery",
+                     "state": "chopped"
+              },
+              {
+                     "object": "olives",
+                     "state": "ground"
+              },
+              {
+                     "object": "relish",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "egg",
+                     "state": "baked"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              }
+       ]
+}

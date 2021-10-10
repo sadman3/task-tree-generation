@@ -1,0 +1,50 @@
+{
+       "id": "026eca7587",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "pasta",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "orange",
+                     "state": "juice"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "lime",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "worcestershire sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "pepper",
+                     "state": "peeled"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "cucumber",
+                     "state": "pieces"
+              },
+              {
+                     "object": "cheese",
+                     "state": "crumbs"
+              }
+       ]
+}

@@ -1,0 +1,58 @@
+{
+       "id": "06b356f47d",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "crackers",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "nutmeg",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "caramel",
+                     "state": "juice"
+              },
+              {
+                     "object": "chips",
+                     "state": "pieces"
+              },
+              {
+                     "object": "cheese",
+                     "state": "softened"
+              },
+              {
+                     "object": "flour",
+                     "state": "halved"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "apple",
+                     "state": "peeled"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              }
+       ]
+}

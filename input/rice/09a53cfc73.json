@@ -1,0 +1,38 @@
+{
+       "id": "09a53cfc73",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "baked"
+              },
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "corn",
+                     "state": "thawed"
+              },
+              {
+                     "object": "pepper",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "italian dressing",
+                     "state": "creamy"
+              },
+              {
+                     "object": "salsa",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "chips",
+                     "state": "crushed"
+              }
+       ]
+}

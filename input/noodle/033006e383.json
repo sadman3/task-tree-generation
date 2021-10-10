@@ -1,0 +1,54 @@
+{
+       "id": "033006e383",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "spaghetti",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "crushed"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "sake",
+                     "state": "dried"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "sliced"
+              },
+              {
+                     "object": "carrots",
+                     "state": "sliced"
+              },
+              {
+                     "object": "beef",
+                     "state": "sliced"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "spinach",
+                     "state": "whole_leafy"
+              }
+       ]
+}

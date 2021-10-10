@@ -1,0 +1,34 @@
+{
+       "id": "00c7940bb0",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "onion",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheese",
+                     "state": "peeled"
+              },
+              {
+                     "object": "ham",
+                     "state": "processed_meat"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              }
+       ]
+}

@@ -1,0 +1,22 @@
+{
+       "id": "1c134d8bda",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "blueberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "blackberries",
+                     "state": "berries"
+              }
+       ]
+}

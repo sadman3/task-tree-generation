@@ -1,0 +1,34 @@
+{
+       "id": "00cc328770",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "cake",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "gelatin",
+                     "state": "jelly"
+              },
+              {
+                     "object": "cool whip",
+                     "state": "thawed"
+              },
+              {
+                     "object": "raspberries",
+                     "state": "berries"
+              }
+       ]
+}

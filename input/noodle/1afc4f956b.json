@@ -1,0 +1,30 @@
+{
+       "id": "1afc4f956b",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "sausage",
+                     "state": "baked"
+              },
+              {
+                     "object": "noodles",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "peas",
+                     "state": "steaks"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "sesame",
+                     "state": "baked"
+              }
+       ]
+}

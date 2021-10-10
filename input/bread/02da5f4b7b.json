@@ -1,0 +1,26 @@
+{
+       "id": "02da5f4b7b",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "crushed"
+              },
+              {
+                     "object": "bread",
+                     "state": "whole"
+              },
+              {
+                     "object": "oregano",
+                     "state": "dried"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

@@ -1,0 +1,38 @@
+{
+       "id": "0b427068de",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "soup",
+                     "state": "creamy"
+              },
+              {
+                     "object": "soup",
+                     "state": "creamy"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "ribs",
+                     "state": "sliced"
+              },
+              {
+                     "object": "vegetables",
+                     "state": "mixed"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "seasoning",
+                     "state": "ground"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              }
+       ]
+}

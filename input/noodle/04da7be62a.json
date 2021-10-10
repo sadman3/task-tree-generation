@@ -1,0 +1,50 @@
+{
+       "id": "04da7be62a",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "fish",
+                     "state": "sauce"
+              },
+              {
+                     "object": "brown sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "sriracha sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "shrimp",
+                     "state": "peeled"
+              },
+              {
+                     "object": "asparagus",
+                     "state": "steaks"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "steaks"
+              },
+              {
+                     "object": "carrots",
+                     "state": "shredded"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "ground"
+              }
+       ]
+}

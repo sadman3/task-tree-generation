@@ -1,0 +1,38 @@
+{
+       "id": "00e5dda660",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "oysters",
+                     "state": "sauce"
+              },
+              {
+                     "object": "ginger",
+                     "state": "minced"
+              },
+              {
+                     "object": "cornstarch",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "crabmeat",
+                     "state": "baked"
+              },
+              {
+                     "object": "wine",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "onion",
+                     "state": "shredded"
+              }
+       ]
+}

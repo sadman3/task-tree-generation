@@ -1,0 +1,22 @@
+{
+       "id": "1d9fa24f94",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cool whip",
+                     "state": "whipped"
+              },
+              {
+                     "object": "strawberries",
+                     "state": "chopped"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

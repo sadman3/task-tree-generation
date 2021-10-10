@@ -1,0 +1,50 @@
+{
+       "id": "02fb9eca66",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "ribs",
+                     "state": "meat"
+              },
+              {
+                     "object": "carrots",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "sazon goya",
+                     "state": "unknown"
+              },
+              {
+                     "object": "potatoes",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "wine",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "bouillon",
+                     "state": "meat"
+              }
+       ]
+}

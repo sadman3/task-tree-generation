@@ -1,0 +1,42 @@
+{
+       "id": "03e6356fc0",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "cake",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "halved"
+              },
+              {
+                     "object": "egg",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "lemon",
+                     "state": "jelly"
+              },
+              {
+                     "object": "blueberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "cheese",
+                     "state": "softened"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole"
+              }
+       ]
+}

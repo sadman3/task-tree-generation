@@ -1,0 +1,54 @@
+{
+       "id": "01671c6cc2",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "beef",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cabbage",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "carrots",
+                     "state": "sliced"
+              },
+              {
+                     "object": "celery",
+                     "state": "sliced"
+              },
+              {
+                     "object": "potatoes",
+                     "state": "halved"
+              },
+              {
+                     "object": "jus mix",
+                     "state": "dried"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "ketchup",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              }
+       ]
+}

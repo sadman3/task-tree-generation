@@ -1,0 +1,62 @@
+{
+       "id": "02d1100037",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "basil",
+                     "state": "dried"
+              },
+              {
+                     "object": "oregano",
+                     "state": "dried"
+              },
+              {
+                     "object": "thyme",
+                     "state": "dried"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "greens",
+                     "state": "mixed"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "pieces"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "mushrooms",
+                     "state": "sliced"
+              },
+              {
+                     "object": "cucumber",
+                     "state": "peeled"
+              },
+              {
+                     "object": "italian dressing",
+                     "state": "creamy"
+              }
+       ]
+}

@@ -1,0 +1,54 @@
+{
+       "id": "01681510a2",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "asparagus",
+                     "state": "steaks"
+              },
+              {
+                     "object": "lettuce",
+                     "state": "leaves"
+              },
+              {
+                     "object": "watercress",
+                     "state": "steaks"
+              },
+              {
+                     "object": "cucumber",
+                     "state": "sliced"
+              },
+              {
+                     "object": "radish",
+                     "state": "halved"
+              },
+              {
+                     "object": "shallots",
+                     "state": "chopped"
+              },
+              {
+                     "object": "mustard",
+                     "state": "ground"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "brown sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "buttermilk",
+                     "state": "juice"
+              }
+       ]
+}

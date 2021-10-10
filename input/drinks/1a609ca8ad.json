@@ -1,0 +1,30 @@
+{
+       "id": "1a609ca8ad",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "cheese",
+                     "state": "softened"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "cocoa",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

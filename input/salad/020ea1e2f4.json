@@ -1,0 +1,50 @@
+{
+       "id": "020ea1e2f4",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "orange",
+                     "state": "peel"
+              },
+              {
+                     "object": "grapefruit",
+                     "state": "peel"
+              },
+              {
+                     "object": "lime",
+                     "state": "grated"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "coriander",
+                     "state": "ground"
+              },
+              {
+                     "object": "syrup",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "",
+                     "state": "leaves"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "leaves"
+              },
+              {
+                     "object": "chili",
+                     "state": "sliced"
+              }
+       ]
+}

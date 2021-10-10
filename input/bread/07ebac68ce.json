@@ -1,0 +1,30 @@
+{
+       "id": "07ebac68ce",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "pineapple",
+                     "state": "crushed"
+              },
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "croissants",
+                     "state": "leaves"
+              }
+       ]
+}

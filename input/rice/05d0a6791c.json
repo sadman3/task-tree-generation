@@ -1,0 +1,38 @@
+{
+       "id": "05d0a6791c",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "steaks",
+                     "state": "steaks"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "lime",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "chopped"
+              }
+       ]
+}

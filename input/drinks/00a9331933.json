@@ -1,0 +1,26 @@
+{
+       "id": "00a9331933",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "blueberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "mango",
+                     "state": "halved"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              }
+       ]
+}

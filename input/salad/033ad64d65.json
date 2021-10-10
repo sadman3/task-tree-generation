@@ -1,0 +1,42 @@
+{
+       "id": "033ad64d65",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "ginger",
+                     "state": "peeled"
+              },
+              {
+                     "object": "butter",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pear",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "watercress",
+                     "state": "steaks"
+              },
+              {
+                     "object": "carrots",
+                     "state": "shredded"
+              }
+       ]
+}

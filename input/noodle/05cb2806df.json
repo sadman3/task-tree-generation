@@ -1,0 +1,66 @@
+{
+       "id": "05cb2806df",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "processed_raw"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "grain"
+              },
+              {
+                     "object": "pepper",
+                     "state": "grain"
+              },
+              {
+                     "object": "edamame",
+                     "state": "peeled"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "halved"
+              },
+              {
+                     "object": "greens",
+                     "state": "whole_leafy"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "hoisin sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "wasabi",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "syrup",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              }
+       ]
+}

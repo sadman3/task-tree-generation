@@ -1,0 +1,30 @@
+{
+       "id": "363ec93ff4",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "tuna",
+                     "state": "juice"
+              },
+              {
+                     "object": "soup",
+                     "state": "creamy"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "cheese",
+                     "state": "shredded"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              }
+       ]
+}

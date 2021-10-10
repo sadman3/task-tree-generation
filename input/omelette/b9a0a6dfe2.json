@@ -1,0 +1,30 @@
+{
+       "id": "b9a0a6dfe2",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "jalapeno",
+                     "state": "sauce"
+              },
+              {
+                     "object": "sausage",
+                     "state": "meat"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "creamy"
+              }
+       ]
+}

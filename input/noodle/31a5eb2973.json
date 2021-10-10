@@ -1,0 +1,70 @@
+{
+       "id": "31a5eb2973",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "carrots",
+                     "state": "shredded"
+              },
+              {
+                     "object": "ribs",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "chicken",
+                     "state": "meat"
+              },
+              {
+                     "object": "bay leaf",
+                     "state": "leaves"
+              },
+              {
+                     "object": "basil",
+                     "state": "leaves"
+              },
+              {
+                     "object": "thyme",
+                     "state": "ground"
+              },
+              {
+                     "object": "parsley",
+                     "state": "ground"
+              },
+              {
+                     "object": "dill",
+                     "state": "ground"
+              },
+              {
+                     "object": "stock",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "chicken",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              }
+       ]
+}

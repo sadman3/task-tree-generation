@@ -1,0 +1,42 @@
+{
+       "id": "01e7fb26c4",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "lettuce",
+                     "state": "whole_leafy"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "whole"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "diced"
+              },
+              {
+                     "object": "avocado",
+                     "state": "whole"
+              },
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "olives",
+                     "state": "berries"
+              },
+              {
+                     "object": "chips",
+                     "state": "unknown"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "minced"
+              },
+              {
+                     "object": "italian dressing",
+                     "state": "creamy"
+              }
+       ]
+}

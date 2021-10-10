@@ -1,0 +1,34 @@
+{
+       "id": "036986cd4c",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "carrots",
+                     "state": "sliced"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "peeled"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "coconut",
+                     "state": "sauce"
+              }
+       ]
+}

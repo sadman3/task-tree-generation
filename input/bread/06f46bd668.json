@@ -1,0 +1,30 @@
+{
+       "id": "06f46bd668",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "whole"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "dried"
+              },
+              {
+                     "object": "margarine",
+                     "state": "creamy"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              }
+       ]
+}

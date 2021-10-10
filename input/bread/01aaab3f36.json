@@ -1,0 +1,50 @@
+{
+       "id": "01aaab3f36",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "yeast",
+                     "state": "dried"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "rosemary",
+                     "state": "ground"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "onion",
+                     "state": "dried"
+              },
+              {
+                     "object": "cheese",
+                     "state": "grated"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              }
+       ]
+}

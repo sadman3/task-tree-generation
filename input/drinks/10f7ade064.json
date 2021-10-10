@@ -1,0 +1,22 @@
+{
+       "id": "10f7ade064",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "peach",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              }
+       ]
+}

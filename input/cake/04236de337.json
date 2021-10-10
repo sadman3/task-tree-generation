@@ -1,0 +1,42 @@
+{
+       "id": "04236de337",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "juice",
+                     "state": "halved"
+              },
+              {
+                     "object": "apricot",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "almonds",
+                     "state": "sliced"
+              },
+              {
+                     "object": "cake",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "oats",
+                     "state": "rolled"
+              },
+              {
+                     "object": "caramel",
+                     "state": "creamy"
+              }
+       ]
+}

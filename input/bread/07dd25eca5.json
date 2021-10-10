@@ -1,0 +1,50 @@
+{
+       "id": "07dd25eca5",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "walnuts",
+                     "state": "chopped"
+              },
+              {
+                     "object": "shortening",
+                     "state": "juice"
+              },
+              {
+                     "object": "marmalade",
+                     "state": "peel"
+              },
+              {
+                     "object": "orange",
+                     "state": "minced"
+              },
+              {
+                     "object": "cheese",
+                     "state": "softened"
+              }
+       ]
+}

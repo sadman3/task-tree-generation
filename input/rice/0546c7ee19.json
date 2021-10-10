@@ -1,0 +1,34 @@
+{
+       "id": "0546c7ee19",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheese",
+                     "state": "shredded"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "mustard",
+                     "state": "dried"
+              },
+              {
+                     "object": "worcestershire sauce",
+                     "state": "sauce"
+              }
+       ]
+}

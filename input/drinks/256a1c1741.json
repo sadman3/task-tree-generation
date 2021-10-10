@@ -1,0 +1,30 @@
+{
+       "id": "256a1c1741",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "pear",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "kale",
+                     "state": "chopped"
+              },
+              {
+                     "object": "blueberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "banana",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              }
+       ]
+}

@@ -1,0 +1,22 @@
+{
+       "id": "01f5d32a8c",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "syrup",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "marshmallows",
+                     "state": "diced"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              }
+       ]
+}

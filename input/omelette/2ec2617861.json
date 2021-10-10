@@ -1,0 +1,38 @@
+{
+       "id": "2ec2617861",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "creamy"
+              },
+              {
+                     "object": "veggie burger",
+                     "state": "unknown"
+              }
+       ]
+}

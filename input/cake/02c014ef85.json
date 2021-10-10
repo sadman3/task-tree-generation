@@ -1,0 +1,22 @@
+{
+       "id": "02c014ef85",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "strawberry",
+                     "state": "juice"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "cool whip",
+                     "state": "whipped"
+              }
+       ]
+}

@@ -1,0 +1,30 @@
+{
+       "id": "0124cb258d",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "cucumber",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "dill",
+                     "state": "chopped"
+              }
+       ]
+}

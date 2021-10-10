@@ -1,0 +1,54 @@
+{
+       "id": "008bc63429",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking powder",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "bourbon",
+                     "state": "juice"
+              },
+              {
+                     "object": "bourbon",
+                     "state": "juice"
+              },
+              {
+                     "object": "bourbon",
+                     "state": "juice"
+              },
+              {
+                     "object": "pecans",
+                     "state": "chopped"
+              },
+              {
+                     "object": "cheesecloth",
+                     "state": "unknown"
+              },
+              {
+                     "object": "cream",
+                     "state": "whipped"
+              }
+       ]
+}

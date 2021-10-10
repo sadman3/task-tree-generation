@@ -1,0 +1,46 @@
+{
+       "id": "02841f4a1c",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "beef",
+                     "state": "ground"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "soup",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "chili",
+                     "state": "sauce"
+              },
+              {
+                     "object": "breadcrumbs",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              }
+       ]
+}

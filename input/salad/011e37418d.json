@@ -1,0 +1,42 @@
+{
+       "id": "011e37418d",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "beef",
+                     "state": "ground"
+              },
+              {
+                     "object": "cornbread",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "celery",
+                     "state": "chopped"
+              },
+              {
+                     "object": "onion",
+                     "state": "chopped"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "chopped"
+              },
+              {
+                     "object": "mayonnaise",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              }
+       ]
+}

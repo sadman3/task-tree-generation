@@ -1,0 +1,70 @@
+{
+       "id": "030ccec900",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "steaks",
+                     "state": "steaks"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "carrots",
+                     "state": "grated"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "cabbage",
+                     "state": "shredded"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              },
+              {
+                     "object": "ginger",
+                     "state": "minced"
+              },
+              {
+                     "object": "mirin",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "halved"
+              },
+              {
+                     "object": "cornstarch",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "seeds",
+                     "state": "baked"
+              },
+              {
+                     "object": "rice",
+                     "state": "baked"
+              }
+       ]
+}

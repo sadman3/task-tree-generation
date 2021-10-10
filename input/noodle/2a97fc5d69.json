@@ -1,0 +1,70 @@
+{
+       "id": "2a97fc5d69",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "almonds",
+                     "state": "peeled"
+              },
+              {
+                     "object": "cabbage",
+                     "state": "shredded"
+              },
+              {
+                     "object": "carrots",
+                     "state": "grated"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "cilantro",
+                     "state": "chopped"
+              },
+              {
+                     "object": "miso",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "soy sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "ginger",
+                     "state": "chopped"
+              },
+              {
+                     "object": "garlic",
+                     "state": "minced"
+              }
+       ]
+}

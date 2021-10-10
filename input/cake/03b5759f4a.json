@@ -1,0 +1,26 @@
+{
+       "id": "03b5759f4a",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "cereal",
+                     "state": "popped"
+              },
+              {
+                     "object": "syrup",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "margarine",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cocoa",
+                     "state": "ground"
+              }
+       ]
+}

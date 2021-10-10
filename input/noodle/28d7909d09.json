@@ -1,0 +1,50 @@
+{
+       "id": "28d7909d09",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "cheese",
+                     "state": "softened"
+              },
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "apricot",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "corn",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              }
+       ]
+}

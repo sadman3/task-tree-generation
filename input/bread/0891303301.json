@@ -1,0 +1,54 @@
+{
+       "id": "0891303301",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "yeast",
+                     "state": "dried"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "sourdough starter",
+                     "state": "juice"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "flour",
+                     "state": "whole"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "wheat",
+                     "state": "flakes"
+              },
+              {
+                     "object": "molasses",
+                     "state": "ground"
+              },
+              {
+                     "object": "margarine",
+                     "state": "softened"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              }
+       ]
+}

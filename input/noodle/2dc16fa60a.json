@@ -1,0 +1,34 @@
+{
+       "id": "2dc16fa60a",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "chicken",
+                     "state": "diced"
+              },
+              {
+                     "object": "broccoli",
+                     "state": "baked"
+              },
+              {
+                     "object": "cheese",
+                     "state": "sliced"
+              },
+              {
+                     "object": "soup",
+                     "state": "creamy"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "baked"
+              }
+       ]
+}

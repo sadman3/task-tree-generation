@@ -1,0 +1,30 @@
+{
+       "id": "04b6bbdae4",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "icing",
+                     "state": "juice"
+              },
+              {
+                     "object": "candy",
+                     "state": "pieces"
+              },
+              {
+                     "object": "vodka",
+                     "state": "baked"
+              },
+              {
+                     "object": "juice",
+                     "state": "juice"
+              },
+              {
+                     "object": "champagne",
+                     "state": "juice"
+              },
+              {
+                     "object": "cherries",
+                     "state": "berries"
+              }
+       ]
+}

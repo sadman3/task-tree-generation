@@ -1,0 +1,38 @@
+{
+       "id": "003e231a46",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "bread",
+                     "state": "diced"
+              },
+              {
+                     "object": "chips",
+                     "state": "pieces"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "brown sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "whipped topping",
+                     "state": "whipped"
+              }
+       ]
+}

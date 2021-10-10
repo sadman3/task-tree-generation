@@ -1,0 +1,22 @@
+{
+       "id": "1a3d6eea5f",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "cantaloupe",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "strawberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "fruit punch",
+                     "state": "chopped"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

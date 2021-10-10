@@ -1,0 +1,30 @@
+{
+       "id": "02806fb50c",
+       "type": "soup",
+       "ingredients": [
+              {
+                     "object": "soup",
+                     "state": "dried"
+              },
+              {
+                     "object": "peppercorns",
+                     "state": "berries"
+              },
+              {
+                     "object": "bay leaf",
+                     "state": "leaves"
+              },
+              {
+                     "object": "broth",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "pork",
+                     "state": "sauce"
+              },
+              {
+                     "object": "catsup",
+                     "state": "thick_sauce"
+              }
+       ]
+}

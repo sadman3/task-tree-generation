@@ -1,0 +1,42 @@
+{
+       "id": "06467c98ca",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "butter",
+                     "state": "softened"
+              },
+              {
+                     "object": "flour",
+                     "state": "whole"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "cornmeal",
+                     "state": "ground"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "buttermilk",
+                     "state": "juice"
+              },
+              {
+                     "object": "molasses",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "raisins",
+                     "state": "dried"
+              }
+       ]
+}

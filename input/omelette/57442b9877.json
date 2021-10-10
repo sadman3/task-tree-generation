@@ -1,0 +1,26 @@
+{
+       "id": "57442b9877",
+       "type": "omelette",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheese",
+                     "state": "sliced"
+              },
+              {
+                     "object": "ketchup",
+                     "state": "thick_sauce"
+              }
+       ]
+}

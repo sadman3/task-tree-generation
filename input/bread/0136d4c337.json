@@ -1,0 +1,38 @@
+{
+       "id": "0136d4c337",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "banana",
+                     "state": "crushed"
+              },
+              {
+                     "object": "margarine",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              },
+              {
+                     "object": "baking soda",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              }
+       ]
+}

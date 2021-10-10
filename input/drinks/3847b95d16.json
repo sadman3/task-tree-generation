@@ -1,0 +1,34 @@
+{
+       "id": "3847b95d16",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "rawburst",
+                     "state": "berries"
+              },
+              {
+                     "object": "vegetables",
+                     "state": "ground"
+              },
+              {
+                     "object": "chocolate",
+                     "state": "ground"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              },
+              {
+                     "object": "watercress",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

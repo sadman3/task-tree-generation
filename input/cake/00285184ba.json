@@ -1,0 +1,22 @@
+{
+       "id": "00285184ba",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "cake",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "chips",
+                     "state": "pieces"
+              }
+       ]
+}

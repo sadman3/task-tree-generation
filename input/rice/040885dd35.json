@@ -1,0 +1,54 @@
+{
+       "id": "040885dd35",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "salsa",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "saffron",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "onion",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "garlic",
+                     "state": "chopped"
+              },
+              {
+                     "object": "chicken",
+                     "state": "halved"
+              },
+              {
+                     "object": "tortillas",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheese",
+                     "state": "shredded"
+              }
+       ]
+}

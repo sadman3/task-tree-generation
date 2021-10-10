@@ -1,0 +1,46 @@
+{
+       "id": "0bc5ac2cf0",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "persimmons",
+                     "state": "unknown"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "cream",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "ice",
+                     "state": "crushed"
+              },
+              {
+                     "object": "cream",
+                     "state": "whipped"
+              },
+              {
+                     "object": "beans",
+                     "state": "bean"
+              }
+       ]
+}

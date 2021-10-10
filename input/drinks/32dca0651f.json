@@ -1,0 +1,30 @@
+{
+       "id": "32dca0651f",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "avocado",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "raspberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "blueberries",
+                     "state": "berries"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              }
+       ]
+}

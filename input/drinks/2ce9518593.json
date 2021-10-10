@@ -1,0 +1,38 @@
+{
+       "id": "2ce9518593",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "peach",
+                     "state": "peeled"
+              },
+              {
+                     "object": "yogurt",
+                     "state": "creamy"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "seeds",
+                     "state": "grain"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "cinnamon",
+                     "state": "ground"
+              },
+              {
+                     "object": "allspice",
+                     "state": "grain"
+              },
+              {
+                     "object": "honey",
+                     "state": "thick_sauce"
+              }
+       ]
+}

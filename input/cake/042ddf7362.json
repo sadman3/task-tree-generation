@@ -1,0 +1,38 @@
+{
+       "id": "042ddf7362",
+       "type": "cake",
+       "ingredients": [
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "shortening",
+                     "state": "creamy"
+              },
+              {
+                     "object": "margarine",
+                     "state": "creamy"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "extract",
+                     "state": "juice"
+              },
+              {
+                     "object": "flour",
+                     "state": "ground"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "coconut",
+                     "state": "flakes"
+              }
+       ]
+}

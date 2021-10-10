@@ -1,0 +1,22 @@
+{
+       "id": "0db857d38e",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "watermelon",
+                     "state": "whole_fruit"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              },
+              {
+                     "object": "lime",
+                     "state": "juice"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              }
+       ]
+}

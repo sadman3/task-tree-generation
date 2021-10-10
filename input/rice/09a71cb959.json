@@ -1,0 +1,46 @@
+{
+       "id": "09a71cb959",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "onion",
+                     "state": "diced"
+              },
+              {
+                     "object": "pepper",
+                     "state": "minced"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "peeled"
+              },
+              {
+                     "object": "tomatoes",
+                     "state": "sauce"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "chili",
+                     "state": "ground"
+              },
+              {
+                     "object": "worcestershire sauce",
+                     "state": "sauce"
+              },
+              {
+                     "object": "garlic",
+                     "state": "ground"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "salsa",
+                     "state": "thick_sauce"
+              }
+       ]
+}

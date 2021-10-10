@@ -1,0 +1,30 @@
+{
+       "id": "04b3270237",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "beef",
+                     "state": "ground"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "ketchup",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "mustard",
+                     "state": "thick_sauce"
+              },
+              {
+                     "object": "rice",
+                     "state": "uncooked"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              }
+       ]
+}

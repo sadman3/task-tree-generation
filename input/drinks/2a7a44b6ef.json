@@ -1,0 +1,26 @@
+{
+       "id": "2a7a44b6ef",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "watermelon",
+                     "state": "diced"
+              },
+              {
+                     "object": "melon",
+                     "state": "diced"
+              },
+              {
+                     "object": "cantaloupe",
+                     "state": "diced"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              },
+              {
+                     "object": "soft drink",
+                     "state": "juice"
+              }
+       ]
+}

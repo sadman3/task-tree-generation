@@ -1,0 +1,34 @@
+{
+       "id": "04f2e783aa",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "plain_meal",
+                     "state": "unknown"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "egg",
+                     "state": "thick_liquid"
+              },
+              {
+                     "object": "egg",
+                     "state": "whipped"
+              },
+              {
+                     "object": "butter",
+                     "state": "juice"
+              }
+       ]
+}

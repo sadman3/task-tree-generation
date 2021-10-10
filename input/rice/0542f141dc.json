@@ -1,0 +1,38 @@
+{
+       "id": "0542f141dc",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "margarine",
+                     "state": "softened"
+              },
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "salsa",
+                     "state": "chopped"
+              },
+              {
+                     "object": "chicken",
+                     "state": "meat"
+              },
+              {
+                     "object": "beans",
+                     "state": "bean"
+              },
+              {
+                     "object": "corn",
+                     "state": "whole_veg"
+              },
+              {
+                     "object": "tortillas",
+                     "state": "ground"
+              },
+              {
+                     "object": "cheddar",
+                     "state": "shredded"
+              }
+       ]
+}

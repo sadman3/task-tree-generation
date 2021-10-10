@@ -1,0 +1,18 @@
+{
+       "id": "085a257137",
+       "type": "rice",
+       "ingredients": [
+              {
+                     "object": "rice",
+                     "state": "grain"
+              },
+              {
+                     "object": "chicken",
+                     "state": "halved"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              }
+       ]
+}

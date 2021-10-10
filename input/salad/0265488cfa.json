@@ -1,0 +1,34 @@
+{
+       "id": "0265488cfa",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "onion",
+                     "state": "sliced"
+              },
+              {
+                     "object": "tarragon",
+                     "state": "dried"
+              },
+              {
+                     "object": "wine",
+                     "state": "juice"
+              },
+              {
+                     "object": "bacon",
+                     "state": "sliced"
+              },
+              {
+                     "object": "tzatziki",
+                     "state": "sauce"
+              },
+              {
+                     "object": "chives",
+                     "state": "chopped"
+              },
+              {
+                     "object": "pepper",
+                     "state": "ground"
+              }
+       ]
+}

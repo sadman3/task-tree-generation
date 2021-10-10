@@ -1,0 +1,26 @@
+{
+       "id": "0fe9f33a7f",
+       "type": "drinks",
+       "ingredients": [
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "berries",
+                     "state": "chopped"
+              },
+              {
+                     "object": "sweetener",
+                     "state": "ground"
+              },
+              {
+                     "object": "cocoa",
+                     "state": "ground"
+              },
+              {
+                     "object": "ice",
+                     "state": "solid"
+              }
+       ]
+}

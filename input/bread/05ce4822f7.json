@@ -1,0 +1,38 @@
+{
+       "id": "05ce4822f7",
+       "type": "bread",
+       "ingredients": [
+              {
+                     "object": "bread",
+                     "state": "sliced"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "breadcrumbs",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "butter",
+                     "state": "ground"
+              },
+              {
+                     "object": "celery",
+                     "state": "minced"
+              },
+              {
+                     "object": "onion",
+                     "state": "minced"
+              },
+              {
+                     "object": "chicken",
+                     "state": "baked"
+              },
+              {
+                     "object": "mozzarella",
+                     "state": "shredded"
+              }
+       ]
+}

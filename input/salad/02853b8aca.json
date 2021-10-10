@@ -1,0 +1,54 @@
+{
+       "id": "02853b8aca",
+       "type": "salad",
+       "ingredients": [
+              {
+                     "object": "ramps",
+                     "state": "unknown"
+              },
+              {
+                     "object": "vinegar",
+                     "state": "juice"
+              },
+              {
+                     "object": "water",
+                     "state": "juice"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "beans",
+                     "state": "peeled"
+              },
+              {
+                     "object": "peas",
+                     "state": "peeled"
+              },
+              {
+                     "object": "cheese",
+                     "state": "crumbs"
+              },
+              {
+                     "object": "mint",
+                     "state": "leaves"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "oil",
+                     "state": "juice"
+              },
+              {
+                     "object": "lemon",
+                     "state": "juice"
+              }
+       ]
+}

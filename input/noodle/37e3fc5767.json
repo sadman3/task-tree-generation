@@ -1,0 +1,46 @@
+{
+       "id": "37e3fc5767",
+       "type": "noodle",
+       "ingredients": [
+              {
+                     "object": "margarine",
+                     "state": "creamy"
+              },
+              {
+                     "object": "noodles",
+                     "state": "baked"
+              },
+              {
+                     "object": "egg",
+                     "state": "whole_raw"
+              },
+              {
+                     "object": "milk",
+                     "state": "juice"
+              },
+              {
+                     "object": "sugar",
+                     "state": "ground"
+              },
+              {
+                     "object": "salt",
+                     "state": "ground"
+              },
+              {
+                     "object": "vanilla",
+                     "state": "juice"
+              },
+              {
+                     "object": "cottage cheese",
+                     "state": "creamy"
+              },
+              {
+                     "object": "juice",
+                     "state": "crushed"
+              },
+              {
+                     "object": "corn",
+                     "state": "crumbs"
+              }
+       ]
+}
