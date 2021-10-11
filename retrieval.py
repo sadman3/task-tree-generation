@@ -5,7 +5,7 @@ from configparser import ConfigParser
 from FOON_class import FunctionalUnit, Object
 import os
 
-from utils import compare_two_recipe
+from utils import compare_two_recipe, find_ingredient_mapping, get_utensils
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -22,23 +22,10 @@ kitchen_path = config['info']['kitchen']
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
-# Create a list of utensils
-
-
-def get_utensils(filepath=utensils_path):
-    """
-        parameters: path of a text file that contains all utensils
-        returns: a list of utensils
-    """
-
-    utensils = []
-    with open(filepath, 'r') as f:
-        for line in f:
-            utensils.append(line.rstrip())
-    return utensils
-
-
+###################
 utensils = get_utensils()
+kitchen_items = json.load(open(kitchen_path))
+###################
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 # Checks an ingredient exists in kitchen
@@ -246,6 +233,21 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
+# Given a reference task tree, this method modifies it to
+# so that it is aligned with input ingredients.
+# Major step: substituion, deletion of extra ingredients
+
+def modify_reference_task_tree(task_tree=[], input_ingredients=[]):
+    """
+        parameters: a task tree as a list of functioal units, 
+                    input ingredients {object,state}
+
+        returns: modified task tree that consists some functional units
+    """
+    ingredient_mapping = find_ingredient_mapping(task_tree, input_ingredients)
+    print(ingredient_mapping)
+# -----------------------------------------------------------------------------------------------------------------------------#
+
 # creates the graph using adjacency list
 # each object has a list of functional list where it is an output
 
@@ -280,36 +282,37 @@ def save_paths_to_file(task_tree, path):
 # this method creates the task using three major steps mentioned in the paper
 
 
-def retrieval(functional_units, object_nodes, object_to_FU_map, kitchen_items, recipe_id, dish_type, ingredients):
+def retrieval(functional_units, object_nodes, object_to_FU_map, recipe_id, dish_type, input_ingredients):
 
     # step 1: find the reference goal node
-    reference_goal_node = find_goal_node(dish_type, ingredients)
+    reference_goal_node = find_goal_node(dish_type, input_ingredients)
     print("-------- REFERENCE GOAL NODE --------")
     reference_goal_node.print()
 
     # step 2: find the reference task tree
     print("extracting reference task tree")
     reference_task_tree = extract_reference_task_tree(
-        functional_units, object_nodes, object_to_FU_map, kitchen_items, ingredients, reference_goal_node)
+        functional_units, object_nodes, object_to_FU_map, kitchen_items, input_ingredients, reference_goal_node)
 
     # save the reference task tree
     output_dir = os.path.join('output', 'reference_task_tree', dish_type)
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
-    output_path = os.path.join(output_dir, recipe_id)
+    output_path = os.path.join(output_dir, recipe_id + '.txt')
     save_paths_to_file(reference_task_tree, output_path)
 
     # step 3: modify the reference task tree
-    final_task_tree = reference_task_tree
+    final_task_tree = modify_reference_task_tree(
+        task_tree=reference_task_tree, input_ingredients=input_ingredients)
 
-    # save the final task tree
-    output_dir = os.path.join('output', 'final_task_tree', dish_type)
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
+    # # save the final task tree
+    # output_dir = os.path.join('output', 'final_task_tree', dish_type)
+    # if not os.path.exists(output_dir):
+    #     os.makedirs(output_dir)
 
-    output_path = os.path.join(output_dir, recipe_id)
-    save_paths_to_file(final_task_tree, output_path)
+    # output_path = os.path.join(output_dir, recipe_id + '.txt')
+    # save_paths_to_file(final_task_tree, output_path)
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 
@@ -319,13 +322,10 @@ if __name__ == "__main__":
     print('-- Reading universal foon from', foon_pkl)
     functional_units, object_nodes, object_to_FU_map = read_universal_foon()
 
-    # load the kitchen file
-    kitchen_items = json.load(open(kitchen_path))
-
     # selected_catagory = ['salad', 'drinks', 'omelette',
     #                      'cake', 'soup', 'bread', 'noodle', 'rice']
 
-    selected_catagory = ['drinks']
+    selected_catagory = ['test']
 
     for category in selected_catagory:
         input_dir = 'input/' + category
@@ -336,4 +336,4 @@ if __name__ == "__main__":
             # do the retrieval
             print("-- STARTING RETRIEVAL")
             retrieval(functional_units, object_nodes, object_to_FU_map,
-                      kitchen_items, recipe_id, dish_type, ingredients)
+                      recipe_id, dish_type, ingredients)
