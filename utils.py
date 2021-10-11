@@ -93,21 +93,21 @@ def get_doc_similarity(doc1, doc2):
 def compare_two_recipe(input_ingredients, candidate_recipe_ingredients):
 
     curr_recipe = copy.deepcopy(candidate_recipe_ingredients)
-    print(curr_recipe)
+
     score = 0
     for input_item in input_ingredients:
         input_item = get_singular_form(input_item)
         doc1 = get_nlp_vector(input_item.replace('_', ' '))
 
         for recipe_item in reversed(curr_recipe):
-            recipe_item = get_singular_form(recipe_item)
-            doc2 = get_nlp_vector(recipe_item)
+            recipe_item_singular = get_singular_form(recipe_item)
+            doc2 = get_nlp_vector(recipe_item_singular)
             similarity = get_doc_similarity(doc1, doc2)
             if similarity > similarity_threshold:
                 score += 1
 
                 # if a item is already matched, remove it
-                print(recipe_item)
+
                 curr_recipe.remove(recipe_item)
                 break
     return score

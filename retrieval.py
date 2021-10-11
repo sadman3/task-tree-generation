@@ -1,3 +1,4 @@
+from genericpath import exists
 import pickle
 import json
 from configparser import ConfigParser
@@ -235,9 +236,12 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
     # reverse the task tree
     reference_task_tree.reverse()
 
-    # for id in reference_task_tree:
-    #     functional_units[id].print()
-    return reference_task_tree
+    # create a list of functional unit from the indices of reference_task_tree
+    task_tree_units = []
+    for i in reference_task_tree:
+        task_tree_units.append(functional_units[i])
+
+    return task_tree_units
 
 
 # -----------------------------------------------------------------------------------------------------------------------------#
@@ -257,11 +261,26 @@ def read_universal_foon(filepath=foon_pkl):
     object_to_FU_map = pickle_data["object_to_FU_map"]
 
     return functional_units, object_nodes, object_to_FU_map
+
+
+# -----------------------------------------------------------------------------------------------------------------------------#
+# this method saves the task tree
+
+def save_paths_to_file(task_tree, path):
+
+    print('writing generated task tree to ', path)
+    _file = open(path, 'w')
+
+    _file.write('//\n')
+    for FU in task_tree:
+        _file.write(FU.get_FU_as_text() + "\n")
+    _file.close()
+
 # -----------------------------------------------------------------------------------------------------------------------------#
 # this method creates the task using three major steps mentioned in the paper
 
 
-def retrieval(functional_units, object_nodes, object_to_FU_map, kitchen_items, dish_type, ingredients):
+def retrieval(functional_units, object_nodes, object_to_FU_map, kitchen_items, recipe_id, dish_type, ingredients):
 
     # step 1: find the reference goal node
     reference_goal_node = find_goal_node(dish_type, ingredients)
@@ -273,11 +292,24 @@ def retrieval(functional_units, object_nodes, object_to_FU_map, kitchen_items, d
     reference_task_tree = extract_reference_task_tree(
         functional_units, object_nodes, object_to_FU_map, kitchen_items, ingredients, reference_goal_node)
 
-    print(reference_task_tree)
+    # save the reference task tree
+    output_dir = os.path.join('output', 'reference_task_tree', dish_type)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    output_path = os.path.join(output_dir, recipe_id)
+    save_paths_to_file(reference_task_tree, output_path)
 
     # step 3: modify the reference task tree
+    final_task_tree = reference_task_tree
 
-    # save the task tree
+    # save the final task tree
+    output_dir = os.path.join('output', 'final_task_tree', dish_type)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    output_path = os.path.join(output_dir, recipe_id)
+    save_paths_to_file(final_task_tree, output_path)
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 
@@ -290,12 +322,18 @@ if __name__ == "__main__":
     # load the kitchen file
     kitchen_items = json.load(open(kitchen_path))
 
-    input_dir = 'input/salad'
-    for input_file in os.listdir(input_dir):
-        input_file = os.path.join(input_dir, input_file)
-        recipe_id, dish_type, ingredients = process_input(input_file)
+    # selected_catagory = ['salad', 'drinks', 'omelette',
+    #                      'cake', 'soup', 'bread', 'noodle', 'rice']
 
-        # do the retrieval
-        print("-- STARTING RETRIEVAL")
-        retrieval(functional_units, object_nodes, object_to_FU_map,
-                  kitchen_items, dish_type, ingredients)
+    selected_catagory = ['drinks']
+
+    for category in selected_catagory:
+        input_dir = 'input/' + category
+        for input_file in os.listdir(input_dir):
+            input_file = os.path.join(input_dir, input_file)
+            recipe_id, dish_type, ingredients = process_input(input_file)
+
+            # do the retrieval
+            print("-- STARTING RETRIEVAL")
+            retrieval(functional_units, object_nodes, object_to_FU_map,
+                      kitchen_items, recipe_id, dish_type, ingredients)
