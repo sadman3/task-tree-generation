@@ -164,9 +164,6 @@ O	bowl	0
 S	contains	{flour}
 S	on	[surface]
 M	pour	0:58	0:59
-O	salt	1
-S	granulated
-S	in	[bowl]
 O	bowl	0
 S	contains	{flour,salt}
 S	on	[surface]

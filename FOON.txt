@@ -1,4 +1,4 @@
-# Date created:	09.10.2021
+# Date created:	12.10.2021
 //
 O	onion
 S	whole
@@ -2026,9 +2026,6 @@ S	in	[bowl]
 M	sprinkle
 O	mixing bowl
 S	contains	{egg white,egg yolk,salt,black pepper}
-O	black pepper
-S	ground
-S	in	[mixing bowl]
 //
 O	mixing bowl
 S	contains	{egg white,egg yolk,salt,black pepper}
@@ -2999,9 +2996,6 @@ O	cooking pan
 S	hot
 S	contains	{butter,green pepper,tomato,onion,salt,black pepper}
 S	in	[stove]
-O	black pepper
-S	ground
-S	in	[cooking pan]
 //
 O	cooking pan
 S	hot
@@ -3302,9 +3296,6 @@ O	bowl
 S	contains	{flour}
 S	in	[surface]
 M	pour
-O	salt
-S	granulated
-S	in	[bowl]
 O	bowl
 S	contains	{flour,salt}
 S	in	[surface]
@@ -4190,9 +4181,6 @@ O	spoon
 M	scrape
 O	bowl
 S	empty
-O	onion
-S	chopped
-S	in	[pot]
 O	pot
 S	hot
 S	contains	{butter,onion}
@@ -4381,9 +4369,6 @@ O	pot
 S	hot
 S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half,salt}
 S	in	[stove]
-O	salt
-S	granulated
-S	in	[pot]
 //
 O	pot
 S	hot
@@ -4399,9 +4384,6 @@ O	pot
 S	hot
 S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half,salt,black pepper}
 S	in	[stove]
-O	black pepper
-S	ground
-S	in	[pot]
 //
 O	stove
 S	on
@@ -6243,9 +6225,6 @@ M	pour
 O	pot
 S	contains	{black bean,onion}
 S	in	[stove]
-O	onion
-S	chopped
-S	in	[pot]
 //
 O	pot
 S	contains	{black bean,onion}
@@ -6302,9 +6281,6 @@ M	pour
 O	pot
 S	contains	{black bean,onion,garlic,cilantro}
 S	in	[stove]
-O	cilantro
-S	chopped
-S	in	[pot]
 //
 O	pot
 S	contains	{black bean,onion,garlic,cilantro}
@@ -6331,9 +6307,6 @@ M	sprinkle
 O	pot
 S	contains	{black bean,onion,garlic,cilantro,cayenne pepper,salt}
 S	in	[stove]
-O	salt
-S	granulated
-S	in	[pot]
 //
 O	pot
 S	contains	{black bean,onion,garlic,cilantro,cayenne pepper,salt}
@@ -8207,9 +8180,6 @@ O	skillet
 S	hot
 S	contains	{heavy cream,rosemary,salt}
 S	in	[stove]
-O	salt
-S	granulated
-S	in	[skillet]
 //
 O	skillet
 S	hot
@@ -8225,9 +8195,6 @@ O	skillet
 S	hot
 S	contains	{black pepper,heavy cream,rosemary,salt}
 S	in	[stove]
-O	black pepper
-S	ground
-S	in	[skillet]
 //
 O	cutting board
 S	empty
@@ -9412,9 +9379,6 @@ S	in	[bowl]
 M	sprinkle
 O	mixing bowl
 S	contains	{mozzarella,salt,sesame oil,soy sauce,soybean}
-O	salt
-S	granulated
-S	in	[mixing bowl]
 //
 O	mixing bowl
 S	contains	{mozzarella,salt,sesame oil,soy sauce,soybean}
@@ -9630,9 +9594,6 @@ S	in	[spoon]
 M	sprinkle*
 O	mixing bowl
 S	contains	{black pepper,corn starch,flour,onion,parsley,potato}
-O	black pepper
-S	ground
-S	in	[mixing bowl]
 //
 O	mixing bowl
 S	contains	{black pepper,corn starch,flour,onion,parsley,potato}
@@ -9644,9 +9605,6 @@ S	in	[spoon]
 M	sprinkle*
 O	mixing bowl
 S	contains	{black pepper,corn starch,flour,onion,parsley,potato,salt}
-O	salt
-S	granulated
-S	in	[mixing bowl]
 //
 O	mixing bowl
 S	contains	{black pepper,corn starch,flour,onion,parsley,potato,salt}
@@ -10002,9 +9960,6 @@ S	in	[surface]
 O	green bean
 S	seasoned
 S	contains	{garlic,onion,tarragon,salt,black pepper}
-S	in	[sheet]
-O	black pepper
-S	ground
 S	in	[sheet]
 //
 O	aluminium foil
@@ -10376,9 +10331,6 @@ O	cooking pan
 S	hot
 S	contains	{broccoli,olive oil,salt}
 S	in	[stove]
-O	salt
-S	granulated
-S	in	[cooking pan]
 //
 O	cooking pan
 S	hot
@@ -12090,9 +12042,6 @@ S	contains	{brussel sprout,black pepper,salt,olive oil}
 O	brussel sprout
 S	peeled
 S	in	[plastic bag]
-O	black pepper
-S	ground
-S	in	[plastic bag]
 O	salt
 S	granulated
 S	in	[plastic bag]
@@ -12953,9 +12902,6 @@ S	in	[shaker]
 M	sprinkle
 O	bowl
 S	contains	{butter,garlic,parsley,salt}
-O	salt
-S	granulated
-S	in	[bowl]
 //
 O	bowl
 S	contains	{butter,garlic,parsley,salt}
@@ -12968,9 +12914,6 @@ S	in	[pepper mill]
 M	grind
 O	bowl
 S	contains	{black pepper,butter,garlic,parsley,salt}
-O	black pepper
-S	ground
-S	in	[bowl]
 //
 O	bowl
 S	contains	{black pepper,butter,garlic,parsley,salt}
@@ -14010,9 +13953,6 @@ S	in	[shaker]
 M	sprinkle
 O	bowl
 S	contains	{carrot,cherry tomato,green olive,lettuce,mushroom,onion,salt}
-O	salt
-S	granulated
-S	in	[bowl]
 //
 O	bowl
 S	contains	{carrot,cherry tomato,green olive,lettuce,mushroom,onion,salt}
@@ -15255,9 +15195,6 @@ M	sprinkle
 O	pot
 S	contains	{water,noodle,salt}
 S	in	[stove]
-O	salt
-S	granulated
-S	in	[pot]
 //
 O	spoon
 S	contains	{olive oil}
@@ -17348,9 +17285,6 @@ S	mixed
 S	cooked
 S	contains	{butter,egg,black pepper}
 S	in	[plate]
-O	black pepper
-S	ground
-S	in	[scrambled eggs]
 //
 O	plate
 S	contains	{scrambled eggs}
@@ -17473,9 +17407,6 @@ M	shake
 O	cooking pan
 S	contains	{zucchini,salt}
 S	in	[stove]
-O	salt
-S	granulated
-S	in	[pan]
 //
 O	cooking pan
 S	contains	{zucchini,salt}
@@ -20097,9 +20028,6 @@ O	spoon
 M	scoop and pour
 O	bowl
 S	contains	{cornmeal,flour,baking soda,baking powder,salt}
-O	salt
-S	granulated
-S	in	[bowl]
 //
 O	bowl
 S	contains	{cornmeal,flour,baking soda,baking powder,salt}
@@ -20651,9 +20579,6 @@ S	in	[bowl]
 M	sprinkle
 O	mixing bowl
 S	contains	{egg white,egg yolk,half-and-half,salt,black pepper}
-O	black pepper
-S	ground
-S	in	[mixing bowl]
 //
 O	mixing bowl
 S	contains	{egg white,egg yolk,half-and-half,salt,black pepper}
@@ -21154,9 +21079,6 @@ S	in	[grinder]
 M	grind and sprinkle
 O	measuring cup
 S	contains	{garlic,italian seasoning,lemon juice,pepper,salt}
-O	salt
-S	granulated
-S	in	[measuring cup]
 //
 O	measuring cup
 S	contains	{garlic,italian seasoning,lemon juice,pepper,salt}
@@ -22314,9 +22236,6 @@ S	contains	{lemon juice,olive oil}
 M	pour and scrape
 O	mixing bowl
 S	contains	{cilantro,lemon juice,olive oil}
-O	cilantro
-S	chopped
-S	in	[mixing bowl]
 O	bowl
 S	empty
 //
@@ -22598,9 +22517,6 @@ S	in	[bowl]
 M	sprinkle
 O	mixing bowl
 S	contains	{black pepper,cilantro,lemon juice,olive oil,salt,shallot}
-O	black pepper
-S	ground
-S	in	[mixing bowl]
 //
 O	mixing bowl
 S	contains	{black pepper,cilantro,lemon juice,olive oil,salt,shallot}
@@ -22769,9 +22685,6 @@ M	pour
 O	pot
 S	contains	{olive oil,rice,garlic,water,salt}
 S	in	[stove]
-O	salt
-S	granulated
-S	in	[pot]
 //
 O	pot
 S	contains	{olive oil,rice,garlic,water,salt}
@@ -22907,9 +22820,6 @@ S	empty
 M	pick-and-place
 O	measuring cup
 S	contains	{cilantro}
-O	cilantro
-S	chopped
-S	in	[measuring cup]
 //
 O	pot
 S	contains	{rice}
@@ -22927,9 +22837,6 @@ M	pour
 O	rice
 S	cooked
 S	contains	{olive oil,rice,garlic,water,salt,lime zest,lime juice,cilantro}
-S	in	[pot]
-O	cilantro
-S	chopped
 S	in	[pot]
 //
 O	pot
@@ -23140,9 +23047,6 @@ M	sprinkle
 O	cooking pan
 S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper}
 S	in	[stove]
-O	black pepper
-S	ground
-S	in	[pan]
 //
 O	cooking pan
 S	contains	{olive oil,jalapeno,onion,garlic,black bean,salt,black pepper}
@@ -24136,9 +24040,6 @@ O	beefsteak
 S	uncooked
 S	contains	{garlic,salt,black pepper}
 S	in	[plate]
-O	black pepper
-S	ground
-S	in	[meat]
 //
 O	baking tray
 S	empty
@@ -24478,9 +24379,6 @@ S	empty
 M	sprinkle
 O	bowl
 S	contains	{salt,sesame oil}
-O	salt
-S	granulated
-S	in	[bowl]
 //
 O	bowl
 S	contains	{salt,sesame oil}
@@ -25912,9 +25810,6 @@ S	in	[bowl]
 M	pour
 O	mixing bowl
 S	contains	{black pepper,cheddar,gruyere,mustard,paprika}
-O	black pepper
-S	ground
-S	in	[mixing bowl]
 O	bowl
 S	empty
 //
@@ -27705,9 +27600,6 @@ O	pot
 S	hot
 S	contains	{butter,carrot,celery,onion}
 S	in	[stove]
-O	onion
-S	chopped
-S	in	[pot]
 O	plate
 S	empty
 //
@@ -28005,9 +27897,6 @@ S	contains	{apple,cucumber}
 M	shake
 O	bowl
 S	contains	{apple,cucumber,salt}
-O	salt
-S	granulated
-S	in	[bowl]
 //
 O	shaker
 S	contains	{black pepper}
@@ -28019,9 +27908,6 @@ S	contains	{apple,cucumber,salt}
 M	shake
 O	bowl
 S	contains	{apple,black pepper,cucumber,salt}
-O	black pepper
-S	ground
-S	in	[bowl]
 //
 O	bottle
 S	contains	{olive oil}
@@ -29109,9 +28995,6 @@ M	sprinkle
 O	cooking pan
 S	contains	{oil,onion,ground beef,salt,black pepper}
 S	in	[stove]
-O	black pepper
-S	ground
-S	in	[pan]
 //
 O	cooking pan
 S	contains	{oil,onion,ground beef,salt,black pepper}
@@ -29767,9 +29650,6 @@ S	contains	{chicken}
 M	grind
 O	plate
 S	contains	{chicken,black pepper}
-O	black pepper
-S	ground
-S	in	[plate]
 //
 O	plate
 S	contains	{chicken,black pepper}
@@ -30355,9 +30235,6 @@ S	in	[shaker]
 M	sprinkle
 O	pot
 S	contains	{water,corn,milk,butter,sugar,salt,black pepper}
-O	black pepper
-S	ground
-S	in	[pot]
 //
 O	pot
 S	contains	{water,corn,milk,butter,sugar,salt,black pepper}
@@ -30868,9 +30745,6 @@ S	in	[spoon]
 M	sprinkle
 O	bowl
 S	contains	{egg white and yolk,salt,milk}
-O	salt
-S	granulated
-S	in	[bowl]
 //
 O	bowl
 S	contains	{egg white and yolk,salt,milk}
@@ -30882,9 +30756,6 @@ S	in	[spoon]
 M	sprinkle
 O	bowl
 S	contains	{egg white and yolk,milk,salt,black pepper}
-O	black pepper
-S	ground
-S	in	[bowl]
 //
 O	bowl
 S	contains	{egg white and yolk,milk,salt,black pepper}
@@ -32494,9 +32365,6 @@ S	contains	{flour,sugar,baking powder}
 M	pour
 O	bowl
 S	contains	{flour,sugar,baking powder,salt}
-O	salt
-S	granulated
-S	in	[bowl]
 //
 O	bowl
 S	contains	{flour,sugar,baking powder,salt}
@@ -32735,9 +32603,6 @@ M	stir
 O	pot
 S	contains	{saltwater}
 S	in	[stove]
-O	salt
-S	granulated
-S	in	[pot]
 //
 O	cutting board
 S	contains	{potato}
@@ -34585,9 +34450,6 @@ O	cooking pan
 S	hot
 S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper,black pepper}
 S	in	[stove]
-O	black pepper
-S	ground
-S	in	[cooking pan]
 //
 O	cooking pan
 S	hot
@@ -34617,9 +34479,6 @@ S	in	[jar]
 M	sprinkle
 O	mixing bowl
 S	contains	{egg,salt}
-O	salt
-S	granulated
-S	in	[mixing bowl]
 //
 O	mixing bowl
 S	contains	{egg,salt}
@@ -34631,9 +34490,6 @@ S	in	[pepper mill]
 M	grind
 O	mixing bowl
 S	contains	{egg,salt,black pepper}
-O	black pepper
-S	ground
-S	in	[mixing bowl]
 //
 O	cutting board
 S	empty
@@ -35191,9 +35047,6 @@ S	in	[bowl]
 M	sprinkle
 O	salad bowl
 S	contains	{avocado,basil,blood orange,lemon juice,lime juice,olive oil,salad greens,salt}
-O	salt
-S	granulated
-S	in	[salad bowl]
 //
 O	salad bowl
 S	contains	{avocado,basil,blood orange,lemon juice,lime juice,olive oil,salad greens,salt}
@@ -35308,9 +35161,6 @@ M	pour
 O	mixing bowl
 S	contains	{heavy cream,sugar}
 S	in	[mixer]
-O	sugar
-S	granulated
-S	in	[mixing bowl]
 //
 O	mixer
 S	on

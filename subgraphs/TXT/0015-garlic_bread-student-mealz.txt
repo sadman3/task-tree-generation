@@ -127,9 +127,6 @@ S	granulated
 M	sprinkle	<1:27,1:30>
 O	bowl	0
 S	contains	{butter,garlic,parsley,salt}
-O	salt	1
-S	in	[bowl]
-S	granulated
 //
 O	bowl	0
 S	contains	{butter,garlic,parsley,salt}
@@ -142,9 +139,6 @@ S	peppercorn
 M	grind	<1:31,1:34>
 O	bowl	0
 S	contains	{black pepper,butter,garlic,parsley,salt}
-O	black pepper	1
-S	in	[bowl]
-S	ground
 //
 O	bowl	0
 S	contains	{black pepper,butter,garlic,parsley,salt}

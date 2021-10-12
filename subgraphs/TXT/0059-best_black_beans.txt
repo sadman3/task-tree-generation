@@ -146,9 +146,6 @@ M	pour	0:40	0:42
 O	pot	0
 S	contains	{black bean,onion}
 S	on	[stove]
-O	onion	1
-S	chopped
-S	in	[pot]
 //
 O	pot	0
 S	contains	{black bean,onion}
@@ -205,9 +202,6 @@ M	pour	0:50	0:52
 O	pot	0
 S	contains	{black bean,onion,garlic,cilantro}
 S	on	[stove]
-O	cilantro	1
-S	chopped
-S	in	[pot]
 //
 O	pot	0
 S	contains	{black bean,onion,garlic,cilantro}
@@ -234,9 +228,6 @@ M	sprinkle	0:56	0:59
 O	pot	0
 S	contains	{black bean,onion,garlic,cilantro,cayenne pepper,salt}
 S	on	[stove]
-O	salt	1
-S	granulated
-S	in	[pot]
 //
 O	pot	0
 S	contains	{black bean,onion,garlic,cilantro,cayenne pepper,salt}

@@ -63,9 +63,6 @@ S	in	[spoon]
 M	sprinkle	0:51	0:54
 O	bowl	0
 S	contains	{egg white and yolk,salt,milk}
-O	salt	1
-S	granulated
-S	in	[bowl]
 //
 O	bowl	0
 S	contains	{egg white and yolk,salt,milk}
@@ -77,9 +74,6 @@ S	in	[spoon]
 M	sprinkle	0:56	0:58
 O	bowl	0
 S	contains	{egg white and yolk,milk,salt,black pepper}
-O	black pepper	1
-S	ground
-S	in	[bowl]
 //
 O	bowl	0
 S	contains	{egg white and yolk,milk,salt,black pepper}

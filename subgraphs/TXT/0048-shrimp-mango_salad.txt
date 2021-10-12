@@ -179,9 +179,6 @@ S	contains	{lemon juice,olive oil}
 M	pour and scrape	<1:11-1:13>
 O	mixing bowl	0
 S	contains	{cilantro,lemon juice,olive oil}
-O	cilantro	1
-S	chopped
-S	in	[mixing bowl]
 O	bowl	1
 S	empty
 //
@@ -463,9 +460,6 @@ S	in	[bowl]
 M	sprinkle	<1:50-1:51>
 O	mixing bowl	0
 S	contains	{black pepper,cilantro,lemon juice,olive oil,salt,shallot}
-O	black pepper	1
-S	ground
-S	in	[mixing bowl]
 //
 O	mixing bowl	0
 S	contains	{black pepper,cilantro,lemon juice,olive oil,salt,shallot}

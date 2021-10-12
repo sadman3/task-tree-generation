@@ -20,9 +20,6 @@ M	sprinkle	0:49	0:57
 O	pot	0
 S	contains	{water,noodle,salt}
 S	on	[stove]
-O	salt	1
-S	granulated
-S	in	[pot]
 //
 O	spoon	1
 S	contains	{olive oil}

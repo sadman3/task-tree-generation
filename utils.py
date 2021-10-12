@@ -193,12 +193,12 @@ def find_ingredient_mapping(task_tree, input_ingredients):
             input_object = item
             tree_object = candidate["object"]
             score = candidate["score"]
-            if tree_object not in object_mapped and score > similarity_threshold:
+            if tree_object not in object_mapped:
                 ingredient_mapping[input_object] = {
                     "object": tree_object,
                     "score": score
                 }
                 object_mapped.append(tree_object)
                 break
-    print(input_ingredients)
+
     return ingredient_mapping

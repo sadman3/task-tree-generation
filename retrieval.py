@@ -1,9 +1,9 @@
-from genericpath import exists
 import pickle
 import json
 from configparser import ConfigParser
-from FOON_class import FunctionalUnit, Object
+from FOON_class import Object
 import os
+import copy
 
 from utils import compare_two_recipe, find_ingredient_mapping, get_utensils
 
@@ -19,6 +19,7 @@ subgraph_dir = config['source']['data_source']
 foon_pkl = config['source']['foon_pkl']
 recipe_category_path = config["info"]["recipe_category"]
 kitchen_path = config['info']['kitchen']
+similarity_threshold = float(config["constant"]["similarity_threshold"])
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -184,6 +185,7 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
                     function
         returns: a task tree that consists some functional units
     """
+    print(len(object_to_FU_map))
 
     # list of indices of functional units
     reference_task_tree = []
@@ -200,6 +202,7 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
         current_item = object_nodes[current_item_index]
 
         if not check_if_exist_in_kitchen(kitchen_items, current_item):
+            object_nodes[current_item_index].print()
             candidate_units = object_to_FU_map[current_item_index]
 
             best_candidate_idx = select_best_candidate(
@@ -226,7 +229,9 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
     # create a list of functional unit from the indices of reference_task_tree
     task_tree_units = []
     for i in reference_task_tree:
-        task_tree_units.append(functional_units[i])
+        # creating a copy to make sure that modifying a FU does not affect future search
+        FU = copy.deepcopy(functional_units[i])
+        task_tree_units.append(FU)
 
     return task_tree_units
 
@@ -237,15 +242,36 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
 # so that it is aligned with input ingredients.
 # Major step: substituion, deletion of extra ingredients
 
-def modify_reference_task_tree(task_tree=[], input_ingredients=[]):
+def modify_reference_task_tree(reference_task_tree=[], input_ingredients=[]):
     """
         parameters: a task tree as a list of functioal units, 
                     input ingredients {object,state}
 
         returns: modified task tree that consists some functional units
     """
+
+    task_tree = copy.deepcopy(reference_task_tree)
+
     ingredient_mapping = find_ingredient_mapping(task_tree, input_ingredients)
-    print(ingredient_mapping)
+    for ingredient in ingredient_mapping:
+        mapped_object = ingredient_mapping[ingredient]['object']
+
+        # substitue object in the task tree
+        for fu in task_tree:
+            for node in fu.input_nodes:
+                if node.label == mapped_object:
+                    node.label = ingredient
+                if mapped_object in node.ingredients:
+                    idx = node.ingredients.index(mapped_object)
+                    node.ingredients[idx] = ingredient
+
+            for node in fu.output_nodes:
+                if node.label == mapped_object:
+                    node.label = ingredient
+                if mapped_object in node.ingredients:
+                    idx = node.ingredients.index(mapped_object)
+                    node.ingredients[idx] = ingredient
+    return task_tree
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 # creates the graph using adjacency list
@@ -304,15 +330,15 @@ def retrieval(functional_units, object_nodes, object_to_FU_map, recipe_id, dish_
 
     # step 3: modify the reference task tree
     final_task_tree = modify_reference_task_tree(
-        task_tree=reference_task_tree, input_ingredients=input_ingredients)
+        reference_task_tree=reference_task_tree, input_ingredients=input_ingredients)
 
-    # # save the final task tree
-    # output_dir = os.path.join('output', 'final_task_tree', dish_type)
-    # if not os.path.exists(output_dir):
-    #     os.makedirs(output_dir)
+    # save the final task tree
+    output_dir = os.path.join('output', 'final_task_tree', dish_type)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
 
-    # output_path = os.path.join(output_dir, recipe_id + '.txt')
-    # save_paths_to_file(final_task_tree, output_path)
+    output_path = os.path.join(output_dir, recipe_id + '.txt')
+    save_paths_to_file(final_task_tree, output_path)
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 

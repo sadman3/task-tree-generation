@@ -95,9 +95,6 @@ S	contains	{flour,sugar,baking powder}
 M	pour	0:49	0:50
 O	bowl	0
 S	contains	{flour,sugar,baking powder,salt}
-O	salt	1
-S	granulated
-S	in	[bowl]
 //
 O	bowl	0
 S	contains	{flour,sugar,baking powder,salt}

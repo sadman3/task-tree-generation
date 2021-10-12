@@ -74,12 +74,28 @@
         "container": null
     },
     {
+        "label": "stove",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
         "label": "cooking pan",
         "states": [],
         "ingredients": [
             "oil"
         ],
         "container": null
+    },
+    {
+        "label": "stove",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "pan"
     },
     {
         "label": "plate",
@@ -113,6 +129,22 @@
         ],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "stove",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "cooking pan"
+    },
+    {
+        "label": "cooking pan",
+        "states": [
+            "heated"
+        ],
+        "ingredients": [],
+        "container": "stove"
     },
     {
         "label": "butter",
@@ -155,6 +187,12 @@
         ],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "baking tray",
+        "states": [],
+        "ingredients": [],
+        "container": "cooking pan"
     },
     {
         "label": "baking tray",
@@ -273,6 +311,22 @@
         "container": null
     },
     {
+        "label": "stove",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "pot"
+    },
+    {
+        "label": "pot",
+        "states": [
+            "heated"
+        ],
+        "ingredients": [],
+        "container": "stove"
+    },
+    {
         "label": "butter",
         "states": [
             "stick"
@@ -301,6 +355,18 @@
         "container": null
     },
     {
+        "label": "plate",
+        "states": [],
+        "ingredients": [],
+        "container": "napkin"
+    },
+    {
+        "label": "napkin",
+        "states": [],
+        "ingredients": [],
+        "container": "plate"
+    },
+    {
         "label": "cup",
         "states": [
             "empty"
@@ -321,6 +387,12 @@
         "states": [],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "pot lid",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
     },
     {
         "label": "cutting board",
@@ -447,12 +519,34 @@
         "container": null
     },
     {
+        "label": "food processor lid",
+        "states": [],
+        "ingredients": [],
+        "container": "food processor bowl"
+    },
+    {
         "label": "food processor",
         "states": [
             "off (ready)"
         ],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "food processor",
+        "states": [
+            "off (ready)"
+        ],
+        "ingredients": [],
+        "container": "food processor bowl"
+    },
+    {
+        "label": "food processor",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "food processor bowl"
     },
     {
         "label": "watermelon",
@@ -539,6 +633,14 @@
         "label": "oven",
         "states": [
             "off (ready)"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
+        "label": "oven",
+        "states": [
+            "on"
         ],
         "ingredients": [],
         "container": null
@@ -634,10 +736,26 @@
         "container": "bowl"
     },
     {
+        "label": "mixer",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
         "label": "bowl",
         "states": [],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "oven",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "pan"
     },
     {
         "label": "wire rack",
@@ -716,6 +834,14 @@
         "container": null
     },
     {
+        "label": "cutting board",
+        "states": [
+            "floured"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
         "label": "scraper",
         "states": [],
         "ingredients": [],
@@ -742,8 +868,25 @@
         "container": "frying pan"
     },
     {
+        "label": "stove",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "frying pan"
+    },
+    {
         "label": "frying pan",
         "states": [
+            "empty"
+        ],
+        "ingredients": [],
+        "container": "stove"
+    },
+    {
+        "label": "frying pan",
+        "states": [
+            "hot",
             "empty"
         ],
         "ingredients": [],
@@ -824,6 +967,14 @@
         ],
         "ingredients": [],
         "container": "bowl"
+    },
+    {
+        "label": "faucet",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": null
     },
     {
         "label": "shaker",
@@ -952,6 +1103,18 @@
         "container": null
     },
     {
+        "label": "blender lid",
+        "states": [],
+        "ingredients": [],
+        "container": "blender"
+    },
+    {
+        "label": "blender",
+        "states": [],
+        "ingredients": [],
+        "container": "blender jar"
+    },
+    {
         "label": "olive oil",
         "states": [],
         "ingredients": [],
@@ -992,6 +1155,15 @@
         "states": [],
         "ingredients": [],
         "container": "mug"
+    },
+    {
+        "label": "cooking pan",
+        "states": [
+            "hot",
+            "empty"
+        ],
+        "ingredients": [],
+        "container": "stove"
     },
     {
         "label": "butter",
@@ -1158,6 +1330,12 @@
         "container": null
     },
     {
+        "label": "table",
+        "states": [],
+        "ingredients": [],
+        "container": "item"
+    },
+    {
         "label": "parchment paper",
         "states": [],
         "ingredients": [],
@@ -1170,6 +1348,18 @@
         ],
         "ingredients": [],
         "container": "surface"
+    },
+    {
+        "label": "baking tray",
+        "states": [],
+        "ingredients": [],
+        "container": "surface"
+    },
+    {
+        "label": "parchment paper",
+        "states": [],
+        "ingredients": [],
+        "container": "baking tray"
     },
     {
         "label": "brush",
@@ -1214,6 +1404,30 @@
         ],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "oven",
+        "states": [
+            "on",
+            "preheated"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
+        "label": "oven",
+        "states": [
+            "on",
+            "preheated"
+        ],
+        "ingredients": [],
+        "container": "baking tray"
+    },
+    {
+        "label": "baking tray",
+        "states": [],
+        "ingredients": [],
+        "container": "oven"
     },
     {
         "label": "parsley",
@@ -1275,6 +1489,14 @@
         "container": "sheet"
     },
     {
+        "label": "oven",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "baking tray"
+    },
+    {
         "label": "brownie",
         "states": [
             "baked"
@@ -1324,6 +1546,14 @@
         ],
         "ingredients": [],
         "container": "cutting board"
+    },
+    {
+        "label": "onion",
+        "states": [
+            "chopped"
+        ],
+        "ingredients": [],
+        "container": "pot"
     },
     {
         "label": "pot",
@@ -1381,6 +1611,14 @@
         "container": "measuring cup"
     },
     {
+        "label": "black pepper",
+        "states": [
+            "ground"
+        ],
+        "ingredients": [],
+        "container": "pot"
+    },
+    {
         "label": "ladle",
         "states": [],
         "ingredients": [],
@@ -1425,6 +1663,12 @@
         ],
         "ingredients": [],
         "container": "grater"
+    },
+    {
+        "label": "grater",
+        "states": [],
+        "ingredients": [],
+        "container": "container"
     },
     {
         "label": "saucepan",
@@ -1515,6 +1759,14 @@
         ],
         "ingredients": [],
         "container": "packet"
+    },
+    {
+        "label": "mixer",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "mixing bowl"
     },
     {
         "label": "can",
@@ -1647,6 +1899,20 @@
         "container": "box"
     },
     {
+        "label": "saran wrap",
+        "states": [],
+        "ingredients": [],
+        "container": "baking dish"
+    },
+    {
+        "label": "fridge",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
         "label": "sweet potato",
         "states": [
             "whole"
@@ -1658,6 +1924,14 @@
         "label": "plastic bag",
         "states": [
             "empty"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
+        "label": "plastic bag",
+        "states": [
+            "opened"
         ],
         "ingredients": [],
         "container": null
@@ -1854,11 +2128,29 @@
     {
         "label": "grill",
         "states": [
+            "on",
+            "empty"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
+        "label": "grill",
+        "states": [
             "off"
         ],
         "ingredients": [
             "shrimp"
         ],
+        "container": null
+    },
+    {
+        "label": "grill",
+        "states": [
+            "off",
+            "empty"
+        ],
+        "ingredients": [],
         "container": null
     },
     {
@@ -1930,6 +2222,14 @@
         ],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "cilantro",
+        "states": [
+            "chopped"
+        ],
+        "ingredients": [],
+        "container": "pot"
     },
     {
         "label": "pestle",
@@ -2090,6 +2390,12 @@
         "container": null
     },
     {
+        "label": "pan lid",
+        "states": [],
+        "ingredients": [],
+        "container": "pan"
+    },
+    {
         "label": "bowl",
         "states": [],
         "ingredients": [
@@ -2134,6 +2440,14 @@
         ],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "blender",
+        "states": [
+            "off (ready)"
+        ],
+        "ingredients": [],
+        "container": "blender jar"
     },
     {
         "label": "carton",
@@ -2280,6 +2594,12 @@
         "container": null
     },
     {
+        "label": "blender cover",
+        "states": [],
+        "ingredients": [],
+        "container": "blender jar"
+    },
+    {
         "label": "blender",
         "states": [
             "on"
@@ -2302,6 +2622,14 @@
         ],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "stove",
+        "states": [
+            "off (ready)"
+        ],
+        "ingredients": [],
+        "container": "pot"
     },
     {
         "label": "container",
@@ -2425,6 +2753,28 @@
         "container": "bottle"
     },
     {
+        "label": "blender lid",
+        "states": [],
+        "ingredients": [],
+        "container": "blender cup"
+    },
+    {
+        "label": "blender",
+        "states": [
+            "off (ready)"
+        ],
+        "ingredients": [],
+        "container": "blender cup"
+    },
+    {
+        "label": "blender",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "blender cup"
+    },
+    {
         "label": "blender",
         "states": [
             "off"
@@ -2471,6 +2821,31 @@
         ],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "stove",
+        "states": [
+            "off (ready)"
+        ],
+        "ingredients": [],
+        "container": "skillet"
+    },
+    {
+        "label": "stove",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "skillet"
+    },
+    {
+        "label": "skillet",
+        "states": [
+            "hot",
+            "empty"
+        ],
+        "ingredients": [],
+        "container": "stove"
     },
     {
         "label": "bottle",
@@ -2520,6 +2895,12 @@
         ],
         "ingredients": [],
         "container": "packet"
+    },
+    {
+        "label": "skillet",
+        "states": [],
+        "ingredients": [],
+        "container": "stove"
     },
     {
         "label": "skillet",
@@ -2784,6 +3165,15 @@
     {
         "label": "microwave",
         "states": [
+            "empty",
+            "off"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
+        "label": "microwave",
+        "states": [
             "off"
         ],
         "ingredients": [
@@ -2953,6 +3343,14 @@
         "container": "box"
     },
     {
+        "label": "aluminium foil",
+        "states": [
+            "spread out"
+        ],
+        "ingredients": [],
+        "container": "surface"
+    },
+    {
         "label": "green bean",
         "states": [
             "whole"
@@ -3005,6 +3403,22 @@
         "states": [],
         "ingredients": [],
         "container": "spray can"
+    },
+    {
+        "label": "grill",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
+        "label": "grill",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "aluminium"
     },
     {
         "label": "sweet pepper",
@@ -3170,6 +3584,24 @@
         "container": "cutting board"
     },
     {
+        "label": "oven",
+        "states": [
+            "off",
+            "empty"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
+        "label": "oven",
+        "states": [
+            "on",
+            "empty"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
         "label": "garlic",
         "states": [
             "bulb"
@@ -3236,12 +3668,26 @@
         "container": "box"
     },
     {
+        "label": "aluminium foil",
+        "states": [
+            "sheet"
+        ],
+        "ingredients": [],
+        "container": "baking tray"
+    },
+    {
         "label": "baking tray",
         "states": [
             "empty"
         ],
         "ingredients": [],
         "container": "aluminium foil"
+    },
+    {
+        "label": "aluminium foil",
+        "states": [],
+        "ingredients": [],
+        "container": "baking tray"
     },
     {
         "label": "aluminium foil",
@@ -3425,6 +3871,14 @@
         "states": [
             "uncooked",
             "peeled"
+        ],
+        "ingredients": [],
+        "container": "plastic bag"
+    },
+    {
+        "label": "black pepper",
+        "states": [
+            "ground"
         ],
         "ingredients": [],
         "container": "plastic bag"
@@ -3645,6 +4099,23 @@
         "container": null
     },
     {
+        "label": "garlic press",
+        "states": [
+            "empty",
+            "opened"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
+        "label": "garlic press",
+        "states": [
+            "closed"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
         "label": "black pepper",
         "states": [
             "whole",
@@ -3678,9 +4149,25 @@
         "container": "parchment paper"
     },
     {
+        "label": "parchment paper",
+        "states": [
+            "sheet"
+        ],
+        "ingredients": [],
+        "container": "baking tray"
+    },
+    {
         "label": "hand mixer",
         "states": [
             "off"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
+        "label": "hand mixer",
+        "states": [
+            "on"
         ],
         "ingredients": [],
         "container": null
@@ -3712,6 +4199,18 @@
         "states": [],
         "ingredients": [],
         "container": "packet"
+    },
+    {
+        "label": "muffin pan",
+        "states": [],
+        "ingredients": [],
+        "container": "cup"
+    },
+    {
+        "label": "muffin cup",
+        "states": [],
+        "ingredients": [],
+        "container": "pan"
     },
     {
         "label": "spray can",
@@ -3919,6 +4418,22 @@
         "container": null
     },
     {
+        "label": "refrigerator",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
+        "label": "refrigerator",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "plastic bag"
+    },
+    {
         "label": "packet",
         "states": [],
         "ingredients": [
@@ -3973,6 +4488,12 @@
         "container": "bowl"
     },
     {
+        "label": "blender",
+        "states": [],
+        "ingredients": [],
+        "container": "blender cup"
+    },
+    {
         "label": "tea",
         "states": [],
         "ingredients": [],
@@ -4011,10 +4532,26 @@
         "container": "packet"
     },
     {
+        "label": "napkin",
+        "states": [
+            "dry"
+        ],
+        "ingredients": [],
+        "container": "plate"
+    },
+    {
         "label": "plate",
         "states": [],
         "ingredients": [],
         "container": "cooking pan"
+    },
+    {
+        "label": "napkin",
+        "states": [
+            "soaked"
+        ],
+        "ingredients": [],
+        "container": "plate"
     },
     {
         "label": "bacon",
@@ -4074,6 +4611,14 @@
         "container": "box"
     },
     {
+        "label": "saran wrap",
+        "states": [
+            "sheet"
+        ],
+        "ingredients": [],
+        "container": "mixing bowl"
+    },
+    {
         "label": "pizza pan",
         "states": [
             "empty"
@@ -4130,6 +4675,14 @@
         ],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "stove",
+        "states": [
+            "off (ready)"
+        ],
+        "ingredients": [],
+        "container": "cooking pan"
     },
     {
         "label": "bacon",
@@ -4312,6 +4865,18 @@
         "container": null
     },
     {
+        "label": "muffin pan",
+        "states": [],
+        "ingredients": [],
+        "container": "muffin cup"
+    },
+    {
+        "label": "muffin cup",
+        "states": [],
+        "ingredients": [],
+        "container": "muffin pan"
+    },
+    {
         "label": "bottle",
         "states": [],
         "ingredients": [
@@ -4490,6 +5055,12 @@
         "container": "bowl"
     },
     {
+        "label": "blender lid",
+        "states": [],
+        "ingredients": [],
+        "container": "blender jar"
+    },
+    {
         "label": "spoon",
         "states": [],
         "ingredients": [
@@ -4566,6 +5137,22 @@
         "container": "jar"
     },
     {
+        "label": "aluminium foil",
+        "states": [
+            "sheet"
+        ],
+        "ingredients": [],
+        "container": "surface"
+    },
+    {
+        "label": "aluminium foil",
+        "states": [
+            "sheet"
+        ],
+        "ingredients": [],
+        "container": "bread"
+    },
+    {
         "label": "oven",
         "states": [
             "off"
@@ -4573,6 +5160,22 @@
         "ingredients": [
             "garlic bread"
         ],
+        "container": null
+    },
+    {
+        "label": "aluminium foil",
+        "states": [
+            "sheet"
+        ],
+        "ingredients": [],
+        "container": "garlic bread"
+    },
+    {
+        "label": "aluminium foil",
+        "states": [
+            "sheet"
+        ],
+        "ingredients": [],
         "container": null
     },
     {
@@ -5305,6 +5908,14 @@
         "container": null
     },
     {
+        "label": "stove",
+        "states": [
+            "off (ready)"
+        ],
+        "ingredients": [],
+        "container": "frying pan"
+    },
+    {
         "label": "onion",
         "states": [
             "whole",
@@ -5369,6 +5980,12 @@
         ],
         "ingredients": [],
         "container": "bowl"
+    },
+    {
+        "label": "stove",
+        "states": [],
+        "ingredients": [],
+        "container": "frying pan"
     },
     {
         "label": "stove",
@@ -5458,6 +6075,14 @@
         ],
         "ingredients": [],
         "container": "grinder"
+    },
+    {
+        "label": "skillet",
+        "states": [
+            "heated"
+        ],
+        "ingredients": [],
+        "container": "stove"
     },
     {
         "label": "butter",
@@ -5649,6 +6274,14 @@
         "container": null
     },
     {
+        "label": "griddle",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
         "label": "packet",
         "states": [
             "open"
@@ -5700,6 +6333,12 @@
         ],
         "ingredients": [],
         "container": "cutting board"
+    },
+    {
+        "label": "grater",
+        "states": [],
+        "ingredients": [],
+        "container": "bowl"
     },
     {
         "label": "bowl",
@@ -5756,6 +6395,14 @@
         ],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "cilantro",
+        "states": [
+            "chopped"
+        ],
+        "ingredients": [],
+        "container": "mixing bowl"
     },
     {
         "label": "vinaigrette",
@@ -5823,6 +6470,20 @@
         "container": "bowl"
     },
     {
+        "label": "pot lid",
+        "states": [],
+        "ingredients": [],
+        "container": "pan"
+    },
+    {
+        "label": "cilantro",
+        "states": [
+            "chopped"
+        ],
+        "ingredients": [],
+        "container": "measuring cup"
+    },
+    {
         "label": "jalapeno",
         "states": [
             "whole"
@@ -5880,6 +6541,12 @@
         "states": [],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "can",
+        "states": [],
+        "ingredients": [],
+        "container": "trash bin"
     },
     {
         "label": "masher",
@@ -6074,6 +6741,14 @@
         "container": null
     },
     {
+        "label": "baking tray",
+        "states": [
+            "heated"
+        ],
+        "ingredients": [],
+        "container": "oven"
+    },
+    {
         "label": "packet",
         "states": [
             "sealed"
@@ -6091,6 +6766,12 @@
         ],
         "ingredients": [],
         "container": "packet"
+    },
+    {
+        "label": "microwave",
+        "states": [],
+        "ingredients": [],
+        "container": "bowl"
     },
     {
         "label": "water",
@@ -6446,6 +7127,12 @@
         "container": "shaker"
     },
     {
+        "label": "baking tray",
+        "states": [],
+        "ingredients": [],
+        "container": "aluminium foil"
+    },
+    {
         "label": "packet",
         "states": [],
         "ingredients": [
@@ -6546,6 +7233,12 @@
         ],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "surface",
+        "states": [],
+        "ingredients": [],
+        "container": "aluminium foil"
     },
     {
         "label": "garlic",
@@ -7009,6 +7702,12 @@
         "container": "bowl"
     },
     {
+        "label": "microwave",
+        "states": [],
+        "ingredients": [],
+        "container": "jar"
+    },
+    {
         "label": "cookie dough",
         "states": [
             "uncooked"
@@ -7167,6 +7866,22 @@
         "container": "tray"
     },
     {
+        "label": "black pepper",
+        "states": [
+            "ground"
+        ],
+        "ingredients": [],
+        "container": "pan"
+    },
+    {
+        "label": "fridge",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
         "label": "flour",
         "states": [],
         "ingredients": [],
@@ -7193,6 +7908,14 @@
         ],
         "ingredients": [],
         "container": "packet"
+    },
+    {
+        "label": "cooking pan",
+        "states": [
+            "seasoned"
+        ],
+        "ingredients": [],
+        "container": "stove"
     },
     {
         "label": "butter",
@@ -7268,6 +7991,14 @@
         ],
         "ingredients": [],
         "container": "shaker"
+    },
+    {
+        "label": "black pepper",
+        "states": [
+            "ground"
+        ],
+        "ingredients": [],
+        "container": "plate"
     },
     {
         "label": "packet",
@@ -7496,6 +8227,12 @@
         ],
         "ingredients": [],
         "container": "cutting board"
+    },
+    {
+        "label": "cutting board",
+        "states": [],
+        "ingredients": [],
+        "container": "surface"
     },
     {
         "label": "sugar",
@@ -7785,6 +8522,22 @@
     {
         "label": "hand mixer",
         "states": [
+            "off (ready)"
+        ],
+        "ingredients": [],
+        "container": "mixing bowl"
+    },
+    {
+        "label": "hand mixer",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "mixing bowl"
+    },
+    {
+        "label": "hand mixer",
+        "states": [
             "off"
         ],
         "ingredients": [],
@@ -7811,6 +8564,12 @@
         "states": [],
         "ingredients": [],
         "container": null
+    },
+    {
+        "label": "toothpick",
+        "states": [],
+        "ingredients": [],
+        "container": "buckeye candy"
     },
     {
         "label": "packet",
@@ -7907,6 +8666,12 @@
         "label": "saran wrap",
         "states": [],
         "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "saran wrap",
+        "states": [],
+        "ingredients": [],
         "container": null
     },
     {
@@ -7994,6 +8759,32 @@
     {
         "label": "saucepan",
         "states": [],
+        "ingredients": [],
+        "container": null
+    },
+    {
+        "label": "fridge",
+        "states": [
+            "on"
+        ],
+        "ingredients": [],
+        "container": "baking tray"
+    },
+    {
+        "label": "stove",
+        "states": [
+            "off (ready)",
+            "under [cooking pan]"
+        ],
+        "ingredients": [],
+        "container": null
+    },
+    {
+        "label": "stove",
+        "states": [
+            "on",
+            "under [cooking pan]"
+        ],
         "ingredients": [],
         "container": null
     },
@@ -8115,6 +8906,14 @@
         "states": [],
         "ingredients": [],
         "container": "bottle"
+    },
+    {
+        "label": "salt",
+        "states": [
+            "granulated"
+        ],
+        "ingredients": [],
+        "container": "salad bowl"
     },
     {
         "label": "lime juice",

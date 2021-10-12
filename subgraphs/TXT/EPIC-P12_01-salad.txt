@@ -104,9 +104,6 @@ S	contains	{apple,cucumber}
 M	shake	<3:25-3:30>
 O	bowl	0
 S	contains	{apple,cucumber,salt}
-O	salt	1
-S	granulated
-S	in	[bowl]
 //
 O	shaker	1
 S	contains	{black pepper}
@@ -118,9 +115,6 @@ S	contains	{apple,cucumber,salt}
 M	shake	<3:40-3:43>
 O	bowl	0
 S	contains	{apple,black pepper,cucumber,salt}
-O	black pepper	1
-S	in	[bowl]
-S	ground
 //
 O	bottle	1
 S	contains	{olive oil}

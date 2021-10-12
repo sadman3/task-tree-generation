@@ -262,9 +262,6 @@ O	skillet	0
 S	on	[stove]
 S	hot
 S	contains	{heavy cream,rosemary,salt}
-O	salt	1
-S	in	[skillet]
-S	granulated
 //
 O	skillet	0
 S	on	[stove]
@@ -280,9 +277,6 @@ O	skillet	0
 S	on	[stove]
 S	hot
 S	contains	{black pepper,heavy cream,rosemary,salt}
-O	black pepper	0
-S	ground
-S	in	[skillet]
 //
 O	cutting board	0
 S	empty

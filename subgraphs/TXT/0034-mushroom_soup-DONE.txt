@@ -91,9 +91,6 @@ O	spoon	1
 M	scrape	<1:11-1:15>
 O	bowl	1
 S	empty
-O	onion	1
-S	chopped
-S	in	[pot]
 O	pot	0
 S	hot
 S	contains	{butter,onion}
@@ -282,9 +279,6 @@ O	pot	0
 S	hot
 S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half,salt}
 S	on	[stove]
-O	salt	1
-S	granulated
-S	in	[pot]
 //
 O	pot	0
 S	hot
@@ -300,9 +294,6 @@ O	pot	0
 S	hot
 S	contains	{butter,onion,mushroom,chicken broth,flour,half-and-half,salt,black pepper}
 S	on	[stove]
-O	black pepper	1
-S	ground
-S	in	[pot]
 //
 O	stove	0
 S	on

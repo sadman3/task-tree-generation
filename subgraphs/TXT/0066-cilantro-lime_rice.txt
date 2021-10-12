@@ -94,9 +94,6 @@ M	pour	0:51	0:53
 O	pot	0
 S	contains	{olive oil,rice,garlic,water,salt}
 S	on	[stove]
-O	salt	1
-S	granulated
-S	in	[pot]
 //
 O	pot	0
 S	contains	{olive oil,rice,garlic,water,salt}
@@ -232,9 +229,6 @@ S	empty
 M	pick-and-place	Assumed	Assumed
 O	measuring cup	1
 S	contains	{cilantro}
-O	cilantro	1
-S	chopped
-S	in	[measuring cup]
 //
 O	pot	0
 S	contains	{rice}
@@ -252,9 +246,6 @@ M	pour	1:43	1:47
 O	rice	0
 S	contains	{olive oil,rice,garlic,water,salt,lime zest,lime juice,cilantro}
 S	cooked
-S	in	[pot]
-O	cilantro	1
-S	chopped
 S	in	[pot]
 //
 O	pot	0

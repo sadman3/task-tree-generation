@@ -116,9 +116,6 @@ S	contains	{chicken}
 M	grind	<1:19-1:23>
 O	plate	0
 S	contains	{chicken,black pepper}
-O	black pepper	1
-S	ground
-S	on	[plate]
 //
 O	plate	0
 S	contains	{chicken,black pepper}

@@ -177,9 +177,6 @@ S	in	[spoon]
 M	sprinkle*	<Assumed>
 O	mixing bowl	0
 S	contains	{black pepper,corn starch,flour,onion,parsley,potato}
-O	black pepper	1
-S	ground
-S	in	[mixing bowl]
 //
 O	mixing bowl	0
 S	contains	{black pepper,corn starch,flour,onion,parsley,potato}
@@ -191,9 +188,6 @@ S	in	[spoon]
 M	sprinkle*	<Assumed>
 O	mixing bowl	0
 S	contains	{black pepper,corn starch,flour,onion,parsley,potato,salt}
-O	salt	1
-S	granulated
-S	in	[mixing bowl]
 //
 O	mixing bowl	0
 S	contains	{black pepper,corn starch,flour,onion,parsley,potato,salt}

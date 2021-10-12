@@ -138,9 +138,6 @@ S	in	[shaker]
 M	sprinkle	2:24	2:27
 O	pot	0
 S	contains	{water,corn,milk,butter,sugar,salt,black pepper}
-O	black pepper	1
-S	ground
-S	in	[pot]
 //
 O	pot	0
 S	contains	{water,corn,milk,butter,sugar,salt,black pepper}

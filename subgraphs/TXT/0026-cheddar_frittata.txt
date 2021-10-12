@@ -298,9 +298,6 @@ O	cooking pan	0
 S	hot
 S	on	[stove]
 S	contains	{olive oil,onion,mushroom,green pepper,sweet pepper,black pepper}
-O	black pepper	1
-S	ground
-S	in	[cooking pan]
 //
 O	cooking pan	0
 S	hot
@@ -364,9 +361,6 @@ S	in	[jar]
 M	sprinkle	<2:36-2:42>
 O	mixing bowl	0
 S	contains	{egg,salt}
-O	salt	1
-S	granulated
-S	in	[mixing bowl]
 //
 O	mixing bowl	0
 S	contains	{egg,salt}
@@ -378,9 +372,6 @@ S	in	[pepper mill]
 M	grind	<2:40-2:42>
 O	mixing bowl	0
 S	contains	{egg,salt,black pepper}
-O	black pepper	1
-S	ground
-S	in	[mixing bowl]
 //
 O	cutting board	0
 S	empty
