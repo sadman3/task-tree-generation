@@ -20,12 +20,14 @@ foon_pkl = config['source']['foon_pkl']
 recipe_category_path = config["info"]["recipe_category"]
 kitchen_path = config['info']['kitchen']
 similarity_threshold = float(config["constant"]["similarity_threshold"])
-
+default_ingredient_path = config["info"]["default_ingredient"]
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 ###################
 utensils = get_utensils()
 kitchen_items = json.load(open(kitchen_path))
+default_ingredients = [object.rstrip()
+                       for object in open(default_ingredient_path, 'r')]
 ###################
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -251,6 +253,57 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
 
     return task_tree_units
 
+# -----------------------------------------------------------------------------------------------------------------------------#
+
+# Given a task tree, this method removes the ingredient that
+# are not part of the input ingredients
+
+
+def remove_extra_ingredients(task_tree=[], input_ingredients=[]):
+    """
+        parameters: a task tree as a list of functioal units, 
+                    input ingredients {object,state}
+
+        returns: modified task tree that consists some functional units
+    """
+
+    final_task_tree = copy.deepcopy(task_tree)
+
+    objects_to_keep = []
+
+    for ingredient in input_ingredients:
+        objects_to_keep.appen(ingredient['object'])
+
+    objects_to_keep += default_ingredients
+
+    # remove extra ingredient from each FU
+    for fu in task_tree:
+        temp_input_nodes = []
+        for node in fu.input_nodes:
+            if node.label in objects_to_keep:
+                continue
+
+            node.ingredinets = list(
+                set(node.ingredients) & set(objects_to_keep))
+            if len(node.ingredients) > 0:
+                temp_input_nodes.append(node)
+
+        fu.input_nodes = temp_input_nodes
+
+        temp_output_nodes = []
+        for node in fu.output_nodes:
+            if node.label in objects_to_keep:
+                continue
+
+            node.ingredinets = list(
+                set(node.ingredients) & set(objects_to_keep))
+            if len(node.ingredients) > 0:
+                temp_output_nodes.append(node)
+
+        fu.input_nodes = temp_output_nodes
+
+    return final_task_tree
+
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -269,6 +322,7 @@ def modify_reference_task_tree(reference_task_tree=[], input_ingredients=[]):
     task_tree = copy.deepcopy(reference_task_tree)
 
     ingredient_mapping = find_ingredient_mapping(task_tree, input_ingredients)
+    print(ingredient_mapping)
     for ingredient in ingredient_mapping:
         mapped_object = ingredient_mapping[ingredient]['object']
 
@@ -344,19 +398,22 @@ def retrieval(functional_units, object_nodes, object_to_FU_map, recipe_id, dish_
     output_path = os.path.join(output_dir, recipe_id + '.txt')
     save_paths_to_file(reference_task_tree, output_path)
 
-    # # step 3: modify the reference task tree
-    # final_task_tree = modify_reference_task_tree(
-    #     reference_task_tree=reference_task_tree, input_ingredients=input_ingredients)
+    # step 3: modify the reference task tree
+    final_task_tree = modify_reference_task_tree(
+        reference_task_tree=reference_task_tree, input_ingredients=input_ingredients)
 
-    # # save the final task tree
-    # output_dir = os.path.join('output', 'final_task_tree', dish_type)
-    # if not os.path.exists(output_dir):
-    #     os.makedirs(output_dir)
+    final_task_tree = remove_extra_ingredients(final_task_tree)
 
-    # output_path = os.path.join(output_dir, recipe_id + '.txt')
-    # save_paths_to_file(final_task_tree, output_path)
+    # save the final task tree
+    output_dir = os.path.join('output', 'final_task_tree', dish_type)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    output_path = os.path.join(output_dir, recipe_id + '.txt')
+    save_paths_to_file(final_task_tree, output_path)
+
+
 # -----------------------------------------------------------------------------------------------------------------------------#
-
 
 if __name__ == "__main__":
 
@@ -367,7 +424,8 @@ if __name__ == "__main__":
     # selected_catagory = ['salad', 'drinks', 'omelette',
     #                      'cake', 'soup', 'bread', 'noodle', 'rice']
 
-    selected_catagory = ['rice']
+    #selected_catagory = ['salad', 'omelette', 'rice', 'soup', 'drinks']
+    selected_catagory = ['test']
 
     for category in selected_catagory:
         input_dir = 'input/' + category

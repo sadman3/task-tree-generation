@@ -139,16 +139,16 @@ def find_ingredient_mapping(task_tree, input_ingredients):
     # task tree: list of functional units
     # input ingredients: list of {object, state} pair
 
-    # list of object id
+    # list of objects
     reference_tree_objects = []
     for fu in task_tree:
         for node in fu.input_nodes:
-            if node.label not in utensils:
-                reference_tree_objects.append(node.label)
+            reference_tree_objects.append(node.label)
+            reference_tree_objects += node.ingredients
 
         for node in fu.output_nodes:
-            if node.label not in utensils:
-                reference_tree_objects.append(node.label)
+            reference_tree_objects.append(node.label)
+            reference_tree_objects += node.ingredients
 
     reference_tree_objects = list(set(reference_tree_objects))
     reference_tree_objects = list(filter(
@@ -193,7 +193,7 @@ def find_ingredient_mapping(task_tree, input_ingredients):
             input_object = item
             tree_object = candidate["object"]
             score = candidate["score"]
-            if tree_object not in object_mapped:
+            if tree_object not in object_mapped and score > similarity_threshold:
                 ingredient_mapping[input_object] = {
                     "object": tree_object,
                     "score": score
