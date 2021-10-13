@@ -255,17 +255,11 @@ S	partly cooked
 S	contains	{onion,garlic,cilantro,cayenne pepper,salt}
 S	in	[pot]
 M	cook	Assumed	Assumed
-O	pot	0
-S	contains	{black bean}
-S	on	[stove]
 O	black bean	1
 S	cooked
 S	contains	{onion,garlic,cilantro,cayenne pepper,salt}
 S	in	[pot]
 //
-O	pot	0
-S	contains	{black bean}
-S	on	[stove]
 O	black bean	1
 S	cooked
 S	contains	{onion,garlic,cilantro,cayenne pepper,salt}

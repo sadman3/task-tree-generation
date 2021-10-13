@@ -210,7 +210,7 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
         current_item = object_nodes[current_item_index]
 
         if not check_if_exist_in_kitchen(kitchen_items, current_item):
-            object_nodes[current_item_index].print()
+
             candidate_units = object_to_FU_map[current_item_index]
 
             best_candidate_idx = select_best_candidate(
@@ -367,7 +367,7 @@ if __name__ == "__main__":
     # selected_catagory = ['salad', 'drinks', 'omelette',
     #                      'cake', 'soup', 'bread', 'noodle', 'rice']
 
-    selected_catagory = ['omelette']
+    selected_catagory = ['rice']
 
     for category in selected_catagory:
         input_dir = 'input/' + category

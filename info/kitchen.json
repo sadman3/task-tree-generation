@@ -399,7 +399,7 @@
         "container": null
     },
     {
-        "label": "white rice",
+        "label": "rice",
         "states": [
             "uncooked"
         ],
@@ -864,6 +864,14 @@
         "container": null
     },
     {
+        "label": "flour",
+        "states": [
+            "powder"
+        ],
+        "ingredients": [],
+        "container": "bag"
+    },
+    {
         "label": "fork",
         "states": [],
         "ingredients": [],
@@ -935,6 +943,14 @@
         ],
         "ingredients": [],
         "container": "stove"
+    },
+    {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+            "olive oil"
+        ],
+        "container": null
     },
     {
         "label": "butter",
@@ -1223,6 +1239,14 @@
         "states": [],
         "ingredients": [],
         "container": "mug"
+    },
+    {
+        "label": "parmesan",
+        "states": [
+            "grated"
+        ],
+        "ingredients": [],
+        "container": "pot"
     },
     {
         "label": "cooking pan",
@@ -2182,6 +2206,14 @@
         ],
         "ingredients": [],
         "container": "bowl"
+    },
+    {
+        "label": "plate",
+        "states": [],
+        "ingredients": [
+            "shrimp"
+        ],
+        "container": null
     },
     {
         "label": "olive oil",
@@ -4424,6 +4456,14 @@
         "container": "plate"
     },
     {
+        "label": "plate",
+        "states": [],
+        "ingredients": [
+            "chicken"
+        ],
+        "container": null
+    },
+    {
         "label": "carrot",
         "states": [
             "unpeeled",
@@ -5383,6 +5423,14 @@
             "rice"
         ],
         "container": null
+    },
+    {
+        "label": "white rice",
+        "states": [
+            "uncooked"
+        ],
+        "ingredients": [],
+        "container": "packet"
     },
     {
         "label": "sink",

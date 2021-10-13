@@ -642,19 +642,19 @@ S	in	[stove]
 //
 O	cup
 S	empty
-O	white rice
+O	rice
 S	uncooked
 S	in	[packet]
 M	pour
 O	cup
 S	contains	{rice}
-O	white rice
+O	rice
 S	uncooked
 S	in	[cup]
 //
 O	cup
 S	contains	{rice}
-O	white rice
+O	rice
 S	uncooked
 S	in	[cup]
 O	pot
@@ -664,19 +664,19 @@ M	pour
 O	pot
 S	contains	{butter,rice}
 S	in	[stove]
-O	white rice
+O	rice
 S	uncooked
 S	in	[pot]
 //
 O	pot
 S	contains	{butter,rice}
 S	in	[stove]
-O	white rice
+O	rice
 S	uncooked
 S	in	[pot]
 O	spoon
 M	stir
-O	white rice
+O	rice
 S	toasted
 S	in	[pot]
 //
@@ -699,7 +699,7 @@ S	contains	{butter,rice,water}
 S	in	[stove]
 O	water
 S	in	[pot]
-O	white rice
+O	rice
 S	toasted
 S	in	[pot]
 O	spoon
@@ -710,7 +710,7 @@ S	in	[stove]
 O	water
 S	boiling
 S	in	[pot]
-O	white rice
+O	rice
 S	partly cooked
 S	in	[pot]
 //
@@ -730,7 +730,7 @@ O	pot
 S	covered
 S	contains	{butter,rice,water}
 S	in	[stove]
-O	white rice
+O	rice
 S	partly cooked
 S	in	[pot]
 M	simmer
@@ -738,8 +738,9 @@ O	pot
 S	covered
 S	contains	{rice}
 S	in	[stove]
-O	white rice
+O	rice
 S	cooked
+S	contains	{butter,rice,water}
 S	in	[pot]
 //
 O	cutting board
@@ -793,8 +794,6 @@ S	contains	{rice}
 S	in	[stove]
 O	pot lid
 //
-O	cutting board
-S	contains	{cilantro,scallion}
 O	scallion
 S	chopped
 S	in	[cutting board]
@@ -804,12 +803,13 @@ S	in	[cutting board]
 O	pot
 S	contains	{rice}
 S	in	[stove]
-O	white rice
+O	rice
 S	cooked
+S	contains	{butter,rice,water}
 S	in	[pot]
 M	sprinkle
-O	white rice
-S	contains	{cilantro,scallion}
+O	rice
+S	contains	{butter,cilantro,scallion}
 S	in	[pot]
 O	cutting board
 //
@@ -821,12 +821,12 @@ S	fried
 S	in	[plate]
 O	plate
 S	contains	{garlic}
-O	white rice
-S	contains	{cilantro,scallion}
+O	rice
+S	contains	{butter,cilantro,scallion}
 S	in	[pot]
 M	pour
 O	garlic rice
-S	contains	{cilantro,scallion,garlic,white rice}
+S	contains	{butter,cilantro,scallion,garlic,rice}
 S	in	[pot]
 //
 O	cutting board
@@ -6306,17 +6306,11 @@ S	partly cooked
 S	contains	{onion,garlic,cilantro,cayenne pepper,salt}
 S	in	[pot]
 M	cook
-O	pot
-S	contains	{black bean}
-S	in	[stove]
 O	black bean
 S	cooked
 S	contains	{onion,garlic,cilantro,cayenne pepper,salt}
 S	in	[pot]
 //
-O	pot
-S	contains	{black bean}
-S	in	[stove]
 O	black bean
 S	cooked
 S	contains	{onion,garlic,cilantro,cayenne pepper,salt}
@@ -22556,10 +22550,12 @@ S	contains	{olive oil,rice,garlic,water}
 S	in	[stove]
 M	cook
 O	pot
+S	partly cooked
 S	contains	{olive oil,rice,garlic,water}
 S	in	[stove]
 //
 O	pot
+S	partly cooked
 S	contains	{olive oil,rice,garlic,water}
 S	in	[stove]
 O	bowl
@@ -22594,13 +22590,12 @@ S	toasted
 S	in	[pot]
 M	cook
 O	pot
+S	partly cooked
 S	contains	{olive oil,rice,garlic,water,salt,lime zest}
 S	in	[stove]
-O	rice
-S	partly cooked
-S	in	[pot]
 //
 O	pot
+S	partly cooked
 S	contains	{olive oil,rice,garlic,water,salt,lime zest}
 S	in	[stove]
 O	pot lid
@@ -22619,9 +22614,6 @@ O	pot
 S	covered
 S	contains	{olive oil,rice,garlic,water,salt,lime zest}
 S	in	[stove]
-O	rice
-S	partly cooked
-S	in	[pot]
 M	cook
 O	pot
 S	covered
@@ -22737,13 +22729,13 @@ M	stir
 O	pot
 S	contains	{cilantro-lime rice}
 O	cilantro-lime rice
-S	contains	{olive oil,rice,garlic,water,salt,lime zest,cilantro}
+S	contains	{olive oil,rice,garlic,water,salt,lime zest,lime juice,cilantro}
 S	in	[pot]
 //
 O	pot
 S	contains	{cilantro-lime rice}
 O	cilantro-lime rice
-S	contains	{olive oil,rice,garlic,water,salt,lime zest,cilantro}
+S	contains	{olive oil,rice,garlic,water,salt,lime zest,lime juice,cilantro}
 S	in	[pot]
 O	plate
 S	empty
@@ -22752,7 +22744,7 @@ M	scoop and pour
 O	plate
 S	contains	{cilantro-lime rice}
 O	cilantro-lime rice
-S	contains	{olive oil,rice,garlic,water,salt,lime zest,cilantro}
+S	contains	{olive oil,rice,garlic,water,salt,lime zest,lime juice,cilantro}
 S	in	[plate]
 //
 O	cutting board
@@ -30225,14 +30217,14 @@ S	grated
 S	in	[pot]
 M	mix*
 O	creamed corn
-S	contains	{parmesan cheese}
+S	contains	{parmesan}
 S	in	[pot]
 //
 O	pot
 S	contains	{creamed corn}
 S	in	[stove]
 O	creamed corn
-S	contains	{parmesan cheese}
+S	contains	{parmesan}
 S	in	[pot]
 O	bowl
 S	empty

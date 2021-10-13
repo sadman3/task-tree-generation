@@ -127,19 +127,19 @@ S	on	[stove]
 //
 O	cup	1
 S	empty
-O	white rice	1
+O	rice	1
 S	uncooked
 S	in	[packet]
 M	pour	Assumed	Assumed
 O	cup	1
 S	contains	{rice}
-O	white rice	1
+O	rice	1
 S	uncooked
 S	in	[cup]
 //
 O	cup	1
 S	contains	{rice}
-O	white rice	1
+O	rice	1
 S	uncooked
 S	in	[cup]
 O	pot	0
@@ -149,19 +149,19 @@ M	pour	1:52	1:55
 O	pot	0
 S	on	[stove]
 S	contains	{butter,rice}
-O	white rice	1
+O	rice	1
 S	uncooked
 S	in	[pot]
 //
 O	pot	0
 S	contains	{butter,rice}
 S	on	[stove]
-O	white rice	0
+O	rice	0
 S	uncooked
 S	in	[pot]
 O	spoon	1
 M	stir	1:56	2:00
-O	white rice	0
+O	rice	0
 S	toasted
 S	in	[pot]
 //
@@ -184,7 +184,7 @@ S	contains	{butter,rice,water}
 S	on	[stove]
 O	water	1
 S	in	[pot]
-O	white rice	0
+O	rice	0
 S	toasted
 S	in	[pot]
 O	spoon	1
@@ -195,7 +195,7 @@ S	on	[stove]
 O	water	1
 S	boiling
 S	in	[pot]
-O	white rice	0
+O	rice	0
 S	partly cooked
 S	in	[pot]
 //
@@ -215,7 +215,7 @@ O	pot	0
 S	covered
 S	contains	{butter,rice,water}
 S	on	[stove]
-O	white rice	0
+O	rice	0
 S	partly cooked
 S	in	[pot]
 M	simmer	Assumed	Assumed
@@ -223,9 +223,10 @@ O	pot	0
 S	covered
 S	contains	{rice}
 S	on	[stove]
-O	white rice	0
+O	rice	0
 S	cooked
 S	in	[pot]
+S	contains	{butter,rice,water}
 //
 O	cutting board	0
 S	empty
@@ -278,8 +279,6 @@ S	contains	{rice}
 S	on	[stove]
 O	pot lid	1
 //
-O	cutting board	1
-S	contains	{cilantro,scallion}
 O	scallion	0
 S	chopped
 S	on	[cutting board]
@@ -289,12 +288,13 @@ S	on	[cutting board]
 O	pot	0
 S	contains	{rice}
 S	on	[stove]
-O	white rice	0
+O	rice	0
 S	cooked
 S	in	[pot]
+S	contains	{butter,rice,water}
 M	sprinkle	3:42	3:46
-O	white rice	0
-S	garnished	{cilantro,scallion}
+O	rice	0
+S	garnished	{butter,cilantro,scallion}
 S	in	[pot]
 O	cutting board	1
 //
@@ -306,11 +306,11 @@ S	fried
 S	on	[plate]
 O	plate	1
 S	contains	{garlic}
-O	white rice	0
-S	garnished	{cilantro,scallion}
+O	rice	0
+S	garnished	{butter,cilantro,scallion}
 S	in	[pot]
 M	pour	3:46	3:50
 O	garlic rice	0	19
-S	contains	{cilantro,scallion,garlic,white rice}
+S	contains	{butter,cilantro,scallion,garlic,rice}
 S	in	[pot]
 //

@@ -39,7 +39,7 @@
         "label": "bowl",
         "states": [],
         "ingredients": ["olive oil"],
-        "container": ""
+        "container": null
     },
     {
         "label": "parmesan",
@@ -48,10 +48,10 @@
         "container": "bowl"
     },
     {
-        "label": "shrimp",
+        "label": "plate",
         "states": [],
-        "ingredients": [],
-        "container": "plate"
+        "ingredients": ["shrimp"],
+        "container": null
     },
     {
         "label": "vegetable oil",
@@ -82,5 +82,23 @@
         "states": ["granulated"],
         "ingredients": [],
         "container": "jar"
+    },
+    {
+        "label": "plate",
+        "states": [],
+        "ingredients": ["chicken"],
+        "container": null
+    },
+    {
+        "label": "parmesan",
+        "states": ["grated"],
+        "ingredients": [],
+        "container": "pot"
+    },
+    {
+        "label": "flour",
+        "states": ["powder"],
+        "ingredients": [],
+        "container": "bag"
     }
 ]

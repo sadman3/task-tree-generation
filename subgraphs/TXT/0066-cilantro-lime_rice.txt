@@ -79,9 +79,11 @@ M	cook	0:49	0:51
 O	pot	0
 S	contains	{olive oil,rice,garlic,water}
 S	on	[stove]
+S	partly cooked
 //
 O	pot	0
 S	contains	{olive oil,rice,garlic,water}
+S	partly cooked
 S	on	[stove]
 O	bowl	1
 S	contains	{salt}
@@ -117,12 +119,11 @@ M	cook	1:07	1:12
 O	pot	0
 S	contains	{olive oil,rice,garlic,water,salt,lime zest}
 S	on	[stove]
-O	rice	0
 S	partly cooked
-S	in	[pot]
 //
 O	pot	0
 S	contains	{olive oil,rice,garlic,water,salt,lime zest}
+S	partly cooked
 S	on	[stove]
 O	pot lid	1
 M	cover	1:13	1:16
@@ -140,9 +141,6 @@ O	pot	0
 S	contains	{olive oil,rice,garlic,water,salt,lime zest}
 S	covered
 S	on	[stove]
-O	rice	0
-S	partly cooked
-S	in	[pot]
 M	cook	Assumed	Assumed
 O	pot	0
 S	contains	{rice}
@@ -258,13 +256,13 @@ M	stir	1:48	1:59
 O	pot	0
 S	contains	{cilantro-lime rice}
 O	cilantro-lime rice	0
-S	contains	{olive oil,rice,garlic,water,salt,lime zest,cilantro}
+S	contains	{olive oil,rice,garlic,water,salt,lime zest,lime juice,cilantro}
 S	in	[pot]
 //
 O	pot	1
 S	contains	{cilantro-lime rice}
 O	cilantro-lime rice	1
-S	contains	{olive oil,rice,garlic,water,salt,lime zest,cilantro}
+S	contains	{olive oil,rice,garlic,water,salt,lime zest,lime juice,cilantro}
 S	in	[pot]
 O	plate	0
 S	empty
@@ -273,6 +271,6 @@ M	scoop and pour	Assumed	Assumed
 O	plate	0
 S	contains	{cilantro-lime rice}
 O	cilantro-lime rice	1	19
-S	contains	{olive oil,rice,garlic,water,salt,lime zest,cilantro}
+S	contains	{olive oil,rice,garlic,water,salt,lime zest,lime juice,cilantro}
 S	on	[plate]
 //

@@ -255,14 +255,14 @@ S	grated
 S	in	[pot]
 M	mix*	4:36	4:48
 O	creamed corn	1
-S	cooked	{parmesan cheese}
+S	cooked	{parmesan}
 S	in	[pot]
 //
 O	pot	0
 S	contains	{creamed corn}
 S	on	[stove]
 O	creamed corn	1
-S	cooked	{parmesan cheese}
+S	cooked	{parmesan}
 S	in	[pot]
 O	bowl	0
 S	empty
