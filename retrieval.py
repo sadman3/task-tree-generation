@@ -185,7 +185,6 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
                     function
         returns: a task tree that consists some functional units
     """
-    print(len(object_to_FU_map))
 
     # list of indices of functional units
     reference_task_tree = []
@@ -196,8 +195,17 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
     # find the index of the goal node in object node list
     items_to_search.append(goal_node.id)
 
+    # list of item already explored
+    items_already_searched = []
+
     while len(items_to_search) > 0:
         current_item_index = items_to_search.pop(0)  # pop the first element
+
+        if current_item_index in items_already_searched:
+            continue
+
+        else:
+            items_already_searched.append(current_item_index)
 
         current_item = object_nodes[current_item_index]
 
@@ -212,16 +220,24 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
             if best_candidate_idx in reference_task_tree:
                 continue
 
-            # functional_units[best_candidate_idx].print()
-            # input()
-
             reference_task_tree.append(best_candidate_idx)
 
             # all input of the selected FU need to be explored
             for node in functional_units[best_candidate_idx].input_nodes:
                 node_idx = node.id
                 if node_idx not in items_to_search:
-                    items_to_search.append(node_idx)
+
+                    # if in the input nodes, we have bowl contains {onion} and onion, chopped, in [bowl]
+                    # explore only onion, chopped, in bowl
+                    flag = True
+                    if node.label in utensils and len(node.ingredients) == 1:
+                        for node2 in functional_units[best_candidate_idx].input_nodes:
+                            if node2.label == node.ingredients[0] and node2.container == node.label:
+
+                                flag = False
+                                break
+                    if flag:
+                        items_to_search.append(node_idx)
 
     # reverse the task tree
     reference_task_tree.reverse()
@@ -328,17 +344,17 @@ def retrieval(functional_units, object_nodes, object_to_FU_map, recipe_id, dish_
     output_path = os.path.join(output_dir, recipe_id + '.txt')
     save_paths_to_file(reference_task_tree, output_path)
 
-    # step 3: modify the reference task tree
-    final_task_tree = modify_reference_task_tree(
-        reference_task_tree=reference_task_tree, input_ingredients=input_ingredients)
+    # # step 3: modify the reference task tree
+    # final_task_tree = modify_reference_task_tree(
+    #     reference_task_tree=reference_task_tree, input_ingredients=input_ingredients)
 
-    # save the final task tree
-    output_dir = os.path.join('output', 'final_task_tree', dish_type)
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
+    # # save the final task tree
+    # output_dir = os.path.join('output', 'final_task_tree', dish_type)
+    # if not os.path.exists(output_dir):
+    #     os.makedirs(output_dir)
 
-    output_path = os.path.join(output_dir, recipe_id + '.txt')
-    save_paths_to_file(final_task_tree, output_path)
+    # output_path = os.path.join(output_dir, recipe_id + '.txt')
+    # save_paths_to_file(final_task_tree, output_path)
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 
@@ -351,7 +367,7 @@ if __name__ == "__main__":
     # selected_catagory = ['salad', 'drinks', 'omelette',
     #                      'cake', 'soup', 'bread', 'noodle', 'rice']
 
-    selected_catagory = ['test']
+    selected_catagory = ['omelette']
 
     for category in selected_catagory:
         input_dir = 'input/' + category

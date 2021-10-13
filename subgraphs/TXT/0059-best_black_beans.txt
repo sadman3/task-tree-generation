@@ -3,14 +3,10 @@ S	peeled
 O	cutting board	0
 S	empty
 M	pick-and-place	Assumed	Assumed
-O	cutting board	0
-S	contains	{onion}
 O	onion	1
 S	peeled
 S	on	[cutting board]
 //
-O	cutting board	0
-S	contains	{onion}
 O	onion	0
 S	peeled
 S	on	[cutting board]
@@ -20,16 +16,12 @@ O	onion	0
 S	chopped
 S	on	[cutting board]
 //
-O	cutting board	1
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	on	[cutting board]
 O	bowl	0
 S	empty
 M	pour	Assumed	Assumed
-O	bowl	0
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	in	[bowl]

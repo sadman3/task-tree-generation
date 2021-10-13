@@ -76,6 +76,7 @@ S	contains	{butter}
 O	bowl	1
 S	contains	{milk}
 O	milk	1
+S	liquid
 S	in	[bowl]
 M	pour	0:02:30	0:02:31
 O	bowl	0
@@ -147,6 +148,7 @@ O	butter	1
 S	melted
 S	in	[mug]
 O	milk	1
+S	liquid
 S	in	[bowl]
 O	egg white and yolk	1
 S	in	[bowl]

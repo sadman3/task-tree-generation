@@ -197,9 +197,6 @@ O	cooking pan	0
 S	hot
 S	contains	{butter,egg,buttermilk,ricotta,salt}
 S	on	[stove]
-O	salt	1
-S	granulated
-S	in	[cooking pan]
 //
 O	cooking pan	0
 S	hot
@@ -215,9 +212,6 @@ O	cooking pan	0
 S	hot
 S	contains	{butter,egg,buttermilk,ricotta,salt,black pepper}
 S	on	[stove]
-O	black pepper	1
-S	ground
-S	in	[cooking pan]
 //
 O	stove	0
 S	on
@@ -338,9 +332,6 @@ O	cooking pan	0
 S	hot
 S	contains	{butter,egg,buttermilk,ricotta,salt,black pepper,avocado,tomato}
 S	on	[stove]
-O	tomato	1
-S	diced
-S	in	[cooking pan]
 //
 O	stove	0
 S	on

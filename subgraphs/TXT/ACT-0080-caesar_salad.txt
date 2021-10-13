@@ -408,9 +408,6 @@ S	ground
 M	sprinkle	<Assumed>
 O	salad bowl	0
 S	contains	{crouton,lettuce,salad dressing,parmesan,black pepper}
-O	black pepper	1
-S	in	[salad bowl]
-S	ground
 //
 O	salad bowl	0
 S	contains	{crouton,lettuce,salad dressing,parmesan,black pepper}

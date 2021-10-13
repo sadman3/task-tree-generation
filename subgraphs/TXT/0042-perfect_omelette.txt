@@ -101,8 +101,6 @@ O	onion	1
 S	whole
 S	peeled
 M	pick-and-place	<Assumed>
-O	cutting board	0
-S	contains	{onion}
 O	onion	1
 S	whole
 S	peeled
@@ -118,16 +116,12 @@ O	onion	0
 S	chopped
 S	on	[cutting board]
 //
-O	cutting board	0
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	on	[cutting board]
 O	plate	0
 S	empty
 M	pick-and-place	<Assumed>
-O	plate	0
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	on	[plate]
@@ -341,7 +335,7 @@ M	cook	<3:31-4:45>
 O	omelette	1
 S	mixed
 S	partly cooked
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato}
 S	in	[cooking pan]
 //
 O	packet	1
@@ -363,7 +357,7 @@ S	on	[plate]
 O	omelette	1
 S	mixed
 S	partly cooked
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato}
 S	in	[cooking pan]
 O	plate	0
 S	contains	{cheese}
@@ -377,17 +371,13 @@ S	on	[omelette]
 O	omelette	1
 S	mixed
 S	partly cooked
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato,cheese}
 S	in	[cooking pan]
 //
-O	cooking pan	0
-S	hot
-S	contains	{egg,butter,green pepper,tomato,onion,salt,black pepper}
-S	on	[stove]
 O	omelette	1
 S	mixed
 S	partly cooked
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato,cheese}
 S	in	[cooking pan]
 O	spoon	1
 M	fold	<4:56-4:58>
@@ -398,17 +388,13 @@ S	on	[stove]
 O	omelette	1
 S	cooked
 S	folded
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato,cheese}
 S	in	[cooking pan]
 //
-O	cooking pan	0
-S	hot
-S	contains	{omelette}
-S	on	[stove]
 O	omelette	1
 S	cooked
 S	folded
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato,cheese}
 S	in	[cooking pan]
 O	plate	0
 S	empty
@@ -418,6 +404,6 @@ O	plate	0
 S	contains	{omelette}
 O	omelette	1	23
 S	cooked
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato,cheese}
 S	on	[plate]
 //

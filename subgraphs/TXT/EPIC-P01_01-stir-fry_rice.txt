@@ -179,8 +179,6 @@ O	celery	1
 S	partly cooked
 S	in	[pan]
 //
-O	bowl	1
-S	contains	{onion}
 O	onion	1
 S	halved
 S	in	[bowl]
@@ -190,11 +188,7 @@ M	pick-and-place	6:25	6:26
 O	onion	1
 S	halved
 S	on	[cutting board]
-O	cutting board	0
-S	contains	{onion}
 //
-O	cutting board	0
-S	contains	{onion}
 O	onion	0
 S	halved
 S	on	[cutting board]
@@ -301,14 +295,10 @@ M	pour	0:11:48	0:11:53
 O	cooking pan	0
 S	contains	{zucchini,salt,celery,carrot,olive oil}
 S	on	[stove]
-O	olive oil	1
-S	in	[pan]
 //
 O	cooking pan	0
 S	contains	{zucchini,salt,celery,carrot,olive oil}
 S	on	[stove]
-O	cutting board	1
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	on	[cutting board]

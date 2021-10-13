@@ -8,6 +8,7 @@ M	pour	0:00	0:01
 O	bowl	0
 S	contains	{egg white and yolk,milk}
 O	milk	1
+S	liquid
 S	in	[bowl]
 //
 O	bowl	0
@@ -15,6 +16,7 @@ S	contains	{egg white and yolk,milk}
 O	egg white and yolk	1
 S	in	[bowl]
 O	milk	1
+S	liquid
 S	in	[bowl]
 O	whisk	1
 M	mix	0:01	0:02:50

@@ -266,17 +266,12 @@ S	cut
 //
 O	bowl	0
 S	contains	{carrot,cherry tomato,lettuce,mushroom}
-O	container	1
-S	contains	{onion}
 O	onion	1
 S	in	[container]
 S	chopped
 M	pour	<9:54-9:56>
 O	bowl	0
 S	contains	{carrot,cherry tomato,lettuce,mushroom,onion}
-O	onion	1
-S	in	[bowl]
-S	chopped
 //
 O	cutting board	0
 S	empty
@@ -312,9 +307,6 @@ O	knife	1
 M	scrape	<11:33-11:38>
 O	bowl	0
 S	contains	{carrot,cherry tomato,green olive,lettuce,mushroom,onion}
-O	green olive	1
-S	sliced
-S	in	[bowl]
 //
 O	bowl	0
 S	contains	{carrot,cherry tomato,green olive,lettuce,mushroom,onion}
@@ -336,13 +328,10 @@ S	liquid
 S	in	[bottle]
 M	pour	<12:02-12:06>
 O	bowl	0
-S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,salt}
-O	olive oil	1
-S	liquid
-S	in	[bowl]
+S	contains	{carrot,cherry tomato,green olive,olive oil,lettuce,mushroom,onion,salt}
 //
 O	bowl	0
-S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,salt}
+S	contains	{carrot,cherry tomato,green olive,olive oil,lettuce,mushroom,onion,salt}
 O	jar	1
 S	contains	{oregano}
 O	oregano	1
@@ -350,13 +339,13 @@ S	dried
 S	in	[jar]
 M	sprinkle	<12:17-12:21>
 O	bowl	0
-S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,oregano,salt}
+S	contains	{carrot,cherry tomato,green olive,olive oil,lettuce,mushroom,onion,oregano,salt}
 O	oregano	1
 S	dried
 S	in	[bowl]
 //
 O	bowl	0
-S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,oregano,salt}
+S	contains	{carrot,cherry tomato,green olive,olive oil,lettuce,mushroom,onion,oregano,salt}
 O	lettuce	1
 S	in	[bowl]
 S	chopped
@@ -390,6 +379,6 @@ S	empty
 M	mix	<12:29-12:59>
 O	salad	0	15
 S	mixed
-S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,oregano,salt}
+S	contains	{carrot,cherry tomato,green olive,olive oil,lettuce,mushroom,onion,oregano,salt}
 S	in	[bowl]
 //

@@ -183,8 +183,6 @@ O	garlic	1
 S	fried
 S	in	[pan]
 //
-O	cutting board	0
-S	contains	{onion}
 O	onion	0
 S	peeled
 S	on	[cutting board]
@@ -194,16 +192,12 @@ O	onion	0
 S	sliced
 S	on	[cutting board]
 //
-O	cutting board	0
-S	contains	{onion}
 O	bowl	0
 S	empty
 O	onion	1
 S	sliced
 S	on	[cutting board]
 M	pick-and-place	Assumed	Assumed
-O	bowl	0
-S	contains	{onion}
 O	onion	1
 S	sliced
 S	in	[bowl]
@@ -213,8 +207,6 @@ S	empty
 O	cooking pan	0
 S	contains	{vegetable oil,garlic}
 S	on	[stove]
-O	bowl	1
-S	contains	{onion}
 O	onion	1
 S	sliced
 S	in	[bowl]

@@ -260,10 +260,6 @@ M	squeeze	2:10	2:14
 O	blender jar	0
 S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice}
 S	attached to	[blender]
-O	lemon juice	1
-S	in	[blender jar]
-O	lemon	1
-S	squeezed
 //
 O	blender jar	0
 S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}

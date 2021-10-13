@@ -126,9 +126,6 @@ S	contains	{apple,black pepper,cucumber,salt}
 M	pour	<3:50-3:56>
 O	bowl	0
 S	contains	{apple,black pepper,cucumber,olive oil,salt}
-O	olive oil	0
-S	liquid
-S	in	[bowl]
 //
 O	packet	0
 S	contains	{mozzarella}

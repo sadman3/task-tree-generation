@@ -21,10 +21,11 @@ dish_type_path = config["info"]["dish_type"]
 recipe_category_path = config["info"]["recipe_category"]
 create_foon_txt = config["flag"]["create_foon_txt"]
 kitchen_path = config['info']['kitchen']
+default_kitchen_path = config['info']['default_kitchen_item']
 
 
 utensils = get_utensils()
-
+default_kitchen_items = json.load(open(default_kitchen_path, 'r'))
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 
@@ -40,6 +41,21 @@ def read_categories(path=dish_type_path):
         categories[category_id] = category_name.rstrip()
 
     return categories
+
+# -----------------------------------------------------------------------------------------------------------------------------#
+
+
+def check_item_in_default_kitchen(ingredient=None):
+
+    for item in default_kitchen_items:
+        if item["label"] == ingredient.label \
+                and sorted(item["states"]) == sorted(ingredient.states) \
+                and sorted(item["ingredients"]) == sorted(ingredient.ingredients) \
+                and item["container"] == ingredient.container:
+            return True
+
+    return False
+
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 
@@ -265,25 +281,28 @@ def prepare_kitchen(foon_path=foon_pkl, kitchen_path=kitchen_path):
     # check which object does not have any FU mapping
     for object in object_nodes:
         object_index = object.id
+        object_json = object.get_object_as_json()
 
         if object_index in object_added:
             continue
 
         # if object state is in default_starting_states
         if len(object.states) == 1 and object.states[0] in default_starting_states:
-            object_json = object.get_object_as_json()
+
             start_nodes.append(object_json)
             object_added.append(object_index)
 
         # if object is not a part of output in any fu
         elif object_index not in object_to_FU_map:
-            object_json = object.get_object_as_json()
             start_nodes.append(object_json)
             object_added.append(object_index)
 
         # if object is a utensil without any ingredient
         elif object.label in utensils and len(object.ingredients) == 0:
-            object_json = object.get_object_as_json()
+            start_nodes.append(object_json)
+            object_added.append(object_index)
+
+        elif check_item_in_default_kitchen(object):
             start_nodes.append(object_json)
             object_added.append(object_index)
 

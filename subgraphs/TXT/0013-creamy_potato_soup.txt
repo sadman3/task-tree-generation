@@ -126,8 +126,6 @@ O	onion	1
 S	peeled
 S	whole
 M	pick-and-place	<Assumed>
-O	cutting board	0
-S	contains	{onion}
 O	onion	1
 S	on	[cutting board]
 S	peeled
@@ -143,16 +141,12 @@ O	onion	0
 S	chopped
 S	on	[cutting board]
 //
-O	cutting board	0
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	on	[cutting board]
 O	plate	0
 S	empty
 M	pick-and-place	<Assumed>
-O	plate	0
-S	contains	{onion}
 O	cutting board	0
 O	onion	1
 S	chopped
@@ -189,8 +183,6 @@ O	carrot	1
 S	whole
 S	peeled
 M	pick-and-place	<Assumed>
-O	cutting board	0
-S	contains	{carrot}
 O	carrot	0
 S	whole
 S	on	[cutting board]
@@ -214,8 +206,6 @@ S	on	[cutting board]
 O	plate	0
 S	empty
 M	scrape	<Assumed>
-O	plate	0
-S	contains	{carrot}
 O	carrot	1
 S	chopped
 S	on	[plate]
@@ -281,8 +271,6 @@ O	pot	0
 S	hot
 S	on	[stove]
 S	contains	{butter}
-O	plate	1
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	on	[plate]

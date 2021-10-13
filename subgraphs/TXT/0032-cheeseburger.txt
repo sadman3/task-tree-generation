@@ -14,8 +14,6 @@ O	onion	1
 S	peeled
 S	whole
 M	pick-and-place	<Assumed>
-O	cutting board	0
-S	contains	{onion}
 O	onion	1
 S	peeled
 S	whole
@@ -31,10 +29,6 @@ O	onion	0
 S	minced
 S	on	[cutting board]
 //
-O	cutting board	0
-S	contains	{onion}
-O	jar	0
-S	contains	{garlic}
 O	garlic	1
 S	minced
 S	in	[jar]

@@ -1,0 +1,86 @@
+[
+    {
+        "label": "water",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+    },
+    {
+        "label": "water",
+        "states": [],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "black pepper",
+        "states": ["ground"],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "salt",
+        "states": ["granulated"],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "oregano",
+        "states": ["dried"],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "salt",
+        "states": ["granulated"],
+        "ingredients": [],
+        "container": "mixing bowl"
+    },
+    {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["olive oil"],
+        "container": ""
+    },
+    {
+        "label": "parmesan",
+        "states": ["grated"],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "shrimp",
+        "states": [],
+        "ingredients": [],
+        "container": "plate"
+    },
+    {
+        "label": "vegetable oil",
+        "states": ["liquid"],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "sugar",
+        "states": ["granulated"],
+        "ingredients": [],
+        "container": "mixing bowl"
+    },
+    {
+        "label": "cheese",
+        "states": ["grated"],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "milk",
+        "states": ["liquid"],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "salt",
+        "states": ["granulated"],
+        "ingredients": [],
+        "container": "jar"
+    }
+]

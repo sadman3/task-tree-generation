@@ -54,8 +54,6 @@ O	onion	0
 S	sliced
 S	on	[cutting board]
 //
-O	cutting board	0
-S	contains	{onion}
 O	onion	1
 S	sliced
 S	on	[cutting board]
@@ -271,9 +269,6 @@ S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,
 M	pour	<3:06-3:08>
 O	mixing bowl	0
 S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}
-O	olive oil	1
-S	liquid
-S	in	[mixing bowl]
 //
 O	mixing bowl	0
 S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}

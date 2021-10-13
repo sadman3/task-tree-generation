@@ -105,8 +105,6 @@ O	onion	1
 S	whole
 S	peeled
 M	pick-and-place	<Assumed>
-O	cutting board	0
-S	contains	{onion}
 O	onion	1
 S	on	[cutting board]
 S	whole
@@ -174,8 +172,6 @@ S	contains	{carrot}
 O	onion	1
 S	chopped
 S	on	[cutting board]
-O	cutting board	0
-S	contains	{onion}
 M	scoop and pour	<Assumed>
 O	salad bowl	0
 S	contains	{carrot,onion}

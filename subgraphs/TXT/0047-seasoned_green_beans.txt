@@ -62,8 +62,6 @@ S	sliced
 O	plate	0
 S	empty
 M	pick-and-place	Assumed	Assumed
-O	plate	0
-S	contains	{onion}
 O	onion	1
 S	sliced
 S	on	[plate]

@@ -1,4 +1,4 @@
-# Date created:	12.10.2021
+# Date created:	13.10.2021
 //
 O	onion
 S	whole
@@ -372,9 +372,6 @@ S	in	[bowl]
 M	pour
 O	mixing bowl
 S	contains	{instant coffee,sugar}
-O	sugar
-S	granulated
-S	in	[mixing bowl]
 //
 O	mixing bowl
 S	contains	{instant coffee,sugar}
@@ -1340,6 +1337,7 @@ M	pour
 O	bowl
 S	contains	{cake mix,egg white and yolk,milk}
 O	milk
+S	liquid
 S	in	[bowl]
 //
 O	bowl
@@ -1737,6 +1735,7 @@ S	contains	{egg,salt}
 O	bowl
 S	contains	{milk}
 O	milk
+S	liquid
 S	in	[bowl]
 M	pour
 O	bowl
@@ -2112,7 +2111,7 @@ M	cook and stir
 O	omelette
 S	mixed
 S	partly cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	in	[frying pan]
 //
 O	frying pan
@@ -2122,14 +2121,14 @@ S	in	[stove]
 O	omelette
 S	mixed
 S	partly cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	in	[frying pan]
 O	turner
 M	fold
 O	omelette
 S	folded
 S	partly cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	in	[frying pan]
 //
 O	stove
@@ -2142,7 +2141,7 @@ S	in	[stove]
 O	omelette
 S	folded
 S	partly cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	in	[frying pan]
 M	cook
 O	frying pan
@@ -2152,7 +2151,7 @@ S	in	[stove]
 O	omelette
 S	folded
 S	cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	in	[frying pan]
 //
 O	frying pan
@@ -2162,7 +2161,7 @@ S	in	[stove]
 O	omelette
 S	folded
 S	cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	in	[frying pan]
 O	plate
 S	empty
@@ -2173,7 +2172,7 @@ S	contains	{omelette}
 O	omelette
 S	folded
 S	cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	in	[plate]
 //
 O	bag
@@ -2490,10 +2489,6 @@ M	squeeze
 O	blender jar
 S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest,lemon juice}
 S	in	[blender]
-O	lemon juice
-S	in	[blender jar]
-O	lemon
-S	squeezed
 //
 O	blender jar
 S	contains	{basil,pine nut,garlic,black pepper,salt,lemon zest}
@@ -2812,8 +2807,6 @@ O	onion
 S	whole
 S	peeled
 M	pick-and-place
-O	cutting board
-S	contains	{onion}
 O	onion
 S	whole
 S	peeled
@@ -2829,16 +2822,12 @@ O	onion
 S	chopped
 S	in	[cutting board]
 //
-O	cutting board
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[cutting board]
 O	plate
 S	empty
 M	pick-and-place
-O	plate
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[plate]
@@ -3052,7 +3041,7 @@ M	cook
 O	omelette
 S	mixed
 S	partly cooked
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato}
 S	in	[cooking pan]
 //
 O	packet
@@ -3074,7 +3063,7 @@ S	in	[plate]
 O	omelette
 S	mixed
 S	partly cooked
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato}
 S	in	[cooking pan]
 O	plate
 S	contains	{cheese}
@@ -3088,17 +3077,13 @@ S	in	[omelette]
 O	omelette
 S	mixed
 S	partly cooked
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato,cheese}
 S	in	[cooking pan]
 //
-O	cooking pan
-S	hot
-S	contains	{egg,butter,green pepper,tomato,onion,salt,black pepper}
-S	in	[stove]
 O	omelette
 S	mixed
 S	partly cooked
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato,cheese}
 S	in	[cooking pan]
 O	spoon
 M	fold
@@ -3109,17 +3094,13 @@ S	in	[stove]
 O	omelette
 S	cooked
 S	folded
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato,cheese}
 S	in	[cooking pan]
 //
-O	cooking pan
-S	hot
-S	contains	{omelette}
-S	in	[stove]
 O	omelette
 S	cooked
 S	folded
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato,cheese}
 S	in	[cooking pan]
 O	plate
 S	empty
@@ -3129,7 +3110,7 @@ O	plate
 S	contains	{omelette}
 O	omelette
 S	cooked
-S	contains	{egg,black pepper,onion,salt,sweet pepper,tomato,cheese}
+S	contains	{egg,butter,black pepper,onion,salt,green pepper,tomato,cheese}
 S	in	[plate]
 //
 O	onion
@@ -3342,8 +3323,6 @@ M	pour
 O	bowl
 S	contains	{flour,salt,olive oil}
 S	in	[surface]
-O	olive oil
-S	in	[bowl]
 //
 O	faucet
 S	off
@@ -4172,8 +4151,6 @@ O	pot
 S	hot
 S	contains	{butter}
 S	in	[stove]
-O	bowl
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[bowl]
@@ -5427,8 +5404,6 @@ O	onion
 S	sliced
 S	in	[cutting board]
 //
-O	cutting board
-S	contains	{onion}
 O	onion
 S	sliced
 S	in	[cutting board]
@@ -5633,9 +5608,6 @@ S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,
 M	pour
 O	mixing bowl
 S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}
-O	olive oil
-S	liquid
-S	in	[mixing bowl]
 //
 O	mixing bowl
 S	contains	{tomato,onion,cucumber,sweet pepper,green pepper,oregano,black olive,salt,lemon,olive oil}
@@ -6094,14 +6066,10 @@ S	peeled
 O	cutting board
 S	empty
 M	pick-and-place
-O	cutting board
-S	contains	{onion}
 O	onion
 S	peeled
 S	in	[cutting board]
 //
-O	cutting board
-S	contains	{onion}
 O	onion
 S	peeled
 S	in	[cutting board]
@@ -6111,16 +6079,12 @@ O	onion
 S	chopped
 S	in	[cutting board]
 //
-O	cutting board
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[cutting board]
 O	bowl
 S	empty
 M	pour
-O	bowl
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[bowl]
@@ -8862,8 +8826,6 @@ S	in	[mug]
 M	pour
 O	bowl
 S	contains	{apple,lemon zest,lemon juice}
-O	lemon juice
-S	in	[bowl]
 //
 O	bowl
 S	contains	{apple,lemon zest,lemon juice}
@@ -9825,8 +9787,6 @@ S	sliced
 O	plate
 S	empty
 M	pick-and-place
-O	plate
-S	contains	{onion}
 O	onion
 S	sliced
 S	in	[plate]
@@ -10313,9 +10273,6 @@ O	cooking pan
 S	hot
 S	contains	{broccoli,olive oil}
 S	in	[stove]
-O	olive oil
-S	liquid
-S	in	[cooking pan]
 //
 O	cooking pan
 S	hot
@@ -10620,9 +10577,6 @@ O	cooking pan
 S	hot
 S	contains	{butter,egg,buttermilk,ricotta,salt}
 S	in	[stove]
-O	salt
-S	granulated
-S	in	[cooking pan]
 //
 O	cooking pan
 S	hot
@@ -10638,9 +10592,6 @@ O	cooking pan
 S	hot
 S	contains	{butter,egg,buttermilk,ricotta,salt,black pepper}
 S	in	[stove]
-O	black pepper
-S	ground
-S	in	[cooking pan]
 //
 O	stove
 S	on
@@ -10750,9 +10701,6 @@ O	cooking pan
 S	hot
 S	contains	{butter,egg,buttermilk,ricotta,salt,black pepper,avocado,tomato}
 S	in	[stove]
-O	tomato
-S	diced
-S	in	[cooking pan]
 //
 O	stove
 S	on
@@ -11543,8 +11491,6 @@ O	beef
 S	cooked
 S	in	[pan]
 //
-O	bowl
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[bowl]
@@ -12186,8 +12132,6 @@ S	in	[bowl]
 //
 O	mixing bowl
 S	contains	{ground beef}
-O	bowl
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[bowl]
@@ -13118,6 +13062,7 @@ M	pour
 O	bowl
 S	contains	{sugar,butter,egg white and yolk,sour cream,milk}
 O	milk
+S	liquid
 S	in	[bowl]
 //
 O	bowl
@@ -13893,17 +13838,12 @@ S	in	[bowl]
 //
 O	bowl
 S	contains	{carrot,cherry tomato,lettuce,mushroom}
-O	container
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[container]
 M	pour
 O	bowl
 S	contains	{carrot,cherry tomato,lettuce,mushroom,onion}
-O	onion
-S	chopped
-S	in	[bowl]
 //
 O	cutting board
 S	empty
@@ -13939,9 +13879,6 @@ O	knife
 M	scrape
 O	bowl
 S	contains	{carrot,cherry tomato,green olive,lettuce,mushroom,onion}
-O	green olive
-S	sliced
-S	in	[bowl]
 //
 O	bowl
 S	contains	{carrot,cherry tomato,green olive,lettuce,mushroom,onion}
@@ -13963,13 +13900,10 @@ S	liquid
 S	in	[bottle]
 M	pour
 O	bowl
-S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,salt}
-O	olive oil
-S	liquid
-S	in	[bowl]
+S	contains	{carrot,cherry tomato,green olive,olive oil,lettuce,mushroom,onion,salt}
 //
 O	bowl
-S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,salt}
+S	contains	{carrot,cherry tomato,green olive,olive oil,lettuce,mushroom,onion,salt}
 O	jar
 S	contains	{oregano}
 O	oregano
@@ -13977,13 +13911,13 @@ S	dried
 S	in	[jar]
 M	sprinkle
 O	bowl
-S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,oregano,salt}
+S	contains	{carrot,cherry tomato,green olive,olive oil,lettuce,mushroom,onion,oregano,salt}
 O	oregano
 S	dried
 S	in	[bowl]
 //
 O	bowl
-S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,oregano,salt}
+S	contains	{carrot,cherry tomato,green olive,olive oil,lettuce,mushroom,onion,oregano,salt}
 O	lettuce
 S	chopped
 S	in	[bowl]
@@ -14017,7 +13951,7 @@ S	empty
 M	mix
 O	salad
 S	mixed
-S	contains	{carrot,cherry tomato,green olive,green olive oil,lettuce,mushroom,onion,oregano,salt}
+S	contains	{carrot,cherry tomato,green olive,olive oil,lettuce,mushroom,onion,oregano,salt}
 S	in	[bowl]
 //
 O	pot
@@ -14528,8 +14462,6 @@ O	cooking pan
 S	hot
 S	contains	{butter}
 S	in	[stove]
-O	bowl
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[bowl]
@@ -15718,6 +15650,7 @@ S	contains	{butter}
 O	bowl
 S	contains	{milk}
 O	milk
+S	liquid
 S	in	[bowl]
 M	pour
 O	bowl
@@ -15789,6 +15722,7 @@ O	butter
 S	melted
 S	in	[mug]
 O	milk
+S	liquid
 S	in	[bowl]
 O	egg white and yolk
 S	in	[bowl]
@@ -16345,24 +16279,18 @@ O	onion
 S	chopped
 S	in	[cutting board]
 //
-O	cutting board
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[cutting board]
 O	bowl
 S	empty
 M	scrape
-O	bowl
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[bowl]
 O	cutting board
 S	empty
 //
-O	bowl
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[bowl]
@@ -16615,9 +16543,6 @@ S	in	[spoon]
 M	pour
 O	mixing bowl
 S	contains	{chive,garlic,oats,onion,parsley,salt,tuna}
-O	salt
-S	granulated
-S	in	[mixing bowl]
 //
 O	spoon
 S	contains	{chili pepper}
@@ -17490,8 +17415,6 @@ O	celery
 S	partly cooked
 S	in	[pan]
 //
-O	bowl
-S	contains	{onion}
 O	onion
 S	halved
 S	in	[bowl]
@@ -17501,11 +17424,7 @@ M	pick-and-place
 O	onion
 S	halved
 S	in	[cutting board]
-O	cutting board
-S	contains	{onion}
 //
-O	cutting board
-S	contains	{onion}
 O	onion
 S	halved
 S	in	[cutting board]
@@ -17612,14 +17531,10 @@ M	pour
 O	cooking pan
 S	contains	{zucchini,salt,celery,carrot,olive oil}
 S	in	[stove]
-O	olive oil
-S	in	[pan]
 //
 O	cooking pan
 S	contains	{zucchini,salt,celery,carrot,olive oil}
 S	in	[stove]
-O	cutting board
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[cutting board]
@@ -18051,22 +17966,11 @@ S	in	[salad bowl]
 O	cutting board
 S	empty
 //
-O	onion
-S	peeled
-S	in	[cutting board]
-O	knife
-M	chop
-O	onion
-S	chopped
-S	in	[cutting board]
-//
 O	salad bowl
 S	contains	{carrot}
 O	onion
 S	chopped
 S	in	[cutting board]
-O	cutting board
-S	contains	{onion}
 M	scoop and pour
 O	salad bowl
 S	contains	{carrot,onion}
@@ -19018,8 +18922,6 @@ O	garlic
 S	fried
 S	in	[pan]
 //
-O	cutting board
-S	contains	{onion}
 O	onion
 S	peeled
 S	in	[cutting board]
@@ -19029,16 +18931,12 @@ O	onion
 S	sliced
 S	in	[cutting board]
 //
-O	cutting board
-S	contains	{onion}
 O	bowl
 S	empty
 O	onion
 S	sliced
 S	in	[cutting board]
 M	pick-and-place
-O	bowl
-S	contains	{onion}
 O	onion
 S	sliced
 S	in	[bowl]
@@ -19048,8 +18946,6 @@ S	empty
 O	cooking pan
 S	contains	{vegetable oil,garlic}
 S	in	[stove]
-O	bowl
-S	contains	{onion}
 O	onion
 S	sliced
 S	in	[bowl]
@@ -20484,16 +20380,12 @@ O	onion
 S	whole
 S	peeled
 //
-O	cutting board
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[cutting board]
 O	bowl
 S	empty
 M	pick-and-place
-O	bowl
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[bowl]
@@ -20503,8 +20395,6 @@ O	frying pan
 S	hot
 S	contains	{olive oil,butter}
 S	in	[stove]
-O	bowl
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[bowl]
@@ -21127,6 +21017,7 @@ S	in	[bowl]
 O	bowl
 S	contains	{milk}
 O	milk
+S	liquid
 S	in	[bowl]
 O	egg
 S	cracked
@@ -22503,9 +22394,6 @@ S	in	[bowl]
 M	sprinkle
 O	mixing bowl
 S	contains	{cilantro,lemon juice,olive oil,salt,shallot}
-O	salt
-S	granulated
-S	in	[mixing bowl]
 //
 O	mixing bowl
 S	contains	{cilantro,lemon juice,olive oil,salt,shallot}
@@ -22600,8 +22488,6 @@ M	pour
 O	pot
 S	contains	{olive oil}
 S	in	[stove]
-O	olive oil
-S	in	[pot]
 //
 O	pot
 S	contains	{olive oil}
@@ -24587,8 +24473,6 @@ S	in	[plate]
 O	cooking pan
 S	contains	{vegetable oil}
 S	in	[stove]
-O	bowl
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[bowl]
@@ -24963,8 +24847,6 @@ S	whole
 O	cutting board
 S	empty
 M	pick-and-place
-O	cutting board
-S	contains	{onion}
 O	onion
 S	unpeeled
 S	whole
@@ -25052,8 +24934,6 @@ O	onion
 S	chopped
 S	in	[cutting board]
 //
-O	cutting board
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[cutting board]
@@ -25063,8 +24943,6 @@ M	pour and scrape
 O	onion
 S	chopped
 S	in	[mortar]
-O	mortar
-S	contains	{onion}
 O	cutting board
 S	empty
 //
@@ -25167,8 +25045,6 @@ S	in	[cooking pan]
 O	coriander
 S	seeds
 S	in	[cooking pan]
-O	mortar
-S	contains	{onion}
 O	spatula
 M	pour and scrape
 O	mortar
@@ -26342,6 +26218,7 @@ M	pour
 O	bowl
 S	contains	{milk}
 O	milk
+S	liquid
 S	in	[bowl]
 //
 O	stove
@@ -26363,6 +26240,7 @@ S	in	[bowl]
 O	bowl
 S	contains	{milk}
 O	milk
+S	liquid
 S	in	[bowl]
 M	pour and stir
 O	savory filling
@@ -26508,8 +26386,6 @@ S	in	[spoon]
 M	pour
 O	container
 S	contains	{garlic powder,salt,garlic powder,olive oil}
-O	olive oil
-S	in	[container]
 //
 O	container
 S	contains	{garlic powder,salt,garlic powder,olive oil}
@@ -27465,16 +27341,12 @@ O	onion
 S	peeled
 S	whole
 //
-O	cutting board
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[cutting board]
 O	plate
 S	empty
 M	pick-and-place
-O	plate
-S	contains	{onion}
 O	cutting board
 O	onion
 S	chopped
@@ -27506,6 +27378,17 @@ S	whole
 S	peeled
 //
 O	cutting board
+S	empty
+O	carrot
+S	whole
+S	peeled
+M	pick-and-place
+O	carrot
+S	whole
+S	peeled
+S	in	[cutting board]
+//
+O	cutting board
 S	contains	{carrot}
 O	carrot
 S	chopped
@@ -27513,8 +27396,6 @@ S	in	[cutting board]
 O	plate
 S	empty
 M	scrape
-O	plate
-S	contains	{carrot}
 O	carrot
 S	chopped
 S	in	[plate]
@@ -27580,8 +27461,6 @@ O	pot
 S	hot
 S	contains	{butter}
 S	in	[stove]
-O	plate
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[plate]
@@ -27919,9 +27798,6 @@ S	contains	{apple,black pepper,cucumber,salt}
 M	pour
 O	bowl
 S	contains	{apple,black pepper,cucumber,olive oil,salt}
-O	olive oil
-S	liquid
-S	in	[bowl]
 //
 O	packet
 S	contains	{mozzarella}
@@ -28514,9 +28390,6 @@ S	in	[shaker]
 M	sprinkle
 O	mixing bowl
 S	contains	{black pepper,mayonnaise}
-O	black pepper
-S	ground
-S	in	[mixing bowl]
 //
 O	mixing bowl
 S	contains	{black pepper,mayonnaise}
@@ -30733,6 +30606,7 @@ M	pour
 O	bowl
 S	contains	{egg white and yolk,milk}
 O	milk
+S	liquid
 S	in	[bowl]
 //
 O	bowl
@@ -30775,6 +30649,7 @@ O	egg white and yolk
 S	beaten
 S	in	[bowl]
 O	milk
+S	liquid
 S	in	[bowl]
 O	black pepper
 S	ground
@@ -31449,6 +31324,7 @@ O	egg wash
 S	contains	{egg white and yolk}
 S	in	[bowl]
 O	milk
+S	liquid
 S	in	[bowl]
 //
 O	brush
@@ -32084,6 +31960,7 @@ M	pour
 O	bowl
 S	contains	{egg white and yolk,milk}
 O	milk
+S	liquid
 S	in	[bowl]
 //
 O	bowl
@@ -32091,6 +31968,7 @@ S	contains	{egg white and yolk,milk}
 O	egg white and yolk
 S	in	[bowl]
 O	milk
+S	liquid
 S	in	[bowl]
 O	whisk
 M	mix
@@ -33633,9 +33511,6 @@ S	in	[bowl]
 M	sprinkle
 O	salad bowl
 S	contains	{crouton,lettuce,salad dressing,parmesan,black pepper}
-O	black pepper
-S	ground
-S	in	[salad bowl]
 //
 O	salad bowl
 S	contains	{crouton,lettuce,salad dressing,parmesan,black pepper}
@@ -33674,10 +33549,6 @@ O	onion
 S	minced
 S	in	[cutting board]
 //
-O	cutting board
-S	contains	{onion}
-O	jar
-S	contains	{garlic}
 O	garlic
 S	minced
 S	in	[jar]
@@ -34328,8 +34199,6 @@ O	cooking pan
 S	hot
 S	contains	{olive oil}
 S	in	[stove]
-O	bowl
-S	contains	{onion}
 O	onion
 S	chopped
 S	in	[bowl]
@@ -35058,9 +34927,6 @@ S	in	[bowl]
 M	sprinkle
 O	salad bowl
 S	contains	{avocado,basil,black pepper,blood orange,lemon juice,lime juice,olive oil,salad greens,salt}
-O	black pepper
-S	ground
-S	in	[salad bowl]
 //
 O	salad bowl
 S	contains	{avocado,basil,black pepper,blood orange,lemon juice,lime juice,olive oil,salad greens,salt}

@@ -225,8 +225,6 @@ O	cooking pan	0
 S	hot
 S	contains	{butter}
 S	on	[stove]
-O	bowl	1
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	in	[bowl]

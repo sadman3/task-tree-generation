@@ -311,6 +311,7 @@ M	pour	Assumed	Assumed
 O	bowl	0
 S	contains	{milk}
 O	milk	1
+S	liquid
 S	in	[bowl]
 //
 O	stove	0
@@ -332,6 +333,7 @@ S	in	[bowl]
 O	bowl	0
 S	contains	{milk}
 O	milk	1
+S	liquid
 S	in	[bowl]
 M	pour and stir	1:31	2:00
 O	savory filling	0
@@ -477,8 +479,6 @@ S	in	[spoon]
 M	pour	2:36	2:38
 O	container	0
 S	contains	{garlic powder,salt,garlic powder,olive oil}
-O	olive oil	1
-S	in	[container]
 //
 O	container	0
 S	contains	{garlic powder,salt,garlic powder,olive oil}

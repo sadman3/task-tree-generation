@@ -205,7 +205,7 @@ M	cook and stir	<2:09-2:12,2:13-2:20,2:21-2:28>
 O	omelette	0
 S	mixed
 S	partly cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	in	[frying pan]
 //
 O	frying pan	0
@@ -215,14 +215,14 @@ S	on	[stove]
 O	omelette	0
 S	mixed
 S	partly cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	in	[frying pan]
 O	turner	1
 M	fold	<3:34-3:36>
 O	omelette	0
 S	folded
 S	partly cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	in	[frying pan]
 //
 O	stove	0
@@ -235,7 +235,7 @@ S	on	[stove]
 O	omelette	0
 S	folded
 S	partly cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	in	[frying pan]
 M	cook	<Assumed>
 O	frying pan	0
@@ -245,7 +245,7 @@ S	on	[stove]
 O	omelette	0
 S	folded
 S	cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	in	[frying pan]
 //
 O	frying pan	0
@@ -255,7 +255,7 @@ S	on	[stove]
 O	omelette	1
 S	folded
 S	cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	in	[frying pan]
 O	plate	0
 S	empty
@@ -266,6 +266,6 @@ S	contains	{omelette}
 O	omelette	1	23
 S	folded
 S	cooked
-S	contains	{egg,black pepper,salt}
+S	contains	{olive oil,butter,egg,black pepper,salt}
 S	on	[plate]
 //

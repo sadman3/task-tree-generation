@@ -84,6 +84,7 @@ S	contains	{egg,salt}
 O	bowl	1
 S	contains	{milk}
 O	milk	1
+S	liquid
 S	in	[bowl]
 M	pour	0:59	1:03
 O	bowl	0

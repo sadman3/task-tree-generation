@@ -158,8 +158,6 @@ O	beef	1
 S	cooked
 S	in	[pan]
 //
-O	bowl	1
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	in	[bowl]

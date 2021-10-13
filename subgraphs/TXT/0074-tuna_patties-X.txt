@@ -121,24 +121,18 @@ O	onion	0
 S	chopped
 S	on	[cutting board]
 //
-O	cutting board	1
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	on	[cutting board]
 O	bowl	0
 S	empty
 M	scrape	<Assumed>
-O	bowl	0
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	in	[bowl]
 O	cutting board	1
 S	empty
 //
-O	bowl	1
-S	contains	{onion}
 O	onion	1
 S	in	[bowl]
 S	chopped
@@ -418,9 +412,6 @@ S	in	[spoon]
 M	pour	<1:56,1:58>
 O	mixing bowl	0
 S	contains	{chive,garlic,oats,onion,parsley,salt,tuna}
-O	salt	1
-S	granulated
-S	in	[mixing bowl]
 //
 O	spoon	1
 S	contains	{chili pepper}

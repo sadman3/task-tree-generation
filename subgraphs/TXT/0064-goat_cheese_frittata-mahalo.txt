@@ -90,8 +90,6 @@ O	onion	1
 S	whole
 S	peeled
 M	pick-and-place	<Assumed>
-O	cutting board	0
-S	contains	{onion}
 O	onion	1
 S	whole
 S	peeled
@@ -107,16 +105,12 @@ O	onion	0
 S	chopped
 S	on	[cutting board]
 //
-O	cutting board	0
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	on	[cutting board]
 O	bowl	0
 S	empty
 M	pick-and-place	<Assumed>
-O	bowl	0
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	in	[bowl]
@@ -126,8 +120,6 @@ O	frying pan	0
 S	hot
 S	contains	{olive oil,butter}
 S	on	[stove]
-O	bowl	1
-S	contains	{onion}
 O	onion	1
 S	chopped
 S	in	[bowl]
