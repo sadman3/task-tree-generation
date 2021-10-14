@@ -579,12 +579,11 @@ function init(I) {
 					_addObjectToFOON(newObject, isInput, objectParts[2], newFU_lvl3, newFU_lvl2, newFU_lvl1);
 				// -- this is an Object node, so we probably should read the next line one time
 				// -- get the Object identifier by splitting first instance of O
-				objectParts = line.split("O"); objectParts = objectParts[1].split("\t");
-				newObject = new ObjectNode((objectParts[0]), objectParts[1]);
+				objectParts = line.split("\t");
+				newObject = new ObjectNode(1, objectParts[1]);
 			} else if (line.startsWith("S")) {
 				// -- get the Object's state identifier by splitting first instance of S
-				stateParts = line.split("S");
-				stateParts = stateParts[1].split("\t").filter(Boolean);
+				stateParts = line.split("\t").filter(Boolean);
 
 				// -- check if this object is a container:
 				var list_ingredients = []; var relative_object = null;
@@ -613,7 +612,7 @@ function init(I) {
 				}
 
 				console.log(list_ingredients);
-				newObject.addStateType([(stateParts[0]), stateParts[1], relative_object]);
+				newObject.addStateType([1, stateParts[1], relative_object]);
 				if (list_ingredients.length > 0)
 					newObject.setIngredients(list_ingredients);
 			} else if (line.startsWith("L")) {
@@ -628,12 +627,11 @@ function init(I) {
 				newObject = null;
 
 				// -- We are adding a Motion node, so very easy to deal with, as follows:
-				motionParts = line.split("M");		// -- get the Motion number...
-				motionParts = motionParts[1].split("\t"); //	... and get the Motion label
+				motionParts = line.split("\t"); //	... and get the Motion label
 
 				// Functional Unit - Level 3:
 				// -- create new Motion based on what was read:
-				newMotion = new MotionNode((motionParts[0]), motionParts[1]);
+				newMotion = new MotionNode(1, motionParts[1]);
 				// for (var T in newFU_lvl3.getInputList())
 				// 	T.addNeighbour(newMotion); // -- make the connection from Object(s) to Motion
 				newFU_lvl3.setMotionNode(newMotion);
