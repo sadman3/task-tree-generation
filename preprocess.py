@@ -22,7 +22,7 @@ recipe_category_path = config["info"]["recipe_category"]
 create_foon_txt = config["flag"]["create_foon_txt"]
 kitchen_path = config['info']['kitchen']
 default_kitchen_path = config['info']['default_kitchen_item']
-
+object_state_map_path = config['info']['object_state_map']
 
 utensils = get_utensils()
 default_kitchen_items = json.load(open(default_kitchen_path, 'r'))
@@ -312,6 +312,39 @@ def prepare_kitchen(foon_path=foon_pkl, kitchen_path=kitchen_path):
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
+def save_all_object_states(foon_path=foon_pkl):
+    pickle_data = pickle.load(open(foon_path, 'rb'))
+    functional_units = pickle_data["functional_units"]
+
+    object_state_map = {}
+
+    for fu in functional_units:
+
+        for node in fu.input_nodes:
+            object = node.label
+            if object in utensils or node.recipe_category != -1:
+                continue
+            if object not in object_state_map:
+                object_state_map[object] = []
+            for state in node.states:
+                if state not in object_state_map[object]:
+                    object_state_map[object].append(state)
+
+        for node in fu.output_nodes:
+            object = node.label
+            if object in utensils or node.recipe_category != -1:
+                continue
+            if object not in object_state_map:
+                object_state_map[object] = []
+            for state in node.states:
+                if state not in object_state_map[object]:
+                    object_state_map[object].append(state)
+
+    json.dump(object_state_map, open(object_state_map_path, 'w'), indent=4)
+# -----------------------------------------------------------------------------------------------------------------------------#
+
+
 if __name__ == "__main__":
-    merge()
-    prepare_kitchen()
+    # merge()
+    # prepare_kitchen()
+    save_all_object_states()

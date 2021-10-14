@@ -1,7 +1,7 @@
 from configparser import ConfigParser
 import copy
 from nltk.corpus import wordnet
-
+import json
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 # --- Global variables -- #
@@ -18,6 +18,7 @@ config.read(config_file)
 similarity_threshold = float(config["constant"]["similarity_threshold"])
 word2vec_model = config["constant"]["word2vec_model"]
 utensils_path = config['info']['utensils']
+object_state_map_path = config['info']['object_state_map']
 
 
 # load word2vec model
@@ -49,7 +50,7 @@ def get_utensils(filepath=utensils_path):
 
 
 utensils = get_utensils()
-
+object_state_map = json.load(open(object_state_map_path))
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 
@@ -143,22 +144,30 @@ def find_ingredient_mapping(task_tree, input_ingredients):
     reference_tree_objects = []
     for fu in task_tree:
         for node in fu.input_nodes:
+
+            # ignore the gaol nodes
+            if node.recipe_category != -1:
+                continue
             reference_tree_objects.append(node.label)
             reference_tree_objects += node.ingredients
 
         for node in fu.output_nodes:
+            # ignore the gaol nodes
+            if node.recipe_category != -1:
+                continue
             reference_tree_objects.append(node.label)
             reference_tree_objects += node.ingredients
 
     reference_tree_objects = list(set(reference_tree_objects))
     reference_tree_objects = list(filter(
         lambda s: s not in utensils, reference_tree_objects))
-
     # generate similarity for all possible pairs between
     # task tree ingredient and given ingredients
     similarity_scores = {}
     for ingredient in input_ingredients:
+
         given_object = ingredient['object']
+
         similarity_scores[given_object] = []
         for tree_object in reference_tree_objects:
             score = get_object_similarity(given_object, tree_object)
@@ -189,6 +198,9 @@ def find_ingredient_mapping(task_tree, input_ingredients):
             break
 
     for item in similarity_scores:
+        # already mapping done
+        if item in ingredient_mapping:
+            continue
         for candidate in similarity_scores[item]:
             input_object = item
             tree_object = candidate["object"]
@@ -201,4 +213,47 @@ def find_ingredient_mapping(task_tree, input_ingredients):
                 object_mapped.append(tree_object)
                 break
 
+    for ingredient in input_ingredients:
+
+        given_object = ingredient['object']
+        if given_object not in ingredient_mapping:
+            equivalent_ingredient, score = find_equivalent_ingredient_on_state_overlap(
+                reference_tree_objects, given_object)
+
+            if score > similarity_threshold:
+
+                ingredient_mapping[given_object] = {
+                    "object": equivalent_ingredient,
+                    "score": score
+                }
+
     return ingredient_mapping
+
+
+# this method checks all objects in FOON and
+# find the one that has maximum state overlap with this object
+def find_equivalent_ingredient_on_state_overlap(object_list, given_object):
+    given_object = get_singular_form(given_object)
+    if given_object not in object_state_map:
+        return None, 0
+
+    given_object_state = object_state_map[given_object]
+
+    if len(given_object_state) == 0:
+        return None, 0
+
+    best_overlap_score = -2
+    best_match = None
+    for object in object_list:
+        if object not in object_state_map:
+            continue
+        candidate_object_state = object_state_map[object]
+
+        overlap = len(list(set(given_object_state) &
+                      set(candidate_object_state)))
+
+        if overlap > best_overlap_score and overlap > 2:
+            best_overlap_score = overlap
+            best_match = object
+
+    return best_match, best_overlap_score/len(given_object_state)

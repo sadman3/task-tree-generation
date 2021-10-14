@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<link rel="stylesheet" href="style.css">
+	<!-- Global variables for the FOON visualizer:--->
+	
+	<script type="text/javascript">
+		var file_name; 
+		var obj = undefined;
+	</script>
+	<!-- JavaScript files: -->
+	<script type="text/javascript" src="d3.min.js"></script>
+	<script type="text/javascript" src="FOON_classes.js"></script>
+	<script type="text/javascript" src="FOON_functions.js"></script>
+	<script type="text/javascript" src="pdfkit.standalone.js"></script>
+	<script type="text/javascript" src="SVG_to_PDFKit.js"></script>
+
+
+	<!-- <svg width="1200" height="1200" id="svg"></svg> -->
+</head>
+
+<body>
+	<center>
+		
+		&nbsp;
+		<input type='file' id="fileInput" accept='.json' onchange='openFile(event)'>
+		
+		<script>
+			// -- Reading a text file denoting a FOON graph
+			// SOURCE: https://www.javascripture.com/FileReader
+	
+
+			var openFile = function (event) {
+				var input = document.getElementById("fileInput");
+				
+				if (input.files.length > 0) {
+					clearProgressLine();
+					var reader = new FileReader();
+					reader.onload = function () {
+						progress_line = reader.result;
+
+						file_name = input.files[0].name;
+						console.log(file_name);
+
+						drawProgressLine(progress_line, file_name);
+
+					};
+					reader.readAsText(input.files[0]);
+				}
+				
+			};
+		</script>
+	</center>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+p {
+  color: black;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+body {
+  width: 1024px;
+  margin-top: 0;
+  margin: auto;
+  font-family: "Lato", "PT Serif", serif;
+  color: #222222;
+  padding: 0;
+  font-weight: 300;
+  line-height: 33px;
+  -webkit-font-smoothing: antialiased;
+  background-image: url('/Users/sadman/Desktop/logo.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top right; 
+  background-size: 300px 100px;
+}
+
+ul {
+  list-style: none;
+  font-weight: bold;
+}
+
+li {
+  margin:  0.2em 0.0em;
+  padding: 0.5em 1.0em;
+  font-weight: normal;
+}
+
+h2 {
+  width: 100%;
+  text-align:center;
+}

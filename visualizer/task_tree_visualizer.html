@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style type="text/css" media="screen">
+		svg {
+			display: block;
+			border: 1px solid #ccc;
+			position: absolute;
+			top: 5%;
+			left: 5%;
+			width: 90%;
+			height: 90%;
+			background: #fff;
+		}
+
+		svg {
+			border: 1px solid black;
+		}
+	</style>
+	<!-- Global variables for the FOON visualizer:--->
+	<script type="text/javascript">
+		var file_name; 
+		var level = undefined; 
+		var file_flag = 0;
+		var FOON_graph;
+		var obj = undefined;
+	</script>
+	<!-- JavaScript files: -->
+	<script type="text/javascript" src="d3.min.js"></script>
+	<script type="text/javascript" src="FOON_classes.js"></script>
+	<script type="text/javascript" src="FOON_functions.js"></script>
+	<script type="text/javascript" src="pdfkit.standalone.js"></script>
+	<script type="text/javascript" src="SVG_to_PDFKit.js"></script>
+
+
+	<svg width="1200" height="1200" id="svg"></svg>
+</head>
+
+<body>
+	<center>
+		<select id="dropdown-content" onchange="openFile(event)">
+			<option value="">--Please choose an option--</option>
+			<option value="1">Level 1</option>
+			<option value="2">Level 2</option>
+			<option value="3">Level 3</option>
+		</select>
+		&nbsp;
+		<input type='file' id="fileInput" accept='text/plain,.json' onchange='openFile(event)'>
+		&nbsp;
+		<button type="button" onclick='clearGraph(event)'>Reset Graph</button>
+		&nbsp;
+		<button type="button" onclick='downloadGraph(event,1)'>Download Graph as JSON</button>
+		&nbsp;
+		<button type="button" onclick='downloadGraph(event,2)'>Download Graph as PDF</button>
+
+
+		<script>
+			var clearGraph = function (event) {
+				document.getElementById("fileInput").value = "";
+				clear();
+			}
+
+			var downloadGraph = function (event, I) {
+				if (obj != undefined || obj != null){
+					if (I == 1) download_JSON(obj);
+					else download_PDF();
+				}
+			}
+
+			// -- Reading a text file denoting a FOON graph
+			// SOURCE: https://www.javascripture.com/FileReader
+			var openFile = function (event) {
+				var input = document.getElementById("fileInput");
+				if (input.files.length > 0) {
+					clear();
+					var reader = new FileReader();
+					reader.onload = function () {
+						FOON_graph = reader.result;
+
+						file_name = input.files[0].name;
+						console.log(file_name);
+						file_name = file_name.substr(0, file_name.lastIndexOf('.'));
+						console.log(file_name);
+
+						// NOTE: 0 -- .TXT file, 1 -- .JSON file, 2 -- .JS file
+						if (input.files[0].name.includes('.json') || input.files[0].name.includes('.JSON'))
+							file_flag = 1;
+						else if (input.files[0].name.includes('.js') || input.files[0].name.includes('.JS'))
+							file_flag = 2;
+
+						console.log('file_flag = ' + String(file_flag));
+
+						var element = document.getElementById("dropdown-content");
+						if (element.options[element.selectedIndex].value != "") {
+							level = parseInt(element.options[element.selectedIndex].value);
+							console.log("selected level " + String(level));
+						}
+
+						obj = init(FOON_graph, file_flag, level, false);
+
+					};
+					reader.readAsText(input.files[0]);
+				}
+			};
+		</script>
+	</center>
+</body>
+
+</html>

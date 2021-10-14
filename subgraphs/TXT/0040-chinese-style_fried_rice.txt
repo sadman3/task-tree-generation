@@ -488,10 +488,7 @@ M	pour	<Assumed>
 O	bowl	0
 S	contains	{fried rice}
 O	fried rice	1	19
-S	mixed
 S	in	[bowl]
-S	contains	{carrot,corn,egg,green onion,green pea,sausage,soy sauce,sugar,water,white rice}
-O	chinese-style fried rice	1
-S	in	[frying pan]
+S	mixed
 S	contains	{carrot,corn,egg,green onion,green pea,sausage,soy sauce,sugar,water,white rice}
 //
