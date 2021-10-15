@@ -1,137 +1,107 @@
 [
        {
               "ingredient": "pineapple",
-              "state": {
-                     "generated": [
-                            {
-                                   "physical_state": "",
-                                   "location": "food processor bowl"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "strainer"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "measuring cup"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "pitcher"
-                            }
-                     ]
-              },
-              "motion": {
-                     "generated": [
-                            "pour",
-                            "stir and strain",
-                            "pour",
-                            "pour"
-                     ]
-              },
-              "end_product": {
-                     "generated": "watermelon lemonade"
-              }
+              "state": [
+                     {
+                            "physical_state": "",
+                            "location": "food processor bowl"
+                     },
+                     {
+                            "physical_state": "",
+                            "location": "strainer"
+                     },
+                     {
+                            "physical_state": "",
+                            "location": "measuring cup"
+                     },
+                     {
+                            "physical_state": "",
+                            "location": "pitcher"
+                     }
+              ],
+              "motion": [
+                     "pour",
+                     "stir and strain",
+                     "pour",
+                     "pour"
+              ],
+              "end_product": "watermelon lemonade"
        },
        {
               "ingredient": "sugar",
-              "state": {
-                     "generated": [
-                            {
-                                   "physical_state": "granulated",
-                                   "location": "container"
-                            },
-                            {
-                                   "physical_state": "granulated",
-                                   "location": "pitcher"
-                            },
-                            {
-                                   "physical_state": "granulated",
-                                   "location": "bowl"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "pitcher"
-                            }
-                     ]
-              },
-              "motion": {
-                     "generated": [
-                            "pour",
-                            "stir",
-                            "pour",
-                            "pour"
-                     ]
-              },
-              "end_product": {
-                     "generated": "watermelon lemonade"
-              }
+              "state": [
+                     {
+                            "physical_state": "granulated",
+                            "location": "container"
+                     },
+                     {
+                            "physical_state": "granulated",
+                            "location": "pitcher"
+                     },
+                     {
+                            "physical_state": "granulated",
+                            "location": "bowl"
+                     },
+                     {
+                            "physical_state": "",
+                            "location": "pitcher"
+                     }
+              ],
+              "motion": [
+                     "pour",
+                     "stir",
+                     "pour",
+                     "pour"
+              ],
+              "end_product": "watermelon lemonade"
        },
        {
               "ingredient": "water",
-              "state": {
-                     "generated": [
-                            {
-                                   "physical_state": "",
-                                   "location": "measuring cup"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "pitcher"
-                            }
-                     ]
-              },
-              "motion": {
-                     "generated": [
-                            "pour",
-                            "pour"
-                     ]
-              },
-              "end_product": {
-                     "generated": "watermelon lemonade"
-              }
+              "state": [
+                     {
+                            "physical_state": "",
+                            "location": "measuring cup"
+                     },
+                     {
+                            "physical_state": "",
+                            "location": "pitcher"
+                     }
+              ],
+              "motion": [
+                     "pour",
+                     "pour"
+              ],
+              "end_product": "watermelon lemonade"
        },
        {
               "ingredient": "ice",
-              "state": {
-                     "generated": [
-                            {
-                                   "physical_state": "frozen,crushed",
-                                   "location": "bowl"
-                            },
-                            {
-                                   "physical_state": "crushed,frozen",
-                                   "location": "drinking glass"
-                            }
-                     ]
-              },
-              "motion": {
-                     "generated": [
-                            "pick-and-place",
-                            "pour"
-                     ]
-              },
-              "end_product": {
-                     "generated": "watermelon lemonade"
-              }
+              "state": [
+                     {
+                            "physical_state": "frozen,crushed",
+                            "location": "bowl"
+                     },
+                     {
+                            "physical_state": "crushed,frozen",
+                            "location": "drinking glass"
+                     }
+              ],
+              "motion": [
+                     "pick-and-place",
+                     "pour"
+              ],
+              "end_product": "watermelon lemonade"
        },
        {
               "ingredient": "lemonade",
-              "state": {
-                     "generated": [
-                            {
-                                   "physical_state": "mixed,liquid",
-                                   "location": "pitcher"
-                            }
-                     ]
-              },
-              "motion": {
-                     "generated": [
-                            "pour"
-                     ]
-              },
-              "end_product": {
-                     "generated": null
-              }
+              "state": [
+                     {
+                            "physical_state": "mixed,liquid",
+                            "location": "pitcher"
+                     }
+              ],
+              "motion": [
+                     "pour"
+              ],
+              "end_product": null
        }
 ]

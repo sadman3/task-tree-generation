@@ -9,7 +9,7 @@ with open('info/utensils.txt', 'r') as f:
 
 ignored_objects = ['water']
 
-selected_category = ['drinks']
+selected_category = ['test']
 
 
 def get_FU_list(filepath):
@@ -132,7 +132,6 @@ def save_progress_line(source_path, target_path):
         for node in fu['input_nodes']:
             object = node['label']
             if object in ignored_objects or object in utensils:
-
                 continue
             if object not in state_trace and len(node['states']) > 0:
                 # keep track of state and location separately
@@ -202,7 +201,7 @@ def save_progress_line(source_path, target_path):
                 new_state["location"] = object
                 for ing in node["ingredients"]:
 
-                    if ing in object_traced:
+                    if ing in object_traced or ing in ignored_objects:
                         continue
                     if ing not in state_trace:
                         state_trace[ing] = {
@@ -225,8 +224,8 @@ def save_progress_line(source_path, target_path):
             if i < len(states) - 1 and states[i]["physical_state"] == states[i+1]["physical_state"] and states[i]["location"] == states[i+1]["location"]:
                 continue
 
-            # if i< len(states) - 1 and (states[i]["physical_state"] == None or states[i+1]["physical_state"] == None) and states[i]["location"] == states[i+1]["location"]:
-            #     continue
+            if i < len(states) - 1 and (states[i]["physical_state"] == "" or states[i+1]["physical_state"] == "") and states[i]["location"] == states[i+1]["location"]:
+                continue
 
             else:
                 temp_motion.append(motion[i])
@@ -281,15 +280,9 @@ def save_progress_line(source_path, target_path):
         progress_line.append(
             {
                 "ingredient": ing,
-                "state": {
-                    "generated": state_trace[ing]["state"]
-                },
-                "motion": {
-                    "generated": state_trace[ing]["motion"]
-                },
-                "end_product": {
-                    "generated": state_trace[ing]["end_product"]
-                }
+                "state": state_trace[ing]["state"],
+                "motion": state_trace[ing]["motion"],
+                "end_product": state_trace[ing]["end_product"]
             }
         )
 

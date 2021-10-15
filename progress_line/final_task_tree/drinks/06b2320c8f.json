@@ -1,123 +1,89 @@
 [
        {
               "ingredient": "sugar",
-              "state": {
-                     "generated": [
-                            {
-                                   "physical_state": "granulated",
-                                   "location": "container"
-                            },
-                            {
-                                   "physical_state": "granulated",
-                                   "location": "bowl"
-                            },
-                            {
-                                   "physical_state": "granulated",
-                                   "location": "mixing bowl"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "mixing bowl"
-                            }
-                     ]
-              },
-              "motion": {
-                     "generated": [
-                            "pour",
-                            "pour",
-                            "beat",
-                            "scoop"
-                     ]
-              },
-              "end_product": {
-                     "generated": "dalgona coffee"
-              }
+              "state": [
+                     {
+                            "physical_state": "granulated",
+                            "location": "container"
+                     },
+                     {
+                            "physical_state": "granulated",
+                            "location": "bowl"
+                     },
+                     {
+                            "physical_state": "",
+                            "location": "mixing bowl"
+                     }
+              ],
+              "motion": [
+                     "pour",
+                     "pour",
+                     "scoop"
+              ],
+              "end_product": "dalgona coffee"
        },
        {
               "ingredient": "water",
-              "state": {
-                     "generated": [
-                            {
-                                   "physical_state": "",
-                                   "location": "mixing bowl"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "bowl"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "mixing bowl"
-                            }
-                     ]
-              },
-              "motion": {
-                     "generated": [
-                            "beat",
-                            "pour",
-                            "scoop"
-                     ]
-              },
-              "end_product": {
-                     "generated": "whipped coffee"
-              }
+              "state": [
+                     {
+                            "physical_state": "",
+                            "location": "mixing bowl"
+                     },
+                     {
+                            "physical_state": "",
+                            "location": "bowl"
+                     },
+                     {
+                            "physical_state": "",
+                            "location": "mixing bowl"
+                     }
+              ],
+              "motion": [
+                     "beat",
+                     "pour",
+                     "scoop"
+              ],
+              "end_product": "whipped coffee"
        },
        {
               "ingredient": "whipped coffee",
-              "state": {
-                     "generated": [
-                            {
-                                   "physical_state": "whipped",
-                                   "location": "mixing bowl"
-                            },
-                            {
-                                   "physical_state": "whipped",
-                                   "location": "spoon"
-                            },
-                            {
-                                   "physical_state": "whipped",
-                                   "location": "drinking glass"
-                            }
-                     ]
-              },
-              "motion": {
-                     "generated": [
-                            "scoop",
-                            "pour and spread",
-                            "sprinkle"
-                     ]
-              },
-              "end_product": {
-                     "generated": null
-              }
+              "state": [
+                     {
+                            "physical_state": "whipped",
+                            "location": "mixing bowl"
+                     },
+                     {
+                            "physical_state": "whipped",
+                            "location": "spoon"
+                     },
+                     {
+                            "physical_state": "whipped",
+                            "location": "drinking glass"
+                     }
+              ],
+              "motion": [
+                     "scoop",
+                     "pour and spread",
+                     "sprinkle"
+              ],
+              "end_product": null
        },
        {
               "ingredient": "ice",
-              "state": {
-                     "generated": [
-                            {
-                                   "physical_state": "cubed,frozen",
-                                   "location": "measuring cup"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "drinking glass"
-                            },
-                            {
-                                   "physical_state": "frozen,cubed",
-                                   "location": "drinking glass"
-                            }
-                     ]
-              },
-              "motion": {
-                     "generated": [
-                            "pour",
-                            "pour and spread",
-                            "sprinkle"
-                     ]
-              },
-              "end_product": {
-                     "generated": "dalgona coffee"
-              }
+              "state": [
+                     {
+                            "physical_state": "cubed,frozen",
+                            "location": "measuring cup"
+                     },
+                     {
+                            "physical_state": "frozen,cubed",
+                            "location": "drinking glass"
+                     }
+              ],
+              "motion": [
+                     "pour",
+                     "sprinkle"
+              ],
+              "end_product": "dalgona coffee"
        }
 ]

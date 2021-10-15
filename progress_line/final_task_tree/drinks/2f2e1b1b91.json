@@ -1,133 +1,99 @@
 [
        {
               "ingredient": "artificial sweetener",
-              "state": {
-                     "generated": [
-                            {
-                                   "physical_state": "liquid",
-                                   "location": "bottle"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "blender cup"
-                            },
-                            {
-                                   "physical_state": "liquid",
-                                   "location": "dropper"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "blender cup"
-                            },
-                            {
-                                   "physical_state": "liquid",
-                                   "location": "blender cup"
-                            }
-                     ]
-              },
-              "motion": {
-                     "generated": [
-                            "squeeze",
-                            "cover",
-                            "drip",
-                            "attach",
-                            "blend"
-                     ]
-              },
-              "end_product": {
-                     "generated": "smoothie"
-              }
+              "state": [
+                     {
+                            "physical_state": "liquid",
+                            "location": "bottle"
+                     },
+                     {
+                            "physical_state": "",
+                            "location": "blender cup"
+                     },
+                     {
+                            "physical_state": "liquid",
+                            "location": "dropper"
+                     },
+                     {
+                            "physical_state": "liquid",
+                            "location": "blender cup"
+                     }
+              ],
+              "motion": [
+                     "squeeze",
+                     "cover",
+                     "drip",
+                     "blend"
+              ],
+              "end_product": "smoothie"
        },
        {
               "ingredient": "yogurt",
-              "state": {
-                     "generated": [
-                            {
-                                   "physical_state": "creamy",
-                                   "location": "measuring cup"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "blender cup"
-                            },
-                            {
-                                   "physical_state": "creamy",
-                                   "location": "container"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "blender cup"
-                            },
-                            {
-                                   "physical_state": "creamy",
-                                   "location": "measuring cup"
-                            }
-                     ]
-              },
-              "motion": {
-                     "generated": [
-                            "pour",
-                            "pour",
-                            "measure",
-                            "attach",
-                            "blend"
-                     ]
-              },
-              "end_product": {
-                     "generated": "smoothie"
-              }
+              "state": [
+                     {
+                            "physical_state": "creamy",
+                            "location": "measuring cup"
+                     },
+                     {
+                            "physical_state": "",
+                            "location": "blender cup"
+                     },
+                     {
+                            "physical_state": "creamy",
+                            "location": "container"
+                     },
+                     {
+                            "physical_state": "",
+                            "location": "blender cup"
+                     },
+                     {
+                            "physical_state": "creamy",
+                            "location": "measuring cup"
+                     }
+              ],
+              "motion": [
+                     "pour",
+                     "pour",
+                     "measure",
+                     "attach",
+                     "blend"
+              ],
+              "end_product": "smoothie"
        },
        {
               "ingredient": "milk",
-              "state": {
-                     "generated": [
-                            {
-                                   "physical_state": "",
-                                   "location": "blender cup"
-                            },
-                            {
-                                   "physical_state": "liquid",
-                                   "location": "carton"
-                            },
-                            {
-                                   "physical_state": "",
-                                   "location": "blender cup"
-                            },
-                            {
-                                   "physical_state": "liquid",
-                                   "location": "blender cup"
-                            }
-                     ]
-              },
-              "motion": {
-                     "generated": [
-                            "drip",
-                            "pour",
-                            "attach",
-                            "blend"
-                     ]
-              },
-              "end_product": {
-                     "generated": "smoothie"
-              }
+              "state": [
+                     {
+                            "physical_state": "",
+                            "location": "blender cup"
+                     },
+                     {
+                            "physical_state": "liquid",
+                            "location": "carton"
+                     },
+                     {
+                            "physical_state": "liquid",
+                            "location": "blender cup"
+                     }
+              ],
+              "motion": [
+                     "drip",
+                     "pour",
+                     "blend"
+              ],
+              "end_product": "smoothie"
        },
        {
               "ingredient": "protein shake",
-              "state": {
-                     "generated": [
-                            {
-                                   "physical_state": "blended",
-                                   "location": "blender cup"
-                            }
-                     ]
-              },
-              "motion": {
-                     "generated": [
-                            "pour"
-                     ]
-              },
-              "end_product": {
-                     "generated": null
-              }
+              "state": [
+                     {
+                            "physical_state": "blended",
+                            "location": "blender cup"
+                     }
+              ],
+              "motion": [
+                     "pour"
+              ],
+              "end_product": null
        }
 ]
