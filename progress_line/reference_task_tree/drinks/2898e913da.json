@@ -1,0 +1,281 @@
+[
+       {
+              "ingredient": "vodka",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "liquid",
+                                   "location": "bottle"
+                            },
+                            {
+                                   "physical_state": "liquid",
+                                   "location": "jigger"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "highball glass"
+                            },
+                            {
+                                   "physical_state": "liquid",
+                                   "location": "highball glass"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "highball glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "measure",
+                            "pour",
+                            "pour",
+                            "pour",
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": "cocktail"
+              }
+       },
+       {
+              "ingredient": "ice",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "cubed,frozen",
+                                   "location": "cup"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "highball glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": "cocktail"
+              }
+       },
+       {
+              "ingredient": "tomato juice",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "",
+                                   "location": "jar"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "highball glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": "cocktail"
+              }
+       },
+       {
+              "ingredient": "worcestershire sauce",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "thick liquid",
+                                   "location": "shot glass"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "highball glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": "cocktail"
+              }
+       },
+       {
+              "ingredient": "cocktail",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "liquid",
+                                   "location": "highball glass"
+                            },
+                            {
+                                   "physical_state": "mixed,liquid",
+                                   "location": "highball glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": null
+              }
+       },
+       {
+              "ingredient": "celery salt",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "shaker"
+                            },
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "cutting board"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "highball glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "sprinkle",
+                            "sprinkle",
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": "cocktail"
+              }
+       },
+       {
+              "ingredient": "tabasco sauce",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "thick liquid",
+                                   "location": "shot glass"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "highball glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": "cocktail"
+              }
+       },
+       {
+              "ingredient": "lemon",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "whole",
+                                   "location": "cutting board"
+                            },
+                            {
+                                   "physical_state": "halved",
+                                   "location": "cutting board"
+                            },
+                            {
+                                   "physical_state": "halved",
+                                   "location": "bowl"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "cut",
+                            "pick-and-place",
+                            "squeeze"
+                     ]
+              },
+              "end_product": {
+                     "generated": null
+              }
+       },
+       {
+              "ingredient": "black pepper",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "whole,peppercorn",
+                                   "location": "pepper mill"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "highball glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "grind",
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": "cocktail"
+              }
+       },
+       {
+              "ingredient": "celery",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "stem",
+                                   "location": "surface"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": "cocktail"
+              }
+       },
+       {
+              "ingredient": "lemon juice",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "",
+                                   "location": "highball glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": "cocktail"
+              }
+       }
+]

@@ -1,0 +1,99 @@
+[
+       {
+              "ingredient": "blueberries",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "whole",
+                                   "location": "bowl"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "washed,whole",
+                                   "location": "bowl"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "washed,whole",
+                                   "location": "blender cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "wash",
+                            "cover",
+                            "pour",
+                            "attach",
+                            "blend"
+                     ]
+              },
+              "end_product": {
+                     "generated": "smoothie"
+              }
+       },
+       {
+              "ingredient": "yogurt",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "creamy",
+                                   "location": "measuring cup"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "creamy",
+                                   "location": "container"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "creamy",
+                                   "location": "measuring cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "pour",
+                            "measure",
+                            "attach",
+                            "blend"
+                     ]
+              },
+              "end_product": {
+                     "generated": "smoothie"
+              }
+       },
+       {
+              "ingredient": "protein shake",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "blended",
+                                   "location": "blender cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": null
+              }
+       }
+]

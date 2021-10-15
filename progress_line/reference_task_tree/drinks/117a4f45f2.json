@@ -1,0 +1,245 @@
+[
+       {
+              "ingredient": "sweetener",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "liquid",
+                                   "location": "bottle"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "liquid",
+                                   "location": "dropper"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "liquid",
+                                   "location": "blender cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "squeeze",
+                            "cover",
+                            "drip",
+                            "attach",
+                            "blend"
+                     ]
+              },
+              "end_product": {
+                     "generated": "smoothie"
+              }
+       },
+       {
+              "ingredient": "whey powder",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "powder",
+                                   "location": "jar"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "powder",
+                                   "location": "measuring cup"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "powder",
+                                   "location": "blender cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "measure",
+                            "drip",
+                            "pour",
+                            "attach",
+                            "blend"
+                     ]
+              },
+              "end_product": {
+                     "generated": "smoothie"
+              }
+       },
+       {
+              "ingredient": "strawberry",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "whole",
+                                   "location": "bowl"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "washed,whole",
+                                   "location": "bowl"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "washed,whole",
+                                   "location": "blender cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "wash",
+                            "pour",
+                            "pour",
+                            "attach",
+                            "blend"
+                     ]
+              },
+              "end_product": {
+                     "generated": "smoothie"
+              }
+       },
+       {
+              "ingredient": "yogurt",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "creamy",
+                                   "location": "measuring cup"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "creamy",
+                                   "location": "container"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "creamy",
+                                   "location": "measuring cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "pour",
+                            "measure",
+                            "attach",
+                            "blend"
+                     ]
+              },
+              "end_product": {
+                     "generated": "smoothie"
+              }
+       },
+       {
+              "ingredient": "flaxseed",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "ground,powder",
+                                   "location": "packet"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "ground,powder",
+                                   "location": "blender cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "pour",
+                            "attach",
+                            "blend"
+                     ]
+              },
+              "end_product": {
+                     "generated": "smoothie"
+              }
+       },
+       {
+              "ingredient": "milk",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "liquid",
+                                   "location": "carton"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "liquid",
+                                   "location": "blender cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "pour",
+                            "attach",
+                            "blend"
+                     ]
+              },
+              "end_product": {
+                     "generated": "smoothie"
+              }
+       },
+       {
+              "ingredient": "protein shake",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "blended",
+                                   "location": "blender cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": null
+              }
+       }
+]

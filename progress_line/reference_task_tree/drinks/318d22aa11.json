@@ -1,0 +1,254 @@
+[
+       {
+              "ingredient": "watermelon",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "whole",
+                                   "location": []
+                            },
+                            {
+                                   "physical_state": "halved",
+                                   "location": "cutting board"
+                            },
+                            {
+                                   "physical_state": "chopped",
+                                   "location": "bowl"
+                            },
+                            {
+                                   "physical_state": "chopped",
+                                   "location": "food processor bowl"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "food processor bowl"
+                            },
+                            {
+                                   "physical_state": "chopped",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "juice",
+                                   "location": "food processor bowl"
+                            },
+                            {
+                                   "physical_state": "juice",
+                                   "location": "strainer"
+                            },
+                            {
+                                   "physical_state": "juice,sifted",
+                                   "location": "measuring cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "slice",
+                            "scoop and pour",
+                            "pick-and-place",
+                            "cover",
+                            "attach",
+                            "blend",
+                            "pour",
+                            "stir and strain",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": null
+              }
+       },
+       {
+              "ingredient": "watermelon juice",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "",
+                                   "location": "food processor bowl"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "strainer"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "measuring cup"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "stir and strain",
+                            "pour",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": "watermelon lemonade"
+              }
+       },
+       {
+              "ingredient": "lemon",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "whole",
+                                   "location": "cutting board"
+                            },
+                            {
+                                   "physical_state": "halved",
+                                   "location": "cutting board"
+                            },
+                            {
+                                   "physical_state": "halved",
+                                   "location": "squeezer"
+                            },
+                            {
+                                   "physical_state": "juice",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "cut",
+                            "insert",
+                            "squeeze",
+                            "stir"
+                     ]
+              },
+              "end_product": {
+                     "generated": "lemon juice"
+              }
+       },
+       {
+              "ingredient": "lemon juice",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "",
+                                   "location": "measuring cup"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": "watermelon lemonade"
+              }
+       },
+       {
+              "ingredient": "sugar",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "container"
+                            },
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "pitcher"
+                            },
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "bowl"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "stir",
+                            "pour",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": "watermelon lemonade"
+              }
+       },
+       {
+              "ingredient": "water",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "",
+                                   "location": "measuring cup"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": "watermelon lemonade"
+              }
+       },
+       {
+              "ingredient": "ice",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "frozen,crushed",
+                                   "location": "bowl"
+                            },
+                            {
+                                   "physical_state": "crushed,frozen",
+                                   "location": "drinking glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pick-and-place",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": "watermelon lemonade"
+              }
+       },
+       {
+              "ingredient": "lemonade",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "mixed,liquid",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": null
+              }
+       }
+]

@@ -1,0 +1,127 @@
+[
+       {
+              "ingredient": "juice",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "",
+                                   "location": "measuring cup"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": "watermelon lemonade"
+              }
+       },
+       {
+              "ingredient": "sugar",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "container"
+                            },
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "pitcher"
+                            },
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "bowl"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "stir",
+                            "pour",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": "watermelon lemonade"
+              }
+       },
+       {
+              "ingredient": "water",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "",
+                                   "location": "measuring cup"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": "watermelon lemonade"
+              }
+       },
+       {
+              "ingredient": "ice",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "frozen,crushed",
+                                   "location": "bowl"
+                            },
+                            {
+                                   "physical_state": "crushed,frozen",
+                                   "location": "drinking glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pick-and-place",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": "watermelon lemonade"
+              }
+       },
+       {
+              "ingredient": "lemonade",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "mixed,liquid",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": null
+              }
+       }
+]

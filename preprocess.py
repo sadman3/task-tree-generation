@@ -109,7 +109,8 @@ def get_FU_list(filepath):
 
             # len = 3 for goal node
             new_object = Object(label[1])
-            new_object.object_in_motion = label[2]
+            if len(label) > 2:
+                new_object.object_in_motion = label[2]
             if len(label) > 3:
                 new_object.recipe_category = label[3].rstrip()
 

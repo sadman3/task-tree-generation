@@ -1,0 +1,132 @@
+[
+       {
+              "ingredient": "sugar",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "container"
+                            },
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "spoon"
+                            },
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "pitcher"
+                            },
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "bowl"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "scoop",
+                            "pour",
+                            "stir",
+                            "pour",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": "watermelon lemonade"
+              }
+       },
+       {
+              "ingredient": "tofu",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "",
+                                   "location": "bottle"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "bowl"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": null
+              }
+       },
+       {
+              "ingredient": "ginger",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "",
+                                   "location": "measuring cup"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": "watermelon lemonade"
+              }
+       },
+       {
+              "ingredient": "water",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "",
+                                   "location": "measuring cup"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour",
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": "watermelon lemonade"
+              }
+       },
+       {
+              "ingredient": "lemonade",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "mixed,liquid",
+                                   "location": "pitcher"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": null
+              }
+       }
+]

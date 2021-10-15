@@ -94,6 +94,23 @@ class FunctionalUnit:
         str += "//"
         return str
 
+    def get_FU_as_json(self):
+        fu_json = {
+            "input_nodes": [],
+            "motion_node": None,
+            "output_nodes": []
+        }
+
+        for node in self.input_nodes:
+            fu_json['input_nodes'].append(node.get_object_as_json())
+
+        fu_json['motion_node'] = self.motion_node
+
+        for node in self.output_nodes:
+            fu_json['output_nodes'].append(node.get_object_as_json())
+
+        return fu_json
+
     def print(self):
         print(self.get_FU_as_text())
 

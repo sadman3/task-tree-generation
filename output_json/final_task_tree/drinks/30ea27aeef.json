@@ -1,0 +1,378 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "squeezer"
+            }
+        ],
+        "motion_node": "squeeze",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "juice",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            }
+        ],
+        "motion_node": "fill",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "faucet"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "juice",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": "measuring cup"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pitcher",
+                "states": [],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pitcher",
+                "states": [],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pitcher",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "pitcher"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pitcher",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "water",
+                    "juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pitcher"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "pitcher"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "lemonade",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "juice",
+                    "water",
+                    "watermelon juice",
+                    "sugar"
+                ],
+                "container": "pitcher"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pitcher",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pitcher",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "water",
+                    "juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pitcher"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pitcher",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "water",
+                    "juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemonade",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "juice",
+                    "water",
+                    "watermelon juice",
+                    "sugar"
+                ],
+                "container": "pitcher"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "lemonade"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemonade",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "ice",
+                    "juice",
+                    "water",
+                    "watermelon juice",
+                    "sugar"
+                ],
+                "container": "drinking glass"
+            },
+            {
+                "label": "watermelon lemonade",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "water",
+                    "juice"
+                ],
+                "container": "drinking glass"
+            }
+        ]
+    }
+]

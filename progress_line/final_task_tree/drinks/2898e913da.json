@@ -1,0 +1,93 @@
+[
+       {
+              "ingredient": "parsley",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "shaker"
+                            },
+                            {
+                                   "physical_state": "granulated",
+                                   "location": "cutting board"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "highball glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "sprinkle",
+                            "sprinkle",
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": "cocktail"
+              }
+       },
+       {
+              "ingredient": "cocktail",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "mixed,liquid",
+                                   "location": "highball glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": null
+              }
+       },
+       {
+              "ingredient": "black pepper",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "whole,peppercorn",
+                                   "location": "pepper mill"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "highball glass"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "grind",
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": "cocktail"
+              }
+       },
+       {
+              "ingredient": "spinach",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "stem",
+                                   "location": "surface"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "insert"
+                     ]
+              },
+              "end_product": {
+                     "generated": "cocktail"
+              }
+       }
+]

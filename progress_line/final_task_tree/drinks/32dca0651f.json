@@ -1,0 +1,94 @@
+[
+       {
+              "ingredient": "raspberries",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "whole",
+                                   "location": "bowl"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "washed,whole",
+                                   "location": "bowl"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "washed,whole",
+                                   "location": "blender cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "wash",
+                            "pour",
+                            "pour",
+                            "attach",
+                            "blend"
+                     ]
+              },
+              "end_product": {
+                     "generated": "smoothie"
+              }
+       },
+       {
+              "ingredient": "milk",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "liquid",
+                                   "location": "carton"
+                            },
+                            {
+                                   "physical_state": "",
+                                   "location": "blender cup"
+                            },
+                            {
+                                   "physical_state": "liquid",
+                                   "location": "blender cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "cover",
+                            "pour",
+                            "attach",
+                            "blend"
+                     ]
+              },
+              "end_product": {
+                     "generated": "smoothie"
+              }
+       },
+       {
+              "ingredient": "protein shake",
+              "state": {
+                     "generated": [
+                            {
+                                   "physical_state": "blended",
+                                   "location": "blender cup"
+                            }
+                     ]
+              },
+              "motion": {
+                     "generated": [
+                            "pour"
+                     ]
+              },
+              "end_product": {
+                     "generated": null
+              }
+       }
+]

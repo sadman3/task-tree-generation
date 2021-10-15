@@ -1,0 +1,251 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "parsley",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "parsley",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "parsley",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "parsley",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "pepper mill",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "whole",
+                    "peppercorn"
+                ],
+                "ingredients": [],
+                "container": "pepper mill"
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "parsley",
+                    "black pepper"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "parsley",
+                    "black pepper"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "parsley",
+                    "black pepper"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "parsley",
+                    "black pepper"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "spinach",
+                "states": [
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "insert",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "parsley",
+                    "spinach",
+                    "black pepper"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "bloody mary",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "parsley",
+                    "spinach",
+                    "black pepper"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "parsley",
+                    "spinach",
+                    "black pepper"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "spinach",
+                "states": [
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    }
+]
