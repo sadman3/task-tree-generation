@@ -1,1 +1,717 @@
-{}
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "microwave",
+                "states": [
+                    "empty (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": "microwave"
+            },
+            {
+                "label": "microwave",
+                "states": [],
+                "ingredients": [
+                    "bowl"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": "microwave"
+            },
+            {
+                "label": "microwave",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "microwave",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "microwave",
+                "states": [
+                    "empty",
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soybean"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soybean"
+                ],
+                "container": "microwave"
+            },
+            {
+                "label": "microwave",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "bowl"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "sesame oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "sesame oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "mozzarella"
+                ],
+                "container": null
+            },
+            {
+                "label": "mozzarella",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "mozzarella"
+                ],
+                "container": null
+            },
+            {
+                "label": "mozzarella",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "microwave",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "bowl"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soybean"
+                ],
+                "container": "microwave"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soybean"
+                ],
+                "container": null
+            },
+            {
+                "label": "microwave",
+                "states": [
+                    "empty",
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mozzarella",
+                    "soybean"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "sesame oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mozzarella",
+                    "sesame oil",
+                    "soybean"
+                ],
+                "container": null
+            },
+            {
+                "label": "sesame oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soybean"
+                ],
+                "container": null
+            },
+            {
+                "label": "mozzarella",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mozzarella"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mozzarella",
+                    "soybean"
+                ],
+                "container": null
+            },
+            {
+                "label": "mozzarella",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mozzarella",
+                    "sesame oil",
+                    "soybean"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mozzarella",
+                    "sesame oil",
+                    "soy sauce",
+                    "soybean"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mozzarella",
+                    "salt",
+                    "sesame oil",
+                    "soy sauce",
+                    "soybean"
+                ],
+                "container": null
+            },
+            {
+                "label": "soybean",
+                "states": [
+                    "deshelled",
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mozzarella",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "edamame-mozzarella salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "mozzarella",
+                    "salt",
+                    "sesame oil",
+                    "soy sauce",
+                    "soybean"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mozzarella",
+                    "sesame oil",
+                    "soy sauce",
+                    "soybean"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mozzarella",
+                    "salt",
+                    "sesame oil",
+                    "soy sauce",
+                    "soybean"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mozzarella",
+                    "salt",
+                    "sesame oil",
+                    "soy sauce",
+                    "soybean"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sesame seed"
+                ],
+                "container": null
+            },
+            {
+                "label": "sesame seed",
+                "states": [
+                    "seed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "edamame-mozzarella salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "mozzarella",
+                    "salt",
+                    "sesame oil",
+                    "soy sauce",
+                    "soybean"
+                ],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mozzarella",
+                    "salt",
+                    "sesame oil",
+                    "sesame seeds",
+                    "soy sauce",
+                    "soybean"
+                ],
+                "container": null
+            },
+            {
+                "label": "edamame-mozzarella salad",
+                "states": [
+                    "mixed",
+                    "ready"
+                ],
+                "ingredients": [
+                    "mozzarella",
+                    "salt",
+                    "sesame oil",
+                    "sesame seed",
+                    "soy sauce",
+                    "soybean"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "sesame seed",
+                "states": [
+                    "seed"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            }
+        ]
+    }
+]

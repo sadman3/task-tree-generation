@@ -373,9 +373,9 @@
                 "label": "pitcher",
                 "states": [],
                 "ingredients": [
+                    "juice",
                     "water",
-                    "pineapple",
-                    "juice"
+                    "pineapple"
                 ],
                 "container": null
             },
@@ -395,10 +395,10 @@
                 "label": "pitcher",
                 "states": [],
                 "ingredients": [
+                    "juice",
                     "sugar",
                     "water",
-                    "pineapple",
-                    "juice"
+                    "pineapple"
                 ],
                 "container": null
             },
@@ -436,10 +436,10 @@
                     "liquid"
                 ],
                 "ingredients": [
-                    "sugar",
+                    "juice",
                     "water",
-                    "pineapple",
-                    "juice"
+                    "sugar",
+                    "pineapple"
                 ],
                 "container": "pitcher"
             }
@@ -451,9 +451,9 @@
                 "label": "pitcher",
                 "states": [],
                 "ingredients": [
+                    "juice",
                     "water",
-                    "pineapple",
-                    "juice"
+                    "pineapple"
                 ],
                 "container": null
             },
@@ -480,10 +480,10 @@
                 "label": "pitcher",
                 "states": [],
                 "ingredients": [
+                    "juice",
                     "sugar",
                     "water",
-                    "pineapple",
-                    "juice"
+                    "pineapple"
                 ],
                 "container": null
             },
@@ -503,10 +503,10 @@
                 "label": "pitcher",
                 "states": [],
                 "ingredients": [
+                    "juice",
                     "sugar",
                     "water",
-                    "pineapple",
-                    "juice"
+                    "pineapple"
                 ],
                 "container": null
             },
@@ -517,10 +517,10 @@
                     "liquid"
                 ],
                 "ingredients": [
-                    "sugar",
+                    "juice",
                     "water",
-                    "pineapple",
-                    "juice"
+                    "sugar",
+                    "pineapple"
                 ],
                 "container": "pitcher"
             }
@@ -534,10 +534,10 @@
                     "liquid"
                 ],
                 "ingredients": [
-                    "sugar",
+                    "juice",
                     "water",
-                    "pineapple",
-                    "juice"
+                    "sugar",
+                    "pineapple"
                 ],
                 "container": "drinking glass"
             },
@@ -548,10 +548,10 @@
                     "liquid"
                 ],
                 "ingredients": [
-                    "sugar",
+                    "juice",
                     "water",
-                    "pineapple",
-                    "juice"
+                    "sugar",
+                    "pineapple"
                 ],
                 "container": "drinking glass"
             }

@@ -1,1 +1,1107 @@
-{}
+[
+    {
+        "input_nodes": [
+            {
+                "label": "pepper mill",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "peppercorn"
+                ],
+                "ingredients": [],
+                "container": "pepper mill"
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "clove"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carton",
+                "states": [],
+                "ingredients": [
+                    "broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "carton"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "ginger"
+                ],
+                "container": null
+            },
+            {
+                "label": "ginger",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "ginger"
+                ],
+                "container": null
+            },
+            {
+                "label": "ginger",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "onion"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "ginger",
+                    "sugar",
+                    "onion"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "ginger",
+                    "sugar",
+                    "onion"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "ginger",
+                    "sugar",
+                    "onion"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "ginger"
+                ],
+                "container": null
+            },
+            {
+                "label": "ginger",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "ginger",
+                    "sugar",
+                    "onion"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "ginger",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "onion"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "onion"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender cover",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "blender cover"
+            },
+            {
+                "label": "blender cover",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "blender cover"
+            },
+            {
+                "label": "blender cover",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "uncover",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender cover",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "blender cover"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "ginger",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "mixture",
+                "states": [
+                    "thick liquid",
+                    "blended"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "blender"
+            }
+        ],
+        "motion_node": "detach",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "mixture",
+                "states": [
+                    "thick liquid",
+                    "blended"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "blender jar"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "soup",
+                "states": [
+                    "thick liquid",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "soup",
+                "states": [
+                    "thick liquid",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "soup",
+                "states": [
+                    "thick liquid",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "soup",
+                "states": [
+                    "thick liquid",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "onion",
+                    "salt",
+                    "ginger",
+                    "broth"
+                ],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "simmer",
+        "output_nodes": [
+            {
+                "label": "potatoes",
+                "states": [
+                    "thick liquid",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "broth",
+                    "ginger",
+                    "onion",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "potatoes",
+                "states": [
+                    "thick liquid",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "broth",
+                    "ginger",
+                    "onion",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "ladle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "potatoes",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "broth",
+                    "ginger",
+                    "onion",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "bowl"
+            }
+        ]
+    }
+]

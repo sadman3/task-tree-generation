@@ -231,8 +231,8 @@
                 "label": "bowl",
                 "states": [],
                 "ingredients": [
-                    "sugar",
-                    "tofu"
+                    "tofu",
+                    "sugar"
                 ],
                 "container": null
             },
@@ -279,8 +279,8 @@
                 "label": "pitcher",
                 "states": [],
                 "ingredients": [
-                    "ginger",
-                    "water"
+                    "water",
+                    "ginger"
                 ],
                 "container": null
             },
@@ -300,8 +300,8 @@
                 "label": "pitcher",
                 "states": [],
                 "ingredients": [
-                    "ginger",
                     "sugar",
+                    "ginger",
                     "water"
                 ],
                 "container": null
@@ -340,9 +340,9 @@
                     "liquid"
                 ],
                 "ingredients": [
+                    "water",
                     "ginger",
-                    "sugar",
-                    "water"
+                    "sugar"
                 ],
                 "container": "pitcher"
             }
@@ -354,8 +354,8 @@
                 "label": "pitcher",
                 "states": [],
                 "ingredients": [
-                    "ginger",
-                    "water"
+                    "water",
+                    "ginger"
                 ],
                 "container": null
             },
@@ -382,8 +382,8 @@
                 "label": "pitcher",
                 "states": [],
                 "ingredients": [
-                    "ginger",
                     "sugar",
+                    "ginger",
                     "water"
                 ],
                 "container": null
@@ -404,8 +404,8 @@
                 "label": "pitcher",
                 "states": [],
                 "ingredients": [
-                    "ginger",
                     "sugar",
+                    "ginger",
                     "water"
                 ],
                 "container": null
@@ -417,9 +417,9 @@
                     "liquid"
                 ],
                 "ingredients": [
+                    "water",
                     "ginger",
-                    "sugar",
-                    "water"
+                    "sugar"
                 ],
                 "container": "pitcher"
             }
@@ -433,9 +433,9 @@
                     "liquid"
                 ],
                 "ingredients": [
+                    "water",
                     "ginger",
-                    "sugar",
-                    "water"
+                    "sugar"
                 ],
                 "container": "drinking glass"
             },
@@ -446,9 +446,9 @@
                     "liquid"
                 ],
                 "ingredients": [
+                    "water",
                     "ginger",
-                    "sugar",
-                    "water"
+                    "sugar"
                 ],
                 "container": "drinking glass"
             }

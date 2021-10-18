@@ -1,1 +1,209 @@
-{}
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "oil",
+                    "onion",
+                    "salt",
+                    "tomatoes",
+                    "pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "oil",
+                    "onion",
+                    "salt",
+                    "tomatoes",
+                    "pepper"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "oil",
+                    "onion",
+                    "salt",
+                    "tomatoes",
+                    "pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "black bean",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "salt",
+                    "tomatoes",
+                    "pepper"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "water",
+                    "oil",
+                    "onion",
+                    "salt",
+                    "tomatoes",
+                    "pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "water",
+                    "oil",
+                    "onion",
+                    "salt",
+                    "tomatoes",
+                    "pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "black bean",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "salt",
+                    "tomatoes",
+                    "pepper"
+                ],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "black bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "salt",
+                    "tomatoes",
+                    "pepper"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "black bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "salt",
+                    "tomatoes",
+                    "pepper"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "ladle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "black bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "salt",
+                    "tomatoes",
+                    "pepper"
+                ],
+                "container": "bowl"
+            }
+        ]
+    }
+]

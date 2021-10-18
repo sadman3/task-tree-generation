@@ -1,1 +1,922 @@
-{}
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "uncover",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "juice",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "juice",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": "blender lid"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "juice"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "juice",
+                    "olive oil"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "mayonnaise",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "juice",
+                    "mayonnaise",
+                    "olive oil"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "mayonnaise",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": "blender lid"
+            },
+            {
+                "label": "juice",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "mixture",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "juice",
+                    "mayonnaise",
+                    "olive oil"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "juice",
+                    "mayonnaise",
+                    "olive oil"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender"
+            },
+            {
+                "label": "blender jar",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "juice",
+                    "mayonnaise",
+                    "olive oil"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "mixture",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "juice"
+                ],
+                "container": "blender jar"
+            },
+            {
+                "label": "mayonnaise",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "french dressing"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "french dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "anchovy",
+                    "egg yolk",
+                    "garlic",
+                    "juice",
+                    "mayonnaise",
+                    "olive oil",
+                    "worcestershire sauce"
+                ],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "colander",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "tear apart",
+        "output_nodes": [
+            {
+                "label": "colander",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "colander"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "french dressing"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "french dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "anchovy",
+                    "egg yolk",
+                    "garlic",
+                    "juice",
+                    "mayonnaise",
+                    "olive oil",
+                    "worcestershire sauce"
+                ],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "french dressing"
+                ],
+                "container": null
+            },
+            {
+                "label": "french dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "anchovy",
+                    "egg yolk",
+                    "garlic",
+                    "juice",
+                    "mayonnaise",
+                    "olive oil",
+                    "worcestershire sauce"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "colander",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "colander"
+            },
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            }
+        ],
+        "motion_node": "rinse",
+        "output_nodes": [
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "colander"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "fridge",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "french dressing"
+                ],
+                "container": "saran wrap"
+            },
+            {
+                "label": "french dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "anchovy",
+                    "egg yolk",
+                    "garlic",
+                    "juice",
+                    "mayonnaise",
+                    "olive oil",
+                    "worcestershire sauce"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "chill",
+        "output_nodes": [
+            {
+                "label": "french dressing",
+                "states": [
+                    "creamy",
+                    "chilled",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "anchovy",
+                    "egg yolk",
+                    "garlic",
+                    "juice",
+                    "mayonnaise",
+                    "olive oil",
+                    "worcestershire sauce"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "colander",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "colander"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "colander",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "french dressing"
+                ],
+                "container": null
+            },
+            {
+                "label": "french dressing",
+                "states": [
+                    "creamy",
+                    "chilled",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "anchovy",
+                    "egg yolk",
+                    "garlic",
+                    "juice",
+                    "mayonnaise",
+                    "olive oil",
+                    "worcestershire sauce"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "lettuce",
+                    "french dressing"
+                ],
+                "container": null
+            },
+            {
+                "label": "french dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "anchovy",
+                    "egg yolk",
+                    "garlic",
+                    "juice",
+                    "mayonnaise",
+                    "olive oil",
+                    "worcestershire sauce"
+                ],
+                "container": "salad bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "lettuce",
+                    "french dressing"
+                ],
+                "container": null
+            },
+            {
+                "label": "french dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "anchovy",
+                    "egg yolk",
+                    "garlic",
+                    "juice",
+                    "mayonnaise",
+                    "olive oil",
+                    "worcestershire sauce"
+                ],
+                "container": "salad bowl"
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix*",
+        "output_nodes": [
+            {
+                "label": "caesar salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "juice",
+                    "olive oil",
+                    "lettuce",
+                    "mayonnaise"
+                ],
+                "container": "salad bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "lettuce",
+                    "french dressing"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "pepper",
+                    "lettuce",
+                    "french dressing"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "pepper",
+                    "lettuce",
+                    "french dressing"
+                ],
+                "container": null
+            },
+            {
+                "label": "caesar salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "juice",
+                    "olive oil",
+                    "lettuce",
+                    "mayonnaise"
+                ],
+                "container": "salad bowl"
+            },
+            {
+                "label": "pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "caesar salad",
+                "states": [
+                    "mixed",
+                    "ready"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "mayonnaise",
+                    "lettuce",
+                    "pepper",
+                    "juice"
+                ],
+                "container": "bowl"
+            }
+        ]
+    }
+]

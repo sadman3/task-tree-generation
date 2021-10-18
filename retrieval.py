@@ -479,10 +479,10 @@ if __name__ == "__main__":
     # selected_catagory = ['salad', 'drinks', 'omelette',
     #                      'cake', 'soup', 'bread', 'noodle', 'rice']
 
-    selected_catagory = ['salad', 'omelette', 'rice', 'soup', 'drinks']
-    #selected_catagory = ['salad']
+    selected_category = ['salad', 'omelette', 'rice', 'soup', 'drinks']
+    #selected_category = ['salad']
 
-    for category in selected_catagory:
+    for category in selected_category:
         input_dir = 'input/' + category
         for input_file in os.listdir(input_dir):
             input_file = os.path.join(input_dir, input_file)

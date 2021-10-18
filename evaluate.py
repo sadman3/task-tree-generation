@@ -9,7 +9,7 @@ with open('info/utensils.txt', 'r') as f:
 
 ignored_objects = ['water']
 
-selected_category = ['test']
+selected_category = ['salad', 'omelette', 'rice', 'soup', 'drinks']
 
 
 def get_FU_list(filepath):
@@ -293,18 +293,20 @@ def save_progress_line(source_path, target_path):
 
 if __name__ == '__main__':
 
-    source_dir = 'output_json'
-    target_dir = 'progress_line'
+    convert_to_json('output', 'output_json')
 
-    for currentpath, folders, files in os.walk(source_dir):
-        temp = currentpath.split('/')[-1]
-        if temp not in selected_category:
-            continue
-        subdir = currentpath.replace(source_dir, target_dir)
-        if not os.path.exists(subdir):
-            os.makedirs(subdir)
-        for file in files:
-            source_path = os.path.join(currentpath, file)
+    # source_dir = 'output_json'
+    # target_dir = 'progress_line'
 
-            target_path = source_path.replace(source_dir, target_dir)
-            save_progress_line(source_path, target_path)
+    # for currentpath, folders, files in os.walk(source_dir):
+    #     temp = currentpath.split('/')[-1]
+    #     if temp not in selected_category:
+    #         continue
+    #     subdir = currentpath.replace(source_dir, target_dir)
+    #     if not os.path.exists(subdir):
+    #         os.makedirs(subdir)
+    #     for file in files:
+    #         source_path = os.path.join(currentpath, file)
+
+    #         target_path = source_path.replace(source_dir, target_dir)
+    #         save_progress_line(source_path, target_path)
