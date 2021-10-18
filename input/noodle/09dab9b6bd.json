@@ -3,7 +3,7 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "processed_raw"
               },
               {
@@ -43,7 +43,7 @@
                      "state": "sliced"
               },
               {
-                     "object": "peas",
+                     "object": "pea",
                      "state": "berries"
               },
               {
@@ -51,7 +51,7 @@
                      "state": "whole_veg"
               },
               {
-                     "object": "peanuts",
+                     "object": "peanut",
                      "state": "thick_sauce"
               },
               {

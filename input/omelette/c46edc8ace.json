@@ -3,7 +3,7 @@
        "type": "omelette",
        "ingredients": [
               {
-                     "object": "potatoes",
+                     "object": "potato",
                      "state": "baked"
               },
               {
@@ -27,7 +27,7 @@
                      "state": "whole_raw"
               },
               {
-                     "object": "tortillas",
+                     "object": "tortilla",
                      "state": "whole_veg"
               },
               {
@@ -55,7 +55,7 @@
                      "state": "grated"
               },
               {
-                     "object": "ribs",
+                     "object": "rib",
                      "state": "halved"
               },
               {
@@ -87,11 +87,11 @@
                      "state": "whole_veg"
               },
               {
-                     "object": "tomatoes",
+                     "object": "tomato",
                      "state": "whole_veg"
               },
               {
-                     "object": "tomatoes",
+                     "object": "tomato",
                      "state": "sauce"
               }
        ]

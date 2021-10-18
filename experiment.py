@@ -2,6 +2,7 @@ import pickle
 import json
 from configparser import ConfigParser
 import os
+import utils
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -60,7 +61,7 @@ def prepare_input(path='recipe1m_merged.pkl'):
                         if ing != '<pad>' and state != '<pad>':
                             _input['ingredients'].append(
                                 {
-                                    "object": ing,
+                                    "object": utils.get_singular_form(ing),
                                     "state": state
                                 }
                             )
@@ -130,6 +131,6 @@ if __name__ == "__main__":
     # for x in kitchen:
     #     if len(x["ingredients"]) > 1:
     #         print(x)
-    # prepare_input()
+    prepare_input()
 
-    run_full_pipeline()
+    # run_full_pipeline()

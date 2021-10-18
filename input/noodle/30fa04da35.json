@@ -3,7 +3,7 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "baked"
               },
               {
@@ -19,7 +19,7 @@
                      "state": "sliced"
               },
               {
-                     "object": "nuts",
+                     "object": "nut",
                      "state": "baked"
               },
               {
@@ -63,7 +63,7 @@
                      "state": "leaves"
               },
               {
-                     "object": "olives",
+                     "object": "olive",
                      "state": "berries"
               }
        ]

@@ -3,11 +3,11 @@
        "type": "salad",
        "ingredients": [
               {
-                     "object": "scallops",
+                     "object": "scallop",
                      "state": "halved"
               },
               {
-                     "object": "mussels",
+                     "object": "mussel",
                      "state": "small_meat"
               },
               {
@@ -35,7 +35,7 @@
                      "state": "chopped"
               },
               {
-                     "object": "prawns",
+                     "object": "prawn",
                      "state": "baked"
               },
               {
@@ -47,7 +47,7 @@
                      "state": "sliced"
               },
               {
-                     "object": "tomatoes",
+                     "object": "tomato",
                      "state": "halved"
               },
               {
@@ -63,7 +63,7 @@
                      "state": "ground"
               },
               {
-                     "object": "greens",
+                     "object": "green",
                      "state": "leaves"
               }
        ]

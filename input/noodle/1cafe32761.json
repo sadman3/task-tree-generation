@@ -3,7 +3,7 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "sticks",
+                     "object": "stick",
                      "state": "baked"
               },
               {
@@ -43,11 +43,11 @@
                      "state": "sliced"
               },
               {
-                     "object": "peas",
+                     "object": "pea",
                      "state": "steaks"
               },
               {
-                     "object": "mushrooms",
+                     "object": "mushroom",
                      "state": "sliced"
               },
               {
@@ -55,7 +55,7 @@
                      "state": "chopped"
               },
               {
-                     "object": "seeds",
+                     "object": "seed",
                      "state": "grain"
               }
        ]

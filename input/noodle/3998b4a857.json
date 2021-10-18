@@ -3,7 +3,7 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "baked"
               },
               {
@@ -27,7 +27,7 @@
                      "state": "creamy"
               },
               {
-                     "object": "mushrooms",
+                     "object": "mushroom",
                      "state": "sliced"
               },
               {
@@ -43,7 +43,7 @@
                      "state": "ground"
               },
               {
-                     "object": "breadcrumbs",
+                     "object": "breadcrumb",
                      "state": "crumbs"
               }
        ]

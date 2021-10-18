@@ -3,7 +3,7 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "processed_raw"
               },
               {
@@ -15,11 +15,11 @@
                      "state": "sliced"
               },
               {
-                     "object": "vegetables",
+                     "object": "vegetable",
                      "state": "sliced"
               },
               {
-                     "object": "greens",
+                     "object": "green",
                      "state": "leaves"
               },
               {
@@ -39,7 +39,7 @@
                      "state": "juice"
               },
               {
-                     "object": "seeds",
+                     "object": "seed",
                      "state": "grain"
               }
        ]

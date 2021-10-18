@@ -3,7 +3,7 @@
        "type": "drinks",
        "ingredients": [
               {
-                     "object": "seeds",
+                     "object": "seed",
                      "state": "grain"
               },
               {
@@ -11,15 +11,15 @@
                      "state": "juice"
               },
               {
-                     "object": "strawberries",
+                     "object": "strawberry",
                      "state": "thawed"
               },
               {
-                     "object": "blackberries",
+                     "object": "blackberry",
                      "state": "thawed"
               },
               {
-                     "object": "raspberries",
+                     "object": "raspberry",
                      "state": "thawed"
               },
               {

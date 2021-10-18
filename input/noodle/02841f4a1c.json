@@ -3,7 +3,7 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "uncooked"
               },
               {
@@ -35,7 +35,7 @@
                      "state": "sauce"
               },
               {
-                     "object": "breadcrumbs",
+                     "object": "breadcrumb",
                      "state": "crumbs"
               },
               {

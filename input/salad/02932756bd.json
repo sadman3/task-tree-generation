@@ -3,11 +3,11 @@
        "type": "salad",
        "ingredients": [
               {
-                     "object": "shallots",
+                     "object": "shallot",
                      "state": "sliced"
               },
               {
-                     "object": "raisins",
+                     "object": "raisin",
                      "state": "dried"
               },
               {
@@ -63,7 +63,7 @@
                      "state": "sliced"
               },
               {
-                     "object": "nuts",
+                     "object": "nut",
                      "state": "baked"
               }
        ]

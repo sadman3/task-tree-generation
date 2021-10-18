@@ -3,7 +3,7 @@
        "type": "rice",
        "ingredients": [
               {
-                     "object": "steaks",
+                     "object": "steak",
                      "state": "steaks"
               },
               {
@@ -11,7 +11,7 @@
                      "state": "juice"
               },
               {
-                     "object": "tomatoes",
+                     "object": "tomato",
                      "state": "thick_sauce"
               },
               {
@@ -27,7 +27,7 @@
                      "state": "juice"
               },
               {
-                     "object": "olives",
+                     "object": "olive",
                      "state": "sliced"
               },
               {
@@ -39,11 +39,11 @@
                      "state": "minced"
               },
               {
-                     "object": "bay leaves",
+                     "object": "bay leaf",
                      "state": "leaves"
               },
               {
-                     "object": "raisins",
+                     "object": "raisin",
                      "state": "dried"
               },
               {

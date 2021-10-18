@@ -3,7 +3,7 @@
        "type": "salad",
        "ingredients": [
               {
-                     "object": "potatoes",
+                     "object": "potato",
                      "state": "whole_veg"
               },
               {
@@ -31,7 +31,7 @@
                      "state": "ground"
               },
               {
-                     "object": "seeds",
+                     "object": "seed",
                      "state": "whole_veg"
               }
        ]

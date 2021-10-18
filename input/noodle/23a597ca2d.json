@@ -3,7 +3,7 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "processed_raw"
               },
               {
@@ -11,7 +11,7 @@
                      "state": "whole_veg"
               },
               {
-                     "object": "sticks",
+                     "object": "stick",
                      "state": "small_meat"
               },
               {
@@ -39,7 +39,7 @@
                      "state": "ground"
               },
               {
-                     "object": "seeds",
+                     "object": "seed",
                      "state": "grain"
               }
        ]

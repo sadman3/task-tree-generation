@@ -3,7 +3,7 @@
        "type": "bread",
        "ingredients": [
               {
-                     "object": "biscuits",
+                     "object": "biscuit",
                      "state": "baked"
               },
               {
@@ -19,7 +19,7 @@
                      "state": "creamy"
               },
               {
-                     "object": "pecans",
+                     "object": "pecan",
                      "state": "chopped"
               }
        ]

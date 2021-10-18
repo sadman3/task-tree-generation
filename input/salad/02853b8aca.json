@@ -3,7 +3,7 @@
        "type": "salad",
        "ingredients": [
               {
-                     "object": "ramps",
+                     "object": "ramp",
                      "state": "unknown"
               },
               {
@@ -23,11 +23,11 @@
                      "state": "ground"
               },
               {
-                     "object": "beans",
+                     "object": "bean",
                      "state": "peeled"
               },
               {
-                     "object": "peas",
+                     "object": "pea",
                      "state": "peeled"
               },
               {

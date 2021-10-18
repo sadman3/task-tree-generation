@@ -3,7 +3,7 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "processed_raw"
               },
               {
@@ -23,7 +23,7 @@
                      "state": "grated"
               },
               {
-                     "object": "carrots",
+                     "object": "carrot",
                      "state": "grated"
               },
               {
@@ -35,7 +35,7 @@
                      "state": "peeled"
               },
               {
-                     "object": "sprouts",
+                     "object": "sprout",
                      "state": "bean"
               },
               {

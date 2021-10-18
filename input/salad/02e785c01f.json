@@ -23,7 +23,7 @@
                      "state": "juice"
               },
               {
-                     "object": "beans",
+                     "object": "bean",
                      "state": "bean"
               },
               {
@@ -31,11 +31,11 @@
                      "state": "minced"
               },
               {
-                     "object": "carrots",
+                     "object": "carrot",
                      "state": "whole_veg"
               },
               {
-                     "object": "tomatoes",
+                     "object": "tomato",
                      "state": "chopped"
               },
               {
@@ -55,11 +55,11 @@
                      "state": "creamy"
               },
               {
-                     "object": "chives",
+                     "object": "chive",
                      "state": "minced"
               },
               {
-                     "object": "croutons",
+                     "object": "crouton",
                      "state": "whole_snack"
               }
        ]

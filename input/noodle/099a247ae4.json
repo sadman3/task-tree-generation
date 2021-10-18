@@ -3,7 +3,7 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "whole"
               },
               {
@@ -23,7 +23,7 @@
                      "state": "thick_sauce"
               },
               {
-                     "object": "tomatoes",
+                     "object": "tomato",
                      "state": "thick_sauce"
               },
               {
@@ -39,7 +39,7 @@
                      "state": "sauce"
               },
               {
-                     "object": "mushrooms",
+                     "object": "mushroom",
                      "state": "sliced"
               },
               {
@@ -59,7 +59,7 @@
                      "state": "whole_veg"
               },
               {
-                     "object": "carrots",
+                     "object": "carrot",
                      "state": "chopped"
               },
               {
@@ -71,7 +71,7 @@
                      "state": "whole"
               },
               {
-                     "object": "seeds",
+                     "object": "seed",
                      "state": "baked"
               }
        ]

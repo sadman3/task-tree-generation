@@ -3,7 +3,7 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "dried"
               },
               {
@@ -43,7 +43,7 @@
                      "state": "chopped"
               },
               {
-                     "object": "peanuts",
+                     "object": "peanut",
                      "state": "baked"
               }
        ]

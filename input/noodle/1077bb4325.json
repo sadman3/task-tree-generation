@@ -3,7 +3,7 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "processed_raw"
               },
               {
@@ -35,15 +35,15 @@
                      "state": "diced"
               },
               {
-                     "object": "craisins",
+                     "object": "craisin",
                      "state": "dried"
               },
               {
-                     "object": "seeds",
+                     "object": "seed",
                      "state": "grain"
               },
               {
-                     "object": "seeds",
+                     "object": "seed",
                      "state": "grain"
               },
               {

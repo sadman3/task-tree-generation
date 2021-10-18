@@ -3,7 +3,7 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "baked"
               },
               {
@@ -27,7 +27,7 @@
                      "state": "creamy"
               },
               {
-                     "object": "raisins",
+                     "object": "raisin",
                      "state": "dried"
               }
        ]

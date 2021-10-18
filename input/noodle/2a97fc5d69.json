@@ -3,7 +3,7 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "thick_liquid"
               },
               {
@@ -11,7 +11,7 @@
                      "state": "juice"
               },
               {
-                     "object": "almonds",
+                     "object": "almond",
                      "state": "peeled"
               },
               {
@@ -19,7 +19,7 @@
                      "state": "shredded"
               },
               {
-                     "object": "carrots",
+                     "object": "carrot",
                      "state": "grated"
               },
               {

@@ -3,11 +3,11 @@
        "type": "noodle",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "processed_raw"
               },
               {
-                     "object": "breadcrumbs",
+                     "object": "breadcrumb",
                      "state": "crumbs"
               },
               {

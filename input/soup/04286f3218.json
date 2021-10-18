@@ -3,11 +3,11 @@
        "type": "soup",
        "ingredients": [
               {
-                     "object": "tomatoes",
+                     "object": "tomato",
                      "state": "diced"
               },
               {
-                     "object": "beans",
+                     "object": "bean",
                      "state": "bean"
               },
               {
@@ -59,7 +59,7 @@
                      "state": "sliced"
               },
               {
-                     "object": "seeds",
+                     "object": "seed",
                      "state": "grain"
               }
        ]

@@ -72,8 +72,8 @@ def get_singular_form(label):
 
 def get_object_similarity(object1, object2):
     # object1 = a word string, object2 = a word string
-    object1 = get_singular_form(object1)
-    object2 = get_singular_form(object2)
+    # object1 = get_singular_form(object1)
+    # object2 = get_singular_form(object2)
 
     return get_doc_similarity(get_nlp_vector(object1), get_nlp_vector(object2))
 
@@ -118,12 +118,9 @@ def compare_two_recipe(input_ingredients, candidate_recipe_ingredients):
 
     score = 0
     for input_item in input_ingredients:
-        input_item = get_singular_form(input_item)
         doc1 = get_nlp_vector(input_item.replace('_', ' '))
-
         for recipe_item in reversed(curr_recipe):
-            recipe_item_singular = get_singular_form(recipe_item)
-            doc2 = get_nlp_vector(recipe_item_singular)
+            doc2 = get_nlp_vector(recipe_item)
             similarity = get_doc_similarity(doc1, doc2)
             if similarity > similarity_threshold:
                 score += 1
@@ -136,7 +133,10 @@ def compare_two_recipe(input_ingredients, candidate_recipe_ingredients):
 
 
 # -----------------------------------------------------------------------------------------------------------------------------#
-def find_ingredient_mapping(task_tree, input_ingredients):
+# This method finds a mapping of the input ingredients in the reference task tree
+# If a good mapping is not found in the reference tree, we will find mapping from FOON
+
+def find_ingredient_mapping_in_reference_tree(task_tree, input_ingredients):
     # task tree: list of functional units
     # input ingredients: list of {object, state} pair
 
@@ -208,52 +208,58 @@ def find_ingredient_mapping(task_tree, input_ingredients):
             if tree_object not in object_mapped and score > similarity_threshold:
                 ingredient_mapping[input_object] = {
                     "object": tree_object,
-                    "score": score
+                    "score": score,
+                    "is_found_in_tree": True
                 }
                 object_mapped.append(tree_object)
                 break
 
-    for ingredient in input_ingredients:
-
-        given_object = ingredient['object']
-        if given_object not in ingredient_mapping:
-            equivalent_ingredient, score = find_equivalent_ingredient_on_state_overlap(
-                reference_tree_objects, given_object)
-
-            if score > similarity_threshold:
-
-                ingredient_mapping[given_object] = {
-                    "object": equivalent_ingredient,
-                    "score": score
-                }
-
     return ingredient_mapping
 
 
-# this method checks all objects in FOON and
-# find the one that has maximum state overlap with this object
-def find_equivalent_ingredient_on_state_overlap(object_list, given_object):
-    given_object = get_singular_form(given_object)
-    if given_object not in object_state_map:
-        return None, 0
+# -----------------------------------------------------------------------------------------------------------------------------#
+def find_ingredient_mapping_in_foon(ingredient_mapping={}, input_ingredients=[], object_mapped=[]):
+    # ingredient_mapping: a mapping return from find_ingredient_mapping_in_reference_tree function
+    # input ingredients: list of {object, state} pair
+    # object_mapped: list of objects that is already mapped in the reference tree
 
-    given_object_state = object_state_map[given_object]
+    for _input in input_ingredients:
+    return ingredient_mapping
 
-    if len(given_object_state) == 0:
-        return None, 0
 
-    best_overlap_score = -2
-    best_match = None
-    for object in object_list:
-        if object not in object_state_map:
-            continue
-        candidate_object_state = object_state_map[object]
+# -----------------------------------------------------------------------------------------------------------------------------#
+def find_ingredient_mapping(task_tree, input_ingredients):
+    ingredient_mapping = find_ingredient_mapping_in_reference_tree(
+        task_tree, input_ingredients)
 
-        overlap = len(list(set(given_object_state) &
-                      set(candidate_object_state)))
+    return find_ingredient_mapping_in_foon(ingredient_mapping, input_ingredients)
 
-        if overlap > best_overlap_score and overlap > 2:
-            best_overlap_score = overlap
-            best_match = object
+# -----------------------------------------------------------------------------------------------------------------------------#
 
-    return best_match, best_overlap_score/len(given_object_state)
+# # this method checks all objects in FOON and
+# # find the one that has maximum state overlap with this object
+# def find_equivalent_ingredient_on_state_overlap(object_list, given_object):
+#     given_object = get_singular_form(given_object)
+#     if given_object not in object_state_map:
+#         return None, 0
+
+#     given_object_state = object_state_map[given_object]
+
+#     if len(given_object_state) == 0:
+#         return None, 0
+
+#     best_overlap_score = -2
+#     best_match = None
+#     for object in object_list:
+#         if object not in object_state_map:
+#             continue
+#         candidate_object_state = object_state_map[object]
+
+#         overlap = len(list(set(given_object_state) &
+#                       set(candidate_object_state)))
+
+#         if overlap > best_overlap_score and overlap > 2:
+#             best_overlap_score = overlap
+#             best_match = object
+
+#     return best_match, best_overlap_score/len(given_object_state)

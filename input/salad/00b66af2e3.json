@@ -3,7 +3,7 @@
        "type": "salad",
        "ingredients": [
               {
-                     "object": "noodles",
+                     "object": "noodle",
                      "state": "processed_raw"
               },
               {
@@ -19,7 +19,7 @@
                      "state": "whole_veg"
               },
               {
-                     "object": "carrots",
+                     "object": "carrot",
                      "state": "whole_veg"
               },
               {
