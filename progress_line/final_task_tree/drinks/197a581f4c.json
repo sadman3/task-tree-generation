@@ -56,24 +56,6 @@
               "end_product": "watermelon lemonade"
        },
        {
-              "ingredient": "water",
-              "state": [
-                     {
-                            "physical_state": "",
-                            "location": "measuring cup"
-                     },
-                     {
-                            "physical_state": "",
-                            "location": "pitcher"
-                     }
-              ],
-              "motion": [
-                     "pour",
-                     "pour"
-              ],
-              "end_product": "watermelon lemonade"
-       },
-       {
               "ingredient": "ice",
               "state": [
                      {

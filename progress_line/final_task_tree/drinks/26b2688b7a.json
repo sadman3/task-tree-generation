@@ -1,33 +1,5 @@
 [
        {
-              "ingredient": "water",
-              "state": [
-                     {
-                            "physical_state": "",
-                            "location": "bowl"
-                     },
-                     {
-                            "physical_state": "",
-                            "location": "mixing bowl"
-                     },
-                     {
-                            "physical_state": "",
-                            "location": "bowl"
-                     },
-                     {
-                            "physical_state": "",
-                            "location": "mixing bowl"
-                     }
-              ],
-              "motion": [
-                     "scrape",
-                     "beat",
-                     "pour",
-                     "scoop"
-              ],
-              "end_product": "whipped coffee"
-       },
-       {
               "ingredient": "sugar",
               "state": [
                      {

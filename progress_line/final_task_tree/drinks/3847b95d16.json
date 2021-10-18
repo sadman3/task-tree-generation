@@ -23,29 +23,6 @@
               "end_product": "dalgona coffee"
        },
        {
-              "ingredient": "water",
-              "state": [
-                     {
-                            "physical_state": "",
-                            "location": "mixing bowl"
-                     },
-                     {
-                            "physical_state": "",
-                            "location": "bowl"
-                     },
-                     {
-                            "physical_state": "",
-                            "location": "mixing bowl"
-                     }
-              ],
-              "motion": [
-                     "beat",
-                     "pour",
-                     "scoop"
-              ],
-              "end_product": "chocolate"
-       },
-       {
               "ingredient": "milk",
               "state": [
                      {

@@ -192,10 +192,9 @@ def save_progress_line(source_path, target_path):
                 state_trace[object]["motion"].append(motion)
 
             else:
-
                 state_list = []
                 for state in node['states']:
-                    state_list.append(state['label'])
+                    state_list.append(state)
 
                 new_state["physical_state"] = ','.join(state_list)
                 new_state["location"] = object
@@ -293,20 +292,20 @@ def save_progress_line(source_path, target_path):
 
 if __name__ == '__main__':
 
-    convert_to_json('output', 'output_json')
+    # convert_to_json('output', 'output_json')
 
-    # source_dir = 'output_json'
-    # target_dir = 'progress_line'
+    source_dir = 'output_json'
+    target_dir = 'progress_line'
 
-    # for currentpath, folders, files in os.walk(source_dir):
-    #     temp = currentpath.split('/')[-1]
-    #     if temp not in selected_category:
-    #         continue
-    #     subdir = currentpath.replace(source_dir, target_dir)
-    #     if not os.path.exists(subdir):
-    #         os.makedirs(subdir)
-    #     for file in files:
-    #         source_path = os.path.join(currentpath, file)
+    for currentpath, folders, files in os.walk(source_dir):
+        temp = currentpath.split('/')[-1]
+        if temp not in selected_category:
+            continue
+        subdir = currentpath.replace(source_dir, target_dir)
+        if not os.path.exists(subdir):
+            os.makedirs(subdir)
+        for file in files:
+            source_path = os.path.join(currentpath, file)
 
-    #         target_path = source_path.replace(source_dir, target_dir)
-    #         save_progress_line(source_path, target_path)
+            target_path = source_path.replace(source_dir, target_dir)
+            save_progress_line(source_path, target_path)
