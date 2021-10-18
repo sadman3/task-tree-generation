@@ -1,7 +1,6 @@
 import pickle
 import json
 from configparser import ConfigParser
-import shutil
 import os
 
 # -----------------------------------------------------------------------------------------------------------------------------#
@@ -74,10 +73,63 @@ def prepare_input(path='recipe1m_merged.pkl'):
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
+# this function will first merge the subgraphs,
+# then do the retrieval
+# then converts the task tree to json
+# then creats the progress line
+
+
+def run_full_pipeline():
+    import preprocess
+    import retrieval
+    import evaluate
+
+    preprocess.merge()
+    preprocess.prepare_kitchen()
+    preprocess.save_all_object_states()
+    print('-- MERGING DONE')
+
+    print('-- Reading universal foon from')
+    functional_units, object_nodes, object_to_FU_map = retrieval.read_universal_foon()
+
+    selected_category = ['drinks']
+
+    for category in selected_category:
+        input_dir = 'input/' + category
+        for input_file in os.listdir(input_dir):
+            input_file = os.path.join(input_dir, input_file)
+            recipe_id, dish_type, ingredients = retrieval.process_input(
+                input_file)
+
+            # do the retrieval
+            print("-- STARTING RETRIEVAL")
+            retrieval.retrieval(functional_units, object_nodes, object_to_FU_map,
+                                recipe_id, dish_type, ingredients)
+
+    evaluate.convert_to_json('output', 'output_json')
+
+    source_dir = 'output_json'
+    target_dir = 'progress_line'
+    print('-- SAVING PROGRESS LINE')
+    for currentpath, folders, files in os.walk(source_dir):
+        temp = currentpath.split('/')[-1]
+        if temp not in selected_category:
+            continue
+        subdir = currentpath.replace(source_dir, target_dir)
+        if not os.path.exists(subdir):
+            os.makedirs(subdir)
+        for file in files:
+            source_path = os.path.join(currentpath, file)
+
+            target_path = source_path.replace(source_dir, target_dir)
+            evaluate.save_progress_line(source_path, target_path)
+
 
 if __name__ == "__main__":
     # kitchen = json.load(open('info/kitchen.json'))
     # for x in kitchen:
     #     if len(x["ingredients"]) > 1:
     #         print(x)
-    prepare_input()
+    # prepare_input()
+
+    run_full_pipeline()

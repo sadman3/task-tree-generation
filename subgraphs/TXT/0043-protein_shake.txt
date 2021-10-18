@@ -275,13 +275,8 @@ O	cup	0
 S	empty
 M	pour	<Assumed>
 O	cup	0
-S	contains	{smoothie}
+S	contains	{protein shake}
 O	protein shake	0	9
-S	blended
-S	thick liquid
-S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}
-S	in	[cup]
-O	smoothie	0	9
 S	blended
 S	thick liquid
 S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}

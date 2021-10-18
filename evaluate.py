@@ -292,7 +292,7 @@ def save_progress_line(source_path, target_path):
 
 if __name__ == '__main__':
 
-    # convert_to_json('output', 'output_json')
+    convert_to_json('output', 'output_json')
 
     source_dir = 'output_json'
     target_dir = 'progress_line'

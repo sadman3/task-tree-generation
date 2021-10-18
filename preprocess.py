@@ -346,6 +346,6 @@ def save_all_object_states(foon_path=foon_pkl):
 
 
 if __name__ == "__main__":
-    # merge()
-    # prepare_kitchen()
+    merge()
+    prepare_kitchen()
     save_all_object_states()

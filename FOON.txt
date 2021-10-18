@@ -1,4 +1,4 @@
-# Date created:	13.10.2021
+# Date created:	18.10.2021
 //
 O	onion
 S	whole
@@ -7873,13 +7873,8 @@ O	cup
 S	empty
 M	pour
 O	cup
-S	contains	{smoothie}
+S	contains	{protein shake}
 O	protein shake
-S	blended
-S	thick liquid
-S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}
-S	in	[cup]
-O	smoothie
 S	blended
 S	thick liquid
 S	contains	{flaxseed,milk,strawberry,sweetener,whey powder,yogurt}

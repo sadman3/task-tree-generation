@@ -1151,241 +1151,109 @@ function drawProgressLine(progress_line, file_name) {
 		.style('color', 'darkgreen')
 
 
-	if (comparison == true) {
-		var ingredient = d3.select("body").selectAll("p")
-		.data(progress_line)
-		.enter()
-		.append("p")
-		.attr("y", function(d, i) {
-			return 40 + i * 40
-		})
-		.style("background-color", function(d, i) { return i % 2 ? "#eee" : "#ddd"; })
-		.style("border-style", "dashed")
-		.append("tspan")
-		.text(function(d, i ) { return i+1 + ". " + capitalize(d.ingredient)})
-		.style("font-weight", "bold")
-		.style("color", "blue")
-		
-		var label1 = ingredient.append("p")
-			.attr("y", function(d, i) {
-				return 40 + i * 40 
-			})
-			.text("Generated recipe")
-			.style('color', 'brown')
-			.style('text-decoration', 'underline')
-
-		var state = ingredient
-			.append("p")
-			.attr("y", function(d, i) {
-				return 40 + i * 40 
-			})
-			.each(function(d) {
-				var ing = d.state.generated
-				for(var i = 0; i < ing.length; i++) {
-					d3.select(this)
-					.append("tspan")
-					.text(function(d) {
-						if (d.state.generated[i].physical_state) return d.state.generated[i].physical_state
-					})
-					.style('color', "black")
-					.style("font-weight", "semi-bold")
-					.append("tspan")
-					.text(function(d) {
-						if (d.state.generated[i].location.length > 0) return '(' + d.state.generated[i].location + ')'
-					})
-					.style('color', "slateblue")
-					.append("tspan")
-					.text(function(d) {
-						if (i < ing.length - 1) return " ---> "
-					})
-					.style('color', "black")
-					.append("tspan")
-					.text(function(d) {
-						if (i < ing.length - 1) return d.motion.generated[i] 
-					})
-					.style('color', "red")
-					.append("tspan")
-					.text(function(d) {
-						if (i < ing.length - 1) return " ---> "
-					})
-					.style('color', 'black')
-				}
-			})
-
-		var end_product = 
-			state
-			.append("p")
-			.attr("y", function(d, i) {
-				return 40 + i * 40 
-			})
-			.text(function(d) {
-				return 'End product: ' + capitalize(d.end_product.generated)
-			})
-			.style('color', 'black')
-
-		var label2 = end_product.append("p")
-			.attr("y", function(d, i) {
-				return 40 + i * 40 
-			})
-			.text("Ground truth")
-			.style('color', 'brown')
-			.style('text-decoration', 'underline')
-
-		var ground_truth_state = end_product
-			.append("p")
-			.attr("y", function(d, i) {
-				return 40 + i * 40 
-			})
-			.each(function(d) {
-				var ing = d.state.ground_truth
-				for(var i = 0; i < ing.length; i++) {
-					d3.select(this)
-					.append("tspan")
-					.text(function(d) {
-						if (d.state.ground_truth[i].physical_state) return d.state.ground_truth[i].physical_state
-					})
-					.style('color', "black")
-					.style("font-weight", "semi-bold")
-					.append("tspan")
-					.text(function(d) {
-						if (d.state.ground_truth[i].location.length > 0) return '(' + d.state.ground_truth[i].location + ')'
-					})
-					.style('color', "slateblue")
-					.append("tspan")
-					.text(function(d) {
-						if (i < ing.length - 1) return " ---> "
-					})
-					.style('color', "black")
-					.append("tspan")
-					.text(function(d) {
-						if (i < ing.length - 1) return d.motion.ground_truth[i] 
-					})
-					.style('color', "red")
-					.append("tspan")
-					.text(function(d) {
-						if (i < ing.length - 1) return " ---> "
-					})
-					.style('color', 'black')
-				}
-			})
-
-		var ground_truth_end_product = 
-			ground_truth_state
-			.append("p")
-			.attr("y", function(d, i) {
-				return 40 + i * 40 
-			})
-			.text(function(d) {
-				return 'End product: ' + capitalize(d.end_product.ground_truth)
-			})
-			.style('color', 'black')
-	}
+	var ingredient = d3.select("body").selectAll("p")
+	.data(progress_line)
+	.enter()
+	.append("p")
+	.attr("y", function(d, i) {
+		return 40 + i * 40
+	})
+	.style("background-color", function(d, i) { return i % 2 ? "#eee" : "#ddd"; })
+	.style("border-style", "dashed")
+	//.style("border-color", function(d, i) { return i == 2 ? "blue" : "black"; })
+	.style("border-color", function(d, i) { return "black"; })
+	.style("padding-left", "5px")
+	.append("tspan")
+	.text(function(d, i ) { return  capitalize(d.ingredient) ;})
+	.style("font-weight", "bold")
+	.style("color", "blue")
 	
-	else {
-		var ingredient = d3.select("body").selectAll("p")
-		.data(progress_line)
-		.enter()
+
+	
+
+	// var confidence = ingredient.append("tspan")
+	// .text(function(d, i) {
+		
+	// 	if (i == 2)  return " (Substituted from Raisin, confidence: 62.9%)"
+	//  })
+	// .style('color', "purple")
+	// .style('font-weight', "normal")
+	// .style('font-style', "italic")
+	
+
+	var state = ingredient
 		.append("p")
 		.attr("y", function(d, i) {
-			return 40 + i * 40
+			return 40 + i * 40 
 		})
-		.style("background-color", function(d, i) { return i % 2 ? "#eee" : "#ddd"; })
-		.style("border-style", "dashed")
-		.style("border-color", function(d, i) { return i == 2 ? "blue" : "black"; })
-		.style("padding-left", "5px")
-		.append("tspan")
-		.text(function(d, i ) { return  capitalize(d.ingredient) ;})
-		.style("font-weight", "bold")
-		.style("color", "blue")
-		
-		
 
-		
-
-		var confidence = ingredient.append("tspan")
-		.text(function(d, i) {
-			
-			if (i == 2)  return " (Substituted from Raisin, confidence: 62.9%)"
-		 })
-		.style('color', "purple")
-		.style('font-weight', "normal")
-		.style('font-style', "italic")
-		
-
-		var state = ingredient
-			.append("p")
-			.attr("y", function(d, i) {
-				return 40 + i * 40 
-			})
-
-			.style("margin-bottom", "0px")
-			.style("margin-top", "6px")
-			.each(function(d) {
-				var ing = d.state.generated
-				for(var i = 0; i < ing.length; i++) {
-					d3.select(this)
-					 
-					.append("tspan")
+		.style("margin-bottom", "0px")
+		.style("margin-top", "6px")
+		.each(function(d) {
+			var state_list = d.state
+			for(var i = 0; i < state_list.length; i++) {
+				d3.select(this)
 					
-					.text(function(d) {
-						if (d.state.generated[i].physical_state) return d.state.generated[i].physical_state
-					})
-					// .style("text-decoration", function(d) {
-					// 	return (d.state.generated[i].physical_state = "stem" && i <= 1) ? "underline" : "none"
-					// }) 
-					// .style("text-decoration-color", function(d) {
-					// 	return (d.state.generated[i].physical_state = "stem" && i <= 1) ? "DeepPink" : "none"
-					// })
-					.style('color', "black")
-					.style("font-weight", "semi-bold")
-					
-
-					.append("tspan")
-					.style("text-decoration", "none")
-					.style("text-decoration-color", "none")
-					.text(function(d) {
-						if (d.state.generated[i].location.length > 0) return '(' + d.state.generated[i].location + ')'
-					})
-					
-						
+				.append("tspan")
+				
+				.text(function(d) {
+					if (d.state[i].physical_state) return d.state[i].physical_state
+				})
+				// .style("text-decoration", function(d) {
+				// 	return (d.state.generated[i].physical_state = "stem" && i <= 1) ? "underline" : "none"
+				// }) 
+				// .style("text-decoration-color", function(d) {
+				// 	return (d.state.generated[i].physical_state = "stem" && i <= 1) ? "DeepPink" : "none"
+				// })
+				.style('color', "black")
+				.style("font-weight", "semi-bold")
 				
 
-					.style('color', "green")
-					.append("tspan")
-					.text(function(d) {
-						if (i < ing.length) return " ---> "
-					})
-					.style('color', "black")
-					.append("tspan")
-					.text(function(d) {
-						if (i < ing.length) return d.motion.generated[i] 
-					})
-					.style('color', "red")
-					.append("tspan")
-					.text(function(d) {
-						if (i < ing.length - 1) return " ---> "
-					})
-					.style('color', 'black')
+				.append("tspan")
+				.style("text-decoration", "none")
+				.style("text-decoration-color", "none")
+				.text(function(d) {
+					if (d.state[i].location.length > 0) return '(' + d.state[i].location + ')'
+				})
+				
 					
-				}
-			})
-
-		var end_product = 
-			state
-			.append("p")
-			.style("margin-top", "6px")
-			.attr("y", function(d, i) {
-				return 40 + i * 40 
-			})
-			.text(function(d) {
-				return 'End product: ' + capitalize(d.end_product.generated)
-			})
-			.style('color', 'black')
-			.style('font-family', 'Italic')
-		}
 		
-	
+				.style('color', "green")
+				.append("tspan")
+				.text(function(d) {
+					if (i < state_list.length) return " ---> "
+				})
+				.style('color', "black")
+				.append("tspan")
+				.text(function(d) {
+					if (i < state_list.length) return d.motion[i] 
+				})
+				.style('color', "red")
+				.append("tspan")
+				.text(function(d) {
+					if (i < state_list.length - 1) return " ---> "
+				})
+				.style('color', 'black')
+				
+			}
+		})
+
+	var end_product = 
+		state
+		.append("p")
+		.style("margin-top", "6px")
+		.attr("y", function(d, i) {
+			return 40 + i * 40 
+		})
+		.text(function(d) {
+			return 'End product: ' + capitalize(d.end_product)
+		})
+		.style('color', 'black')
+		.style('font-family', 'Italic')
 }
+	
+
+
 
 
 function drawD3Graph(graph, S) {

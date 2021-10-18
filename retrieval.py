@@ -479,8 +479,8 @@ if __name__ == "__main__":
     # selected_catagory = ['salad', 'drinks', 'omelette',
     #                      'cake', 'soup', 'bread', 'noodle', 'rice']
 
-    selected_category = ['salad', 'omelette', 'rice', 'soup', 'drinks']
-    #selected_category = ['salad']
+    #selected_category = ['salad', 'omelette', 'rice', 'soup', 'drinks']
+    selected_category = ['drinks']
 
     for category in selected_category:
         input_dir = 'input/' + category
