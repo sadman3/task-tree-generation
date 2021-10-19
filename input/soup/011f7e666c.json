@@ -3,10 +3,6 @@
        "type": "soup",
        "ingredients": [
               {
-                     "object": "soup mix",
-                     "state": "unknown"
-              },
-              {
                      "object": "onion",
                      "state": "chopped"
               },
@@ -20,7 +16,7 @@
               },
               {
                      "object": "cabbage",
-                     "state": "whole_veg"
+                     "state": "whole veg"
               },
               {
                      "object": "vegetable",

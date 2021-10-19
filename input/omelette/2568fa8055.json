@@ -4,19 +4,15 @@
        "ingredients": [
               {
                      "object": "egg",
-                     "state": "whole_raw"
+                     "state": "whole raw"
               },
               {
                      "object": "water",
                      "state": "juice"
               },
               {
-                     "object": "margarine",
-                     "state": "unknown"
-              },
-              {
                      "object": "ham",
-                     "state": "processed_meat"
+                     "state": "processed meat"
               }
        ]
 }

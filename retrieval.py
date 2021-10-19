@@ -21,6 +21,8 @@ recipe_category_path = config["info"]["recipe_category"]
 kitchen_path = config['info']['kitchen']
 similarity_threshold = float(config["constant"]["similarity_threshold"])
 default_ingredient_path = config["info"]["default_ingredient"]
+default_ingredient_mapping_path = config['info']['default_ingredient_mapping']
+
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 ###################
@@ -363,7 +365,7 @@ def remove_extra_ingredients(final_task_tree=[], input_ingredients=[]):
 
 # Given a reference task tree, this method modifies it to
 # so that it is aligned with input ingredients.
-# Major step: substituion, deletion of extra ingredients
+# Major step: food prep, substituion, deletion of extra ingredients
 
 def modify_reference_task_tree(reference_task_tree=[], input_ingredients=[]):
     """
@@ -377,23 +379,32 @@ def modify_reference_task_tree(reference_task_tree=[], input_ingredients=[]):
 
     ingredient_mapping = find_ingredient_mapping(task_tree, input_ingredients)
     for ingredient in ingredient_mapping:
-        mapped_object = ingredient_mapping[ingredient]['object']
 
-        # substitue object in the task tree
-        for fu in task_tree:
-            for node in fu.input_nodes:
-                if node.label == mapped_object:
-                    node.label = ingredient
-                if mapped_object in node.ingredients:
-                    idx = node.ingredients.index(mapped_object)
-                    node.ingredients[idx] = ingredient
+        # if the mapping exists in reference task tree, we do not need to search in FOON
+        if ingredient["mapping_source"] == "reference_task_tree":
+            mapped_object = ingredient_mapping[ingredient]['object']
 
-            for node in fu.output_nodes:
-                if node.label == mapped_object:
-                    node.label = ingredient
-                if mapped_object in node.ingredients:
-                    idx = node.ingredients.index(mapped_object)
-                    node.ingredients[idx] = ingredient
+            # substitue object in the task tree
+            for fu in task_tree:
+                for node in fu.input_nodes:
+                    if node.label == mapped_object:
+                        node.label = ingredient
+                    if mapped_object in node.ingredients:
+                        idx = node.ingredients.index(mapped_object)
+                        node.ingredients[idx] = ingredient
+
+                for node in fu.output_nodes:
+                    if node.label == mapped_object:
+                        node.label = ingredient
+                    if mapped_object in node.ingredients:
+                        idx = node.ingredients.index(mapped_object)
+                        node.ingredients[idx] = ingredient
+
+        else:  # mapping exists in foon but not in reference tree
+
+            # we need to search in foon for the food prep steps
+            continue
+
     return task_tree
 # -----------------------------------------------------------------------------------------------------------------------------#
 

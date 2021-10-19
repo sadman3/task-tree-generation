@@ -20,7 +20,6 @@ word2vec_model = config["constant"]["word2vec_model"]
 utensils_path = config['info']['utensils']
 object_state_map_path = config['info']['object_state_map']
 
-
 # load word2vec model
 if word2vec_model == "large":
     import spacy
@@ -74,8 +73,12 @@ def get_object_similarity(object1, object2):
     # object1 = a word string, object2 = a word string
     # object1 = get_singular_form(object1)
     # object2 = get_singular_form(object2)
+    vector1 = get_nlp_vector(object1)
+    vector2 = get_nlp_vector(object2)
+    # if vector1[0].has_vector == False or vector2[0].has_vector == False:
+    #     print(object1, object2)
 
-    return get_doc_similarity(get_nlp_vector(object1), get_nlp_vector(object2))
+    return get_doc_similarity(vector1, vector2)
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -209,7 +212,7 @@ def find_ingredient_mapping_in_reference_tree(task_tree, input_ingredients):
                 ingredient_mapping[input_object] = {
                     "object": tree_object,
                     "score": score,
-                    "is_found_in_tree": True
+                    "mapping_source": "reference_task_tree"
                 }
                 object_mapped.append(tree_object)
                 break
@@ -224,6 +227,37 @@ def find_ingredient_mapping_in_foon(ingredient_mapping={}, input_ingredients=[],
     # object_mapped: list of objects that is already mapped in the reference tree
 
     for _input in input_ingredients:
+        given_object = _input["object"]
+        given_state = _input["state"]
+        if given_object not in object_mapped:
+
+            # check if a good mapping exist somewhere in foon
+            best_object_score = -1
+            best_matched_object = None
+            for candidate_object in object_state_map:
+                score = get_object_similarity(given_object, candidate_object)
+                if score > best_object_score:
+                    best_object_score = score
+                    best_matched_object = candidate_object
+
+            # We have found the closes object
+            # Now we need to find a suitable state
+            candidate_states = object_state_map[best_matched_object]
+            best_state_score = -1
+            best_matched_state = None
+            for state in candidate_states:
+                score = get_object_similarity(given_state, state)
+                if score > best_state_score:
+                    best_state_score = score
+                    best_matched_state = state
+
+            ingredient_mapping[given_object] = {
+                "object": best_matched_object,
+                "score": best_object_score,
+                "state": best_matched_state,
+                "mapping_source": "foon"  # where we found the mapping
+            }
+
     return ingredient_mapping
 
 

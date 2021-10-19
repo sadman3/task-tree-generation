@@ -58,11 +58,11 @@ def prepare_input(path='recipe1m_merged.pkl'):
                         ing = recipe['ingredients'][i]
                         state = recipe['states'][i]
 
-                        if ing != '<pad>' and state != '<pad>':
+                        if ing != '<pad>' and state != '<pad>' and state != 'unknown':
                             _input['ingredients'].append(
                                 {
-                                    "object": utils.get_singular_form(ing),
-                                    "state": state
+                                    "object": utils.get_singular_form(ing).replace('_', ' '),
+                                    "state": state.replace('_', ' ')
                                 }
                             )
 

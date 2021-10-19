@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 import pickle
 from FOON_class import FunctionalUnit, Object
-from utils import get_utensils
+from utils import get_singular_form, get_utensils
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -108,7 +108,7 @@ def get_FU_list(filepath):
                     FU.input_nodes.append(new_object)
 
             # len = 3 for goal node
-            new_object = Object(label[1])
+            new_object = Object(get_singular_form(label[1]))
             if len(label) > 2:
                 new_object.object_in_motion = label[2]
             if len(label) > 3:

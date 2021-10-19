@@ -4,7 +4,7 @@
        "ingredients": [
               {
                      "object": "stock",
-                     "state": "thick_liquid"
+                     "state": "thick liquid"
               },
               {
                      "object": "sugar",
@@ -20,7 +20,7 @@
               },
               {
                      "object": "egg",
-                     "state": "whole_raw"
+                     "state": "whole raw"
               },
               {
                      "object": "sugar",
@@ -32,15 +32,11 @@
               },
               {
                      "object": "meat",
-                     "state": "small_meat"
+                     "state": "small meat"
               },
               {
                      "object": "sprout",
                      "state": "bean"
-              },
-              {
-                     "object": "sprout",
-                     "state": "unknown"
               },
               {
                      "object": "chive",

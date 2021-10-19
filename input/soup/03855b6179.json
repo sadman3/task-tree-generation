@@ -3,20 +3,16 @@
        "type": "soup",
        "ingredients": [
               {
-                     "object": "escarole",
-                     "state": "unknown"
-              },
-              {
                      "object": "tomato",
-                     "state": "whole_fruit"
+                     "state": "whole fruit"
               },
               {
                      "object": "carrot",
-                     "state": "whole_veg"
+                     "state": "whole veg"
               },
               {
                      "object": "onion",
-                     "state": "whole_veg"
+                     "state": "whole veg"
               },
               {
                      "object": "oil",
@@ -24,7 +20,7 @@
               },
               {
                      "object": "broth",
-                     "state": "thick_liquid"
+                     "state": "thick liquid"
               },
               {
                      "object": "bouillon",
@@ -33,10 +29,6 @@
               {
                      "object": "pepper",
                      "state": "ground"
-              },
-              {
-                     "object": "tortellini",
-                     "state": "unknown"
               }
        ]
 }

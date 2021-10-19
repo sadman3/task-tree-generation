@@ -4,7 +4,7 @@
        "ingredients": [
               {
                      "object": "noodle",
-                     "state": "processed_raw"
+                     "state": "processed raw"
               },
               {
                      "object": "pork",
@@ -12,7 +12,7 @@
               },
               {
                      "object": "onion",
-                     "state": "whole_veg"
+                     "state": "whole veg"
               },
               {
                      "object": "garlic",
@@ -44,11 +44,11 @@
               },
               {
                      "object": "onion",
-                     "state": "whole_veg"
+                     "state": "whole veg"
               },
               {
                      "object": "ginger",
-                     "state": "whole_veg"
+                     "state": "whole veg"
               }
        ]
 }

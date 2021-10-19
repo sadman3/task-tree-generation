@@ -4,7 +4,7 @@
        "ingredients": [
               {
                      "object": "egg",
-                     "state": "thick_liquid"
+                     "state": "thick liquid"
               },
               {
                      "object": "water",
@@ -12,7 +12,7 @@
               },
               {
                      "object": "egg",
-                     "state": "whole_raw"
+                     "state": "whole raw"
               },
               {
                      "object": "water",
@@ -29,10 +29,6 @@
               {
                      "object": "cheddar",
                      "state": "creamy"
-              },
-              {
-                     "object": "veggie burger",
-                     "state": "unknown"
               }
        ]
 }

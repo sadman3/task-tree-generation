@@ -4,11 +4,11 @@
        "ingredients": [
               {
                      "object": "egg",
-                     "state": "whole_raw"
+                     "state": "whole raw"
               },
               {
                      "object": "stock",
-                     "state": "thick_liquid"
+                     "state": "thick liquid"
               },
               {
                      "object": "onion",
@@ -25,10 +25,6 @@
               {
                      "object": "pepper",
                      "state": "ground"
-              },
-              {
-                     "object": "meal",
-                     "state": "unknown"
               },
               {
                      "object": "carrot",

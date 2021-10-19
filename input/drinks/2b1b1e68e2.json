@@ -4,11 +4,7 @@
        "ingredients": [
               {
                      "object": "cucumber",
-                     "state": "whole_veg"
-              },
-              {
-                     "object": "spinach",
-                     "state": "unknown"
+                     "state": "whole veg"
               },
               {
                      "object": "kale",
@@ -17,10 +13,6 @@
               {
                      "object": "yogurt",
                      "state": "creamy"
-              },
-              {
-                     "object": "wheat",
-                     "state": "unknown"
               },
               {
                      "object": "blueberry",
