@@ -1,4 +1,4 @@
-# Date created:	18.10.2021
+# Date created:	19.10.2021
 //
 O	onion
 S	whole
@@ -234,7 +234,7 @@ O	porkchop
 S	seasoned
 S	contains	{salt,black pepper}
 S	in	[plate]
-O	tongs
+O	tong
 M	pick-and-place
 O	cooking pan
 S	contains	{porkchop,butter,vegetable oil}
@@ -252,7 +252,7 @@ O	porkchop
 S	seasoned
 S	contains	{salt,black pepper,butter,vegetable oil}
 S	in	[cooking pan]
-O	tongs
+O	tong
 M	flip
 O	porkchop
 S	seasoned
@@ -309,7 +309,7 @@ O	porkchop
 S	cooked
 S	contains	{salt,black pepper,butter,vegetable oil}
 S	in	[cooking pan]
-O	tongs
+O	tong
 M	pick-and-place
 O	cooking pan
 O	plate
@@ -424,7 +424,7 @@ S	whipped
 S	contains	{instant coffee,sugar,water}
 S	in	[spoon]
 //
-O	drinking glass
+O	drinking glas
 S	empty
 O	measuring cup
 S	contains	{ice}
@@ -433,7 +433,7 @@ S	cubed
 S	frozen
 S	in	[measuring cup]
 M	pour
-O	drinking glass
+O	drinking glas
 S	contains	{ice}
 O	ice
 S	frozen
@@ -454,7 +454,7 @@ O	milk
 S	liquid
 S	in	[measuring cup]
 //
-O	drinking glass
+O	drinking glas
 S	contains	{ice}
 O	measuring cup
 S	contains	{milk}
@@ -462,13 +462,13 @@ O	milk
 S	liquid
 S	in	[measuring cup]
 M	pour
-O	drinking glass
+O	drinking glas
 S	contains	{ice,milk}
 O	milk
 S	liquid
 S	in	[drinking glass]
 //
-O	drinking glass
+O	drinking glas
 S	contains	{ice,milk}
 O	spoon
 S	contains	{whipped coffee}
@@ -477,14 +477,14 @@ S	whipped
 S	contains	{instant coffee,sugar,water}
 S	in	[spoon]
 M	pour and spread
-O	drinking glass
+O	drinking glas
 S	contains	{ice,milk,whipped coffee}
 O	whipped coffee
 S	whipped
 S	contains	{instant coffee,sugar,water}
 S	in	[drinking glass]
 //
-O	drinking glass
+O	drinking glas
 S	contains	{ice,milk,whipped coffee}
 O	spoon
 S	contains	{instant coffee}
@@ -503,7 +503,7 @@ O	milk
 S	liquid
 S	in	[drinking glass]
 M	sprinkle
-O	drinking glass
+O	drinking glas
 S	contains	{ice,milk,whipped coffee,instant coffee}
 O	instant coffee
 S	powder
@@ -1138,7 +1138,7 @@ S	liquid
 S	contains	{lemon juice,water,watermelon juice,sugar}
 S	in	[pitcher]
 //
-O	drinking glass
+O	drinking glas
 S	empty
 O	bucket
 S	contains	{ice}
@@ -1149,7 +1149,7 @@ S	in	[bowl]
 O	measuring cup
 S	empty
 M	scoop and pour
-O	drinking glass
+O	drinking glas
 S	contains	{ice}
 O	ice
 S	crushed
@@ -1160,7 +1160,7 @@ O	ice
 S	crushed
 S	frozen
 S	in	[drinking glass]
-O	drinking glass
+O	drinking glas
 S	contains	{ice}
 O	pitcher
 S	contains	{lemon juice,sugar,water,watermelon juice}
@@ -1170,7 +1170,7 @@ S	liquid
 S	contains	{lemon juice,water,watermelon juice,sugar}
 S	in	[pitcher]
 M	pour
-O	drinking glass
+O	drinking glas
 S	contains	{ice,lemonade}
 O	lemonade
 S	mixed
@@ -1247,6 +1247,7 @@ S	contains	{cocoa powder}
 O	bowl
 S	contains	{flour,sugar}
 O	cocoa powder
+S	powder
 S	in	[bowl]
 M	pour
 O	bowl
@@ -1277,6 +1278,7 @@ S	contains	{sugar,flour,cocoa powder,baking powder,baking soda}
 O	bowl
 S	contains	{sugar,flour,cocoa powder,baking powder,baking soda}
 O	cocoa powder
+S	powder
 S	in	[bowl]
 O	bowl
 S	contains	{salt}
@@ -1302,6 +1304,7 @@ O	sugar
 S	granulated
 S	in	[bowl]
 O	cocoa powder
+S	powder
 S	in	[bowl]
 O	flour
 S	powder
@@ -2653,7 +2656,7 @@ S	in	[pot]
 O	linguine
 S	cooked
 S	in	[pot]
-O	tongs
+O	tong
 M	mix
 O	pot
 S	contains	{pesto linguine}
@@ -2698,12 +2701,12 @@ S	contains	{pesto linguine}
 O	pesto linguine
 S	contains	{pesto,linguine,parmesan,black pepper}
 S	in	[pot]
-O	tongs
+O	tong
 M	mix
 O	pesto linguine
 S	contains	{pesto,linguine,parmesan,black pepper}
 S	in	[pot]
-O	tongs
+O	tong
 //
 O	bowl
 S	empty
@@ -2712,14 +2715,14 @@ S	contains	{pesto linguine}
 O	pesto linguine
 S	contains	{pesto,linguine,parmesan,black pepper}
 S	in	[pot]
-O	tongs
+O	tong
 M	pick-and-place
 O	pesto linguine
 S	contains	{pesto,linguine,parmesan,black pepper}
 S	in	[bowl]
 O	bowl
 S	contains	{pesto linguine}
-O	tongs
+O	tong
 //
 O	bowl
 S	contains	{egg white,egg yolk}
@@ -3536,6 +3539,7 @@ S	in	[surface]
 O	sea salt
 S	granulated
 O	pepper
+S	ground
 S	in	[bottle]
 M	sprinkle
 O	pizza dough
@@ -3685,7 +3689,7 @@ S	contains	{eggs and bacon pizza}
 S	in	[baking tray]
 O	plate
 S	empty
-O	tongs
+O	tong
 M	pick-and-place
 O	plate
 S	contains	{eggs and bacon pizza}
@@ -3868,6 +3872,7 @@ S	in	[bowl]
 O	bowl
 S	contains	{cocoa powder}
 O	cocoa powder
+S	powder
 S	in	[bowl]
 O	bowl
 S	contains	{flour}
@@ -3899,6 +3904,7 @@ O	salt
 S	granulated
 S	in	[bowl]
 O	cocoa powder
+S	powder
 S	in	[bowl]
 O	flour
 S	powder
@@ -4737,17 +4743,17 @@ O	ice
 S	frozen
 S	crushed
 S	in	[bowl]
-O	drinking glass
+O	drinking glas
 S	empty
 M	pick-and-place
-O	drinking glass
+O	drinking glas
 S	contains	{ice}
 O	ice
 S	frozen
 S	crushed
 S	in	[drinking glass]
 //
-O	drinking glass
+O	drinking glas
 S	contains	{ice}
 O	pitcher
 S	contains	{lemonade}
@@ -4756,7 +4762,7 @@ S	mixed
 S	contains	{lemon juice,lemon zest,sugar,water}
 S	in	[pitcher]
 M	pour
-O	drinking glass
+O	drinking glas
 S	contains	{lemonade,ice}
 O	lemonade
 S	mixed
@@ -5270,7 +5276,7 @@ S	in	[bowl]
 M	mix
 O	bowl
 S	contains	{sweet potato fries}
-O	sweet potato fries
+O	sweet potato fry
 S	uncooked
 S	contains	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
 S	in	[bowl]
@@ -5279,14 +5285,14 @@ O	baking tray
 S	in	[sheet]
 O	bowl
 S	contains	{sweet potato fries}
-O	sweet potato fries
+O	sweet potato fry
 S	uncooked
 S	contains	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
 S	in	[bowl]
 M	pick-and-place
 O	baking tray
 S	contains	{sweet potato fries}
-O	sweet potato fries
+O	sweet potato fry
 S	uncooked
 S	contains	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
 S	in	[baking tray]
@@ -5309,7 +5315,7 @@ S	in	[oven]
 O	oven
 S	on
 S	in	[baking tray]
-O	sweet potato fries
+O	sweet potato fry
 S	uncooked
 S	contains	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
 S	in	[baking tray]
@@ -5317,7 +5323,7 @@ M	bake
 O	baking tray
 S	contains	{sweet potato fries}
 S	in	[oven]
-O	sweet potato fries
+O	sweet potato fry
 S	cooked
 S	contains	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
 S	in	[baking tray]
@@ -5336,7 +5342,7 @@ S	off
 //
 O	baking tray
 S	contains	{sweet potato fries}
-O	sweet potato fries
+O	sweet potato fry
 S	cooked
 S	contains	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
 S	in	[baking tray]
@@ -5346,7 +5352,7 @@ S	empty
 M	pick-and-place
 O	plate
 S	contains	{sweet potato fries}
-O	sweet potato fries
+O	sweet potato fry
 S	cooked
 S	contains	{flour,vegetable oil,garlic powder,salt,black pepper,paprika}
 S	in	[plate]
@@ -5819,7 +5825,7 @@ S	raw
 S	whole
 S	contains	{black pepper,olive oil,salt}
 S	in	[plate]
-O	tongs
+O	tong
 O	grill
 S	on
 S	empty
@@ -5883,7 +5889,7 @@ S	cooked
 S	in	[grill]
 O	plate
 S	empty
-O	tongs
+O	tong
 M	pick-and-place
 O	grill
 S	off
@@ -5975,7 +5981,7 @@ O	dough
 S	contains	{cheese,sausage}
 S	in	[cutting board]
 M	roll
-O	pigs in a blanket
+O	pig in a blanket
 S	uncooked
 S	contains	{cheese,sausage}
 S	in	[cutting board]
@@ -5984,14 +5990,14 @@ O	cutting board
 S	contains	{dough}
 O	baking tray
 S	empty
-O	pigs in a blanket
+O	pig in a blanket
 S	uncooked
 S	contains	{cheese,sausage}
 S	in	[cutting board]
 M	pick-and-place
 O	baking tray
 S	contains	{pigs in a blanket}
-O	pigs in a blanket
+O	pig in a blanket
 S	uncooked
 S	contains	{cheese,sausage}
 S	in	[baking tray]
@@ -6012,7 +6018,7 @@ S	in	[baking tray]
 O	baking tray
 S	contains	{pigs in a blanket}
 S	in	[oven]
-O	pigs in a blanket
+O	pig in a blanket
 S	uncooked
 S	contains	{cheese,sausage}
 S	in	[baking tray]
@@ -6020,7 +6026,7 @@ O	oven
 S	on
 S	in	[baking tray]
 M	bake
-O	pigs in a blanket
+O	pig in a blanket
 S	cooked
 S	contains	{cheese,sausage}
 S	in	[baking tray]
@@ -6031,7 +6037,7 @@ S	in	[oven]
 O	oven
 S	on
 S	in	[baking tray]
-O	pigs in a blanket
+O	pig in a blanket
 S	cooked
 S	contains	{cheese,sausage}
 S	in	[baking tray]
@@ -6044,7 +6050,7 @@ S	off
 O	baking tray
 S	contains	{pigs in a blanket}
 //
-O	pigs in a blanket
+O	pig in a blanket
 S	cooked
 S	contains	{cheese,sausage}
 S	in	[baking tray]
@@ -6052,11 +6058,11 @@ O	baking tray
 S	contains	{pigs in a blanket}
 O	plate
 S	empty
-O	tongs
+O	tong
 M	pick-and-place
 O	plate
 S	contains	{pigs in a blanket}
-O	pigs in a blanket
+O	pig in a blanket
 S	cooked
 S	contains	{dough,cheese,sausage}
 S	in	[plate]
@@ -6385,6 +6391,7 @@ O	bag
 S	sealed
 S	contains	{peanut}
 O	peanut
+S	dried
 S	in	[bag]
 O	scissors
 M	cut open
@@ -6399,12 +6406,14 @@ S	in	[scale]
 O	packet
 S	contains	{peanut}
 O	peanut
+S	dried
 S	in	[packet]
 M	pour
 O	baking tray
 S	contains	{peanut}
 S	in	[scale]
 O	peanut
+S	dried
 S	in	[baking tray]
 //
 O	mortar
@@ -6468,6 +6477,7 @@ M	stir
 O	bowl
 S	contains	{coconut milk}
 O	coconut milk
+S	liquid
 S	in	[bowl]
 //
 O	pot
@@ -6485,6 +6495,7 @@ S	in	[stove]
 O	bowl
 S	contains	{coconut milk}
 O	coconut milk
+S	liquid
 S	in	[bowl]
 O	spoon
 S	empty
@@ -6492,6 +6503,7 @@ M	scoop
 O	spoon
 S	contains	{coconut milk}
 O	coconut milk
+S	liquid
 S	in	[spoon]
 //
 O	pot
@@ -6500,12 +6512,14 @@ S	in	[stove]
 O	spoon
 S	contains	{coconut milk}
 O	coconut milk
+S	liquid
 S	in	[spoon]
 M	pour
 O	pot
 S	contains	{curry paste,coconut milk}
 S	in	[stove]
 O	coconut milk
+S	liquid
 S	in	[pot]
 O	spoon
 //
@@ -6516,6 +6530,7 @@ O	curry paste
 S	contains	{onion,spice mixture,garlic,lemon grass,shrimp paste,galangal,paprika}
 S	in	[pot]
 O	coconut milk
+S	liquid
 S	in	[pot]
 O	spatula
 M	mix
@@ -6975,12 +6990,14 @@ S	in	[pan]
 O	measuring cup
 S	contains	{cream}
 O	cream
+S	creamy
 S	in	[measuring cup]
 M	pour
 O	pasta alfredo
 S	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
 S	in	[pan]
 O	cream
+S	creamy
 S	in	[pan]
 //
 O	cooking pan
@@ -9463,7 +9480,7 @@ O	potato
 S	grated
 S	julienned
 S	in	[mixing bowl]
-O	tongs
+O	tong
 M	mix
 O	hashbrown mix
 S	mixed
@@ -9572,7 +9589,7 @@ S	in	[mixing bowl]
 O	salt
 S	granulated
 S	in	[mixing bowl]
-O	tongs
+O	tong
 M	mix*
 O	hashbrown mix
 S	mixed
@@ -9602,7 +9619,7 @@ S	in	[mixing bowl]
 O	egg white and yolk
 S	beaten
 S	in	[mixing bowl]
-O	tongs
+O	tong
 M	mix
 O	mixing bowl
 S	contains	{hashbrown mix}
@@ -9633,7 +9650,7 @@ O	skillet
 S	hot
 S	contains	{vegetable oil}
 S	in	[stove]
-O	tongs
+O	tong
 M	pick-and-place
 O	skillet
 S	hot
@@ -10023,7 +10040,7 @@ S	contains	{garlic,onion,tarragon,salt,black pepper,water,olive oil}
 S	in	[sheet]
 O	plate
 S	empty
-O	tongs
+O	tong
 M	pick-and-place
 O	plate
 S	contains	{green bean}
@@ -10502,7 +10519,7 @@ S	contains	{butter,buttermilk}
 S	in	[cooking pan]
 O	whisk
 M	cook and stir
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	partly cooked
 S	contains	{egg,butter,buttermilk}
@@ -10540,13 +10557,13 @@ O	ricotta
 S	softened
 S	crumbled
 S	in	[cooking pan]
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	partly cooked
 S	contains	{egg,butter,buttermilk}
 S	in	[cooking pan]
 M	cook and stir
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	partly cooked
 S	contains	{egg,butter,buttermilk,ricotta}
@@ -10589,7 +10606,7 @@ O	cooking pan
 S	hot
 S	contains	{butter,egg,buttermilk,ricotta,salt,black pepper}
 S	in	[stove]
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	partly cooked
 S	contains	{egg,butter,buttermilk,ricotta}
@@ -10602,7 +10619,7 @@ S	ground
 S	in	[cooking pan]
 O	spatula
 M	cook and stir
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	partly cooked
 S	contains	{egg,butter,buttermilk,ricotta,salt,black pepper}
@@ -10637,14 +10654,14 @@ S	in	[stove]
 O	avocado
 S	chopped
 S	in	[cooking pan]
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	partly cooked
 S	contains	{egg,butter,buttermilk,ricotta,salt,black pepper}
 S	in	[cooking pan]
 O	spatula
 M	cook and stir
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	partly cooked
 S	contains	{egg,butter,buttermilk,ricotta,salt,black pepper,avocado}
@@ -10701,20 +10718,20 @@ S	in	[stove]
 O	tomato
 S	diced
 S	in	[cooking pan]
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	partly cooked
 S	contains	{egg,butter,buttermilk,ricotta,salt,black pepper,avocado}
 S	in	[cooking pan]
 O	spatula
 M	cook and stir
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	cooked
 S	contains	{egg,butter,buttermilk,ricotta,salt,black pepper,avocado,tomato}
 S	in	[cooking pan]
 //
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	cooked
 S	contains	{egg,butter,buttermilk,ricotta,salt,black pepper,avocado,tomato}
@@ -10723,7 +10740,7 @@ O	plate
 S	empty
 O	spatula
 M	scrape and pour
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	cooked
 S	contains	{egg,butter,buttermilk,ricotta,salt,black pepper,avocado,tomato}
@@ -11819,9 +11836,9 @@ S	cooked
 S	in	[bowl]
 O	plate
 S	empty
-O	tongs
+O	tong
 M	pick-and-place
-O	tongs
+O	tong
 O	plate
 S	contains	{pasta}
 O	pasta
@@ -12071,7 +12088,7 @@ O	brussel sprout
 S	cooked
 S	contains	{black pepper,salt,olive oil}
 S	in	[baking tray]
-O	tongs
+O	tong
 O	plate
 S	empty
 M	pick-and-place
@@ -12316,7 +12333,7 @@ O	patty
 S	raw
 S	contains	{ground beef,onion,cheese,egg,soup mix,garlic,garlic powder,soy sauce,worcestershire sauce,parsley,basil,oregano,rosemary,salt,black pepper}
 S	in	[plate]
-O	tongs
+O	tong
 O	spatula
 M	scoop and place
 O	grill
@@ -12392,7 +12409,7 @@ S	in	[grill]
 O	hamburger bun
 S	plain
 S	in	[plate]
-O	tongs
+O	tong
 M	pick-and-place
 O	patty
 S	cooked
@@ -12495,13 +12512,13 @@ O	packet
 S	contains	{ribs}
 O	baking tray
 S	empty
-O	ribs
+O	rib
 S	raw
 S	in	[packet]
 M	pick-and-place
 O	baking tray
 S	contains	{ribs}
-O	ribs
+O	rib
 S	raw
 S	in	[baking tray]
 //
@@ -12510,11 +12527,11 @@ S	contains	{salt}
 O	salt
 S	granulated
 S	in	[bowl]
-O	ribs
+O	rib
 S	raw
 S	in	[baking tray]
 M	sprinkle
-O	ribs
+O	rib
 S	raw
 S	contains	{salt}
 S	in	[baking tray]
@@ -12527,12 +12544,12 @@ S	contains	{black pepper}
 O	black pepper
 S	ground
 S	in	[bowl]
-O	ribs
+O	rib
 S	raw
 S	contains	{salt}
 S	in	[baking tray]
 M	sprinkle
-O	ribs
+O	rib
 S	raw
 S	contains	{black pepper,salt}
 S	in	[baking tray]
@@ -12567,12 +12584,12 @@ S	contains	{baking tray}
 O	baking tray
 S	contains	{ribs}
 S	in	[oven]
-O	ribs
+O	rib
 S	raw
 S	contains	{black pepper,salt}
 S	in	[baking tray]
 M	bake
-O	ribs
+O	rib
 S	partly cooked
 S	contains	{black pepper,salt}
 S	in	[baking tray]
@@ -12601,16 +12618,16 @@ S	contains	{ribs}
 O	grill
 S	on
 S	empty
-O	ribs
+O	rib
 S	partly cooked
 S	contains	{black pepper,salt}
 S	in	[baking tray]
-O	tongs
+O	tong
 M	pick-and-place
 O	grill
 S	on
 S	contains	{ribs}
-O	ribs
+O	rib
 S	partly cooked
 S	contains	{black pepper,salt}
 S	in	[grill]
@@ -12634,13 +12651,13 @@ S	contains	{barbecue sauce}
 O	barbecue sauce
 S	thick liquid
 S	in	[bowl]
-O	ribs
+O	rib
 S	partly cooked
 S	contains	{black pepper,salt}
 S	in	[grill]
 O	brush
 M	brush
-O	ribs
+O	rib
 S	partly cooked
 S	contains	{barbecue sauce,black pepper,salt}
 S	in	[grill]
@@ -12661,12 +12678,12 @@ O	grill
 S	on
 S	closed
 S	contains	{ribs}
-O	ribs
+O	rib
 S	partly cooked
 S	contains	{barbecue sauce,black pepper,salt}
 S	in	[grill]
 M	cook
-O	ribs
+O	rib
 S	cooked
 S	contains	{barbecue sauce,black pepper,salt}
 S	in	[grill]
@@ -12691,17 +12708,17 @@ S	contains	{ribs}
 O	grill
 S	off
 S	contains	{ribs}
-O	ribs
+O	rib
 S	cooked
 S	contains	{barbecue sauce,black pepper,salt}
 S	in	[grill]
-O	tongs
+O	tong
 O	baking tray
 S	empty
 M	pick-and-place
 O	baking tray
 S	contains	{ribs}
-O	ribs
+O	rib
 S	ready
 S	contains	{barbecue sauce,black pepper,salt}
 S	in	[baking tray]
@@ -12783,22 +12800,22 @@ S	in	[bowl]
 O	cutting board
 S	empty
 //
-O	garlic press
+O	garlic pres
 S	empty
 S	closed
 M	open
-O	garlic press
+O	garlic pres
 S	empty
 S	opened
 //
-O	garlic press
+O	garlic pres
 S	empty
 S	opened
 O	garlic
 S	clove
 S	peeled
 M	insert
-O	garlic press
+O	garlic pres
 S	opened
 S	contains	{garlic}
 O	garlic
@@ -12808,7 +12825,7 @@ S	in	[garlic press]
 //
 O	bowl
 S	contains	{butter,parsley}
-O	garlic press
+O	garlic pres
 S	opened
 S	contains	{garlic}
 O	garlic
@@ -12822,7 +12839,7 @@ S	contains	{butter,garlic,parsley}
 O	garlic
 S	minced
 S	in	[mixing bowl]
-O	garlic press
+O	garlic pres
 S	closed
 //
 O	bowl
@@ -12964,7 +12981,7 @@ S	contains	{bread,black pepper,butter,garlic,parsley,salt}
 S	in	[baking tray]
 O	plate
 S	empty
-O	tongs
+O	tong
 M	pick-and-place
 O	baking tray
 S	empty
@@ -13459,7 +13476,7 @@ S	in	[bowl]
 O	chicken
 S	raw
 S	in	[plate]
-O	tongs
+O	tong
 M	coat
 O	chicken
 S	raw
@@ -13472,7 +13489,7 @@ O	garlic
 S	minced
 S	in	[chicken]
 //
-O	tongs
+O	tong
 O	chicken
 S	raw
 S	contains	{olive oil,garlic}
@@ -13498,7 +13515,7 @@ S	in	[chicken]
 O	vegetable oil
 S	liquid
 S	in	[baking tray]
-O	tongs
+O	tong
 O	chicken
 S	raw
 S	contains	{olive oil,garlic,basil,black pepper,breadcrumb,parmesan}
@@ -13574,7 +13591,7 @@ S	contains	{chicken,vegetable oil,olive oil,garlic,basil,black pepper,breadcrumb
 S	in	[baking tray]
 O	plate
 S	empty
-O	tongs
+O	tong
 M	pick-and-place
 O	plate
 S	contains	{chicken}
@@ -13951,10 +13968,10 @@ O	water
 S	liquid
 S	boiling
 S	in	[pot]
-O	drinking glass
+O	drinking glas
 S	empty
 M	pour
-O	drinking glass
+O	drinking glas
 S	contains	{water}
 O	water
 S	liquid
@@ -14044,7 +14061,7 @@ S	on
 O	plastic bag
 S	contains	{watermelon}
 //
-O	drinking glass
+O	drinking glas
 S	contains	{water}
 O	packet
 S	contains	{tea bag}
@@ -14052,7 +14069,7 @@ O	tea bag
 S	dried
 S	in	[packet]
 M	insert
-O	drinking glass
+O	drinking glas
 S	contains	{tea bag,water}
 O	tea bag
 S	soaked
@@ -14060,7 +14077,7 @@ S	in	[drinking glass]
 O	packet
 S	empty
 //
-O	drinking glass
+O	drinking glas
 S	contains	{tea bag,water}
 O	tea bag
 S	soaked
@@ -14072,19 +14089,19 @@ S	in	[drinking glass]
 O	tea bag
 S	in	[packet]
 M	brew
-O	drinking glass
+O	drinking glas
 S	contains	{tea,tea bag}
 O	tea
 S	liquid
 S	in	[drinking glass]
 //
-O	drinking glass
+O	drinking glas
 S	contains	{tea,tea bag}
 O	tea bag
 S	soaked
 S	in	[drinking glass]
 M	remove
-O	drinking glass
+O	drinking glas
 S	contains	{tea}
 O	tea bag
 S	soaked
@@ -14103,7 +14120,7 @@ S	contains	{strawberry}
 O	strawberry
 S	frozen
 S	in	[plastic bag]
-O	drinking glass
+O	drinking glas
 S	contains	{tea}
 O	tea
 S	liquid
@@ -14118,7 +14135,7 @@ S	in	[blender cup]
 O	tea
 S	liquid
 S	in	[blender cup]
-O	drinking glass
+O	drinking glas
 S	empty
 //
 O	blender cup
@@ -14212,11 +14229,11 @@ S	blended
 S	thick liquid
 S	contains	{strawberry,sugar syrup,tea,watermelon}
 S	in	[blender cup]
-O	drinking glass
+O	drinking glas
 S	empty
 O	spoon
 M	scoop and pour
-O	drinking glass
+O	drinking glas
 S	contains	{smoothie}
 O	smoothie
 S	blended
@@ -14543,7 +14560,7 @@ O	stove
 S	on
 S	in	[cooking pan]
 M	cook and spread
-O	scrambled eggs
+O	scrambled egg
 S	partly cooked
 S	contains	{egg,milk,cheese,butter,onion}
 S	in	[cooking pan]
@@ -14558,7 +14575,7 @@ O	bacon
 S	fried
 S	chopped
 S	in	[plate]
-O	scrambled eggs
+O	scrambled egg
 S	partly cooked
 S	contains	{egg,milk,cheese,butter,onion}
 S	in	[cooking pan]
@@ -14567,7 +14584,7 @@ O	cooking pan
 S	hot
 S	contains	{butter,onion,egg,milk,cheese,bacon}
 S	in	[stove]
-O	scrambled eggs
+O	scrambled egg
 S	partly cooked
 S	contains	{egg,milk,cheese,butter,onion,bacon}
 S	in	[cooking pan]
@@ -14580,13 +14597,13 @@ O	cooking pan
 S	hot
 S	contains	{butter,onion,egg,milk,cheese,bacon}
 S	in	[stove]
-O	scrambled eggs
+O	scrambled egg
 S	partly cooked
 S	contains	{egg,milk,cheese,butter,onion,bacon}
 S	in	[cooking pan]
 O	turner
 M	flip
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	partly cooked
 S	contains	{egg,milk,cheese,butter,onion,bacon}
@@ -14596,7 +14613,7 @@ O	cooking pan
 S	hot
 S	contains	{butter,onion,egg,milk,cheese,bacon}
 S	in	[stove]
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	partly cooked
 S	contains	{egg,milk,cheese,butter,onion,bacon}
@@ -14609,13 +14626,13 @@ O	cooking pan
 S	hot
 S	contains	{scrambled eggs}
 S	in	[stove]
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	cooked
 S	contains	{egg,milk,cheese,butter,onion,bacon}
 S	in	[cooking pan]
 //
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	cooked
 S	contains	{egg,milk,cheese,butter,onion,bacon}
@@ -14623,7 +14640,7 @@ S	in	[cooking pan]
 O	plate
 S	empty
 M	pour
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	cooked
 S	contains	{egg,milk,cheese,butter,onion,bacon}
@@ -15188,7 +15205,7 @@ O	noodle
 S	cooked
 S	contains	{salt,olive oil}
 S	in	[strainer]
-O	tongs
+O	tong
 O	plate
 S	empty
 M	pour
@@ -15527,19 +15544,19 @@ O	plate
 S	empty
 O	bowl
 S	contains	{fries}
-O	fries
+O	fry
 S	cooked
 S	in	[bowl]
 M	pour
 O	plate
 S	contains	{fries}
-O	fries
+O	fry
 S	cooked
 S	in	[plate]
 O	bowl
 S	empty
 //
-O	fries
+O	fry
 S	cooked
 S	in	[plate]
 O	cutting board
@@ -16102,7 +16119,7 @@ S	cooked
 S	in	[pot]
 O	bowl
 S	empty
-O	tongs
+O	tong
 M	pour
 O	bowl
 S	contains	{noodle}
@@ -16120,7 +16137,7 @@ O	ladle
 M	scoop and pour
 O	bowl
 S	contains	{ramen}
-O	ramen
+O	raman
 S	contains	{soup broth,noodle}
 S	in	[bowl]
 O	soup broth
@@ -16131,20 +16148,20 @@ S	in	[bowl]
 //
 O	bowl
 S	contains	{ramen}
-O	ramen
+O	raman
 S	contains	{soup broth,noodle}
 S	in	[bowl]
 O	soup broth
 S	contains	{garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce,water}
 S	in	[bowl]
-O	tongs
+O	tong
 O	bowl
 S	contains	{egg white and yolk}
 O	egg white and yolk
 S	boiled
 S	in	[bowl]
 M	scrape
-O	ramen
+O	raman
 S	contains	{soup broth,garlic,scallion,chili sauce,ginger,chicken stock,beef stock,soy sauce,fish sauce,water,noodle,egg white and yolk}
 S	in	[bowl]
 //
@@ -16296,7 +16313,7 @@ S	empty
 //
 O	mixing bowl
 S	contains	{onion,tuna}
-O	garlic press
+O	garlic pres
 S	opened
 S	contains	{garlic}
 O	garlic
@@ -16310,7 +16327,7 @@ S	contains	{garlic,onion,tuna}
 O	garlic
 S	minced
 S	in	[mixing bowl]
-O	garlic press
+O	garlic pres
 S	closed
 //
 O	bowl
@@ -16438,7 +16455,7 @@ S	empty
 S	in	[blender]
 O	bowl
 S	contains	{oats}
-O	oats
+O	oat
 S	grain
 S	uncooked
 S	in	[bowl]
@@ -16446,7 +16463,7 @@ M	pour
 O	blender jar
 S	contains	{oats}
 S	in	[blender]
-O	oats
+O	oat
 S	grain
 S	uncooked
 S	in	[blender jar]
@@ -16469,7 +16486,7 @@ S	in	[blender jar]
 O	blender jar
 S	contains	{oats}
 S	in	[blender]
-O	oats
+O	oat
 S	grain
 S	uncooked
 S	in	[blender jar]
@@ -16477,7 +16494,7 @@ M	blend
 O	blender jar
 S	contains	{oats}
 S	in	[blender]
-O	oats
+O	oat
 S	crushed
 S	uncooked
 S	in	[blender jar]
@@ -16506,7 +16523,7 @@ S	off
 //
 O	blender jar
 S	contains	{oats}
-O	oats
+O	oat
 S	crushed
 S	uncooked
 S	in	[blender jar]
@@ -16515,7 +16532,7 @@ S	contains	{chive,garlic,onion,parsley,tuna}
 M	pour
 O	mixing bowl
 S	contains	{chive,garlic,oats,onion,parsley,tuna}
-O	oats
+O	oat
 S	crushed
 S	uncooked
 S	in	[mixing bowl]
@@ -16596,7 +16613,7 @@ S	in	[mixing bowl]
 O	salt
 S	granulated
 S	in	[mixing bowl]
-O	oats
+O	oat
 S	crushed
 S	uncooked
 S	in	[mixing bowl]
@@ -17159,7 +17176,7 @@ O	skillet
 S	hot
 S	contains	{scrambled eggs}
 S	in	[stove]
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	cooked
 S	contains	{butter,egg}
@@ -17169,7 +17186,7 @@ O	skillet
 S	hot
 S	contains	{scrambled eggs}
 S	in	[stove]
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	cooked
 S	contains	{butter,egg}
@@ -17177,13 +17194,13 @@ S	in	[skillet]
 O	plate
 S	empty
 M	pour
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	cooked
 S	contains	{butter,egg}
 S	in	[plate]
 //
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	cooked
 S	contains	{butter,egg}
@@ -17194,7 +17211,7 @@ O	black pepper
 S	ground
 S	in	[bowl]
 M	sprinkle
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	cooked
 S	contains	{butter,egg,black pepper}
@@ -17202,7 +17219,7 @@ S	in	[plate]
 //
 O	plate
 S	contains	{scrambled eggs}
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	cooked
 S	contains	{butter,egg,black pepper}
@@ -17213,7 +17230,7 @@ O	salt
 S	granulated
 S	in	[bowl]
 M	sprinkle
-O	scrambled eggs
+O	scrambled egg
 S	mixed
 S	cooked
 S	ready
@@ -18487,13 +18504,13 @@ O	lemon
 S	halved
 S	in	[bowl]
 //
-O	highball glass
+O	highball glas
 S	empty
 O	lemon
 S	halved
 S	in	[bowl]
 M	rub
-O	highball glass
+O	highball glas
 S	empty
 S	in	[lemon juice]
 O	lemon juice
@@ -18514,14 +18531,14 @@ O	celery salt
 S	granulated
 S	in	[cutting board]
 //
-O	highball glass
+O	highball glas
 S	empty
 S	in	[lemon juice]
 O	celery salt
 S	granulated
 S	in	[cutting board]
 M	rim
-O	highball glass
+O	highball glas
 S	empty
 S	in	[celery salt]
 O	celery salt
@@ -18540,7 +18557,7 @@ O	vodka
 S	liquid
 S	in	[jigger]
 //
-O	highball glass
+O	highball glas
 S	empty
 S	in	[celery salt]
 O	jigger
@@ -18549,14 +18566,14 @@ O	vodka
 S	liquid
 S	in	[jigger]
 M	pour
-O	highball glass
+O	highball glas
 S	contains	{vodka}
 S	in	[celery salt]
 O	vodka
 S	liquid
 S	in	[highball glass]
 //
-O	highball glass
+O	highball glas
 S	contains	{vodka}
 S	in	[celery salt]
 O	cup
@@ -18566,7 +18583,7 @@ S	cubed
 S	frozen
 S	in	[cup]
 M	pour
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka}
 S	in	[celery salt]
 O	ice
@@ -18574,18 +18591,19 @@ S	cubed
 S	frozen
 S	in	[highball glass]
 //
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka}
 S	in	[celery salt]
 O	jar
 S	contains	{tomato juice}
 O	tomato juice
+S	liquid
 S	in	[jar]
 O	vodka
 S	liquid
 S	in	[highball glass]
 M	pour
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka,tomato juice}
 S	in	[celery salt]
 O	cocktail
@@ -18594,14 +18612,16 @@ S	mixed
 S	contains	{vodka,ice,tomato juice}
 S	in	[highball glass]
 O	tomato juice
+S	liquid
 S	in	[highball glass]
 //
 O	tomato juice
+S	liquid
 S	in	[highball glass]
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka,tomato juice}
 S	in	[celery salt]
-O	shot glass
+O	shot glas
 S	contains	{worcestershire sauce}
 O	worcestershire sauce
 S	thick liquid
@@ -18611,7 +18631,7 @@ S	liquid
 S	contains	{vodka,ice,tomato juice}
 S	in	[highball glass]
 M	pour
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka,tomato juice,worcestershire sauce}
 S	in	[celery salt]
 O	cocktail
@@ -18623,7 +18643,7 @@ O	worcestershire sauce
 S	thick liquid
 S	in	[highball glass]
 //
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka,tomato juice,worcestershire sauce}
 S	in	[celery salt]
 O	cocktail
@@ -18631,13 +18651,13 @@ S	mixed
 S	liquid
 S	contains	{vodka,ice,tomato juice,worcestershire sauce}
 S	in	[highball glass]
-O	shot glass
+O	shot glas
 S	contains	{tabasco sauce}
 O	tabasco sauce
 S	thick liquid
 S	in	[shot glass]
 M	pour
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce}
 S	in	[celery salt]
 O	cocktail
@@ -18649,7 +18669,7 @@ O	tabasco sauce
 S	thick liquid
 S	in	[highball glass]
 //
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce}
 S	in	[celery salt]
 O	cocktail
@@ -18663,7 +18683,7 @@ O	celery salt
 S	granulated
 S	in	[cutting board]
 M	sprinkle
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt}
 S	in	[celery salt]
 O	cocktail
@@ -18675,7 +18695,7 @@ O	celery salt
 S	granulated
 S	in	[highball glass]
 //
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt}
 S	in	[celery salt]
 O	cocktail
@@ -18690,7 +18710,7 @@ S	whole
 S	peppercorn
 S	in	[pepper mill]
 M	grind
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper}
 S	in	[celery salt]
 O	cocktail
@@ -18702,7 +18722,7 @@ O	black pepper
 S	ground
 S	in	[highball glass]
 //
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper}
 S	in	[celery salt]
 O	cocktail
@@ -18714,7 +18734,7 @@ O	lemon
 S	halved
 S	in	[bowl]
 M	squeeze
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper,lemon juice}
 S	in	[celery salt]
 O	cocktail
@@ -18729,7 +18749,7 @@ O	lemon
 S	halved
 S	squeezed
 //
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper,lemon juice}
 S	in	[celery salt]
 O	cocktail
@@ -18741,7 +18761,7 @@ O	celery
 S	stem
 S	in	[surface]
 M	insert
-O	highball glass
+O	highball glas
 S	contains	{ice,vodka,tomato juice,worcestershire sauce,tabasco sauce,celery salt,black pepper,lemon juice,celery}
 S	in	[celery salt]
 O	bloody mary
@@ -20321,7 +20341,7 @@ S	contains	{bread,butter,garlic salt}
 S	in	[baking tray]
 O	plate
 S	empty
-O	tongs
+O	tong
 M	pick-and-place
 O	plate
 S	contains	{garlic bread}
@@ -21278,7 +21298,7 @@ O	sugar
 S	granulated
 S	in	[spoon]
 //
-O	highball glass
+O	highball glas
 S	empty
 O	spoon
 S	contains	{sugar}
@@ -21286,13 +21306,13 @@ O	sugar
 S	granulated
 S	in	[spoon]
 M	pour
-O	highball glass
+O	highball glas
 S	contains	{sugar}
 O	sugar
 S	granulated
 S	in	[highball glass]
 //
-O	highball glass
+O	highball glas
 S	contains	{sugar}
 O	bowl
 S	contains	{lime}
@@ -21300,13 +21320,13 @@ O	lime
 S	chopped
 S	in	[bowl]
 M	pour
-O	highball glass
+O	highball glas
 S	contains	{lime,sugar}
 O	lime
 S	chopped
 S	in	[highball glass]
 //
-O	highball glass
+O	highball glas
 S	contains	{lime,sugar}
 O	bowl
 S	contains	{mint}
@@ -21314,14 +21334,14 @@ O	mint
 S	leaf
 S	in	[bowl]
 M	pour
-O	highball glass
+O	highball glas
 S	contains	{lime,mint,sugar}
 O	mint
 S	leaf
 S	in	[highball glass]
 //
 O	muddler
-O	highball glass
+O	highball glas
 S	contains	{lime,mint,sugar}
 O	lime
 S	chopped
@@ -21339,7 +21359,7 @@ S	mashed
 S	leaf
 S	in	[highball glass]
 //
-O	highball glass
+O	highball glas
 S	contains	{lime,mint,sugar}
 O	bucket
 S	contains	{ice}
@@ -21349,14 +21369,14 @@ S	frozen
 S	in	[bucket]
 O	scoop
 M	scoop and pour
-O	highball glass
+O	highball glas
 S	contains	{ice,lime,mint,sugar}
 O	ice
 S	crushed
 S	frozen
 S	in	[highball glass]
 //
-O	highball glass
+O	highball glas
 S	contains	{ice,lime,mint,sugar}
 O	bottle
 S	contains	{club soda}
@@ -21364,13 +21384,13 @@ O	club soda
 S	liquid
 S	in	[bottle]
 M	pour
-O	highball glass
+O	highball glas
 S	contains	{club soda,ice,lime,mint,sugar}
 O	club soda
 S	liquid
 S	in	[highball glass]
 //
-O	highball glass
+O	highball glas
 S	contains	{club soda,ice,lime,mint,sugar}
 O	lime
 S	chopped
@@ -21689,7 +21709,7 @@ S	in	[griddle]
 O	griddle
 S	off
 S	contains	{bacon}
-O	tongs
+O	tong
 O	cutting board
 M	pick-and-place
 O	griddle
@@ -21834,7 +21854,7 @@ S	contains	{potato}
 O	griddle
 S	off
 S	contains	{potato}
-O	tongs
+O	tong
 O	cutting board
 M	pick-and-place
 O	griddle
@@ -22016,7 +22036,7 @@ O	bowl
 S	contains	{lemon juice}
 O	lemon
 S	juice
-S	in	[in bowl]
+S	in	[bowl]
 //
 O	mixing bowl
 S	contains	{olive oil}
@@ -22053,7 +22073,7 @@ S	in	[mixing bowl]
 //
 O	bowl
 S	contains	{salad greens}
-O	salad greens
+O	salad green
 S	washed
 S	leaf
 S	in	[bowl]
@@ -22062,7 +22082,7 @@ S	empty
 M	pour and scrape
 O	salad bowl
 S	contains	{salad greens}
-O	salad greens
+O	salad green
 S	washed
 S	leaf
 S	in	[salad bowl]
@@ -22452,7 +22472,7 @@ S	in	[salad bowl]
 O	shrimp
 S	chopped
 S	in	[salad bowl]
-O	salad greens
+O	salad green
 S	leaf
 S	washed
 S	in	[salad bowl]
@@ -23979,7 +23999,7 @@ S	contains	{beefsteak}
 O	beefsteak
 S	partly cooked
 S	in	[baking tray]
-O	tongs
+O	tong
 M	flip
 O	beefsteak
 S	flipped
@@ -24018,7 +24038,7 @@ S	cooked
 S	in	[baking tray]
 O	plate
 S	empty
-O	tongs
+O	tong
 M	pick-and-place
 O	plate
 S	contains	{beefsteak}
@@ -25107,7 +25127,7 @@ S	contains	{lemon grass}
 O	packet
 S	opened
 S	contains	{lemon grass}
-O	lemon grass
+O	lemon gras
 S	stem
 S	in	[packet]
 O	cutting board
@@ -25115,33 +25135,33 @@ S	empty
 M	pick-and-place
 O	cutting board
 S	contains	{lemon grass}
-O	lemon grass
+O	lemon gras
 S	stem
 S	in	[cutting board]
 //
 O	cutting board
 S	contains	{lemon grass}
-O	lemon grass
+O	lemon gras
 S	unpeeled
 S	stem
 S	in	[cutting board]
 M	cut off ends
-O	lemon grass
+O	lemon gras
 S	unpeeled
 S	ends removed
 S	in	[cutting board]
 //
-O	lemon grass
+O	lemon gras
 S	unpeeled
 S	ends removed
 S	in	[cutting board]
 M	peel
-O	lemon grass
+O	lemon gras
 S	ends removed
 S	peeled
 S	in	[cutting board]
 //
-O	lemon grass
+O	lemon gras
 S	ends removed
 S	peeled
 S	in	[cutting board]
@@ -25149,13 +25169,13 @@ O	cutting board
 S	contains	{lemon grass}
 O	knife
 M	slice
-O	lemon grass
+O	lemon gras
 S	sliced
 S	in	[cutting board]
 //
 O	cutting board
 S	contains	{lemon grass}
-O	lemon grass
+O	lemon gras
 S	sliced
 S	in	[cutting board]
 O	mortar
@@ -25165,7 +25185,7 @@ O	cutting board
 S	empty
 O	mortar
 S	contains	{black pepper,coriander,cumin,garlic,lemon grass,onion,spice}
-O	lemon grass
+O	lemon gras
 S	sliced
 S	in	[mortar]
 //
@@ -25279,7 +25299,7 @@ S	in	[mortar]
 O	garlic
 S	minced
 S	in	[mortar]
-O	lemon grass
+O	lemon gras
 S	sliced
 S	in	[mortar]
 O	onion
@@ -25409,10 +25429,10 @@ S	in	[packet]
 O	parchment paper
 S	sheet
 S	in	[surface]
-O	tongs
+O	tong
 M	pick-and-place
 //
-O	tongs
+O	tong
 O	rib
 S	raw
 S	in	[packet]
@@ -25567,7 +25587,7 @@ S	in	[baking tray]
 //
 O	baking tray
 S	contains	{rib}
-O	tongs
+O	tong
 O	rib
 S	barbecued
 S	contains	{salt,garlic,lemon,barbecue sauce}
@@ -25755,7 +25775,7 @@ S	contains	{olive oil}
 S	in	[plate]
 O	grill
 S	on
-O	tongs
+O	tong
 M	pick-and-place
 O	bread
 S	sliced
@@ -25789,7 +25809,7 @@ S	partly toasted
 S	sliced
 S	contains	{olive oil}
 S	in	[grill]
-O	tongs
+O	tong
 M	flip
 O	bread
 S	flipped
@@ -25822,7 +25842,7 @@ S	partly toasted
 S	sliced
 S	contains	{olive oil}
 S	in	[grill]
-O	tongs
+O	tong
 M	flip
 O	bread
 S	toasted
@@ -25855,7 +25875,7 @@ S	in	[grill]
 O	aluminium foil
 S	sheet
 S	in	[surface]
-O	tongs
+O	tong
 M	remove
 O	grill
 S	on
@@ -26656,7 +26676,7 @@ S	in	[stove]
 O	savory pastry
 S	uncook
 S	in	[pot]
-O	tongs
+O	tong
 S	empty
 M	fry and flip
 O	savory pastry
@@ -26679,7 +26699,7 @@ O	pot
 S	heated
 S	contains	{oil,savory pastry}
 S	in	[stove]
-O	tongs
+O	tong
 S	empty
 O	savory pastry
 S	fried
@@ -26696,7 +26716,7 @@ S	in	[napkin]
 O	napkin
 S	contains	{savory pastry}
 S	in	[plate]
-O	tongs
+O	tong
 //
 O	stove
 S	on
@@ -29103,7 +29123,7 @@ O	sweet pepper
 S	sliced
 S	in	[bowl]
 //
-O	tongs
+O	tong
 O	cooking pan
 S	heated
 S	in	[stove]
@@ -29121,7 +29141,7 @@ S	in	[pan]
 O	cooking pan
 S	contains	{sausage}
 S	in	[stove]
-O	tongs
+O	tong
 O	sausage
 S	uncooked
 S	in	[pan]
@@ -29133,7 +29153,7 @@ S	in	[pan]
 O	cooking pan
 S	contains	{sausage}
 S	in	[stove]
-O	tongs
+O	tong
 O	sausage
 S	partly cooked
 S	in	[pan]
@@ -29973,7 +29993,7 @@ S	whole
 S	in	[cutting board]
 O	knife
 M	shave
-O	corn kernels
+O	corn kernel
 S	uncooked
 S	in	[cutting board]
 O	corn
@@ -29982,7 +30002,7 @@ S	in	[cutting board]
 //
 O	cutting board
 S	contains	{corn}
-O	corn kernels
+O	corn kernel
 S	uncooked
 S	in	[cutting board]
 O	pot
@@ -29991,7 +30011,7 @@ O	knife
 M	scoop and pour
 O	pot
 S	contains	{corn kernels}
-O	corn kernels
+O	corn kernel
 S	uncooked
 S	in	[pot]
 O	corn
@@ -30007,7 +30027,7 @@ O	knife
 M	scrape
 O	pot
 S	contains	{corn}
-O	corn kernels
+O	corn kernel
 S	uncooked
 S	in	[pot]
 O	corn cob
@@ -30099,7 +30119,7 @@ S	contains	{water,corn,milk,butter,sugar,salt,black pepper}
 O	pot
 S	contains	{water,corn,milk,butter,sugar,salt,black pepper}
 O	spoon
-O	corn kernels
+O	corn kernel
 S	uncooked
 S	in	[pot]
 M	stir
@@ -30869,10 +30889,10 @@ S	contains	{orange juice}
 O	orange
 S	juice
 S	in	[squeezer]
-O	drinking glass
+O	drinking glas
 S	empty
 M	pour
-O	drinking glass
+O	drinking glas
 S	contains	{orange juice}
 O	orange juice
 S	contains	{orange}
@@ -31445,7 +31465,7 @@ O	baking tray
 S	contains	{apple pie}
 O	plate
 S	empty
-O	tongs
+O	tong
 M	pick-and-place
 O	plate
 S	contains	{apple pie}
@@ -31824,11 +31844,13 @@ S	contains	{sugar mixture,butter,vanilla extract}
 O	measuring cup
 S	contains	{peanut}
 O	peanut
+S	dried
 S	in	[measuring cup]
 M	pour
 O	bowl
 S	contains	{sugar mixture,butter,vanilla extract,peanut}
 O	peanut
+S	dried
 S	in	[bowl]
 //
 O	bowl
@@ -32537,14 +32559,14 @@ S	in	[pot]
 O	cooking pan
 S	contains	{vegetarian sausage}
 S	in	[stove]
-O	tongs
+O	tong
 O	vegetarian sausage
 S	in	[pan]
 M	cook and flip
 O	vegetarian sausage
 S	cooked
 S	in	[pan]
-O	tongs
+O	tong
 O	cooking pan
 S	contains	{vegetarian sausage}
 S	in	[stove]
@@ -33768,7 +33790,7 @@ S	empty
 O	hamburger bun
 S	toasted
 S	in	[grill]
-O	tongs
+O	tong
 M	pick-and-place
 O	grill
 S	empty
@@ -34581,7 +34603,7 @@ S	in	[plate]
 //
 O	packet
 S	contains	{salad greens}
-O	salad greens
+O	salad green
 S	leaf
 S	in	[packet]
 O	bowl
@@ -34589,7 +34611,7 @@ S	empty
 M	pour
 O	bowl
 S	contains	{salad greens}
-O	salad greens
+O	salad green
 S	leaf
 S	in	[bowl]
 O	packet
@@ -34600,13 +34622,13 @@ S	on
 O	water
 S	liquid
 S	in	[faucet]
-O	salad greens
+O	salad green
 S	leaf
 S	in	[bowl]
 O	bowl
 S	contains	{salad greens}
 M	rinse
-O	salad greens
+O	salad green
 S	leaf
 S	washed
 S	in	[bowl]
@@ -34782,7 +34804,7 @@ S	in	[bowl]
 //
 O	bowl
 S	contains	{salad greens}
-O	salad greens
+O	salad green
 S	leaf
 S	washed
 S	in	[bowl]
@@ -34791,7 +34813,7 @@ S	empty
 M	pour and scrape
 O	salad bowl
 S	contains	{salad greens}
-O	salad greens
+O	salad green
 S	leaf
 S	washed
 S	in	[salad bowl]
@@ -34923,7 +34945,7 @@ S	in	[salad bowl]
 O	black pepper
 S	ground
 S	in	[salad bowl]
-O	salad greens
+O	salad green
 S	leaf
 S	washed
 S	in	[salad bowl]

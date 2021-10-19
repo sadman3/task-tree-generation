@@ -88,11 +88,13 @@ S	contains	{sugar mixture,butter,vanilla extract}
 O	measuring cup	1
 S	contains	{peanut}
 O	peanut	1
+S	dried
 S	in	[measuring cup]
 M	pour	Assumed	Assumed
 O	bowl	0
 S	contains	{sugar mixture,butter,vanilla extract,peanut}
 O	peanut	1
+S	dried
 S	in	[bowl]
 //
 O	bowl	0

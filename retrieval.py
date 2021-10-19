@@ -30,6 +30,8 @@ utensils = get_utensils()
 kitchen_items = json.load(open(kitchen_path))
 default_ingredients = [object.rstrip()
                        for object in open(default_ingredient_path, 'r')]
+print('-- Reading universal foon from', foon_pkl)
+foon_functional_units, foon_object_nodes, foon_object_to_FU_map = [], [], {}
 ###################
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -174,11 +176,10 @@ def find_goal_node(dish_type, ingredients):
 # The search uses heuristic (ingredient overlap) to select a FU from candidate FUs.
 
 
-def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_FU_map={},
-                                kitchen_items=[], input_ingredients=[], goal_node=None):
+def extract_reference_task_tree(kitchen_items=[], input_ingredients=[], goal_node=None, subtree=False):
     """
-        parameters: a list of functioal units, a list of object nodes,
-                    object to functional unit mapping, list of kitchen items,
+        parameters: list of kitchen items,
+                    input ingredients,
                     a goal node
 
                     object_to_FU_map {
@@ -211,14 +212,17 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
         else:
             items_already_searched.append(current_item_index)
 
-        current_item = object_nodes[current_item_index]
+        current_item = foon_object_nodes[current_item_index]
 
         if not check_if_exist_in_kitchen(kitchen_items, current_item):
 
-            candidate_units = object_to_FU_map[current_item_index]
+            candidate_units = foon_object_to_FU_map[current_item_index]
 
-            best_candidate_idx = select_best_candidate(
-                input_ingredients, candidate_units, functional_units)
+            if subtree:
+                best_candidate_idx = candidate_units[0]
+            else:
+                best_candidate_idx = select_best_candidate(
+                    input_ingredients, candidate_units, foon_functional_units)
 
             # if an fu is already taken, do not process it again
             if best_candidate_idx in reference_task_tree:
@@ -227,7 +231,7 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
             reference_task_tree.append(best_candidate_idx)
 
             # all input of the selected FU need to be explored
-            for node in functional_units[best_candidate_idx].input_nodes:
+            for node in foon_functional_units[best_candidate_idx].input_nodes:
                 node_idx = node.id
                 if node_idx not in items_to_search:
 
@@ -235,7 +239,7 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
                     # explore only onion, chopped, in bowl
                     flag = True
                     if node.label in utensils and len(node.ingredients) == 1:
-                        for node2 in functional_units[best_candidate_idx].input_nodes:
+                        for node2 in foon_functional_units[best_candidate_idx].input_nodes:
                             if node2.label == node.ingredients[0] and node2.container == node.label:
 
                                 flag = False
@@ -250,7 +254,7 @@ def extract_reference_task_tree(functional_units=[], object_nodes=[], object_to_
     task_tree_units = []
     for i in reference_task_tree:
         # creating a copy to make sure that modifying a FU does not affect future search
-        FU = copy.deepcopy(functional_units[i])
+        FU = copy.deepcopy(foon_functional_units[i])
         task_tree_units.append(FU)
 
     return task_tree_units
@@ -360,12 +364,54 @@ def remove_extra_ingredients(final_task_tree=[], input_ingredients=[]):
 
     return task_tree
 
+# -----------------------------------------------------------------------------------------------------------------------------#
+# this method find a subtree from foon, makes substitution and adds the branch to task tree
+
+
+def substitute_and_add_branch(task_tree, ingredient):
+
+    container_priority = ['bowl', 'cup',
+                          'spoon', 'measuring cup', 'mixing bowl', 'cutting board']
+
+    # the subtree added to this functional unit
+    special_motions = ['mix', 'add', 'pour']
+
+    # first find the suitable goal node to retrieve subtree
+
+    candidates = []
+    print(ingredient)
+    for node in foon_object_nodes:
+        if node.label == ingredient["object"] \
+                and ingredient["state"] in node.states:
+            candidates.append(node)
+    candidates.sort(key=lambda x: len(x.ingredients))
+    if len(candidates) == 0:
+        print(ingredient)
+        input()
+
+    goal_node = None
+    for candidate in candidates:
+        if not candidate.container:
+            goal_node = candidate
+            break
+
+        for container in container_priority:
+            if candidate.container == container:
+                goal_node = candidate
+                break
+    if goal_node is None:
+        goal_node = candidates[0]
+
+    subtree = extract_reference_task_tree(
+        kitchen_items=kitchen_items, input_ingredients=[], goal_node=goal_node, subtree=True)
+
 
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 # Given a reference task tree, this method modifies it to
 # so that it is aligned with input ingredients.
 # Major step: food prep, substituion, deletion of extra ingredients
+
 
 def modify_reference_task_tree(reference_task_tree=[], input_ingredients=[]):
     """
@@ -378,10 +424,11 @@ def modify_reference_task_tree(reference_task_tree=[], input_ingredients=[]):
     task_tree = copy.deepcopy(reference_task_tree)
 
     ingredient_mapping = find_ingredient_mapping(task_tree, input_ingredients)
+    print(ingredient_mapping)
     for ingredient in ingredient_mapping:
 
         # if the mapping exists in reference task tree, we do not need to search in FOON
-        if ingredient["mapping_source"] == "reference_task_tree":
+        if ingredient_mapping[ingredient]["mapping_source"] == "reference_task_tree":
             mapped_object = ingredient_mapping[ingredient]['object']
 
             # substitue object in the task tree
@@ -403,7 +450,9 @@ def modify_reference_task_tree(reference_task_tree=[], input_ingredients=[]):
         else:  # mapping exists in foon but not in reference tree
 
             # we need to search in foon for the food prep steps
-            continue
+
+            substitute_and_add_branch(
+                task_tree, ingredient_mapping[ingredient])
 
     return task_tree
 # -----------------------------------------------------------------------------------------------------------------------------#
@@ -443,7 +492,7 @@ def save_paths_to_file(task_tree, path):
 # this method creates the task using three major steps mentioned in the paper
 
 
-def retrieval(functional_units, object_nodes, object_to_FU_map, recipe_id, dish_type, input_ingredients):
+def retrieval(recipe_id, dish_type, input_ingredients):
 
     # step 1: find the reference goal node
     reference_goal_node = find_goal_node(dish_type, input_ingredients)
@@ -453,7 +502,7 @@ def retrieval(functional_units, object_nodes, object_to_FU_map, recipe_id, dish_
     # step 2: find the reference task tree
     print("extracting reference task tree")
     reference_task_tree = extract_reference_task_tree(
-        functional_units, object_nodes, object_to_FU_map, kitchen_items, input_ingredients, reference_goal_node)
+        kitchen_items, input_ingredients, reference_goal_node)
 
     # save the reference task tree
     output_dir = os.path.join('output', 'reference_task_tree', dish_type)
@@ -483,15 +532,13 @@ def retrieval(functional_units, object_nodes, object_to_FU_map, recipe_id, dish_
 
 if __name__ == "__main__":
 
-    # construct the graph
-    print('-- Reading universal foon from', foon_pkl)
-    functional_units, object_nodes, object_to_FU_map = read_universal_foon()
+    foon_functional_units, foon_object_nodes, foon_object_to_FU_map = read_universal_foon()
 
     # selected_catagory = ['salad', 'drinks', 'omelette',
     #                      'cake', 'soup', 'bread', 'noodle', 'rice']
 
-    #selected_category = ['salad', 'omelette', 'rice', 'soup', 'drinks']
-    selected_category = ['drinks']
+    selected_category = ['salad', 'omelette', 'rice', 'soup', 'drinks']
+    #selected_category = ['drinks']
 
     for category in selected_category:
         input_dir = 'input/' + category
@@ -501,5 +548,4 @@ if __name__ == "__main__":
 
             # do the retrieval
             print("-- STARTING RETRIEVAL")
-            retrieval(functional_units, object_nodes, object_to_FU_map,
-                      recipe_id, dish_type, ingredients)
+            retrieval(recipe_id, dish_type, ingredients)

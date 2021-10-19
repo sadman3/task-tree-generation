@@ -108,6 +108,7 @@ S	coated	[celery salt]
 O	jar	1
 S	contains	{tomato juice}
 O	tomato juice	1
+S	liquid
 S	in	[jar]
 O	vodka	0
 S	liquid
@@ -122,9 +123,11 @@ S	mixed
 S	contains	{vodka,ice,tomato juice}
 S	in	[highball glass]
 O	tomato juice	1
+S	liquid
 S	in	[highball glass]
 //
 O	tomato juice	1
+S	liquid
 S	in	[highball glass]
 O	highball glass	0
 S	contains	{ice,vodka,tomato juice}

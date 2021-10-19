@@ -173,6 +173,7 @@ S	in	[bowl]
 O	bowl	1
 S	contains	{cocoa powder}
 O	cocoa powder	1
+S	powder
 S	in	[bowl]
 O	bowl	0
 S	contains	{flour}
@@ -204,6 +205,7 @@ O	salt	1
 S	granulated
 S	in	[bowl]
 O	cocoa powder	1
+S	powder
 S	in	[bowl]
 O	flour	1
 S	powder

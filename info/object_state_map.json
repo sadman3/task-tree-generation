@@ -75,6 +75,9 @@
         "liquid",
         "spread"
     ],
+    "tong": [
+        "empty"
+    ],
     "instant coffee": [
         "powder"
     ],
@@ -92,6 +95,9 @@
     ],
     "whipped coffee": [
         "whipped"
+    ],
+    "drinking glas": [
+        "empty"
     ],
     "ice": [
         "cubed",
@@ -159,7 +165,9 @@
         "mixed",
         "liquid"
     ],
-    "cocoa powder": [],
+    "cocoa powder": [
+        "powder"
+    ],
     "baking soda": [
         "powder"
     ],
@@ -295,7 +303,9 @@
     "sea salt": [
         "granulated"
     ],
-    "pepper": [],
+    "pepper": [
+        "ground"
+    ],
     "eggs and bacon pizza": [],
     "parsley": [
         "chopped",
@@ -390,7 +400,7 @@
         "dried",
         "powder"
     ],
-    "sweet potato fries": [
+    "sweet potato fry": [
         "uncooked",
         "cooked"
     ],
@@ -443,7 +453,7 @@
         "raw",
         "sliced"
     ],
-    "pigs in a blanket": [
+    "pig in a blanket": [
         "uncooked",
         "cooked"
     ],
@@ -460,9 +470,13 @@
         "mixed"
     ],
     "scale": [],
-    "peanut": [],
+    "peanut": [
+        "dried"
+    ],
     "coconut milk powder": [],
-    "coconut milk": [],
+    "coconut milk": [
+        "liquid"
+    ],
     "curry sauce": [],
     "beefsteak": [
         "uncooked",
@@ -503,7 +517,9 @@
     "pasta alfredo": [
         "cooked"
     ],
-    "cream": [],
+    "cream": [
+        "creamy"
+    ],
     "nutmeg": [
         "whole",
         "ground"
@@ -686,7 +702,7 @@
     "buttermilk": [
         "liquid"
     ],
-    "scrambled eggs": [
+    "scrambled egg": [
         "mixed",
         "partly cooked",
         "cooked"
@@ -800,13 +816,20 @@
         "chopped",
         "separated"
     ],
-    "ribs": [
+    "rib": [
         "raw",
         "partly cooked",
-        "cooked"
+        "cooked",
+        "salted",
+        "barbecued"
     ],
     "barbecue sauce": [
         "thick liquid"
+    ],
+    "garlic pres": [
+        "empty",
+        "closed",
+        "opened"
     ],
     "lemon extract": [],
     "muffin batter": [],
@@ -872,7 +895,7 @@
         "cooked",
         "sliced"
     ],
-    "fries": [
+    "fry": [
         "cooked"
     ],
     "club sandwich": [
@@ -896,13 +919,13 @@
         "sauce"
     ],
     "soup broth": [],
-    "ramen": [],
+    "raman": [],
     "tuna": [
         "shredded",
         "pressed",
         "squeezed"
     ],
-    "oats": [
+    "oat": [
         "grain",
         "uncooked",
         "crushed"
@@ -1004,17 +1027,23 @@
     "seaweed": [
         "sheet"
     ],
+    "highball glas": [
+        "empty"
+    ],
     "celery salt": [
         "granulated"
     ],
     "vodka": [
         "liquid"
     ],
-    "tomato juice": [],
+    "tomato juice": [
+        "liquid"
+    ],
     "cocktail": [
         "liquid",
         "mixed"
     ],
+    "shot glas": [],
     "tabasco sauce": [
         "thick liquid"
     ],
@@ -1123,7 +1152,7 @@
         "creamy",
         "mixed"
     ],
-    "salad greens": [
+    "salad green": [
         "washed",
         "leaf"
     ],
@@ -1217,7 +1246,7 @@
     "spice mixture": [
         "mixed"
     ],
-    "lemon grass": [
+    "lemon gras": [
         "stem",
         "unpeeled",
         "ends removed",
@@ -1226,12 +1255,6 @@
     ],
     "galangal": [
         "paste"
-    ],
-    "rib": [
-        "raw",
-        "salted",
-        "partly cooked",
-        "barbecued"
     ],
     "green chilli": [
         "whole",
@@ -1311,7 +1334,7 @@
         "frozen",
         "grain"
     ],
-    "corn kernels": [
+    "corn kernel": [
         "uncooked"
     ],
     "corn cob": [

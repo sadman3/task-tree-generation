@@ -62,6 +62,7 @@ S	contains	{cocoa powder}
 O	bowl	0
 S	contains	{flour,sugar}
 O	cocoa powder	1
+S	powder
 S	in	[bowl]
 M	pour	0:52	0:54
 O	bowl	0
@@ -92,6 +93,7 @@ S	contains	{sugar,flour,cocoa powder,baking powder,baking soda}
 O	bowl	0
 S	contains	{sugar,flour,cocoa powder,baking powder,baking soda}
 O	cocoa powder	1
+S	powder
 S	in	[bowl]
 O	bowl	1
 S	contains	{salt}
@@ -117,6 +119,7 @@ O	sugar	1
 S	granulated
 S	in	[bowl]
 O	cocoa powder	1
+S	powder
 S	in	[bowl]
 O	flour	1
 S	powder

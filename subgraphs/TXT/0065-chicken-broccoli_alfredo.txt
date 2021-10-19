@@ -398,12 +398,14 @@ S	in	[pan]
 O	measuring cup	1
 S	contains	{cream}
 O	cream	1
+S	creamy
 S	in	[measuring cup]
 M	pour	2:37	2:40
 O	pasta alfredo	0
 S	contains	{alfredo sauce,broccoli,penne,parmesan,cream}
 S	in	[pan]
 O	cream	1
+S	creamy
 S	in	[pan]
 //
 O	cooking pan	0

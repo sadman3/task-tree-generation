@@ -185,7 +185,7 @@
         "container": "bottle"
     },
     {
-        "label": "tongs",
+        "label": "tong",
         "states": [],
         "ingredients": [],
         "container": null
@@ -278,7 +278,7 @@
         "container": null
     },
     {
-        "label": "drinking glass",
+        "label": "drinking glas",
         "states": [
             "empty"
         ],
@@ -705,7 +705,9 @@
     },
     {
         "label": "cocoa powder",
-        "states": [],
+        "states": [
+            "powder"
+        ],
         "ingredients": [],
         "container": "bowl"
     },
@@ -1501,7 +1503,9 @@
     },
     {
         "label": "pepper",
-        "states": [],
+        "states": [
+            "ground"
+        ],
         "ingredients": [],
         "container": "bottle"
     },
@@ -2405,7 +2409,9 @@
     },
     {
         "label": "peanut",
-        "states": [],
+        "states": [
+            "dried"
+        ],
         "ingredients": [],
         "container": "bag"
     },
@@ -2419,7 +2425,9 @@
     },
     {
         "label": "peanut",
-        "states": [],
+        "states": [
+            "dried"
+        ],
         "ingredients": [],
         "container": "packet"
     },
@@ -2545,7 +2553,9 @@
     },
     {
         "label": "cream",
-        "states": [],
+        "states": [
+            "creamy"
+        ],
         "ingredients": [],
         "container": "measuring cup"
     },
@@ -4175,7 +4185,7 @@
         "container": null
     },
     {
-        "label": "ribs",
+        "label": "rib",
         "states": [
             "raw"
         ],
@@ -4236,26 +4246,9 @@
         "container": null
     },
     {
-        "label": "garlic press",
+        "label": "garlic pres",
         "states": [
             "empty",
-            "closed"
-        ],
-        "ingredients": [],
-        "container": null
-    },
-    {
-        "label": "garlic press",
-        "states": [
-            "empty",
-            "opened"
-        ],
-        "ingredients": [],
-        "container": null
-    },
-    {
-        "label": "garlic press",
-        "states": [
             "closed"
         ],
         "ingredients": [],
@@ -4973,7 +4966,7 @@
         "container": null
     },
     {
-        "label": "fries",
+        "label": "fry",
         "states": [
             "cooked"
         ],
@@ -5200,7 +5193,7 @@
         "container": null
     },
     {
-        "label": "oats",
+        "label": "oat",
         "states": [
             "grain",
             "uncooked"
@@ -5596,7 +5589,7 @@
         "container": "packet"
     },
     {
-        "label": "highball glass",
+        "label": "highball glas",
         "states": [
             "empty"
         ],
@@ -5604,7 +5597,7 @@
         "container": null
     },
     {
-        "label": "highball glass",
+        "label": "highball glas",
         "states": [
             "empty"
         ],
@@ -5628,7 +5621,7 @@
         "container": "shaker"
     },
     {
-        "label": "highball glass",
+        "label": "highball glas",
         "states": [
             "empty"
         ],
@@ -5678,12 +5671,14 @@
     },
     {
         "label": "tomato juice",
-        "states": [],
+        "states": [
+            "liquid"
+        ],
         "ingredients": [],
         "container": "jar"
     },
     {
-        "label": "shot glass",
+        "label": "shot glas",
         "states": [],
         "ingredients": [
             "worcestershire sauce"
@@ -5711,7 +5706,7 @@
         "container": "highball glass"
     },
     {
-        "label": "shot glass",
+        "label": "shot glas",
         "states": [],
         "ingredients": [
             "tabasco sauce"
@@ -7226,7 +7221,7 @@
         "container": null
     },
     {
-        "label": "lemon grass",
+        "label": "lemon gras",
         "states": [
             "stem"
         ],
@@ -7234,7 +7229,7 @@
         "container": "packet"
     },
     {
-        "label": "lemon grass",
+        "label": "lemon gras",
         "states": [
             "unpeeled",
             "stem"
@@ -7331,14 +7326,6 @@
             "rib"
         ],
         "container": null
-    },
-    {
-        "label": "rib",
-        "states": [
-            "raw"
-        ],
-        "ingredients": [],
-        "container": "packet"
     },
     {
         "label": "parchment paper",
@@ -7636,7 +7623,7 @@
         "container": null
     },
     {
-        "label": "tongs",
+        "label": "tong",
         "states": [
             "empty"
         ],
@@ -8561,7 +8548,9 @@
     },
     {
         "label": "peanut",
-        "states": [],
+        "states": [
+            "dried"
+        ],
         "ingredients": [],
         "container": "measuring cup"
     },
@@ -9059,7 +9048,7 @@
         "container": null
     },
     {
-        "label": "salad greens",
+        "label": "salad green",
         "states": [
             "leaf"
         ],

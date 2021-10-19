@@ -58,6 +58,7 @@ O	bag	1
 S	sealed
 S	contains	{peanut}
 O	peanut	0
+S	dried
 S	in	[bag]
 O	scissors	0
 M	cut open	0:32	0:33
@@ -73,12 +74,14 @@ S	on	[scale]
 O	packet	1
 S	contains	{peanut}
 O	peanut	1
+S	dried
 S	in	[packet]
 M	pour	1:06	1:17
 O	baking tray	0
 S	contains	{peanut}
 S	on	[scale]
 O	peanut	0
+S	dried
 S	on	[baking tray]
 //
 O	mortar	1
@@ -142,6 +145,7 @@ M	stir	4:02	5:00
 O	bowl	0
 S	contains	{coconut milk}
 O	coconut milk	0
+S	liquid
 S	in	[bowl]
 //
 O	pot	0
@@ -159,6 +163,7 @@ S	on	[stove]
 O	bowl	0
 S	contains	{coconut milk}
 O	coconut milk	0
+S	liquid
 S	in	[bowl]
 O	spoon	1
 S	empty
@@ -166,6 +171,7 @@ M	scoop	5:01	5:02
 O	spoon	0
 S	contains	{coconut milk}
 O	coconut milk	0
+S	liquid
 S	in	[spoon]
 //
 O	pot	0
@@ -174,12 +180,14 @@ S	on	[stove]
 O	spoon	1
 S	contains	{coconut milk}
 O	coconut milk	1
+S	liquid
 S	in	[spoon]
 M	pour	5:02	5:13
 O	pot	0
 S	contains	{curry paste,coconut milk}
 S	on	[stove]
 O	coconut milk	1
+S	liquid
 S	in	[pot]
 O	spoon	0
 //
@@ -190,6 +198,7 @@ O	curry paste	0
 S	contains	{onion,spice mixture,garlic,lemon grass,shrimp paste,galangal,paprika}
 S	in	[pot]
 O	coconut milk	1
+S	liquid
 S	in	[pot]
 O	spatula	1
 M	mix	5:20	5:30
