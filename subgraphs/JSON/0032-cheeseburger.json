@@ -1,0 +1,1015 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": null
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": null
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "ground beef",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "shape",
+        "output_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": "hand"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": "hand"
+            }
+        ],
+        "motion_node": "dip",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "patty"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "patty"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": "hand"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "patty"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "patty"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "place",
+        "output_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic"
+                ],
+                "container": "hand"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "patty"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "patty"
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic"
+                ],
+                "container": "hand"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "grill",
+                "states": [
+                    "on",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "patty"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt"
+                ],
+                "container": "grill"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "partly cooked",
+                    "flipped"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "partly cooked",
+                    "flipped"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt"
+                ],
+                "container": "grill"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "place",
+        "output_nodes": [
+            {
+                "label": "cheese",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "patty"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "patty"
+            }
+        ],
+        "motion_node": "melt",
+        "output_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "cheese"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "melted"
+                ],
+                "ingredients": [],
+                "container": "patty"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "hamburger bun"
+                ],
+                "container": null
+            },
+            {
+                "label": "hamburger bun",
+                "states": [],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "grill",
+                "states": [
+                    "empty",
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "hamburger bun",
+                "states": [],
+                "ingredients": [],
+                "container": "grill"
+            },
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "hamburger bun"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "hamburger bun",
+                "states": [],
+                "ingredients": [],
+                "container": "grill"
+            },
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "hamburger bun"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "toast",
+        "output_nodes": [
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "hamburger bun"
+                ],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "grill"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "empty",
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "hamburger bun"
+                ],
+                "container": null
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "hamburger bun"
+                ],
+                "container": null
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "cheese"
+                ],
+                "container": "grill"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "empty",
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "cheese"
+                ],
+                "container": "hamburger bun"
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "hamburger bun"
+                ],
+                "container": null
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "cheese"
+                ],
+                "container": "hamburger bun"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "hamburger"
+                ],
+                "container": null
+            },
+            {
+                "label": "hamburger",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "cheese"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "cheeseburger",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "cheese"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

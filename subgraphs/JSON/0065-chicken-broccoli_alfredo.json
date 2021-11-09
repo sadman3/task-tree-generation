@@ -1,0 +1,1589 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "clove"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "chicken",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "chicken broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken broth",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken",
+                    "garlic",
+                    "chicken broth"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "chicken broth",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken",
+                    "garlic",
+                    "chicken broth"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken",
+                    "garlic",
+                    "chicken broth",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken",
+                    "garlic",
+                    "chicken broth",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "chicken broth",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "alfredo sauce",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken",
+                    "garlic",
+                    "chicken broth",
+                    "water"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "broccoli",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "broccoli"
+                ],
+                "container": null
+            },
+            {
+                "label": "broccoli",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "broccoli"
+                ],
+                "container": null
+            },
+            {
+                "label": "broccoli",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "broccoli",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "broccoli"
+                ],
+                "container": null
+            },
+            {
+                "label": "broccoli",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "broccoli"
+                ],
+                "container": null
+            },
+            {
+                "label": "broccoli",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "broccoli"
+                ],
+                "container": null
+            },
+            {
+                "label": "broccoli",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "broccoli",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "box",
+                "states": [],
+                "ingredients": [
+                    "penne"
+                ],
+                "container": null
+            },
+            {
+                "label": "penne",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "box"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "penne"
+                ],
+                "container": null
+            },
+            {
+                "label": "penne",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "penne"
+                ],
+                "container": null
+            },
+            {
+                "label": "penne",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "penne",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "penne",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "broccoli",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "alfredo sauce",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken",
+                    "garlic",
+                    "chicken broth",
+                    "water"
+                ],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "penne",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "broccoli",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "penne",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "alfredo sauce",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "chicken",
+                    "garlic",
+                    "chicken broth",
+                    "water"
+                ],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "pasta alfredo"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pasta alfredo",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "pasta alfredo"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "uncover",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "pasta alfredo"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "pasta alfredo"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pasta alfredo",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "parmesan"
+                ],
+                "container": null
+            },
+            {
+                "label": "parmesan",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pasta alfredo",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne",
+                    "parmesan"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "parmesan",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "pasta alfredo"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pasta alfredo",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne",
+                    "parmesan"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pasta alfredo",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne",
+                    "parmesan",
+                    "cream"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "pasta alfredo"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pasta alfredo",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne",
+                    "parmesan",
+                    "cream"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "pasta alfredo",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne",
+                    "parmesan",
+                    "cream"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "pasta alfredo"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pasta alfredo",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne",
+                    "parmesan",
+                    "cream"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "nutmeg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "pasta alfredo",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne",
+                    "parmesan",
+                    "cream",
+                    "nutmeg"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "nutmeg",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "pasta alfredo"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pasta alfredo",
+                "states": [],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne",
+                    "parmesan",
+                    "cream",
+                    "nutmeg"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "pasta alfredo",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne",
+                    "parmesan",
+                    "cream",
+                    "nutmeg"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "pasta alfredo"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pasta alfredo",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne",
+                    "parmesan",
+                    "cream",
+                    "nutmeg"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "ladle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "pasta alfredo"
+                ],
+                "container": null
+            },
+            {
+                "label": "pasta alfredo",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "alfredo sauce",
+                    "broccoli",
+                    "penne",
+                    "parmesan",
+                    "cream",
+                    "nutmeg"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

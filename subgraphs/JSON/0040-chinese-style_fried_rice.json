@@ -1,0 +1,1546 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "green onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "green onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "green onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "sausage"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "sausage"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "sausage"
+                ],
+                "container": null
+            },
+            {
+                "label": "sausage",
+                "states": [
+                    "whole",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "take out",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "sausage"
+                ],
+                "container": null
+            },
+            {
+                "label": "sausage",
+                "states": [
+                    "whole",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "sausage"
+                ],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "sausage",
+                "states": [
+                    "whole",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "sausage",
+                "states": [
+                    "sliced",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "sausage"
+                ],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "sausage",
+                "states": [
+                    "sliced",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "sausage"
+                ],
+                "container": null
+            },
+            {
+                "label": "sausage",
+                "states": [
+                    "sliced",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "bottle",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soy sauce",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "bottle",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soy sauce",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soy sauce",
+                    "sugar",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soy sauce",
+                    "sugar",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "mix*",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "sauce",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "soy sauce",
+                    "sugar",
+                    "water"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "frying pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "frying pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "preheat",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "sausage"
+                ],
+                "container": null
+            },
+            {
+                "label": "sausage",
+                "states": [
+                    "sliced",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "sausage"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "sausage",
+                "states": [
+                    "sliced",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "frying pan",
+                "states": [],
+                "ingredients": [
+                    "sausage"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "sausage",
+                "states": [
+                    "sliced",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir and fry",
+        "output_nodes": [
+            {
+                "label": "sausage",
+                "states": [
+                    "sliced",
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "green pea"
+                ],
+                "container": null
+            },
+            {
+                "label": "corn",
+                "states": [
+                    "frozen",
+                    "grain"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "choppped",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "green pea",
+                "states": [
+                    "bean",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "green pea"
+                ],
+                "container": null
+            },
+            {
+                "label": "green pea",
+                "states": [
+                    "bean",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "choppped",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "corn",
+                "states": [
+                    "frozen",
+                    "grain"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "sausage"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "green pea"
+                ],
+                "container": null
+            },
+            {
+                "label": "green pea",
+                "states": [
+                    "bean",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "choppped",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "corn",
+                "states": [
+                    "frozen",
+                    "grain"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour and mix",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "green pea",
+                    "sausage"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "green pea",
+                "states": [
+                    "bean",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "choppped",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "corn",
+                "states": [
+                    "frozen",
+                    "grain"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "green pea",
+                    "sausage"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "white rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "green pea",
+                    "sausage",
+                    "white rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "green pea",
+                    "sausage",
+                    "white rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "beaten"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "egg white and yolk",
+                    "green pea",
+                    "sausage",
+                    "white rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "beaten"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "egg white and yolk",
+                    "green pea",
+                    "sausage",
+                    "white rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "sausage",
+                "states": [
+                    "sliced",
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "beaten"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "green pea",
+                "states": [
+                    "bean",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "choppped",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "corn",
+                "states": [
+                    "frozen",
+                    "grain"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "fried rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "fried rice",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "egg white and yolk",
+                    "green pea",
+                    "sausage",
+                    "white rice"
+                ],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "fried rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "sauce",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "soy sauce",
+                    "sugar",
+                    "water"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "fried rice",
+                    "sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "sauce",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "soy sauce",
+                    "sugar",
+                    "water"
+                ],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "fried rice",
+                    "sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "green onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "green onion",
+                    "fried rice",
+                    "sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "green onion",
+                    "fried rice",
+                    "sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "sauce",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "soy sauce",
+                    "sugar",
+                    "water"
+                ],
+                "container": "frying pan"
+            },
+            {
+                "label": "fried rice",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "egg white and yolk",
+                    "green pea",
+                    "sausage",
+                    "white rice"
+                ],
+                "container": "frying pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "fried rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "fried rice",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "egg",
+                    "green onion",
+                    "green pea",
+                    "sausage",
+                    "soy sauce",
+                    "sugar",
+                    "water",
+                    "white rice"
+                ],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "fried rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [],
+                "ingredients": [
+                    "fried rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [],
+                "ingredients": [
+                    "fried rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "fried rice",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "egg",
+                    "green onion",
+                    "green pea",
+                    "sausage",
+                    "soy sauce",
+                    "sugar",
+                    "water",
+                    "white rice"
+                ],
+                "container": "frying pan"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "fried rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "fried rice",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "corn",
+                    "egg",
+                    "green onion",
+                    "green pea",
+                    "sausage",
+                    "soy sauce",
+                    "sugar",
+                    "water",
+                    "white rice"
+                ],
+                "container": "bowl"
+            }
+        ]
+    }
+]

@@ -1,0 +1,496 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "tin can",
+                "states": [
+                    "sealed"
+                ],
+                "ingredients": [
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "can opener",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "tin can",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "water",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tin can",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "water",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "drain",
+        "output_nodes": [
+            {
+                "label": "tin can",
+                "states": [],
+                "ingredients": [
+                    "tuna"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tin can",
+                "states": [],
+                "ingredients": [
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "tuna",
+                "states": [],
+                "ingredients": [],
+                "container": "tin can"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "tuna",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "onion",
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "mayonnaise",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "tuna"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "tuna",
+                    "onion",
+                    "mayonnaise"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "tuna",
+                    "onion",
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "mayonnaise",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "tuna",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "tuna spread"
+                ],
+                "container": null
+            },
+            {
+                "label": "tuna spread",
+                "states": [],
+                "ingredients": [
+                    "tuna",
+                    "onion",
+                    "mayonnaise"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "toaster"
+            },
+            {
+                "label": "toaster",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "spread"
+                ],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "tuna spread"
+                ],
+                "container": null
+            },
+            {
+                "label": "tuna spread",
+                "states": [],
+                "ingredients": [
+                    "tuna",
+                    "onion",
+                    "mayonnaise"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "tuna spread"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "tuna spread",
+                "states": [],
+                "ingredients": [
+                    "tuna",
+                    "onion",
+                    "mayonnaise"
+                ],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "tuna spread"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "separated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "tuna spread",
+                    "lettuce"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "separated"
+                ],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "tuna spread",
+                    "lettuce"
+                ],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "tuna sandwich"
+                ],
+                "container": null
+            },
+            {
+                "label": "tuna sandwich",
+                "states": [],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "tuna",
+                    "onion",
+                    "mayonnaise",
+                    "lettuce"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

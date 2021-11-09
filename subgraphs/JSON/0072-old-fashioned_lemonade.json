@@ -1,0 +1,1079 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "colander",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "colander",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "colander"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            },
+            {
+                "label": "colander",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "colander"
+            }
+        ],
+        "motion_node": "wash",
+        "output_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "washed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "colander"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "colander",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "washed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "colander"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "colander",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "roll",
+        "output_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "softened",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "container",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "grater"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "softened",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "container",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "grater"
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "softened",
+                    "whole",
+                    "zested"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "lemon zest"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "lemon zest"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "lemon zest",
+                    "sugar",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "container",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "lemon zest",
+                    "sugar",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            }
+        ],
+        "motion_node": "boil",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "lemon zest",
+                    "sugar",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid",
+                    "boiling"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "lemon zest",
+                    "sugar",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid",
+                    "boiling"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "juice",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "lemon zest",
+                    "sugar",
+                    "water"
+                ],
+                "container": "saucepan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "softened",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "squeezer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "squeeze",
+        "output_nodes": [
+            {
+                "label": "squeezer",
+                "states": [],
+                "ingredients": [
+                    "lemon juice"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "squeezer"
+            },
+            {
+                "label": "lemon juice",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "squeezer"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "halved",
+                    "squeezed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "squeezer",
+                "states": [],
+                "ingredients": [
+                    "lemon juice"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "squeezer"
+            },
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "pulp"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon juice"
+                ],
+                "container": "strainer"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "lemon zest",
+                    "sugar",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "juice",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "lemon zest",
+                    "sugar",
+                    "water"
+                ],
+                "container": "saucepan"
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "pulp"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon juice"
+                ],
+                "container": "strainer"
+            }
+        ],
+        "motion_node": "pour and strain",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "lemon zest",
+                    "pulp"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon juice",
+                    "sugar",
+                    "water"
+                ],
+                "container": "strainer"
+            },
+            {
+                "label": "lemonade",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "lemon juice",
+                    "lemon zest",
+                    "sugar",
+                    "water"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon juice"
+                ],
+                "container": "strainer"
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "lemon zest",
+                    "pulp"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "lemon zest",
+                    "pulp"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon juice",
+                    "sugar",
+                    "water"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon juice",
+                    "sugar",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemonade",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "lemon juice",
+                    "lemon zest",
+                    "sugar",
+                    "water"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "pitcher",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pitcher",
+                "states": [],
+                "ingredients": [
+                    "lemonade"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemonade",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "lemon juice",
+                    "lemon zest",
+                    "sugar",
+                    "water"
+                ],
+                "container": "pitcher"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ice"
+                ],
+                "container": null
+            },
+            {
+                "label": "ice",
+                "states": [
+                    "frozen",
+                    "crushed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "drinking glass",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "ice"
+                ],
+                "container": null
+            },
+            {
+                "label": "ice",
+                "states": [
+                    "frozen",
+                    "crushed"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "ice"
+                ],
+                "container": null
+            },
+            {
+                "label": "pitcher",
+                "states": [],
+                "ingredients": [
+                    "lemonade"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemonade",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "lemon juice",
+                    "lemon zest",
+                    "sugar",
+                    "water"
+                ],
+                "container": "pitcher"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "lemonade",
+                    "ice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemonade",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "lemon juice",
+                    "lemon zest",
+                    "sugar",
+                    "water"
+                ],
+                "container": "drinking glass"
+            }
+        ]
+    }
+]

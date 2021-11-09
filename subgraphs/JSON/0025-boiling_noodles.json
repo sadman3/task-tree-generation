@@ -1,0 +1,365 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "noodle",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "noodle",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle",
+                    "salt"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "spoon"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle",
+                    "salt"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "boil",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "noodle",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "strainer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "noodle",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "strainer"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "noodle",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

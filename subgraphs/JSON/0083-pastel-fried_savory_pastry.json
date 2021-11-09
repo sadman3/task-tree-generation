@@ -1,0 +1,2922 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "clove"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "minced",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "minced",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "green chilli",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "green chilli"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "green chilli",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "green chilli"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "green chilli",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "green chilli",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "green chilli",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "green chilli"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [
+                    "packet"
+                ],
+                "container": null
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [
+                    "packet"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "cup"
+            },
+            {
+                "label": "cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "turmeric powder",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "cayenne pepper",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan cover",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan cover",
+                "states": [],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan cover",
+                "states": [],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "vegetable mix",
+                "states": [
+                    "softened"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "vegetable mix"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "vegetable mix",
+                "states": [
+                    "softened"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "vegetable mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan cover",
+                "states": [],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan cover",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spring onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "vegetable mix",
+                "states": [
+                    "softened"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour and stir",
+        "output_nodes": [
+            {
+                "label": "vegetable mix",
+                "states": [
+                    "softened"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bag",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "vegetable mix",
+                "states": [
+                    "softened"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour and stir",
+        "output_nodes": [
+            {
+                "label": "savory filling",
+                "states": [
+                    "softened"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "milk",
+                "states": [],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "savory filling"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "savory filling",
+                "states": [
+                    "softened"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "savory filling"
+                ],
+                "container": null
+            },
+            {
+                "label": "savory filling",
+                "states": [
+                    "softened"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "savory filling"
+                ],
+                "container": null
+            },
+            {
+                "label": "savory filling",
+                "states": [
+                    "softened"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "cool down",
+        "output_nodes": [
+            {
+                "label": "savory filling",
+                "states": [
+                    "softened",
+                    "warm"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bag",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            },
+            {
+                "label": "container",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "container"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "stick",
+                    "wrapped"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "wrapping paper",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "fork",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic powder",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic powder"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "garlic powder",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder",
+                    "olive oil"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder",
+                    "olive oil"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "uncracked"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder",
+                    "olive oil"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder",
+                    "olive oil",
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder",
+                    "olive oil",
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder",
+                    "olive oil",
+                    "egg white and yolk"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder",
+                    "olive oil",
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder",
+                    "olive oil",
+                    "egg white and yolk",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "garlic powder",
+                    "salt",
+                    "garlic powder",
+                    "olive oil",
+                    "egg white and yolk",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "table",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [],
+                "ingredients": [],
+                "container": "table"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "dough",
+                "states": [],
+                "ingredients": [],
+                "container": "table"
+            }
+        ],
+        "motion_node": "knead",
+        "output_nodes": [
+            {
+                "label": "dough",
+                "states": [
+                    "kneaded"
+                ],
+                "ingredients": [],
+                "container": "table"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "dough",
+                "states": [
+                    "kneaded"
+                ],
+                "ingredients": [],
+                "container": "table"
+            }
+        ],
+        "motion_node": "shape",
+        "output_nodes": [
+            {
+                "label": "dough",
+                "states": [
+                    "shaped"
+                ],
+                "ingredients": [],
+                "container": "table"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutter",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "shaped"
+                ],
+                "ingredients": [],
+                "container": "table"
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "dough",
+                "states": [
+                    "cut in pieces"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "cutter",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "cut in pieces"
+                ],
+                "ingredients": [],
+                "container": "table"
+            }
+        ],
+        "motion_node": "shape",
+        "output_nodes": [
+            {
+                "label": "dough",
+                "states": [
+                    "shaped"
+                ],
+                "ingredients": [],
+                "container": "table"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "shaped"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "rolling pin",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "roll",
+        "output_nodes": [
+            {
+                "label": "dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [],
+                "container": "table"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "savory filling",
+                "states": [
+                    "softened",
+                    "warm"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "savory filling",
+                "states": [
+                    "softened",
+                    "warm"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "spoon"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "savory filling"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "savory filling",
+                "states": [
+                    "softened",
+                    "warm"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "spoon"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "savory filling"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "savory filling"
+                ],
+                "container": "table"
+            },
+            {
+                "label": "savory filling",
+                "states": [
+                    "softened",
+                    "warm"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "dough"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "savory filling"
+                ],
+                "container": "table"
+            },
+            {
+                "label": "savory filling",
+                "states": [
+                    "softened",
+                    "warm"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "dough"
+            }
+        ],
+        "motion_node": "fold",
+        "output_nodes": [
+            {
+                "label": "dough",
+                "states": [
+                    "folded"
+                ],
+                "ingredients": [
+                    "savory filling"
+                ],
+                "container": "table"
+            },
+            {
+                "label": "savory filling",
+                "states": [
+                    "softened",
+                    "warm"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "dough"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "savory filling",
+                "states": [
+                    "softened",
+                    "warm"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "dough"
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "folded"
+                ],
+                "ingredients": [
+                    "savory filling"
+                ],
+                "container": "table"
+            },
+            {
+                "label": "cutter",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut off ends",
+        "output_nodes": [
+            {
+                "label": "dough",
+                "states": [
+                    "shaped"
+                ],
+                "ingredients": [
+                    "savory filling"
+                ],
+                "container": "table"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "savory filling",
+                "states": [
+                    "softened",
+                    "warm"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "dough"
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "shaped"
+                ],
+                "ingredients": [
+                    "savory filling"
+                ],
+                "container": "table"
+            }
+        ],
+        "motion_node": "fold and pinch",
+        "output_nodes": [
+            {
+                "label": "savory pastry",
+                "states": [
+                    "uncook"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "savory pastry"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "oil",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "oil"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [
+                    "oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "oil",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "savory pastry",
+                "states": [
+                    "uncook"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "savory pastry",
+                "states": [
+                    "uncook"
+                ],
+                "ingredients": [],
+                "container": "turner"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [
+                    "savory pastry"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [
+                    "oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "oil",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "savory pastry",
+                "states": [
+                    "uncook"
+                ],
+                "ingredients": [],
+                "container": "turner"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [
+                    "savory pastry"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "savory pastry",
+                "states": [
+                    "uncook"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [
+                    "oil",
+                    "savory pastry"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [
+                    "oil",
+                    "savory pastry"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "savory pastry",
+                "states": [
+                    "uncook"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "tongs",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "fry and flip",
+        "output_nodes": [
+            {
+                "label": "savory pastry",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "napkin",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "napkin",
+                "states": [],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "napkin"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [
+                    "oil",
+                    "savory pastry"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tongs",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "savory pastry",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "napkin",
+                "states": [],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "napkin"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "savory pastry",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "green chilli",
+                    "carrot",
+                    "potato",
+                    "water",
+                    "salt",
+                    "turmeric powder",
+                    "cayenne pepper",
+                    "spring onion",
+                    "flour",
+                    "milk"
+                ],
+                "container": "napkin"
+            },
+            {
+                "label": "napkin",
+                "states": [],
+                "ingredients": [
+                    "savory pastry"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    }
+]

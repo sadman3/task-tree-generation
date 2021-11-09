@@ -1,0 +1,1224 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "peeler",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mandoline",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "mandoline"
+            },
+            {
+                "label": "mandoline",
+                "states": [],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "mandoline"
+            },
+            {
+                "label": "mandoline",
+                "states": [],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "grated",
+                    "julienned"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "sliced",
+                    "julienned"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "onion",
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "sliced",
+                    "julienned"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "onion",
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "sliced",
+                    "julienned"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "grated",
+                    "julienned"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "hashbrown mix",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "onion",
+                    "potato"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "parsley",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "parsley",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "onion",
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "parsley",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "sprinkle*",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "onion",
+                    "parsley",
+                    "potato"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "onion",
+                    "parsley",
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "sprinkle*",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "corn starch"
+                ],
+                "container": null
+            },
+            {
+                "label": "corn starch",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "corn starch"
+                ],
+                "container": null
+            },
+            {
+                "label": "corn starch",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "corn starch"
+                ],
+                "container": null
+            },
+            {
+                "label": "corn starch",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour*",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "corn starch",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "corn starch",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "corn starch",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "sprinkle*",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "sprinkle*",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "hashbrown mix",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "onion",
+                    "potato"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "corn starch",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix*",
+        "output_nodes": [
+            {
+                "label": "hashbrown mix",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "beaten"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "egg",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "beaten"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk",
+                    "hashbrown mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "hashbrown mix",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "beaten"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "hashbrown mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "hashbrown mix",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "egg white and yolk",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "skillet",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "preheat",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "hashbrown mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "hashbrown mix",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "egg white and yolk",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "hashbrown mix",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "hashbrown mix",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "egg white and yolk",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "hashbrown mix",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "hashbrown mix",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "egg white and yolk",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": "skillet"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "hashbrown",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "hashbrown",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "egg white and yolk",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "hashbrown",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "hashbrown",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "egg white and yolk",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": "skillet"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "hashbrown",
+                "states": [
+                    "flipped",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "egg white and yolk",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "hashbrown",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "hashbrown",
+                "states": [
+                    "flipped",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "egg white and yolk",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": "skillet"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "hashbrown",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "egg white and yolk",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "hashbrown",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "egg white and yolk",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": "skillet"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "hash brown"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "hash brown"
+                ],
+                "container": null
+            },
+            {
+                "label": "hashbrown",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "corn starch",
+                    "egg white and yolk",
+                    "flour",
+                    "onion",
+                    "parsley",
+                    "potato",
+                    "salt"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

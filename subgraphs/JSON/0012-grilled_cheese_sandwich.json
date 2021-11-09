@@ -1,0 +1,1118 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "gruyere",
+                "states": [
+                    "block"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "gruyere"
+                ],
+                "container": null
+            },
+            {
+                "label": "gruyere",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "gruyere",
+                "states": [
+                    "block"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cheddar"
+                ],
+                "container": null
+            },
+            {
+                "label": "gruyere",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cheddar"
+                ],
+                "container": null
+            },
+            {
+                "label": "gruyere",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "gruyere"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cheddar",
+                    "gruyere"
+                ],
+                "container": null
+            },
+            {
+                "label": "gruyere",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cheddar",
+                    "gruyere"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mustard"
+                ],
+                "container": null
+            },
+            {
+                "label": "mustard",
+                "states": [
+                    "dried",
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cheddar",
+                    "gruyere",
+                    "mustard"
+                ],
+                "container": null
+            },
+            {
+                "label": "mustard",
+                "states": [
+                    "dried",
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cheddar",
+                    "gruyere",
+                    "mustard"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "mustard",
+                "states": [
+                    "dried",
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "mustard",
+                "states": [
+                    "dried",
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "mustard",
+                "states": [
+                    "dried",
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "dried",
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "cheddar",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "cheese",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "grill spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "grill spatula",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": "grill spatula"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "off (ready)",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "light",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "grill spatula",
+                "states": [],
+                "ingredients": [
+                    "cheese"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "grill spatula"
+                ],
+                "container": null
+            },
+            {
+                "label": "grill spatula",
+                "states": [],
+                "ingredients": [
+                    "cheese"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "cooking spray",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "spray bottle"
+            }
+        ],
+        "motion_node": "spray",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "grill"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "partly toasted",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "partly toasted",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "flipped",
+                    "partly toasted",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "grill spatula"
+                ],
+                "container": null
+            },
+            {
+                "label": "grill spatula",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": "grill spatula"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "cheese",
+                "states": [
+                    "melted"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": "grill spatula"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "flipped",
+                    "partly toasted",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "toasted",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "box",
+                "states": [],
+                "ingredients": [
+                    "aluminium foil"
+                ],
+                "container": null
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "box"
+            },
+            {
+                "label": "surface",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "tear and place",
+        "output_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "surface",
+                "states": [],
+                "ingredients": [],
+                "container": "aluminium foil"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "toasted",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "toasted",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "aluminium foil"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill spatula",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "melted"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": "grill spatula"
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "toasted",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "aluminium foil"
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "toasted",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "cheese",
+                    "olive oil"
+                ],
+                "container": "aluminium foil"
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "melted"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "paprika"
+                ],
+                "container": "bread"
+            },
+            {
+                "label": "grill spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "toasted",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "aluminium foil"
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "toasted",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "cheese",
+                    "olive oil"
+                ],
+                "container": "aluminium foil"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "sandwich"
+                ],
+                "container": null
+            },
+            {
+                "label": "grilled cheese sandwich",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "bread",
+                    "cheddar",
+                    "gruyere",
+                    "mustard",
+                    "olive oil",
+                    "paprika"
+                ],
+                "container": "aluminium foil"
+            }
+        ]
+    }
+]

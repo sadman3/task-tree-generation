@@ -1,0 +1,602 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "porkchop",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "porkchop"
+                ],
+                "container": null
+            },
+            {
+                "label": "porkchop",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "porkchop"
+                ],
+                "container": null
+            },
+            {
+                "label": "porkchop",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "porkchop",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "greased"
+                ],
+                "ingredients": [
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "greased"
+                ],
+                "ingredients": [
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "porkchop"
+                ],
+                "container": null
+            },
+            {
+                "label": "porkchop",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "porkchop",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "porkchop",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "porkchop",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "porkchop",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "porkchop",
+                "states": [
+                    "seasoned",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "porkchop",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "porkchop",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "porkchop",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "porkchop",
+                "states": [
+                    "seasoned",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "porkchop",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "porkchop",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "uncover",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "porkchop",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "porkchop",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "porkchop",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "porkchop",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "porkchop",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "butter",
+                    "vegetable oil"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

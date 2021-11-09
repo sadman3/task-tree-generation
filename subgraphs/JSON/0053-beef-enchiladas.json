@@ -1,0 +1,896 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "ground beef",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "enchilada sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "enchilada sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "enchilada sauce",
+                "states": [
+                    "spread out"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada sauce"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tortilla",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "meat mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "meat mix",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion"
+                ],
+                "container": "tortilla"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "meat mix"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "meat mix",
+                    "cheese"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "meat mix",
+                    "cheese"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "roll",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "meat mix",
+                    "cheese"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "meat mix",
+                    "cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada sauce"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada sauce",
+                    "tortilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "meat mix",
+                    "cheese"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "enchilada sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "enchilada sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "meat mix",
+                    "cheese"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada sauce",
+                    "tortilla"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "meat mix",
+                    "cheese",
+                    "enchilada sauce"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "enchilada sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "tortilla"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada sauce",
+                    "tortilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "meat mix",
+                    "cheese",
+                    "enchilada sauce"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "meat mix",
+                    "enchilada sauce",
+                    "cheese"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada sauce",
+                    "tortilla",
+                    "cheese"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "black olive"
+                ],
+                "container": null
+            },
+            {
+                "label": "black olive",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "black olive"
+                ],
+                "container": null
+            },
+            {
+                "label": "black olive",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "black olive"
+                ],
+                "container": null
+            },
+            {
+                "label": "black olive",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "black olive"
+                ],
+                "container": null
+            },
+            {
+                "label": "black olive",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "black olive"
+                ],
+                "container": null
+            },
+            {
+                "label": "black olive",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "black olive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "black olive"
+                ],
+                "container": null
+            },
+            {
+                "label": "black olive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada sauce",
+                    "tortilla",
+                    "cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "meat mix",
+                    "enchilada sauce",
+                    "cheese"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "meat mix",
+                    "enchilada sauce",
+                    "cheese",
+                    "black olive"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada sauce",
+                    "tortilla"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada sauce",
+                    "tortilla"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada sauce",
+                    "tortilla"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "meat mix",
+                    "enchilada sauce",
+                    "cheese",
+                    "black olive"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "bake",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "enchilada",
+                "states": [],
+                "ingredients": [
+                    "tortilla",
+                    "meat mix",
+                    "enchilada sauce",
+                    "cheese",
+                    "black olive"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada"
+                ],
+                "container": "oven"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada"
+                ],
+                "container": null
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "enchilada"
+                ],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "enchilada",
+                "states": [],
+                "ingredients": [
+                    "tortilla",
+                    "meat mix",
+                    "enchilada sauce",
+                    "cheese",
+                    "black olive"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "enchilada",
+                "states": [],
+                "ingredients": [
+                    "tortilla",
+                    "meat mix",
+                    "ground beef",
+                    "onion",
+                    "enchilada sauce",
+                    "cheese",
+                    "black olive"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "enchilada"
+                ],
+                "container": null
+            }
+        ]
+    }
+]

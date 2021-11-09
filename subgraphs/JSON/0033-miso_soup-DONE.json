@@ -1,0 +1,807 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "whole",
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "green onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "whole",
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "whole",
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "green onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "green onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "green onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "tofu"
+                ],
+                "container": null
+            },
+            {
+                "label": "tofu",
+                "states": [
+                    "block",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "tofu"
+                ],
+                "container": null
+            },
+            {
+                "label": "tofu",
+                "states": [
+                    "block",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tofu",
+                "states": [
+                    "block",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "tofu",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "dashi"
+                ],
+                "container": null
+            },
+            {
+                "label": "dashi",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "dashi",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "dashi",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "dashi",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "dashi",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "broth",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi"
+                ],
+                "container": "saucepan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "miso"
+                ],
+                "container": null
+            },
+            {
+                "label": "miso",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "miso",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi"
+                ],
+                "container": "saucepan"
+            },
+            {
+                "label": "miso",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "broth",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso"
+                ],
+                "container": "saucepan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "tofu"
+                ],
+                "container": null
+            },
+            {
+                "label": "tofu",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso",
+                    "tofu"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tofu",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso",
+                    "tofu"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "green onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso",
+                    "tofu",
+                    "green onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso",
+                    "tofu",
+                    "green onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso"
+                ],
+                "container": "saucepan"
+            },
+            {
+                "label": "tofu",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir*",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "soup"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso",
+                    "tofu",
+                    "green onion"
+                ],
+                "container": "saucepan"
+            },
+            {
+                "label": "miso soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso",
+                    "tofu",
+                    "green onion"
+                ],
+                "container": "saucepan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "soup"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "miso soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso",
+                    "tofu",
+                    "green onion"
+                ],
+                "container": "saucepan"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "ladle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soup"
+                ],
+                "container": null
+            },
+            {
+                "label": "soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso",
+                    "tofu",
+                    "green onion"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "miso soup",
+                "states": [
+                    "thick liquid",
+                    "ready"
+                ],
+                "ingredients": [
+                    "water",
+                    "dashi",
+                    "miso",
+                    "tofu",
+                    "green onion"
+                ],
+                "container": "bowl"
+            }
+        ]
+    }
+]

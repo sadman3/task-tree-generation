@@ -1,0 +1,942 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "yogurt",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "measure",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "yogurt",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "yogurt",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "yogurt",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "strawberry",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "strawberry"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "strawberry"
+                ],
+                "container": null
+            },
+            {
+                "label": "strawberry",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "strawberry"
+                ],
+                "container": null
+            },
+            {
+                "label": "strawberry",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "wash",
+        "output_nodes": [
+            {
+                "label": "strawberry",
+                "states": [
+                    "whole",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "strawberry"
+                ],
+                "container": null
+            },
+            {
+                "label": "strawberry",
+                "states": [
+                    "washed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "strawberry",
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "strawberry",
+                "states": [
+                    "washed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "strawberry",
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "carton",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "carton"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "milk",
+                    "strawberry",
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "milk",
+                    "strawberry",
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "flaxseed"
+                ],
+                "container": null
+            },
+            {
+                "label": "flaxseed",
+                "states": [
+                    "ground",
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "flaxseed",
+                    "milk",
+                    "strawberry",
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "flaxseed",
+                "states": [
+                    "ground",
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "whey powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "whey powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "measure",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "whey powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "whey powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "flaxseed",
+                    "milk",
+                    "strawberry",
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "whey powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "whey powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "flaxseed",
+                    "milk",
+                    "strawberry",
+                    "whey powder",
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "whey powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "sweetener"
+                ],
+                "container": null
+            },
+            {
+                "label": "dropper",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "sweetener",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "squeeze",
+        "output_nodes": [
+            {
+                "label": "dropper",
+                "states": [],
+                "ingredients": [
+                    "sweetener"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweetener",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "dropper"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "flaxseed",
+                    "milk",
+                    "strawberry",
+                    "whey powder",
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "dropper",
+                "states": [],
+                "ingredients": [
+                    "sweetener"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweetener",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "dropper"
+            }
+        ],
+        "motion_node": "drip",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "flaxseed",
+                    "milk",
+                    "strawberry",
+                    "sweetener",
+                    "whey powder",
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweetener",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "flaxseed",
+                    "milk",
+                    "strawberry",
+                    "sweetener",
+                    "whey powder",
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "flaxseed",
+                    "milk",
+                    "strawberry",
+                    "sweetener",
+                    "whey powder",
+                    "yogurt"
+                ],
+                "container": "blender lid"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "flaxseed",
+                    "milk",
+                    "strawberry",
+                    "sweetener",
+                    "whey powder",
+                    "yogurt"
+                ],
+                "container": "blender lid"
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "attach",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "flaxseed",
+                    "milk",
+                    "strawberry",
+                    "sweetener",
+                    "whey powder",
+                    "yogurt"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "flaxseed",
+                    "milk",
+                    "strawberry",
+                    "sweetener",
+                    "whey powder",
+                    "yogurt"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            },
+            {
+                "label": "yogurt",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "strawberry",
+                "states": [
+                    "washed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            },
+            {
+                "label": "flaxseed",
+                "states": [
+                    "ground",
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            },
+            {
+                "label": "whey powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            },
+            {
+                "label": "sweetener",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "protein shake"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "protein shake",
+                "states": [
+                    "blended"
+                ],
+                "ingredients": [
+                    "flaxseed",
+                    "milk",
+                    "strawberry",
+                    "sweetener",
+                    "whey powder",
+                    "yogurt"
+                ],
+                "container": "blender cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "protein shake"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ],
+        "motion_node": "detach",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "protein shake"
+                ],
+                "container": "blender lid"
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "protein shake"
+                ],
+                "container": "blender lid"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ],
+        "motion_node": "uncover",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "protein shake"
+                ],
+                "container": null
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "protein shake"
+                ],
+                "container": null
+            },
+            {
+                "label": "protein shake",
+                "states": [
+                    "blended"
+                ],
+                "ingredients": [
+                    "flaxseed",
+                    "milk",
+                    "strawberry",
+                    "sweetener",
+                    "whey powder",
+                    "yogurt"
+                ],
+                "container": "blender cup"
+            },
+            {
+                "label": "cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cup",
+                "states": [],
+                "ingredients": [
+                    "protein shake"
+                ],
+                "container": null
+            },
+            {
+                "label": "protein shake",
+                "states": [
+                    "blended",
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "flaxseed",
+                    "milk",
+                    "strawberry",
+                    "sweetener",
+                    "whey powder",
+                    "yogurt"
+                ],
+                "container": "cup"
+            }
+        ]
+    }
+]

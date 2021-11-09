@@ -1,0 +1,748 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "whole",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout"
+                ],
+                "container": null
+            },
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "whole",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "faucet"
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout"
+                ],
+                "container": null
+            },
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "whole",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ],
+        "motion_node": "rinse",
+        "output_nodes": [
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "washed",
+                    "uncooked",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "whole",
+                    "uncooked",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout"
+                ],
+                "container": null
+            },
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "whole",
+                    "uncooked",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "uncooked",
+                    "whole",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "stem removed",
+                    "uncooked",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "stem removed",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "uncooked",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "add*",
+        "output_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout",
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "plastic bag"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "plastic bag"
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "plastic bag"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout",
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "uncooked",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "plastic bag"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "plastic bag"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "plastic bag"
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "plastic bag"
+            }
+        ],
+        "motion_node": "shake*",
+        "output_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout",
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "seasoned",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "plastic bag"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout"
+                ],
+                "container": null
+            },
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "seasoned",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "plastic bag"
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout",
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "seasoned",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout",
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout",
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout",
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "seasoned",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "bake",
+        "output_nodes": [
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout",
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "oven"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout",
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout",
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "brussel sprout",
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "brussel sprout",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

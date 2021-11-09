@@ -1,0 +1,511 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "pitcher",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "pitcher"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "boiling"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lentil"
+                ],
+                "container": null
+            },
+            {
+                "label": "lentil",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "lentil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "lentil",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "lentil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "lentil"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "lentil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pot lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "water",
+                    "lentil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pot lid",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "water",
+                    "lentil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "lentil",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "lentil mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "lentil mix",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "lentil mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pot lid",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "lentil mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pot lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "lentil mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "lentil mix"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "lentil mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "bulgur"
+                ],
+                "container": null
+            },
+            {
+                "label": "bulgur",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "lentil mix",
+                    "bulgur"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bulgur",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "lentil mix",
+                    "bulgur"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bulgur",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "lentil mix",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "kofta mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "kofta mix",
+                "states": [],
+                "ingredients": [
+                    "lentil",
+                    "bulgur"
+                ],
+                "container": "pot"
+            }
+        ]
+    }
+]

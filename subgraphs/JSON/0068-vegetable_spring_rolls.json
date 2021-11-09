@@ -1,0 +1,3139 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "soak",
+        "output_nodes": [
+            {
+                "label": "noodle",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "noodle",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "noodle",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "noodle",
+                "states": [
+                    "cut"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "cut"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "cut"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "cut"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "cut"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chili pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "chili pepper",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "chili pepper",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chili pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "chili pepper",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chili pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "chili pepper",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chili pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "chili pepper",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "chili pepper",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "chili pepper",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "chili pepper",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "peeler",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "peeler",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "julienned"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "julienned"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "julienned"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "julienned"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "julienned"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "julienned"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "cabbage"
+                ],
+                "container": null
+            },
+            {
+                "label": "cabbage",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "cabbage",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "cabbage"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cabbage",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cabbage"
+                ],
+                "container": null
+            },
+            {
+                "label": "cabbage",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "scallion"
+                ],
+                "container": null
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "scallion"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "scallion"
+                ],
+                "container": null
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cabbage"
+                ],
+                "container": null
+            },
+            {
+                "label": "cabbage",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "cabbage",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "scallion"
+                ],
+                "container": null
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cabbage",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cabbage",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "soy sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "oyster sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "oyster sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "oyster sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "oyster sauce"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "white pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "white pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "white pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "white pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "soy sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "oyster sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "oyster sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce",
+                    "oyster sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "oyster sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce",
+                    "oyster sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "white pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "white pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce",
+                    "oyster sauce",
+                    "white pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "white pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce",
+                    "oyster sauce",
+                    "white pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce",
+                    "oyster sauce",
+                    "white pepper",
+                    "sugar"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce",
+                    "oyster sauce",
+                    "white pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce",
+                    "oyster sauce",
+                    "white pepper",
+                    "sugar",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce",
+                    "oyster sauce",
+                    "white pepper",
+                    "sugar",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "white pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "oyster sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "soy sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "vegetable mix",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce",
+                    "oyster sauce",
+                    "white pepper",
+                    "sugar",
+                    "salt"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix",
+                    "noodle"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix",
+                    "noodle"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "vegetable mix",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce",
+                    "oyster sauce",
+                    "white pepper",
+                    "sugar",
+                    "salt"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix",
+                    "noodle"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "cornflour"
+                ],
+                "container": null
+            },
+            {
+                "label": "cornflour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "container"
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "cornflour"
+                ],
+                "container": null
+            },
+            {
+                "label": "cornflour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "cornflour"
+                ],
+                "container": null
+            },
+            {
+                "label": "cornflour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "cornflour"
+                ],
+                "container": null
+            },
+            {
+                "label": "cornflour",
+                "states": [
+                    "wet"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "cornflour"
+                ],
+                "container": null
+            },
+            {
+                "label": "cornflour",
+                "states": [
+                    "wet"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour mixture",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "cornflour"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix",
+                    "noodle"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour mixture",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "cornflour"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix",
+                    "noodle",
+                    "flour mixture"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "flour mixture",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "cornflour"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix",
+                    "noodle",
+                    "flour mixture"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "flour mixture",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "cornflour"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "vegetable mix",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce",
+                    "oyster sauce",
+                    "white pepper",
+                    "sugar",
+                    "salt"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "spring roll mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "spring roll mix",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "wet"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "wet"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour glue"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour glue",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spring roll sheet",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "spring roll sheet"
+                ],
+                "container": null
+            },
+            {
+                "label": "spring roll sheet",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "spring roll mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "spring roll mix",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "spring roll mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "spring roll mix",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "spring roll mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "spring roll mix",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spring roll sheet",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "spring roll sheet",
+                "states": [],
+                "ingredients": [
+                    "spring roll mix"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "spring roll mix",
+                "states": [],
+                "ingredients": [],
+                "container": "sheet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "spring roll sheet"
+                ],
+                "container": null
+            },
+            {
+                "label": "spring roll sheet",
+                "states": [],
+                "ingredients": [
+                    "spring roll mix"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "flour glue",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "wrap",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "spring roll"
+                ],
+                "container": null
+            },
+            {
+                "label": "spring roll",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "spring roll mix"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "spring roll"
+                ],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spring roll",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "spring roll mix"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "spring roll"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spring roll",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "spring roll mix"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "spring roll"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spring roll",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "spring roll mix"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "spring roll"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spring roll",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "spring roll mix"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "spring roll"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spring roll",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "spring roll mix"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "spring roll"
+                ],
+                "container": null
+            },
+            {
+                "label": "spring roll",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "garlic",
+                    "onion",
+                    "chili pepper",
+                    "carrot",
+                    "cabbage",
+                    "scallion",
+                    "soy sauce",
+                    "oyster sauce",
+                    "white pepper",
+                    "sugar",
+                    "salt",
+                    "flour",
+                    "spring roll sheet"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

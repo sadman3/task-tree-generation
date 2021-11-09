@@ -1,0 +1,716 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk",
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk",
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg mixture",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk",
+                    "milk"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "chocolate",
+                "states": [
+                    "bar"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "chocolate"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "chocolate",
+                "states": [
+                    "bar"
+                ],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "chocolate"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "sandwich"
+                ],
+                "container": null
+            },
+            {
+                "label": "sandwich",
+                "states": [],
+                "ingredients": [
+                    "chocolate"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg mixture",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk",
+                    "milk"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg mixture",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk",
+                    "milk"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "sandwich",
+                "states": [],
+                "ingredients": [
+                    "chocolate"
+                ],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "sandwich"
+                ],
+                "container": null
+            },
+            {
+                "label": "sandwich",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [
+                    "chocolate",
+                    "egg mixture"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "skillet",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "greased"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "melted"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "greased"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "sandwich",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [
+                    "chocolate",
+                    "egg mixture"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [],
+                "ingredients": [
+                    "sandwich",
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "sandwich",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [
+                    "chocolate",
+                    "butter",
+                    "egg mixture"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [],
+                "ingredients": [
+                    "sandwich"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "sandwich",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [
+                    "chocolate",
+                    "butter",
+                    "egg mixture"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "sandwich",
+                "states": [
+                    "partly toasted"
+                ],
+                "ingredients": [
+                    "chocolate",
+                    "butter",
+                    "egg mixture"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "skillet",
+                "states": [],
+                "ingredients": [
+                    "sandwich"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "sandwich",
+                "states": [
+                    "partly toasted"
+                ],
+                "ingredients": [
+                    "chocolate",
+                    "butter",
+                    "egg mixture"
+                ],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "sandwich",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [
+                    "chocolate",
+                    "butter",
+                    "egg mixture"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "sandwich",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [
+                    "chocolate",
+                    "butter",
+                    "egg mixture"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "sandwich"
+                ],
+                "container": null
+            },
+            {
+                "label": "sandwich",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [
+                    "chocolate",
+                    "butter",
+                    "egg mixture"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "sandwich"
+                ],
+                "container": null
+            },
+            {
+                "label": "sandwich",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [
+                    "chocolate",
+                    "butter",
+                    "egg mixture"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "powdered sugar",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "chocolate sandwich",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [
+                    "egg white and yolk",
+                    "milk",
+                    "chocolate",
+                    "powdered sugar",
+                    "butter"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

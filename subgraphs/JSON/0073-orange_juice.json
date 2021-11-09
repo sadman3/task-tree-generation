@@ -1,0 +1,269 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "colander",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "orange",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "colander",
+                "states": [],
+                "ingredients": [
+                    "orange"
+                ],
+                "container": null
+            },
+            {
+                "label": "orange",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "colander"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            },
+            {
+                "label": "colander",
+                "states": [],
+                "ingredients": [
+                    "orange"
+                ],
+                "container": null
+            },
+            {
+                "label": "orange",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "colander"
+            }
+        ],
+        "motion_node": "wash",
+        "output_nodes": [
+            {
+                "label": "orange",
+                "states": [
+                    "washed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "colander"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "colander",
+                "states": [],
+                "ingredients": [
+                    "orange"
+                ],
+                "container": null
+            },
+            {
+                "label": "orange",
+                "states": [
+                    "washed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "colander"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "orange"
+                ],
+                "container": null
+            },
+            {
+                "label": "orange",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "orange",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "orange",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "squeezer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "orange",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "squeeze",
+        "output_nodes": [
+            {
+                "label": "squeezer",
+                "states": [],
+                "ingredients": [
+                    "orange juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "orange juice",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "squeezer"
+            },
+            {
+                "label": "orange",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "squeezer"
+            },
+            {
+                "label": "orange",
+                "states": [
+                    "halved",
+                    "squeezed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "squeezer",
+                "states": [],
+                "ingredients": [
+                    "orange juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "orange",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "squeezer"
+            },
+            {
+                "label": "drinking glass",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "orange juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "orange juice",
+                "states": [],
+                "ingredients": [
+                    "orange"
+                ],
+                "container": "drinking glass"
+            }
+        ]
+    }
+]

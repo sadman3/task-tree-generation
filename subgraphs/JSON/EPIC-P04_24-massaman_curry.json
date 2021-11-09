@@ -1,0 +1,941 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "curry paste"
+                ],
+                "container": null
+            },
+            {
+                "label": "pestle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "curry paste"
+                ],
+                "container": null
+            },
+            {
+                "label": "curry paste",
+                "states": [],
+                "ingredients": [
+                    "onion",
+                    "spice mixture",
+                    "garlic",
+                    "lemon grass",
+                    "shrimp paste",
+                    "galangal",
+                    "paprika"
+                ],
+                "container": "mortar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "scale",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "scale"
+            },
+            {
+                "label": "scale",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bag",
+                "states": [
+                    "sealed"
+                ],
+                "ingredients": [
+                    "peanut"
+                ],
+                "container": null
+            },
+            {
+                "label": "peanut",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            },
+            {
+                "label": "scissors",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut open",
+        "output_nodes": [
+            {
+                "label": "bag",
+                "states": [],
+                "ingredients": [
+                    "peanut"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "scale",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "scale"
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "peanut"
+                ],
+                "container": null
+            },
+            {
+                "label": "peanut",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "peanut"
+                ],
+                "container": "scale"
+            },
+            {
+                "label": "peanut",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "curry paste"
+                ],
+                "container": null
+            },
+            {
+                "label": "curry paste",
+                "states": [],
+                "ingredients": [
+                    "onion",
+                    "spice mixture",
+                    "garlic",
+                    "lemon grass",
+                    "shrimp paste",
+                    "galangal",
+                    "paprika"
+                ],
+                "container": "mortar"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "curry paste"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "curry paste",
+                "states": [],
+                "ingredients": [
+                    "onion",
+                    "spice mixture",
+                    "garlic",
+                    "lemon grass",
+                    "shrimp paste",
+                    "galangal",
+                    "paprika"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "from faucet"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "from faucet"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "fill",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "coconut milk powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "coconut milk powder",
+                "states": [],
+                "ingredients": [],
+                "container": "bag"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "coconut milk powder",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "coconut milk powder"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "coconut milk powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "coconut milk powder",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "coconut milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "coconut milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "curry paste"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "curry paste",
+                "states": [],
+                "ingredients": [
+                    "onion",
+                    "spice mixture",
+                    "garlic",
+                    "lemon grass",
+                    "shrimp paste",
+                    "galangal",
+                    "paprika"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "curry paste"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "coconut milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "coconut milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "coconut milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "coconut milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "curry paste"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "coconut milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "coconut milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "curry paste",
+                    "coconut milk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "coconut milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "curry paste",
+                    "coconut milk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "curry paste",
+                "states": [],
+                "ingredients": [
+                    "onion",
+                    "spice mixture",
+                    "garlic",
+                    "lemon grass",
+                    "shrimp paste",
+                    "galangal",
+                    "paprika"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "coconut milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "curry sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "curry sauce",
+                "states": [],
+                "ingredients": [
+                    "curry paste",
+                    "coconut milk"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "sealed"
+                ],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "scissors",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut open",
+        "output_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "beefsteak",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "scissors",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "curry sauce"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "curry sauce",
+                    "beefsteak"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "cut in pieces"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "peanut"
+                ],
+                "container": "scale"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "peanut"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "peanut"
+                ],
+                "container": "oven"
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "curry sauce",
+                    "beefsteak"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "cut in pieces"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "curry sauce",
+                "states": [],
+                "ingredients": [
+                    "curry paste",
+                    "coconut milk"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "massaman curry"
+                ],
+                "container": null
+            },
+            {
+                "label": "massaman curry",
+                "states": [
+                    "incomplete"
+                ],
+                "ingredients": [
+                    "curry paste",
+                    "coconut milk",
+                    "steak"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    }
+]

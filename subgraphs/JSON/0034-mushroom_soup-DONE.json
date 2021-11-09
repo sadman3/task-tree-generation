@@ -1,0 +1,1102 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "cube"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "cube"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "cube"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "liquid",
+                    "melted"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "mushroom",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "mushroom"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mushroom",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "liquid",
+                    "melted"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "chopped",
+                    "sauteed"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "mushroom",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "mushroom",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "liquid",
+                    "melted"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced",
+                    "sauteed"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carton",
+                "states": [],
+                "ingredients": [
+                    "chicken broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "carton"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "chicken broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "chicken broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "chicken broth",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "chicken broth",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "chicken broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "broth",
+                "states": [
+                    "mixture",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "chicken broth",
+                    "flour"
+                ],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "chicken broth",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "chicken broth",
+                    "flour"
+                ],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "chicken broth",
+                    "flour"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "chicken broth",
+                    "flour"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped",
+                    "sauteed"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced",
+                    "sauteed"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "half-and-half"
+                ],
+                "container": null
+            },
+            {
+                "label": "half-and-half",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour",
+                    "half-and-half"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "half-and-half",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour",
+                    "half-and-half"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour",
+                    "half-and-half",
+                    "salt"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour",
+                    "half-and-half",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour",
+                    "half-and-half",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour",
+                    "half-and-half",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "half-and-half",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "soup"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour",
+                    "half-and-half",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "mushroom soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour",
+                    "half-and-half",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "soup"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "mushroom soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour",
+                    "half-and-half",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "ladle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soup"
+                ],
+                "container": null
+            },
+            {
+                "label": "mushroom soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "mushroom",
+                    "chicken broth",
+                    "flour",
+                    "half-and-half",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "bowl"
+            }
+        ]
+    }
+]

@@ -1,0 +1,1628 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "dice",
+        "output_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "halved",
+                    "unmelted"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "halved",
+                    "unmelted"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "unwrap",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "halved",
+                    "unmelted"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "packet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "halved",
+                    "unmelted"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "halved",
+                    "unmelted"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "halved",
+                    "unmelted"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "melt",
+        "output_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "liquid",
+                    "melted"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "celery"
+                ],
+                "container": null
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "celery"
+                ],
+                "container": null
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "basil"
+                ],
+                "container": null
+            },
+            {
+                "label": "basil",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "basil"
+                ],
+                "container": null
+            },
+            {
+                "label": "basil",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "tablespoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "tablespoon",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "tablespoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carton",
+                "states": [],
+                "ingredients": [
+                    "chicken broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "carton"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chicken broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "gouda",
+                "states": [
+                    "block",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "gouda"
+                ],
+                "container": null
+            },
+            {
+                "label": "gouda",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "celery"
+                ],
+                "container": null
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "basil"
+                ],
+                "container": null
+            },
+            {
+                "label": "basil",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "onion"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tablespoon",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "tablespoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "garlic",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "tablespoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "garlic",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "garlic",
+                    "onion",
+                    "potato"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "garlic",
+                    "onion",
+                    "potato"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chicken broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "chicken broth",
+                    "garlic",
+                    "onion",
+                    "potato"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "chicken broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "chicken broth",
+                    "garlic",
+                    "onion",
+                    "potato"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and mix",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "chicken broth",
+                    "flour",
+                    "garlic",
+                    "onion",
+                    "potato"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato soup",
+                "states": [
+                    "thick liquid",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "chicken broth",
+                    "flour",
+                    "garlic",
+                    "onion",
+                    "potato"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "chicken broth",
+                    "flour",
+                    "garlic",
+                    "onion",
+                    "potato"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato soup",
+                "states": [
+                    "thick liquid",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "chicken broth",
+                    "flour",
+                    "garlic",
+                    "onion",
+                    "potato"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "heavy cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "heavy cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and mix",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "chicken broth",
+                    "flour",
+                    "garlic",
+                    "heavy cream",
+                    "onion",
+                    "potato"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato soup",
+                "states": [
+                    "thick liquid",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "chicken broth",
+                    "flour",
+                    "garlic",
+                    "heavy cream",
+                    "onion",
+                    "potato"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "chicken broth",
+                    "flour",
+                    "garlic",
+                    "heavy cream",
+                    "onion",
+                    "potato"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato soup",
+                "states": [
+                    "thick liquid",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "chicken broth",
+                    "flour",
+                    "garlic",
+                    "heavy cream",
+                    "onion",
+                    "potato"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "gouda"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and mix*",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "potato soup"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato soup",
+                "states": [
+                    "thick liquid",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "gouda",
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "cheese",
+                    "chicken broth",
+                    "flour",
+                    "garlic",
+                    "heavy cream",
+                    "onion",
+                    "potato"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "potato soup"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato soup",
+                "states": [
+                    "thick liquid",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "gouda",
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "cheese",
+                    "chicken broth",
+                    "flour",
+                    "garlic",
+                    "heavy cream",
+                    "onion",
+                    "potato"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "ladle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "potato soup"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato soup",
+                "states": [
+                    "thick liquid",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "gouda",
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "cheese",
+                    "chicken broth",
+                    "flour",
+                    "garlic",
+                    "heavy cream",
+                    "onion",
+                    "potato"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "potato soup"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato soup",
+                "states": [
+                    "thick liquid",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "gouda",
+                    "basil",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "cheese",
+                    "chicken broth",
+                    "flour",
+                    "garlic",
+                    "heavy cream",
+                    "onion",
+                    "potato"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "pepper mill",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "whole",
+                    "peppercorn"
+                ],
+                "ingredients": [],
+                "container": "pepper mill"
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "potato soup"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato soup",
+                "states": [
+                    "thick liquid",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "gouda",
+                    "basil",
+                    "black pepper",
+                    "butter",
+                    "carrot",
+                    "celery",
+                    "cheese",
+                    "chicken broth",
+                    "flour",
+                    "garlic",
+                    "heavy cream",
+                    "onion",
+                    "potato"
+                ],
+                "container": "bowl"
+            }
+        ]
+    }
+]

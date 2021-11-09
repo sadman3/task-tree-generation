@@ -1,0 +1,634 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "matzo",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "matzo"
+                ],
+                "container": null
+            },
+            {
+                "label": "matzo",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "matzo"
+                ],
+                "container": null
+            },
+            {
+                "label": "matzo",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "break",
+        "output_nodes": [
+            {
+                "label": "matzo",
+                "states": [
+                    "broken"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "matzo",
+                "states": [
+                    "broken"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "matzo"
+                ],
+                "container": null
+            },
+            {
+                "label": "matzo",
+                "states": [
+                    "broken"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "matzo"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "matzo",
+                "states": [
+                    "broken"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "press",
+        "output_nodes": [
+            {
+                "label": "matzo",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "matzo"
+                ],
+                "container": null
+            },
+            {
+                "label": "matzo",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "drain",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "matzo"
+                ],
+                "container": null
+            },
+            {
+                "label": "matzo",
+                "states": [
+                    "mashed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "matzo"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "uncracked"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "crack",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "matzo",
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "matzo",
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "grinder",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [],
+                "ingredients": [],
+                "container": "grinder"
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "matzo",
+                    "egg white and yolk",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "matzo",
+                    "egg white and yolk",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "matzo",
+                "states": [
+                    "mashed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "matzo mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "matzo mixture",
+                "states": [],
+                "ingredients": [
+                    "matzo",
+                    "egg white and yolk",
+                    "salt"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "matzo mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "matzo mixture",
+                "states": [],
+                "ingredients": [
+                    "matzo",
+                    "egg white and yolk",
+                    "salt"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "matzo mixture"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "matzo mixture",
+                "states": [],
+                "ingredients": [
+                    "matzo",
+                    "egg white and yolk",
+                    "salt"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "matzo mixture"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "matzo mixture",
+                "states": [],
+                "ingredients": [
+                    "matzo",
+                    "egg white and yolk",
+                    "salt"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "matzo brei",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "matzo mixture"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "matzo brei",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "matzo brei",
+                "states": [
+                    "flipped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "matzo mixture"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "matzo brei",
+                "states": [
+                    "flipped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "matzo brei",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "matzo brei"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "matzo brei",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "matzo brei"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "matzo brei",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "matzo",
+                    "water",
+                    "matzo mixture",
+                    "egg white and yolk",
+                    "salt"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "matzo brei"
+                ],
+                "container": null
+            }
+        ]
+    }
+]

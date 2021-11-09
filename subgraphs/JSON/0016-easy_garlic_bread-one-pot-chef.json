@@ -1,0 +1,869 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "whole",
+                    "loaf"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "microwave",
+                "states": [
+                    "empty (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "microwave"
+            },
+            {
+                "label": "microwave",
+                "states": [],
+                "ingredients": [
+                    "bowl"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "microwave",
+                "states": [],
+                "ingredients": [
+                    "bowl"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "microwave"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "microwave",
+                "states": [],
+                "ingredients": [
+                    "bowl"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "microwave"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "microwave",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "jar",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "parsley",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "garlic butter",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic butter",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and spread",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "garlic butter"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "garlic butter",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "garlic butter"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "attach",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "loaf"
+                ],
+                "ingredients": [
+                    "garlic butter"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "box",
+                "states": [],
+                "ingredients": [
+                    "aluminium foil"
+                ],
+                "container": null
+            },
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [],
+                "container": "box"
+            }
+        ],
+        "motion_node": "tear",
+        "output_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "loaf"
+                ],
+                "ingredients": [
+                    "garlic butter"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "loaf"
+                ],
+                "ingredients": [
+                    "garlic butter"
+                ],
+                "container": "aluminium foil"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "loaf"
+                ],
+                "ingredients": [
+                    "garlic butter"
+                ],
+                "container": "aluminium foil"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ],
+        "motion_node": "wrap",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "loaf"
+                ],
+                "ingredients": [
+                    "garlic butter"
+                ],
+                "container": "aluminium foil"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "loaf"
+                ],
+                "ingredients": [
+                    "garlic butter"
+                ],
+                "container": "aluminium foil"
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "loaf"
+                ],
+                "ingredients": [
+                    "garlic butter"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "loaf"
+                ],
+                "ingredients": [
+                    "garlic butter"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "garlic butter",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": "bread"
+            }
+        ],
+        "motion_node": "bake",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "garlic bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic bread",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "garlic bread"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "garlic bread"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "garlic bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic bread",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": "oven"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic bread",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": "aluminium foil"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "garlic bread",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": "aluminium foil"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ],
+        "motion_node": "unwrap",
+        "output_nodes": [
+            {
+                "label": "garlic bread",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": "aluminium foil"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "garlic bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "garlic bread"
+            },
+            {
+                "label": "garlic bread",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": "aluminium foil"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "garlic bread",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "garlic",
+                    "parsley"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    }
+]

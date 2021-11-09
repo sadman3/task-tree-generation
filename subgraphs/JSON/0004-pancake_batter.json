@@ -1,0 +1,242 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bag",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "crack",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "flour"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "cracked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "egg shell",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "trash bin",
+                "states": [],
+                "ingredients": [
+                    "garbage"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "throw away",
+        "output_nodes": [
+            {
+                "label": "egg shell",
+                "states": [],
+                "ingredients": [],
+                "container": "trash bin"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "cracked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "flour"
+                ],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "flour",
+                    "milk"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "flour",
+                    "milk"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "egg white",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pancake batter"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "pancake batter",
+                "states": [
+                    "raw",
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "egg",
+                    "flour",
+                    "milk"
+                ],
+                "container": "bowl"
+            }
+        ]
+    }
+]

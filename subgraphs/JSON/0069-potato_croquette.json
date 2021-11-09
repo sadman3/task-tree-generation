@@ -1,0 +1,1485 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "peeler",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "peeler",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "water",
+                "states": [
+                    "from faucet"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "from faucet"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "fill",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "potato"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "potato"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "boil",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "potato"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "potato"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "sink",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "drain",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "masher",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mash",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "mashed"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "glass tray",
+                "states": [],
+                "ingredients": [
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "tray"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "oil",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "oil",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": null
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "tray"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "ground beef"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "ground beef"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "ground beef"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "ground beef"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "ground beef",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "ground beef",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "ground beef",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "ground beef",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "meat mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "meat mix",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "ground beef",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "meat mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "meat mix",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "ground beef",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "meat mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "meat mix",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "ground beef",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "meat mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "mashed"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "meat mix",
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "mashed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "meat mix",
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "mashed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "meat mix",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "ground beef",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "croquette mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "croquette mixture",
+                "states": [],
+                "ingredients": [
+                    "potato",
+                    "meat mix"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "fridge",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "croquette mixture"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "croquette mixture"
+                ],
+                "container": "fridge"
+            },
+            {
+                "label": "fridge",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "croquette mixture"
+                ],
+                "container": "fridge"
+            },
+            {
+                "label": "fridge",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "croquette mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "fridge",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "croquette mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "croquette mixture",
+                "states": [],
+                "ingredients": [
+                    "potato",
+                    "meat mix"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "roll",
+        "output_nodes": [
+            {
+                "label": "croquette",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "potato",
+                    "meat mix"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "croquette",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "potato",
+                    "meat mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "dip",
+        "output_nodes": [
+            {
+                "label": "croquette",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "croquette",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg yolk",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "dip",
+        "output_nodes": [
+            {
+                "label": "croquette",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "egg yolk"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "croquette",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "egg yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "breadcrumb"
+                ],
+                "container": null
+            },
+            {
+                "label": "breadcrumb",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "dip",
+        "output_nodes": [
+            {
+                "label": "croquette",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "potato",
+                    "meat mix",
+                    "egg yolk",
+                    "breadcrumb"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "croquette",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "potato",
+                    "meat mix",
+                    "egg yolk",
+                    "breadcrumb"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "croquette"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "croquette",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "potato",
+                    "meat mix"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "croquette"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "croquette",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "potato",
+                    "meat mix"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "chopstick",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "croquette",
+                "states": [
+                    "flipped"
+                ],
+                "ingredients": [
+                    "potato",
+                    "meat mix"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "croquette"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "croquette",
+                "states": [
+                    "flipped"
+                ],
+                "ingredients": [
+                    "potato",
+                    "meat mix"
+                ],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "croquette"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "croquette",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "croquette"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "croquette",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "chopstick",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "croquette"
+                ],
+                "container": null
+            },
+            {
+                "label": "croquette",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "oil",
+                    "onion",
+                    "ground beef",
+                    "salt",
+                    "black pepper",
+                    "potato",
+                    "egg yolk",
+                    "breadcrumb"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

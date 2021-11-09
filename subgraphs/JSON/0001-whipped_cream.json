@@ -1,0 +1,367 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "mixer"
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carton",
+                "states": [],
+                "ingredients": [
+                    "heavy cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "heavy cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "carton"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "carton",
+                "states": [],
+                "ingredients": [
+                    "heavy cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "heavy cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "mixer"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "heavy cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "heavy cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "heavy cream"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "heavy cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "heavy cream"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "heavy cream",
+                    "sugar"
+                ],
+                "container": "mixer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "heavy cream",
+                    "sugar"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "heavy cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "whipped cream"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "whipped cream",
+                "states": [
+                    "creamy",
+                    "whipped"
+                ],
+                "ingredients": [
+                    "heavy cream",
+                    "sugar"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "whipped cream"
+                ],
+                "container": "mixer"
+            }
+        ],
+        "motion_node": "detach",
+        "output_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "whipped cream"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "whipped cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "whipped cream",
+                "states": [
+                    "creamy",
+                    "whipped"
+                ],
+                "ingredients": [
+                    "heavy cream",
+                    "sugar"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "whipped cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "whipped cream",
+                "states": [
+                    "creamy",
+                    "whipped",
+                    "ready"
+                ],
+                "ingredients": [
+                    "heavy cream",
+                    "sugar"
+                ],
+                "container": "bowl"
+            }
+        ]
+    }
+]

@@ -1,0 +1,1058 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cabbage"
+                ],
+                "container": null
+            },
+            {
+                "label": "cabbage",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage"
+                ],
+                "container": null
+            },
+            {
+                "label": "cabbage",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground pork"
+                ],
+                "container": null
+            },
+            {
+                "label": "ground pork",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork"
+                ],
+                "container": null
+            },
+            {
+                "label": "ground pork",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "scallion"
+                ],
+                "container": null
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion"
+                ],
+                "container": null
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "rice beer"
+                ],
+                "container": null
+            },
+            {
+                "label": "rice beer",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce",
+                    "rice beer"
+                ],
+                "container": null
+            },
+            {
+                "label": "rice beer",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce",
+                    "rice beer"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "sesame oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce",
+                    "rice beer",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "sesame oil",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce",
+                    "rice beer",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce",
+                    "sesame oil",
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce",
+                    "sesame oil",
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "corn starch"
+                ],
+                "container": null
+            },
+            {
+                "label": "corn starch",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce",
+                    "sesame oil",
+                    "garlic",
+                    "corn starch"
+                ],
+                "container": null
+            },
+            {
+                "label": "corn starch",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce",
+                    "sesame oil",
+                    "garlic",
+                    "corn starch"
+                ],
+                "container": null
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "ground pork",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "soy sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "rice beer",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "sesame oil",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "corn starch",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "gyoza filling"
+                ],
+                "container": null
+            },
+            {
+                "label": "gyoza filling",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce",
+                    "sesame oil",
+                    "garlic",
+                    "corn starch"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "gyoza filling"
+                ],
+                "container": null
+            },
+            {
+                "label": "dumpling wrapper",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "hand"
+            },
+            {
+                "label": "gyoza filling",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce",
+                    "sesame oil",
+                    "garlic",
+                    "corn starch"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "dumpling wrapper",
+                "states": [],
+                "ingredients": [
+                    "gyoza filling"
+                ],
+                "container": "hand"
+            },
+            {
+                "label": "gyoza filling",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce",
+                    "sesame oil",
+                    "garlic",
+                    "corn starch"
+                ],
+                "container": "wrapper"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "dumpling wrapper",
+                "states": [],
+                "ingredients": [
+                    "gyoza filling"
+                ],
+                "container": "hand"
+            },
+            {
+                "label": "gyoza filling",
+                "states": [],
+                "ingredients": [],
+                "container": "wrapper"
+            }
+        ],
+        "motion_node": "fold",
+        "output_nodes": [
+            {
+                "label": "dumpling",
+                "states": [
+                    "wrapped"
+                ],
+                "ingredients": [
+                    "gyoza filling"
+                ],
+                "container": "hand"
+            },
+            {
+                "label": "gyoza filling",
+                "states": [],
+                "ingredients": [],
+                "container": "dumpling"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "dumpling",
+                "states": [
+                    "wrapped"
+                ],
+                "ingredients": [
+                    "gyoza filling"
+                ],
+                "container": "hand"
+            }
+        ],
+        "motion_node": "press",
+        "output_nodes": [
+            {
+                "label": "dumpling",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "gyoza filling"
+                ],
+                "container": "hand"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "dumpling",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "gyoza filling"
+                ],
+                "container": "hand"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "dumpling"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "dumpling",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "gyoza filling"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "dumpling"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "dumpling",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "dumpling",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "dumpling",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "dumpling",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "dumpling",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "gyoza filling"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "gyoza filling",
+                "states": [],
+                "ingredients": [
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce",
+                    "sesame oil",
+                    "garlic",
+                    "corn starch"
+                ],
+                "container": "wrapper"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "gyoza"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "gyoza",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "gyoza filling"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "gyoza"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "uncover",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "gyoza"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "gyoza"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "gyoza",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "gyoza filling"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "gyoza"
+                ],
+                "container": null
+            },
+            {
+                "label": "gyoza",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "dumpling wrapper",
+                    "cabbage",
+                    "ground pork",
+                    "scallion",
+                    "soy sauce",
+                    "sesame oil",
+                    "vegetable oil",
+                    "garlic",
+                    "corn starch",
+                    "gyoza filling"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

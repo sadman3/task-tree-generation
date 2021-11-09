@@ -1,0 +1,1275 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "muffin pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking spray",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "spray can"
+            }
+        ],
+        "motion_node": "spray",
+        "output_nodes": [
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "muffin pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "open"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "close",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on",
+                    "closed"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on",
+                    "closed"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "bacon",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "crack",
+        "output_nodes": [
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "cracked"
+                ],
+                "ingredients": [],
+                "container": "muffin pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "cracked"
+                ],
+                "ingredients": [],
+                "container": "muffin pan"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "beaten"
+                ],
+                "ingredients": [],
+                "container": "muffin pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on",
+                    "closed"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bacon",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            },
+            {
+                "label": "griddle",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "whole",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "peeler",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "place",
+        "output_nodes": [
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "grater"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "grater"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": "grater"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": "grater"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "place and spread",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "grated",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "close",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on",
+                    "closed"
+                ],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "bacon",
+                "states": [
+                    "fried",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on",
+                    "closed"
+                ],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "grated",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on",
+                    "closed"
+                ],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "griddle"
+            },
+            {
+                "label": "griddle",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "griddle",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "fried",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "combine*",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "potato",
+                    "bacon"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten"
+                ],
+                "ingredients": [],
+                "container": "muffin pan"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bacon",
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "fried",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "cheddar"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheddar",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "sprinkle*",
+        "output_nodes": [
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "vegetable oil",
+                    "bacon",
+                    "potato",
+                    "cheddar"
+                ],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "muffin pan"
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "muffin pan"
+            },
+            {
+                "label": "cheddar",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "muffin pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "bacon",
+                    "potato",
+                    "cheddar"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten"
+                ],
+                "ingredients": [],
+                "container": "muffin pan"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "muffin pan"
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "muffin pan"
+            },
+            {
+                "label": "cheddar",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "muffin pan"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix*",
+        "output_nodes": [
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg mixture",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "bacon",
+                    "potato",
+                    "cheddar"
+                ],
+                "container": "muffin pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "insert",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "egg mixture",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "bacon",
+                    "potato",
+                    "cheddar"
+                ],
+                "container": "muffin pan"
+            }
+        ],
+        "motion_node": "bake",
+        "output_nodes": [
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "muffin"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "muffin",
+                "states": [],
+                "ingredients": [],
+                "container": "muffin pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "muffin"
+                ],
+                "container": "oven"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "muffin"
+                ],
+                "container": null
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "muffin pan",
+                "states": [],
+                "ingredients": [
+                    "muffin"
+                ],
+                "container": null
+            },
+            {
+                "label": "muffin",
+                "states": [],
+                "ingredients": [],
+                "container": "muffin pan"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "breakfast muffin"
+                ],
+                "container": null
+            },
+            {
+                "label": "breakfast muffin",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "bacon",
+                    "potato",
+                    "cheddar",
+                    "vegetable oil"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

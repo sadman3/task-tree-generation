@@ -1,0 +1,1873 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "beef stock"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "beef stock",
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "thyme"
+                ],
+                "container": null
+            },
+            {
+                "label": "thyme",
+                "states": [
+                    "sprig"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "beef stock",
+                    "carrot"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "beef stock",
+                    "carrot",
+                    "thyme"
+                ],
+                "container": null
+            },
+            {
+                "label": "thyme",
+                "states": [
+                    "sprig"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "bay leaf"
+                ],
+                "container": null
+            },
+            {
+                "label": "bay leaf",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "beef stock",
+                    "carrot",
+                    "thyme"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "beef stock",
+                    "carrot",
+                    "thyme",
+                    "bay leaf"
+                ],
+                "container": null
+            },
+            {
+                "label": "bay leaf",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "beef stock",
+                    "carrot",
+                    "thyme",
+                    "bay leaf"
+                ],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "beef stock",
+                    "carrot",
+                    "thyme",
+                    "bay leaf"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "beef stock",
+                    "carrot",
+                    "thyme",
+                    "bay leaf"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "simmer",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "beef stock",
+                    "carrot",
+                    "thyme",
+                    "bay leaf"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "beef"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "beef",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "beef",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "beef",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "beef",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "beef"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "beef"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "beef"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "beef",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "beef",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "beef",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "beef",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "cognac"
+                ],
+                "container": null
+            },
+            {
+                "label": "cognac",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion",
+                    "cognac"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "cognac",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion",
+                    "cognac"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cognac",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion",
+                    "cognac"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "beef stock",
+                    "carrot",
+                    "thyme",
+                    "bay leaf"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion",
+                    "cognac"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "thyme",
+                    "bay leaf"
+                ],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion",
+                    "cognac",
+                    "beef stock"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion",
+                    "cognac",
+                    "beef stock"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "cognac",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "beef",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "beef stew mix",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion",
+                    "cognac",
+                    "beef stock"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "mushroom",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "mushroom"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "mushroom"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "mushroom"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "mushroom",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "thyme",
+                "states": [
+                    "sprig"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "mushroom",
+                    "garlic"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "mushroom",
+                    "garlic",
+                    "thyme"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "thyme",
+                "states": [
+                    "sprig"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "mushroom",
+                    "garlic",
+                    "thyme"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "mushroom",
+                    "garlic",
+                    "thyme"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "mushroom",
+                    "garlic",
+                    "thyme"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "thyme",
+                "states": [
+                    "sprig"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "mushroom",
+                    "garlic",
+                    "thyme"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "mushroom",
+                    "garlic",
+                    "thyme"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "mushroom",
+                    "garlic",
+                    "thyme"
+                ],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "mushroom",
+                    "garlic",
+                    "thyme"
+                ],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix",
+                    "mushroom",
+                    "garlic",
+                    "thyme"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix",
+                    "mushroom",
+                    "garlic",
+                    "thyme"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef stew mix",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion",
+                    "cognac",
+                    "beef stock"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef stew mix",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion",
+                    "cognac",
+                    "beef stock",
+                    "mushroom",
+                    "garlic",
+                    "thyme"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise",
+                    "mustard"
+                ],
+                "container": null
+            },
+            {
+                "label": "mustard",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "sour cream",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix",
+                    "mustard",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "mustard",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "sour cream",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix",
+                    "mustard",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef stew mix",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion",
+                    "cognac",
+                    "beef stock",
+                    "mushroom",
+                    "garlic",
+                    "thyme"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "mustard",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "sour cream",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef stew mix",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion",
+                    "cognac",
+                    "beef stock",
+                    "mushroom",
+                    "garlic",
+                    "thyme",
+                    "sour cream",
+                    "mustard"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "parsley",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix",
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "parsley",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stew mix",
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "parsley",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "beef stew mix",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion",
+                    "cognac",
+                    "beef stock",
+                    "mushroom",
+                    "garlic",
+                    "thyme",
+                    "sour cream",
+                    "mustard"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stroganoff"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef stroganoff",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pasta"
+                ],
+                "container": null
+            },
+            {
+                "label": "pasta",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "pasta"
+                ],
+                "container": null
+            },
+            {
+                "label": "pasta",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "beef stroganoff"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef stroganoff",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "pasta"
+                ],
+                "container": null
+            },
+            {
+                "label": "pasta",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "beef stroganoff",
+                    "pasta"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef stroganoff",
+                "states": [],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "thyme",
+                "states": [
+                    "sprig"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "beef stroganoff",
+                    "pasta"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef stroganoff",
+                "states": [],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "beef stroganoff",
+                "states": [],
+                "ingredients": [
+                    "beef",
+                    "onion",
+                    "cognac",
+                    "beef stock",
+                    "mushroom",
+                    "garlic",
+                    "thyme",
+                    "sour cream",
+                    "mustard",
+                    "thyme",
+                    "pasta"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

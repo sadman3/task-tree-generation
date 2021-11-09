@@ -1,0 +1,1411 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking spray",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "spray bottle"
+            }
+        ],
+        "motion_node": "spray",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "sugar"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cocoa powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "cocoa powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "flour",
+                    "cocoa powder"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "flour",
+                    "cocoa powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "baking powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "flour",
+                    "cocoa powder",
+                    "baking powder"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "flour",
+                    "cocoa powder",
+                    "baking powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "baking soda"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking soda",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "flour",
+                    "cocoa powder",
+                    "baking powder",
+                    "baking soda"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "flour",
+                    "cocoa powder",
+                    "baking powder",
+                    "baking soda"
+                ],
+                "container": null
+            },
+            {
+                "label": "cocoa powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "flour",
+                    "cocoa powder",
+                    "baking powder",
+                    "baking soda",
+                    "salt"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "flour",
+                    "cocoa powder",
+                    "baking powder",
+                    "baking soda",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "baking soda",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cocoa powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "cake mix",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "flour",
+                    "cocoa powder",
+                    "baking powder",
+                    "baking soda",
+                    "salt"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "cake mix",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "flour",
+                    "cocoa powder",
+                    "baking powder",
+                    "baking soda",
+                    "salt"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "mixer",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "attach",
+        "output_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "mixer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "mixer"
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "mixer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract",
+                    "water"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract",
+                    "water"
+                ],
+                "container": "mixer"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake batter"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "cake batter",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake batter"
+                ],
+                "container": "mixer"
+            }
+        ],
+        "motion_node": "detach",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake batter"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "cake batter",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "cake batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cake batter",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "cake batter"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "cake batter"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "cake batter"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "cake batter",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "bake",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "chocolate cake"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "chocolate cake",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "chocolate cake"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "chocolate cake",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "wire rack",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "wire rack",
+                "states": [],
+                "ingredients": [
+                    "chocolate cake"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate cake",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "wire rack"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "wire rack",
+                "states": [],
+                "ingredients": [
+                    "chocolate cake"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate cake",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "wire rack"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "wire rack",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chocolate cake"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate cake",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frosting",
+                "states": [],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chocolate cake"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate cake",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "chocolate cake",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract",
+                    "frosting"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "frosting",
+                "states": [],
+                "ingredients": [],
+                "container": "cake"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chocolate cake"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate cake",
+                "states": [],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract",
+                    "frosting"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "chocolate cake",
+                "states": [
+                    "divided"
+                ],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract",
+                    "frosting"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "chocolate cake",
+                "states": [
+                    "divided"
+                ],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract",
+                    "frosting"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "cake server",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chocolate cake"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate cake",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "cake mix",
+                    "egg white and yolk",
+                    "milk",
+                    "vegetable oil",
+                    "vanilla extract",
+                    "frosting"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

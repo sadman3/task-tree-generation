@@ -1,0 +1,1174 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "box",
+                "states": [],
+                "ingredients": [
+                    "foil"
+                ],
+                "container": null
+            },
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [],
+                "container": "box"
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "spread out"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "spread out"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "green bean"
+                ],
+                "container": null
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "sheet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "sheet"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "green bean",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": "sheet"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "sheet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": "sheet"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "green bean",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion"
+                ],
+                "container": "sheet"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "sheet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tarragon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "tarragon"
+                ],
+                "container": null
+            },
+            {
+                "label": "tarragon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "tarragon"
+                ],
+                "container": null
+            },
+            {
+                "label": "tarragon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "tarragon",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "tarragon"
+                ],
+                "container": null
+            },
+            {
+                "label": "tarragon",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "tarragon"
+                ],
+                "container": null
+            },
+            {
+                "label": "tarragon",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "tarragon"
+                ],
+                "container": null
+            },
+            {
+                "label": "tarragon",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion"
+                ],
+                "container": "sheet"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "green bean",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon"
+                ],
+                "container": "sheet"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "tarragon",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "sheet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "grinder",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon"
+                ],
+                "container": "sheet"
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "sheet"
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt"
+                ],
+                "container": "sheet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "grinder",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt"
+                ],
+                "container": "sheet"
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "pepper"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "sheet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "pepper"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "pepper",
+                    "water"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "sheet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "pepper",
+                    "water"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "cooking spray",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "spray can"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "sheet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "seasoned"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "sheet"
+            }
+        ],
+        "motion_node": "wrap",
+        "output_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "wrapped"
+                ],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "uncooked",
+                    "seasoned",
+                    "wrapped"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "wrapped"
+                ],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "uncooked",
+                    "seasoned",
+                    "wrapped"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "aluminium"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "wrapped"
+                ],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "aluminium"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "wrapped"
+                ],
+                "ingredients": [
+                    "green bean",
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "uncooked",
+                    "seasoned",
+                    "wrapped"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "green bean",
+                "states": [
+                    "cooked",
+                    "wrapped"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "wrapped"
+                ],
+                "ingredients": [
+                    "green bean"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "wrapped"
+                ],
+                "ingredients": [
+                    "green bean"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "cooked",
+                    "wrapped"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "unwrap",
+        "output_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": "sheet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [
+                    "green bean"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": "sheet"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "green bean"
+                ],
+                "container": null
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "green bean"
+                ],
+                "container": null
+            },
+            {
+                "label": "green bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "olive oil"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "sweet pepper",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "green bean",
+                "states": [
+                    "cooked",
+                    "ready"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tarragon",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "olive oil",
+                    "sweet pepper"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "sweet pepper",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    }
+]

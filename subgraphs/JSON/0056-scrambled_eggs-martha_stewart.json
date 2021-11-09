@@ -1,0 +1,567 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "crack",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "egg yolk",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "egg yolk",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "beat",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "empty",
+                    "hot"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "empty",
+                    "hot"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "cubed",
+                    "unmelted"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "cubed",
+                    "unmelted"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "melted",
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "scrambled eggs"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "scrambled eggs"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg"
+                ],
+                "container": "skillet"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "black pepper"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "scrambled eggs"
+                ],
+                "container": null
+            },
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "black pepper"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "cooked",
+                    "ready"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "scrambled eggs"
+            }
+        ]
+    }
+]

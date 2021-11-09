@@ -1,0 +1,1150 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "whole",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "peeler",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon juice",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon juice",
+                "states": [],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "mayonnaise",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "mayonnaise",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "sour cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "sour cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bag",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "mayonnaise",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "mayonnaise",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "sour cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "sour cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise",
+                    "sugar",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise",
+                    "sugar",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "mayonnaise",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "sour cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "salad dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "mayonnaise",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "salad dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "mayonnaise",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice",
+                    "mayonnaise",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "salad dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "mayonnaise",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": "salad bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice",
+                    "mayonnaise",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "lemon juice",
+                "states": [],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "salad dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "mayonnaise",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": "salad bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice",
+                    "mayonnaise",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": "salad bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice",
+                    "mayonnaise",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pineapple"
+                ],
+                "container": null
+            },
+            {
+                "label": "pineapple",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice",
+                    "mayonnaise",
+                    "pineapple",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "pineapple",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice",
+                    "mayonnaise",
+                    "pineapple",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "raisin"
+                ],
+                "container": null
+            },
+            {
+                "label": "raisin",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice",
+                    "mayonnaise",
+                    "pineapple",
+                    "raisin",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "raisin",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice",
+                    "mayonnaise",
+                    "pineapple",
+                    "raisin",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice",
+                    "mayonnaise",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": "salad bowl"
+            },
+            {
+                "label": "raisin",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "pineapple",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot salad"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice",
+                    "mayonnaise",
+                    "pineapple",
+                    "raisin",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": "salad bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot salad"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice",
+                    "mayonnaise",
+                    "pineapple",
+                    "raisin",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": "salad bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot salad"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot salad",
+                "states": [
+                    "mixed",
+                    "ready"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "lemon juice",
+                    "mayonnaise",
+                    "pineapple",
+                    "raisin",
+                    "sugar",
+                    "salt",
+                    "sour cream"
+                ],
+                "container": "bowl"
+            }
+        ]
+    }
+]

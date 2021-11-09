@@ -1,0 +1,637 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "rinse",
+        "output_nodes": [
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "washed",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "washed",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "raw"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "shrimp"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "raw"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "grinder",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "grinder"
+            }
+        ],
+        "motion_node": "grind and sprinkle",
+        "output_nodes": [
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "raw"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "salt"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "shrimp"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "raw"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "salt"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "grinder",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "peppercorn",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "grinder"
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "raw"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "olive oil",
+                    "salt"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "shrimp"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "off (ready)",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "light",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "raw",
+                    "whole"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "olive oil",
+                    "salt"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "grill",
+                "states": [
+                    "on",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "shrimp",
+                "states": [
+                    "raw",
+                    "whole"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "olive oil",
+                    "salt"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "close",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on",
+                    "closed"
+                ],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "closed",
+                    "on"
+                ],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "raw",
+                    "whole"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "olive oil",
+                    "salt"
+                ],
+                "container": "grill"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on",
+                    "closed"
+                ],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "grill"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "off",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "grilled shrimp",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "olive oil",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "whole",
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    }
+]

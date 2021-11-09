@@ -1,0 +1,2077 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "zucchini",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "from faucet"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "wash",
+        "output_nodes": [
+            {
+                "label": "zucchini",
+                "states": [
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carrot",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "from faucet"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "wash",
+        "output_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "zucchini",
+                "states": [
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "zucchini"
+                ],
+                "container": null
+            },
+            {
+                "label": "zucchini",
+                "states": [
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "zucchini"
+                ],
+                "container": null
+            },
+            {
+                "label": "zucchini",
+                "states": [
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "zucchini",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "zucchini"
+                ],
+                "container": null
+            },
+            {
+                "label": "zucchini",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "dice",
+        "output_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "zucchini",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "zucchini",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "zucchini",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "zucchini",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "zucchini",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "shake",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "zucchini",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "celery",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "from faucet"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "wash",
+        "output_nodes": [
+            {
+                "label": "celery",
+                "states": [
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "celery",
+                "states": [
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "celery"
+                ],
+                "container": null
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "celery"
+                ],
+                "container": null
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "celery"
+                ],
+                "container": null
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "zucchini",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "ends removed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "ends removed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "kettle",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "kettle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "tofu"
+                ],
+                "container": null
+            },
+            {
+                "label": "tofu",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion",
+                    "tofu"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tofu",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion",
+                    "tofu"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tofu",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "zucchini",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "vegetable mix",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion",
+                    "tofu"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "salt"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "salt",
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "salt",
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "salt",
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "salt",
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "salt",
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "sink",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix",
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix",
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "vegetable mix",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion",
+                    "tofu"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix",
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix",
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "curry powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "curry powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "container"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix",
+                    "rice",
+                    "curry powder"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "curry powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable mix",
+                    "rice",
+                    "curry powder"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "curry powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "vegetable mix",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion",
+                    "tofu"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "stir-fried rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stir-fried rice",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion",
+                    "tofu",
+                    "rice",
+                    "curry powder"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "stir-fried rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stir-fried rice",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion",
+                    "tofu",
+                    "rice",
+                    "curry powder"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "stir-fried rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "stir-fried rice",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion",
+                    "tofu",
+                    "rice",
+                    "curry powder"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "stir-fried rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stir-fried rice",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion",
+                    "tofu",
+                    "rice",
+                    "curry powder"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "stir-fried rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "stir-fried rice",
+                "states": [],
+                "ingredients": [
+                    "zucchini",
+                    "salt",
+                    "celery",
+                    "carrot",
+                    "olive oil",
+                    "onion",
+                    "tofu",
+                    "rice",
+                    "curry powder"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

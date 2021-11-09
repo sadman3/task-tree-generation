@@ -19,10 +19,6 @@
                      "state": "thick liquid"
               },
               {
-                     "object": "juice",
-                     "state": "diced"
-              },
-              {
                      "object": "corn",
                      "state": "grain"
               },
@@ -41,10 +37,6 @@
               {
                      "object": "cilantro",
                      "state": "chopped"
-              },
-              {
-                     "object": "juice",
-                     "state": "juice"
               }
        ]
 }

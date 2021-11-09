@@ -1,0 +1,1258 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tomato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "tomato",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tomato",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "dice",
+        "output_nodes": [
+            {
+                "label": "tomato",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cucumber",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "peeler",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "cucumber",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cucumber",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "cucumber"
+                ],
+                "container": null
+            },
+            {
+                "label": "cucumber",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cucumber",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "dice",
+        "output_nodes": [
+            {
+                "label": "cucumber",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "cucumber"
+                ],
+                "container": null
+            },
+            {
+                "label": "cucumber",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber"
+                ],
+                "container": null
+            },
+            {
+                "label": "cucumber",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "sweet pepper",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "sweet pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet pepper",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "sweet pepper",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "core",
+        "output_nodes": [
+            {
+                "label": "sweet pepper",
+                "states": [
+                    "cored"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "sweet pepper",
+                "states": [
+                    "cored"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "dice",
+        "output_nodes": [
+            {
+                "label": "sweet pepper",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "sweet pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet pepper",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "sweet pepper",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "green pepper",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "green pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "green pepper",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "green pepper",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "core",
+        "output_nodes": [
+            {
+                "label": "green pepper",
+                "states": [
+                    "cored"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "green pepper",
+                "states": [
+                    "cored"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "dice",
+        "output_nodes": [
+            {
+                "label": "green pepper",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "sweet pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet pepper",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "green pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "green pepper",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet pepper",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "green pepper",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "oregano"
+                ],
+                "container": null
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano"
+                ],
+                "container": null
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black olive"
+                ],
+                "container": null
+            },
+            {
+                "label": "black olive",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano",
+                    "black olive"
+                ],
+                "container": null
+            },
+            {
+                "label": "black olive",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano",
+                    "black olive"
+                ],
+                "container": null
+            },
+            {
+                "label": "grinder",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "pieces"
+                ],
+                "ingredients": [],
+                "container": "grinder"
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano",
+                    "black olive",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano",
+                    "black olive",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "squeeze",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano",
+                    "black olive",
+                    "salt",
+                    "lemon"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano",
+                    "black olive",
+                    "salt",
+                    "lemon"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano",
+                    "black olive",
+                    "salt",
+                    "lemon",
+                    "olive oil"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano",
+                    "black olive",
+                    "salt",
+                    "lemon",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "black olive",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "sweet pepper",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "green pepper",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "cucumber",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano",
+                    "black olive",
+                    "salt",
+                    "lemon",
+                    "olive oil"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "feta cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "feta cheese",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "feta cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "feta cheese",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano",
+                    "black olive",
+                    "salt",
+                    "lemon",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano",
+                    "black olive",
+                    "salt",
+                    "lemon",
+                    "olive oil"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "feta cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "feta cheese",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "salad"
+                ],
+                "container": null
+            },
+            {
+                "label": "greek salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano",
+                    "black olive",
+                    "salt",
+                    "lemon",
+                    "olive oil",
+                    "feta cheese"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "tomato",
+                    "onion",
+                    "cucumber",
+                    "sweet pepper",
+                    "green pepper",
+                    "oregano",
+                    "black olive",
+                    "salt",
+                    "lemon",
+                    "olive oil",
+                    "feta cheese"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    }
+]

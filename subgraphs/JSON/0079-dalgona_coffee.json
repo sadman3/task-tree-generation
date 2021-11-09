@@ -1,0 +1,649 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "instant coffee",
+                    "sugar"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "instant coffee",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid",
+                    "hot"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "instant coffee",
+                    "sugar",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid",
+                    "hot"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "instant coffee",
+                    "sugar",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid",
+                    "hot"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "beat",
+        "output_nodes": [
+            {
+                "label": "whipped coffee",
+                "states": [
+                    "whipped"
+                ],
+                "ingredients": [
+                    "instant coffee",
+                    "sugar",
+                    "water"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "instant coffee",
+                    "sugar",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "whipped coffee",
+                "states": [
+                    "whipped"
+                ],
+                "ingredients": [
+                    "instant coffee",
+                    "sugar",
+                    "water"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "whipped coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "whipped coffee",
+                "states": [
+                    "whipped"
+                ],
+                "ingredients": [
+                    "instant coffee",
+                    "sugar",
+                    "water"
+                ],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "ice"
+                ],
+                "container": null
+            },
+            {
+                "label": "ice",
+                "states": [
+                    "cubed",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "ice"
+                ],
+                "container": null
+            },
+            {
+                "label": "ice",
+                "states": [
+                    "frozen",
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "carton",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "carton"
+            }
+        ],
+        "motion_node": "measure",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "ice"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "whipped coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "whipped coffee",
+                "states": [
+                    "whipped"
+                ],
+                "ingredients": [
+                    "instant coffee",
+                    "sugar",
+                    "water"
+                ],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour and spread",
+        "output_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "milk",
+                    "whipped coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "whipped coffee",
+                "states": [
+                    "whipped"
+                ],
+                "ingredients": [
+                    "instant coffee",
+                    "sugar",
+                    "water"
+                ],
+                "container": "drinking glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "milk",
+                    "whipped coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            },
+            {
+                "label": "whipped coffee",
+                "states": [
+                    "whipped"
+                ],
+                "ingredients": [
+                    "instant coffee",
+                    "sugar",
+                    "water"
+                ],
+                "container": "drinking glass"
+            },
+            {
+                "label": "ice",
+                "states": [
+                    "frozen",
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "milk",
+                    "whipped coffee",
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            },
+            {
+                "label": "dalgona coffee",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "hot water",
+                    "ice",
+                    "instant coffee",
+                    "milk",
+                    "sugar"
+                ],
+                "container": "drinking glass"
+            }
+        ]
+    }
+]

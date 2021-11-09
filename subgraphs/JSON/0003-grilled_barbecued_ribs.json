@@ -1,0 +1,716 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "ribs",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            },
+            {
+                "label": "ribs",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "ribs",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "ribs",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "ribs"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "ribs",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "ribs",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "ribs"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off (ready)",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "baking tray"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "baking tray"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "ribs",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "bake",
+        "output_nodes": [
+            {
+                "label": "ribs",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "baking tray"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "baking tray"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "baking tray"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": "oven"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "off (ready)",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "light",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "ribs",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            },
+            {
+                "label": "ribs",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "barbecue sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "barbecue sauce",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour*",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "barbecue sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "barbecue sauce",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "barbecue sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "barbecue sauce",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "ribs",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "brush",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "brush",
+        "output_nodes": [
+            {
+                "label": "ribs",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "barbecue sauce",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "barbecue sauce",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "ribs"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "close",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on",
+                    "closed"
+                ],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on",
+                    "closed"
+                ],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            },
+            {
+                "label": "ribs",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "barbecue sauce",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "grill"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "ribs",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "barbecue sauce",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on",
+                    "closed"
+                ],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            },
+            {
+                "label": "ribs",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "barbecue sauce",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "ribs"
+                ],
+                "container": null
+            },
+            {
+                "label": "ribs",
+                "states": [
+                    "ready"
+                ],
+                "ingredients": [
+                    "barbecue sauce",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "grill",
+                "states": [
+                    "off",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    }
+]

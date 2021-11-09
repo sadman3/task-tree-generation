@@ -1,0 +1,628 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "tortilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tortilla",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "crayfish mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "crayfish mixture",
+                "states": [],
+                "ingredients": [
+                    "crayfish",
+                    "mayonnaise",
+                    "lemon",
+                    "dill"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "crayfish mixture",
+                "states": [],
+                "ingredients": [
+                    "crayfish",
+                    "mayonnaise",
+                    "lemon",
+                    "dill"
+                ],
+                "container": "tortilla"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "tortilla"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "arugula"
+                ],
+                "container": null
+            },
+            {
+                "label": "arugula",
+                "states": [
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper",
+                    "arugula"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "arugula",
+                "states": [],
+                "ingredients": [],
+                "container": "tortilla"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper",
+                    "arugula"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "squeeze",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper",
+                    "arugula",
+                    "lemon juice"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "lemon juice",
+                "states": [],
+                "ingredients": [],
+                "container": "tortilla"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "squeezed"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper",
+                    "arugula",
+                    "lemon juice"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "roll",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper",
+                    "arugula",
+                    "lemon juice"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper",
+                    "arugula",
+                    "lemon juice"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper",
+                    "arugula",
+                    "lemon juice"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tortilla",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper",
+                    "arugula",
+                    "lemon juice"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "tuck ends",
+        "output_nodes": [
+            {
+                "label": "wrap",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper",
+                    "arugula",
+                    "lemon juice"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "wrap",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper",
+                    "arugula",
+                    "lemon juice"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "wrap",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper",
+                    "arugula",
+                    "lemon juice"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": null
+            },
+            {
+                "label": "wrap",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [
+                    "butter",
+                    "crayfish mixture",
+                    "black pepper",
+                    "arugula",
+                    "lemon juice"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "wrap"
+                ],
+                "container": null
+            },
+            {
+                "label": "wrap",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [
+                    "tortilla",
+                    "butter",
+                    "crayfish",
+                    "mayonnaise",
+                    "lemon",
+                    "dill",
+                    "black pepper",
+                    "arugula",
+                    "lemon juice"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

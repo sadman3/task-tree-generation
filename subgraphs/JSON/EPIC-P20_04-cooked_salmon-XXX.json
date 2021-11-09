@@ -1,0 +1,1451 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "sealed"
+                ],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "scissors",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut open",
+        "output_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "microwave",
+                "states": [
+                    "empty (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": "microwave"
+            },
+            {
+                "label": "microwave",
+                "states": [],
+                "ingredients": [
+                    "bowl"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": "microwave"
+            },
+            {
+                "label": "microwave",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "defrost",
+        "output_nodes": [
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "defrosted"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": "microwave"
+            },
+            {
+                "label": "microwave",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "microwave",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "defrosted"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "defrosted"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "defrosted"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "skinned"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid",
+                    "from faucet"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "skinned"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "wash",
+        "output_nodes": [
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "skinned"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "skinned"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "skinned"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "skinned"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "dice",
+        "output_nodes": [
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "sesame oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "sesame oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "grinder",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "grinder"
+            }
+        ],
+        "motion_node": "grind and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "salmon",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "salmon",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "raw",
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "sesame oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "salmon",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "oiled",
+                    "raw"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "sesame oil"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "sesame oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "sesame oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "sesame oil"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "grinder",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "grinder"
+            }
+        ],
+        "motion_node": "grind and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "salt",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "ginger",
+                "states": [
+                    "chunk"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "ginger",
+                "states": [
+                    "peeled",
+                    "chunk"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "salt",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "ginger",
+                "states": [
+                    "peeled",
+                    "chunk"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "ginger",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "sesame oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "ginger",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "oil mixture",
+                "states": [
+                    "liquid",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "oil mixture",
+                "states": [
+                    "liquid",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "salmon",
+                    "sesame oil"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salmon",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salmon",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "oil mixture",
+                "states": [
+                    "liquid",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "oiled",
+                    "raw"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "sesame oil"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "salmon",
+                "states": [
+                    "oiled",
+                    "raw"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "preheat",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "bottle",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "oil mixture",
+                    "salmon",
+                    "sesame oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "oiled",
+                    "raw"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "salmon",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "oiled",
+                    "raw"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "salmon",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "oiled",
+                    "raw"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "salmon",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "salmon",
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "ginger",
+                    "salt",
+                    "sesame oil",
+                    "vegetable oil"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

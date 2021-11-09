@@ -26,8 +26,19 @@ def prepare_input(path='recipe1m_merged.pkl'):
     selected_catagory = ['salad', 'drinks', 'omelette',
                          'cake', 'soup', 'bread', 'noodle', 'rice', 'smoothie']
 
-    categorized_recipe = {}
+    invalid_ingredient = ['juice']
 
+    invalid_state = ['unknown']
+
+    categorized_recipe = {}
+    cnt = 0
+    for recipe in recipes:
+        id = recipe["id"]
+        title = recipe["title"]
+        if 'drinks' in title or 'smoothie' in title or 'juice' in title or 'tea' in title or 'coffee' in title:
+            cnt += 1
+    print(cnt)
+    exit(0)
     for recipe in recipes:
         id = recipe["id"]
         title = recipe["title"]
@@ -58,7 +69,7 @@ def prepare_input(path='recipe1m_merged.pkl'):
                         ing = recipe['ingredients'][i]
                         state = recipe['states'][i]
 
-                        if ing != '<pad>' and state != '<pad>' and state != 'unknown':
+                        if ing != '<pad>' and ing not in invalid_ingredient and state != '<pad>' and state not in invalid_state:
                             _input['ingredients'].append(
                                 {
                                     "object": utils.get_singular_form(ing).replace('_', ' '),

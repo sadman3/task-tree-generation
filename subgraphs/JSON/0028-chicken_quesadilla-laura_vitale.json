@@ -1,0 +1,1986 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "cubed",
+                    "unmelted"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "melted",
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pepper mill",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "peppercorn"
+                ],
+                "ingredients": [],
+                "container": "pepper mill"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chicken",
+                    "black pepper"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chicken",
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chicken",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "oregano"
+                ],
+                "container": null
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "onion powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "garlic powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "chili powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "chili powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "chili powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "chili powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "taco seasoning",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chicken",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "taco seasoning",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chicken",
+                    "black pepper",
+                    "salt",
+                    "taco seasoning"
+                ],
+                "container": null
+            },
+            {
+                "label": "taco seasoning",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chicken",
+                    "black pepper",
+                    "salt",
+                    "taco seasoning"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "taco seasoning",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked",
+                    "chopped"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chicken",
+                    "black pepper",
+                    "salt",
+                    "taco seasoning"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked",
+                    "chopped"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "chicken"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked",
+                    "chopped"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "chicken"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "uncooked",
+                    "chopped"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "skillet"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "melted",
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "chicken",
+                "states": [
+                    "cooked",
+                    "chopped"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "chicken"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "cooked",
+                    "chopped"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "skillet"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "cooked",
+                    "chopped"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "tortilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "tortilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "tortilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "tortilla"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "tortilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "tortilla"
+            },
+            {
+                "label": "brush",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "brush",
+        "output_nodes": [
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid",
+                    "spread"
+                ],
+                "ingredients": [],
+                "container": "tortilla"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "tortilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [
+                    "flipped"
+                ],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "tortilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [
+                    "flipped"
+                ],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "tortilla"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "tortilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "cooked",
+                    "chopped"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "cooked",
+                    "chopped"
+                ],
+                "ingredients": [
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "tortilla"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "tortilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "tortilla",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken"
+                ],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "fold",
+        "output_nodes": [
+            {
+                "label": "quesadilla",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "tortilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "quesadilla",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "quesadilla"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "quesadilla",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "quesadilla"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "quesadilla",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "skillet"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "press and cook",
+        "output_nodes": [
+            {
+                "label": "quesadilla",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "quesadilla"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "quesadilla",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "skillet"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "quesadilla",
+                "states": [
+                    "partly cooked",
+                    "flipped"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "quesadilla"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "quesadilla",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "skillet"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "press and cook",
+        "output_nodes": [
+            {
+                "label": "quesadilla",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "quesadilla"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "quesadilla",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "skillet"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "quesadilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "quesadilla",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "quesadilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "quesadilla",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "quesadilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "quesadilla",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "quesadilla",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "quesadilla",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "quesadilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "quesadilla",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "quesadilla"
+                ],
+                "container": null
+            },
+            {
+                "label": "quesadilla",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "cheese",
+                    "chicken",
+                    "salt",
+                    "black pepper",
+                    "chili powder",
+                    "garlic powder",
+                    "onion powder",
+                    "oregano",
+                    "paprika"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

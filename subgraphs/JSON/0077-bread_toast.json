@@ -1,0 +1,303 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "butter",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "bread",
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "bread",
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "sugar"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "sugar"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "milk",
+                "states": [],
+                "ingredients": [],
+                "container": "cup"
+            }
+        ],
+        "motion_node": "pour*",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "sugar",
+                    "milk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar",
+                    "milk"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "sugar",
+                    "milk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar",
+                    "milk"
+                ],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "flip and stack",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [
+                    "butter",
+                    "sugar",
+                    "milk"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [
+                    "butter",
+                    "sugar",
+                    "milk"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "milk",
+                "states": [],
+                "ingredients": [],
+                "container": "cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bread toast",
+                "states": [],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "sugar",
+                    "milk"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    }
+]

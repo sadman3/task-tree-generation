@@ -1,0 +1,1013 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "oreo cookie",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "oreo cookie",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oreo cookie"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [
+                    "no attachments"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oreo cookie"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "attach",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oreo cookie"
+                ],
+                "container": "blender"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oreo cookie"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "oreo cookie",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "oreo cookie",
+                "states": [
+                    "crushed"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oreo cookie"
+                ],
+                "container": "blender"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oreo cookie"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "detach",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oreo cookie"
+                ],
+                "container": null
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oreo cookie"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "oreo cookie",
+                "states": [
+                    "crushed"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "oreo cookie"
+                ],
+                "container": null
+            },
+            {
+                "label": "oreo cookie",
+                "states": [
+                    "crushed"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "white chocolate chip"
+                ],
+                "container": null
+            },
+            {
+                "label": "white chocolate chip",
+                "states": [],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "saucepan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "white chocolate chip"
+                ],
+                "container": null
+            },
+            {
+                "label": "white chocolate chip",
+                "states": [],
+                "ingredients": [],
+                "container": "saucepan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tin can",
+                "states": [],
+                "ingredients": [
+                    "condensed milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "condensed milk",
+                "states": [],
+                "ingredients": [],
+                "container": "tin can"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "condensed milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "condensed milk",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "white chocolate chip"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "condensed milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "condensed milk",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "white chocolate chip",
+                    "condensed milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "condensed milk",
+                "states": [],
+                "ingredients": [],
+                "container": "saucepan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "white chocolate chip",
+                    "condensed milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "white chocolate chip",
+                    "condensed milk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "white chocolate chip",
+                    "condensed milk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "condensed milk",
+                "states": [],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "white chocolate chip",
+                "states": [],
+                "ingredients": [],
+                "container": "saucepan"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "white chocolate chip",
+                    "condensed milk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "white chocolate chip",
+                "states": [
+                    "melted"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "white chocolate chip",
+                    "condensed milk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "white chocolate chip",
+                "states": [
+                    "melted"
+                ],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "condensed milk",
+                "states": [],
+                "ingredients": [],
+                "container": "saucepan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "chocolate mixture"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "chocolate mixture",
+                "states": [],
+                "ingredients": [
+                    "white chocolate chip",
+                    "condensed milk"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "chocolate mixture"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "chocolate mixture"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cup",
+                "states": [],
+                "ingredients": [
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [],
+                "ingredients": [],
+                "container": "cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "chocolate mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "cup",
+                "states": [],
+                "ingredients": [
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [],
+                "ingredients": [],
+                "container": "cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "chocolate mixture",
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "oreo cookie"
+                ],
+                "container": null
+            },
+            {
+                "label": "oreo cookie",
+                "states": [
+                    "crushed"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "chocolate mixture",
+                    "vanilla extract"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "chocolate mixture",
+                    "vanilla extract",
+                    "oreo cookie"
+                ],
+                "container": null
+            },
+            {
+                "label": "oreo cookie",
+                "states": [
+                    "crushed"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "chocolate mixture",
+                    "vanilla extract",
+                    "oreo cookie"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate mixture",
+                "states": [],
+                "ingredients": [
+                    "white chocolate chip",
+                    "condensed milk"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "oreo cookie",
+                "states": [
+                    "crushed"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "vanilla extract",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "fudge mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "fudge mixture",
+                "states": [],
+                "ingredients": [
+                    "white chocolate chip",
+                    "condensed milk",
+                    "oreo cookie",
+                    "vanilla extract"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [
+                    "fudge mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "fudge mixture",
+                "states": [],
+                "ingredients": [
+                    "white chocolate chip",
+                    "condensed milk",
+                    "oreo cookie",
+                    "vanilla extract"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "fudge mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "fudge mixture",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "white chocolate chip",
+                    "condensed milk",
+                    "oreo cookie",
+                    "vanilla extract"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "saucepan",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "fudge mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "fridge",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "fudge mixture"
+                ],
+                "container": "fridge"
+            },
+            {
+                "label": "fridge",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "fridge",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "fudge mixture"
+                ],
+                "container": "fridge"
+            },
+            {
+                "label": "fudge mixture",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "white chocolate chip",
+                    "condensed milk",
+                    "oreo cookie",
+                    "vanilla extract"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "chill",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "fudge"
+                ],
+                "container": "fridge"
+            },
+            {
+                "label": "fudge",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "white chocolate chip",
+                    "condensed milk",
+                    "oreo cookie",
+                    "vanilla extract"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "fridge",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "fudge"
+                ],
+                "container": "fridge"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "fridge",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "fudge"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "fudge"
+                ],
+                "container": null
+            },
+            {
+                "label": "fudge",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "white chocolate chip",
+                    "condensed milk",
+                    "oreo cookie",
+                    "vanilla extract"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "fudge",
+                "states": [
+                    "divided"
+                ],
+                "ingredients": [
+                    "butter",
+                    "chocolate mixture",
+                    "white chocolate chip",
+                    "condensed milk",
+                    "oreo cookie",
+                    "vanilla extract"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    }
+]

@@ -1,0 +1,1702 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            }
+        ],
+        "motion_node": "fill",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "faucet"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "faucet"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "boil",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid",
+                    "boiling"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "salt",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "salt",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "macaroni"
+                ],
+                "container": null
+            },
+            {
+                "label": "macaroni",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "macaroni",
+                    "salt",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "macaroni",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "macaroni",
+                    "salt",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "macaroni",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "macaroni",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "rosemary",
+                "states": [
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "rosemary"
+                ],
+                "container": null
+            },
+            {
+                "label": "rosemary",
+                "states": [
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "rosemary",
+                "states": [
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "rosemary",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "heavy cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "heavy cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "heavy cream"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "heavy cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "rosemary"
+                ],
+                "container": null
+            },
+            {
+                "label": "rosemary",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "scraper",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "scraper",
+                "states": [],
+                "ingredients": [
+                    "rosemary"
+                ],
+                "container": null
+            },
+            {
+                "label": "rosemary",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "scraper"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "heavy cream"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "scraper",
+                "states": [],
+                "ingredients": [
+                    "rosemary"
+                ],
+                "container": null
+            },
+            {
+                "label": "rosemary",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "scrapper"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "heavy cream",
+                    "rosemary"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "rosemary",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "heavy cream",
+                    "rosemary"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "heavy cream",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "heavy cream",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pepper mill",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "pepper mill"
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "heavy cream",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "gruyere",
+                "states": [],
+                "ingredients": [],
+                "container": "rind"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "gruyere"
+                ],
+                "container": null
+            },
+            {
+                "label": "gruyere",
+                "states": [],
+                "ingredients": [],
+                "container": "rind"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "gruyere",
+                "states": [],
+                "ingredients": [],
+                "container": "rind"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "gruyere",
+                "states": [
+                    "wedge"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "gruyere",
+                "states": [
+                    "wedge"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "gruyere",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "heavy cream",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "heavy cream",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ],
+        "motion_node": "simmer",
+        "output_nodes": [
+            {
+                "label": "white sauce",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "heavy cream",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "sliced",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "sliced",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bacon",
+                "states": [
+                    "sliced",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "bacon",
+                "states": [
+                    "chopped",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "chopped",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "chopped",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "chopped",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ],
+        "motion_node": "fry",
+        "output_nodes": [
+            {
+                "label": "bacon",
+                "states": [
+                    "chopped",
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "heavy cream",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "chopped",
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "heavy cream",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "heavy cream",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "skimmer",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "macaroni",
+                    "salt",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "macaroni",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "skimmer"
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "skimmer",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "heavy cream",
+                    "macaroni",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "macaroni",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "heavy cream",
+                    "macaroni",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "macaroni",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "white sauce",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "heavy cream",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "skillet"
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "chopped",
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "pasta",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "heavy cream",
+                    "macaroni",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "heavy cream",
+                    "macaroni",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "gruyere",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "skillet",
+                "states": [],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "gruyere",
+                    "heavy cream",
+                    "macaroni",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "gruyere",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "gruyere",
+                    "heavy cream",
+                    "macaroni",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pasta",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "heavy cream",
+                    "macaroni",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "skillet"
+            },
+            {
+                "label": "gruyere",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "skillet"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "macaroni and cheese",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "gruyere",
+                    "heavy cream",
+                    "macaroni",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "skillet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "skillet",
+                "states": [],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "gruyere",
+                    "heavy cream",
+                    "macaroni",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "macaroni and cheese",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "gruyere",
+                    "heavy cream",
+                    "macaroni",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "skillet"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "macaroni and cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "macaroni and cheese",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "gruyere",
+                    "heavy cream",
+                    "macaroni",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chive"
+                ],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chive"
+                ],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "chive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "chive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "macaroni and cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "macaroni and cheese",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "gruyere",
+                    "heavy cream",
+                    "macaroni",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "chive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "macaroni and cheese",
+                "states": [
+                    "mixed",
+                    "ready"
+                ],
+                "ingredients": [
+                    "bacon",
+                    "black pepper",
+                    "chive",
+                    "gruyere",
+                    "heavy cream",
+                    "macaroni",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": "bowl"
+            }
+        ]
+    }
+]

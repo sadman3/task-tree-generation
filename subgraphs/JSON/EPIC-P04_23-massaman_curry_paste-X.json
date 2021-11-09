@@ -1,0 +1,2270 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "box",
+                "states": [],
+                "ingredients": [
+                    "mortar",
+                    "pestle"
+                ],
+                "container": null
+            },
+            {
+                "label": "mortar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "box"
+            },
+            {
+                "label": "pestle",
+                "states": [],
+                "ingredients": [],
+                "container": "box"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "mortar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "pestle",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "coriander"
+                ],
+                "container": null
+            },
+            {
+                "label": "coriander",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "coriander"
+                ],
+                "container": null
+            },
+            {
+                "label": "coriander",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "coriander"
+                ],
+                "container": null
+            },
+            {
+                "label": "coriander",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "coriander"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "coriander",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "cumin"
+                ],
+                "container": null
+            },
+            {
+                "label": "coriander",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "cumin"
+                ],
+                "container": null
+            },
+            {
+                "label": "coriander",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "coriander"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "cumin"
+                ],
+                "container": null
+            },
+            {
+                "label": "coriander",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "coriander",
+                    "cumin"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "coriander",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "spice"
+                ],
+                "container": null
+            },
+            {
+                "label": "spice",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "spice"
+                ],
+                "container": null
+            },
+            {
+                "label": "spice",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "coriander",
+                    "cumin"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [
+                    "spice"
+                ],
+                "container": null
+            },
+            {
+                "label": "spice",
+                "states": [],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "coriander",
+                    "cumin",
+                    "spice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spice",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [
+                    "closed"
+                ],
+                "ingredients": [
+                    "clove"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "jar",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "clove"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "coriander",
+                    "cumin",
+                    "spice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "jar",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "clove"
+                ],
+                "container": null
+            },
+            {
+                "label": "clove",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "clove",
+                    "coriander",
+                    "cumin",
+                    "spice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "clove",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "clove",
+                    "coriander",
+                    "cumin",
+                    "spice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "whole",
+                    "peppercorn"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "clove",
+                    "coriander",
+                    "cumin",
+                    "spice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "whole",
+                    "peppercorn"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "clove",
+                    "coriander",
+                    "cumin",
+                    "spice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "whole",
+                    "peppercorn"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "spice",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "coriander",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "spice mixture",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "clove",
+                    "coriander",
+                    "cumin",
+                    "spice"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "unpeeled",
+                    "destemmed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut in half",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "unpeeled",
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "unpeeled",
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "cut off ends",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "unpeeled",
+                    "destemmed",
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "unpeeled",
+                    "destemmed",
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "destemmed",
+                    "halved",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "skin"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "trash bin",
+                "states": [],
+                "ingredients": [
+                    "trash"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "skin"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "throw away",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "skin"
+                ],
+                "ingredients": [],
+                "container": "trash bin"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "destemmed",
+                    "halved",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "mortar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "unpeeled",
+                    "clove"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "unpeeled",
+                    "clove"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "unpeeled",
+                    "clove"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "cut off ends",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "unpeeled",
+                    "clove",
+                    "derooted"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "unpeeled",
+                    "clove",
+                    "derooted"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "derooted",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "skin"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "derooted",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "derooted",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "skin"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "trash bin",
+                "states": [],
+                "ingredients": [
+                    "trash"
+                ],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "throw away",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "skin"
+                ],
+                "ingredients": [],
+                "container": "trash bin"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "clove",
+                    "coriander",
+                    "cumin",
+                    "spice"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "clove",
+                    "coriander",
+                    "cumin",
+                    "spice"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "clove",
+                    "coriander",
+                    "cumin",
+                    "spice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spice mixture",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "clove",
+                    "coriander",
+                    "cumin",
+                    "spice"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "whole",
+                    "peppercorn"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "spice",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "coriander",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "onion",
+                    "spice"
+                ],
+                "container": null
+            },
+            {
+                "label": "spice mixture",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "spice"
+                ],
+                "container": "mortar"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "whole",
+                    "peppercorn"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "spice",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "clove",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "derooted",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "derooted",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "derooted",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "onion",
+                    "spice"
+                ],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "garlic",
+                    "onion",
+                    "spice"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "sealed"
+                ],
+                "ingredients": [
+                    "lemon grass"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "rip open",
+        "output_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "lemon grass"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "lemon grass"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon grass",
+                "states": [
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lemon grass"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon grass",
+                "states": [
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lemon grass"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon grass",
+                "states": [
+                    "unpeeled",
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "cut off ends",
+        "output_nodes": [
+            {
+                "label": "lemon grass",
+                "states": [
+                    "unpeeled",
+                    "ends removed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lemon grass",
+                "states": [
+                    "unpeeled",
+                    "ends removed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "lemon grass",
+                "states": [
+                    "ends removed",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lemon grass",
+                "states": [
+                    "ends removed",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lemon grass"
+                ],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "lemon grass",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lemon grass"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon grass",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "garlic",
+                    "onion",
+                    "spice"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "garlic",
+                    "lemon grass",
+                    "onion",
+                    "spice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon grass",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "sealed"
+                ],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "scissors",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "squeeze",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "garlic",
+                    "lemon grass",
+                    "onion",
+                    "spice"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "garlic",
+                    "lemon grass",
+                    "onion",
+                    "shrimp",
+                    "spice"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            }
+        ],
+        "motion_node": "wash",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [
+                    "closed"
+                ],
+                "ingredients": [
+                    "galangal"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "jar",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "galangal"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "galangal"
+                ],
+                "container": null
+            },
+            {
+                "label": "galangal",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "galangal"
+                ],
+                "container": null
+            },
+            {
+                "label": "galangal",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "galangal"
+                ],
+                "container": null
+            },
+            {
+                "label": "galangal",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            },
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "garlic",
+                    "lemon grass",
+                    "onion",
+                    "shrimp",
+                    "spice"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "galangal",
+                    "garlic",
+                    "lemon grass",
+                    "onion",
+                    "shrimp",
+                    "spice"
+                ],
+                "container": null
+            },
+            {
+                "label": "galangal",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "galangal",
+                    "garlic",
+                    "lemon grass",
+                    "onion",
+                    "shrimp",
+                    "spice"
+                ],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "fish sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "fish sauce",
+                "states": [
+                    "sauce"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "fish sauce",
+                    "galangal",
+                    "garlic",
+                    "lemon grass",
+                    "onion",
+                    "shrimp",
+                    "spice"
+                ],
+                "container": null
+            },
+            {
+                "label": "fish sauce",
+                "states": [
+                    "sauce"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "fish sauce",
+                    "galangal",
+                    "garlic",
+                    "lemon grass",
+                    "onion",
+                    "shrimp",
+                    "spice"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "fish sauce",
+                "states": [
+                    "sauce"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "lemon grass",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "spice mixture",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "spice"
+                ],
+                "container": "mortar"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "whole",
+                    "peppercorn"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "spice",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "clove",
+                "states": [
+                    "seeds"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "pestle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mash",
+        "output_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "curry paste"
+                ],
+                "container": null
+            },
+            {
+                "label": "curry paste",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "fish sauce",
+                    "galangal",
+                    "garlic",
+                    "lemon grass",
+                    "onion",
+                    "shrimp",
+                    "spice"
+                ],
+                "container": "mortar"
+            },
+            {
+                "label": "pestle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "curry paste"
+                ],
+                "container": null
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            }
+        ],
+        "motion_node": "shake",
+        "output_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "curry paste",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "curry paste",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "mortar"
+            },
+            {
+                "label": "pestle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "curry paste",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "fish sauce",
+                    "galangal",
+                    "garlic",
+                    "lemon grass",
+                    "onion",
+                    "shrimp",
+                    "spice"
+                ],
+                "container": "mortar"
+            }
+        ],
+        "motion_node": "mash",
+        "output_nodes": [
+            {
+                "label": "pestle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mortar",
+                "states": [],
+                "ingredients": [
+                    "curry paste"
+                ],
+                "container": null
+            },
+            {
+                "label": "curry paste",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "coriander",
+                    "cumin",
+                    "fish sauce",
+                    "galangal",
+                    "garlic",
+                    "lemon grass",
+                    "onion",
+                    "paprika",
+                    "shrimp",
+                    "spice"
+                ],
+                "container": "mortar"
+            }
+        ]
+    }
+]

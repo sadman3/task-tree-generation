@@ -1,0 +1,543 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tin can",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [],
+                "container": "tin can"
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "tin can",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tin can",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [],
+                "container": "tin can"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "rolling pin",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "roll",
+        "output_nodes": [
+            {
+                "label": "dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "dough",
+                "states": [],
+                "ingredients": [
+                    "cheese"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "dough"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [],
+                "ingredients": [
+                    "cheese"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "sausage"
+                ],
+                "container": null
+            },
+            {
+                "label": "sausage",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "dough",
+                "states": [],
+                "ingredients": [
+                    "cheese",
+                    "sausage"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "sausage",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "dough"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "dough",
+                "states": [],
+                "ingredients": [
+                    "cheese",
+                    "sausage"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "roll",
+        "output_nodes": [
+            {
+                "label": "pigs in a blanket",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "cheese",
+                    "sausage"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pigs in a blanket",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "cheese",
+                    "sausage"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "pigs in a blanket"
+                ],
+                "container": null
+            },
+            {
+                "label": "pigs in a blanket",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "cheese",
+                    "sausage"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "pigs in a blanket"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "pigs in a blanket"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "pigs in a blanket"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "pigs in a blanket",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "cheese",
+                    "sausage"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "bake",
+        "output_nodes": [
+            {
+                "label": "pigs in a blanket",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "cheese",
+                    "sausage"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "pigs in a blanket"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "pigs in a blanket",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "cheese",
+                    "sausage"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "pigs in a blanket"
+                ],
+                "container": "oven"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "pigs in a blanket"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pigs in a blanket",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "cheese",
+                    "sausage"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "pigs in a blanket"
+                ],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "pigs in a blanket"
+                ],
+                "container": null
+            },
+            {
+                "label": "pigs in a blanket",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "dough",
+                    "cheese",
+                    "sausage"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

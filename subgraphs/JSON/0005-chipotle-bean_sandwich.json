@@ -1,0 +1,1684 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "can",
+                "states": [
+                    "sealed"
+                ],
+                "ingredients": [
+                    "kidney bean"
+                ],
+                "container": null
+            },
+            {
+                "label": "can opener",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "can",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "bean mix",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "can opener",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "can",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "bean mix",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "kidney bean",
+                "states": [
+                    "cooked",
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "can"
+            }
+        ],
+        "motion_node": "drain",
+        "output_nodes": [
+            {
+                "label": "can",
+                "states": [],
+                "ingredients": [
+                    "kidney bean"
+                ],
+                "container": null
+            },
+            {
+                "label": "kidney bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "can"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "can",
+                "states": [],
+                "ingredients": [
+                    "kidney bean"
+                ],
+                "container": null
+            },
+            {
+                "label": "kidney bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "can"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "kidney bean"
+                ],
+                "container": null
+            },
+            {
+                "label": "kidney bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "can",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "can",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "trash bin",
+                "states": [],
+                "ingredients": [
+                    "garbage"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "throw away",
+        "output_nodes": [
+            {
+                "label": "can",
+                "states": [],
+                "ingredients": [],
+                "container": "trash bin"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "kidney bean"
+                ],
+                "container": null
+            },
+            {
+                "label": "kidney bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "masher",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mash",
+        "output_nodes": [
+            {
+                "label": "kidney bean",
+                "states": [
+                    "mashed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "chipotle sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "chipotle sauce",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chipotle sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "chipotle sauce",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "chipotle"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "chipotle"
+                ],
+                "container": null
+            },
+            {
+                "label": "chipotle",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chipotle sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "chipotle"
+                ],
+                "container": null
+            },
+            {
+                "label": "chipotle",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "add",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chipotle",
+                    "chipotle sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "chipotle",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chipotle",
+                    "chipotle sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "chipotle sauce",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "chipotle",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "can opener",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "chipotle mix",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "chipotle",
+                    "chipotle sauce"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "kidney bean"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chipotle",
+                    "chipotle sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "can opener",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "kidney bean",
+                "states": [
+                    "mashed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "chipotle mix",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "chipotle",
+                    "chipotle sauce"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "masher",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mash",
+        "output_nodes": [
+            {
+                "label": "bean mix",
+                "states": [
+                    "mixed",
+                    "mashed"
+                ],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bean mix"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bean mix"
+            },
+            {
+                "label": "bean mix",
+                "states": [
+                    "mixed",
+                    "mashed"
+                ],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "masher",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mash",
+        "output_nodes": [
+            {
+                "label": "bean mix",
+                "states": [
+                    "mixed",
+                    "mashed"
+                ],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "avocado",
+                "states": [
+                    "whole",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "avocado"
+                ],
+                "container": null
+            },
+            {
+                "label": "avocado",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "avocado",
+                "states": [
+                    "whole",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "avocado",
+                "states": [
+                    "slit",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "avocado",
+                "states": [
+                    "slit",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pull apart",
+        "output_nodes": [
+            {
+                "label": "avocado",
+                "states": [
+                    "halved",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "avocado",
+                "states": [
+                    "halved",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "avocado",
+                "states": [
+                    "halved",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "avocado",
+                "states": [
+                    "halved",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "avocado",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "toaster",
+                "states": [
+                    "empty",
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "toaster",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "toaster"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "toaster",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "toaster",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "toaster",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "toaster"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced",
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "toaster"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "toaster",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "toaster",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "toaster",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced",
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "toaster"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced",
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bean mix",
+                "states": [
+                    "mixed",
+                    "mashed"
+                ],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced",
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "bean mix",
+                "states": [
+                    "mixed",
+                    "mashed"
+                ],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt"
+                ],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced",
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "avocado",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "avocado"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "avocado",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bread"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "escarole"
+                ],
+                "container": null
+            },
+            {
+                "label": "escarole",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt",
+                    "escarole"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "escarole",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "radish",
+                "states": [
+                    "whole",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "peeler",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "radish",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "peeler",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "radish",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "radish"
+                ],
+                "container": null
+            },
+            {
+                "label": "radish",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "radish",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "radish",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "radish"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "radish",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "radish"
+                ],
+                "container": null
+            },
+            {
+                "label": "radish",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "avocado"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "radish"
+                ],
+                "container": null
+            },
+            {
+                "label": "radish",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "avocado",
+                    "radish"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "radish",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "avocado",
+                    "radish"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "avocado",
+                    "radish",
+                    "salt"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "avocado",
+                    "radish",
+                    "salt"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "bean sprout"
+                ],
+                "container": null
+            },
+            {
+                "label": "bean sprout",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "avocado",
+                    "bean sprout",
+                    "radish",
+                    "salt"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "bean sprout",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt",
+                    "escarole"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [
+                    "avocado",
+                    "bean sprout",
+                    "radish",
+                    "salt"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "sandwich",
+                "states": [],
+                "ingredients": [
+                    "bread",
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt",
+                    "escarole",
+                    "avocado",
+                    "radish",
+                    "bean sprout"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "sandwich",
+                "states": [],
+                "ingredients": [
+                    "bread",
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt",
+                    "escarole",
+                    "avocado",
+                    "radish",
+                    "bean sprout"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "sandwich",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [
+                    "bread",
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt",
+                    "escarole",
+                    "avocado",
+                    "radish",
+                    "bean sprout"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "sandwich",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [
+                    "bread",
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt",
+                    "escarole",
+                    "avocado",
+                    "radish",
+                    "bean sprout"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "sandwich"
+                ],
+                "container": null
+            },
+            {
+                "label": "chipotle-avocado sandwich",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [
+                    "bread",
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt",
+                    "escarole",
+                    "avocado",
+                    "radish",
+                    "bean sprout"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "sandwich",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [
+                    "bread",
+                    "kidney bean",
+                    "chipotle",
+                    "chipotle sauce",
+                    "salt",
+                    "escarole",
+                    "avocado",
+                    "radish",
+                    "bean sprout"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

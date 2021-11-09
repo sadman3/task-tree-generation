@@ -1,0 +1,1744 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "from faucet"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "fill",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "saltwater"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "saltwater",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "saltwater"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "linguine",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "saltwater",
+                    "linguine"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "linguine",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "saltwater",
+                    "linguine"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "linguine",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "saltwater",
+                    "linguine"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "linguine",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "saltwater",
+                    "linguine"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "linguine",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "strainer",
+                "states": [
+                    "over sink"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "linguine"
+                ],
+                "container": null
+            },
+            {
+                "label": "linguine",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "linguine"
+                ],
+                "container": null
+            },
+            {
+                "label": "linguine",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "linguine"
+                ],
+                "container": null
+            },
+            {
+                "label": "linguine",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "basil"
+                ],
+                "container": null
+            },
+            {
+                "label": "basil",
+                "states": [
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "basil",
+                "states": [
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pine nut"
+                ],
+                "container": null
+            },
+            {
+                "label": "pine nut",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pine nut",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "grinder",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [],
+                "ingredients": [],
+                "container": "grinder"
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "blender"
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "lemon zest",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "zested"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "zested"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest"
+                ],
+                "container": "blender"
+            }
+        ],
+        "motion_node": "squeeze",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest",
+                    "lemon juice"
+                ],
+                "container": "blender"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": "blender"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest"
+                ],
+                "container": "blender"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "basil",
+                "states": [
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "pine nut",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "lemon zest",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "lemon juice",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil mixture"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "basil mixture",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest"
+                ],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil mixture"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "basil mixture",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest"
+                ],
+                "container": "blender jar"
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour and blend",
+        "output_nodes": [
+            {
+                "label": "basil mixture",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest",
+                    "olive oil"
+                ],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil mixture"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": "blender"
+            }
+        ],
+        "motion_node": "uncover",
+        "output_nodes": [
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil mixture"
+                ],
+                "container": "blender"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil mixture"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "detach",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "basil mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "basil mixture",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest",
+                    "olive oil"
+                ],
+                "container": "blender jar"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "basil mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "basil mixture",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest",
+                    "olive oil"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "parmesan",
+                "states": [
+                    "block"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "basil mixture"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "basil mixture",
+                    "parmesan"
+                ],
+                "container": null
+            },
+            {
+                "label": "parmesan",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "basil mixture",
+                    "parmesan"
+                ],
+                "container": null
+            },
+            {
+                "label": "parmesan",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "basil mixture",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest",
+                    "olive oil"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pesto"
+                ],
+                "container": null
+            },
+            {
+                "label": "pesto",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest",
+                    "olive oil",
+                    "parmesan"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pesto"
+                ],
+                "container": null
+            },
+            {
+                "label": "pesto",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest",
+                    "olive oil",
+                    "parmesan"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "linguine"
+                ],
+                "container": null
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "linguine",
+                    "pesto"
+                ],
+                "container": null
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pesto",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest",
+                    "olive oil",
+                    "parmesan"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mug",
+                "states": [],
+                "ingredients": [
+                    "saltwater"
+                ],
+                "container": null
+            },
+            {
+                "label": "saltwater",
+                "states": [],
+                "ingredients": [],
+                "container": "mug"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "linguine",
+                    "pesto"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "linguine",
+                    "pesto",
+                    "saltwater"
+                ],
+                "container": null
+            },
+            {
+                "label": "saltwater",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "linguine",
+                    "pesto",
+                    "saltwater"
+                ],
+                "container": null
+            },
+            {
+                "label": "saltwater",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pesto",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "pine nut",
+                    "garlic",
+                    "black pepper",
+                    "salt",
+                    "lemon zest",
+                    "olive oil",
+                    "parmesan"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "linguine",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "pesto linguine"
+                ],
+                "container": null
+            },
+            {
+                "label": "pesto linguine",
+                "states": [],
+                "ingredients": [
+                    "pesto",
+                    "linguine"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "parmesan",
+                "states": [
+                    "block"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "pesto linguine"
+                ],
+                "container": null
+            },
+            {
+                "label": "pesto linguine",
+                "states": [],
+                "ingredients": [
+                    "pesto",
+                    "linguine"
+                ],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "pesto linguine",
+                "states": [],
+                "ingredients": [
+                    "pesto",
+                    "linguine",
+                    "parmesan"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "parmesan",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "pesto linguine"
+                ],
+                "container": null
+            },
+            {
+                "label": "pesto linguine",
+                "states": [],
+                "ingredients": [
+                    "pesto",
+                    "linguine",
+                    "parmesan"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "grinder",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [],
+                "ingredients": [],
+                "container": "grinder"
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "pesto linguine",
+                "states": [],
+                "ingredients": [
+                    "pesto",
+                    "linguine",
+                    "parmesan",
+                    "black pepper"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "black pepper",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "pesto linguine"
+                ],
+                "container": null
+            },
+            {
+                "label": "pesto linguine",
+                "states": [],
+                "ingredients": [
+                    "pesto",
+                    "linguine",
+                    "parmesan",
+                    "black pepper"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "pesto linguine",
+                "states": [],
+                "ingredients": [
+                    "pesto",
+                    "linguine",
+                    "parmesan",
+                    "black pepper"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "pesto linguine"
+                ],
+                "container": null
+            },
+            {
+                "label": "pesto linguine",
+                "states": [],
+                "ingredients": [
+                    "pesto",
+                    "linguine",
+                    "parmesan",
+                    "black pepper"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pesto linguine",
+                "states": [],
+                "ingredients": [
+                    "pesto",
+                    "linguine",
+                    "parmesan",
+                    "black pepper"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pesto linguine"
+                ],
+                "container": null
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    }
+]

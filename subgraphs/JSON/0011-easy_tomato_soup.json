@@ -1,0 +1,2052 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "attach",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "blender"
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carton",
+                "states": [],
+                "ingredients": [
+                    "broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "carton"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "can",
+                "states": [
+                    "sealed"
+                ],
+                "ingredients": [
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": null
+            },
+            {
+                "label": "can opener",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "can",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "can",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato paste",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "can"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato paste",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "can",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "oregano"
+                ],
+                "container": null
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "oregano"
+                ],
+                "container": null
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "destemmed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "tomato"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "destemmed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "tomato"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato paste"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato paste",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "oregano"
+                ],
+                "container": null
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "oregano",
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "oregano",
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "garlic",
+                    "oregano",
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "cinnamon"
+                ],
+                "container": null
+            },
+            {
+                "label": "cinnamon",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "cinnamon"
+                ],
+                "container": null
+            },
+            {
+                "label": "cinnamon",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "onion powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion powder",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "onion powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion powder",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "garlic",
+                    "oregano",
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "cinnamon"
+                ],
+                "container": null
+            },
+            {
+                "label": "cinnamon",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "cinnamon",
+                    "garlic",
+                    "oregano",
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "cinnamon",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "cinnamon",
+                    "garlic",
+                    "oregano",
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "onion powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion powder",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "onion powder",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "salt",
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "salt",
+                    "tomato",
+                    "tomato paste"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "white pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "white pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "white pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "broth"
+                ],
+                "container": null
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender cover",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "blender cover"
+            },
+            {
+                "label": "blender cover",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "blender cover"
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "destemmed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "paste"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "cinnamon",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "onion powder",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "white pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "broth",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "mixture",
+                "states": [
+                    "thick liquid",
+                    "blended"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "blender cover"
+            },
+            {
+                "label": "blender cover",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "uncover",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender cover",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "blender"
+            }
+        ],
+        "motion_node": "detach",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "mixture",
+                "states": [
+                    "thick liquid",
+                    "blended"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "blender jar"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "soup",
+                "states": [
+                    "thick liquid",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "soup",
+                "states": [
+                    "thick liquid",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "soup",
+                "states": [
+                    "thick liquid",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pot lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pot lid",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "soup",
+                "states": [
+                    "thick liquid",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "simmer",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "soup"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tomato soup",
+                "states": [
+                    "thick liquid",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "soup"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pot lid",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "uncover",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "soup"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pot lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "soup"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tomato soup",
+                "states": [
+                    "thick liquid",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "ladle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soup"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carton",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "carton"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soup"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "milk",
+                    "soup"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "milk",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "soup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "milk",
+                    "soup"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato soup",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "garlic",
+                    "milk",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "coriander"
+                ],
+                "container": null
+            },
+            {
+                "label": "coriander",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "container"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "coriander",
+                    "milk",
+                    "soup"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato soup",
+                "states": [
+                    "thick liquid",
+                    "ready"
+                ],
+                "ingredients": [
+                    "broth",
+                    "cinnamon",
+                    "coriander",
+                    "garlic",
+                    "onion powder",
+                    "oregano",
+                    "sugar",
+                    "salt",
+                    "tomato",
+                    "tomato paste",
+                    "white pepper"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "coriander",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "soup"
+            }
+        ]
+    }
+]

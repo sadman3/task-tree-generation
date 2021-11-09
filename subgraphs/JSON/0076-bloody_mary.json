@@ -1,0 +1,935 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "rub",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "lemon juice"
+            },
+            {
+                "label": "lemon juice",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "celery salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "celery salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "celery salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "celery salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "lemon juice"
+            },
+            {
+                "label": "celery salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "rim",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "celery salt"
+            },
+            {
+                "label": "celery salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jigger",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "vodka",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "measure",
+        "output_nodes": [
+            {
+                "label": "jigger",
+                "states": [],
+                "ingredients": [
+                    "vodka"
+                ],
+                "container": null
+            },
+            {
+                "label": "vodka",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "jigger"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "celery salt"
+            },
+            {
+                "label": "jigger",
+                "states": [],
+                "ingredients": [
+                    "vodka"
+                ],
+                "container": null
+            },
+            {
+                "label": "vodka",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "jigger"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "vodka"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "vodka",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "vodka"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cup",
+                "states": [],
+                "ingredients": [
+                    "ice"
+                ],
+                "container": null
+            },
+            {
+                "label": "ice",
+                "states": [
+                    "cubed",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "ice",
+                "states": [
+                    "cubed",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "tomato juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato juice",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "vodka",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka",
+                    "tomato juice"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "liquid",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "tomato juice",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tomato juice",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            },
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka",
+                    "tomato juice"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "shot glass",
+                "states": [],
+                "ingredients": [
+                    "worcestershire sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "worcestershire sauce",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "shot glass"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice"
+                ],
+                "container": "highball glass"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka",
+                    "tomato juice",
+                    "worcestershire sauce"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice",
+                    "worcestershire sauce"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "worcestershire sauce",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka",
+                    "tomato juice",
+                    "worcestershire sauce"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice",
+                    "worcestershire sauce"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "shot glass",
+                "states": [],
+                "ingredients": [
+                    "tabasco sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "tabasco sauce",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "shot glass"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "tabasco sauce",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "celery salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "celery salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "celery salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "pepper mill",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "whole",
+                    "peppercorn"
+                ],
+                "ingredients": [],
+                "container": "pepper mill"
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt",
+                    "black pepper"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt",
+                    "black pepper"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt",
+                    "black pepper"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt",
+                    "black pepper"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "squeeze",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt",
+                    "black pepper",
+                    "lemon juice"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt",
+                    "black pepper",
+                    "lemon juice"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "halved",
+                    "squeezed"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt",
+                    "black pepper",
+                    "lemon juice"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt",
+                    "black pepper",
+                    "lemon juice"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "insert",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "vodka",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt",
+                    "black pepper",
+                    "lemon juice",
+                    "celery"
+                ],
+                "container": "celery salt"
+            },
+            {
+                "label": "bloody mary",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt",
+                    "black pepper",
+                    "lemon juice",
+                    "celery"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "cocktail",
+                "states": [
+                    "mixed",
+                    "liquid"
+                ],
+                "ingredients": [
+                    "vodka",
+                    "ice",
+                    "tomato juice",
+                    "worcestershire sauce",
+                    "tabasco sauce",
+                    "celery salt",
+                    "black pepper",
+                    "lemon juice",
+                    "celery"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "stem"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    }
+]

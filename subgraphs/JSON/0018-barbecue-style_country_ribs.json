@@ -1,0 +1,896 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "box",
+                "states": [],
+                "ingredients": [
+                    "aluminium foil"
+                ],
+                "container": null
+            },
+            {
+                "label": "aluminium foil",
+                "states": [],
+                "ingredients": [],
+                "container": "box"
+            }
+        ],
+        "motion_node": "tear",
+        "output_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "aluminium foil"
+            },
+            {
+                "label": "aluminium foil",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            },
+            {
+                "label": "rib",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut open",
+        "output_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            },
+            {
+                "label": "rib",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "parchment paper",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": []
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "rib",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "sheet"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            },
+            {
+                "label": "rib",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "rib",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "rib",
+                "states": [
+                    "salted"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            },
+            {
+                "label": "rib",
+                "states": [
+                    "salted"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "rib",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "garlic"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "rib"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "rib",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "garlic"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "rib",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "garlic",
+                    "lemon"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "rib"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "rib",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "garlic",
+                    "lemon"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "rib",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "garlic",
+                    "lemon"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "rib",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": "oven"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "rib",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            },
+            {
+                "label": "barbecue sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "rib",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "garlic",
+                    "lemon",
+                    "barbecue sauce"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "rib",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "garlic",
+                    "lemon",
+                    "barbecue sauce"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "rib",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "garlic",
+                    "lemon",
+                    "barbecue sauce"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": "oven"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "rib",
+                "states": [
+                    "barbecued"
+                ],
+                "ingredients": [
+                    "salt",
+                    "garlic",
+                    "lemon",
+                    "barbecue sauce"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": "oven"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "rib",
+                "states": [
+                    "barbecued"
+                ],
+                "ingredients": [
+                    "salt",
+                    "garlic",
+                    "lemon",
+                    "barbecue sauce"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "rib",
+                "states": [
+                    "barbecued",
+                    "ready"
+                ],
+                "ingredients": [
+                    "salt",
+                    "garlic",
+                    "lemon",
+                    "barbecue sauce"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "rib"
+                ],
+                "container": null
+            }
+        ]
+    }
+]

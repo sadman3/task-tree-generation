@@ -1,0 +1,817 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ],
+        "motion_node": "preheat",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "crack",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "egg yolk",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "egg yolk",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "egg yolk",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "egg white",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "egg yolk",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "whisk",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "melted",
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "melted",
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "egg"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "egg"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "frying pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "mixed",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "egg",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "egg"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "omelette",
+                "states": [
+                    "mixed",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "egg",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "frying pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "fold",
+        "output_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "folded",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "egg",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "frying pan"
+            },
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "egg"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "omelette",
+                "states": [
+                    "folded",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "egg",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "frying pan"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "omelette"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "omelette",
+                "states": [
+                    "folded",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "egg",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "frying pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "frying pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "omelette"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "omelette",
+                "states": [
+                    "folded",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "egg",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "frying pan"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "omelette"
+                ],
+                "container": null
+            },
+            {
+                "label": "omelette",
+                "states": [
+                    "folded",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "butter",
+                    "egg",
+                    "black pepper",
+                    "salt"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

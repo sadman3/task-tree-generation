@@ -1,0 +1,1881 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "onion"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "onion"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "halved",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "onion"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "halved",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "sliced",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "sealed"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "defrosted"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "scissors",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut open",
+        "output_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "defrosted"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "defrosted"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "defrosted"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "bacon",
+                "states": [
+                    "defrosted",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bag",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": "surface"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bag",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            },
+            {
+                "label": "table spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "table spoon",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "table spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table spoon",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "table spoon"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": "surface"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "teaspoon",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "teaspoon"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "salt"
+                ],
+                "container": "surface"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "salt"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "salt"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "table spoon",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "table spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "salt"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "table spoon",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "table spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "surface"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "faucet"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "faucet"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "salt",
+                    "olive oil"
+                ],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "faucet"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "dough mixture"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "dough mixture",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "salt",
+                    "olive oil",
+                    "water"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "dough mixture"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "dough mixture",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "salt",
+                    "olive oil",
+                    "water"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "pizza dough",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bag",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [],
+                "container": "item"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [],
+                "container": "item"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": "surface"
+            },
+            {
+                "label": "pizza dough",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [],
+                "container": "item"
+            },
+            {
+                "label": "pizza dough",
+                "states": [],
+                "ingredients": [],
+                "container": "table"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [],
+                "container": "item"
+            },
+            {
+                "label": "pizza dough",
+                "states": [],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut with slits",
+        "output_nodes": [
+            {
+                "label": "pizza dough",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "rolling pin",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pizza dough",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [],
+                "container": "item"
+            }
+        ],
+        "motion_node": "roll",
+        "output_nodes": [
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [],
+                "container": "table"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "brush",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "brush",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [
+                    "brush"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "brush",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [
+                    "brush"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "brush",
+        "output_nodes": [
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [],
+                "container": "parchment paper"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "pizza dough"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [],
+                "container": "parchment paper"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "pizza dough"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "shape",
+        "output_nodes": [
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [],
+                "container": "parchment paper"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "sour cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "sour cream",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "sour cream"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "scraper",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "sour cream"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "scraper",
+                "states": [],
+                "ingredients": [
+                    "sour cream"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [],
+                "container": "parchment paper"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "pizza dough"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "scraper",
+                "states": [],
+                "ingredients": [
+                    "sour cream"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "sour cream"
+                ],
+                "container": "parchment paper"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "sour cream"
+                ],
+                "container": "parchment paper"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "pizza dough"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "sea salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "sour cream",
+                    "sea salt",
+                    "pepper"
+                ],
+                "container": "parchment paper"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "sliced",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "sour cream",
+                    "sea salt",
+                    "pepper"
+                ],
+                "container": "parchment paper"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "pizza dough"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "defrosted",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "sliced",
+                    "peeled"
+                ],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "defrosted",
+                    "chopped"
+                ],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "sour cream",
+                    "sea salt",
+                    "pepper",
+                    "onion",
+                    "bacon"
+                ],
+                "container": "parchment paper"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "uncracked"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "sour cream",
+                    "sea salt",
+                    "pepper",
+                    "onion",
+                    "bacon"
+                ],
+                "container": "parchment paper"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "pizza dough"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "crack",
+        "output_nodes": [
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "sour cream",
+                    "sea salt",
+                    "pepper",
+                    "onion",
+                    "bacon",
+                    "egg white and yolk"
+                ],
+                "container": "parchment paper"
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "preheat",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on",
+                    "preheated"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on",
+                    "preheated"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "sour cream",
+                    "sea salt",
+                    "pepper",
+                    "onion",
+                    "bacon",
+                    "egg white and yolk"
+                ],
+                "container": "parchment paper"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "pizza dough"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "surface"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on",
+                    "preheated"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on",
+                    "preheated"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "oven"
+            },
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "sour cream",
+                    "sea salt",
+                    "pepper",
+                    "onion",
+                    "bacon",
+                    "egg white and yolk"
+                ],
+                "container": "parchment paper"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "pizza dough"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "bake",
+        "output_nodes": [
+            {
+                "label": "eggs and bacon pizza",
+                "states": [],
+                "ingredients": [
+                    "sour cream",
+                    "sea salt",
+                    "pepper",
+                    "onion",
+                    "bacon",
+                    "egg white and yolk"
+                ],
+                "container": "parchment paper"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "eggs and bacon pizza"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "eggs and bacon pizza",
+                "states": [],
+                "ingredients": [
+                    "sour cream",
+                    "sea salt",
+                    "pepper",
+                    "onion",
+                    "bacon",
+                    "egg white and yolk"
+                ],
+                "container": "parchment paper"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "oven"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "eggs and bacon pizza"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "eggs and bacon pizza",
+                "states": [],
+                "ingredients": [
+                    "sour cream",
+                    "sea salt",
+                    "pepper",
+                    "onion",
+                    "bacon",
+                    "egg white and yolk"
+                ],
+                "container": "parchment paper"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "oven"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "eggs and bacon pizza"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "parsley",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bow"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "eggs and bacon pizza",
+                "states": [],
+                "ingredients": [
+                    "sour cream",
+                    "sea salt",
+                    "pepper",
+                    "onion",
+                    "bacon",
+                    "egg white and yolk",
+                    "parsley"
+                ],
+                "container": "parchment paper"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "eggs and bacon pizza",
+                "states": [],
+                "ingredients": [
+                    "sour cream",
+                    "sea salt",
+                    "pepper",
+                    "onion",
+                    "bacon",
+                    "egg white and yolk",
+                    "parsley"
+                ],
+                "container": "parchment paper"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "oven"
+            },
+            {
+                "label": "parchment paper",
+                "states": [],
+                "ingredients": [
+                    "eggs and bacon pizza"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "eggs and bacon pizza"
+                ],
+                "container": null
+            },
+            {
+                "label": "eggs and bacon pizza",
+                "states": [],
+                "ingredients": [
+                    "sour cream",
+                    "sea salt",
+                    "pepper",
+                    "onion",
+                    "bacon",
+                    "egg white and yolk",
+                    "parsley"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

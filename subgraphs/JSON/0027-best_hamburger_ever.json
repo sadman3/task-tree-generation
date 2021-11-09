@@ -1,0 +1,1805 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": null
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": null
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "egg yolk",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "beat",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "uncooked",
+                    "beaten"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "uncooked",
+                    "beaten"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soup mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "soup mix",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "worcestershire sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "worcestershire sauce",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "parsley",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "basil"
+                ],
+                "container": null
+            },
+            {
+                "label": "basil",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "oregano"
+                ],
+                "container": null
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "rosemary"
+                ],
+                "container": null
+            },
+            {
+                "label": "rosemary",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix*",
+        "output_nodes": [
+            {
+                "label": "ground beef",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "ground beef",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "shape",
+        "output_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "hand"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "hand"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and place",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "grill"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "flipped",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "flipped",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "grill"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tomato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "tomato",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "hamburger bun"
+                ],
+                "container": null
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "hamburger bun"
+                ],
+                "container": null
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "hamburger bun"
+                ],
+                "container": null
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "hamburger bun"
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "tear apart",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "hamburger bun"
+                ],
+                "container": null
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [
+                    "patty"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [
+                    "patty",
+                    "lettuce"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "hamburger bun"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "hamburger bun"
+                ],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [
+                    "patty",
+                    "lettuce"
+                ],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [
+                    "patty",
+                    "lettuce",
+                    "tomato"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "hamburger bun"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "hamburger bun"
+                ],
+                "container": null
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "hamburger bun",
+                "states": [
+                    "plain"
+                ],
+                "ingredients": [
+                    "patty",
+                    "lettuce",
+                    "tomato"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "ground beef",
+                    "onion",
+                    "cheese",
+                    "egg",
+                    "soup mix",
+                    "garlic",
+                    "garlic powder",
+                    "soy sauce",
+                    "worcestershire sauce",
+                    "parsley",
+                    "basil",
+                    "oregano",
+                    "rosemary",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "hamburger bun"
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "hamburger bun"
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "hamburger bun"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "hamburger"
+                ],
+                "container": null
+            },
+            {
+                "label": "hamburger",
+                "states": [],
+                "ingredients": [
+                    "patty",
+                    "lettuce",
+                    "tomato"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

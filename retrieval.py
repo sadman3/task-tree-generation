@@ -368,7 +368,12 @@ def remove_extra_ingredients(final_task_tree=[], input_ingredients=[]):
 # this method find a subtree from foon, makes substitution and adds the branch to task tree
 
 
-def substitute_and_add_branch(task_tree, ingredient):
+def substitute_and_add_branch(task_tree, input_ingredient, mapped_ingredient):
+    #  parameter: ingredient is the equivalent of input object
+    mapped_object = mapped_ingredient['object']
+    mapped_state = mapped_ingredient['state']
+    required_object = input_ingredient['object']
+    required_state = input_ingredient['state']
 
     container_priority = ['bowl', 'cup',
                           'spoon', 'measuring cup', 'mixing bowl', 'cutting board']
@@ -377,18 +382,21 @@ def substitute_and_add_branch(task_tree, ingredient):
     special_motions = ['mix', 'add', 'pour']
 
     # first find the suitable goal node to retrieve subtree
+    # ------------------------------------------------------------------#
 
     candidates = []
-    print(ingredient)
-    for node in foon_object_nodes:
-        if node.label == ingredient["object"] \
-                and ingredient["state"] in node.states:
-            candidates.append(node)
-    candidates.sort(key=lambda x: len(x.ingredients))
-    if len(candidates) == 0:
-        print(ingredient)
-        input()
 
+    for node in foon_object_nodes:
+        if mapped_state is not None:
+            if node.label == mapped_object \
+                    and mapped_state in node.states:
+                candidates.append(node)
+        else:
+            if node.label == mapped_object:
+                candidates.append(node)
+
+    candidates.sort(key=lambda x: len(x.ingredients))
+    print(input_ingredient, mapped_ingredient)
     goal_node = None
     for candidate in candidates:
         if not candidate.container:
@@ -402,8 +410,76 @@ def substitute_and_add_branch(task_tree, ingredient):
     if goal_node is None:
         goal_node = candidates[0]
 
+    # ------------------------------------------------------------------#
+
+    # extract the subtree
+
     subtree = extract_reference_task_tree(
         kitchen_items=kitchen_items, input_ingredients=[], goal_node=goal_node, subtree=True)
+
+    # substitue object in the subtree
+    for fu in task_tree:
+        for node in fu.input_nodes:
+            if node.label == mapped_object:
+                node.label = required_object
+            if mapped_object in node.ingredients:
+                idx = node.ingredients.index(mapped_object)
+                node.ingredients[idx] = required_object
+
+        for node in fu.output_nodes:
+            if node.label == mapped_object:
+                node.label = required_object
+            if mapped_object in node.ingredients:
+                idx = node.ingredients.index(mapped_object)
+                node.ingredients[idx] = required_object
+    # ------------------------------------------------------------------#
+
+    # now add the subtree
+
+    # first find the suitable index to add
+    special_fu_index = len(task_tree) - 1
+
+    flag = False
+    for i, fu in enumerate(task_tree):
+        if '*' in fu.motion_node:
+            special_fu_index = i
+            flag = True
+
+    if not flag:
+        for i, fu in enumerate(task_tree):
+            if fu.motion_node in special_motions:
+                special_fu_index = i
+
+    # Insert the subtree just before the special FU to maintain order
+    for i, fu in enumerate(subtree):
+        task_tree.insert(special_fu_index + i, fu)
+
+    # creating the connectino
+    new_node = copy.deepcopy(goal_node)
+    new_node.label = required_object
+    #goal_node.state = required_state
+    task_tree[special_fu_index].input_nodes.append(new_node)
+
+    # update the index because the subtree is inserted
+    special_fu_index += len(subtree)
+
+    # Now connect the ingredient by inserting it to the special FU
+    modified_nodes = []
+
+    for node in task_tree[special_fu_index].output_nodes:
+        if len(node.ingredients) > 1:
+            node.ingredients.append(required_object)
+            modified_nodes.append(node.label)
+
+    # add the new object, if possible, in all functional units after the special FU
+    for i in range(special_fu_index + 1, len(task_tree)):
+        for _input in task_tree[i].input_nodes:
+            if _input.label in modified_nodes and len(_input.ingredients) > 1:
+                _input.ingredients.append(required_object)
+
+        for _output in task_tree[i].output_nodes:
+            if _output.label in modified_nodes and len(_input.ingredients) > 1:
+                _output.ingredients.append(required_object)
 
 
 # -----------------------------------------------------------------------------------------------------------------------------#
@@ -424,7 +500,6 @@ def modify_reference_task_tree(reference_task_tree=[], input_ingredients=[]):
     task_tree = copy.deepcopy(reference_task_tree)
 
     ingredient_mapping = find_ingredient_mapping(task_tree, input_ingredients)
-    print(ingredient_mapping)
     for ingredient in ingredient_mapping:
 
         # if the mapping exists in reference task tree, we do not need to search in FOON
@@ -450,9 +525,13 @@ def modify_reference_task_tree(reference_task_tree=[], input_ingredients=[]):
         else:  # mapping exists in foon but not in reference tree
 
             # we need to search in foon for the food prep steps
+            required_ingredient = {}
+            for input_item in input_ingredients:
+                if input_item['object'] == ingredient:
+                    required_ingredient = input_item
 
             substitute_and_add_branch(
-                task_tree, ingredient_mapping[ingredient])
+                task_tree, required_ingredient, ingredient_mapping[ingredient])
 
     return task_tree
 # -----------------------------------------------------------------------------------------------------------------------------#
@@ -517,7 +596,7 @@ def retrieval(recipe_id, dish_type, input_ingredients):
         reference_task_tree=reference_task_tree, input_ingredients=input_ingredients)
 
     final_task_tree = remove_extra_ingredients(
-        final_task_tree, input_ingredients)
+        reference_task_tree, input_ingredients)
 
     # save the final task tree
     output_dir = os.path.join('output', 'final_task_tree', dish_type)
@@ -538,7 +617,7 @@ if __name__ == "__main__":
     #                      'cake', 'soup', 'bread', 'noodle', 'rice']
 
     selected_category = ['salad', 'omelette', 'rice', 'soup', 'drinks']
-    #selected_category = ['drinks']
+    # selected_category = ['drinks']
 
     for category in selected_category:
         input_dir = 'input/' + category

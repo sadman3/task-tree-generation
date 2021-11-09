@@ -1,0 +1,1120 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spray can",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "spray can"
+            }
+        ],
+        "motion_node": "spray",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "vegetable oil"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "clove"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mince",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "breadcrumb"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "breadcrumb",
+                "states": [
+                    "crumbs"
+                ],
+                "ingredients": [],
+                "container": "container"
+            }
+        ],
+        "motion_node": "measure",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "breadcrumb"
+                ],
+                "container": null
+            },
+            {
+                "label": "breadcrumb",
+                "states": [
+                    "crumbs"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "breadcrumb"
+                ],
+                "container": null
+            },
+            {
+                "label": "breadcrumb",
+                "states": [
+                    "crumbs"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "breadcrumb"
+                ],
+                "container": null
+            },
+            {
+                "label": "breadcrumb",
+                "states": [
+                    "crumbs"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "parmesan"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "parmesan",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            }
+        ],
+        "motion_node": "measure",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "parmesan"
+                ],
+                "container": null
+            },
+            {
+                "label": "parmesan",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "breadcrumb"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "parmesan"
+                ],
+                "container": null
+            },
+            {
+                "label": "parmesan",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "breadcrumb",
+                    "parmesan"
+                ],
+                "container": null
+            },
+            {
+                "label": "parmesan",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "basil"
+                ],
+                "container": null
+            },
+            {
+                "label": "basil",
+                "states": [
+                    "dried",
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "basil"
+                ],
+                "container": null
+            },
+            {
+                "label": "basil",
+                "states": [
+                    "dried",
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "breadcrumb",
+                    "parmesan"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "basil"
+                ],
+                "container": null
+            },
+            {
+                "label": "basil",
+                "states": [
+                    "dried",
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "breadcrumb",
+                    "parmesan",
+                    "basil"
+                ],
+                "container": null
+            },
+            {
+                "label": "basil",
+                "states": [
+                    "dried",
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "breadcrumb",
+                    "parmesan",
+                    "basil"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "black pepper",
+                    "breadcrumb",
+                    "parmesan"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "black pepper",
+                    "breadcrumb",
+                    "parmesan"
+                ],
+                "container": null
+            },
+            {
+                "label": "breadcrumb",
+                "states": [
+                    "crumbs"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "basil",
+                "states": [
+                    "dried",
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "breadcrumb",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "breadcrumb",
+                "states": [
+                    "mixed",
+                    "crumbs"
+                ],
+                "ingredients": [
+                    "basil",
+                    "black pepper",
+                    "parmesan"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "coat",
+        "output_nodes": [
+            {
+                "label": "chicken",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "garlic"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "chicken"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "chicken"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "garlic"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "basil",
+                    "black pepper",
+                    "breadcrumb",
+                    "parmesan"
+                ],
+                "container": null
+            },
+            {
+                "label": "breadcrumb",
+                "states": [
+                    "mixed",
+                    "crumbs"
+                ],
+                "ingredients": [
+                    "basil",
+                    "black pepper",
+                    "parmesan"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "coat",
+        "output_nodes": [
+            {
+                "label": "chicken",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "garlic",
+                    "basil",
+                    "black pepper",
+                    "breadcrumb",
+                    "parmesan"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "breadcrumb",
+                "states": [
+                    "mixed",
+                    "crumbs"
+                ],
+                "ingredients": [
+                    "basil",
+                    "black pepper",
+                    "parmesan"
+                ],
+                "container": "chicken"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "vegetable oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "garlic",
+                    "basil",
+                    "black pepper",
+                    "breadcrumb",
+                    "parmesan"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "vegetable oil"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "olive oil",
+                    "garlic",
+                    "basil",
+                    "black pepper",
+                    "breadcrumb",
+                    "parmesan"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "baking tray"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "baking tray"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [
+                    "vegetable oil",
+                    "olive oil",
+                    "garlic",
+                    "basil",
+                    "black pepper",
+                    "breadcrumb",
+                    "parmesan"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "bake",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "chicken",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "garlic-parmesan chicken",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "chicken",
+                    "vegetable oil",
+                    "olive oil",
+                    "garlic",
+                    "basil",
+                    "black pepper",
+                    "breadcrumb",
+                    "parmesan"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "baking tray"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "baking tray"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "baking tray"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": "oven"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic-parmesan chicken",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "chicken",
+                    "vegetable oil",
+                    "olive oil",
+                    "garlic",
+                    "basil",
+                    "black pepper",
+                    "breadcrumb",
+                    "parmesan"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "chicken"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic-parmesan chicken",
+                "states": [
+                    "baked",
+                    "ready"
+                ],
+                "ingredients": [
+                    "chicken",
+                    "vegetable oil",
+                    "olive oil",
+                    "garlic",
+                    "basil",
+                    "black pepper",
+                    "breadcrumb",
+                    "parmesan"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

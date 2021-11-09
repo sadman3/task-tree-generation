@@ -1,0 +1,1665 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "yeast"
+                ],
+                "container": null
+            },
+            {
+                "label": "yeast",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": null
+            },
+            {
+                "label": "yeast",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "yeast"
+                ],
+                "container": null
+            },
+            {
+                "label": "yeast",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "water",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "dough"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "knead",
+        "output_nodes": [
+            {
+                "label": "dough",
+                "states": [
+                    "kneaded"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "dough"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "box",
+                "states": [],
+                "ingredients": [
+                    "saran wrap"
+                ],
+                "container": null
+            },
+            {
+                "label": "saran wrap",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "box"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "kneaded"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "tear and cover",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "dough"
+                ],
+                "container": "saran wrap"
+            },
+            {
+                "label": "saran wrap",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "dough"
+                ],
+                "container": "saran wrap"
+            },
+            {
+                "label": "dough",
+                "states": [
+                    "kneaded"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "saran wrap",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "ferment",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": "saran wrap"
+            },
+            {
+                "label": "pizza dough",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "table",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": "saran wrap"
+            },
+            {
+                "label": "saran wrap",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "pizza dough",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "pizza dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pizza dough",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "table"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "pizza dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "table"
+            },
+            {
+                "label": "pizza dough",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "table"
+            }
+        ],
+        "motion_node": "knead",
+        "output_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "pizza dough"
+            },
+            {
+                "label": "pizza dough",
+                "states": [
+                    "kneaded",
+                    "floured"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "table"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "pizza dough",
+                "states": [
+                    "kneaded",
+                    "floured"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "table"
+            }
+        ],
+        "motion_node": "press",
+        "output_nodes": [
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "table"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "table",
+                "states": [],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "table"
+            },
+            {
+                "label": "pizza pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "table",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pizza pan",
+                "states": [],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "pizza pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "marinara"
+                ],
+                "container": null
+            },
+            {
+                "label": "marinara",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "marinara"
+                ],
+                "container": null
+            },
+            {
+                "label": "marinara",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pizza pan",
+                "states": [],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "pizza dough",
+                "states": [
+                    "flattened"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast"
+                ],
+                "container": "pizza pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "marinara"
+                ],
+                "container": null
+            },
+            {
+                "label": "marinara",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour and spread",
+        "output_nodes": [
+            {
+                "label": "pizza pan",
+                "states": [],
+                "ingredients": [
+                    "pizza"
+                ],
+                "container": null
+            },
+            {
+                "label": "pizza",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast",
+                    "marinara"
+                ],
+                "container": "pizza pan"
+            },
+            {
+                "label": "marinara",
+                "states": [
+                    "spread",
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "pizza"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pizza pan",
+                "states": [],
+                "ingredients": [
+                    "pizza"
+                ],
+                "container": null
+            },
+            {
+                "label": "pizza",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast",
+                    "marinara"
+                ],
+                "container": "pizza pan"
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "mozzarella"
+                ],
+                "container": null
+            },
+            {
+                "label": "mozzarella",
+                "states": [
+                    "shredded"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "pizza",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast",
+                    "marinara",
+                    "mozzarella"
+                ],
+                "container": "pizza pan"
+            },
+            {
+                "label": "mozzarella",
+                "states": [
+                    "shredded"
+                ],
+                "ingredients": [],
+                "container": "pizza"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pizza pan",
+                "states": [],
+                "ingredients": [
+                    "pizza"
+                ],
+                "container": null
+            },
+            {
+                "label": "pizza",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast",
+                    "marinara",
+                    "mozzarella"
+                ],
+                "container": "pizza pan"
+            }
+        ],
+        "motion_node": "insert",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "pizza pan"
+                ],
+                "container": null
+            },
+            {
+                "label": "pizza pan",
+                "states": [],
+                "ingredients": [
+                    "pizza"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "pizza pan"
+                ],
+                "container": null
+            },
+            {
+                "label": "pizza pan",
+                "states": [],
+                "ingredients": [
+                    "pizza dough"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "pizza",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast",
+                    "marinara",
+                    "mozzarella"
+                ],
+                "container": "pizza pan"
+            }
+        ],
+        "motion_node": "bake",
+        "output_nodes": [
+            {
+                "label": "cheese pizza",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast",
+                    "marinara",
+                    "mozzarella"
+                ],
+                "container": "pizza pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "pizza pan"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "pizza pan"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "pizza pan"
+                ],
+                "container": null
+            },
+            {
+                "label": "pizza pan",
+                "states": [],
+                "ingredients": [
+                    "pizza"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "cheese pizza",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast",
+                    "marinara",
+                    "mozzarella"
+                ],
+                "container": "pizza pan"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "empty",
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pizza pan",
+                "states": [],
+                "ingredients": [
+                    "cheese pizza"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pizza pan",
+                "states": [],
+                "ingredients": [
+                    "cheese pizza"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese pizza",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast",
+                    "marinara",
+                    "mozzarella"
+                ],
+                "container": "pizza pan"
+            },
+            {
+                "label": "pizza cutter",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "divide",
+        "output_nodes": [
+            {
+                "label": "cheese pizza",
+                "states": [
+                    "baked",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast",
+                    "marinara",
+                    "mozzarella"
+                ],
+                "container": "pizza pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pizza pan",
+                "states": [],
+                "ingredients": [
+                    "cheese pizza"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese pizza",
+                "states": [
+                    "baked",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast",
+                    "marinara",
+                    "mozzarella"
+                ],
+                "container": "pizza pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "cheese pizza"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese pizza",
+                "states": [
+                    "baked",
+                    "sliced"
+                ],
+                "ingredients": [
+                    "flour",
+                    "olive oil",
+                    "salt",
+                    "water",
+                    "sugar",
+                    "yeast",
+                    "marinara",
+                    "mozzarella"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

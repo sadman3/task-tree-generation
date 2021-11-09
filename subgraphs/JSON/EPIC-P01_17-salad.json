@@ -1,0 +1,1303 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "tear apart",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            }
+        ],
+        "motion_node": "wash",
+        "output_nodes": [
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "place",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lettuce",
+                "states": [
+                    "leaf",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "lettuce",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mushroom",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "dice",
+        "output_nodes": [
+            {
+                "label": "mushroom",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lettuce"
+                ],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lettuce",
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            }
+        ],
+        "motion_node": "wash",
+        "output_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "washed",
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "washed",
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "carrot"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "carrot",
+                "states": [
+                    "unpeeled",
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lettuce",
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "unpeeled",
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "lettuce",
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [
+                    "sealed"
+                ],
+                "ingredients": [
+                    "cherry tomato"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "cherry tomato"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "cherry tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "cherry tomato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "cherry tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "cherry tomato",
+                "states": [
+                    "destemmed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "cherry tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "cherry tomato",
+                "states": [
+                    "destemmed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            }
+        ],
+        "motion_node": "wash",
+        "output_nodes": [
+            {
+                "label": "cherry tomato",
+                "states": [
+                    "destemmed",
+                    "washed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "cherry tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "cherry tomato",
+                "states": [
+                    "destemmed",
+                    "washed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "cherry tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "cherry tomato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cherry tomato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "cherry tomato",
+                "states": [
+                    "cut",
+                    "quartered"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "cherry tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "cherry tomato",
+                "states": [
+                    "cut",
+                    "quartered"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "lettuce",
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "cherry tomato",
+                    "lettuce",
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "cherry tomato",
+                "states": [
+                    "quartered",
+                    "cut"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "cherry tomato",
+                    "lettuce",
+                    "mushroom"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "container"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "cherry tomato",
+                    "lettuce",
+                    "mushroom",
+                    "onion"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "green olive"
+                ],
+                "container": null
+            },
+            {
+                "label": "green olive",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "green olive"
+                ],
+                "container": null
+            },
+            {
+                "label": "green olive",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "green olive",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "green olive",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "green olive"
+                ],
+                "container": null
+            },
+            {
+                "label": "green olive",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "cherry tomato",
+                    "lettuce",
+                    "mushroom",
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "cherry tomato",
+                    "green olive",
+                    "lettuce",
+                    "mushroom",
+                    "onion"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "cherry tomato",
+                    "green olive",
+                    "lettuce",
+                    "mushroom",
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "cherry tomato",
+                    "green olive",
+                    "lettuce",
+                    "mushroom",
+                    "onion",
+                    "salt"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "cherry tomato",
+                    "green olive",
+                    "lettuce",
+                    "mushroom",
+                    "onion",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "green olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "cherry tomato",
+                    "green olive",
+                    "olive oil",
+                    "lettuce",
+                    "mushroom",
+                    "onion",
+                    "salt"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "cherry tomato",
+                    "green olive",
+                    "olive oil",
+                    "lettuce",
+                    "mushroom",
+                    "onion",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "oregano"
+                ],
+                "container": null
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "cherry tomato",
+                    "green olive",
+                    "olive oil",
+                    "lettuce",
+                    "mushroom",
+                    "onion",
+                    "oregano",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "carrot",
+                    "cherry tomato",
+                    "green olive",
+                    "olive oil",
+                    "lettuce",
+                    "mushroom",
+                    "onion",
+                    "oregano",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "lettuce",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "mushroom",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "carrot",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cherry tomato",
+                "states": [
+                    "cut",
+                    "quartered"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "green olive",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "oregano",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "carrot",
+                    "cherry tomato",
+                    "green olive",
+                    "olive oil",
+                    "lettuce",
+                    "mushroom",
+                    "onion",
+                    "oregano",
+                    "salt"
+                ],
+                "container": "bowl"
+            }
+        ]
+    }
+]

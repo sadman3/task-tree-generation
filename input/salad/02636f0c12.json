@@ -39,10 +39,6 @@
                      "state": "juice"
               },
               {
-                     "object": "juice",
-                     "state": "juice"
-              },
-              {
                      "object": "garlic",
                      "state": "chopped"
               },
@@ -57,10 +53,6 @@
               {
                      "object": "pepper",
                      "state": "ground"
-              },
-              {
-                     "object": "juice",
-                     "state": "juice"
               }
        ]
 }

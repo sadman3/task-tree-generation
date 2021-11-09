@@ -1,0 +1,2152 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "can",
+                "states": [
+                    "sealed"
+                ],
+                "ingredients": [
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "can opener",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "can",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "can",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "can"
+            },
+            {
+                "label": "tuna",
+                "states": [
+                    "shredded"
+                ],
+                "ingredients": [],
+                "container": "can"
+            },
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "tuna"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "tuna"
+            },
+            {
+                "label": "tuna",
+                "states": [
+                    "shredded"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "tuna"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "tuna",
+                "states": [
+                    "shredded"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "tuna"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ],
+        "motion_node": "press",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "tuna"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "tuna",
+                "states": [
+                    "pressed",
+                    "shredded"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "strainer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "strainer"
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "tuna"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "tuna"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "tuna",
+                "states": [
+                    "shredded",
+                    "squeezed"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "tuna",
+                "states": [
+                    "shredded"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "halved",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "halved",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "tuna"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "onion",
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "garlic press",
+                "states": [
+                    "empty",
+                    "closed"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "garlic press",
+                "states": [
+                    "empty",
+                    "opened"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "garlic press",
+                "states": [
+                    "empty",
+                    "opened"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "insert",
+        "output_nodes": [
+            {
+                "label": "garlic press",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "garlic press"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "onion",
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic press",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "clove",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "garlic press"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "squeeze and scrape",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "garlic press",
+                "states": [
+                    "closed"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "leaf",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chive"
+                ],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "leaf",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "chive",
+                "states": [
+                    "leaf",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "chive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chive"
+                ],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chive"
+                ],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "chive"
+                ],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "chive",
+                    "garlic",
+                    "onion",
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "leaf",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "leaf",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "parsley",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "chive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "parsley"
+                ],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "chive",
+                    "garlic",
+                    "onion",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "chive",
+                    "garlic",
+                    "onion",
+                    "parsley",
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "chive",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "attach",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "blender"
+            },
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "oats"
+                ],
+                "container": null
+            },
+            {
+                "label": "oats",
+                "states": [
+                    "grain",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oats"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "oats",
+                "states": [
+                    "grain",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oats"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oats"
+                ],
+                "container": "blender"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oats"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "oats",
+                "states": [
+                    "grain",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oats"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "oats",
+                "states": [
+                    "crushed",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oats"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "uncover",
+        "output_nodes": [
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oats"
+                ],
+                "container": "blender"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oats"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "detach",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oats"
+                ],
+                "container": null
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "oats"
+                ],
+                "container": null
+            },
+            {
+                "label": "oats",
+                "states": [
+                    "crushed",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "chive",
+                    "garlic",
+                    "onion",
+                    "parsley",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "chive",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "oats",
+                "states": [
+                    "crushed",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "blender jar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "chive",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "chive",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "chili pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "chili pepper",
+                "states": [
+                    "flakes"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "chive",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "crack",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "beat",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "beaten",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "beaten",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "beaten",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "raw",
+                    "beaten"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "oats",
+                "states": [
+                    "crushed",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "tuna",
+                "states": [
+                    "shredded"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "tuna paste",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": null
+            },
+            {
+                "label": "tuna paste",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "roll",
+        "output_nodes": [
+            {
+                "label": "tuna paste",
+                "states": [
+                    "shaped",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tuna paste",
+                "states": [
+                    "shaped",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "press",
+        "output_nodes": [
+            {
+                "label": "tuna patty",
+                "states": [
+                    "pressed",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty",
+                    "hot"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tuna patty",
+                "states": [
+                    "pressed",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "tuna patty",
+                "states": [
+                    "pressed",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "tuna patty"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "tuna patty",
+                "states": [
+                    "pressed",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "tuna patty"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "tuna patty",
+                "states": [
+                    "partly cooked",
+                    "pressed"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "tuna patty"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tuna patty",
+                "states": [
+                    "partly cooked",
+                    "pressed"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "tuna patty",
+                "states": [
+                    "flipped",
+                    "partly cooked",
+                    "pressed"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "tuna patty"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tuna patty",
+                "states": [
+                    "flipped",
+                    "partly cooked",
+                    "pressed"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "tuna patty"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tuna patty",
+                "states": [
+                    "cooked",
+                    "pressed"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "tuna patty"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tuna patty",
+                "states": [
+                    "cooked",
+                    "pressed"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "tuna patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "tuna patty",
+                "states": [
+                    "cooked",
+                    "pressed"
+                ],
+                "ingredients": [
+                    "chili pepper",
+                    "chive",
+                    "egg white and yolk",
+                    "garlic",
+                    "oats",
+                    "onion",
+                    "parsley",
+                    "salt",
+                    "tuna"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    }
+]

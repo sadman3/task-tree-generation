@@ -1,0 +1,1766 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "squeezer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "squeeze",
+        "output_nodes": [
+            {
+                "label": "squeezer",
+                "states": [],
+                "ingredients": [
+                    "lemon juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "squeezed",
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "squeezer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "squeezer",
+                "states": [],
+                "ingredients": [
+                    "lemon juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "squeezer"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon juice",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon juice",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "juice"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "olive oil",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "vinaigrette",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "lemon juice",
+                    "olive oil"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salad greens"
+                ],
+                "container": null
+            },
+            {
+                "label": "salad greens",
+                "states": [
+                    "washed",
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "salad bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "salad greens"
+                ],
+                "container": null
+            },
+            {
+                "label": "salad greens",
+                "states": [
+                    "washed",
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cilantro",
+                "states": [
+                    "leaf",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "cilantro"
+                ],
+                "container": null
+            },
+            {
+                "label": "cilantro",
+                "states": [
+                    "leaf",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cilantro",
+                "states": [
+                    "leaf",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "cilantro",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "cilantro"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cilantro",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cilantro"
+                ],
+                "container": null
+            },
+            {
+                "label": "cilantro",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cilantro"
+                ],
+                "container": null
+            },
+            {
+                "label": "cilantro",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon juice",
+                    "olive oil"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "cilantro",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "vinaigrette",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [
+                    "lemon juice",
+                    "olive oil"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "vinaigrette",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "salad greens"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "salad greens",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mango",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "mango"
+                ],
+                "container": null
+            },
+            {
+                "label": "mango",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mango",
+                "states": [
+                    "unpeeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "mango",
+                "states": [
+                    "halved",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "mango",
+                "states": [
+                    "seed"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mango",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mango",
+                "states": [
+                    "halved",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "make slits",
+        "output_nodes": [
+            {
+                "label": "mango",
+                "states": [
+                    "halved",
+                    "cut with slits",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mango",
+                "states": [
+                    "halved",
+                    "cut with slits",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "cut off skin",
+        "output_nodes": [
+            {
+                "label": "mango",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "mango",
+                "states": [
+                    "skin"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "mango"
+                ],
+                "container": null
+            },
+            {
+                "label": "mango",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mango"
+                ],
+                "container": null
+            },
+            {
+                "label": "mango",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "salad greens",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mango"
+                ],
+                "container": null
+            },
+            {
+                "label": "mango",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "mango",
+                    "salad greens",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "mango",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "shallot",
+                "states": [
+                    "whole",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "shallot",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "shallot",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "shallot"
+                ],
+                "container": null
+            },
+            {
+                "label": "shallot",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "shallot",
+                "states": [
+                    "whole",
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "shallot",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "shallot"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "shallot",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "shallot"
+                ],
+                "container": null
+            },
+            {
+                "label": "shallot",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "shallot"
+                ],
+                "container": null
+            },
+            {
+                "label": "shallot",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "shallot"
+                ],
+                "container": null
+            },
+            {
+                "label": "shallot",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "shallot"
+                ],
+                "container": null
+            },
+            {
+                "label": "shallot",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "vinaigrette",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "vinaigrette",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "shallot"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "shallot"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "salt",
+                    "shallot"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "salt",
+                    "shallot"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "salt",
+                    "shallot"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "salt",
+                    "shallot"
+                ],
+                "container": null
+            },
+            {
+                "label": "vinaigrette",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "shallot"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "salad dressing"
+                ],
+                "container": null
+            },
+            {
+                "label": "salad dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "salt",
+                    "shallot"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "salt",
+                    "shallot"
+                ],
+                "container": null
+            },
+            {
+                "label": "salad dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "salt",
+                    "shallot"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "mango",
+                    "salad greens",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "mango",
+                    "salad dressing",
+                    "salad greens",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "salad dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "salt",
+                    "shallot"
+                ],
+                "container": "salad bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "mango",
+                    "salad dressing",
+                    "salad greens",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "salad dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "cilantro",
+                    "lemon juice",
+                    "olive oil",
+                    "salt",
+                    "shallot"
+                ],
+                "container": "salad bowl"
+            },
+            {
+                "label": "mango",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "salad greens",
+                "states": [
+                    "leaf",
+                    "washed"
+                ],
+                "ingredients": [],
+                "container": "salad bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "salad bowl",
+                "states": [],
+                "ingredients": [
+                    "shrimp mango salad"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp mango salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "cilantro",
+                    "lemon juice",
+                    "mango",
+                    "olive oil",
+                    "salad greens",
+                    "salt",
+                    "scallion",
+                    "shrimp"
+                ],
+                "container": "salad bowl"
+            }
+        ]
+    }
+]

@@ -1,0 +1,476 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [
+                    "buttered"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "turkey"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "buttered"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "turkey",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "turkey"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "turkey",
+                "states": [],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "turkey"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "jelly"
+                ],
+                "container": null
+            },
+            {
+                "label": "jelly",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "turkey",
+                    "jelly"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "jelly",
+                "states": [],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "turkey",
+                    "jelly"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "green leaf"
+                ],
+                "container": null
+            },
+            {
+                "label": "green leaf",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "turkey",
+                    "jelly",
+                    "green leaf"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "green leaf",
+                "states": [],
+                "ingredients": [],
+                "container": "bread"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "turkey",
+                    "jelly",
+                    "green leaf"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "bread",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "sandwich"
+                ],
+                "container": null
+            },
+            {
+                "label": "sandwich",
+                "states": [],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "turkey",
+                    "jelly",
+                    "green leaf"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "sandwich"
+                ],
+                "container": null
+            },
+            {
+                "label": "sandwich",
+                "states": [],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "turkey",
+                    "jelly",
+                    "green leaf"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "sandwich",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "turkey",
+                    "jelly",
+                    "green leaf"
+                ],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "sandwich"
+                ],
+                "container": null
+            },
+            {
+                "label": "sandwich",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "turkey",
+                    "jelly",
+                    "green leaf"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "sandwich"
+                ],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "sandwich",
+                "states": [
+                    "halved",
+                    "ready"
+                ],
+                "ingredients": [
+                    "bread",
+                    "butter",
+                    "turkey",
+                    "jelly",
+                    "green leaf"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

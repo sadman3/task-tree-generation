@@ -1,0 +1,1210 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "sliced",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "sliced",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bacon",
+                "states": [
+                    "sliced",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "scissors",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "bacon",
+                "states": [
+                    "chopped",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "chopped",
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "scissors",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "raw",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "crack",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "beat",
+        "output_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cup",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "beat",
+        "output_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "raw",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "bacon",
+                "states": [
+                    "fried",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "napkin"
+                ],
+                "container": null
+            },
+            {
+                "label": "napkin",
+                "states": [
+                    "dry"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "napkin"
+                ],
+                "container": null
+            },
+            {
+                "label": "napkin",
+                "states": [
+                    "dry"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "fried",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "napkin",
+                "states": [
+                    "dry"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "napkin",
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "fried",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "napkin"
+            },
+            {
+                "label": "napkin",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty",
+                    "hot"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty",
+                    "hot"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "cubed",
+                    "unmelted"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "cubed",
+                    "unmelted"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "melt",
+        "output_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "melted",
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "cook and shake",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "sauteed",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "egg",
+                    "milk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "egg",
+                    "milk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "egg",
+                    "milk",
+                    "cheese"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "milk",
+                    "cheese"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": "egg"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "egg",
+                    "milk",
+                    "cheese"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "milk",
+                    "cheese"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "cook and spread",
+        "output_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "milk",
+                    "cheese",
+                    "butter",
+                    "onion"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "egg",
+                    "milk",
+                    "cheese"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bacon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "fried",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "milk",
+                    "cheese",
+                    "butter",
+                    "onion"
+                ],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "egg",
+                    "milk",
+                    "cheese",
+                    "bacon"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "milk",
+                    "cheese",
+                    "butter",
+                    "onion",
+                    "bacon"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "bacon",
+                "states": [
+                    "fried",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "scrambled eggs"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "egg",
+                    "milk",
+                    "cheese",
+                    "bacon"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "milk",
+                    "cheese",
+                    "butter",
+                    "onion",
+                    "bacon"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "milk",
+                    "cheese",
+                    "butter",
+                    "onion",
+                    "bacon"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "onion",
+                    "egg",
+                    "milk",
+                    "cheese",
+                    "bacon"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "milk",
+                    "cheese",
+                    "butter",
+                    "onion",
+                    "bacon"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "scrambled eggs"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "milk",
+                    "cheese",
+                    "butter",
+                    "onion",
+                    "bacon"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "milk",
+                    "cheese",
+                    "butter",
+                    "onion",
+                    "bacon"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "milk",
+                    "cheese",
+                    "butter",
+                    "onion",
+                    "bacon"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    }
+]

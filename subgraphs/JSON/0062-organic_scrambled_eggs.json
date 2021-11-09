@@ -1,0 +1,1181 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "empty",
+                    "hot"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "cubed",
+                    "unmelted"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "butter",
+                "states": [
+                    "melted",
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white",
+                    "egg yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "egg yolk",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "beat",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "buttermilk"
+                ],
+                "container": null
+            },
+            {
+                "label": "buttermilk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "buttermilk"
+                ],
+                "container": null
+            },
+            {
+                "label": "buttermilk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "buttermilk"
+                ],
+                "container": null
+            },
+            {
+                "label": "buttermilk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "beat",
+        "output_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "buttermilk"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "buttermilk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "buttermilk"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "melted",
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix and pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "butter",
+                    "buttermilk"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "beaten",
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "butter",
+                    "buttermilk"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "buttermilk"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ricotta"
+                ],
+                "container": null
+            },
+            {
+                "label": "ricotta",
+                "states": [
+                    "softened",
+                    "crumbled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape and pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk",
+                    "ricotta"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "ricotta",
+                "states": [
+                    "softened",
+                    "crumbled"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk",
+                    "ricotta"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "ricotta",
+                "states": [
+                    "softened",
+                    "crumbled"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "buttermilk"
+                ],
+                "container": "cooking pan"
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "buttermilk",
+                    "ricotta"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk",
+                    "ricotta"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk",
+                    "ricotta",
+                    "salt"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk",
+                    "ricotta",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pepper mill",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "peppercorn"
+                ],
+                "ingredients": [],
+                "container": "pepper mill"
+            }
+        ],
+        "motion_node": "grind",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "buttermilk",
+                    "ricotta"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "avocado"
+                ],
+                "container": null
+            },
+            {
+                "label": "avocado",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape and pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper",
+                    "avocado"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "avocado",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper",
+                    "avocado"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "avocado",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper",
+                    "avocado"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "tomato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "dice",
+        "output_nodes": [
+            {
+                "label": "tomato",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper",
+                    "avocado"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "tomato"
+                ],
+                "container": null
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape and pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper",
+                    "avocado",
+                    "tomato"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper",
+                    "avocado",
+                    "tomato"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "tomato",
+                "states": [
+                    "diced"
+                ],
+                "ingredients": [],
+                "container": "cooking pan"
+            },
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper",
+                    "avocado"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper",
+                    "avocado",
+                    "tomato"
+                ],
+                "container": "cooking pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper",
+                    "avocado",
+                    "tomato"
+                ],
+                "container": "cooking pan"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape and pour",
+        "output_nodes": [
+            {
+                "label": "scrambled eggs",
+                "states": [
+                    "mixed",
+                    "cooked"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "buttermilk",
+                    "ricotta",
+                    "salt",
+                    "black pepper",
+                    "avocado",
+                    "tomato"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

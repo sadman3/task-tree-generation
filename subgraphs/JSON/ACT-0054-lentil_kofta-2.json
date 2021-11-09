@@ -1,0 +1,738 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "kofta mix"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "kofta mix",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "kofta mix",
+                    "onion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "kofta mix",
+                "states": [],
+                "ingredients": [
+                    "lentil",
+                    "bulgur"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "kofta mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "kofta mix",
+                "states": [],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "kofta mix"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "kofta mix",
+                "states": [],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "kofta mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "kofta mix",
+                "states": [],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "kofta mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "kofta mix",
+                "states": [],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "knead",
+        "output_nodes": [
+            {
+                "label": "kofta mix",
+                "states": [
+                    "kneaded"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "kofta mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "kofta mix",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "kofta mix",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "kofta mix",
+                    "salt",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "kofta mix",
+                    "salt",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "scallion"
+                ],
+                "container": null
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "kofta mix",
+                    "salt",
+                    "paprika",
+                    "scallion"
+                ],
+                "container": null
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "kofta mix",
+                    "salt",
+                    "paprika",
+                    "scallion"
+                ],
+                "container": null
+            },
+            {
+                "label": "kofta mix",
+                "states": [],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "knead",
+        "output_nodes": [
+            {
+                "label": "kofta mix",
+                "states": [
+                    "kneaded"
+                ],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion",
+                    "salt",
+                    "paprika",
+                    "scallion"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "kofta mix"
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "kofta mix"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "kofta mix"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "kofta mix",
+                "states": [
+                    "kneaded"
+                ],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion",
+                    "salt",
+                    "paprika",
+                    "scallion"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "shape",
+        "output_nodes": [
+            {
+                "label": "kofta mix",
+                "states": [
+                    "shaped"
+                ],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion",
+                    "salt",
+                    "paprika",
+                    "scallion"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "kofta mix",
+                "states": [
+                    "shaped"
+                ],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion",
+                    "salt",
+                    "paprika",
+                    "scallion"
+                ],
+                "container": null
+            },
+            {
+                "label": "glass tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "glass tray",
+                "states": [],
+                "ingredients": [
+                    "kofta"
+                ],
+                "container": null
+            },
+            {
+                "label": "lentil kofta",
+                "states": [],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion",
+                    "salt",
+                    "paprika",
+                    "scallion"
+                ],
+                "container": "glass tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "glass tray",
+                "states": [],
+                "ingredients": [
+                    "kofta"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "lentil kofta",
+                "states": [],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion",
+                    "salt",
+                    "paprika",
+                    "scallion"
+                ],
+                "container": "glass tray"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "lentil kofta",
+                "states": [],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion",
+                    "salt",
+                    "paprika",
+                    "scallion",
+                    "paprika"
+                ],
+                "container": "glass tray"
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "kofta"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "glass tray",
+                "states": [],
+                "ingredients": [
+                    "kofta"
+                ],
+                "container": null
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "pickle"
+                ],
+                "container": null
+            },
+            {
+                "label": "pickle",
+                "states": [],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "lentil kofta",
+                "states": [],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion",
+                    "salt",
+                    "paprika",
+                    "scallion",
+                    "paprika"
+                ],
+                "container": "glass tray"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "glass tray",
+                "states": [],
+                "ingredients": [
+                    "kofta",
+                    "pickle"
+                ],
+                "container": null
+            },
+            {
+                "label": "kofta",
+                "states": [],
+                "ingredients": [
+                    "lentil",
+                    "bulgur",
+                    "onion",
+                    "salt",
+                    "paprika",
+                    "scallion",
+                    "paprika",
+                    "pickle"
+                ],
+                "container": "glass tray"
+            },
+            {
+                "label": "pickle",
+                "states": [],
+                "ingredients": [],
+                "container": "glass tray"
+            }
+        ]
+    }
+]

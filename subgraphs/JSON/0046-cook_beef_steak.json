@@ -1,0 +1,675 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "beefsteak",
+                "states": [
+                    "cut with slits",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "cut with slits",
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "beefsteak",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "meat"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "beefsteak",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "salt"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "meat"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "salt"
+                ],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "beefsteak",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "oven"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "oven"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "beefsteak",
+                "states": [
+                    "flipped"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "flipped"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "flipped"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "beefsteak",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "beefsteak"
+                ],
+                "container": null
+            },
+            {
+                "label": "beefsteak",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "garlic",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

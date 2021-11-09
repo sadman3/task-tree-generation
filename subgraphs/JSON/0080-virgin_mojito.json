@@ -1,0 +1,571 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lime",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "lime"
+                ],
+                "container": null
+            },
+            {
+                "label": "lime",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lime",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "lime",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lime",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lime"
+                ],
+                "container": null
+            },
+            {
+                "label": "lime",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lime"
+                ],
+                "container": null
+            },
+            {
+                "label": "lime",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "lime",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "lime",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "lime",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "mint"
+                ],
+                "container": null
+            },
+            {
+                "label": "mint",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "lime",
+                    "mint",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "mint",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "muddler",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "lime",
+                    "mint",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "lime",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            },
+            {
+                "label": "mint",
+                "states": [
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ],
+        "motion_node": "mash",
+        "output_nodes": [
+            {
+                "label": "lime",
+                "states": [
+                    "chopped",
+                    "mashed"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            },
+            {
+                "label": "mint",
+                "states": [
+                    "mashed",
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "lime",
+                    "mint",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "bucket",
+                "states": [],
+                "ingredients": [
+                    "ice"
+                ],
+                "container": null
+            },
+            {
+                "label": "ice",
+                "states": [
+                    "crushed",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "bucket"
+            },
+            {
+                "label": "scoop",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "lime",
+                    "mint",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "ice",
+                "states": [
+                    "crushed",
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "ice",
+                    "lime",
+                    "mint",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "club soda"
+                ],
+                "container": null
+            },
+            {
+                "label": "club soda",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "club soda",
+                    "ice",
+                    "lime",
+                    "mint",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "club soda",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "highball glass",
+                "states": [],
+                "ingredients": [
+                    "club soda",
+                    "ice",
+                    "lime",
+                    "mint",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "lime",
+                "states": [
+                    "chopped",
+                    "mashed"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            },
+            {
+                "label": "mint",
+                "states": [
+                    "mashed",
+                    "leaf"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            },
+            {
+                "label": "ice",
+                "states": [
+                    "crushed"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            },
+            {
+                "label": "club soda",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "highball glass"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cocktail",
+                "states": [
+                    "liquid",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "club soda",
+                    "ice",
+                    "lime",
+                    "mint",
+                    "sugar"
+                ],
+                "container": "highball glass"
+            },
+            {
+                "label": "mojito",
+                "states": [
+                    "liquid",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "club soda",
+                    "ice",
+                    "lime",
+                    "mint",
+                    "sugar"
+                ],
+                "container": "highball glass"
+            }
+        ]
+    }
+]

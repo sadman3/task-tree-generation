@@ -1,0 +1,1511 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "apple",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "peeler",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "apple",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "peeler",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "apple",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "apple",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "apple"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "apple"
+                ],
+                "container": null
+            },
+            {
+                "label": "apple",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "apple",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "apple",
+                "states": [
+                    "halved"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "apple"
+                ],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "apple",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "apple"
+                ],
+                "container": null
+            },
+            {
+                "label": "apple",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "apple"
+                ],
+                "container": null
+            },
+            {
+                "label": "apple",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "lemon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon zest"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon",
+                "states": [
+                    "grated"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "lemon zest",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "apple"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lemon zest"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon zest",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "apple",
+                    "lemon zest"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "lemon juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon juice",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "mug",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mug",
+                "states": [],
+                "ingredients": [
+                    "lemon juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon juice",
+                "states": [],
+                "ingredients": [],
+                "container": "mug"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "apple",
+                    "lemon zest"
+                ],
+                "container": null
+            },
+            {
+                "label": "mug",
+                "states": [],
+                "ingredients": [
+                    "lemon juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon juice",
+                "states": [],
+                "ingredients": [],
+                "container": "mug"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "apple",
+                    "lemon zest",
+                    "lemon juice"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "apple",
+                    "lemon zest",
+                    "lemon juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lemon juice",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "lemon zest",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "apple",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "apple",
+                    "lemon zest",
+                    "lemon juice"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar",
+                    "egg white and yolk"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar",
+                    "egg white and yolk"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "jug",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [],
+                "ingredients": [],
+                "container": "jug"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar",
+                    "egg white and yolk",
+                    "milk"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "jug",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar",
+                    "egg white and yolk",
+                    "milk"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "milk",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "egg mixture",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar",
+                    "egg white and yolk",
+                    "milk"
+                ],
+                "container": "blender jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender jar"
+            }
+        ],
+        "motion_node": "detach",
+        "output_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg mixture",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar",
+                    "egg white and yolk",
+                    "milk"
+                ],
+                "container": "blender jar"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg mixture",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar",
+                    "egg white and yolk",
+                    "milk"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "blender jar",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "baking powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "cinnamon"
+                ],
+                "container": null
+            },
+            {
+                "label": "cinnamon",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cinnamon"
+                ],
+                "container": null
+            },
+            {
+                "label": "cinnamon",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cinnamon"
+                ],
+                "container": null
+            },
+            {
+                "label": "cinnamon",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder",
+                    "cinammon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder",
+                    "cinammon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder",
+                    "cinammon",
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder",
+                    "cinammon",
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder",
+                    "cinammon",
+                    "vanilla extract",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder",
+                    "cinammon",
+                    "vanilla extract",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "baking powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cinnamon",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "egg mixture",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar",
+                    "egg white and yolk",
+                    "milk"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "cake batter",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder",
+                    "cinammon",
+                    "vanilla extract",
+                    "salt"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "apple",
+                    "lemon zest",
+                    "lemon juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "cake batter",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder",
+                    "cinammon",
+                    "vanilla extract",
+                    "salt"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake batter",
+                    "apple",
+                    "lemon zest",
+                    "lemon juice"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cake batter",
+                    "apple",
+                    "lemon zest",
+                    "lemon juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "cake batter",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder",
+                    "cinammon",
+                    "vanilla extract",
+                    "salt"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "lemon juice",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "lemon zest",
+                "states": [],
+                "ingredients": [
+                    "lemon"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "apple",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "cake batter",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder",
+                    "cinammon",
+                    "vanilla extract",
+                    "salt",
+                    "apple",
+                    "lemon zest",
+                    "lemon juice"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cake batter",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder",
+                    "cinammon",
+                    "vanilla extract",
+                    "salt",
+                    "apple",
+                    "lemon zest",
+                    "lemon juice"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "sheet"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "cake batter"
+                ],
+                "container": "sheet"
+            },
+            {
+                "label": "cake batter",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder",
+                    "cinammon",
+                    "vanilla extract",
+                    "salt",
+                    "apple",
+                    "lemon zest",
+                    "lemon juice"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "cake batter"
+                ],
+                "container": "sheet"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "cake batter"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "cake batter"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "cake batter",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "baking powder",
+                    "cinammon",
+                    "vanilla extract",
+                    "salt",
+                    "apple",
+                    "lemon zest",
+                    "lemon juice"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "bake",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "apple cake"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "apple cake",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "butter",
+                    "sugar",
+                    "egg white and yolk",
+                    "milk",
+                    "flour",
+                    "baking powder",
+                    "cinammon",
+                    "vanilla extract",
+                    "salt",
+                    "apple",
+                    "lemon zest",
+                    "lemon juice"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    }
+]

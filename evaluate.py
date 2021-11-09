@@ -96,6 +96,7 @@ def get_FU_list(filepath):
 
 
 def convert_to_json(source_dir='output', target_dir='output_json'):
+
     for currentpath, folders, files in os.walk(source_dir):
         progress_line_dir = currentpath.replace(source_dir, target_dir)
 
@@ -114,8 +115,11 @@ def convert_to_json(source_dir='output', target_dir='output_json'):
                 progress_line_dir, file.replace('.txt', '.json'))
             F = open(progress_line_path, 'w')
             json.dump(task_tree_json, F, indent=4)
-
             F.close()
+
+
+convert_to_json('subgraphs/TXT', 'subgraphs/JSON')
+exit(0)
 
 
 def save_progress_line(source_path, target_path):

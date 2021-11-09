@@ -1,0 +1,727 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "light",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "worcestershire sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "worcestershire sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "worcestershire sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce",
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce",
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "rice beer"
+                ],
+                "container": null
+            },
+            {
+                "label": "rice beer",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer"
+                ],
+                "container": null
+            },
+            {
+                "label": "rice beer",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer"
+                ],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "white wine"
+                ],
+                "container": null
+            },
+            {
+                "label": "white wine",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine"
+                ],
+                "container": null
+            },
+            {
+                "label": "white wine",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine"
+                ],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "hot sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "hot sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "hot sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "hot sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "white wine",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "rice beer",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "worcestershire sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "soy sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "ground beef",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "meat mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "meat mix",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "meat mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "meat mix",
+                "states": [],
+                "ingredients": [
+                    "ground beef",
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "shape",
+        "output_nodes": [
+            {
+                "label": "beef patty",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "beef patty",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "beef patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef patty",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "beef patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef patty",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": "grill"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "beef patty",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "beef patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef patty",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": "grill"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "beef patty",
+                "states": [
+                    "flipped"
+                ],
+                "ingredients": [
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "beef patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef patty",
+                "states": [
+                    "flipped"
+                ],
+                "ingredients": [
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": "grill"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "beef patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": "grill"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "grill",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "beef patty"
+                ],
+                "container": null
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bread",
+                "states": [
+                    "bun"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "bread"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": "grill"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "hamburger"
+                ],
+                "container": null
+            },
+            {
+                "label": "hamburger",
+                "states": [],
+                "ingredients": [
+                    "beef patty"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "beef patty",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "worcestershire sauce",
+                    "soy sauce",
+                    "rice beer",
+                    "white wine",
+                    "hot sauce",
+                    "sugar"
+                ],
+                "container": "bread"
+            }
+        ]
+    }
+]

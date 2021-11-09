@@ -1,0 +1,930 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid",
+                    "boiling"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "drinking glass",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid",
+                    "hot"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "watermelon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "watermelon"
+                ],
+                "container": null
+            },
+            {
+                "label": "watermelon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "watermelon",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "watermelon",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "watermelon",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "watermelon",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "watermelon"
+                ],
+                "container": null
+            },
+            {
+                "label": "watermelon",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "plastic bag",
+                "states": [
+                    "opened",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "insert",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "watermelon"
+                ],
+                "container": null
+            },
+            {
+                "label": "watermelon",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plastic bag"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "watermelon"
+                ],
+                "container": null
+            },
+            {
+                "label": "refrigerator",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "refrigerator",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "plastic bag"
+            },
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "watermelon"
+                ],
+                "container": "refrigerator"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "refrigerator",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "plastic bag"
+            },
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "watermelon"
+                ],
+                "container": "refrigerator"
+            },
+            {
+                "label": "watermelon",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plastic bag"
+            }
+        ],
+        "motion_node": "freeze",
+        "output_nodes": [
+            {
+                "label": "watermelon",
+                "states": [
+                    "frozen",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plastic bag"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "refrigerator",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "plastic bag"
+            },
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "watermelon"
+                ],
+                "container": "refrigerator"
+            }
+        ],
+        "motion_node": "take out",
+        "output_nodes": [
+            {
+                "label": "refrigerator",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "watermelon"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "tea bag"
+                ],
+                "container": null
+            },
+            {
+                "label": "tea bag",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "insert",
+        "output_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "tea bag",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "tea bag",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            },
+            {
+                "label": "packet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "tea bag",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "tea bag",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid",
+                    "hot"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            },
+            {
+                "label": "tea bag",
+                "states": [],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "brew",
+        "output_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "tea",
+                    "tea bag"
+                ],
+                "container": null
+            },
+            {
+                "label": "tea",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "tea",
+                    "tea bag"
+                ],
+                "container": null
+            },
+            {
+                "label": "tea bag",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "tea"
+                ],
+                "container": null
+            },
+            {
+                "label": "tea bag",
+                "states": [
+                    "soaked"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "watermelon"
+                ],
+                "container": null
+            },
+            {
+                "label": "watermelon",
+                "states": [
+                    "frozen",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plastic bag"
+            },
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "strawberry"
+                ],
+                "container": null
+            },
+            {
+                "label": "strawberry",
+                "states": [
+                    "frozen"
+                ],
+                "ingredients": [],
+                "container": "plastic bag"
+            },
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "tea"
+                ],
+                "container": null
+            },
+            {
+                "label": "tea",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "drinking glass"
+            }
+        ],
+        "motion_node": "pour*",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "strawberry",
+                    "tea",
+                    "watermelon"
+                ],
+                "container": null
+            },
+            {
+                "label": "watermelon",
+                "states": [
+                    "frozen",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            },
+            {
+                "label": "tea",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            },
+            {
+                "label": "drinking glass",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "strawberry",
+                    "tea",
+                    "watermelon"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar syrup"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar syrup",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "strawberry",
+                    "sugar syrup",
+                    "tea",
+                    "watermelon"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar syrup",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "strawberry",
+                    "sugar syrup",
+                    "tea",
+                    "watermelon"
+                ],
+                "container": null
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "strawberry",
+                    "sugar syrup",
+                    "tea",
+                    "watermelon"
+                ],
+                "container": "blender lid"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "strawberry",
+                    "sugar syrup",
+                    "tea",
+                    "watermelon"
+                ],
+                "container": "blender lid"
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "attach",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "strawberry",
+                    "sugar syrup",
+                    "tea",
+                    "watermelon"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender cup"
+            },
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "strawberry",
+                    "sugar syrup",
+                    "tea",
+                    "watermelon"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "watermelon",
+                "states": [
+                    "frozen",
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            },
+            {
+                "label": "tea",
+                "states": [],
+                "ingredients": [],
+                "container": "blender cup"
+            },
+            {
+                "label": "sugar syrup",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "smoothie",
+                "states": [
+                    "thick liquid",
+                    "blended"
+                ],
+                "ingredients": [
+                    "strawberry",
+                    "sugar syrup",
+                    "tea",
+                    "watermelon"
+                ],
+                "container": "blender cup"
+            },
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "smoothie"
+                ],
+                "container": "blender"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "smoothie"
+                ],
+                "container": "blender"
+            },
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ],
+        "motion_node": "detach",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "smoothie"
+                ],
+                "container": "blender lid"
+            },
+            {
+                "label": "blender",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "smoothie"
+                ],
+                "container": "blender lid"
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": "blender cup"
+            }
+        ],
+        "motion_node": "uncover",
+        "output_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "smoothie"
+                ],
+                "container": null
+            },
+            {
+                "label": "blender lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender cup",
+                "states": [],
+                "ingredients": [
+                    "smoothie"
+                ],
+                "container": null
+            },
+            {
+                "label": "smoothie",
+                "states": [
+                    "blended",
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "strawberry",
+                    "sugar syrup",
+                    "tea",
+                    "watermelon"
+                ],
+                "container": "blender cup"
+            },
+            {
+                "label": "drinking glass",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "drinking glass",
+                "states": [],
+                "ingredients": [
+                    "smoothie"
+                ],
+                "container": null
+            },
+            {
+                "label": "smoothie",
+                "states": [
+                    "blended",
+                    "thick liquid",
+                    "ready"
+                ],
+                "ingredients": [
+                    "strawberry",
+                    "sugar syrup",
+                    "tea",
+                    "watermelon"
+                ],
+                "container": "drinking glass"
+            },
+            {
+                "label": "blender cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    }
+]

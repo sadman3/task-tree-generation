@@ -1,0 +1,1137 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "mixer"
+            },
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "cream cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "cream cheese",
+                "states": [
+                    "block"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cream cheese"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "cream cheese",
+                "states": [
+                    "block"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cream cheese"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "cream cheese",
+                "states": [
+                    "block"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "cream cheese",
+                "states": [
+                    "softened"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "can",
+                "states": [],
+                "ingredients": [
+                    "condensed milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "condensed milk",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "can"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "cream cheese"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "condensed milk",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "pudding mix"
+                ],
+                "container": null
+            },
+            {
+                "label": "pudding mix",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "pudding mix"
+                ],
+                "container": "mixer"
+            }
+        ],
+        "motion_node": "pour and blend",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "pudding mix"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "pudding mix",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "pudding mix"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour and blend",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix",
+                    "vanilla extract"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "vanilla extract",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix",
+                    "vanilla extract"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "cream cheese",
+                "states": [
+                    "softened"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "vanilla extract",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "milk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "pudding mix",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "condensed milk",
+                "states": [
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "pudding"
+                ],
+                "container": "mixer"
+            },
+            {
+                "label": "pudding",
+                "states": [
+                    "mixed",
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix",
+                    "vanilla extract"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "pudding"
+                ],
+                "container": "mixer"
+            }
+        ],
+        "motion_node": "detach",
+        "output_nodes": [
+            {
+                "label": "mixer",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "pudding"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "pudding"
+                ],
+                "container": null
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "whipped cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "whipped cream",
+                "states": [
+                    "whipped",
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "pudding",
+                    "whipped cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "whipped cream",
+                "states": [
+                    "whipped",
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "pudding",
+                    "whipped cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "pudding",
+                "states": [
+                    "mixed",
+                    "thick liquid"
+                ],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix",
+                    "vanilla extract"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "whipped cream",
+                "states": [
+                    "whipped",
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "pudding"
+                ],
+                "container": null
+            },
+            {
+                "label": "pudding",
+                "states": [
+                    "thick liquid",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix",
+                    "vanilla extract",
+                    "whipped cream"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "banana",
+                "states": [
+                    "whole",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "banana",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "banana",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "banana"
+                ],
+                "container": null
+            },
+            {
+                "label": "banana",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "banana",
+                "states": [
+                    "peeled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "banana",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "box",
+                "states": [],
+                "ingredients": [
+                    "vanilla wafer"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla wafer",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "box"
+            },
+            {
+                "label": "baking dish",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking dish",
+                "states": [],
+                "ingredients": [
+                    "vanilla wafer"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla wafer",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "baking dish"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "banana"
+                ],
+                "container": null
+            },
+            {
+                "label": "banana",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "baking dish",
+                "states": [],
+                "ingredients": [
+                    "vanilla wafer"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking dish",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "vanilla wafer"
+                ],
+                "container": null
+            },
+            {
+                "label": "banana",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "baking dish"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking dish",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "vanilla wafer"
+                ],
+                "container": null
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "pudding"
+                ],
+                "container": null
+            },
+            {
+                "label": "pudding",
+                "states": [
+                    "thick liquid",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix",
+                    "vanilla extract",
+                    "whipped cream"
+                ],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "baking dish",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "pudding",
+                    "vanilla wafer"
+                ],
+                "container": null
+            },
+            {
+                "label": "pudding",
+                "states": [
+                    "thick liquid",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix",
+                    "vanilla extract",
+                    "whipped cream"
+                ],
+                "container": "baking dish"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking dish",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "pudding",
+                    "vanilla wafer"
+                ],
+                "container": null
+            },
+            {
+                "label": "pudding",
+                "states": [
+                    "thick liquid",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix",
+                    "vanilla extract",
+                    "whipped cream"
+                ],
+                "container": "baking dish"
+            },
+            {
+                "label": "vanilla wafer",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "box"
+            }
+        ],
+        "motion_node": "insert",
+        "output_nodes": [
+            {
+                "label": "pudding",
+                "states": [
+                    "thick liquid",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix",
+                    "vanilla extract",
+                    "vanilla wafer",
+                    "whipped cream"
+                ],
+                "container": "baking dish"
+            },
+            {
+                "label": "vanilla wafer",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "pudding"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking dish",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "pudding",
+                    "vanilla wafer"
+                ],
+                "container": null
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "whipped cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "whipped cream",
+                "states": [
+                    "creamy",
+                    "whipped"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pudding",
+                "states": [
+                    "incomplete"
+                ],
+                "ingredients": [],
+                "container": "baking dish"
+            }
+        ],
+        "motion_node": "pour and spread",
+        "output_nodes": [
+            {
+                "label": "baking dish",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "pudding",
+                    "vanilla wafer",
+                    "whipped cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "pudding",
+                "states": [
+                    "thick liquid",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix",
+                    "vanilla extract",
+                    "vanilla wafer",
+                    "whipped cream"
+                ],
+                "container": "whipped cream"
+            },
+            {
+                "label": "whipped cream",
+                "states": [
+                    "whipped",
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "pudding"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking dish",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "pudding",
+                    "vanilla wafer",
+                    "whipped cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "saran wrap",
+                "states": [],
+                "ingredients": [],
+                "container": "box"
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "baking dish",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "pudding",
+                    "vanilla wafer",
+                    "whipped cream"
+                ],
+                "container": "saran wrap"
+            },
+            {
+                "label": "saran wrap",
+                "states": [],
+                "ingredients": [],
+                "container": "baking dish"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking dish",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "pudding",
+                    "vanilla wafer",
+                    "whipped cream"
+                ],
+                "container": "saran wrap"
+            },
+            {
+                "label": "fridge",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pudding",
+                "states": [
+                    "thick liquid",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix",
+                    "vanilla extract",
+                    "vanilla wafer",
+                    "whipped cream"
+                ],
+                "container": "whipped cream"
+            }
+        ],
+        "motion_node": "chill",
+        "output_nodes": [
+            {
+                "label": "banana pudding",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "condensed milk",
+                    "cream cheese",
+                    "milk",
+                    "pudding mix",
+                    "vanilla extract",
+                    "vanilla wafer",
+                    "whipped cream",
+                    "whipped cream"
+                ],
+                "container": "baking dish"
+            }
+        ]
+    }
+]

@@ -3,10 +3,6 @@
        "type": "salad",
        "ingredients": [
               {
-                     "object": "juice",
-                     "state": "juice"
-              },
-              {
                      "object": "lemon",
                      "state": "grated"
               },
@@ -29,10 +25,6 @@
               {
                      "object": "apple",
                      "state": "halved"
-              },
-              {
-                     "object": "juice",
-                     "state": "juice"
               },
               {
                      "object": "quinoa",

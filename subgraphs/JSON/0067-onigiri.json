@@ -1,0 +1,772 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "white rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "white rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "rice cooker",
+                "states": [
+                    "off",
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "rice cooker",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "rice cooker"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "rice cooker",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "rice cooker",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "rice",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "rice cooker"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "rice cooker",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [
+                    "rice",
+                    "water"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "rice cooker",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "rice",
+                    "water"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "rice cooker",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "rice",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "rice cooker"
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "rice cooker"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "rice cooker",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "rice cooker"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "rice cooker",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "rice cooker"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "hand",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "hand",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "hand"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "hand",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "white rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "hand"
+            }
+        ],
+        "motion_node": "shape",
+        "output_nodes": [
+            {
+                "label": "hand",
+                "states": [],
+                "ingredients": [
+                    "rice ball"
+                ],
+                "container": null
+            },
+            {
+                "label": "rice ball",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": "hand"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "hand",
+                "states": [],
+                "ingredients": [
+                    "rice ball"
+                ],
+                "container": null
+            },
+            {
+                "label": "rice ball",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": "hand"
+            }
+        ],
+        "motion_node": "press",
+        "output_nodes": [
+            {
+                "label": "rice ball",
+                "states": [
+                    "pressed"
+                ],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": "hand"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "rice ball",
+                "states": [
+                    "pressed"
+                ],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": "hand"
+            }
+        ],
+        "motion_node": "poke",
+        "output_nodes": [
+            {
+                "label": "rice ball",
+                "states": [
+                    "holed"
+                ],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": "hand"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "rice ball",
+                "states": [
+                    "holed"
+                ],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": "hand"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salmon"
+                ],
+                "container": null
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "cooked",
+                    "flaked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "rice ball",
+                "states": [
+                    "holed"
+                ],
+                "ingredients": [
+                    "rice",
+                    "salmon"
+                ],
+                "container": "hand"
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "flaked",
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "rice ball"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "hand",
+                "states": [],
+                "ingredients": [
+                    "rice ball"
+                ],
+                "container": null
+            },
+            {
+                "label": "rice ball",
+                "states": [
+                    "holed"
+                ],
+                "ingredients": [
+                    "rice",
+                    "salmon"
+                ],
+                "container": "hand"
+            },
+            {
+                "label": "salmon",
+                "states": [
+                    "flaked",
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "rice ball"
+            }
+        ],
+        "motion_node": "roll",
+        "output_nodes": [
+            {
+                "label": "rice ball",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "rice",
+                    "salmon"
+                ],
+                "container": "hand"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "hand",
+                "states": [],
+                "ingredients": [
+                    "rice ball"
+                ],
+                "container": null
+            },
+            {
+                "label": "rice ball",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "rice",
+                    "salmon"
+                ],
+                "container": "hand"
+            }
+        ],
+        "motion_node": "press",
+        "output_nodes": [
+            {
+                "label": "rice ball",
+                "states": [
+                    "pressed"
+                ],
+                "ingredients": [
+                    "rice",
+                    "salmon"
+                ],
+                "container": "hand"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "seaweed"
+                ],
+                "container": null
+            },
+            {
+                "label": "seaweed",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "seaweed"
+                ],
+                "container": null
+            },
+            {
+                "label": "seaweed",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "hand",
+                "states": [],
+                "ingredients": [
+                    "rice ball"
+                ],
+                "container": null
+            },
+            {
+                "label": "rice ball",
+                "states": [
+                    "pressed"
+                ],
+                "ingredients": [
+                    "rice",
+                    "salmon"
+                ],
+                "container": "hand"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "seaweed"
+                ],
+                "container": null
+            },
+            {
+                "label": "seaweed",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "place",
+        "output_nodes": [
+            {
+                "label": "hand",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "seaweed",
+                    "rice ball"
+                ],
+                "container": null
+            },
+            {
+                "label": "rice ball",
+                "states": [
+                    "pressed"
+                ],
+                "ingredients": [
+                    "rice",
+                    "salmon"
+                ],
+                "container": "seaweed"
+            },
+            {
+                "label": "seaweed",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "seaweed",
+                    "rice ball"
+                ],
+                "container": null
+            },
+            {
+                "label": "rice ball",
+                "states": [
+                    "pressed"
+                ],
+                "ingredients": [
+                    "rice",
+                    "salmon"
+                ],
+                "container": "seaweed"
+            },
+            {
+                "label": "seaweed",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "wrap",
+        "output_nodes": [
+            {
+                "label": "onigiri",
+                "states": [
+                    "pressed"
+                ],
+                "ingredients": [
+                    "salmon",
+                    "rice",
+                    "seaweed"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "seaweed",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "rice ball"
+            }
+        ]
+    }
+]

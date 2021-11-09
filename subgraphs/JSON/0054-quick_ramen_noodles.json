@@ -1,0 +1,1173 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "grapeseed oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "grapeseed oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "grapeseed oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "grapeseed oil",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "grapeseed oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "scallion"
+                ],
+                "container": null
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "scallion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "chili sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "chili sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "chili sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "chili sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "chili sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "chili sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "chili sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "ginger",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "grate",
+        "output_nodes": [
+            {
+                "label": "ginger",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "grater",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "chicken stock"
+                ],
+                "container": null
+            },
+            {
+                "label": "chicken stock",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "chicken stock",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "beef stock"
+                ],
+                "container": null
+            },
+            {
+                "label": "beef stock",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock",
+                    "beef stock"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "beef stock",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock",
+                    "beef stock"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "cup",
+                "states": [],
+                "ingredients": [
+                    "soy sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "soy sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock",
+                    "beef stock",
+                    "soy sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "soy sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock",
+                    "beef stock",
+                    "soy sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "cup",
+                "states": [],
+                "ingredients": [
+                    "fish sauce"
+                ],
+                "container": null
+            },
+            {
+                "label": "fish sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock",
+                    "beef stock",
+                    "soy sauce",
+                    "fish sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "fish sauce",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock",
+                    "beef stock",
+                    "soy sauce",
+                    "fish sauce"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock",
+                    "beef stock",
+                    "soy sauce",
+                    "fish sauce",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock",
+                    "beef stock",
+                    "soy sauce",
+                    "fish sauce",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "soup broth"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "soup broth",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock",
+                    "beef stock",
+                    "soy sauce",
+                    "fish sauce",
+                    "water"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "soup broth"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "soup broth",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock",
+                    "beef stock",
+                    "soy sauce",
+                    "fish sauce",
+                    "water"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "uncracked"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "crack",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "soup broth",
+                    "egg white and yolk"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "soup broth",
+                    "egg white and yolk"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "soup broth",
+                    "egg white and yolk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "boiled"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "soup broth",
+                    "egg white and yolk"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "boiled"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "soup broth"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "boiled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "soup broth"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "soup broth",
+                    "noodle"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "soup broth",
+                    "noodle"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "soup broth",
+                    "noodle"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "soup broth",
+                    "noodle"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "noodle",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "soup broth",
+                    "noodle"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "noodle"
+                ],
+                "container": null
+            },
+            {
+                "label": "ladle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ramen"
+                ],
+                "container": null
+            },
+            {
+                "label": "ramen",
+                "states": [],
+                "ingredients": [
+                    "soup broth",
+                    "noodle"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "soup broth",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "soup broth",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock",
+                    "beef stock",
+                    "soy sauce",
+                    "fish sauce",
+                    "water"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "ramen"
+                ],
+                "container": null
+            },
+            {
+                "label": "ramen",
+                "states": [],
+                "ingredients": [
+                    "soup broth",
+                    "noodle"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "soup broth",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock",
+                    "beef stock",
+                    "soy sauce",
+                    "fish sauce",
+                    "water"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "tongs",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [
+                    "boiled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "ramen",
+                "states": [],
+                "ingredients": [
+                    "soup broth",
+                    "garlic",
+                    "scallion",
+                    "chili sauce",
+                    "ginger",
+                    "chicken stock",
+                    "beef stock",
+                    "soy sauce",
+                    "fish sauce",
+                    "water",
+                    "noodle",
+                    "egg white and yolk"
+                ],
+                "container": "bowl"
+            }
+        ]
+    }
+]

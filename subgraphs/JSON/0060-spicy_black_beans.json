@@ -1,0 +1,1337 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "jalapeno",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "jalapeno"
+                ],
+                "container": null
+            },
+            {
+                "label": "jalapeno",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "jalapeno"
+                ],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "jalapeno",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "jalapeno",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "jalapeno"
+                ],
+                "container": null
+            },
+            {
+                "label": "jalapeno",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "onion"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "garlic",
+                    "onion",
+                    "jalapeno"
+                ],
+                "container": null
+            },
+            {
+                "label": "jalapeno",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "jalapeno",
+                    "onion",
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "jalapeno",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "jalapeno",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "jalapeno",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "onion",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "jalapeno",
+                "states": [
+                    "fried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black bean"
+                ],
+                "container": null
+            },
+            {
+                "label": "black bean",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "black bean",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "black bean",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "black bean",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "black bean",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt",
+                    "black pepper",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt",
+                    "black pepper",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt",
+                    "black pepper",
+                    "water"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt",
+                    "black pepper",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "bay leaf"
+                ],
+                "container": null
+            },
+            {
+                "label": "bay leaf",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "bay leaf"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "black bean",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "black pepper",
+                    "bay leaf"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "bay leaf",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "bay leaf"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "black bean",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "black pepper",
+                    "bay leaf"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "bay leaf"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "black bean",
+                    "salt",
+                    "black pepper",
+                    "water",
+                    "bay leaf"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "black bean",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "black pepper",
+                    "bay leaf"
+                ],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "black bean"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "black bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "black pepper",
+                    "bay leaf"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "black bean"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "uncover",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "black bean"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pan lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "black bean"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "black bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "black pepper",
+                    "bay leaf"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "bay leaf",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "black bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "bay leaf",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "black bean"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "black bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "ladle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "black bean",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "jalapeno",
+                    "onion",
+                    "garlic",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "black bean"
+                ],
+                "container": null
+            }
+        ]
+    }
+]

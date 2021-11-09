@@ -1,0 +1,2269 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bag",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "whole",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            },
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "whole",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "whole",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ],
+        "motion_node": "rinse",
+        "output_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "washed",
+                    "whole",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid",
+                    "boiling"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "washed",
+                    "whole",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "potato",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "whole",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "potato",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "whole",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "boil",
+        "output_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "whole",
+                    "cooked",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "packet",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "boiling",
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "shrimp",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "shrimp",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "boil",
+        "output_nodes": [
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid",
+                    "boiling"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "egg",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "egg",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "boil",
+        "output_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "whole",
+                    "hardboiled"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "mayonnaise",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "mayonnaise",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "egg",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole",
+                    "hardboiled"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "drain",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole",
+                    "hardboiled"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "whole",
+                    "hardboiled"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "whole",
+                    "hardboiled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "whole",
+                    "hardboiled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "peeled",
+                    "whole",
+                    "hardboiled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "mustard"
+                ],
+                "container": null
+            },
+            {
+                "label": "mustard",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "squeeze",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "mustard"
+                ],
+                "container": null
+            },
+            {
+                "label": "mustard",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [
+                    "relish"
+                ],
+                "container": null
+            },
+            {
+                "label": "relish",
+                "states": [
+                    "sauce"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "relish"
+                ],
+                "container": null
+            },
+            {
+                "label": "relish",
+                "states": [
+                    "sauce"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "dill"
+                ],
+                "container": null
+            },
+            {
+                "label": "dill",
+                "states": [
+                    "dried",
+                    "leaves"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "dill"
+                ],
+                "container": null
+            },
+            {
+                "label": "dill",
+                "states": [
+                    "dried",
+                    "leaves"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "faucet",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "faucet"
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "wash",
+        "output_nodes": [
+            {
+                "label": "celery",
+                "states": [
+                    "washed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "washed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "celery"
+                ],
+                "container": null
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "washed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "celery",
+                "states": [
+                    "washed",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "celery",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "celery"
+                ],
+                "container": null
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "celery"
+                ],
+                "container": null
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "shrimp",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "drain",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "mayonnaise",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "mayonnaise",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "shaker",
+                "states": [],
+                "ingredients": [
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "shaker"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "mayonnaise"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "mayonnaise"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "mayonnaise",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "mayonnaise",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "mustard"
+                ],
+                "container": null
+            },
+            {
+                "label": "mustard",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "mayonnaise",
+                    "mustard",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mustard",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "mayonnaise",
+                    "mustard",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "relish"
+                ],
+                "container": null
+            },
+            {
+                "label": "relish",
+                "states": [
+                    "sauce"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "relish",
+                "states": [
+                    "sauce"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "dill"
+                ],
+                "container": null
+            },
+            {
+                "label": "dill",
+                "states": [
+                    "dried",
+                    "leaves"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "dill",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "dill",
+                "states": [
+                    "dried",
+                    "leaves"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "dill",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "green onion"
+                ],
+                "container": null
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "dill",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "dill",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "celery"
+                ],
+                "container": null
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "peeled",
+                    "hardboiled",
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "egg",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "egg",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "mayonnaise",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mustard",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "relish",
+                "states": [
+                    "sauce"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "dill",
+                "states": [
+                    "leaves",
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "green onion",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "celery",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "shrimp",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix and mash*",
+        "output_nodes": [
+            {
+                "label": "salad dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "egg",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "refrigerator",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "egg",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "salad dressing",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "egg",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "chill",
+        "output_nodes": [
+            {
+                "label": "salad dressing",
+                "states": [
+                    "creamy",
+                    "chilled",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "egg",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "potato",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "whole",
+                    "cooked",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "strainer",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "drain",
+        "output_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "whole",
+                    "cooked",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "strainer",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "whole",
+                    "cooked",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "strainer"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "whole",
+                    "cooked",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "whole",
+                    "cooked",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "slice",
+        "output_nodes": [
+            {
+                "label": "potato",
+                "states": [
+                    "halved",
+                    "cooked",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "halved",
+                    "cooked",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "halved",
+                    "cooked",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "egg",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "halved",
+                    "cooked",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "egg",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "potato",
+                    "relish",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "halved",
+                    "cooked",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "egg",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "potato",
+                    "relish",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": null
+            },
+            {
+                "label": "salad dressing",
+                "states": [
+                    "creamy",
+                    "mixed",
+                    "chilled"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "egg",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "relish",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "potato",
+                "states": [
+                    "halved",
+                    "cooked",
+                    "unpeeled"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "potato salad"
+                ],
+                "container": null
+            },
+            {
+                "label": "potato salad",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "black pepper",
+                    "celery",
+                    "dill",
+                    "egg",
+                    "green onion",
+                    "mayonnaise",
+                    "mustard",
+                    "potato",
+                    "relish",
+                    "salt",
+                    "shrimp"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    }
+]

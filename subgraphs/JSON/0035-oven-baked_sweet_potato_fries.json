@@ -1,0 +1,873 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "sweet potato",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "peel",
+        "output_nodes": [
+            {
+                "label": "sweet potato",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "sweet potato",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "sweet potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet potato",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "sweet potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet potato",
+                "states": [
+                    "peeled"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "sweet potato",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "open",
+        "output_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "sweet potato",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "sweet potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "plastic bag",
+                "states": [
+                    "opened"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "sweet potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet potato",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "sweet potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "flour"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "close",
+        "output_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "flour"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet potato",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            }
+        ],
+        "motion_node": "shake",
+        "output_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet potato",
+                "states": [
+                    "floured"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet potato",
+                "states": [
+                    "floured"
+                ],
+                "ingredients": [],
+                "container": "bag"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "plastic bag",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet potato",
+                "states": [
+                    "floured"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet potato",
+                "states": [
+                    "floured"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "vegetable oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "vegetable oil"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "vegetable oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic powder",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "vegetable oil",
+                    "garlic powder"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "vegetable oil",
+                    "garlic powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "flour",
+                    "vegetable oil",
+                    "garlic powder",
+                    "salt"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "flour",
+                    "vegetable oil",
+                    "garlic powder",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "black pepper",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "flour",
+                    "vegetable oil",
+                    "garlic powder",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "flour",
+                    "vegetable oil",
+                    "garlic powder",
+                    "salt",
+                    "black pepper"
+                ],
+                "container": null
+            },
+            {
+                "label": "paprika",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "flour",
+                    "vegetable oil",
+                    "garlic powder",
+                    "salt",
+                    "black pepper",
+                    "paprika"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato",
+                    "flour",
+                    "vegetable oil",
+                    "garlic powder",
+                    "salt",
+                    "black pepper",
+                    "paprika"
+                ],
+                "container": null
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "sweet potato",
+                "states": [
+                    "floured"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato fries"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet potato fries",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "vegetable oil",
+                    "garlic powder",
+                    "salt",
+                    "black pepper",
+                    "paprika"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "sheet"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sweet potato fries"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet potato fries",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "vegetable oil",
+                    "garlic powder",
+                    "salt",
+                    "black pepper",
+                    "paprika"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "sweet potato fries"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet potato fries",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "vegetable oil",
+                    "garlic powder",
+                    "salt",
+                    "black pepper",
+                    "paprika"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "sweet potato fries"
+                ],
+                "container": null
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "sweet potato fries"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "sweet potato fries"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "sweet potato fries",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "vegetable oil",
+                    "garlic powder",
+                    "salt",
+                    "black pepper",
+                    "paprika"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "bake",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "sweet potato fries"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "sweet potato fries",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "vegetable oil",
+                    "garlic powder",
+                    "salt",
+                    "black pepper",
+                    "paprika"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "sweet potato fries"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "sweet potato fries"
+                ],
+                "container": null
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "sweet potato fries"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet potato fries",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "vegetable oil",
+                    "garlic powder",
+                    "salt",
+                    "black pepper",
+                    "paprika"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "sweet potato fries"
+                ],
+                "container": null
+            },
+            {
+                "label": "sweet potato fries",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "flour",
+                    "vegetable oil",
+                    "garlic powder",
+                    "salt",
+                    "black pepper",
+                    "paprika"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

@@ -1,0 +1,1500 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "cranberry"
+                ],
+                "container": null
+            },
+            {
+                "label": "cranberry",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "cranberry"
+                ],
+                "container": null
+            },
+            {
+                "label": "cranberry",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "cranberry"
+                ],
+                "container": null
+            },
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "maple syrup"
+                ],
+                "container": null
+            },
+            {
+                "label": "maple syrup",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "maple syrup",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "cranberry",
+                    "maple syrup"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "cranberry",
+                    "maple syrup"
+                ],
+                "container": null
+            },
+            {
+                "label": "maple syrup",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "cranberry",
+                "states": [
+                    "dried"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "soak",
+        "output_nodes": [
+            {
+                "label": "cranberry",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [
+                    "maple syrup"
+                ],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cornmeal",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cornmeal"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cornmeal"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cornmeal"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking soda",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "box"
+            },
+            {
+                "label": "box",
+                "states": [],
+                "ingredients": [
+                    "baking soda"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour",
+                    "baking soda"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking soda",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour",
+                    "baking soda"
+                ],
+                "container": null
+            },
+            {
+                "label": "baking powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "tin can"
+            },
+            {
+                "label": "tin can",
+                "states": [],
+                "ingredients": [
+                    "baking powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour",
+                    "baking soda",
+                    "baking powder"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "container",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "container"
+            },
+            {
+                "label": "cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "cup",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour",
+                    "baking soda",
+                    "baking powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "cup",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "cup"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour",
+                    "baking soda",
+                    "baking powder",
+                    "salt"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour",
+                    "baking soda",
+                    "baking powder",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "baking soda",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "baking powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cornmeal",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour mixture",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour",
+                    "baking soda",
+                    "baking powder",
+                    "salt"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour mixture",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour",
+                    "baking soda",
+                    "baking powder",
+                    "salt"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "yogurt",
+                "states": [],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "yogurt",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour mixture",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour",
+                    "baking soda",
+                    "baking powder",
+                    "salt"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "yogurt",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pancake batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "pancake batter",
+                "states": [],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pancake batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "cranberry",
+                    "maple syrup"
+                ],
+                "container": null
+            },
+            {
+                "label": "cranberry",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [
+                    "maple syrup"
+                ],
+                "container": "measuring cup"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pancake batter",
+                    "cranberry",
+                    "maple syrup"
+                ],
+                "container": null
+            },
+            {
+                "label": "cranberry",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [
+                    "maple syrup"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "maple syrup",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pancake batter",
+                    "cranberry",
+                    "maple syrup"
+                ],
+                "container": null
+            },
+            {
+                "label": "walnut",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "walnut"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pancake batter",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pancake batter",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut"
+                ],
+                "container": null
+            },
+            {
+                "label": "pancake batter",
+                "states": [],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "cranberry",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [
+                    "maple syrup"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "maple syrup",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "walnut",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pancake batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "pancake batter",
+                "states": [],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "dark chocolate"
+                ],
+                "container": null
+            },
+            {
+                "label": "dark chocolate",
+                "states": [
+                    "bar"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "dark chocolate"
+                ],
+                "container": null
+            },
+            {
+                "label": "dark chocolate",
+                "states": [
+                    "bar"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "dark chocolate"
+                ],
+                "container": null
+            },
+            {
+                "label": "dark chocolate",
+                "states": [
+                    "bar"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "dark chocolate",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "dark chocolate",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "dark chocolate"
+                ],
+                "container": null
+            },
+            {
+                "label": "dark chocolate",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pancake batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "dark chocolate"
+                ],
+                "container": null
+            },
+            {
+                "label": "dark chocolate",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pancake batter",
+                    "chocolate"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pancake batter",
+                    "chocolate"
+                ],
+                "container": null
+            },
+            {
+                "label": "pancake batter",
+                "states": [],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "dark chocolate",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pancake batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "pancake batter",
+                "states": [],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut",
+                    "dark chocolate"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "tin can",
+                "states": [],
+                "ingredients": [
+                    "canola oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "canola oil",
+                "states": [],
+                "ingredients": [],
+                "container": "tin can"
+            }
+        ],
+        "motion_node": "spray",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "canola oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "canola oil",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "pancake batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "pancake batter",
+                "states": [],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut",
+                    "dark chocolate"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "canola oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "ladle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "ladle",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "pancake batter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pancake batter",
+                "states": [],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut",
+                    "dark chocolate"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "pancake batter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pancake batter",
+                "states": [],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut",
+                    "dark chocolate"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "pancake",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut",
+                    "dark chocolate"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "pancake batter"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pancake",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut",
+                    "dark chocolate"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "flip",
+        "output_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "pancake"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pancake",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut",
+                    "dark chocolate"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cooking pan",
+                "states": [],
+                "ingredients": [
+                    "pancake"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pancake",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "flour mixture",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut",
+                    "dark chocolate"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "turner",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "pancake"
+                ],
+                "container": null
+            },
+            {
+                "label": "cranberry-walnut pancake",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour",
+                    "baking soda",
+                    "baking powder",
+                    "salt",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut",
+                    "dark chocolate"
+                ],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "pancake"
+                ],
+                "container": null
+            },
+            {
+                "label": "whipped cream",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "whipped cream"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "cranberry-walnut pancake",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour",
+                    "baking soda",
+                    "baking powder",
+                    "salt",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut",
+                    "dark chocolate"
+                ],
+                "container": "plate"
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "cranberry-walnut pancake",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour",
+                    "baking soda",
+                    "baking powder",
+                    "salt",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut",
+                    "dark chocolate",
+                    "whipped cream"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "whipped cream",
+                "states": [],
+                "ingredients": [],
+                "container": "pancake"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "pancake"
+                ],
+                "container": null
+            },
+            {
+                "label": "cranberry-walnut pancake",
+                "states": [],
+                "ingredients": [
+                    "cornmeal",
+                    "flour",
+                    "baking soda",
+                    "baking powder",
+                    "salt",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut",
+                    "dark chocolate",
+                    "whipped cream"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "cup",
+                "states": [],
+                "ingredients": [
+                    "powdered sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "powdered sugar",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "cup"
+            }
+        ],
+        "motion_node": "sprinkle",
+        "output_nodes": [
+            {
+                "label": "cranberry-walnut pancake",
+                "states": [],
+                "ingredients": [
+                    "pancake batter",
+                    "flour mixture",
+                    "pancake",
+                    "cornmeal",
+                    "flour",
+                    "baking soda",
+                    "baking powder",
+                    "salt",
+                    "yogurt",
+                    "cranberry",
+                    "maple syrup",
+                    "walnut",
+                    "dark chocolate",
+                    "whipped cream",
+                    "powdered sugar"
+                ],
+                "container": "plate"
+            },
+            {
+                "label": "powdered sugar",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "pancake"
+            }
+        ]
+    }
+]

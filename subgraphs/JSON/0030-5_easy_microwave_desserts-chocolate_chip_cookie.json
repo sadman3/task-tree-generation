@@ -1,0 +1,521 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "uncracked"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "jar",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "crack",
+        "output_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "cracked"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "cracked"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "sugar",
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "sugar",
+                    "salt"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "shake",
+        "output_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "egg yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "egg yolk"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "egg yolk",
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [],
+                "ingredients": [],
+                "container": "jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "egg yolk",
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chocolate chip"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate chip",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "egg yolk",
+                    "butter",
+                    "chocolate chip"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate chip",
+                "states": [],
+                "ingredients": [],
+                "container": "jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "egg yolk",
+                    "butter",
+                    "chocolate chip"
+                ],
+                "container": null
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "cookie dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "cookie dough",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "egg yolk",
+                    "butter",
+                    "chocolate chip"
+                ],
+                "container": "jar"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "cookie dough"
+                ],
+                "container": null
+            },
+            {
+                "label": "microwave",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "microwave",
+                "states": [],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "cookie dough"
+                ],
+                "container": "microwave"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "microwave",
+                "states": [],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "cookie dough"
+                ],
+                "container": "microwave"
+            },
+            {
+                "label": "cookie dough",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "cookie dough",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "egg yolk",
+                    "butter",
+                    "chocolate chip"
+                ],
+                "container": "jar"
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "cookie dough",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "cookie"
+                ],
+                "container": "microwave"
+            },
+            {
+                "label": "chocolate chip cookie",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "egg mixture",
+                    "flour",
+                    "egg yolk",
+                    "butter",
+                    "chocolate chip"
+                ],
+                "container": "jar"
+            }
+        ]
+    }
+]

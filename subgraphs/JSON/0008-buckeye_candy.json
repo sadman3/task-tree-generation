@@ -1,0 +1,1452 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "peanut butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "peanut butter",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "peanut butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "peanut butter",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "peanut butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "peanut butter",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour and scrape",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "peanut butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "peanut butter",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "peanut butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "peanut butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "packet",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "peanut butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "spoon"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "hand mixer",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "vanilla extract"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "hand mixer",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "vanilla extract"
+                ],
+                "container": "hand mixer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "hand mixer",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "hand mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "hand mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "vanilla extract"
+                ],
+                "container": "hand mixer"
+            },
+            {
+                "label": "peanut butter",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "softened",
+                    "unmelted",
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "vanilla extract",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "hand mixer",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "peanut butter mixture",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "vanilla extract"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "powdered sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "powdered sugar",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "powdered sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "powdered sugar",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "powdered sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "powdered sugar",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "vanilla extract"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "powdered sugar",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "hand mixer",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "hand mixer",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": "hand mixer"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "hand mixer",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "powdered sugar",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "mixing bowl"
+            },
+            {
+                "label": "peanut butter mixture",
+                "states": [
+                    "creamy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "vanilla extract"
+                ],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "peanut butter mixture",
+                "states": [
+                    "lumpy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": "mixing bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "box",
+                "states": [],
+                "ingredients": [
+                    "parchment paper"
+                ],
+                "container": null
+            },
+            {
+                "label": "parchment paper",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "box"
+            },
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "parchment paper"
+            },
+            {
+                "label": "parchment paper",
+                "states": [
+                    "sheet"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "mixing bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "peanut butter mixture",
+                "states": [
+                    "lumpy",
+                    "mixed"
+                ],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": "mixing bowl"
+            }
+        ],
+        "motion_node": "roll and shape",
+        "output_nodes": [
+            {
+                "label": "buckeye candy",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "parchment paper"
+            },
+            {
+                "label": "buckeye candy",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "place",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "buckeye candy"
+                ],
+                "container": null
+            },
+            {
+                "label": "buckeye candy",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "toothpick",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "buckeye candy",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "insert",
+        "output_nodes": [
+            {
+                "label": "toothpick",
+                "states": [],
+                "ingredients": [],
+                "container": "buckeye candy"
+            },
+            {
+                "label": "buckeye candy",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": "toothpick"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "packet",
+                "states": [],
+                "ingredients": [
+                    "chocolate chip"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate chip",
+                "states": [
+                    "pieces"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chocolate chip"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate chip",
+                "states": [
+                    "pieces"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "off (ready)"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "turn on",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "boil",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [
+                    "boiling",
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "double boiler",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "double boiler"
+            },
+            {
+                "label": "double boiler",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "double boiler"
+            },
+            {
+                "label": "double boiler",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chocolate chip"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate chip",
+                "states": [
+                    "pieces"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "double boiler",
+                "states": [],
+                "ingredients": [
+                    "chocolate chip"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "chocolate chip",
+                "states": [
+                    "pieces"
+                ],
+                "ingredients": [],
+                "container": "double boiler"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "double boiler"
+            },
+            {
+                "label": "double boiler",
+                "states": [],
+                "ingredients": [
+                    "chocolate chip"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "chocolate chip",
+                "states": [
+                    "pieces"
+                ],
+                "ingredients": [],
+                "container": "double boiler"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir and melt",
+        "output_nodes": [
+            {
+                "label": "double boiler",
+                "states": [],
+                "ingredients": [
+                    "chocolate chip"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "chocolate chip",
+                "states": [
+                    "melted",
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "double boiler"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "double boiler",
+                "states": [],
+                "ingredients": [
+                    "chocolate chip"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "double boiler"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "hot"
+                ],
+                "ingredients": [
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "double boiler",
+                "states": [],
+                "ingredients": [
+                    "chocolate chip"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "double boiler",
+                "states": [],
+                "ingredients": [
+                    "chocolate chip"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate chip",
+                "states": [
+                    "melted",
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "double boiler"
+            },
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chocolate chip"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate chip",
+                "states": [
+                    "melted",
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "double boiler",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "buckeye candy",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": "toothpick"
+            },
+            {
+                "label": "double boiler",
+                "states": [],
+                "ingredients": [
+                    "chocolate chip"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate chip",
+                "states": [
+                    "melted",
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "dip",
+        "output_nodes": [
+            {
+                "label": "buckeye candy",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "chocolate chip",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": "toothpick"
+            },
+            {
+                "label": "chocolate chip",
+                "states": [
+                    "melted",
+                    "thick liquid"
+                ],
+                "ingredients": [],
+                "container": "buckeye candy"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "buckeye candy"
+                ],
+                "container": null
+            },
+            {
+                "label": "buckeye candy",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "chocolate chip",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": "toothpick"
+            },
+            {
+                "label": "refrigerator",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chill",
+        "output_nodes": [
+            {
+                "label": "buckeye candy",
+                "states": [
+                    "chilled",
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "chocolate chip",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": "toothpick"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "buckeye candy"
+                ],
+                "container": null
+            },
+            {
+                "label": "buckeye candy",
+                "states": [
+                    "chilled",
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "chocolate chip",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": "toothpick"
+            },
+            {
+                "label": "toothpick",
+                "states": [],
+                "ingredients": [],
+                "container": "buckeye candy"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "buckeye candy",
+                "states": [
+                    "rolled"
+                ],
+                "ingredients": [
+                    "butter",
+                    "chocolate chip",
+                    "peanut butter",
+                    "powdered sugar",
+                    "vanilla extract"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "toothpick",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    }
+]

@@ -1,0 +1,961 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "heated"
+                ],
+                "ingredients": [],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": null
+            },
+            {
+                "label": "olive oil",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "rice",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "rice",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "rice",
+                "states": [
+                    "uncooked"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook and stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "rice",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "garlic"
+                ],
+                "container": null
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "garlic",
+                "states": [
+                    "minced"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "water",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt"
+                ],
+                "container": null
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lime zest"
+                ],
+                "container": null
+            },
+            {
+                "label": "lime zest",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "lime zest",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "rice",
+                "states": [
+                    "toasted"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest"
+                ],
+                "container": "stove"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "partly cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pot lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cover",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pot lid",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            },
+            {
+                "label": "pot",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest"
+                ],
+                "container": "stove"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [
+                    "covered"
+                ],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pot lid",
+                "states": [],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "uncover",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "pot lid",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "turn off",
+        "output_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "fork",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "rice",
+                "states": [
+                    "fluffed"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "rice",
+                "states": [
+                    "fluffed"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "lime juice"
+                ],
+                "container": null
+            },
+            {
+                "label": "lime juice",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest",
+                    "lime juice"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "lime juice",
+                "states": [],
+                "ingredients": [],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "cilantro"
+                ],
+                "container": null
+            },
+            {
+                "label": "cilantro",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "chop",
+        "output_nodes": [
+            {
+                "label": "cilantro",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "cilantro"
+                ],
+                "container": null
+            },
+            {
+                "label": "cilantro",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "measuring cup",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "cilantro"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "measuring cup",
+                "states": [],
+                "ingredients": [
+                    "cilantro"
+                ],
+                "container": null
+            },
+            {
+                "label": "cilantro",
+                "states": [
+                    "chopped"
+                ],
+                "ingredients": [],
+                "container": "measuring cup"
+            },
+            {
+                "label": "rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest",
+                    "lime juice"
+                ],
+                "container": "pot"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest",
+                    "lime juice",
+                    "cilantro"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "rice"
+                ],
+                "container": "stove"
+            },
+            {
+                "label": "rice",
+                "states": [
+                    "cooked"
+                ],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest",
+                    "lime juice",
+                    "cilantro"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cilantro-lime rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "cilantro-lime rice",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest",
+                    "lime juice",
+                    "cilantro"
+                ],
+                "container": "pot"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "pot",
+                "states": [],
+                "ingredients": [
+                    "cilantro-lime rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "cilantro-lime rice",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest",
+                    "lime juice",
+                    "cilantro"
+                ],
+                "container": "pot"
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "cilantro-lime rice"
+                ],
+                "container": null
+            },
+            {
+                "label": "cilantro-lime rice",
+                "states": [],
+                "ingredients": [
+                    "olive oil",
+                    "rice",
+                    "garlic",
+                    "water",
+                    "salt",
+                    "lime zest",
+                    "lime juice",
+                    "cilantro"
+                ],
+                "container": "plate"
+            }
+        ]
+    }
+]

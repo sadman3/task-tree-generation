@@ -1,0 +1,1431 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "packet"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "butter",
+                    "sugar"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [
+                    "butter",
+                    "sugar"
+                ],
+                "container": null
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "beat",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "beaten"
+                ],
+                "ingredients": [
+                    "butter",
+                    "sugar"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "jar",
+                "states": [],
+                "ingredients": [
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "jar"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scoop and pour",
+        "output_nodes": [
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "plate",
+                "states": [],
+                "ingredients": [
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "plate"
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "water",
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "stir",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "coffee",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "uncracked"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "crack",
+        "output_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "cracked"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "beaten"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "cracked"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg white and yolk",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "sugar",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "stick"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "beat",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg mixture",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bottle",
+                "states": [],
+                "ingredients": [
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [],
+                "ingredients": [],
+                "container": "bottle"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "vanilla extract",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg mixture",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "vanilla extract",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "beat",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg mixture",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "vanilla extract"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "coffee",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "vanilla extract",
+                    "coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg mixture",
+                    "vanilla extract",
+                    "coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg mixture",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "coffee",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "beat",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "batter",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract",
+                    "coffee"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cocoa powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "cocoa powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "cocoa powder",
+                    "flour"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "salt",
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "cocoa powder"
+                ],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "cocoa powder",
+                    "salt",
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "cocoa powder",
+                    "salt",
+                    "instant coffee"
+                ],
+                "container": null
+            },
+            {
+                "label": "spoon",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "instant coffee",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "salt",
+                "states": [
+                    "granulated"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "cocoa powder",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "flour",
+                "states": [
+                    "powder"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "mix*",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour mixture",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "cocoa powder",
+                    "salt",
+                    "instant coffee"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "chocolate"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate",
+                "states": [
+                    "melted"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "batter",
+                    "chocolate"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "batter",
+                    "chocolate"
+                ],
+                "container": null
+            },
+            {
+                "label": "chocolate",
+                "states": [
+                    "melted"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "batter",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract",
+                    "coffee"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "brownie batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "batter",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract",
+                    "coffee",
+                    "choocolate"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour mixture"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "batter"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour mixture",
+                    "batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "flour mixture",
+                    "batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "flour mixture",
+                "states": [],
+                "ingredients": [
+                    "flour",
+                    "cocoa powder",
+                    "salt",
+                    "instant coffee"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "batter",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract",
+                    "coffee",
+                    "choocolate"
+                ],
+                "container": "bowl"
+            },
+            {
+                "label": "whisk",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "brownie batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "brownie batter",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "brownie batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "brownie batter",
+                "states": [],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "mix",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "brownie batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "brownie batter",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract",
+                    "instant coffee",
+                    "chocolate",
+                    "flour",
+                    "salt",
+                    "cocoa powder"
+                ],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": "sheet"
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "brownie batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "brownie batter",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract",
+                    "instant coffee",
+                    "chocolate",
+                    "flour",
+                    "salt",
+                    "cocoa powder"
+                ],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "scrape",
+        "output_nodes": [
+            {
+                "label": "brownie batter",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract",
+                    "instant coffee",
+                    "chocolate",
+                    "flour",
+                    "salt",
+                    "cocoa powder"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brownie batter"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "brownie batter",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract",
+                    "instant coffee",
+                    "chocolate",
+                    "flour",
+                    "salt",
+                    "cocoa powder"
+                ],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brownie batter"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "shape",
+        "output_nodes": [
+            {
+                "label": "brownie batter",
+                "states": [
+                    "leveled"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract",
+                    "instant coffee",
+                    "chocolate",
+                    "flour",
+                    "salt",
+                    "cocoa powder"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brownie batter"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "put inside",
+        "output_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brownie batter"
+                ],
+                "container": "oven"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brownie batter"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "brownie batter",
+                "states": [
+                    "leveled"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract",
+                    "instant coffee",
+                    "chocolate",
+                    "flour",
+                    "salt",
+                    "cocoa powder"
+                ],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brownie"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "brownie",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brownie"
+                ],
+                "container": "oven"
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            }
+        ],
+        "motion_node": "remove",
+        "output_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brownie"
+                ],
+                "container": null
+            },
+            {
+                "label": "oven",
+                "states": [
+                    "off"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [
+                    "brownie"
+                ],
+                "container": null
+            },
+            {
+                "label": "brownie",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [],
+                "container": "baking tray"
+            },
+            {
+                "label": "cutting board",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "brownie"
+                ],
+                "container": null
+            },
+            {
+                "label": "brownie",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract",
+                    "instant coffee",
+                    "chocolate",
+                    "flour",
+                    "salt",
+                    "cocoa powder"
+                ],
+                "container": "cutting board"
+            },
+            {
+                "label": "baking tray",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "brownie",
+                "states": [
+                    "baked"
+                ],
+                "ingredients": [],
+                "container": "cutting board"
+            },
+            {
+                "label": "cutting board",
+                "states": [],
+                "ingredients": [
+                    "brownie"
+                ],
+                "container": null
+            },
+            {
+                "label": "knife",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cut",
+        "output_nodes": [
+            {
+                "label": "brownie",
+                "states": [
+                    "baked",
+                    "divided"
+                ],
+                "ingredients": [
+                    "flour mixture",
+                    "coffee",
+                    "egg mixture",
+                    "brownie batter",
+                    "sugar",
+                    "butter",
+                    "egg white and yolk",
+                    "vanilla extract",
+                    "instant coffee",
+                    "chocolate",
+                    "flour",
+                    "salt",
+                    "cocoa powder"
+                ],
+                "container": "baking tray"
+            }
+        ]
+    }
+]
