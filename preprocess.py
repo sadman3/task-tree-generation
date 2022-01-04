@@ -1,11 +1,10 @@
+from utils import get_singular_form, get_utensils
+from FOON_class import FunctionalUnit, Object
 from configparser import ConfigParser
 import os
 import json
 from datetime import datetime
 import pickle
-from FOON_class import FunctionalUnit, Object
-from utils import get_singular_form, get_utensils
-
 # -----------------------------------------------------------------------------------------------------------------------------#
 
 # load the config file
@@ -150,9 +149,15 @@ def merge(dir=subgraph_dir):
         parameters: directory of subgraphs
         creates: a merged version of all subgraphs (universal FOON)
     """
+    # some subgraphs are not that good.
+    # excluding those subgraphs for better result
+    exclude_subgraph = ['0048-shrimp-mango_salad.txt']
+
     functional_units = []
     fu_id = 0
     for subgraph in os.listdir(dir):
+        if subgraph in exclude_subgraph:
+            continue
         filepath = os.path.join(dir, subgraph)
         FU_list = get_FU_list(filepath)
         for FU in FU_list:
@@ -303,10 +308,11 @@ def prepare_kitchen(foon_path=foon_pkl, kitchen_path=kitchen_path):
             start_nodes.append(object_json)
             object_added.append(object_index)
 
-        elif check_item_in_default_kitchen(object):
-            start_nodes.append(object_json)
-            object_added.append(object_index)
-
+        # elif check_item_in_default_kitchen(object):
+        #     start_nodes.append(object_json)
+        #     object_added.append(object_index)
+    for item in default_kitchen_items:
+        start_nodes.append(item)
     F = open(kitchen_path, 'w')
     json.dump(start_nodes, F, indent=4)
 

@@ -133,8 +133,7 @@
     ],
     "cilantro": [
         "whole",
-        "chopped",
-        "leaf"
+        "chopped"
     ],
     "watermelon": [
         "whole",
@@ -441,7 +440,6 @@
         "raw",
         "washed",
         "cooked",
-        "chopped",
         "paste"
     ],
     "sausage": [
@@ -1148,29 +1146,6 @@
         "block"
     ],
     "muffin": [],
-    "vinaigrette": [
-        "creamy",
-        "mixed"
-    ],
-    "salad green": [
-        "washed",
-        "leaf"
-    ],
-    "mango": [
-        "unpeeled",
-        "whole",
-        "halved",
-        "seed",
-        "cut with slits",
-        "diced",
-        "skin"
-    ],
-    "shallot": [
-        "whole",
-        "unpeeled",
-        "peeled",
-        "chopped"
-    ],
     "lime zest": [],
     "lime juice": [],
     "cilantro-lime rice": [],
@@ -1431,6 +1406,10 @@
     "chocolate mixture": [],
     "fudge mixture": [],
     "fudge": [],
+    "salad green": [
+        "leaf",
+        "washed"
+    ],
     "blood orange": [
         "whole",
         "unpeeled",

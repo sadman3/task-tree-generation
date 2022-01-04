@@ -28,10 +28,13 @@ default_ingredient_mapping_path = config['info']['default_ingredient_mapping']
 ###################
 utensils = get_utensils()
 kitchen_items = json.load(open(kitchen_path))
+default_ingredient_mapping = json.load(open(default_ingredient_mapping_path))
 default_ingredients = [object.rstrip()
                        for object in open(default_ingredient_path, 'r')]
 print('-- Reading universal foon from', foon_pkl)
 foon_functional_units, foon_object_nodes, foon_object_to_FU_map = [], [], {}
+
+
 ###################
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -205,7 +208,6 @@ def extract_reference_task_tree(kitchen_items=[], input_ingredients=[], goal_nod
 
     while len(items_to_search) > 0:
         current_item_index = items_to_search.pop(0)  # pop the first element
-
         if current_item_index in items_already_searched:
             continue
 
@@ -331,6 +333,7 @@ def remove_extra_ingredients(final_task_tree=[], input_ingredients=[]):
         objects_to_keep.append(ingredient['object'])
 
     objects_to_keep += default_ingredients
+    print(objects_to_keep)
     # remove extra ingredient from each FU
     for fu in task_tree:
         temp_input_nodes = []
@@ -361,7 +364,8 @@ def remove_extra_ingredients(final_task_tree=[], input_ingredients=[]):
                 temp_output_nodes.append(node)
 
         fu.output_nodes = temp_output_nodes
-
+        # fu.print()
+        # input()
     return task_tree
 
 # -----------------------------------------------------------------------------------------------------------------------------#
@@ -369,17 +373,26 @@ def remove_extra_ingredients(final_task_tree=[], input_ingredients=[]):
 
 
 def substitute_and_add_branch(task_tree, input_ingredient, mapped_ingredient):
+
     #  parameter: ingredient is the equivalent of input object
+
+    mapping_key = "{},{}".format(
+        input_ingredient["object"], input_ingredient["state"])
+    if mapping_key in default_ingredient_mapping:
+        mapped_ingredient = default_ingredient_mapping[mapping_key]
+
     mapped_object = mapped_ingredient['object']
     mapped_state = mapped_ingredient['state']
     required_object = input_ingredient['object']
     required_state = input_ingredient['state']
 
-    container_priority = ['bowl', 'cup',
+    container_priority = ['bowl', 'plate', 'cup',
                           'spoon', 'measuring cup', 'mixing bowl', 'cutting board']
 
     # the subtree added to this functional unit
-    special_motions = ['mix', 'add', 'pour']
+    #special_motions = ['pour', 'add', 'mix']
+
+    special_motions = ['mix']
 
     # first find the suitable goal node to retrieve subtree
     # ------------------------------------------------------------------#
@@ -413,12 +426,19 @@ def substitute_and_add_branch(task_tree, input_ingredient, mapped_ingredient):
     # ------------------------------------------------------------------#
 
     # extract the subtree
+    subtree = []
 
-    subtree = extract_reference_task_tree(
-        kitchen_items=kitchen_items, input_ingredients=[], goal_node=goal_node, subtree=True)
+    # check if does not exist in the kitchen
+    temp_obj = Object(input_ingredient["object"])
+    temp_obj.states = [input_ingredient["state"]]
 
+    if not check_if_exist_in_kitchen(kitchen_items, temp_obj):
+        temp_obj.print()
+        subtree = extract_reference_task_tree(
+            kitchen_items=kitchen_items, input_ingredients=[], goal_node=goal_node, subtree=True)
+    print('subtree extracted for ', mapped_ingredient, len(subtree))
     # substitue object in the subtree
-    for fu in task_tree:
+    for fu in subtree:
         for node in fu.input_nodes:
             if node.label == mapped_object:
                 node.label = required_object
@@ -454,14 +474,14 @@ def substitute_and_add_branch(task_tree, input_ingredient, mapped_ingredient):
     for i, fu in enumerate(subtree):
         task_tree.insert(special_fu_index + i, fu)
 
-    # creating the connectino
+    # creating the connection
     new_node = copy.deepcopy(goal_node)
     new_node.label = required_object
-    #goal_node.state = required_state
-    task_tree[special_fu_index].input_nodes.append(new_node)
-
     # update the index because the subtree is inserted
     special_fu_index += len(subtree)
+
+    #goal_node.state = required_state
+    task_tree[special_fu_index].input_nodes.append(new_node)
 
     # Now connect the ingredient by inserting it to the special FU
     modified_nodes = []
@@ -529,10 +549,8 @@ def modify_reference_task_tree(reference_task_tree=[], input_ingredients=[]):
             for input_item in input_ingredients:
                 if input_item['object'] == ingredient:
                     required_ingredient = input_item
-
             substitute_and_add_branch(
                 task_tree, required_ingredient, ingredient_mapping[ingredient])
-
     return task_tree
 # -----------------------------------------------------------------------------------------------------------------------------#
 
@@ -596,7 +614,7 @@ def retrieval(recipe_id, dish_type, input_ingredients):
         reference_task_tree=reference_task_tree, input_ingredients=input_ingredients)
 
     final_task_tree = remove_extra_ingredients(
-        reference_task_tree, input_ingredients)
+        final_task_tree, input_ingredients)
 
     # save the final task tree
     output_dir = os.path.join('output', 'final_task_tree', dish_type)
@@ -616,8 +634,8 @@ if __name__ == "__main__":
     # selected_catagory = ['salad', 'drinks', 'omelette',
     #                      'cake', 'soup', 'bread', 'noodle', 'rice']
 
-    selected_category = ['salad', 'omelette', 'rice', 'soup', 'drinks']
-    # selected_category = ['drinks']
+    #elected_category = ['salad', 'omelette', 'rice', 'soup', 'drinks']
+    selected_category = ['test']
 
     for category in selected_category:
         input_dir = 'input/' + category

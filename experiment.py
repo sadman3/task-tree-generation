@@ -1,3 +1,4 @@
+import evaluate
 import pickle
 import json
 from configparser import ConfigParser
@@ -37,8 +38,7 @@ def prepare_input(path='recipe1m_merged.pkl'):
         title = recipe["title"]
         if 'drinks' in title or 'smoothie' in title or 'juice' in title or 'tea' in title or 'coffee' in title:
             cnt += 1
-    print(cnt)
-    exit(0)
+
     for recipe in recipes:
         id = recipe["id"]
         title = recipe["title"]
@@ -95,17 +95,15 @@ def run_full_pipeline():
     import preprocess
     import retrieval
     import evaluate
-
     preprocess.merge()
     preprocess.prepare_kitchen()
     preprocess.save_all_object_states()
     print('-- MERGING DONE')
 
     print('-- Reading universal foon from')
-    functional_units, object_nodes, object_to_FU_map = retrieval.read_universal_foon()
+    retrieval.foon_functional_units, retrieval.foon_object_nodes, retrieval.foon_object_to_FU_map = retrieval.read_universal_foon()
 
-    selected_category = ['drinks']
-
+    selected_category = ['salad']
     for category in selected_category:
         input_dir = 'input/' + category
         for input_file in os.listdir(input_dir):
@@ -115,8 +113,7 @@ def run_full_pipeline():
 
             # do the retrieval
             print("-- STARTING RETRIEVAL")
-            retrieval.retrieval(functional_units, object_nodes, object_to_FU_map,
-                                recipe_id, dish_type, ingredients)
+            retrieval.retrieval(recipe_id, dish_type, ingredients)
 
     evaluate.convert_to_json('output', 'output_json')
 
@@ -137,11 +134,45 @@ def run_full_pipeline():
             evaluate.save_progress_line(source_path, target_path)
 
 
+def test(path='recipe1m_merged.pkl'):
+    ids = []
+    image_path = '/Users/sadman/images/'
+    for currentpath, folders, files in os.walk(image_path):
+        for file in files:
+            ids.append(file.replace('.jpg', ''))
+
+    print(ids)
+    print()
+    recipes = pickle.load(open(path, 'rb'))
+    for recipe in recipes:
+        print(recipe["id"])
+        if recipe["id"] in ids:
+            print(recipe)
+            print()
+
+
+def progress_line_post_process(path='progress_line/final_task_tree/salad2'):
+    for currentpath, folders, files in os.walk(path):
+        for file in files:
+            filepath = currentpath + '/' + file
+            F = open(filepath, 'r')
+            progress_line = json.load(F)
+            F.close()
+            updated_list = []
+            for x in progress_line:
+                if x["ingredient"] != "juice":
+                    updated_list.append(x)
+
+            F = open(filepath, 'w')
+            json.dump(updated_list, F, indent=4)
+            F.close()
+
+
 if __name__ == "__main__":
     # kitchen = json.load(open('info/kitchen.json'))
     # for x in kitchen:
     #     if len(x["ingredients"]) > 1:
     #         print(x)
-    prepare_input()
-
-    # run_full_pipeline()
+    # prepare_input()
+    # progress_line_post_process()
+    run_full_pipeline()

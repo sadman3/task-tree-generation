@@ -118,10 +118,6 @@ def convert_to_json(source_dir='output', target_dir='output_json'):
             F.close()
 
 
-convert_to_json('subgraphs/TXT', 'subgraphs/JSON')
-exit(0)
-
-
 def save_progress_line(source_path, target_path):
     print('creating progress line for ', source_path)
     state_trace = {}
@@ -215,6 +211,14 @@ def save_progress_line(source_path, target_path):
 
                     state_trace[ing]["state"].append(new_state)
                     state_trace[ing]["motion"].append(motion)
+
+    # add an extra pouring step
+    for ing in state_trace:
+        if state_trace[ing]["motion"][-1] == "mix":
+            if len(state_trace[ing]["motion"]) == 1 or state_trace[ing]["motion"][-2] != 'pour':
+                state_trace[ing]["state"].append(
+                    {"physical_state": "", "location": "mixing bowl"})
+                state_trace[ing]["motion"].insert(-2, "pour")
 
     # remove consecutive duplicate state
     for ing in state_trace:
@@ -313,3 +317,14 @@ if __name__ == '__main__':
 
             target_path = source_path.replace(source_dir, target_dir)
             save_progress_line(source_path, target_path)
+
+    # source_dir = '/Users/sadman/repository/task-tree-generation/subgraphs/JSON'
+    # target_dir = '/Users/sadman/repository/task-tree-generation/subgraphs/temp'
+
+    # for currentpath, folders, files in os.walk(source_dir):
+    #     for file in files:
+    #         source_path = os.path.join(currentpath, file)
+
+    #         target_path = source_path.replace(source_dir, target_dir)
+    #         print(source_path, target_path)
+    #         save_progress_line(source_path, target_path)

@@ -100,5 +100,11 @@
         "states": ["powder"],
         "ingredients": [],
         "container": "bag"
+    },
+    {
+        "label": "ranch dressing",
+        "states": ["creamy"],
+        "ingredients": [],
+        "container": null
     }
 ]

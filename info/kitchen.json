@@ -123,22 +123,6 @@
         "container": null
     },
     {
-        "label": "black pepper",
-        "states": [
-            "ground"
-        ],
-        "ingredients": [],
-        "container": "bowl"
-    },
-    {
-        "label": "salt",
-        "states": [
-            "granulated"
-        ],
-        "ingredients": [],
-        "container": "bowl"
-    },
-    {
         "label": "cooking pan",
         "states": [
             "empty"
@@ -262,14 +246,6 @@
         ],
         "ingredients": [],
         "container": "bowl"
-    },
-    {
-        "label": "sugar",
-        "states": [
-            "granulated"
-        ],
-        "ingredients": [],
-        "container": "mixing bowl"
     },
     {
         "label": "whisk",
@@ -405,18 +381,6 @@
         ],
         "ingredients": [],
         "container": "packet"
-    },
-    {
-        "label": "water",
-        "states": [],
-        "ingredients": [],
-        "container": "bowl"
-    },
-    {
-        "label": "water",
-        "states": [],
-        "ingredients": [],
-        "container": "pot"
     },
     {
         "label": "pot lid",
@@ -736,14 +700,6 @@
         "container": null
     },
     {
-        "label": "milk",
-        "states": [
-            "liquid"
-        ],
-        "ingredients": [],
-        "container": "bowl"
-    },
-    {
         "label": "measuring cup",
         "states": [],
         "ingredients": [
@@ -866,14 +822,6 @@
         "container": null
     },
     {
-        "label": "flour",
-        "states": [
-            "powder"
-        ],
-        "ingredients": [],
-        "container": "bag"
-    },
-    {
         "label": "fork",
         "states": [],
         "ingredients": [],
@@ -947,14 +895,6 @@
         "container": "stove"
     },
     {
-        "label": "bowl",
-        "states": [],
-        "ingredients": [
-            "olive oil"
-        ],
-        "container": null
-    },
-    {
         "label": "butter",
         "states": [
             "softened",
@@ -971,14 +911,6 @@
         ],
         "ingredients": [],
         "container": null
-    },
-    {
-        "label": "salt",
-        "states": [
-            "granulated"
-        ],
-        "ingredients": [],
-        "container": "mixing bowl"
     },
     {
         "label": "bowl",
@@ -1221,14 +1153,6 @@
         "container": null
     },
     {
-        "label": "parmesan",
-        "states": [
-            "grated"
-        ],
-        "ingredients": [],
-        "container": "bowl"
-    },
-    {
         "label": "mug",
         "states": [],
         "ingredients": [
@@ -1241,14 +1165,6 @@
         "states": [],
         "ingredients": [],
         "container": "mug"
-    },
-    {
-        "label": "parmesan",
-        "states": [
-            "grated"
-        ],
-        "ingredients": [],
-        "container": "pot"
     },
     {
         "label": "cooking pan",
@@ -2123,14 +2039,6 @@
         "container": "cutting board"
     },
     {
-        "label": "oregano",
-        "states": [
-            "dried"
-        ],
-        "ingredients": [],
-        "container": "bowl"
-    },
-    {
         "label": "bowl",
         "states": [],
         "ingredients": [
@@ -2210,14 +2118,6 @@
         ],
         "ingredients": [],
         "container": "bowl"
-    },
-    {
-        "label": "plate",
-        "states": [],
-        "ingredients": [
-            "shrimp"
-        ],
-        "container": null
     },
     {
         "label": "olive oil",
@@ -4081,14 +3981,6 @@
         "container": null
     },
     {
-        "label": "cheese",
-        "states": [
-            "grated"
-        ],
-        "ingredients": [],
-        "container": "bowl"
-    },
-    {
         "label": "bowl",
         "states": [],
         "ingredients": [
@@ -4447,14 +4339,6 @@
         ],
         "ingredients": [],
         "container": "plate"
-    },
-    {
-        "label": "plate",
-        "states": [],
-        "ingredients": [
-            "chicken"
-        ],
-        "container": null
     },
     {
         "label": "carrot",
@@ -5457,14 +5341,6 @@
     },
     {
         "label": "vinegar",
-        "states": [
-            "liquid"
-        ],
-        "ingredients": [],
-        "container": "bowl"
-    },
-    {
-        "label": "vegetable oil",
         "states": [
             "liquid"
         ],
@@ -6553,66 +6429,6 @@
         "container": null
     },
     {
-        "label": "cilantro",
-        "states": [
-            "leaf",
-            "whole"
-        ],
-        "ingredients": [],
-        "container": null
-    },
-    {
-        "label": "cilantro",
-        "states": [
-            "chopped"
-        ],
-        "ingredients": [],
-        "container": "mixing bowl"
-    },
-    {
-        "label": "vinaigrette",
-        "states": [
-            "creamy"
-        ],
-        "ingredients": [
-            "lemon juice",
-            "olive oil"
-        ],
-        "container": "mixing bowl"
-    },
-    {
-        "label": "mango",
-        "states": [
-            "unpeeled",
-            "whole"
-        ],
-        "ingredients": [],
-        "container": null
-    },
-    {
-        "label": "mango",
-        "states": [],
-        "ingredients": [],
-        "container": null
-    },
-    {
-        "label": "shallot",
-        "states": [
-            "whole",
-            "unpeeled"
-        ],
-        "ingredients": [],
-        "container": null
-    },
-    {
-        "label": "shrimp",
-        "states": [
-            "chopped"
-        ],
-        "ingredients": [],
-        "container": "salad bowl"
-    },
-    {
         "label": "olive oil",
         "states": [],
         "ingredients": [],
@@ -6994,14 +6810,6 @@
             "salt"
         ],
         "container": null
-    },
-    {
-        "label": "salt",
-        "states": [
-            "granulated"
-        ],
-        "ingredients": [],
-        "container": "jar"
     },
     {
         "label": "ginger",
@@ -9230,6 +9038,146 @@
         "ingredients": [
             "white rice"
         ],
+        "container": null
+    },
+    {
+        "label": "water",
+        "states": [],
+        "ingredients": [],
+        "container": "pot"
+    },
+    {
+        "label": "water",
+        "states": [],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "black pepper",
+        "states": [
+            "ground"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "salt",
+        "states": [
+            "granulated"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "oregano",
+        "states": [
+            "dried"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "salt",
+        "states": [
+            "granulated"
+        ],
+        "ingredients": [],
+        "container": "mixing bowl"
+    },
+    {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+            "olive oil"
+        ],
+        "container": null
+    },
+    {
+        "label": "parmesan",
+        "states": [
+            "grated"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "plate",
+        "states": [],
+        "ingredients": [
+            "shrimp"
+        ],
+        "container": null
+    },
+    {
+        "label": "vegetable oil",
+        "states": [
+            "liquid"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "sugar",
+        "states": [
+            "granulated"
+        ],
+        "ingredients": [],
+        "container": "mixing bowl"
+    },
+    {
+        "label": "cheese",
+        "states": [
+            "grated"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "milk",
+        "states": [
+            "liquid"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+    },
+    {
+        "label": "salt",
+        "states": [
+            "granulated"
+        ],
+        "ingredients": [],
+        "container": "jar"
+    },
+    {
+        "label": "plate",
+        "states": [],
+        "ingredients": [
+            "chicken"
+        ],
+        "container": null
+    },
+    {
+        "label": "parmesan",
+        "states": [
+            "grated"
+        ],
+        "ingredients": [],
+        "container": "pot"
+    },
+    {
+        "label": "flour",
+        "states": [
+            "powder"
+        ],
+        "ingredients": [],
+        "container": "bag"
+    },
+    {
+        "label": "ranch dressing",
+        "states": [
+            "creamy"
+        ],
+        "ingredients": [],
         "container": null
     }
 ]

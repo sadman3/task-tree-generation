@@ -309,6 +309,40 @@ def find_top5_equivalent():
     # json.dump(confidence_map, open('confidence_map.json', 'w'), indent=4)
 
 
+def most_freq_motion_in_final_tree(dir='output_json/final_task_tree/salad/'):
+    freq = {}
+    for recipe in os.listdir(dir):
+        f = open(dir + recipe)
+        FUs = json.load(f)
+        for fu in FUs:
+            motion = fu["motion_node"].replace('*', '')
+            freq[motion] = freq.get(motion, 0) + 1
+    for i in freq:
+        print(freq[i])
+
+
+def most_freq_ingredients(path):
+    freq_map = {}
+    cnt = 0
+    for x in os.listdir(path):
+        cnt += 1
+        if cnt > 100:
+            break
+        recipe = json.load(open(os.path.join(path, x), 'r'))
+        ings = recipe["ingredients"]
+        for ing in ings:
+            obj = ing["object"]
+            freq_map[obj] = freq_map.get(obj, 0) + 1
+
+    freq_map = dict(
+        sorted(freq_map.items(), key=lambda item: item[1], reverse=True))
+
+    for ing, freq in freq_map.items():
+        print(ing)
+    for ing, freq in freq_map.items():
+        print(freq)
+
+
 if __name__ == "__main__":
     # find_object_utensil_count()
     # find_state_motion_count()
@@ -316,7 +350,9 @@ if __name__ == "__main__":
     #compare_performance('input', 'output_json/reference_task_tree')
     # compare_performance('input', 'output_json/final_task_tree')
     # evaluate_without_substitution('input')
-    find_confidence('input')
+    # find_confidence('input')
     # find_top5_equivalent()
     # find_state_motion_count()
     # find_recipe1m_object_state_count()
+    # most_freq_motion_in_final_tree()
+    most_freq_ingredients("input/salad")
