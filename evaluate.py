@@ -9,7 +9,7 @@ with open('info/utensils.txt', 'r') as f:
 
 ignored_objects = ['water']
 
-selected_category = ['salad', 'omelette', 'rice', 'soup', 'drinks']
+selected_category = ['salad', 'omelette', 'cake', 'soup', 'drinks']
 
 
 def get_FU_list(filepath):

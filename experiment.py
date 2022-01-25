@@ -103,7 +103,7 @@ def run_full_pipeline():
     print('-- Reading universal foon from')
     retrieval.foon_functional_units, retrieval.foon_object_nodes, retrieval.foon_object_to_FU_map = retrieval.read_universal_foon()
 
-    selected_category = ['salad']
+    selected_category = ['salad', 'cake', 'soup', 'omelette', 'drinks']
     for category in selected_category:
         input_dir = 'input/' + category
         for input_file in os.listdir(input_dir):

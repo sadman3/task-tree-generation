@@ -9,9 +9,9 @@ config_file = 'config.ini'
 config = ConfigParser()
 config.read(config_file)
 
-selected_category = ['salad', 'omelette', 'rice', 'soup', 'drinks']
+selected_category = ['salad', 'omelette', 'cake', 'soup', 'drinks']
 
-#selected_category = ['omelette']
+# selected_category = ['omelette']
 
 subgraph_dir = config['source']['data_source']
 foon_txt = config['source']['foon_txt']
@@ -309,16 +309,59 @@ def find_top5_equivalent():
     # json.dump(confidence_map, open('confidence_map.json', 'w'), indent=4)
 
 
-def most_freq_motion_in_final_tree(dir='output_json/final_task_tree/salad/'):
+def most_freq_motion_in_final_tree(path='output_json/final_task_tree/'):
     freq = {}
-    for recipe in os.listdir(dir):
-        f = open(dir + recipe)
-        FUs = json.load(f)
-        for fu in FUs:
-            motion = fu["motion_node"].replace('*', '')
-            freq[motion] = freq.get(motion, 0) + 1
+    for category in selected_category:
+        dir = path + category
+
+        for recipe in os.listdir(dir):
+            f = open(os.path.join(dir, recipe))
+            FUs = json.load(f)
+            for fu in FUs:
+                motion = fu["motion_node"].replace('*', '')
+                freq[motion] = freq.get(motion, 0) + 1
+
+    freq = dict(
+        sorted(freq.items(), key=lambda item: item[1], reverse=True))
     for i in freq:
         print(freq[i])
+
+
+def most_freq_ingredient_for_a_motion(path='output_json/final_task_tree/'):
+
+    selected_motion = ['pour', 'pick-and-place',
+                       'scoop and pour', 'sprinkle', 'chop', 'mix']
+
+    for cur_motion in selected_motion:
+        freq = {}
+        for category in selected_category:
+            dir = path + category
+
+            for recipe in os.listdir(dir):
+                f = open(os.path.join(dir, recipe))
+                FUs = json.load(f)
+
+                taken = []
+                for fu in FUs:
+                    motion = fu["motion_node"].replace('*', '')
+                    if motion == cur_motion:
+                        for _input in fu["input_nodes"]:
+                            label = _input["label"]
+                            if label not in taken and label not in utensils:
+                                freq[label] = freq.get(label, 0) + 1
+                                taken.append(label)
+        freq = dict(
+            sorted(freq.items(), key=lambda item: item[1], reverse=True))
+
+        print()
+        print('----' + cur_motion + '----')
+        print()
+        cnt = 0
+        for i in freq:
+            cnt += 1
+            print(i, freq[i])
+            if cnt == 15:
+                break
 
 
 def most_freq_ingredients(path):
@@ -347,7 +390,7 @@ if __name__ == "__main__":
     # find_object_utensil_count()
     # find_state_motion_count()
 
-    #compare_performance('input', 'output_json/reference_task_tree')
+    # compare_performance('input', 'output_json/reference_task_tree')
     # compare_performance('input', 'output_json/final_task_tree')
     # evaluate_without_substitution('input')
     # find_confidence('input')
@@ -355,4 +398,5 @@ if __name__ == "__main__":
     # find_state_motion_count()
     # find_recipe1m_object_state_count()
     # most_freq_motion_in_final_tree()
-    most_freq_ingredients("input/salad")
+    most_freq_ingredient_for_a_motion()
+    # most_freq_ingredients("input/salad")
