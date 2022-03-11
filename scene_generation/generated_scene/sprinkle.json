@@ -1,0 +1,382 @@
+[
+    {
+        "input": "15g black pepper",
+        "pre-conditions": [
+            "small bowl contains minimum 15g black pepper",
+            "mixing bowl empty"
+        ],
+        "steps": [
+            "locate small bowl",
+            "pinch black pepper",
+            "locate mixing bowl",
+            "releaseObj black pepper, to(mixing bowl)"
+        ],
+        "operating-conditions": [
+            "holding black pepper"
+        ],
+        "post-conditions": [
+            "black pepper in mixing bowl"
+        ]
+    },
+    {
+        "input": "15g black pepper",
+        "pre-conditions": [
+            "small bowl contains minimum 15g black pepper",
+            "large cup empty"
+        ],
+        "steps": [
+            "locate small bowl",
+            "pinch black pepper",
+            "locate large cup",
+            "releaseObj black pepper, to(large cup)"
+        ],
+        "operating-conditions": [
+            "holding black pepper"
+        ],
+        "post-conditions": [
+            "black pepper in large cup"
+        ]
+    },
+    {
+        "input": "10g black pepper",
+        "pre-conditions": [
+            "small bowl contains minimum 10g black pepper",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate small bowl",
+            "pinch black pepper",
+            "locate cooking pan",
+            "releaseObj black pepper, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding black pepper"
+        ],
+        "post-conditions": [
+            "black pepper in cooking pan"
+        ]
+    },
+    {
+        "input": "20g black pepper",
+        "pre-conditions": [
+            "small bowl contains minimum 20g black pepper",
+            "large cup empty"
+        ],
+        "steps": [
+            "locate small bowl",
+            "pinch black pepper",
+            "locate large cup",
+            "releaseObj black pepper, to(large cup)"
+        ],
+        "operating-conditions": [
+            "holding black pepper"
+        ],
+        "post-conditions": [
+            "black pepper in large cup"
+        ]
+    },
+    {
+        "input": "15g black pepper",
+        "pre-conditions": [
+            "small bowl contains minimum 15g black pepper",
+            "large cup empty"
+        ],
+        "steps": [
+            "locate small bowl",
+            "pinch black pepper",
+            "locate large cup",
+            "releaseObj black pepper, to(large cup)"
+        ],
+        "operating-conditions": [
+            "holding black pepper"
+        ],
+        "post-conditions": [
+            "black pepper in large cup"
+        ]
+    },
+    {
+        "input": "20g black pepper",
+        "pre-conditions": [
+            "small bowl contains minimum 20g black pepper",
+            "large cup empty"
+        ],
+        "steps": [
+            "locate small bowl",
+            "pinch black pepper",
+            "locate large cup",
+            "releaseObj black pepper, to(large cup)"
+        ],
+        "operating-conditions": [
+            "holding black pepper"
+        ],
+        "post-conditions": [
+            "black pepper in large cup"
+        ]
+    },
+    {
+        "input": "10g black pepper",
+        "pre-conditions": [
+            "small bowl contains minimum 10g black pepper",
+            "large cup empty"
+        ],
+        "steps": [
+            "locate small bowl",
+            "pinch black pepper",
+            "locate large cup",
+            "releaseObj black pepper, to(large cup)"
+        ],
+        "operating-conditions": [
+            "holding black pepper"
+        ],
+        "post-conditions": [
+            "black pepper in large cup"
+        ]
+    },
+    {
+        "input": "20g black pepper",
+        "pre-conditions": [
+            "small bowl contains minimum 20g black pepper",
+            "mixing bowl empty"
+        ],
+        "steps": [
+            "locate small bowl",
+            "pinch black pepper",
+            "locate mixing bowl",
+            "releaseObj black pepper, to(mixing bowl)"
+        ],
+        "operating-conditions": [
+            "holding black pepper"
+        ],
+        "post-conditions": [
+            "black pepper in mixing bowl"
+        ]
+    },
+    {
+        "input": "20g black pepper",
+        "pre-conditions": [
+            "small cup contains minimum 20g black pepper",
+            "large cup empty"
+        ],
+        "steps": [
+            "locate small cup",
+            "pinch black pepper",
+            "locate large cup",
+            "releaseObj black pepper, to(large cup)"
+        ],
+        "operating-conditions": [
+            "holding black pepper"
+        ],
+        "post-conditions": [
+            "black pepper in large cup"
+        ]
+    },
+    {
+        "input": "10g black pepper",
+        "pre-conditions": [
+            "small cup contains minimum 10g black pepper",
+            "mixing bowl empty"
+        ],
+        "steps": [
+            "locate small cup",
+            "pinch black pepper",
+            "locate mixing bowl",
+            "releaseObj black pepper, to(mixing bowl)"
+        ],
+        "operating-conditions": [
+            "holding black pepper"
+        ],
+        "post-conditions": [
+            "black pepper in mixing bowl"
+        ]
+    },
+    {
+        "input": "20g baking powder",
+        "pre-conditions": [
+            "glass contains minimum 20g baking powder",
+            "cup empty"
+        ],
+        "steps": [
+            "locate glass",
+            "pinch baking powder",
+            "locate cup",
+            "releaseObj baking powder, to(cup)"
+        ],
+        "operating-conditions": [
+            "holding baking powder"
+        ],
+        "post-conditions": [
+            "baking powder in cup"
+        ]
+    },
+    {
+        "input": "20g baking powder",
+        "pre-conditions": [
+            "bowl contains minimum 20g baking powder",
+            "glass empty"
+        ],
+        "steps": [
+            "locate bowl",
+            "pinch baking powder",
+            "locate glass",
+            "releaseObj baking powder, to(glass)"
+        ],
+        "operating-conditions": [
+            "holding baking powder"
+        ],
+        "post-conditions": [
+            "baking powder in glass"
+        ]
+    },
+    {
+        "input": "10g baking powder",
+        "pre-conditions": [
+            "bottle contains minimum 10g baking powder",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate bottle",
+            "pinch baking powder",
+            "locate cooking pan",
+            "releaseObj baking powder, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding baking powder"
+        ],
+        "post-conditions": [
+            "baking powder in cooking pan"
+        ]
+    },
+    {
+        "input": "15g baking powder",
+        "pre-conditions": [
+            "glass contains minimum 15g baking powder",
+            "glass empty"
+        ],
+        "steps": [
+            "locate glass",
+            "pinch baking powder",
+            "locate glass",
+            "releaseObj baking powder, to(glass)"
+        ],
+        "operating-conditions": [
+            "holding baking powder"
+        ],
+        "post-conditions": [
+            "baking powder in glass"
+        ]
+    },
+    {
+        "input": "10g baking powder",
+        "pre-conditions": [
+            "bowl contains minimum 10g baking powder",
+            "cup empty"
+        ],
+        "steps": [
+            "locate bowl",
+            "pinch baking powder",
+            "locate cup",
+            "releaseObj baking powder, to(cup)"
+        ],
+        "operating-conditions": [
+            "holding baking powder"
+        ],
+        "post-conditions": [
+            "baking powder in cup"
+        ]
+    },
+    {
+        "input": "15g baking powder",
+        "pre-conditions": [
+            "bottle contains minimum 15g baking powder",
+            "cup empty"
+        ],
+        "steps": [
+            "locate bottle",
+            "pinch baking powder",
+            "locate cup",
+            "releaseObj baking powder, to(cup)"
+        ],
+        "operating-conditions": [
+            "holding baking powder"
+        ],
+        "post-conditions": [
+            "baking powder in cup"
+        ]
+    },
+    {
+        "input": "15g baking powder",
+        "pre-conditions": [
+            "bottle contains minimum 15g baking powder",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate bottle",
+            "pinch baking powder",
+            "locate cooking pan",
+            "releaseObj baking powder, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding baking powder"
+        ],
+        "post-conditions": [
+            "baking powder in cooking pan"
+        ]
+    },
+    {
+        "input": "10g baking powder",
+        "pre-conditions": [
+            "glass contains minimum 10g baking powder",
+            "cup empty"
+        ],
+        "steps": [
+            "locate glass",
+            "pinch baking powder",
+            "locate cup",
+            "releaseObj baking powder, to(cup)"
+        ],
+        "operating-conditions": [
+            "holding baking powder"
+        ],
+        "post-conditions": [
+            "baking powder in cup"
+        ]
+    },
+    {
+        "input": "15g baking powder",
+        "pre-conditions": [
+            "glass contains minimum 15g baking powder",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate glass",
+            "pinch baking powder",
+            "locate cooking pan",
+            "releaseObj baking powder, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding baking powder"
+        ],
+        "post-conditions": [
+            "baking powder in cooking pan"
+        ]
+    },
+    {
+        "input": "20g baking powder",
+        "pre-conditions": [
+            "bottle contains minimum 20g baking powder",
+            "glass empty"
+        ],
+        "steps": [
+            "locate bottle",
+            "pinch baking powder",
+            "locate glass",
+            "releaseObj baking powder, to(glass)"
+        ],
+        "operating-conditions": [
+            "holding baking powder"
+        ],
+        "post-conditions": [
+            "baking powder in glass"
+        ]
+    }
+]

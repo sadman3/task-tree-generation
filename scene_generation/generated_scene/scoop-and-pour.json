@@ -1,0 +1,442 @@
+[
+    {
+        "input": "3sp baking soda",
+        "pre-conditions": [
+            "small cup contains minimum 3sp baking soda",
+            "mixing bowl empty",
+            "small spoon in hand"
+        ],
+        "steps": [
+            "locate small cup",
+            "moveObj small spoon, towards(mixing bowl)",
+            "scoop small spoon",
+            "pour baking soda, to(mixing bowl)"
+        ],
+        "operating-conditions": [
+            "holding small spoon",
+            "baking soda in small spoon"
+        ],
+        "post-conditions": [
+            "baking soda in mixing bowl",
+            "small spoon dirty"
+        ]
+    },
+    {
+        "input": "2sp baking soda",
+        "pre-conditions": [
+            "small bowl contains minimum 2sp baking soda",
+            "mixing bowl empty",
+            "small spoon in hand"
+        ],
+        "steps": [
+            "locate small bowl",
+            "moveObj small spoon, towards(mixing bowl)",
+            "scoop small spoon",
+            "pour baking soda, to(mixing bowl)"
+        ],
+        "operating-conditions": [
+            "holding small spoon",
+            "baking soda in small spoon"
+        ],
+        "post-conditions": [
+            "baking soda in mixing bowl",
+            "small spoon dirty"
+        ]
+    },
+    {
+        "input": "3sp baking soda",
+        "pre-conditions": [
+            "packet contains minimum 3sp baking soda",
+            "mixing bowl empty",
+            "large spoon in hand"
+        ],
+        "steps": [
+            "locate packet",
+            "moveObj large spoon, towards(mixing bowl)",
+            "scoop large spoon",
+            "pour baking soda, to(mixing bowl)"
+        ],
+        "operating-conditions": [
+            "holding large spoon",
+            "baking soda in large spoon"
+        ],
+        "post-conditions": [
+            "baking soda in mixing bowl",
+            "large spoon dirty"
+        ]
+    },
+    {
+        "input": "3sp baking soda",
+        "pre-conditions": [
+            "packet contains minimum 3sp baking soda",
+            "mixing bowl empty",
+            "small spoon in hand"
+        ],
+        "steps": [
+            "locate packet",
+            "moveObj small spoon, towards(mixing bowl)",
+            "scoop small spoon",
+            "pour baking soda, to(mixing bowl)"
+        ],
+        "operating-conditions": [
+            "holding small spoon",
+            "baking soda in small spoon"
+        ],
+        "post-conditions": [
+            "baking soda in mixing bowl",
+            "small spoon dirty"
+        ]
+    },
+    {
+        "input": "1sp baking soda",
+        "pre-conditions": [
+            "packet contains minimum 1sp baking soda",
+            "large cup empty",
+            "large spoon in hand"
+        ],
+        "steps": [
+            "locate packet",
+            "moveObj large spoon, towards(large cup)",
+            "scoop large spoon",
+            "pour baking soda, to(large cup)"
+        ],
+        "operating-conditions": [
+            "holding large spoon",
+            "baking soda in large spoon"
+        ],
+        "post-conditions": [
+            "baking soda in large cup",
+            "large spoon dirty"
+        ]
+    },
+    {
+        "input": "2sp baking soda",
+        "pre-conditions": [
+            "packet contains minimum 2sp baking soda",
+            "large cup empty",
+            "large spoon in hand"
+        ],
+        "steps": [
+            "locate packet",
+            "moveObj large spoon, towards(large cup)",
+            "scoop large spoon",
+            "pour baking soda, to(large cup)"
+        ],
+        "operating-conditions": [
+            "holding large spoon",
+            "baking soda in large spoon"
+        ],
+        "post-conditions": [
+            "baking soda in large cup",
+            "large spoon dirty"
+        ]
+    },
+    {
+        "input": "3sp baking soda",
+        "pre-conditions": [
+            "small bowl contains minimum 3sp baking soda",
+            "cooking pan empty",
+            "small spoon in hand"
+        ],
+        "steps": [
+            "locate small bowl",
+            "moveObj small spoon, towards(cooking pan)",
+            "scoop small spoon",
+            "pour baking soda, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding small spoon",
+            "baking soda in small spoon"
+        ],
+        "post-conditions": [
+            "baking soda in cooking pan",
+            "small spoon dirty"
+        ]
+    },
+    {
+        "input": "1sp baking soda",
+        "pre-conditions": [
+            "packet contains minimum 1sp baking soda",
+            "large cup empty",
+            "small spoon in hand"
+        ],
+        "steps": [
+            "locate packet",
+            "moveObj small spoon, towards(large cup)",
+            "scoop small spoon",
+            "pour baking soda, to(large cup)"
+        ],
+        "operating-conditions": [
+            "holding small spoon",
+            "baking soda in small spoon"
+        ],
+        "post-conditions": [
+            "baking soda in large cup",
+            "small spoon dirty"
+        ]
+    },
+    {
+        "input": "2sp baking soda",
+        "pre-conditions": [
+            "small cup contains minimum 2sp baking soda",
+            "cooking pan empty",
+            "small spoon in hand"
+        ],
+        "steps": [
+            "locate small cup",
+            "moveObj small spoon, towards(cooking pan)",
+            "scoop small spoon",
+            "pour baking soda, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding small spoon",
+            "baking soda in small spoon"
+        ],
+        "post-conditions": [
+            "baking soda in cooking pan",
+            "small spoon dirty"
+        ]
+    },
+    {
+        "input": "3sp baking soda",
+        "pre-conditions": [
+            "packet contains minimum 3sp baking soda",
+            "large cup empty",
+            "large spoon in hand"
+        ],
+        "steps": [
+            "locate packet",
+            "moveObj large spoon, towards(large cup)",
+            "scoop large spoon",
+            "pour baking soda, to(large cup)"
+        ],
+        "operating-conditions": [
+            "holding large spoon",
+            "baking soda in large spoon"
+        ],
+        "post-conditions": [
+            "baking soda in large cup",
+            "large spoon dirty"
+        ]
+    },
+    {
+        "input": "1sp salt",
+        "pre-conditions": [
+            "small bowl contains minimum 1sp salt",
+            "mixing bowl empty",
+            "small spoon in hand"
+        ],
+        "steps": [
+            "locate small bowl",
+            "moveObj small spoon, towards(mixing bowl)",
+            "scoop small spoon",
+            "pour salt, to(mixing bowl)"
+        ],
+        "operating-conditions": [
+            "holding small spoon",
+            "salt in small spoon"
+        ],
+        "post-conditions": [
+            "salt in mixing bowl",
+            "small spoon dirty"
+        ]
+    },
+    {
+        "input": "2sp salt",
+        "pre-conditions": [
+            "small bowl contains minimum 2sp salt",
+            "large cup empty",
+            "large spoon in hand"
+        ],
+        "steps": [
+            "locate small bowl",
+            "moveObj large spoon, towards(large cup)",
+            "scoop large spoon",
+            "pour salt, to(large cup)"
+        ],
+        "operating-conditions": [
+            "holding large spoon",
+            "salt in large spoon"
+        ],
+        "post-conditions": [
+            "salt in large cup",
+            "large spoon dirty"
+        ]
+    },
+    {
+        "input": "2sp salt",
+        "pre-conditions": [
+            "packet contains minimum 2sp salt",
+            "glass empty",
+            "small spoon in hand"
+        ],
+        "steps": [
+            "locate packet",
+            "moveObj small spoon, towards(glass)",
+            "scoop small spoon",
+            "pour salt, to(glass)"
+        ],
+        "operating-conditions": [
+            "holding small spoon",
+            "salt in small spoon"
+        ],
+        "post-conditions": [
+            "salt in glass",
+            "small spoon dirty"
+        ]
+    },
+    {
+        "input": "1sp salt",
+        "pre-conditions": [
+            "small cup contains minimum 1sp salt",
+            "large cup empty",
+            "large spoon in hand"
+        ],
+        "steps": [
+            "locate small cup",
+            "moveObj large spoon, towards(large cup)",
+            "scoop large spoon",
+            "pour salt, to(large cup)"
+        ],
+        "operating-conditions": [
+            "holding large spoon",
+            "salt in large spoon"
+        ],
+        "post-conditions": [
+            "salt in large cup",
+            "large spoon dirty"
+        ]
+    },
+    {
+        "input": "1sp salt",
+        "pre-conditions": [
+            "small bowl contains minimum 1sp salt",
+            "glass empty",
+            "small spoon in hand"
+        ],
+        "steps": [
+            "locate small bowl",
+            "moveObj small spoon, towards(glass)",
+            "scoop small spoon",
+            "pour salt, to(glass)"
+        ],
+        "operating-conditions": [
+            "holding small spoon",
+            "salt in small spoon"
+        ],
+        "post-conditions": [
+            "salt in glass",
+            "small spoon dirty"
+        ]
+    },
+    {
+        "input": "2sp salt",
+        "pre-conditions": [
+            "packet contains minimum 2sp salt",
+            "mixing bowl empty",
+            "large spoon in hand"
+        ],
+        "steps": [
+            "locate packet",
+            "moveObj large spoon, towards(mixing bowl)",
+            "scoop large spoon",
+            "pour salt, to(mixing bowl)"
+        ],
+        "operating-conditions": [
+            "holding large spoon",
+            "salt in large spoon"
+        ],
+        "post-conditions": [
+            "salt in mixing bowl",
+            "large spoon dirty"
+        ]
+    },
+    {
+        "input": "2sp salt",
+        "pre-conditions": [
+            "small bowl contains minimum 2sp salt",
+            "large cup empty",
+            "large spoon in hand"
+        ],
+        "steps": [
+            "locate small bowl",
+            "moveObj large spoon, towards(large cup)",
+            "scoop large spoon",
+            "pour salt, to(large cup)"
+        ],
+        "operating-conditions": [
+            "holding large spoon",
+            "salt in large spoon"
+        ],
+        "post-conditions": [
+            "salt in large cup",
+            "large spoon dirty"
+        ]
+    },
+    {
+        "input": "2sp salt",
+        "pre-conditions": [
+            "small cup contains minimum 2sp salt",
+            "mixing bowl empty",
+            "small spoon in hand"
+        ],
+        "steps": [
+            "locate small cup",
+            "moveObj small spoon, towards(mixing bowl)",
+            "scoop small spoon",
+            "pour salt, to(mixing bowl)"
+        ],
+        "operating-conditions": [
+            "holding small spoon",
+            "salt in small spoon"
+        ],
+        "post-conditions": [
+            "salt in mixing bowl",
+            "small spoon dirty"
+        ]
+    },
+    {
+        "input": "2sp salt",
+        "pre-conditions": [
+            "packet contains minimum 2sp salt",
+            "glass empty",
+            "small spoon in hand"
+        ],
+        "steps": [
+            "locate packet",
+            "moveObj small spoon, towards(glass)",
+            "scoop small spoon",
+            "pour salt, to(glass)"
+        ],
+        "operating-conditions": [
+            "holding small spoon",
+            "salt in small spoon"
+        ],
+        "post-conditions": [
+            "salt in glass",
+            "small spoon dirty"
+        ]
+    },
+    {
+        "input": "2sp salt",
+        "pre-conditions": [
+            "small cup contains minimum 2sp salt",
+            "cooking pan empty",
+            "large spoon in hand"
+        ],
+        "steps": [
+            "locate small cup",
+            "moveObj large spoon, towards(cooking pan)",
+            "scoop large spoon",
+            "pour salt, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding large spoon",
+            "salt in large spoon"
+        ],
+        "post-conditions": [
+            "salt in cooking pan",
+            "large spoon dirty"
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+{
+    "parameter-space": [
+        {
+            "object": "black pepper",
+            "portions": ["10g", "20g", "15g"],
+            "source": ["small cup", "small bowl"],
+            "target": ["cooking pan", "mixing bowl", "large cup"],
+            "utensils": []        
+        },
+        {
+            "object": "baking powder",
+            "portions": ["10g", "20g", "15g"],
+            "source": ["bowl", "glass", "bottle"],
+            "target": ["cooking pan", "mixing bowl", "glass", "cup"],
+            "utensils": []
+        }
+    ],
+
+    "action": {
+        "input": "{portions} {object}",
+        "pre-conditions": [
+            "{source} contains minimum {portions} {object}",
+            "{target} empty"
+        ],
+        "steps": [
+            "locate {source}",
+            "pinch {object}",
+            "locate {target}",
+            "releaseObj {object}, to({target})"
+        ],
+        "operating-conditions": ["holding {object}"],
+        "post-conditions": ["{object} in {target}"]
+    }    
+}

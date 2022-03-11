@@ -1,0 +1,35 @@
+{
+    "parameter-space": [
+        {
+            "object": "broccoli",
+            "portions": ["1 whole", "1 cup chopped", "150g chopped", "100g chopped"],
+            "source": ["small cup", "plate", "table", "small bowl"],
+            "target": ["cutting board", "large bowl", "plate"],
+            "utensils": []        
+        },
+        {
+            "object": "egg",
+            "portions": ["1 whole", "2 whole", "3 whole"],
+            "source": ["bowl", "egg carton"],
+            "target": ["pan", "plate"],
+            "utensils": []
+        }
+    ],
+
+    "action": {
+        "input": "{portions} {object}",
+        "pre-conditions": [
+            "{source} contains minimum {portions} {object}",
+            "{target} empty"
+        ],
+        "steps": [
+            "locate {object}",
+            "grasp {object}",
+            "locate {target}",
+            "moveObj {object}, towards({target})",
+            "releaseObj {object}"
+        ],
+        "operating-conditions": ["holding {object}"],
+        "post-conditions": ["{object} in {target}"]
+    }    
+}

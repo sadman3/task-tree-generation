@@ -1,0 +1,402 @@
+[
+    {
+        "input": "250g chopped broccoli",
+        "pre-conditions": [
+            "table contains minimum 150g chopped broccoli",
+            "large bowl empty"
+        ],
+        "steps": [
+            "locate broccoli",
+            "grasp broccoli",
+            "locate large bowl",
+            "moveObj broccoli, towards(large bowl)",
+            "releaseObj broccoli"
+        ],
+        "operating-conditions": [
+            "holding broccoli"
+        ],
+        "post-conditions": [
+            "broccoli in large bowl"
+        ]
+    },
+    {
+        "input": "1 whole broccoli",
+        "pre-conditions": [
+            "table contains minimum 1 whole broccoli",
+            "large bowl empty"
+        ],
+        "steps": [
+            "locate broccoli",
+            "grasp broccoli",
+            "locate large bowl",
+            "moveObj broccoli, towards(large bowl)",
+            "releaseObj broccoli"
+        ],
+        "operating-conditions": [
+            "holding broccoli"
+        ],
+        "post-conditions": [
+            "broccoli in large bowl"
+        ]
+    },
+    {
+        "input": "1/2 cup chopped broccoli",
+        "pre-conditions": [
+            "plate contains minimum 1 cup chopped broccoli",
+            "plate empty"
+        ],
+        "steps": [
+            "locate broccoli",
+            "grasp broccoli",
+            "locate plate",
+            "moveObj broccoli, towards(plate)",
+            "releaseObj broccoli"
+        ],
+        "operating-conditions": [
+            "holding broccoli"
+        ],
+        "post-conditions": [
+            "broccoli in plate"
+        ]
+    },
+    {
+        "input": "150g chopped broccoli",
+        "pre-conditions": [
+            "table contains minimum 150g chopped broccoli",
+            "large bowl empty"
+        ],
+        "steps": [
+            "locate broccoli",
+            "grasp broccoli",
+            "locate large bowl",
+            "moveObj broccoli, towards(large bowl)",
+            "releaseObj broccoli"
+        ],
+        "operating-conditions": [
+            "holding broccoli"
+        ],
+        "post-conditions": [
+            "broccoli in large bowl"
+        ]
+    },
+    {
+        "input": "150g chopped broccoli",
+        "pre-conditions": [
+            "plate contains minimum 150g chopped broccoli",
+            "cutting board empty"
+        ],
+        "steps": [
+            "locate broccoli",
+            "grasp broccoli",
+            "locate cutting board",
+            "moveObj broccoli, towards(cutting board)",
+            "releaseObj broccoli"
+        ],
+        "operating-conditions": [
+            "holding broccoli"
+        ],
+        "post-conditions": [
+            "broccoli in cutting board"
+        ]
+    },
+    {
+        "input": "1 whole broccoli",
+        "pre-conditions": [
+            "small bowl contains minimum 1 whole broccoli",
+            "cutting board empty"
+        ],
+        "steps": [
+            "locate broccoli",
+            "grasp broccoli",
+            "locate cutting board",
+            "moveObj broccoli, towards(cutting board)",
+            "releaseObj broccoli"
+        ],
+        "operating-conditions": [
+            "holding broccoli"
+        ],
+        "post-conditions": [
+            "broccoli in cutting board"
+        ]
+    },
+    {
+        "input": "150g chopped broccoli",
+        "pre-conditions": [
+            "table contains minimum 150g chopped broccoli",
+            "large bowl empty"
+        ],
+        "steps": [
+            "locate broccoli",
+            "grasp broccoli",
+            "locate large bowl",
+            "moveObj broccoli, towards(large bowl)",
+            "releaseObj broccoli"
+        ],
+        "operating-conditions": [
+            "holding broccoli"
+        ],
+        "post-conditions": [
+            "broccoli in large bowl"
+        ]
+    },
+    {
+        "input": "100g chopped broccoli",
+        "pre-conditions": [
+            "small cup contains minimum 100g chopped broccoli",
+            "plate empty"
+        ],
+        "steps": [
+            "locate broccoli",
+            "grasp broccoli",
+            "locate plate",
+            "moveObj broccoli, towards(plate)",
+            "releaseObj broccoli"
+        ],
+        "operating-conditions": [
+            "holding broccoli"
+        ],
+        "post-conditions": [
+            "broccoli in plate"
+        ]
+    },
+    {
+        "input": "1 whole broccoli",
+        "pre-conditions": [
+            "table contains minimum 1 whole broccoli",
+            "cutting board empty"
+        ],
+        "steps": [
+            "locate broccoli",
+            "grasp broccoli",
+            "locate cutting board",
+            "moveObj broccoli, towards(cutting board)",
+            "releaseObj broccoli"
+        ],
+        "operating-conditions": [
+            "holding broccoli"
+        ],
+        "post-conditions": [
+            "broccoli in cutting board"
+        ]
+    },
+    {
+        "input": "100g chopped broccoli",
+        "pre-conditions": [
+            "table contains minimum 100g chopped broccoli",
+            "cutting board empty"
+        ],
+        "steps": [
+            "locate broccoli",
+            "grasp broccoli",
+            "locate cutting board",
+            "moveObj broccoli, towards(cutting board)",
+            "releaseObj broccoli"
+        ],
+        "operating-conditions": [
+            "holding broccoli"
+        ],
+        "post-conditions": [
+            "broccoli in cutting board"
+        ]
+    },
+    {
+        "input": "1 whole egg",
+        "pre-conditions": [
+            "egg carton contains minimum 1 whole egg",
+            "pan empty"
+        ],
+        "steps": [
+            "locate egg",
+            "grasp egg",
+            "locate pan",
+            "moveObj egg, towards(pan)",
+            "releaseObj egg"
+        ],
+        "operating-conditions": [
+            "holding egg"
+        ],
+        "post-conditions": [
+            "egg in pan"
+        ]
+    },
+    {
+        "input": "3 whole egg",
+        "pre-conditions": [
+            "bowl contains minimum 3 whole egg",
+            "pan empty"
+        ],
+        "steps": [
+            "locate egg",
+            "grasp egg",
+            "locate pan",
+            "moveObj egg, towards(pan)",
+            "releaseObj egg"
+        ],
+        "operating-conditions": [
+            "holding egg"
+        ],
+        "post-conditions": [
+            "egg in pan"
+        ]
+    },
+    {
+        "input": "3 whole egg",
+        "pre-conditions": [
+            "egg carton contains minimum 3 whole egg",
+            "pan empty"
+        ],
+        "steps": [
+            "locate egg",
+            "grasp egg",
+            "locate pan",
+            "moveObj egg, towards(pan)",
+            "releaseObj egg"
+        ],
+        "operating-conditions": [
+            "holding egg"
+        ],
+        "post-conditions": [
+            "egg in pan"
+        ]
+    },
+    {
+        "input": "2 whole egg",
+        "pre-conditions": [
+            "egg carton contains minimum 2 whole egg",
+            "pan empty"
+        ],
+        "steps": [
+            "locate egg",
+            "grasp egg",
+            "locate pan",
+            "moveObj egg, towards(pan)",
+            "releaseObj egg"
+        ],
+        "operating-conditions": [
+            "holding egg"
+        ],
+        "post-conditions": [
+            "egg in pan"
+        ]
+    },
+    {
+        "input": "2 whole egg",
+        "pre-conditions": [
+            "egg carton contains minimum 2 whole egg",
+            "pan empty"
+        ],
+        "steps": [
+            "locate egg",
+            "grasp egg",
+            "locate pan",
+            "moveObj egg, towards(pan)",
+            "releaseObj egg"
+        ],
+        "operating-conditions": [
+            "holding egg"
+        ],
+        "post-conditions": [
+            "egg in pan"
+        ]
+    },
+    {
+        "input": "1 whole egg",
+        "pre-conditions": [
+            "egg carton contains minimum 1 whole egg",
+            "pan empty"
+        ],
+        "steps": [
+            "locate egg",
+            "grasp egg",
+            "locate pan",
+            "moveObj egg, towards(pan)",
+            "releaseObj egg"
+        ],
+        "operating-conditions": [
+            "holding egg"
+        ],
+        "post-conditions": [
+            "egg in pan"
+        ]
+    },
+    {
+        "input": "1 whole egg",
+        "pre-conditions": [
+            "egg carton contains minimum 1 whole egg",
+            "pan empty"
+        ],
+        "steps": [
+            "locate egg",
+            "grasp egg",
+            "locate pan",
+            "moveObj egg, towards(pan)",
+            "releaseObj egg"
+        ],
+        "operating-conditions": [
+            "holding egg"
+        ],
+        "post-conditions": [
+            "egg in pan"
+        ]
+    },
+    {
+        "input": "2 whole egg",
+        "pre-conditions": [
+            "bowl contains minimum 2 whole egg",
+            "plate empty"
+        ],
+        "steps": [
+            "locate egg",
+            "grasp egg",
+            "locate plate",
+            "moveObj egg, towards(plate)",
+            "releaseObj egg"
+        ],
+        "operating-conditions": [
+            "holding egg"
+        ],
+        "post-conditions": [
+            "egg in plate"
+        ]
+    },
+    {
+        "input": "2 whole egg",
+        "pre-conditions": [
+            "bowl contains minimum 2 whole egg",
+            "plate empty"
+        ],
+        "steps": [
+            "locate egg",
+            "grasp egg",
+            "locate plate",
+            "moveObj egg, towards(plate)",
+            "releaseObj egg"
+        ],
+        "operating-conditions": [
+            "holding egg"
+        ],
+        "post-conditions": [
+            "egg in plate"
+        ]
+    },
+    {
+        "input": "3 whole egg",
+        "pre-conditions": [
+            "bowl contains minimum 3 whole egg",
+            "plate empty"
+        ],
+        "steps": [
+            "locate egg",
+            "grasp egg",
+            "locate plate",
+            "moveObj egg, towards(plate)",
+            "releaseObj egg"
+        ],
+        "operating-conditions": [
+            "holding egg"
+        ],
+        "post-conditions": [
+            "egg in plate"
+        ]
+    }
+]

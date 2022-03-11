@@ -1,0 +1,362 @@
+[
+    {
+        "input": "50g salt",
+        "pre-conditions": [
+            "salt container contains minimum 50g salt",
+            "mixing bowl empty"
+        ],
+        "steps": [
+            "locate salt",
+            "grasp salt container",
+            "pour salt, to(mixing bowl)"
+        ],
+        "operating-conditions": [
+            "holding salt container"
+        ],
+        "post-conditions": [
+            "salt in mixing bowl"
+        ]
+    },
+    {
+        "input": "10g salt",
+        "pre-conditions": [
+            "small cup contains minimum 10g salt",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate salt",
+            "grasp small cup",
+            "pour salt, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding small cup"
+        ],
+        "post-conditions": [
+            "salt in cooking pan"
+        ]
+    },
+    {
+        "input": "10g salt",
+        "pre-conditions": [
+            "salt container contains minimum 10g salt",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate salt",
+            "grasp salt container",
+            "pour salt, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding salt container"
+        ],
+        "post-conditions": [
+            "salt in cooking pan"
+        ]
+    },
+    {
+        "input": "50g salt",
+        "pre-conditions": [
+            "small bowl contains minimum 50g salt",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate salt",
+            "grasp small bowl",
+            "pour salt, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding small bowl"
+        ],
+        "post-conditions": [
+            "salt in cooking pan"
+        ]
+    },
+    {
+        "input": "10g salt",
+        "pre-conditions": [
+            "salt container contains minimum 10g salt",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate salt",
+            "grasp salt container",
+            "pour salt, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding salt container"
+        ],
+        "post-conditions": [
+            "salt in cooking pan"
+        ]
+    },
+    {
+        "input": "20g salt",
+        "pre-conditions": [
+            "salt container contains minimum 20g salt",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate salt",
+            "grasp salt container",
+            "pour salt, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding salt container"
+        ],
+        "post-conditions": [
+            "salt in cooking pan"
+        ]
+    },
+    {
+        "input": "10g salt",
+        "pre-conditions": [
+            "small bowl contains minimum 10g salt",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate salt",
+            "grasp small bowl",
+            "pour salt, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding small bowl"
+        ],
+        "post-conditions": [
+            "salt in cooking pan"
+        ]
+    },
+    {
+        "input": "10g salt",
+        "pre-conditions": [
+            "small cup contains minimum 10g salt",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate salt",
+            "grasp small cup",
+            "pour salt, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding small cup"
+        ],
+        "post-conditions": [
+            "salt in cooking pan"
+        ]
+    },
+    {
+        "input": "10g salt",
+        "pre-conditions": [
+            "small cup contains minimum 10g salt",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate salt",
+            "grasp small cup",
+            "pour salt, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding small cup"
+        ],
+        "post-conditions": [
+            "salt in cooking pan"
+        ]
+    },
+    {
+        "input": "50g salt",
+        "pre-conditions": [
+            "salt container contains minimum 50g salt",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate salt",
+            "grasp salt container",
+            "pour salt, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding salt container"
+        ],
+        "post-conditions": [
+            "salt in cooking pan"
+        ]
+    },
+    {
+        "input": "100g water",
+        "pre-conditions": [
+            "bottle contains minimum 100g water",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate water",
+            "grasp bottle",
+            "pour water, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding bottle"
+        ],
+        "post-conditions": [
+            "water in cooking pan"
+        ]
+    },
+    {
+        "input": "100g water",
+        "pre-conditions": [
+            "bowl contains minimum 100g water",
+            "cup empty"
+        ],
+        "steps": [
+            "locate water",
+            "grasp bowl",
+            "pour water, to(cup)"
+        ],
+        "operating-conditions": [
+            "holding bowl"
+        ],
+        "post-conditions": [
+            "water in cup"
+        ]
+    },
+    {
+        "input": "200g water",
+        "pre-conditions": [
+            "bottle contains minimum 200g water",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate water",
+            "grasp bottle",
+            "pour water, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding bottle"
+        ],
+        "post-conditions": [
+            "water in cooking pan"
+        ]
+    },
+    {
+        "input": "250g water",
+        "pre-conditions": [
+            "bowl contains minimum 250g water",
+            "mixing bowl empty"
+        ],
+        "steps": [
+            "locate water",
+            "grasp bowl",
+            "pour water, to(mixing bowl)"
+        ],
+        "operating-conditions": [
+            "holding bowl"
+        ],
+        "post-conditions": [
+            "water in mixing bowl"
+        ]
+    },
+    {
+        "input": "100g water",
+        "pre-conditions": [
+            "bottle contains minimum 100g water",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate water",
+            "grasp bottle",
+            "pour water, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding bottle"
+        ],
+        "post-conditions": [
+            "water in cooking pan"
+        ]
+    },
+    {
+        "input": "250g water",
+        "pre-conditions": [
+            "bottle contains minimum 250g water",
+            "cooking pan empty"
+        ],
+        "steps": [
+            "locate water",
+            "grasp bottle",
+            "pour water, to(cooking pan)"
+        ],
+        "operating-conditions": [
+            "holding bottle"
+        ],
+        "post-conditions": [
+            "water in cooking pan"
+        ]
+    },
+    {
+        "input": "100g water",
+        "pre-conditions": [
+            "bowl contains minimum 100g water",
+            "glass empty"
+        ],
+        "steps": [
+            "locate water",
+            "grasp bowl",
+            "pour water, to(glass)"
+        ],
+        "operating-conditions": [
+            "holding bowl"
+        ],
+        "post-conditions": [
+            "water in glass"
+        ]
+    },
+    {
+        "input": "250g water",
+        "pre-conditions": [
+            "glass contains minimum 250g water",
+            "glass empty"
+        ],
+        "steps": [
+            "locate water",
+            "grasp glass",
+            "pour water, to(glass)"
+        ],
+        "operating-conditions": [
+            "holding glass"
+        ],
+        "post-conditions": [
+            "water in glass"
+        ]
+    },
+    {
+        "input": "200g water",
+        "pre-conditions": [
+            "glass contains minimum 200g water",
+            "cup empty"
+        ],
+        "steps": [
+            "locate water",
+            "grasp glass",
+            "pour water, to(cup)"
+        ],
+        "operating-conditions": [
+            "holding glass"
+        ],
+        "post-conditions": [
+            "water in cup"
+        ]
+    },
+    {
+        "input": "200g water",
+        "pre-conditions": [
+            "bowl contains minimum 200g water",
+            "cup empty"
+        ],
+        "steps": [
+            "locate water",
+            "grasp bowl",
+            "pour water, to(cup)"
+        ],
+        "operating-conditions": [
+            "holding bowl"
+        ],
+        "post-conditions": [
+            "water in cup"
+        ]
+    }
+]

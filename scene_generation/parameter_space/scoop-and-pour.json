@@ -1,0 +1,40 @@
+{
+    "parameter-space": [
+        {
+            "object": "baking soda",
+            "portions": ["1sp", "2sp", "3sp"],
+            "source": ["small cup", "packet", "small bowl"],
+            "target": ["cooking pan", "mixing bowl", "large cup"],
+            "utensils": ["small spoon", "large spoon"]
+        },
+        {
+            "object": "salt",
+            "portions": ["1sp", "2sp"],
+            "source": ["small cup", "packet", "small bowl"],
+            "target": ["cooking pan", "mixing bowl", "large cup", "glass"],
+            "utensils": ["small spoon", "large spoon"]
+        }
+    ],
+
+    "action": {
+        "input": "{portions} {object}",
+        "pre-conditions": [
+            "{source} contains minimum {portions} {object}",
+            "{target} empty",
+            "{utensils} in hand"
+        ],
+        "steps": [
+            "locate {source}",
+            "moveObj {utensils}, towards({target})",
+            "scoop {utensils}",
+            "pour {object}, to({target})"
+        ],
+        "operating-conditions": [
+            "holding {utensils}", 
+            "{object} in {utensils}"],
+        "post-conditions": [
+            "{object} in {target}",
+            "{utensils} dirty"
+        ]
+    }    
+}

@@ -1,0 +1,35 @@
+{
+    "parameter-space": [
+        {
+            "object": "",
+            "portions": [],
+            "source": ["mixing bowl"],
+            "target": [],
+            "utensils": ["spoon", "spatula"]        
+        },
+        {
+            "object": "",
+            "portions": [],
+            "source": ["mixing bowl"],
+            "target": [],
+            "utensils": ["spoon", "spatula"]
+        }
+    ],
+
+    "action": {
+        "input": "{portions} {object}",
+        "pre-conditions": [
+            "{source} contains minimum {portions} {object}"
+        ],
+        "steps": [
+            "locate {source}",
+            "moveObj {utensils}, inside({source})",
+            "mix"
+        ],
+        "operating-conditions": ["holding {utensils}"],
+        "post-conditions": [
+            "{utensils} dirty",
+            "ingredients mixed in {source}"
+        ]
+    }    
+}

@@ -1,0 +1,33 @@
+{
+    "parameter-space": [
+        {
+            "object": "salt",
+            "portions": ["10g", "20g", "50g"],
+            "source": ["small cup", "salt container", "small bowl"],
+            "target": ["cooking pan", "mixing bowl", "large cup"],
+            "utensils": []        
+        },
+        {
+            "object": "water",
+            "portions": ["100g", "150g", "200g", "250g"],
+            "source": ["bowl", "glass", "bottle"],
+            "target": ["cooking pan", "mixing bowl", "glass", "cup"],
+            "utensils": []
+        }
+    ],
+
+    "action": {
+        "input": "{portions} {object}",
+        "pre-conditions": [
+            "{source} contains minimum {portions} {object}",
+            "{target} empty"
+        ],
+        "steps": [
+            "locate {object}",
+            "grasp {source}",
+            "pour {object}, to({target})"
+        ],
+        "operating-conditions": ["holding {source}"],
+        "post-conditions": ["{object} in {target}"]
+    }    
+}
